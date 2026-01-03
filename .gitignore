@@ -1,0 +1,15 @@
+# ignora tutto
+*
+
+# …ma non ignorare queste cose minime
+!.gitignore
+!README.md
+
+# consenti la cartella Paper/MDversion (e tutto il suo contenuto)
+!Paper/
+!Paper/MDversion/
+!Paper/MDversion/**
+
+# consenti transparency (tutto)
+!transparency/
+!transparency/**
