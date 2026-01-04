@@ -14,7 +14,6 @@ from __future__ import annotations
 
 import argparse
 import datetime as _dt
-import os
 import re
 import shutil
 import sys
@@ -79,17 +78,10 @@ def _split_frontmatter(text: str) -> Tuple[Dict[str, Any], str]:
     if data is None:
         data = {}
     if not isinstance(data, dict):
-        # Frontmatter exists but isn't a dict (rare). Keep empty to avoid surprises.
         data = {}
     return data, body
 
 def _extract_doc_id(stem: str, fm: Dict[str, Any]) -> Optional[str]:
-    """
-    Best-effort extraction of an internal artifact id from:
-    - fm['document_id'] if present
-    - filename prefix patterns (dot ids / underscore ids / SP ids)
-    We prefer dot ids (>= 2 segments).
-    """
     v = fm.get("document_id")
     if isinstance(v, str):
         v = v.strip()
@@ -100,33 +92,31 @@ def _extract_doc_id(stem: str, fm: Dict[str, Any]) -> Optional[str]:
         if SP_ID_RE.fullmatch(v):
             return v
 
-    # Filename prefix dot id (e.g. "5.2.4.1_Whatever")
     m = re.match(r"^(\d+(?:\.\d+)+)\b", stem)
     if m:
         return m.group(1)
 
-    # Underscore prefix (e.g. "5_2_3_Whatever" or "5_2_3")
     m = re.match(r"^(\d+(?:_\d+)+)\b", stem)
     if m:
         return m.group(1).replace("_", ".").rstrip(".")
 
-    # SP prefix (e.g. "SP5.1_Whatever" or "SP-5.1")
     m = re.match(r"^((?:proto-)?SP-?\d+(?:\.\d+)*)\b", stem, re.IGNORECASE)
     if m:
         return m.group(1)
 
     return None
 
-def _iter_md_files(vault: Path, exclude_dirs: Iterable[str]) -> Iterable[Path]:
+def _iter_md_files(roots: Iterable[Path], exclude_dirs: Iterable[str]) -> Iterable[Path]:
+    """Iterate markdown files under one or more roots."""
     exclude_set = set(exclude_dirs)
-    for p in vault.rglob("*.md"):
-        # skip hidden dirs and excluded dirs anywhere in the path parts
-        parts = set(p.parts)
-        if any(part.startswith(".") for part in p.parts):
-            continue
-        if parts & exclude_set:
-            continue
-        yield p
+    for root in roots:
+        for p in root.rglob("*.md"):
+            parts = set(p.parts)
+            if any(part.startswith(".") for part in p.parts):
+                continue
+            if parts & exclude_set:
+                continue
+            yield p
 
 def _safe_wikilink(target_stem_or_path: str, alias: Optional[str] = None) -> str:
     if alias:
@@ -134,10 +124,6 @@ def _safe_wikilink(target_stem_or_path: str, alias: Optional[str] = None) -> str
     return f"[[{target_stem_or_path}]]"
 
 def _normalize_rel_item(item: str) -> str:
-    """
-    If item contains an obsidian link [[X|alias]], return the inner X part.
-    Otherwise return stripped item.
-    """
     item = item.strip()
     m = OBSIDIAN_LINK_RE.search(item)
     if m:
@@ -147,10 +133,6 @@ def _normalize_rel_item(item: str) -> str:
     return item
 
 def _extract_candidate_ids(text: str) -> List[str]:
-    """
-    Extract possible ids from free text: dot ids + underscore ids + SP ids.
-    Returns unique items in appearance order.
-    """
     found: List[str] = []
 
     def add(x: str) -> None:
@@ -166,9 +148,6 @@ def _extract_candidate_ids(text: str) -> List[str]:
     return found
 
 def _sort_key_for_note(n: NoteInfo) -> Tuple[int, Tuple[int, ...], str]:
-    """
-    Sort: notes with numeric dot-ids first, by numeric tuple; then alphabetical stem.
-    """
     if n.doc_id and DOT_ID_RE.fullmatch(n.doc_id):
         nums = tuple(int(x) for x in n.doc_id.split("."))
         return (0, nums, n.stem.lower())
@@ -179,24 +158,15 @@ def _resolve_to_link(
     id_index: Dict[str, str],
     stem_index: Dict[str, str],
 ) -> Tuple[Optional[str], Optional[str]]:
-    """
-    Returns (wikilink, unresolved_text).
-    - If resolvable, wikilink is set and unresolved_text is None.
-    - If not, wikilink is None and unresolved_text is the original.
-    """
     item = _normalize_rel_item(raw_item)
 
-    # Direct stem match
     if item in stem_index:
         return _safe_wikilink(stem_index[item]), None
 
-    # If item looks like an id, try id_index
     for candidate in _extract_candidate_ids(item) or [item]:
         if candidate in id_index:
             return _safe_wikilink(id_index[candidate]), None
 
-    # If item itself is a stem (file name without extension), keep it as link anyway
-    # (Obsidian can resolve by name if present; this is a "soft" attempt).
     if item and all(ch not in item for ch in "\n\r"):
         return _safe_wikilink(item), None
 
@@ -214,7 +184,6 @@ def _render_connections_block(
     lines: List[str] = []
     lines.append(AUTO_START)
 
-    # 1) Source chat + siblings
     if hub_link:
         lines.append("### Source chat (primary)")
         lines.append(f"- {hub_link}")
@@ -229,7 +198,6 @@ def _render_connections_block(
                 lines.append(f"- … (and {len(siblings) - max_siblings} more)")
             lines.append("")
 
-    # 2) Relational fields (optional)
     unresolved: List[str] = []
     if include_relations:
         def add_rel_section(title: str, keys: List[str]) -> None:
@@ -257,16 +225,13 @@ def _render_connections_block(
                     lines.append(f"- {it}")
                 lines.append("")
 
-        add_rel_section("Inputs", REL_FIELDS_STRONG[:1])   # inputs
-        add_rel_section("Outputs", REL_FIELDS_STRONG[1:])  # outputs
-
+        add_rel_section("Inputs", REL_FIELDS_STRONG[:1])
+        add_rel_section("Outputs", REL_FIELDS_STRONG[1:])
         add_rel_section("Derived / influenced", REL_FIELDS_DERIVED)
         add_rel_section("Continuity", REL_FIELDS_CONTINUITY)
         add_rel_section("Related", REL_FIELDS_RELATED)
 
-    # 3) Unresolved checklist
     if unresolved:
-        # de-duplicate while preserving order
         seen = set()
         uniq = []
         for x in unresolved:
@@ -282,20 +247,13 @@ def _render_connections_block(
     return "\n".join(lines).rstrip() + "\n"
 
 def _upsert_connections_section(original_text: str, new_auto_block: str) -> str:
-    """
-    Replace auto block if markers exist; else insert a new Connections (auto) section.
-    Preserves manual text outside markers.
-    """
     if AUTO_START in original_text and AUTO_END in original_text:
         before = original_text.split(AUTO_START, 1)[0]
         after = original_text.split(AUTO_END, 1)[1]
-        # Ensure after keeps its leading newline if any
         return before.rstrip() + "\n\n" + CONN_HEADER + "\n\n" + new_auto_block + after.lstrip("\n")
 
-    # If header exists, insert markers right after first header occurrence
     header_idx = original_text.find(CONN_HEADER)
     if header_idx != -1:
-        # Find end of header line
         line_end = original_text.find("\n", header_idx)
         if line_end == -1:
             line_end = len(original_text)
@@ -308,7 +266,6 @@ def _upsert_connections_section(original_text: str, new_auto_block: str) -> str:
             + original_text[insert_pos:].lstrip("\n")
         )
 
-    # Else append new section at end
     sep = "\n\n" if not original_text.endswith("\n") else "\n"
     return original_text.rstrip() + sep + CONN_HEADER + "\n\n" + new_auto_block + "\n"
 
@@ -342,7 +299,7 @@ def _build_hub_content(
 
 def main() -> int:
     ap = argparse.ArgumentParser(
-        description="Generate Obsidian chat hubs + per-note Connections (auto) for a chat-skeleton system."
+        description="Generate Obsidian chat hubs + per-note Connections (auto) for a chat-skeleton system (optionally scoped to subfolders)."
     )
     ap.add_argument("vault", type=str, help="Path to Obsidian vault (root folder).")
     ap.add_argument("--hubs-folder", type=str, default="_HUBS", help="Folder (under vault) where chat hubs are written.")
@@ -350,6 +307,7 @@ def main() -> int:
     ap.add_argument("--dry-run", action="store_true", help="Print what would change without writing files.")
     ap.add_argument("--max-siblings", type=int, default=10, help="Max sibling links per note (use -1 for unlimited).")
     ap.add_argument("--exclude-dir", action="append", default=[], help="Folder name to exclude (can be repeated).")
+    ap.add_argument("--scope", action="append", default=[], help="Relative subfolder under vault to scan (repeatable). If omitted, scans entire vault.")
     ap.add_argument("--include-relations", action="store_true", help="Also render Inputs/Outputs/Related from YAML into Connections.")
     ap.add_argument("--backup", action="store_true", help="Before modifying a note, create a .bak copy next to it.")
     args = ap.parse_args()
@@ -364,7 +322,16 @@ def main() -> int:
     exclude_dirs = list(args.exclude_dir)
     exclude_dirs.append(args.hubs_folder)  # don't scan generated hubs by default
 
-    md_files = list(_iter_md_files(vault, exclude_dirs))
+    scan_roots = [vault]
+    if args.scope:
+        scan_roots = [(vault / s).resolve() for s in args.scope]
+        missing_roots = [r for r in scan_roots if not r.exists() or not r.is_dir()]
+        if missing_roots:
+            for r in missing_roots:
+                print(f"ERROR: scope path does not exist or is not a directory: {r}", file=sys.stderr)
+            return 2
+
+    md_files = list(_iter_md_files(scan_roots, exclude_dirs))
     notes: List[NoteInfo] = []
     for p in md_files:
         txt = _read_text(p)
@@ -373,7 +340,6 @@ def main() -> int:
         doc_id = _extract_doc_id(stem, fm)
         notes.append(NoteInfo(path=p, stem=stem, frontmatter=fm, body=body, doc_id=doc_id))
 
-    # Build indices
     id_index: Dict[str, str] = {}
     stem_index: Dict[str, str] = {}
     for n in notes:
@@ -381,7 +347,6 @@ def main() -> int:
         if n.doc_id:
             id_index[n.doc_id] = n.stem
 
-    # Build chat_index
     chat_index: Dict[str, List[NoteInfo]] = {}
     chat_name_by_id: Dict[str, str] = {}
 
@@ -391,7 +356,6 @@ def main() -> int:
             chat_id = chat_id.strip()
             chat_index.setdefault(chat_id, []).append(n)
 
-            # choose a representative chat name (first non-empty)
             chat_name = n.frontmatter.get("source_chat_name")
             if isinstance(chat_name, str) and chat_name.strip():
                 chat_name_by_id.setdefault(chat_id, chat_name.strip())
@@ -399,7 +363,6 @@ def main() -> int:
     unique_chats = len(chat_index)
     notes_with_chat = sum(len(v) for v in chat_index.values())
 
-    # Plan modifications
     hubs_to_write: List[Tuple[Path, str]] = []
     if not args.no_hubs:
         for chat_id, group in chat_index.items():
@@ -413,7 +376,7 @@ def main() -> int:
         for n in group:
             siblings = [x for x in group if x.path != n.path]
             siblings_sorted = sorted(siblings, key=_sort_key_for_note)
-            hub_link = _safe_wikilink(hub_rel, "chat")
+            hub_link = None if args.no_hubs else _safe_wikilink(hub_rel, "chat")
             new_auto = _render_connections_block(
                 note=n,
                 hub_link=hub_link,
@@ -424,13 +387,12 @@ def main() -> int:
                 include_relations=args.include_relations,
             )
 
-            full_text = _read_text(n.path)  # re-read to preserve original frontmatter formatting
+            full_text = _read_text(n.path)
             updated = _upsert_connections_section(full_text, new_auto)
 
             if updated != full_text:
                 notes_to_write.append((n.path, updated))
 
-    # Dry-run output
     print(f"Scanned: {len(md_files)} markdown files")
     print(f"Found: {notes_with_chat} files with source_chat_id across {unique_chats} unique chats")
     if not args.no_hubs:
@@ -438,7 +400,6 @@ def main() -> int:
     print(f"{'Would modify' if args.dry_run else 'Will modify'} {len(notes_to_write)} notes with Connections (auto)")
 
     if args.dry_run:
-        # show a small preview list
         for p, _ in hubs_to_write[:10]:
             print(f"[hub] {p.relative_to(vault)}")
         if len(hubs_to_write) > 10:
@@ -449,7 +410,6 @@ def main() -> int:
             print(f"... ({len(notes_to_write) - 10} more notes)")
         return 0
 
-    # Apply changes
     if not args.no_hubs and hubs_to_write:
         hubs_folder.mkdir(parents=True, exist_ok=True)
         for p, content in hubs_to_write:
