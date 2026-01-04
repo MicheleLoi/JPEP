@@ -70,7 +70,7 @@ Following Section VI, a conversation with ChatGPT addressed presenting the artic
 
 The conversation shifted to what different reader types would need from methodology documentation. What makes transparency credible to skeptics versus accessible to supporters? How to balance completeness with usability?
 
-These insights about stakeholder expectations became Epistemic Trace 2 (SP4.7.2). What began as presentation strategy generated understanding about documentation design.
+These insights about stakeholder expectations became Epistemic Trace SP4.7.2. What began as presentation strategy generated understanding about documentation design.
 
 This pattern—conversations beginning with one purpose generating insights valuable for another—occurred twice. First, the journal strategy conversation becoming article foundation (SP4.7.1). Second, the LinkedIn discussion becoming stakeholder analysis (SP4.7.2).
 
@@ -78,23 +78,23 @@ This pattern—conversations beginning with one purpose generating insights valu
 
 A recurring pattern involved using conversations as subject matter when developing the documentation system itself.
 
-When establishing the artifact ontology—what document types should exist, how they should relate—conversations about documentation became material for analyzing documentation. The conversation from October 14 (documented in 4.7.5) was later used (October 18-19) as subject matter for analyzing whether the artifact ontology adequately covered all interaction types. The conversation functioned as both generative source and analytical object.
+When establishing the artifact ontology—what document types should exist, how they should relate—conversations about documentation became material for analyzing documentation. The conversation from October 15 (documented in 4.7.5) was later used (October 18-19) as subject matter for analyzing whether the artifact ontology adequately covered all interaction types. The conversation functioned as both generative source and analytical object.
 
 This self-referential pattern appeared throughout documentation development. Testing proposed ontologies required examining actual conversations, which revealed gaps or ambiguities, which led to ontology refinements, which then required testing against conversations. The documentation system developed through examining its own materials.
 
 #### Pattern 3: Branching When Different Work Types Require Different Approaches
 
-Conversation SP4.7.3 (Methodological Conversation, October 12-13) synthesized the Complete Prompt, both epistemic traces, accumulated pattern summaries and modification logs, while addressing a new question: what documentation material types should exist and how should they be organized?
+Conversation SP4.7.3 (October 12-13) synthesized the Complete Prompt, both epistemic traces, accumulated pattern summaries and modification logs, while addressing a new question: what documentation material types should exist and how should they be organized?
 
 This conversation created two parallel development paths.
 
-Path A continued artifact ontology work directly. Conversation 4.7.4 (Artifact Consolidation) refined the four-tier document structure, established naming conventions, and clarified required versus optional materials. This produced Section VIII guidance (4.4.4) focused on structural framework and Review Mechanism design.
+Path A continued artifact ontology work directly. The conversation documented in 4.7.4 refined the four-tier document structure, established naming conventions, and clarified required versus optional materials. This produced Section VIII guidance (4.4.4) focused on structural framework and Review Mechanism design.
 
 Path B proceeded through Section VII's development. Section VII required guidance about discontinuity and design principles. Developing that guidance (SP5.2.2) identified three design principles: ecological validity, good faith orientation, and cost structure as costly signaling. Section VII was written using that guidance.
 
-Writing Section VII produced the complete section plus provisional thoughts about Section VIII. These became inputs for conversation 4.7.5, which developed philosophical grounding for transparency requirements: traditional values in philosophical writing, what opacity destroys, why attribution matters. This produced Section VIII guidance (4.4.6) about philosophical values and disclosure components.
+Writing Section VII produced the complete section plus the initial ideas of section to be later moved in Section VIII. These became inputs for conversation 4.7.5, which developed philosophical grounding for transparency requirements: traditional values in philosophical writing, what opacity destroys, why attribution matters. This produced Section VIII guidance (4.4.5) about philosophical values and disclosure components.
 
-Section VIII received two separate guidance artifacts from two independent development paths: structural framework from Path A, philosophical grounding from Path B.
+Thus, section VIII received two separate guidance artifacts from two independent development paths: structural framework for documentation from Path A, philosophical grounding from Path B.
 
 The branching occurred because structural thinking (artifact ontology) and philosophical thinking (traditional values) developed along different trajectories. Forcing sequential development would have constrained both approaches. The two paths converged in Section VIII because that section required both types of grounding.
 
@@ -123,7 +123,7 @@ All process artifacts (Modification Logs, Pattern Summaries, Section Guidance re
 | Review Mechanism (IX) | 7 |
 
 Throughout this Appendix, both numbers appear where needed: e.g., "Section V (new 3)" helps readers navigate between process artifacts (old) and the final article (new).
-[fig 3]
+[fig 2]
 <figure>
 <img src="media/image3.svg" style="width:6.27014in;height:9.01111in" />
 <figcaption><p>. Writing Flow and Input-Output Relations.</p></figcaption>
@@ -137,7 +137,7 @@ The diagram organizes content by writing phases (major horizontal sections). Nav
 
 **Phase 2 - Main Writing Sequence (Sections I-VI)** Systematic development of core sections using feed-forward methodology. Each section builds on previous work through three mechanisms: pattern summaries extracting insights from completed sections, modification logs tracking evolving understanding, and section-specific guidance documents incorporating accumulated knowledge. Creates cumulative understanding through methodical progression.
 
-**Phase 3 - Further Brainstorming and Parallel Development** SP4.7.3 serves as critical branching point, spawning two independent development streams: artifact consolidation path developing structural frameworks and review mechanisms (SP4.7.4 → SP4.4.4), and philosophical development path proceeding through Section VII toward values and theoretical grounding (SP4.7.5 → SP4.4.6). Prompt Development Logs emerge as documentary practice becomes more sophisticated. Both paths advance simultaneously, developing complementary dimensions.
+**Phase 3 - Further Brainstorming and Parallel Development** SP4.7.3 serves as critical branching point, spawning two independent development streams: artifact consolidation path developing structural frameworks and review mechanisms (SP4.7.4 → SP4.4.4), and philosophical development path proceeding through Section VII toward values and theoretical grounding (SP4.7.5 → SP4.4.5). Prompt Development Logs emerge as documentary practice becomes more sophisticated. Both paths advance simultaneously, developing complementary dimensions.
 
 **Phase 4 - Later Writing (Sections VII-IX)** Section VII develops with guidance from brainstorming phase. Section VIII becomes convergence point, integrating structural framework from artifact consolidation path and philosophical grounding from values development path. Section IX provides conclusion based on accumulated development. Represents synthesis of parallel streams into unified narrative.
 
@@ -245,9 +245,11 @@ Working documents (citation checks, renaming, organizational decisions). Not met
 
 ## A.4 This Article's Supplementary Materials
 
+All supplementary materials are available at: `https://github.com/MicheleLoi/JPEP/tree/main/transparency`
+
 ### Section Numbering Reference Table
 
-To navigate between supplementary materials (which use old numbering) and the final article:
+To navigate between supplementary materials (which use old numbering from the writing process) and the final article:
 
 | Process Artifacts (old) | Final Article (new)                   |
 |-------------------------|---------------------------------------|
@@ -259,215 +261,201 @@ To navigate between supplementary materials (which use old numbering) and the fi
 | § VIII                  | § 6: Mandatory Transparency           |
 | § IX                    | § 7: Review Mechanism                 |
 
-All process documentation uses old Roman numbering. This preserves ecological validity by reflecting the actual process. Use the table above to connect artifacts to final sections.
+All process documentation preserves original section numbers. This reflects the ecological validity principle—documentation shows actual process rather than retrospective reconstruction. Use this table when connecting process artifacts to final sections.
 
-### The Five Supplementary Files
+### The Five Supplementary Packages
 
 #### SP-1: Complete Prompt (Type 1)
 
-~20 pages containing the final synthesized prompt from the prompt development process (documented as records described in SP-5 Part 1). Contents include the full structure (eleven sections), the "laundering" barrier, incentive gradient analysis, the dual solution (discontinuity + mandatory transparency), the dual-reviewer mechanism, tone requirements, and annotated references.
+**Location:** `SP1_CompletePrompt/`
+
+~20 pages containing the final synthesized prompt. Contents include: full argument structure (eleven original sections), the "laundering" barrier analysis, incentive gradient examination, the dual solution (discontinuity + mandatory transparency), dual-reviewer mechanism design, tone requirements (dry philosophical prose), and annotated references with relevance assessments.
 
 Used as constant input throughout old §§ I–VI and VIII; temporarily absent for old § VII (new 5). Reviewer B loads this as the primary input when reproducing.
 
 #### SP-2: Reproduction Package (Type 9)
 
-~15–20 pages synthesized from SP-4 records via preprocessing. Six sections:
+~15–20 pages synthesized from SP-4 materials via preprocessing. Six sections: Architectural Overview, Guidance Patterns Across Sections, Refinement Patterns, Source Integration Approach, Development Flow, and Key Insights Checklist.
 
-- \[optimal pre-processing recipe still being researched, preliminary tests logged as 5.2.6.1, with artifacts 5.3.3-5\]
+[Note: Optimal preprocessing recipe documented in development records; preliminary tests logged as SP5.2.6, with artifacts SP5.3.3–5.]
 
 #### SP-3: Reproduction Guide (Type 10)
 
-~5 pages explaining how to combine SP-1 and SP-2, how to evaluate by trajectory matching (not output matching), the pass threshold (sufficiency with expected refinement gap), time estimates, and when to consult SP-4/SP-5.
+~5 pages explaining: how to combine SP-1 and SP-2 for reproduction, trajectory matching criteria (not output matching), pass threshold specification (sufficiency with expected refinement gap), time estimates (≈5–9 hours total), and guidance on when to consult deeper documentation.
 
-#### SP-4: Process Documentation (~35–55 pages consolidated)
+#### SP-4: Process Documentation
 
-All Type 1–7 materials, organized into seven record parts inside the consolidated Word document(s):
+**Location:** `SP4_ProcessDocumentation/`
+
+All Type 1–7 materials, organized into seven parts (~35–55 pages consolidated):
 
 **Part 1: Complete Prompt (Type 1)**
 
-Record label: CompletePrompt (also represented in SP-1).
+- `4.1_Complete_Prompt.md` — same content as SP-1 (see `SP1_CompletePrompt/`), included here for completeness of process record.
 
 **Part 2: Modification Logs (Type 7)**
 
-4.2.1 ModificationLog_I (Introduction)
+Located in `4.2_ModificationLogs/`
 
-4.2.2 ModificationLog_Section_II
+- `4.2.1_ModificationLog_I_Introduction__S01.md` — Introduction (unchanged in renumbering)
+- `4.2.2_ModificationLog_Section_II__S02.md` — Incentives Analysis (now part of § 2)
+- `4.2.3_ModificationLog_Section_III__S02.md` — Contiguous Approaches (now part of § 2)
+- `4.2.4_ModificationLog_Section_IV__S02.md` — Unfair Reviews (now part of § 2)
+- `4.2.5_ModificationLog_Section_II-III-IV_Consolidation__S02.md` — documents the three-section merger
+- `4.2.6_ModificationLog_Section_V_3__S03.md` — Why Engage (now § 3); contains 13 modification entries
+- `4.2.7_ModificationLog_Section_VI_4__S04.md` — Dilemma Reconsidered (now § 4)
+- `4.2.8_ModificationLog_Section_VII_5__S05.md` — Discontinuity (now § 5)
+- `4.2.9_ModificationLog_Section_VIII_6__S06.md` — Mandatory Transparency (now § 6)
+- `4.2.10_ModificationLog_Section_IX_7__S07.md` — Review Mechanism (now § 7)
+- `4.2.11_ModificationLog_Appendix.md`
+- `4.2.12_ModificationLog_Title_and_Abstract.md`
 
-4.2.3 ModificationLog_Section_III
-
-4.2.4 ModificationLog_Section_IV
-
-4.2.5 ModificationLog_Section II-III-IV_Consolidation
-
-4.2.6 ModificationLog_Section_V (3)
-
-4.2.7 ModificationLog_Section_VI (4)
-
-4.2.8 ModificationLog_Section_VII (5)
-
-4.2.9 ModificationLog_Section_VIII (6)
-
-4.2.10 ModificationLog_Section_IX (7)
-
-4.2.11 ModificationLog_Appendix
-
-4.2.12 ModificationLog_Title_and_Abstract
+Documentation only—not used in forward writing but essential for showing iterative development and user corrections.
 
 **Part 3: Pattern Summaries (Type 4)**
 
-PatternSummary_Section1.md through PatternSummary_Section9.md (old numbering):
+Located in `4.3_PatternSummaries/`
 
-4.3.1 Section II (2)
+- `4.3.1_Section_II_2__S02.md`
+- `4.3.2_Sections_II-III_later_consolidated_into_2__S02.md`
+- `4.3.3_Section_IV_later_consolidated_into_2__S02.md`
+- `4.3.4_Section_V_now_3__S03.md`
+- `4.3.5_Section_VIII_now_6__S06.md`
 
-4.3.2 Sections II-III (later consolidated into 2)
-
-4.3.3 Section IV (later consolidated into 2)
-
-4.3.4 Section V (now 3)
-
-4.3.5 Section VIII (now 6)
+Used in forward writing as accumulating resource. Extracted from Modification Logs to identify generalizable lessons (epistemic humility for a priori claims, anti-redundancy approaches, attribution precision).
 
 **Part 4: Section Guidance (Type 3)**
 
-SectionGuidance_Section1.md through SectionGuidance_Section9.md (old numbering), plus SectionGuidance_Appendix.md:
+Located in `4.4_SectionGuidance/`
 
-4.4.1 Part 1: before the first full draft
+- `4.4.1_For_Section_IV_S02.md`
+- `4.4.2_For_Section_VI_S03.md` — guidance for old § V (now § 3) and old § VI (now § 4)
+- `4.4.3_For_Section_VII_now_5_from_SP5.2.2__S05.md`
+- `4.4.4_For_Section_VIII-A_now_6_from_5.2.1__S06.md` — structural framework from artifact consolidation path
+- `4.4.5_For_Section_VIII-B_from_Sideway_chat.md` — philosophical grounding from values development path
+- `4.4.6_For_Section_IX_now_7_S7.md`
+- `4.4.7_For_Conclusion.md`
+- `4.4.8_Section_6_Revision_Guidance__S06.md`
+- `4.4.9_Section_Guidance_Consolidate_Section_2_Systemic_Barriers__S02.md`
+- `4.4.10_Section_Guidance_Introduction_tone_changes_and_Section_IV__S01-02.md`
+- `4.4.11_Trajectory_Claims_Check_full_paper_analysis.md`
+- `4.4.12_From_Draft_1_Appendix_to_Appendix_A.md`
+- `4.4.13_From_Full_Draft_Appendix_to_Section_6__S06.md`
 
-4.4.2 For Section IV (both consolidated into 2 later)
-
-4.4.3 For Section V (now 3) for Section VI (now section 4)
-
-4.4.4 For Section VIII-A (now 6) from 5.2.1
-
-4.4.5 For Section VII \[now 5\] (from SP5.2.2)
-
-4.4.6 For Section VIII-B and Section IX guidance
-
-4.4.6.i For Section VIII-B \[now 6\] (from 5.2.3)
-
-4.4.6.ii From Section VIII \[now 6\] to Section IX \[now 7\]
-
-4.4.7 From section IX \[7\] to Conclusion
-
-4.4.8 Section Guidance: Introduction (tone changes) and Section IV
-
-4.4.9 Section 6 Revision Guidance
-
-4.4.10 Section Guidance: Consolidate Section 2 (Systemic Barriers)
-
-4.4.11 Trajectory Claims Check (full paper analysis)
-
-4.4.12 From Draft 1 (−Appendix) to Appendix A
-
-4.4.13 From Full Draft (+Appendix) to Section 6
+Created either via preliminary chat sessions or at end of previous section. Used in forward writing and documentation of section connections.
 
 **Part 5: Section Summaries (Type 5)**
 
-SectionSummary_Section1.md through SectionSummary_Section9.md (old numbering):
+Located in `4.5_SectionSummaries/`
 
-4.5.1 Introduction
+- `4.5.1_SectionSummary_Introduction__S01.md`
+- `4.5.2_SectionSummary_Section_II__S02.md`
+- `4.5.3_SectionSummary_Section_III__S02.md`
+- `4.5.4_SectionSummary_Section_IV__S02.md`
+- `4.5.5_SectionSummary_Section_V__S03.md`
+- `4.5.6_SectionSummary_Section_VI__S04.md`
+- `4.5.7_SectionSummary_Section_VIII__S06.md`
+- `4.5.8_SectionSummary_Section_IX__S07.md`
+- `4.5.9_SectionSummary_Conclusion__S10.md`
 
-4.5.2 Section II (later 2)
-
-4.5.3 Section III (later 2)
-
-4.5.4 Section IV (later 2)
-
-4.5.5 Section V (later 3)
-
-4.5.6 Section VI (later 4)
-
-4.5.7 Section VIII (later 6)
-
-4.5.8 Section IX (later 7)
+Used in forward writing to maintain continuity and document argument flow.
 
 **Part 6: Reference Logs (Type 6)**
 
-4.6.1 Complete citations by section
+Located in `4.6_ReferenceLogs/`
 
-4.6.2 Complete References
+- `citations-complete.md`
+- `paper_bibliography.md`
+- `references_doc.md`
+- `references-master-list.md`
+- `section5_refs.md`
+
+Used in forward writing to avoid redundancy and track source engagement.
 
 **Part 7: Epistemic Traces (Type 2)**
 
-4.7.1 Original Text Conversation Extract (Redacted)
+Located in `4.7_EpistemicTraces/`
 
-4.7.2 Original text conversation on how to make the paper visible and useful for different stakeholders
+Foundational documents characterized by one-to-many influence—created asynchronously to linear section writing and shaping multiple downstream outputs.
 
-4.7.3 Preliminary Chat
+- `4.7.1_OriginalTextConversationExtract_Redacted.md` — article's generative origin (redacted for privacy)
+- `4.7.2_OriginalTextConversation_VisibilityAndStakeholders.md` — stakeholder expectations analysis
+- `4.7.3_PreliminaryChat_1.md` — critical branching point spawning parallel development paths
+- `4.7.4_PreliminaryChat_2.md` — artifact consolidation path development
+- `4.7.5_PreliminaryChat_3.md` — philosophical grounding development
+- `4.7.6.1_primitive_artifacts_description.md` — artifact ontology expansion
+- `4.7.6.2_EpistemicTrace_Testing_CanonicalTypeDescriptionProduction.md` — Type 8 distinction crystallization
+- `4.7.7_ChatGPT_EvaluationsOfFullPaper.md` — external AI evaluation (index file)
+- `4.7.7.1_IsThisAISlop_1.md`
+- `4.7.7.2_IsThisAISlop_2.md`
+- `4.7.7.3_IsThisAISlop_3.md`
+- `4.7.7.4_Integrating_Technological_Observations_into_JPEP.md`
 
-4.7.4 Preliminary Chat
+#### SP-5: Development Records
 
-4.7.5 Preliminary Chat
+**Location:** `SP5_DevelopmentRecords/`
 
-4.7.6 Epistemic Trace: Discovery of the Epistemic trace / (Session) prompt development log distinction / Crystallization of the Distinction
+Contains Type 8 (Prompt Development Logs) + Type 11 (Notes)—the meta-level documentation of how instructions evolved (~10–15 pages).
 
-4.7.6.1 Step 1. Note: Artifact Ontology Expansion — Type 2b
+**Part 1: Paper Prompt Development Log (Type 8a)**
 
-4.7.6.2 Step 2. Introduces Type 8 Distinction and Section Prompt Development Logs
+Located in `5.1_PaperPromptDevelopmentLog_Type8a/`
 
-4.7.6.3 Step 3. Testing and "canonical type description" production
+- `5.1_paper_prompt_development_log.md` — Complete Prompt development showing how Epistemic Traces evolved into Type 1. Structured decision tracking with PDL-XXX format (≈17 entries).
 
-4.7.7 Chat GPT evaluations of the full paper
+**Part 2: Section Prompt Development Logs (Type 8b)**
 
-4.7.7.1 Is this AI slop? (Chat GPT)
+Located in `5.2_SectionPromptDevelopmentLogs_Type8b/`
 
-4.7.7.2 Is this AI slop (2)? (Chat GPT)
+Shows how Epistemic Traces (Type 2 preliminary chats) became Section Guidance (Type 3). Structured logs documenting refinement process.
 
-4.7.7.3 Is this AI Slop (3)? (Chat GPT)
+- `5.2.1_pdl_section_viii_now_6_A.md` — Section VIII (now 6) guidance development, structural path
+- `5.2.2_pdl_section_vii_now_5.md` — Section VII (now 5) guidance; tracks defensive→constructive reframing
+- `5.2.3_pdl_section_viii_now_6_B_transparency.md` — Section VIII (now 6) guidance, philosophical path
+- `5.2.4_pdl_Appendix_a_initial_steps.md`
+- `5.2.5_pdl_section_6_after_review.md` — post-review revision guidance
+- `5.2.6_first_development_sp2.md` — SP-2 methodology design
+- `5.2.7_pdl_appendix_1.md`
+- `5.2.8_pdl-appendix-2.md`
+- `5.2.9_pdl_appendix_overall.md`
 
-4.7.7.4 Infrastructure Limitations and Transparency Framework
+**Part 3: Notes (Type 11)**
 
-#### SP-5: Development Records (~10–15 pages)
+Located in `5.3_Notes_Type11/`
 
-Contains ONLY Type 8 (Prompt Development Logs) + Type 11 (Notes) — the meta-level documentation of how instructions evolved.
+Working documents supporting organization and integrity—not methodologically central but available for inspection.
 
-**SP5.1: Paper Prompt Development Log (Type 8a)**
-
-Complete Prompt development — shows how Epistemic Traces (SP-4 Part 7) evolved into Complete Prompt (Type 1). Structured decision tracking with PDL-XXX format.
-
-**SP5.2: Section Prompt Development Logs (Type 8b)**
-
-Shows how Epistemic Traces (Type 2 preliminary chats in SP-4 Part 7) became Section Guidance (Type 3). Structured logs documenting refinement process, NOT the exploratory dialogue itself.
-
-1.  SP5.2.1 Prompt Development Log: Section VIII \[now 6\] Guidance (A-4.4.4)
-
-2.  SP5.2.2 Prompt Development Log: Section VII \[now 5: "Signalling Discontinuity"\] Guidance
-
-3.  SP5.2.3 Prompt Development Log: Section VIII \[now 6\] Guidance (B-4.4.6)
-
-4.  SP5.2.4 Prompt Development Log: Appendix A
-
-5.  SP5.2.5 Prompt Development Log: Section 6 (after full paper review)
-
-6.  SP5.2.6 Reproduction Pack: Methodology Design Conversation
-
-    - SP5.2.6.1 First attempt (during 4.7.3)
-
-    - SP5.2.6.2 Second attempt (after paper completion)
-
-    - SP5.2.6.3 Final attempt (delivering SP3 definitive items)
-
-**SP5.3: Notes (Type 11)**
-
-1.  SP5.3.1 Note: Artifact Ontology Expansion - Type 2b
-
-2.  SP5.3.2 Canonical Description of the Final Document Type Ontology
-
-3.  SP5.3.3 Proto-Generative Prompt for SP-2.1 (functionally equivalent to SP5.4)
-
-4.  SP5.3.4 Experimental Proto-Reproduction Package (Sections 1-3)
-
-5.  SP5.3.5 First Proto-Reviewer Prompt
+- `5.3.1_Artifact_ontology_expansion.md`
+- `5.3.2_canonical_description.md` — final document type ontology
+- `5.3.3_proto_generative_prompt_x.md` — functionally equivalent to SP-2 generation prompt
+- `5.3.4_experimental_reproduction_prompt.md` — test reproduction (Sections 1–3)
+- `5.3.5_first_proto_reviewer_prompt.md`
+- `5.3.6_Artifact_1_Appendix_A_Documentation_Structure_and_Reproduction_Procedure.md`
+- `5.3.7_Artifact_2_Figure_Prompts_for_Appendix_A.md`
+- `5.3.8_epistemic_trace_emergence_crystallization.md`
+- `5.3.9_architectural_guidance.md`
+- `5.3.10_section8_guidance.md`
+- `5.3.11_reproduction_pack_demonstration.md`
+- `5.3.12_section_guidance_1_and_6.md`
+- `5.3.13_appendix_guidance_rewritten.md`
+- `5.3.14_AppendixA_Writing_Reconstruction.md`
+- `5.3.15_section5_synthesis.md`
+- `5.3.16_abstract_revision_log.md`
+- `5.3.17_nov3_complete_revision_summary.md`
+- `5.3.18_ModificationLog_Appendix_A2.md`
+- `II_5.3.1_necessary_corrections_to_appendix_in_draft_II.md`
+- `II_5.3.2_Complete_Appendix_Writing_Process.md`
+- `II.5.3.3_A4_rewritten.md`
 
 ### Total Volume and Organizational Logic
 
-Approximately 80–110 pages across the five supplementary documents. For basic reproduction, Reviewer B typically needs ~25–45 pages (SP-1, SP-2, SP-3).
+Approximately 80–110 pages across the five supplementary packages. For basic reproduction, Reviewer B typically needs ~25–45 pages (SP-1, SP-2, SP-3).
 
-• SP-4 contains the writing process itself: what guided the work (Complete Prompt, Section Guidance), what changed (Modification Logs), what was learned (Pattern Summaries), what ensured continuity (Section Summaries, Reference Logs), and the foundational traces (Epistemic Traces).
+SP-4 contains the writing process itself: what guided the work (Complete Prompt, Section Guidance), what changed (Modification Logs), what was learned (Pattern Summaries), what ensured continuity (Section Summaries, Reference Logs), and the foundational traces (Epistemic Traces).
 
-• SP-5 documents how guidance evolved: how exploratory material (Type 2) became actionable instructions (Type 1 and Type 3) via structured refinement (Type 8), plus integrity-supporting notes (Type 11).
+SP-5 documents how guidance evolved: how exploratory material (Type 2) became actionable instructions (Type 1 and Type 3) via structured refinement (Type 8), plus integrity-supporting notes (Type 11).
 
-*This separation keeps Artifacts used in the writing progress (SP-4) distinct from the documentation of the evolution of instructions (SP-5).*
+This separation keeps artifacts used in the writing process (SP-4) distinct from documentation of the evolution of instructions (SP-5).
 
 ## A.5 Guide to Using Supplementary Materials
 
