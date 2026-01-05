@@ -1,0 +1,22 @@
+name: File list by last commit
+on:
+  workflow_dispatch:
+
+jobs:
+  filelist:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0   # important: full history for accurate last-commit times
+      - name: Generate list
+        run: |
+          git ls-files -z \
+            | xargs -0 -n1 -I{} git log -1 --format="%ai %h {}" -- {} \
+            | sort -r > filelist.txt
+          head -n 50 filelist.txt
+      - name: Upload
+        uses: actions/upload-artifact@v4
+        with:
+          name: filelist
+          path: filelist.txt
