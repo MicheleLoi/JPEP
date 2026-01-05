@@ -443,6 +443,8 @@ Working documents supporting organization and integrity—not methodologically c
 - `5.3.16_abstract_revision_log.md`
 - `5.3.17_nov3_complete_revision_summary.md`
 - `5.3.18_ModificationLog_Appendix_A2.md`
+- `5.3.19_pdl-appendix-a.md`
+- `5.3.20_modification_tracker_appendix_commentary.md`
 - `II_5.3.1_necessary_corrections_to_appendix_in_draft_II.md`
 - `II_5.3.2_Complete_Appendix_Writing_Process.md`
 - `II.5.3.3_A4_rewritten.md`
