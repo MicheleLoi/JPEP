@@ -2,6 +2,7 @@
 source chat name:"Rewriting A4 with project context"
 source chat ID:"19858433-c393-4c1b-bd8d-cf6e16cdb062"
 date:"2026-03-01"
+---
 
 
 ## A.4 This Article's Supplementary Materials
