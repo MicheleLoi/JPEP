@@ -1,8 +1,12 @@
+---
+Available on https://arxiv.org/abs/2511.08639v1
+---
+
 **Michele Loi, PhD**  
 University of Milan  
 michele.loi@unimi.it
 
-**Version 1**  
+**Version 1** 
 10 November 2025
 
 **Abstract**
