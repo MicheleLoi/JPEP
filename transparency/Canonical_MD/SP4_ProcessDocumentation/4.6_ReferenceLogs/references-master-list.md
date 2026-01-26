@@ -30,6 +30,22 @@ Rini, R. (2025). "Chatbottery." Afterthoughts column, The Times Literary Supplem
 
 Science. (2023). "Science Journals: Editorial Policies." https://www.science.org/content/page/science-journals-editorial-policies
 
+## For Section 3 (Stage III Revision) - Added 2026-01-26 via Claude Code
+
+### Essentially Contested Concepts
+Gallie, W. B. (1956). "Essentially Contested Concepts." *Proceedings of the Aristotelian Society*, 56, 167–198. https://doi.org/10.1093/aristotelian/56.1.167
+
+### Meaningful Human Control
+Santoni de Sio, F., & van den Hoven, J. (2018). "Meaningful Human Control over Autonomous Systems: A Philosophical Account." *Frontiers in Robotics and AI*, 5, 15. https://doi.org/10.3389/frobt.2018.00015
+
+### Nature of Activities and Enhancement
+Santoni de Sio, F., Faber, N. S., Savulescu, J., & Vincent, N. A. (2016). "Why Less Praise for Enhanced Performance? Moving Beyond Responsibility-Shifting, Authenticity, and Cheating Toward a Nature-of-Activities Approach." In S. Nagel (ed.), *Handbook of Neuroethics*. Oxford: Oxford University Press, pp. 27–41.
+
+### Epistemic Responsibility
+Lloyd, D. (2025). "Epistemic responsibility: toward a community standard for human-AI collaborations." *Frontiers in Artificial Intelligence*, 8, 1635691. https://doi.org/10.3389/frai.2025.1635691
+
+---
+
 ## For Section 5 (Positive Motivations)
 
 ### Classical Sources on Wonder
