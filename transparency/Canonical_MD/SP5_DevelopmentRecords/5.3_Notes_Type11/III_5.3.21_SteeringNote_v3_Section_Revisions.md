@@ -37,11 +37,11 @@ This note steers the process of drafting revised Sections 3 and 6 for the JPEP p
 - [x] Add "unknown future skills" concept to both guidance files
 - [x] Create this steering note
 
-### Phase 2: Git Setup (PENDING)
-- [ ] Create branch `III-v3-mhc-revision`
-- [ ] Create folder structure: `SP5_DevelopmentRecords/5.4_SectionDrafts/`
-- [ ] Create index file for 5.4
-- [ ] Verify git status shows clean working tree on new branch
+### Phase 2: Git Setup (COMPLETE)
+- [x] Create branch `III-v3-mhc-revision` (2026-01-26)
+- [x] Create folder structure: `SP5_DevelopmentRecords/5.4_SectionDrafts/` (2026-01-26)
+- [x] Create index file for 5.4 (2026-01-26)
+- [x] Verify git status shows branch III-v3-mhc-revision (2026-01-26)
 
 ### Phase 3: Section Drafting (PENDING)
 - [ ] Draft Section 3 using guidance file → save to `5.4_SectionDrafts/III_5.4.1_Section3_v3.md`
@@ -202,7 +202,9 @@ git push
 |------|--------|--------|-------|
 | 2026-01-26 | Created PDL and guidance files | Complete | Phase 1 done |
 | 2026-01-26 | Created this steering note | Complete | Modeled on epistemic constitutional AI |
-| | Git branch creation | Pending | |
+| 2026-01-26 | Committed prep files to main | Complete | 8 files, commit 26cba4c |
+| 2026-01-26 | Created branch III-v3-mhc-revision | Complete | Phase 2 done |
+| 2026-01-26 | Created 5.4_SectionDrafts folder + index | Complete | Type 12 artifacts |
 | | Section 3 drafting | Pending | |
 | | Section 6 drafting | Pending | |
 | | Integration | Pending | |
