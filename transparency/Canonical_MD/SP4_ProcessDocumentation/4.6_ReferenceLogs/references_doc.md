@@ -102,7 +102,47 @@ https://doi.org/10.1016/0149-7189(79)90048-X
 
 ---
 
-## Section V: Why Engage with AI-Assisted Scholarship?
+## Section III: Why Engage with AI-Assisted Scholarship? (Stage III Revision)
+
+*Added: 2026-01-26 via Claude Code (no chat ID)*
+
+### Essentially Contested Concepts
+
+**Gallie, W. B. (1956).** "Essentially Contested Concepts." *Proceedings of the Aristotelian Society*, 56, 167–198.
+https://doi.org/10.1093/aristotelian/56.1.167
+**Usage:** Philosophy as essentially contested concept—what counts as "doing philosophy" is itself philosophically contested. Therefore whether AI changes philosophy continuously or discontinuously cannot be settled without settling what philosophy is.
+**Status:** TO BE ADDED - Section III rewrite
+
+---
+
+### Meaningful Human Control
+
+**Santoni de Sio, F., & van den Hoven, J. (2018).** "Meaningful Human Control over Autonomous Systems: A Philosophical Account." *Frontiers in Robotics and AI*, 5, 15.
+https://doi.org/10.3389/frobt.2018.00015
+**Usage:** MHC framework (tracking/tracing conditions) transferred to AI-assisted scholarship. Tracing condition operationalized through reproduction test.
+**Status:** TO BE ADDED - Section III and Section VI
+
+---
+
+### Nature of Activities and Enhancement
+
+**Santoni de Sio, F., Faber, N. S., Savulescu, J., & Vincent, N. A. (2016).** "Why Less Praise for Enhanced Performance? Moving Beyond Responsibility-Shifting, Authenticity, and Cheating Toward a Nature-of-Activities Approach." In S. Nagel (ed.), *Handbook of Neuroethics*. Oxford: Oxford University Press, pp. 27–41.
+**Usage:** Nature-of-activities approach—whether enhancement changes an activity depends on which rules are constitutive vs regulative, and what level of description is adopted. Analogous to AI-assisted philosophy: whether AI changes what "philosophizing" is depends on what is constitutive of philosophy—which is contested.
+**Key concepts:** Constitutive vs regulative rules; coarse-grained vs fine-grained descriptions; practice-oriented vs goal-directed activities.
+**Status:** TO BE ADDED - Section III rewrite (core analogical framework)
+
+---
+
+### Epistemic Responsibility and Community Standards
+
+**Lloyd, D. (2025).** "Epistemic responsibility: toward a community standard for human-AI collaborations." *Frontiers in Artificial Intelligence*, 8, 1635691.
+https://doi.org/10.3389/frai.2025.1635691
+**Usage:** Four standards for AI transparency (prominence, replicability, content cross-checking, intra-textual clarity). Paper's approach differs: rejects "demarcation of text" as relying on primitive view of AI assistance; emphasizes process documentation over text-level marking.
+**Status:** TO BE ADDED - Section III and/or Section VI (engagement with competing approach)
+
+---
+
+## Section V: Why Engage with AI-Assisted Scholarship? (Legacy - see Section III above)
 
 ### Classical Sources
 
