@@ -13,3 +13,6 @@
 # consenti transparency (tutto)
 !transparency/
 !transparency/**
+
+# escludi esplicitamente le conversazioni Claude Code (dati di sessione locali)
+claude code conversations/

@@ -515,3 +515,65 @@ All Section Guidance prompts must be self-sufficient OR include explicit pointer
 **Process documentation:**
 - III_5.3.21_SteeringNote_v3_Section_Revisions.md (git workflow + progress tracking)
 - III_4.7.2_WorkingDrafts_Belong_to_SP5.md (epistemic trace on artifact placement)
+
+
+---
+
+## Phase 4: Drafting Attempts and Guidance Revision
+
+*Added: 2026-01-28 via Claude Code / Claude Opus 4.5*
+
+### PDL-012: Section 3 Draft — Successful
+
+**Date:** 2026-01-28
+**Output:** III_5.4.1_Section3_v3.md
+**Source guidance:** III_4.4.4_SectionGuidance_Section3_EssentiallyContested.md
+
+Section 3 was a complete rewrite (as specified in guidance). The guidance was self-sufficient: it contained the full argumentative structure, key references, and all conceptual content needed. The drafting AI produced a ~950-word draft following the guidance structure. Author reviewed and manually edited the draft.
+
+**Outcome:** Draft accepted after manual edits.
+
+### PDL-013: Section 6 Draft — FAILED
+
+**Date:** 2026-01-28
+**Output:** III_5.4.2_Section6_v3.md (defective — to be replaced)
+**Source guidance:** III_4.4.5_SectionGuidance_Section6_MHC.md (original version)
+
+**What went wrong:** The drafting AI produced a blank-slate rewrite of Section 6 without reading the existing version. The guidance file listed the existing paper as "optional reading" under "Source Documents for Drafting AI." The AI treated this as permission to ignore it.
+
+**What was lost:**
+- Discovery/justification framework critique (Reichenbach)
+- Traditional philosophical values discussion (Williams, Cavell, Nozick, Lewis examples)
+- Attribution argument ("whose thought you're following")
+- Connection to Section 5 design principles
+- Three functions of disclosure
+- Concrete implementation (paper as demonstration)
+- Experimental development framing (6.3)
+- Pilot observations (6.4)
+- The entire subsection structure (6.1-6.4)
+
+**Root cause:** The guidance distinguished Section 3 ("COMPLETE REWRITE") from Section 6 ("SIGNIFICANT REVISION") but did not enforce reading the existing version. The existing content was listed under "optional reading" alongside other reference materials.
+
+**Lesson:** For revision tasks (as opposed to complete rewrites), guidance must:
+1. Make reading the existing version **mandatory**, not optional
+2. Specify what to **keep**, what to **modify**, and what to **add**
+3. List hard constraints on existing content that must not be lost
+4. Treat SP-1 through SP-5 as fixed framework constraints
+
+### PDL-014: Guidance Revision
+
+**Date:** 2026-01-28
+**File revised:** III_4.4.5_SectionGuidance_Section6_MHC.md
+
+**Changes made:**
+1. Added `CRITICAL INSTRUCTION` block requiring mandatory reading of existing Section 6
+2. Added `Hard Constraints` section listing all v1 content to preserve, organized by subsection (6.1-6.4)
+3. Added `SP-1 through SP-5: Fixed Framework` as top-level hard constraint
+4. Added `What the Revision ADDS` section separating new MHC content from preserved content
+5. Restructured `Argumentative Structure` to use KEEP/REVISE/ADD format for each subsection
+6. Added preservation checks to `Draft Checklist`
+7. Moved existing paper from "optional reading" to `MANDATORY Reading` section
+8. Added `Revision History` table documenting the change and its reason
+9. Changed header from "SIGNIFICANT REVISION" to "SIGNIFICANT REVISION (NOT a complete rewrite)"
+
+**Constraint identified (2026-01-28):** SP-1 through SP-5 as specified in v1 are hard constraints on the entire paper — all revisions ground the existing apparatus, they do not redesign it.
