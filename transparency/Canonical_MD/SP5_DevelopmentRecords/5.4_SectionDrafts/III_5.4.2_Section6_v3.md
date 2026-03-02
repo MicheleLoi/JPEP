@@ -1,93 +1,98 @@
 ---
 project: JPEP
 document_type: Type 12 - Section Draft
-section: "6 - Mandatory Transparency in Practice"
+section: "6 - Mandatory Transparency in Practice (MHC Integration)"
 version: v3 (Stage III revision)
-date_created: 2026-01-28
+date_created: 2026-03-02
 status: Draft
-source: "Claude Code / Claude Opus 4.5"
-source_guidance: "III_4.4.5_SectionGuidance_Section6_MHC.md"
+source: "Claude Code / Claude Sonnet 4.6"
+source_guidance: "III_4.4.5_SectionGuidance_Section6_MHC.md (revised 2026-01-28)"
 target_location: "Paper/MDversion/Full paper2511.08639v3.md"
 word_count: ~1400
+revision_note: "Replaces defective first draft (2026-01-28). This draft reads existing Section 6 (6.1-6.4) before drafting and preserves all hard-constraint content from v1."
 ---
 
 # Section 6: Mandatory Transparency in Practice
 
-## From Meta-Philosophy to Operational Requirements
+## 6.1 From Principles to Practice
 
-Section 3 argued that we cannot settle whether AI changes philosophy, because "philosophy" is an essentially contested concept—what counts as doing philosophy is itself philosophically disputed. The achievable goal is more modest: to track what philosophy is becoming by ensuring that AI-assisted work is produced with sufficient transparency for the scholarly community to observe, compare, and evaluate different modes of philosophical production.
+Section 3 established that the question of whether AI changes philosophy admits of no neutral adjudication—"philosophy" is an essentially contested concept, and any answer presupposes settling what the discipline constitutively is. The achievable goal is more modest: tracking what philosophy is becoming. This requires transparency. But what kind of transparency? Not every form of disclosure serves this goal equally. What is needed is transparency that ensures philosophical work produced under AI assistance remains *attributable to human intellectual agency*—and the Meaningful Human Control (MHC) framework specifies what this requires.
 
-But what kind of transparency? Not every form of disclosure serves this goal equally. What is needed is transparency that ensures philosophical work produced under AI assistance remains *attributable to human intellectual agency*—that the resulting arguments, commitments, and contributions can be traced to a human who understood, directed, and can defend them. This is the function of the transparency apparatus proposed in this paper, and it can be grounded in a framework originally developed for a very different domain.
+Santoni de Sio and van den Hoven (2018) developed MHC for autonomous weapons systems, but the framework transfers structurally to AI-assisted scholarship. It identifies two necessary conditions. The **tracking condition** requires that system outputs covary with the human operator's relevant reasons—the system must be responsive to the intentions and corrections of those directing it. For scholarship, this is satisfied when the AI follows the author's intellectual direction and can be redirected when it drifts. The **tracing condition** is more demanding: outputs must be traceable to proper understanding and endorsement by some human person. As Santoni de Sio and van den Hoven put it, "systems whose actions and states are not traceable to relevant understanding and endorsing by some human person—be they a designer, a controller, a user, etc.—no matter how intelligent and reason-responsive they may be, are not under meaningful human control. They would be like human actions carried out under psychological manipulation, subliminal persuasion, brainwashing, and indoctrination" (§6.2). Tracing requires not merely that the system followed instructions, but that the directing person *understood* what was being produced and *endorses* it as their own intellectual contribution.
 
-## Meaningful Human Control: Tracking and Tracing
+Tracing presents the distinctive challenge for scholarship. Tracking is relatively easy: if the author iterates with the AI—posing questions, correcting outputs, redirecting argumentation—the result will generally track their intentions. Tracing is harder. A soldier might press a button causing a drone strike—tracking is satisfied—but if the soldier did not understand what the weapon would do or what the consequences would be, tracing fails. The action cannot be attributed to the soldier's agency. For scholarship: an author might prompt an AI to generate an argument. But if the author cannot explain why the argument works, defend it against objections, or identify its philosophical commitments, tracing fails. The intellectual contribution cannot be attributed to the author's understanding.
 
-Santoni de Sio and van den Hoven (2018) developed the concept of *meaningful human control* (MHC) to address autonomous weapons systems. Their framework identifies two necessary conditions for human actions mediated by autonomous systems to remain genuinely under human control.
+Before specifying what transparency means in practice, the scholarly values motivating these requirements deserve clarification. What we do *not* argue is as important as what we do.
 
-The first is the **tracking condition**: the system's behavior must covary with relevant human reasons. Drawing on Fischer and Ravizza's (1998) theory of guidance control and Nozick's tracking theory of knowledge, this condition requires that the system be responsive to the intentions, goals, and corrections of the humans directing it. For AI-assisted scholarship, the tracking condition is satisfied when the AI output is responsive to the author's argumentative goals—when the system follows the author's intellectual direction and the author can redirect it when it drifts.
+We do not work within the traditional discovery/justification framework (Reichenbach, 1938). That binary—context of discovery versus context of justification—proves inadequate for understanding what scholarly evaluation actually does. Article evaluation never assessed merely whether arguments are valid. It always also assessed thinking quality: Does this work show sophisticated judgment? Methodological competence? Understanding of what matters? These dimensions require assessing process, not because process affects truth-value, but because thinking quality is part of what we evaluate. The discovery/justification distinction obscured this dimension.
 
-The second is the **tracing condition**: the system's outputs must be traceable to proper understanding and endorsement by some human person. As Santoni de Sio and van den Hoven put it, "systems whose actions and states are not traceable to relevant understanding and endorsing by some human person—be they a designer, a controller, a user, etc.—no matter how intelligent and reason-responsive they may be, are not under meaningful human control. They would be like human actions carried out under psychological manipulation, subliminal persuasion, brainwashing, and indoctrination" (2018, §6.2). The tracing condition demands not merely that the system followed instructions, but that the person directing it *understood* what was being produced and *endorsed* it as their own intellectual contribution.
+We do not prioritize gaming resistance over ecological validity. While accountability matters, we explicitly choose procedures that work naturally in honest scholarly practice over maximum surveillance. Gaming-focused design creates unacceptable costs: surveillance bureaucracy burdens honest scholars, arms races between gaming and countermeasures, adversarial atmosphere preventing methodological experimentation. The real threat is opacity preventing knowledge accumulation, not gaming in a venue offering no career benefits.
 
-## Why Tracing Is the Distinctive Challenge
+We do not propose studying AI as the primary goal (Level 1). This venue (Level 2) treats philosophical quality as non-negotiable, uses AI methodology to serve philosophical goals, and serves philosophers doing philosophy. The disclosure requirements enable methodological learning about philosophy, not about AI systems.
 
-Both conditions are necessary, but tracing presents the distinctive challenge for scholarship. Tracking is relatively straightforward to satisfy: if the author iterates with the AI system—posing questions, correcting outputs, redirecting argumentation—the resulting work will generally track the author's intentions. The output covaries with the author's intellectual direction.
+We do not argue from moral desert, from economic necessity, or that traditional venues should adopt these practices. The transparency requirements serve specific purposes for AI-assisted work where opacity creates unique epistemic problems.
 
-Tracing is harder. Even when tracking is satisfied, the author might not understand the resulting work well enough to own it. A parallel from the weapons domain makes this concrete: a soldier might press a button that causes a drone strike—the system tracked the command—but if the soldier did not understand what the weapon would do or what the consequences would be, tracing fails. The action cannot be properly attributed to the soldier's agency.
+The requirements actualize traditional values that opacity under AI production threatens. Philosophy has always valued guided thought—showing readers not just conclusions but reasoning processes. Williams's engagement with Greek tragedy, Cavell's pairing of ordinary language philosophy with film criticism, Nozick's deployment of decision theory in ethics, Lewis's systematic bridge-building between modal logic and metaphysics—each citation pattern constitutes an implicit methodological proposal about what resources matter for philosophy. Philosophy values intellectual honesty: admitting uncertainty, acknowledging objections, revealing limits. It values methodological self-consciousness: Socratic dialogue, phenomenological description, reflective equilibrium matter as contributions.
 
-For scholarship: an author might prompt an AI to produce an argument that the AI generates competently. The output tracks the prompt. But if the author cannot explain why the argument works, defend it against objections, or identify its philosophical commitments, the tracing condition fails. The intellectual contribution cannot be properly attributed to the author's understanding.
+These values require attribution to function. When reading excellent philosophy, you must know whose thought you're following to learn from the example. Opacity under AI production destroys these values even when no fraud occurs. You cannot distinguish genuine intellectual struggle from AI rhetorical polish, cannot tell whether architectural elegance reflects human understanding or AI optimization, cannot assess whose judgment displays in the text. For citation patterns, you cannot determine whether connections reflect authorial insight or AI's training co-occurrences, cannot learn from methodological exemplars without knowing whose moves they are. Attribution becomes epistemically necessary, not merely ethically required. This is precisely what the tracing condition captures: the transparency requirements operationalize the condition under which philosophical contributions remain genuinely attributable to human intellectual agency.
 
-## Operationalizing Tracing: The Transparency Apparatus
+The three principles from Section 5—ecological validity, good faith orientation, cost structure through costly signaling—implement these traditional values under AI-mediated conditions. The transparency apparatus specified in 6.2 makes that implementation verifiable.
 
-The paper's transparency requirements—the five Submission Packages (SP-1 through SP-5)—are designed to make the tracing condition verifiable. Each element serves a specific function in this verification:
+## 6.2 The Transparency Framework
 
-**SP-1 (Declaration)** signals that tracing assessment is needed. By declaring AI involvement prominently, the author alerts reviewers and readers that the work's intellectual trajectory involves non-human components.
+Disclosure requirements must balance three functions: *verification* (establishing authorship and accountability), *methodological learning* (enabling community understanding of effective practices), and *preservation of traditional philosophical values* (maintaining attribution, guided thought, and thinking quality assessment). The framework requires accessibility—scholars without technical training must find documentation feasible.
 
-**SP-2 (Tool Specification)** documents which AI systems were used and when, enabling reproduction attempts and establishing the technological context of the work.
+Three components structure the disclosure: model and process information establishes technological context and role boundaries; representative prompts and outputs show the author's inputs and what they worked with; process narrative provides a reflective account of the intellectual journey. Together these materials enable tracing assessment while remaining ecologically valid—emerging naturally from thoughtful scholarly work rather than imposing artificial surveillance.
 
-**SP-3 (Contribution Summary)** identifies what the AI contributed, delineating what must be traceable to the author's understanding and direction.
+This article provides a concrete implementation. The supplementary materials include: identification of the AI systems used; the complete synthesized prompt that structured the article's development; representative excerpts from exploratory conversations where key ideas emerged; documentation of how sections were written showing human guidance patterns and AI contribution; and a reflective account of what worked, what proved difficult, where judgment operated. No technical expertise is required—the documentation consists of text files, conversation excerpts, reflective writing. Non-technical philosophers can produce similar materials through ordinary reflection on their process.
 
-**SP-4 (Process Documentation)** provides the substance of tracing verification. Prompts, iterative corrections, guidance documents, and decision points constitute the material record against which tracing is assessed. Without process documentation, tracing cannot be verified—there is only the author's unsubstantiated claim that they understood and directed the work.
+The five transparency elements—SP-1 through SP-5—each serve the tracing condition:
 
-**SP-5 (Development Records)** preserves the full interaction history, enabling deep tracing assessment when questions arise about specific argumentative moves or contributions.
+| Transparency Element        | What It Documents                                                        | How It Serves Tracing                                                  |
+| --------------------------- | ------------------------------------------------------------------------ | ---------------------------------------------------------------------- |
+| SP-1: Declaration           | Summary of how AI was used                                               | First point of contact; makes visible what requires tracing            |
+| SP-2: Navigation            | Structured index enabling access to SP-3, SP-4, and SP-5                 | Makes the documentation system legible and accessible                  |
+| SP-3: Documentation Account | Detailed explanation of how AI was used; argument for adequacy           | Primary site of the tracing claim: here is the intellectual trajectory, and the case that it traces to human understanding |
+| SP-4: Process Documentation | All writing-phase materials (prompts, guidance, modifications, traces)   | Primary substance against which SP-3's adequacy claim is assessed      |
+| SP-5: Development Records   | How instructions evolved; meta-level documentation                       | Enables deeper tracing of intellectual direction                       |
 
-SP-4 is the core. It is what transforms the tracing condition from a philosophical requirement into a verifiable standard.
+SP-3 is the primary site of the tracing claim. Rather than a reproduction test—which would require running documented inputs through a comparable AI system, and which proves unworkable given model deprecation, non-deterministic outputs, and the time-scale of scholarly production—SP-3 takes a different approach. It does not ask *could the documented inputs reproduce this work?* but *does the documentation adequately show how the intellectual trajectory traces to human understanding and direction?* SP-3 explains how the documentation system works and makes the author's case that it is sufficient for this purpose. SP-4 is the primary substance against which that case is assessed. SP-1 summarizes SP-3's core claims for the reader who needs only the essentials; SP-2 makes the documentation system navigable.
 
-The **reproduction test** proposed in Section 7 operationalizes this verification directly. The test asks: can a reviewer, given only the documented human inputs—prompts, guidance, iterative corrections—reproduce the intellectual trajectory of the work? If yes, the author's documented inputs were sufficient to generate the work's argumentative architecture, and the trajectory traces to human direction. If no, either the documentation is incomplete, or the tracing condition is not satisfied—the work contains intellectual moves that cannot be traced to human understanding.
+**Engagement with Lloyd's standards.** Lloyd (2025) proposes four standards for AI-assisted scholarship: *prominence* (AI use immediately apparent), *replicability* (prompts documented), *content cross-checking* (human verification of AI factual claims), and *intra-textual clarity* (AI-generated text demarcated via style markers). We adopt Standards 1 and 2. SP-1 serves the prominence function, now extended: rather than merely noting AI involvement, it summarizes how AI was used. SP-3 extends replicability beyond prompt logging to a full account of the documentation system and the argument for its adequacy. Content cross-checking is implicit in standard scholarly responsibility.
 
-This is not about identical outputs. Different AI systems or different runs will produce different text. The test is whether the *intellectual architecture*—the argumentative structure, key moves, and commitments—can be regenerated from what the human documented.
+We reject Standard 4. Text-level demarcation presupposes a primitive model of AI assistance: real workflows involve iterative refinement where "AI text" and "human text" blur across drafting, editing, revision, and finalization. Moreover, the category of human contribution is evolving. Practice is already moving from *prompting*—formulating queries—toward *steering*: iteratively guiding AI through complex argumentative terrain. Perhaps scholars will become *architecture builders*—designing intellectual structures that AI populates with content. As practice evolves, the nature of the salient human contribution shifts in ways that text marking cannot anticipate. Process documentation is more fundamental: what matters is not which sentences came from where, but whether the intellectual trajectory is traceable to human understanding. SP-4 captures *whatever* the human contribution turns out to be, without presupposing its form.
 
-## Engagement with Lloyd's Standards
+The requirements make explicit three nested concerns:
 
-Lloyd (2025) proposes four standards for AI-assisted scholarship: *prominence* (AI use immediately apparent), *replicability* (prompts documented), *content cross-checking* (human verification of AI factual claims), and *intra-textual clarity* (AI-generated text demarcated via style markers).
+```
+OUTERMOST: Track what philosophy becomes
+    |
+    +-- MIDDLE: Ensure meaningful human control (tracing condition)
+            |
+            +-- INNERMOST: Maintain epistemic integrity
+```
 
-We adopt the first two standards, which our framework extends. SP-1 serves the prominence function. SP-4 goes beyond prompt logging to capture the full process through which arguments are developed. Content cross-checking is implicit in standard scholarly responsibility and need not be singled out.
+At the innermost level, **epistemic integrity** ensures that claims produced under AI assistance are trustworthy—confabulation controlled, sources verified, arguments valid. At the middle level, **meaningful human control** through the tracing condition ensures that intellectual contributions are attributable to human understanding and direction: a claim may be factually accurate yet still fail tracing. At the outermost level, **tracking what philosophy becomes** requires that tracing be verifiable across the scholarly community, enabling the informed meta-philosophical discussion that Section 3 identifies as the achievable goal. The transparency apparatus serves all three levels simultaneously.
 
-We reject the fourth standard—intra-textual demarcation. Lloyd's proposal assumes that transparency requires marking which text was AI-generated versus human-written. This fails for several reasons.
+## 6.3 Experimental Development and Community Evolution
 
-First, it presupposes a primitive model of AI assistance. Real workflows involve iterative refinement where "AI text" and "human text" blur. A sentence might be AI-generated, human-edited, AI-revised, and human-finalized. Assigning provenance to such text is not merely difficult but conceptually confused.
+This framework represents a sketch requiring substantial experimentation and refinement. The venue's early phase functions as exploratory search: authors experiment with documentation approaches, reviewers experiment with assessment methods, editorial practices evolve through experience. Community life itself becomes trial and error, testing what transparency requirements prove both sufficient for accountability and feasible for practitioners.
 
-Second, text-level demarcation cannot capture what matters. Some papers might be entirely AI-outputted yet reflect enormous human intellectual input—conceptual architecture, iterative shaping, sustained quality control. Others might be mostly human-written with AI contributing a crucial insight. Sentence-level marking captures none of this.
+Convergence on stable practices may take years. Some elements might prove essential across all work—perhaps model identification and basic role mapping establish minimum requirements. Other elements might vary by philosophical subfield or argument type—formal work might require different documentation than historical scholarship, normative arguments different from metaphysical analysis. The community may converge on one standard model or develop several viable approaches.
 
-Third, the very category of "human contribution" is evolving. Practice is moving from *prompting*—formulating queries that elicit useful outputs—to *steering*—iteratively guiding AI through complex argumentative terrain. Perhaps scholars will become *architecture builders*—designing intellectual structures that AI populates with content. As practice evolves, the nature of the salient human contribution shifts in ways that text demarcation cannot anticipate.
+What we propose now aims at proof-of-concept rather than prescription. This article demonstrates one possible implementation, showing transparency requirements can be met without technical infrastructure or surveillance bureaucracy. Other scholars will experiment differently. The venue succeeds if it creates conditions for methodological knowledge to accumulate: we learn collectively what documentation practices enable both accountability and advancement in AI-assisted philosophical work.
 
-Process documentation is more fundamental. What matters is not which sentences came from where but whether the intellectual trajectory is traceable to human understanding. SP-4 captures *whatever* the human contribution turns out to be—without presupposing its form.
+This evolutionary perspective aligns with Level 2 goals. The venue serves philosophers doing philosophy, not technical specialists optimizing protocols. Methodological development proceeds through philosophical practice, not imposed standardization. Early participants shape norms through experimentation; successful patterns spread through demonstrated value rather than prescription.
 
-## Three Nested Concerns
+## 6.4 Pilot Observations
 
-The framework developed here makes explicit how the paper's concerns relate:
+Two infrastructural constraints became apparent mid-way through development. LLM platforms lack timestamps within conversations, making temporal reconstruction require manual effort. More fundamentally, comprehensive documentation produces overwhelming archives that require synthesis—yet synthesis risks post-hoc rationalization. AI-assisted synthesis (immediately after writing) proves feasible but requires human verification.
 
-At the innermost level, **epistemic integrity** ensures that knowledge claims produced under AI assistance are trustworthy—confabulation is controlled, sources are verified, arguments are valid.
-
-At the middle level, **meaningful human control** through the tracing condition ensures that intellectual contributions are attributable to human understanding and direction. This builds on epistemic integrity but goes beyond it: a claim might be factually accurate yet not traceable to the author's understanding.
-
-At the outermost level, **tracking what philosophy becomes**—the meta-philosophical goal established in Section 3—requires that tracing be verifiable across the scholarly community. Individual authors must satisfy the tracing condition; the transparency apparatus makes that satisfaction assessable by others.
-
-The transparency requirements proposed here serve all three levels simultaneously. They are not bureaucratic impositions but the operational infrastructure through which the scholarly community can maintain epistemic standards, verify intellectual attribution, and observe the evolution of philosophical practice under AI assistance.
+From the author's perspective, what matters is tracking AI-assisted work in ways that remain lightweight and intelligible. The artifacts listed in Appendix A provide a scaffold—templates for documentation habits, not protocols. These materials function like training examples: individual implementations that enable pattern recognition across cases about what synthesis approaches, metadata choices, and documentation granularity prove workable.
 
 ---
 
 ## References
-
-Fischer, J. M., & Ravizza, M. (1998). *Responsibility and Control: A Theory of Moral Responsibility*. Cambridge University Press.
 
 Lloyd, D. (2025). Epistemic responsibility: toward a community standard for human-AI collaborations. *Frontiers in Artificial Intelligence*, 8, 1635691.
 
