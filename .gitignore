@@ -14,5 +14,9 @@
 !transparency/
 !transparency/**
 
+# consenti target-venue (CFP reference files)
+!target-venue/
+!target-venue/**
+
 # escludi esplicitamente le conversazioni Claude Code (dati di sessione locali)
 claude code conversations/
