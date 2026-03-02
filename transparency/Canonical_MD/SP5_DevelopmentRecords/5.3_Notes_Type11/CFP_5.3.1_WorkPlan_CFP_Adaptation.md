@@ -128,7 +128,7 @@ Contribution: MHC framework + documentation-adequacy + self-exemplification
 - [ ] Review Section 3 (Reviewer A + Reviewer B)
 - [ ] Revise Section 3 if needed
 - [ ] Finalize Section 3 (both reviewers approve)
-- [ ] Create epistemic trace for Introduction development (CFP_4.7.5)
+- [x] Create epistemic trace for Introduction development (CFP_4.7.5)
 
 ### Phase 2: Sections requiring reframing
 - [ ] Draft Section 2 compression (CFP_5.4.5_Section2_v1.md)
