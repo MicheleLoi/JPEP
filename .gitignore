@@ -18,5 +18,6 @@
 !target-venue/
 !target-venue/**
 
-# escludi esplicitamente le conversazioni Claude Code (dati di sessione locali)
+# escludi file temporanei di sessione Claude Code
 claude code conversations/
+transparency/tmpclaude-*
