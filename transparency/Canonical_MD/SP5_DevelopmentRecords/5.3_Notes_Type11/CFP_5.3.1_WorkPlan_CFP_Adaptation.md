@@ -120,10 +120,10 @@ Contribution: MHC framework + documentation-adequacy + self-exemplification
 - [x] Work plan created (this document)
 
 ### Phase 1: Introduction + Section 3 (priority — these carry the argument)
-- [ ] Draft Introduction (CFP_5.4.3_Introduction_v1.md)
-- [ ] Review Introduction (Reviewer A + Reviewer B)
-- [ ] Revise Introduction if needed (CFP_5.4.3_Introduction_v2.md, etc.)
-- [ ] Finalize Introduction (both reviewers approve)
+- [x] Draft Introduction (CFP_5.4.3_Introduction_v1.md)
+- [x] Review Introduction (Reviewer A + Reviewer B)
+- [x] Revise Introduction if needed (CFP_5.4.3_Introduction_v2.md, etc.)
+- [x] Finalize Introduction (both reviewers approve)
 - [ ] Draft Section 3 adaptation (CFP_5.4.4_Section3_v1.md)
 - [ ] Review Section 3 (Reviewer A + Reviewer B)
 - [ ] Revise Section 3 if needed
