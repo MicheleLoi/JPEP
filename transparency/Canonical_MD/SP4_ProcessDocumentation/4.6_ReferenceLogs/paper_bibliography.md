@@ -28,6 +28,8 @@ This bibliography compiles all references used across completed sections of the 
 
 **Berg, A. & Robbins, H.** (2024). "The Cognitive Divide." *The Point*. https://thepointmag.substack.com/p/the-cognitive-divide
 
+**Blackburn, S.** (1993). *Essays in Quasi-Realism*. New York: Oxford University Press. https://global.oup.com/academic/product/essays-in-quasi-realism-9780195082241
+
 **Boden, M. A., & Edmonds, E. A.** (2009). "What is generative art?" *Digital Creativity*, 20(1-2), 21-46.
 *Note: Verify this is the citation Wheeler uses. If Wheeler cites different Boden & Edmonds work, use that citation.*
 
@@ -42,13 +44,21 @@ This bibliography compiles all references used across completed sections of the 
 
 **Elsevier.** (2023). "The use of generative AI and AI-assisted technologies in writing for Elsevier." https://www.elsevier.com/about/policies-and-standards/the-use-of-generative-ai-and-ai-assisted-technologies-in-writing-for-elsevier
 
+**Enoch, D.** (2011). *Taking Morality Seriously: A Defense of Robust Realism*. Oxford: Oxford University Press. https://global.oup.com/academic/product/taking-morality-seriously-9780199579969
+
 **Floridi, L.** (2025a). "Distant Writing: Literary Production in the Age of Artificial Intelligence." Centre for Digital Ethics (CEDE) Research Paper. Available at SSRN: https://ssrn.com/abstract=5232088 or http://dx.doi.org/10.2139/ssrn.5232088
 
 **Floridi, L.** (2025b). "AI as Agency without Intelligence: On Artificial Intelligence as a New Form of Artificial Agency and the Multiple Realisability of Agency Thesis." *Philosophy & Technology*, 38, 30. https://doi.org/10.1007/s13347-025-00858-9
 
-**Hosseini, M., Rasmussen, L. M., & Resnik, D. B.** (2023). "Using AI to write scholarly publications." *Accountability in Research*, 1-9.
+**Gallie, W. B.** (1956). "Essentially Contested Concepts." *Proceedings of the Aristotelian Society*, 56, 167–198. https://doi.org/10.1093/aristotelian/56.1.167
+
+**Gibbard, A.** (1990). *Wise Choices, Apt Feelings: A Theory of Normative Judgment*. Cambridge, MA: Harvard University Press. https://www.hup.harvard.edu/books/9780674953789
+
+**Hosseini, M., Rasmussen, L. M., & Resnik, D. B.** (2023). "Using AI to write scholarly publications." *Accountability in Research*, 31(7), 715–723. https://doi.org/10.1080/08989621.2023.2168535
 
 **Jollimore, T.** (2025). "I Used to Teach Students. Now I Catch ChatGPT Cheats." *The Walrus*, March 5, 2025. https://thewalrus.ca/i-used-to-teach-students-now-i-catch-chatgpt-cheats/
+
+**Lloyd, D.** (2025). "Epistemic responsibility: toward a community standard for human-AI collaborations." *Frontiers in Artificial Intelligence*, 8, 1635691. https://doi.org/10.3389/frai.2025.1635691
 
 **Lund, B. D., & Naheem, K. T.** (2023). "Can ChatGPT be an author? A study of artificial intelligence authorship policies in top academic journals." *Learned Publishing*. https://doi.org/10.1002/leap.1582
 
@@ -60,7 +70,13 @@ This bibliography compiles all references used across completed sections of the 
 
 **Rini, R.** (2025). "Chatbottery." Afterthoughts column, *The Times Literary Supplement*, January 2, 2025. https://www.the-tls.com/regular-features/afterthoughts/chatbottery-afterthoughts-regina-rini
 
+**Santoni de Sio, F., Faber, N. S., Savulescu, J., & Vincent, N. A.** (2016). "Why Less Praise for Enhanced Performance? Moving Beyond Responsibility-Shifting, Authenticity, and Cheating Toward a Nature-of-Activities Approach." In S. Nagel (ed.), *Handbook of Neuroethics*. Oxford: Oxford University Press, pp. 27–41.
+
+**Santoni de Sio, F., & van den Hoven, J.** (2018). "Meaningful Human Control over Autonomous Systems: A Philosophical Account." *Frontiers in Robotics and AI*, 5, 15. https://doi.org/10.3389/frobt.2018.00015
+
 **Science.** (2023). "Science Journals: Editorial Policies." https://www.science.org/content/page/science-journals-editorial-policies
+
+**Shafer-Landau, R.** (2003). *Moral Realism: A Defence*. Oxford: Oxford University Press. https://global.oup.com/academic/product/moral-realism-9780199259755
 
 **Van Woudenberg, R., Ranalli, C., & Bracker, D.** (2024). "Authorship and ChatGPT: a Conservative View." *Philosophy & Technology*, 37(1), 1-26. https://doi.org/10.1007/s13347-024-00715-1
 
@@ -70,7 +86,7 @@ This bibliography compiles all references used across completed sections of the 
 
 ## SECTION-BY-SECTION USAGE
 
-### Introduction (Section I)
+### Introduction (Section I) — original JPEP version
 - ACM (2025)
 - Berg & Robbins (2024)
 - COPE Council (2024)
@@ -81,6 +97,24 @@ This bibliography compiles all references used across completed sections of the 
 - Ontiveros & Clay (2021)
 - Rini (2025)
 - Science (2023)
+
+### Introduction (Section I) — CFP adaptation (branch: cfp-ai-ethics-inquiry)
+- ACM (2025)
+- Berg & Robbins (2024)
+- Blackburn (1993)
+- COPE Council (2024)
+- Elsevier (2023)
+- Enoch (2011)
+- Gallie (1956)
+- Gibbard (1990)
+- Hosseini et al. (2023)
+- Jollimore (2025)
+- Lund & Naheem (2023)
+- Santoni de Sio & van den Hoven (2018)
+- Shafer-Landau (2003)
+- Science (2023)
+- Van Woudenberg et al. (2024)
+*Note: Floridi (2025a), Ontiveros & Clay (2021), Rini (2025) dropped in CFP rewrite.*
 
 ### Incentives Analysis (Section II)
 *No additional references - develops argument from first principles*
@@ -210,7 +244,7 @@ Following standard philosophy journal format:
 
 ## COMPILATION STATUS
 
-**Complete through:** Section V
-**Remaining:** Sections VI-IX
-**Last updated:** [Current session]
-**Ready for:** Section 6 writing
+**Complete through:** Section V (original); CFP Introduction added 2026-03-03
+**Remaining:** Sections VI-IX (original); CFP Sections 2–8 (CFP branch)
+**Last updated:** 2026-03-03
+**New entries added:** Blackburn (1993), Enoch (2011), Gallie (1956), Gibbard (1990), Lloyd (2025), Santoni de Sio et al. (2016), Santoni de Sio & van den Hoven (2018), Shafer-Landau (2003)
