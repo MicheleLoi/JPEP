@@ -46,6 +46,22 @@ Lloyd, D. (2025). "Epistemic responsibility: toward a community standard for hum
 
 ---
 
+## For Introduction (CFP Adaptation) — Added 2026-03-03
+
+> Verification status: web-verified 2026-03-03 via publisher pages (OUP, HUP) and PhilPapers/Cambridge Core.
+
+### Moral Realism (cognitivism/non-cognitivism illustration)
+Enoch, D. (2011). *Taking Morality Seriously: A Defense of Robust Realism*. Oxford: Oxford University Press. https://global.oup.com/academic/product/taking-morality-seriously-9780199579969
+
+Shafer-Landau, R. (2003). *Moral Realism: A Defence*. Oxford: Oxford University Press. https://global.oup.com/academic/product/moral-realism-9780199259755
+
+### Expressivism / Non-cognitivism (cognitivism/non-cognitivism illustration)
+Gibbard, A. (1990). *Wise Choices, Apt Feelings: A Theory of Normative Judgment*. Cambridge, MA: Harvard University Press. https://www.hup.harvard.edu/books/9780674953789
+
+Blackburn, S. (1993). *Essays in Quasi-Realism*. New York: Oxford University Press. https://global.oup.com/academic/product/essays-in-quasi-realism-9780195082241
+
+---
+
 ## For Section 5 (Positive Motivations)
 
 ### Classical Sources on Wonder
@@ -73,7 +89,7 @@ Quine, W.V.O. "Epistemology Naturalized" [Verify citation details if used]
 
 Van Woudenberg, R., Ranalli, C., & Bracker, D. (2024). "Authorship and ChatGPT: a Conservative View." *Philosophy & Technology*, 37(1), 1-26. https://doi.org/10.1007/s13347-024-00715-1
 
-Hosseini, M., Rasmussen, L. M., & Resnik, D. B. (2023). "Using AI to write scholarly publications." *Accountability in Research*, 1-9.
+Hosseini, M., Rasmussen, L. M., & Resnik, D. B. (2023). "Using AI to write scholarly publications." *Accountability in Research*, 31(7), 715–723. https://doi.org/10.1080/08989621.2023.2168535
 
 ## Additional Sources (Verify If Needed)
 
