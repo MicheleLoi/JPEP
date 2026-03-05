@@ -124,10 +124,10 @@ Contribution: MHC framework + documentation-adequacy + self-exemplification
 - [x] Review Introduction (Reviewer A + Reviewer B)
 - [x] Revise Introduction if needed (CFP_5.4.3_Introduction_v2.md, etc.)
 - [x] Finalize Introduction (both reviewers approve)
-- [ ] Draft Section 3 adaptation (CFP_5.4.4_Section3_v1.md)
-- [ ] Review Section 3 (Reviewer A + Reviewer B)
-- [ ] Revise Section 3 if needed
-- [ ] Finalize Section 3 (both reviewers approve)
+- [x] Draft Section 3 adaptation (CFP_5.4.4_Section3_v1.md)
+- [x] Review Section 3 (Reviewer A + Reviewer B)
+- [x] Revise Section 3 if needed
+- [x] Finalize Section 3 (both reviewers approve)
 - [x] Create epistemic trace for Introduction development (CFP_4.7.5)
 
 ### Phase 2: Sections requiring reframing
