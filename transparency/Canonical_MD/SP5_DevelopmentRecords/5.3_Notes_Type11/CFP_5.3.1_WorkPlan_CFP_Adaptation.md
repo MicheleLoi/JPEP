@@ -19,6 +19,22 @@ related:
 
 ---
 
+## RESUME HERE (last updated 2026-03-17, session SID-20260317-191544)
+
+**Immediate next action:** Draft Section 7 CFP adaptation (Phase 3).
+Source: `Paper/MDversion/07_review_mechanism.md`
+Plan: reframe from journal-specific review mechanism to community assessment of documentation adequacy. Drop reproduction test (already rejected). Reframe as: how should the scholarly community assess whether transparency documentation is adequate? Connect to Section 6's documentation-adequacy model.
+
+**State summary:**
+- Phase 1 complete — Introduction + Section 3 both revised post-finalization (first component/step cut; see CFP_4.7.7)
+- Section 2 finalized — CFP_5.4.5_Section2_v3.md (~900 words); modlog CFP_4.2.15
+- Section 4: cut (no standalone section)
+- Section 5 finalized — CFP_5.4.7_Section5_v1.md (~1,350 words); modlog CFP_4.2.16 (9 entries); session SID-20260317-191544
+- Section 6 finalized — CFP_5.4.8_Section6_v3.md (~1,520 words); modlog CFP_4.2.17 (13 entries); session SID-20260323-190000. Note: §6.1 substantially deepened with two-routes argument (process-constitutive + community-level essential contestedness); adverse selection paragraph added §6.3; §6.4 rewritten around AI-assisted synthesis as viability mechanism.
+- Section 7: not started (Phase 3)
+
+---
+
 ## HOW TO RESTART (mhc-start)
 
 When the user types `mhc-start`, do the following in order:
@@ -53,15 +69,15 @@ AI in education is debated; AI in scientific research is discussed; AI in ethics
 
 **The objection:** If ethics tracks truth, evaluate the outputs. A sound argument is sound regardless of how it was produced. Process transparency confuses discovery with justification. This is the strongest objection to the paper's entire project.
 
-**The defeat, in four steps:**
+**The defeat (revised 2026-03-11):**
 
-(i) Output-evaluation in ethics is always partly process-evaluation. Ethicists have no moral truth-meter. They assess whether the right considerations were weighed, the right methods followed, the right sensitivities exercised. "Evaluate the outputs" cannot be executed because there are no agreed, process-independent criteria for moral correctness.
+> *Note: The original spine had a "first step" arguing that output-evaluation is process-dependent because "ethicists have no moral truth-meter." This was cut on Opus structural review (2026-03-11) as a non sequitur: the cognitivist objection turns on the discovery/justification distinction, not on epistemic access to moral reality. The "thinking quality" intuition behind it belongs in Section 6.1 where it is properly developed. The defeat now rests on a single move:*
 
-(ii) This is because "ethical inquiry" is an essentially contested concept (Gallie 1956). Competent practitioners disagree about its constitutive methods, its epistemic structure, and its purpose. The cognitivism/non-cognitivism dispute -- one of the most fundamental and unresolved disputes in metaethics -- is the deepest instance: we do not even agree on whether ethics is in the business of tracking truth. The cognitivist objection presupposes what is contested.
+(i) "Ethical inquiry" is an essentially contested concept (Gallie 1956). Competent practitioners disagree about its constitutive methods, its epistemic structure, and its purpose. The cognitivism/non-cognitivism dispute -- one of the most fundamental and unresolved disputes in metaethics -- is the deepest instance: we do not even agree on whether ethics is in the business of tracking truth. The cognitivist objection presupposes what is contested. Output-evaluation criteria in ethics are themselves contested, so the objection is question-begging.
 
-(iii) The essentially-contested nature of ethics does double duty: it motivates transparency directly (we cannot prejudge what AI does to ethics, so we must track it) AND it defeats the cognitivist objection (we cannot "just evaluate outputs" because output-evaluation criteria in ethics are contested too).
+(ii) The essentially-contested nature of ethics does double duty: it motivates transparency directly (we cannot prejudge what AI does to ethics, so we must track it) AND it defeats the cognitivist objection (we cannot "just evaluate outputs" because output-evaluation criteria in ethics are contested too).
 
-(iv) Qualification: The claim is not that process information is always necessary for any ethical argument. For simple applied ethics arguments with clear premises and valid inferences, the output may suffice. The claim is: for complex work involving judgment, contested methods, and genuine philosophical insight -- where AI assistance is most consequential -- output-evaluation alone is insufficient. AI systems can produce outputs that satisfy surface criteria without the understanding those criteria are meant to track.
+(iii) Qualification: The claim is not that process information is always necessary for any ethical argument. For simple applied ethics arguments with clear premises and valid inferences, the output may suffice. The claim is: for complex work involving judgment, contested methods, and genuine philosophical insight -- where AI assistance is most consequential -- output-evaluation alone is insufficient. AI systems can produce outputs that satisfy surface criteria without the understanding those criteria are meant to track.
 
 **Key methodological point:** Cognitivism is NOT asserted as a premise. The cognitivism/non-cognitivism dispute is used as an *illustration* of the essential contestedness of ethical inquiry. The argument is ecumenical: cognitivists, constructivists, and particularists all have reason to want process visibility, because each needs to assess whether the process satisfied the criteria *their* view identifies as constitutive of ethical inquiry.
 
@@ -82,9 +98,10 @@ Gap: AI in ethics research unaddressed
 Objection: "Just evaluate outputs" (cognitivist challenge)
      |
      v
-Defeat: Output-evaluation is process-dependent in ethics
-        because ethical inquiry is essentially contested
+Defeat: Ethical inquiry is essentially contested
         (cognitivism dispute = deepest instance)
+        → output-evaluation criteria are themselves contested
+        → cognitivist objection is question-begging
      |
      v
 Pivot: Track what ethics is becoming -> transparency required
@@ -131,16 +148,16 @@ Contribution: MHC framework + documentation-adequacy + self-exemplification
 - [x] Create epistemic trace for Introduction development (CFP_4.7.5)
 
 ### Phase 2: Sections requiring reframing
-- [ ] Draft Section 2 compression (CFP_5.4.5_Section2_v1.md)
-- [ ] Review + finalize Section 2
+- [x] Draft Section 2 compression (CFP_5.4.5_Section2_v1.md)
+- [x] Review + finalize Section 2
 - [ ] Draft Section 4 compression/cut (CFP_5.4.6_Section4_v1.md)
 - [ ] Review + finalize Section 4
-- [ ] Draft Section 5 reframe (CFP_5.4.7_Section5_v1.md)
-- [ ] Review + finalize Section 5
+- [x] Draft Section 5 reframe (CFP_5.4.7_Section5_v1.md)
+- [x] Review + finalize Section 5
 
 ### Phase 3: Sections requiring minor changes
-- [ ] Draft Section 6 minor reframe (CFP_5.4.8_Section6_v1.md)
-- [ ] Review + finalize Section 6
+- [x] Draft Section 6 minor reframe (CFP_5.4.8_Section6_v3.md)
+- [x] Review + finalize Section 6
 - [ ] Draft Section 7 minor reframe (CFP_5.4.9_Section7_v1.md)
 - [ ] Review + finalize Section 7
 
@@ -182,7 +199,7 @@ Contribution: MHC framework + documentation-adequacy + self-exemplification
 - **Source for drafter:** `transparency/Canonical_MD/SP5_DevelopmentRecords/5.4_SectionDrafts/III_5.4.1_Section3_v3.md` (authoritative). Also read Section 6.1 in `III_5.4.2_Section6_v3.md` for the thinking-quality argument.
 - **Priority:** SECOND (immediately after Introduction).
 - **Specific additions:**
-  - Between "Philosophy as Essentially Contested" and "From Answer to Tracking," insert a subsection (working title: "Why Output-Evaluation Fails in Ethics") that: (a) states the cognitivist objection; (b) argues output-evaluation is process-dependent; (c) connects to essential contestedness.
+  - Between "Philosophy as Essentially Contested" and "From Answer to Tracking," insert a subsection (working title: "Why Output-Evaluation Fails in Ethics") that: (a) states the cognitivist objection; (b) shows that the essential contestedness of ethics makes output-evaluation criteria themselves contested — the objection is question-begging. (Note: the earlier "first step" — output-evaluation is process-dependent because ethicists have no moral truth-meter — was cut as a non sequitur on 2026-03-11. The defeat rests solely on essential contestedness.)
   - Throughout: replace "philosophy" with "ethics/ethical inquiry" where appropriate for CFP framing. Not mechanically -- some passages should remain about philosophy generally.
 - **Word target:** 1200-1500 words (up from ~950).
 
