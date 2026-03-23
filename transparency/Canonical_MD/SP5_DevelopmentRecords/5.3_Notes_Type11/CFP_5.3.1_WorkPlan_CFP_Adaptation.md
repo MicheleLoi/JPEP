@@ -29,8 +29,8 @@ Plan: reframe from journal-specific review mechanism to community assessment of 
 - Phase 1 complete — Introduction + Section 3 both revised post-finalization (first component/step cut; see CFP_4.7.7)
 - Section 2 finalized — CFP_5.4.5_Section2_v3.md (~900 words); modlog CFP_4.2.15
 - Section 4: cut (no standalone section)
-- Section 5 finalized — CFP_5.4.7_Section5_v1.md (~1,350 words); modlog CFP_4.2.16 (9 entries); session SID-20260317-191544
-- Section 6 finalized — CFP_5.4.8_Section6_v3.md (~1,520 words); modlog CFP_4.2.17 (13 entries); session SID-20260323-190000. Note: §6.1 substantially deepened with two-routes argument (process-constitutive + community-level essential contestedness); adverse selection paragraph added §6.3; §6.4 rewritten around AI-assisted synthesis as viability mechanism.
+- Section 5 finalized — CFP_5.4.7_Section5_v1.md (~1,350 words); modlog CFP_4.2.17 (9 entries); session SID-20260317-191544
+- Section 6 finalized — CFP_5.4.8_Section6_v3.md (~1,520 words); modlog CFP_4.2.18 (13 entries); session SID-20260323-190000. Note: §6.1 substantially deepened with two-routes argument (process-constitutive + community-level essential contestedness); adverse selection paragraph added §6.3; §6.4 rewritten around AI-assisted synthesis as viability mechanism.
 - Section 7: not started (Phase 3)
 
 ---

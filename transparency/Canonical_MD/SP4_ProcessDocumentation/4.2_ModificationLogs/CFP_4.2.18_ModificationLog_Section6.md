@@ -2,7 +2,7 @@
 project: JPEP
 document_type: Type 3 - Modification Log
 section: "6 - Mandatory Transparency in Practice"
-label: CFP_4.2.17_ModificationLog_Section6
+label: CFP_4.2.18_ModificationLog_Section6
 date: 2026-03-23
 session_id: SID-20260323-190000
 branch: cfp-ai-ethics-inquiry
