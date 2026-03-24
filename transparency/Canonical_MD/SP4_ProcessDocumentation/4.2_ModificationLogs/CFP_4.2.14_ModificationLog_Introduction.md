@@ -9,8 +9,8 @@ models:
   - "Claude Sonnet 4.6 (2026-03-03, initial draft + revisions)"
   - "Claude Opus 4.6 (2026-03-03, Reviewer B — two review rounds)"
 date_started: 2026-03-03
-date_last_updated: 2026-03-03
-status: Finalized — user approved 2026-03-03
+date_last_updated: 2026-03-12
+status: "Finalized (2026-03-03); post-finalization amendments 2026-03-12"
 
 related_documents:
   - "CFP_5.3.1_WorkPlan_CFP_Adaptation.md (master work plan)"
@@ -143,3 +143,31 @@ This log tracks the drafting and revision of the CFP adaptation Introduction (`C
 **Status:** Finalized
 **Approved by:** User (2026-03-03); Reviewer B/Opus (2026-03-03)
 **Citations in final draft:** Jollimore (2025), Berg & Robbins (2024), Hosseini et al. (2023), Van Woudenberg et al. (2024), COPE Council (2024), Elsevier (2023), ACM (2025), Science (2023), Lund & Naheem (2023), Gallie (1956), Enoch (2011), Shafer-Landau (2003), Gibbard (1990), Blackburn (1993), Santoni de Sio & van den Hoven (2018)
+
+---
+
+## Entry 8: Post-Finalization Structural Revision (2026-03-12)
+
+**Session:** SID-20260311-185449
+
+**Trigger:** User identified the "first component" of the cognitivist-objection reply as a non sequitur. Opus structural review confirmed.
+
+**Diagnosis (Opus):** The "first component" — that output-evaluation is process-dependent because ethicists have no moral truth-meter — does not answer the cognitivist objection. The objection turns on the context-of-discovery/justification distinction, not epistemic access to moral reality. The essentially-contested-concept argument (second component) is self-sufficient as a reply. The first component was structural deadwood that the "two components and a qualification" framing had created dependency for.
+
+**Changes applied:**
+
+1. **First component cut:** Removed paragraph beginning "The reply has two components and a qualification" and the first-component paragraph ("There is no moral truth-meter..."). The reply now moves directly from "This objection deserves a serious reply" to the Gallie argument.
+
+2. **Gallie paragraph compressed** (follow-on): After cutting the first component, the full Gallie paragraph was over-detailed for an introduction (Introduction should compress; Section 3 develops). Compressed from ~130 words to ~55 words: dropped Gallie's criteria list, dropped the cognitivism/non-cognitivism illustration sentences, kept only the core claim and question-begging charge. "W. B. Gallie's (1956)" simplified to "Gallie's (1956)". Added pointer: "Section 3 develops this argument fully."
+
+3. **Four citations moved to Section 3:** Enoch (2011), Shafer-Landau (2003), Gibbard (1990), Blackburn (1993) removed from Introduction (where they illustrated a passage now compressed away) and added to Section 3's "Ethical Inquiry as Essentially Contested" subsection, where the cognitivism/non-cognitivism argument is developed fully.
+
+4. **Qualification compressed:** The four-sentence qualification paragraph reduced to one sentence: "The claim is restricted to complex philosophical work involving contested methods and irreducible judgment — precisely where AI assistance is most consequential."
+
+5. **Tracking pivot opening updated:** "If output-evaluation in ethics is irreducibly process-dependent, and if the criteria for evaluation are themselves contested" → "If output-evaluation criteria in ethics are themselves contested — bound to contested background conceptions of what ethical inquiry is for." Removes "process-dependent" framing which was a residue of the cut first component.
+
+**Net effect:** ~200 words removed. Introduction no longer pre-empts Section 3. The essentially-contested argument is gestured at in three sentences in the Introduction; Section 3 delivers the full argument.
+
+**Citations after revision:** Jollimore (2025), Berg & Robbins (2024), Hosseini et al. (2023), Van Woudenberg et al. (2024), COPE Council (2024), Elsevier (2023), ACM (2025), Science (2023), Lund & Naheem (2023), Gallie (1956), Santoni de Sio & van den Hoven (2018). [Enoch, Shafer-Landau, Gibbard, Blackburn moved to Section 3.]
+
+**Related trace:** CFP_4.7.7_EpistemicTrace_NonSequiturRevision.md

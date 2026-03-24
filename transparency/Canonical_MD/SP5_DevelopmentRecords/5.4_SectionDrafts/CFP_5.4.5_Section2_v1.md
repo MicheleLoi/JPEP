@@ -1,0 +1,50 @@
+---
+project: JPEP
+document_type: Type 12 - Section Draft
+section: "2 - Systemic Barriers to Disclosure"
+version: "v1 (CFP adaptation)"
+date_created: 2026-03-12
+status: Draft
+source: "Claude Sonnet 4.6 (Claude Code session)"
+source_guidance: "CFP_5.3.1_WorkPlan_CFP_Adaptation.md"
+cfp_target: "AI Tools in Ethics Research (topical collection)"
+word_count: ~950
+---
+
+# 2. Systemic Barriers to Disclosure
+
+Current publishing policies require disclosure of AI assistance while simultaneously creating professional environments where such disclosure carries reputational costs. The resulting incentive structure does not merely produce individual choices about disclosure—it produces systematic underreporting, and the degree of underreporting scales with the significance of the work. The problem is therefore not soluble by strengthening compliance requirements. This section shows why: the four mechanisms that drive underreporting operate within genuine ambiguities that formal mandates cannot eliminate, and compliance can be achieved without substantive transparency. What is needed is not more stringent reporting requirements but a philosophically specified account of what transparency is for.
+
+## 2.1 The Incentive Gradient
+
+Disclosure decisions occur under asymmetric conditions. Disclosure is permanent—methodological characterizations become part of the scholarly record, traveling with work through citations and career evaluations. Significance is uncertain—authors cannot predict at submission which articles will prove influential. Professional costs are front-loaded—stigma associated with disclosed AI assistance operates immediately, affecting initial reception regardless of eventual impact.
+
+These asymmetries interact to create a gradient of pressure toward underreporting. For work regarded as minor or routine, honest disclosure carries relatively low cost: methodological details function as scholarly housekeeping. For potentially significant work, disclosure becomes fraught—authors face the dilemma of reporting honestly and risking dismissal as methodologically suspect, or minimizing AI involvement to preserve perceived legitimacy. For work regarded as career-defining, the incentive to underreport reaches maximum strength: disclosure becomes permanently attached to the scholar's primary career asset. The gradient operates continuously, but the directional pressure is clear—as perceived significance increases, reported AI involvement likely decreases.
+
+The underreporting need not require conscious dishonesty. Several plausible mechanisms can be identified that could operate even among scholars committed to general honesty, each exploiting genuine ambiguities in how AI-assisted processes might be characterized.
+
+The first mechanism involves *definitional flexibility*. Terms like "substantial AI assistance" and "minimal editorial support" lack precise boundaries, particularly given the varied ways scholars might employ AI tools. An author who engaged in extensive AI-assisted exploration during early argument development but then substantially revised all prose in later drafts would face genuine uncertainty about proper characterization. When professional stakes are high, this uncertainty could resolve in favor of lower reported involvement. The author might focus on the final revision phase where human control was indeed substantial, characterizing earlier AI-assisted exploration as preliminary rather than constitutive of the final argument.
+
+This connects to a second mechanism: *temporal discounting of early-stage AI involvement*. Scholars might naturally privilege later stages of work when forming narrative accounts of their process. If initial argument exploration involved significant AI dialogue but final drafting required extensive human revision, authors could retrospectively frame the AI involvement as scaffolding that was replaced rather than as integral to the work's development. The temporal structure of the process—AI-heavy early stages, human-heavy later stages—would allow authors to construct accounts that minimize AI's role without explicit falsehood.
+
+A third mechanism could operate through *comparative framing*. Authors might compare their process not to traditional unassisted writing but to hypothetical greater AI dependence: "I didn't merely accept ChatGPT's suggestions; I critically evaluated and substantially revised everything." This comparison would not be false—the author did indeed revise and evaluate. But the reference point shifts from "traditional unassisted scholarship" to "passive acceptance of AI output," making the actual process appear more human-centered than it might be relative to traditional standards. Crucially, this framing could occur without conscious deception. Authors could genuinely believe they are reporting honestly when they emphasize the critical evaluation they performed, even as this emphasis obscures the shift from traditional scholarly norms. The mechanism would operate through sincere belief in accounts that happen to serve professional interests.
+
+Finally, *strategic vagueness* would allow authors to satisfy disclosure requirements while preserving interpretive flexibility. Phrases like "AI tools were consulted during drafting" or "language models assisted with argument development" provide formal compliance without specifying the degree of involvement. Current disclosure policies rarely specify granularity or detail level, potentially creating space for minimally informative but formally adequate statements. An author could truthfully report AI involvement while leaving readers unable to assess whether this involvement was peripheral or central to the work's development.
+
+If these mechanisms operate as described, they combine to allow systematic minimization of reported AI involvement particularly when work appears professionally significant. The result would not be deliberate fraud but rather predictable response to incentive structures that penalize transparency while demanding formal disclosure.
+
+The incentive structure creates a *transparency paradox*. Where transparency matters most, we get least. The work most likely to shape scholarly discourse—articles that will be widely cited, taught, and built upon—faces the strongest pressure to underreport AI involvement. Conversely, forgettable minor contributions face lower costs for honest disclosure but matter less to the scholarly record. The result inverts the ideal relationship between significance and transparency.
+
+Moreover, disclosure requirements produce *minimal disclosure*. Policies requiring authors to report AI assistance create formal compliance without substantive transparency. Authors report something—enough to satisfy editorial requirements—while minimizing the reported degree of involvement. The result resembles tax code compliance: formally adequate while structured to minimize apparent obligation, potentially creating space for compliance that satisfies letter but not spirit.
+
+## 2.2 The Scope of the Problem
+
+The argument above would be of limited significance if AI-assisted scholarship remained rare. It does not. AI writing and analysis tools have diffused rapidly across academic disciplines; surveys of researcher behavior consistently show adoption rates that outpace institutional guidance. For philosophy and ethics specifically, AI assistance is plausibly widespread in precisely the tasks most central to scholarly work—argument development, objection-testing, literature synthesis, prose revision. No reliable census exists, because disclosure practices are the problem. But the trajectory is not in doubt: the relevant question is no longer whether AI assistance is present in significant scholarship but whether it is visible.
+
+Review processes have no detection mechanisms for undisclosed AI involvement. Unlike data fabrication or plagiarism, AI-assisted argument development leaves no forensic trace that reviewers or editors can identify. The scholarly record is therefore accumulating under conditions of systematic opacity. Work is being evaluated, cited, assigned, and built upon by readers who cannot assess the degree of human judgment constitutive of the arguments they are engaging. For a field whose subject matter is the normative evaluation of human action and whose methods are themselves contested, this is not a peripheral concern about research administration. It is a constitutive epistemic problem.
+
+## 2.3 Why Compliance Mandates Cannot Close the Gap
+
+The four mechanisms identified in Section 2.1 make clear that the gap between formal disclosure and substantive transparency cannot be closed by strengthening compliance requirements. The mechanisms do not operate through bad faith. They operate through genuine ambiguity—about what counts as "substantial" assistance, about how to characterize temporally extended processes, about which reference class of practice sets the comparison baseline, about how much specificity a disclosure statement requires. Stronger mandates that still leave these questions unanswered will produce the same result: formally adequate statements that leave readers unable to assess the nature and degree of AI involvement.
+
+The problem is one of underspecification, not dishonesty. Current disclosure policies establish that AI use must be reported; they do not specify what must be reported, in what form, or against what standard of adequacy. An author instructed to "disclose AI assistance" faces none of the guidance needed to produce disclosures that serve the purposes disclosure is meant to serve. This is a philosophical problem, not a regulatory gap. Closing it requires prior philosophical work: specifying what transparency is *for*—what information must be preserved for the scholarly record to remain assessable, what documentation is adequate, and what criteria allow a reader or reviewer to determine whether transparency requirements have been substantively met. The remaining sections undertake that project.
