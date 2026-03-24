@@ -1,4 +1,7 @@
-
+---
+source: human
+date: 2026-02-01
+---
 
 
 Technological evolution; using claude code and owning documentation artifacts (e.g. all writing in MD text in user folders); systems that change the experience from "controlling a chat conversation" to "controlling multiple processes, including parallel documentation processes". Use of metadata to guide both users and enable efficient AI reconstructions (mixture of python deterministic processes and LLM semantic guidance). Main point: documentation structures can be proposed and adopted. They are also reviewed.

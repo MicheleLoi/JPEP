@@ -8,8 +8,8 @@ version: "CFP v1 (branch: cfp-ai-ethics-inquiry)"
 models:
   - "Claude Sonnet 4.6 (2026-03-05, initial CFP adaptation)"
 date_started: 2026-03-05
-date_last_updated: 2026-03-05
-status: Finalized — user approved 2026-03-05
+date_last_updated: 2026-03-12
+status: "Finalized (2026-03-05); post-finalization amendments 2026-03-12"
 
 related_documents:
   - "CFP_5.3.1_WorkPlan_CFP_Adaptation.md (master work plan)"
@@ -28,6 +28,30 @@ The v3 source draft (~950 words) makes the essentially-contested-concept argumen
 The CFP adaptation (~1410 words) reframes the section for an ethics research audience, adds a new subsection developing the cognitivist objection and its defeat, and connects explicitly to Section 6.1's thinking-quality argument. The new subsection fills the gap identified in the CFP fit analysis (Section F of the work plan): the v3 draft "goes straight from essentially-contested to tracking; it needs the intermediate step showing why 'just evaluate the outputs' fails."
 
 **Rationale for adaptation:** The CFP's central questions — what AI assistance means for the integrity of ethics research, whether AI can be an ethics expert, whether process matters or only outputs — require the paper to confront the cognitivist objection directly. The v3 draft omits this step, which is acceptable for a general philosophy-of-scholarship venue but not for a topical collection specifically examining AI tools in ethics. The CFP adaptation inserts the necessary argument.
+
+---
+
+## Post-Finalization Amendment (2026-03-12)
+
+**Session:** SID-20260311-185449
+
+**Trigger:** Same Opus structural review that revised the Introduction (see CFP_4.2.14 Entry 8). The "first step" of the cognitivist-objection reply in Section 3 mirrors the Introduction's "first component" — same non-sequitur.
+
+**Diagnosis:** The first step ("output-evaluation in ethics is already partly process-dependent... thinking quality is itself part of what ethical scholarship is evaluated for") does not answer the cognitivist objection. A cognitivist would say: thinking quality is an output-level criterion — you assess it by reading the paper. The second step (essential contestedness makes output-evaluation criteria themselves contested) is self-sufficient.
+
+**Changes applied:**
+
+1. **First step cut:** Removed paragraph beginning "The first step: output-evaluation in ethics is already partly process-dependent..." (~140 words). The "Why Output-Evaluation Fails in Ethics" subsection now moves directly from "This objection deserves a serious reply" to the cognitivist-assumption paragraph.
+
+2. **"Two steps and a qualification" framing removed:** Opening sentence revised to "This objection deserves a serious reply rather than circumvention." (no longer promises two steps).
+
+3. **Second step opening reworked:** "The second step: this process-dependency is not a contingent limitation but is required by the essential contestedness of ethics itself. The cognitivist objection assumes..." → "The cognitivist objection assumes..." (removed the "second step" label and the back-reference to "process-dependency" which came from the now-deleted first step).
+
+4. **Four citations added to "Ethical Inquiry as Essentially Contested":** Enoch (2011), Shafer-Landau (2003), Gibbard (1990), Blackburn (1993) added to the cognitivism/non-cognitivism illustration sentence — transferred from the Introduction where they had been cut (see CFP_4.2.14 Entry 8).
+
+**Note on thinking-quality argument:** The first step's core claim — that thinking quality is part of what ethical scholarship is evaluated for — is preserved in Section 6.1 where it is properly developed. It was not lost, only relocated.
+
+**Related trace:** CFP_4.7.7_EpistemicTrace_NonSequiturRevision.md
 
 ---
 

@@ -1,3 +1,8 @@
+---
+source: human
+date: 2026-03-01
+---
+
 If you have read a sufficient number of LLM-written and Human-unedited texts, this is what you have probably perceived:  
   
 Correctio / Rhetorical reframing — "Not X, but Y."  
