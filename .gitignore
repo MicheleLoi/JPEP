@@ -21,3 +21,6 @@
 # escludi file temporanei di sessione Claude Code
 claude code conversations/
 transparency/tmpclaude-*
+
+# escludi cartella temporanea
+transparency/TEMP/
