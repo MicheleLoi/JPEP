@@ -21,9 +21,9 @@ related:
 
 ## RESUME HERE (last updated 2026-03-17, session SID-20260317-191544)
 
-**Immediate next action:** Draft Section 7 CFP adaptation (Phase 3).
-Source: `Paper/MDversion/07_review_mechanism.md`
-Plan: reframe from journal-specific review mechanism to community assessment of documentation adequacy. Drop reproduction test (already rejected). Reframe as: how should the scholarly community assess whether transparency documentation is adequate? Connect to Section 6's documentation-adequacy model.
+**Immediate next action:** Draft Conclusion CFP adaptation (Phase 4).
+Source: `Paper/MDversion/08_conclusion.md`
+Plan: rewrite conclusion to land on responsible AI-assisted ethics research requiring a philosophically specified transparency framework; self-exemplification; essentially-contested nature of ethical inquiry means we must track rather than prejudge; community assessment mechanisms remain to be developed. Word target: 400-600 words.
 
 **State summary:**
 - Phase 1 complete — Introduction + Section 3 both revised post-finalization (first component/step cut; see CFP_4.7.7)
@@ -31,7 +31,7 @@ Plan: reframe from journal-specific review mechanism to community assessment of 
 - Section 4: cut (no standalone section)
 - Section 5 finalized — CFP_5.4.7_Section5_v1.md (~1,350 words); modlog CFP_4.2.17 (9 entries); session SID-20260317-191544
 - Section 6 finalized — CFP_5.4.8_Section6_v3.md (~1,520 words); modlog CFP_4.2.18 (13 entries); session SID-20260323-190000. Note: §6.1 substantially deepened with two-routes argument (process-constitutive + community-level essential contestedness); adverse selection paragraph added §6.3; §6.4 rewritten around AI-assisted synthesis as viability mechanism.
-- Section 7: not started (Phase 3)
+- Section 7 finalized — CFP_5.4.9_Section7_v1.md (~1,000 words); modlog CFP_4.2.19 (6 entries); session SID-20260324-090000. Note: reproduction test dropped; dual-reviewer architecture repurposed for documentation adequacy assessment; organizing question = SP-3's tracing claim; three adequacy questions (attribution, trajectory, understanding-and-endorsement); ecological validity + good faith norms for assessment.
 
 ---
 
@@ -158,8 +158,8 @@ Contribution: MHC framework + documentation-adequacy + self-exemplification
 ### Phase 3: Sections requiring minor changes
 - [x] Draft Section 6 minor reframe (CFP_5.4.8_Section6_v3.md)
 - [x] Review + finalize Section 6
-- [ ] Draft Section 7 minor reframe (CFP_5.4.9_Section7_v1.md)
-- [ ] Review + finalize Section 7
+- [x] Draft Section 7 minor reframe (CFP_5.4.9_Section7_v1.md)
+- [x] Review + finalize Section 7
 
 ### Phase 4: Conclusion, Abstract, Title
 - [ ] Draft Conclusion rewrite (CFP_5.4.10_Conclusion_v1.md)
