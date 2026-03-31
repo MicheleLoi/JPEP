@@ -2,8 +2,6 @@
 source_chat_name: "JPEP section 7 writing"
 source_chat_link: "https://claude.ai/chat/682e5d2c-c6eb-4319-9019-1f9745e3bfbf"
 ---
-
-
 # References Document: AI-Assisted Scholarship Paper
 
 ## Purpose
@@ -305,3 +303,7 @@ Wheeler, M. (2018). Talking about more than Heads: the Embodied, Embedded and Ex
 **Sections documented:** I, II (partial), V, VI (no new refs), VII  
 **Sections pending:** VIII, IX, X  
 **Outstanding tasks:** Add Clark (2008), Boden & Edmonds (2009), consider Strathern (1997) for Section II
+
+## Connections (auto)
+
+_No connections found._

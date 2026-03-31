@@ -11,7 +11,6 @@ source_conversations:
   - session: "SID-20260324-173456"
     exported_as: JPEP_20260324_163409.md
 ---
-
 # Prompt Development Log (PDL): Section 7 Additions — Literature Integration
 
 **Scope:** Two additions to Section 7 (CFP_5.4.9) decided in session 2026-03-24, after Phase 3 was marked complete. Based on: (1) review of Abdulhai et al. (2026) on LLM semantic distortion; (2) review of SRL literature (Zimmerman 2002, Cheng et al. 2025, Barnard et al. 2009). Structural planning by Opus.
@@ -104,3 +103,8 @@ Section 7 v1 → v2. New file: `CFP_5.4.9_Section7_v2.md`.
 
 *PDL generated: 2026-03-24*
 *Workflow: Design | Command: MHC-PDL*
+
+
+## Connections (auto)
+
+_No connections found._

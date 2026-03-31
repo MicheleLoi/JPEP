@@ -12,7 +12,6 @@ source_file: "transparency/Canonical_MD/SP5_DevelopmentRecords/5.4_SectionDrafts
 transformation: "Minor reframe: venue/journal → research practice/community; principles → conditions (harmonization with Section 5); explicit connection §6.1 thinking-quality argument → cognitivist-objection defeat (Introduction); virtue dimension added §6.1; adverse selection observation added §6.3; nested concerns diagram updated for ethics framing."
 word_count: ~1550
 ---
-
 # 6. Mandatory Transparency in Practice
 
 ## 6.1 From Conditions to Practice
@@ -102,3 +101,8 @@ From the author's perspective, what matters is tracking AI-assisted work in ways
 Lloyd, D. (2025). Epistemic responsibility: toward a community standard for human-AI collaborations. *Frontiers in Artificial Intelligence*, 8, 1635691.
 
 Santoni de Sio, F., & van den Hoven, J. (2018). Meaningful human control over autonomous systems: a philosophical account. *Frontiers in Robotics and AI*, 5, 15.
+
+
+## Connections (auto)
+
+_No connections found._

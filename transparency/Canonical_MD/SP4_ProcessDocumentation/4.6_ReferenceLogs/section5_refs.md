@@ -2,7 +2,6 @@
 source_chat_name: "JPEP section 5 writing"
 source_chat_link: "https://claude.ai/chat/240f00db-62f9-4dcf-86f3-de1257562310"
 ---
-
 # Section 5: References to Add to Bibliography
 
 ## Already in Reference Lists (Confirm Usage)
@@ -98,3 +97,7 @@ Classical sources cited by standard reference:
 - Metaphysics 982b12-13
 
 This matches standard philosophy paper conventions.
+
+## Connections (auto)
+
+_No connections found._

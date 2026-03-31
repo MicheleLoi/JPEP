@@ -21,7 +21,6 @@ related_documents:
   - "4.6_ReferenceLogs/paper_bibliography.md"
   - "4.6_ReferenceLogs/citations-complete.md"
 ---
-
 # Modification Log: Introduction — CFP Adaptation
 
 ## Overview
@@ -171,3 +170,10 @@ This log tracks the drafting and revision of the CFP adaptation Introduction (`C
 **Citations after revision:** Jollimore (2025), Berg & Robbins (2024), Hosseini et al. (2023), Van Woudenberg et al. (2024), COPE Council (2024), Elsevier (2023), ACM (2025), Science (2023), Lund & Naheem (2023), Gallie (1956), Santoni de Sio & van den Hoven (2018). [Enoch, Shafer-Landau, Gibbard, Blackburn moved to Section 3.]
 
 **Related trace:** CFP_4.7.7_EpistemicTrace_NonSequiturRevision.md
+
+
+## Connections (auto)
+
+### Explicit links (inputs/outputs/etc.)
+**related_documents:**
+- UNRESOLVED: CFP_5.3.1_WorkPlan_CFP_Adaptation.md (master work plan); UNRESOLVED: CFP_5.4.3_Introduction_v1.md (section draft); UNRESOLVED: CFP_4.7.5_EpistemicTrace_Introduction_Spine.md (argumentative spine trace); UNRESOLVED: III_5.3.6_Floridi_style_sheet.md (style constraints); UNRESOLVED: 4.6_ReferenceLogs/references-master-list.md; UNRESOLVED: 4.6_ReferenceLogs/paper_bibliography.md; UNRESOLVED: 4.6_ReferenceLogs/citations-complete.md

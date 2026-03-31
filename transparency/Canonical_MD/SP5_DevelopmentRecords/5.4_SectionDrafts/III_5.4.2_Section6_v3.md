@@ -11,7 +11,6 @@ target_location: "Paper/MDversion/Full paper2511.08639v3.md"
 word_count: ~1400
 revision_note: "Replaces defective first draft (2026-01-28). This draft reads existing Section 6 (6.1-6.4) before drafting and preserves all hard-constraint content from v1."
 ---
-
 # Section 6: Mandatory Transparency in Practice
 
 ## 6.1 From Principles to Practice
@@ -97,3 +96,8 @@ From the author's perspective, what matters is tracking AI-assisted work in ways
 Lloyd, D. (2025). Epistemic responsibility: toward a community standard for human-AI collaborations. *Frontiers in Artificial Intelligence*, 8, 1635691.
 
 Santoni de Sio, F., & van den Hoven, J. (2018). Meaningful human control over autonomous systems: a philosophical account. *Frontiers in Robotics and AI*, 5, 15.
+
+
+## Connections (auto)
+
+_No connections found._

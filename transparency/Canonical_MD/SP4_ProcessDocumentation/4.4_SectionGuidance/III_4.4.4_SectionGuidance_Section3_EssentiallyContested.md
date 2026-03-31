@@ -14,7 +14,6 @@ inputs_for_drafting_ai:
   - "transparency/TEMP/Santoni de Sio et al. (2016) Why less praise for enhanced performance - OUP.pdf (optional - for direct quotes)"
   - "Paper/MDversion/Full paper2511.08639v1.md (for current Section 3 to be replaced)"
 ---
-
 # Section Guidance: Section 3 - Why Engage with AI-Assisted Scholarship?
 
 ## COMPLETE REWRITE - Stage III Revision
@@ -173,3 +172,8 @@ If deeper context needed:
 
 4. **For PDL development history:**
    `transparency/Canonical_MD/SP5_DevelopmentRecords/5.2_SectionPromptDevelopmentLogs_Type8b/III_5.2.1_pdl_sections_3_and_6_MHC_integration.md`
+
+
+## Connections (auto)
+
+_No connections found._

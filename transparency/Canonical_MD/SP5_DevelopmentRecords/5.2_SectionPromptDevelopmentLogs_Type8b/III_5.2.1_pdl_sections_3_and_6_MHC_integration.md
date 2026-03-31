@@ -51,7 +51,6 @@ output_completed2_date: 2026-01-26
 source_chat_name: "Claude Code (no chat ID)"
 source_chat_date: 2026-01-26
 ---
-
 # III.5.2.1 Prompt Development Log: Sections 3 and 6 - MHC Integration
 
 Document Type: Type 8b - Prompt Development Log (Section-Level)
@@ -577,3 +576,10 @@ Section 3 was a complete rewrite (as specified in guidance). The guidance was se
 9. Changed header from "SIGNIFICANT REVISION" to "SIGNIFICANT REVISION (NOT a complete rewrite)"
 
 **Constraint identified (2026-01-28):** SP-1 through SP-5 as specified in v1 are hard constraints on the entire paper — all revisions ground the existing apparatus, they do not redesign it.
+
+
+## Connections (auto)
+
+### Explicit links (inputs/outputs/etc.)
+**related_documents:**
+- UNRESOLVED: III_4.7.1_Reasonable_Human_Control_in_AI.md, Full paper2511.08639v1.md

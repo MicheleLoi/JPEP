@@ -11,7 +11,6 @@ source_guidance: "CFP_5.3.1_WorkPlan_CFP_Adaptation.md"
 cfp_target: "AI Tools in Ethics Research (topical collection)"
 word_count: ~1410
 ---
-
 # Section 3: Why Engage Transparently with AI-Assisted Ethics Research?
 
 The practice of ethics research is changing. Scholars increasingly work with AI systems in ways that were impossible a decade ago—drafting arguments through iterative dialogue, testing objections against synthetic interlocutors, refining formulations across hundreds of exchanges. It is happening now, across institutions and subdisciplines, with varying degrees of visibility.
@@ -73,3 +72,8 @@ Practices evolve; disciplines transform; what counts as legitimate method shifts
 Gallie, W. B. (1956). Essentially contested concepts. *Proceedings of the Aristotelian Society*, 56, 167-198.
 
 Santoni de Sio, F., Faber, N. S., Savulescu, J., & Vincent, N. A. (2016). Why less praise for enhanced performance? In J. Clausen & N. Levy (Eds.), *Handbook of Neuroethics* (pp. 27-41). Oxford University Press.
+
+
+## Connections (auto)
+
+_No connections found._

@@ -2,7 +2,6 @@
 Source chat name: JPEP section 7 writing
 Source chat link: https://claude.ai/chat/682e5d2c-c6eb-4319-9019-1f9745e3bfbf
 ---
-
 # Complete Citations by Section
 
 **Source chat name:** JPEP section 7 writing
@@ -127,3 +126,8 @@ Shafer-Landau, R. (2003). *Moral Realism: A Defence*. Oxford: Oxford University 
 Strathern, M. (1997). "'Improving ratings': Audit in the British university system." *European Review*, 5(3), 305-321. https://doi.org/10.1017/S1062798700002660
 
 Wheeler, M. (2018). "Talking about more than Heads: the Embodied, Embedded and Extended Creative Mind." In B. Gaut & M. Kieran (eds.), *Creativity and Philosophy*. London: Routledge, pp. 230-250.
+
+
+## Connections (auto)
+
+_No connections found._

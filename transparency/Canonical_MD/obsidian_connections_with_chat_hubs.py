@@ -287,7 +287,8 @@ def generate_connections_block(
     chat_id = file_to_chat.get(file_entry.path)
     if chat_id:
         hubs_folder_clean = hubs_folder.rstrip('/').rstrip('\\')
-        hub_stem = f"{hubs_folder_clean}/CHAT_{chat_id}"
+        safe_id = re.sub(r'[/\\:*?"<>|]', '_', chat_id)
+        hub_stem = f"{hubs_folder_clean}/CHAT_{safe_id}"
         # Obsidian wants paths without extension; keep forward slash
         hub_stem = hub_stem.replace("\\", "/")
         chat_name = chat_to_name.get(chat_id, "")
@@ -371,7 +372,8 @@ def write_chat_hubs(
     count = 0
 
     for chat_id, files in chat_index.items():
-        hub_path = hubs_root / f"CHAT_{chat_id}.md"
+        safe_id = re.sub(r'[/\\:*?"<>|]', '_', chat_id)
+        hub_path = hubs_root / f"CHAT_{safe_id}.md"
         title = f"Chat hub: {chat_id}"
         chat_name = chat_to_name.get(chat_id, "")
 

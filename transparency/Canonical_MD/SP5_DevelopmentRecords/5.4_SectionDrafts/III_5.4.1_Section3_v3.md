@@ -10,7 +10,6 @@ source_guidance: "III_4.4.4_SectionGuidance_Section3_EssentiallyContested.md"
 target_location: "Paper/MDversion/Full paper2511.08639v3.md"
 word_count: ~950
 ---
-
 # Section 3: Why Engage with AI-Assisted Scholarship?
 
 The practice of philosophy is changing. Scholars increasingly work with AI systems in ways that were impossible a decade ago—drafting arguments through iterative dialogue, testing objections against synthetic interlocutors, refining formulations across hundreds of exchanges. It is happening now, across institutions and subdisciplines, with varying degrees of visibility.
@@ -60,3 +59,8 @@ Practices evolve; disciplines transform; what counts as legitimate method shifts
 Gallie, W. B. (1956). Essentially contested concepts. *Proceedings of the Aristotelian Society*, 56, 167-198.
 
 Santoni de Sio, F., Faber, N. S., Savulescu, J., & Vincent, N. A. (2016). Why less praise for enhanced performance? In J. Clausen & N. Levy (Eds.), *Handbook of Neuroethics* (pp. 27-41). Oxford University Press.
+
+
+## Connections (auto)
+
+_No connections found._

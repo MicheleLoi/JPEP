@@ -15,7 +15,6 @@ related:
   - "III_5.4.1_Section3_v3.md (v3 Section 3 — critical to fit analysis)"
   - "III_5.4.2_Section6_v3.md (v3 Section 6 — strongest CFP contribution)"
 ---
-
 # CFP Branch Creation and Fit Analysis: AI Tools in Ethics Research
 
 ## Session Context
@@ -139,3 +138,8 @@ During Phase 2, the epistemic trace relied on `Paper/MDversion/03_why_engage...`
 3. **Sections requiring minimal change** — Sections 5–7 (v3) carry over largely intact; only reframing of "journal/venue" language to "research practice" language is needed.
 
 4. **Open question** — whether the CFP venue accepts AI-assisted submissions with full transparency documentation. This affects whether the proof-of-concept framing is viable and whether the Appendix can accompany the paper. Should be verified before substantial adaptation work begins.
+
+
+## Connections (auto)
+
+_No connections found._

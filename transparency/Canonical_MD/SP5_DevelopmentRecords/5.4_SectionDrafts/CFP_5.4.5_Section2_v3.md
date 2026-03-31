@@ -12,7 +12,6 @@ revision_basis: "CFP_5.4.5_Section2_v2.md — 2.3 folded into close of 2.2"
 session_id: SID-20260317-182817
 word_count: ~900
 ---
-
 # 2. Systemic Barriers to Disclosure
 
 Current publishing policies require disclosure of AI assistance while simultaneously creating professional environments where such disclosure carries reputational costs. The resulting incentive structure produces systematic underreporting, and the degree of underreporting scales with the significance of the work. This section shows why: the mechanisms that drive underreporting operate within genuine ambiguities that formal mandates cannot eliminate. What is needed is not more stringent reporting requirements but a philosophically specified account of what transparency is for.
@@ -42,3 +41,8 @@ The argument above would be of limited significance if AI-assisted scholarship r
 Review processes have no detection mechanisms for undisclosed AI involvement. Unlike data fabrication or plagiarism, AI-assisted argument development leaves no forensic trace that reviewers or editors can identify. The scholarly record is accumulating under conditions of systematic opacity: work is being evaluated, cited, assigned, and built upon by readers who cannot assess the degree of human judgment constitutive of the arguments they are engaging. For a field whose subject matter is the normative evaluation of human action and whose methods are themselves contested, this is not a peripheral concern about research administration. It is a constitutive epistemic problem.
 
 The problem is one of underspecification, not dishonesty. The four mechanisms do not operate through bad faith—they operate through genuine ambiguity that stronger mandates cannot eliminate, because current disclosure policies establish that AI use must be reported without specifying what must be reported, in what form, or against what standard of adequacy. Closing this gap requires prior philosophical work: specifying what transparency is *for*, what documentation is adequate, and what criteria allow a reader or reviewer to determine whether transparency requirements have been substantively met. The remaining sections undertake that project.
+
+
+## Connections (auto)
+
+_No connections found._

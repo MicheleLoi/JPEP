@@ -13,7 +13,6 @@ session_id: SID-20260323-190000
 transformation: "v2 → v3: §6.2 SP-3 paragraph rewritten (removed internal reproduction-test development history, stated positively); §6.4 entirely rewritten as single paragraph on two-layer architecture (raw transcript as ground truth + SP-3 as AI-assisted synthesis); timestamp claim removed as obsolete; 'training examples' framing cut."
 word_count: ~1520
 ---
-
 # 6. Mandatory Transparency in Practice
 
 ## 6.1 From Conditions to Practice
@@ -93,3 +92,8 @@ Second, several limitations of the current implementation are likely to diminish
 Lloyd, D. (2025). Epistemic responsibility: toward a community standard for human-AI collaborations. *Frontiers in Artificial Intelligence*, 8, 1635691.
 
 Santoni de Sio, F., & van den Hoven, J. (2018). Meaningful human control over autonomous systems: a philosophical account. *Frontiers in Robotics and AI*, 5, 15.
+
+
+## Connections (auto)
+
+_No connections found._

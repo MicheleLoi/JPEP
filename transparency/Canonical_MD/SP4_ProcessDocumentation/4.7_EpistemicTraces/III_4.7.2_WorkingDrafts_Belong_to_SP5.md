@@ -9,7 +9,6 @@ trigger: "Discussion of how to structure v3 section revisions"
 status: Complete
 implications: "Ontology revision needed - add Type 12 (Section Drafts) under SP5"
 ---
-
 # Epistemic Trace: Working Drafts Belong to SP5
 
 **Date:** 2026-01-26
@@ -105,3 +104,8 @@ SP5_DevelopmentRecords/
 - **Triggered by:** Planning discussion in III_5.2.1_pdl_sections_3_and_6_MHC_integration.md
 - **Informs:** Artifact ontology revision (pending)
 - **Related:** Git branching strategy for v3 revisions
+
+
+## Connections (auto)
+
+_No connections found._
