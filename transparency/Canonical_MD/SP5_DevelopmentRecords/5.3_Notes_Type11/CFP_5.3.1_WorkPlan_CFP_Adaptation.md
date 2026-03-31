@@ -19,9 +19,18 @@ related:
 
 ---
 
-## RESUME HERE (last updated 2026-03-17, session SID-20260317-191544)
+## RESUME HERE (last updated 2026-03-24, session SID-20260324-173456)
 
-**Immediate next action:** Draft Conclusion CFP adaptation (Phase 4).
+**Immediate next action:** Implement Section 7 additions (pre-Phase 4 step), then draft Conclusion (Phase 4).
+
+**Pre-Phase 4 step — Section 7 additions (PENDING IMPLEMENTATION):**
+Two additions to Section 7 were designed and approved in session SID-20260324-173456 but not yet implemented. Full implementation plan at:
+`transparency/Canonical_MD/SP5_DevelopmentRecords/5.3_Notes_Type11/CFP_5.3.3_Note_Section7_Implementation_Plan.md`
+Design decisions documented at:
+`transparency/Canonical_MD/SP5_DevelopmentRecords/5.2_SectionPromptDevelopmentLogs_Type8b/CFP_5.2.1_pdl_section7_additions.md`
+Summary: (A) Abdulhai et al. (2026) empirical corroboration in §7.2 (~100 words); (B) SRL cost-objection reply in §7.4 (~150 words); (C) new References block. Output: `CFP_5.4.9_Section7_v2.md`. Followed by citation file updates (paper_bibliography.md, references_doc.md). Then create modlog CFP_4.2.20.
+
+**After Section 7 additions:** Draft Conclusion CFP adaptation (Phase 4).
 Source: `Paper/MDversion/08_conclusion.md`
 Plan: rewrite conclusion to land on responsible AI-assisted ethics research requiring a philosophically specified transparency framework; self-exemplification; essentially-contested nature of ethical inquiry means we must track rather than prejudge; community assessment mechanisms remain to be developed. Word target: 400-600 words.
 
@@ -31,7 +40,8 @@ Plan: rewrite conclusion to land on responsible AI-assisted ethics research requ
 - Section 4: cut (no standalone section)
 - Section 5 finalized — CFP_5.4.7_Section5_v1.md (~1,350 words); modlog CFP_4.2.17 (9 entries); session SID-20260317-191544
 - Section 6 finalized — CFP_5.4.8_Section6_v3.md (~1,520 words); modlog CFP_4.2.18 (13 entries); session SID-20260323-190000. Note: §6.1 substantially deepened with two-routes argument (process-constitutive + community-level essential contestedness); adverse selection paragraph added §6.3; §6.4 rewritten around AI-assisted synthesis as viability mechanism.
-- Section 7 finalized — CFP_5.4.9_Section7_v1.md (~1,000 words); modlog CFP_4.2.19 (6 entries); session SID-20260324-090000. Note: reproduction test dropped; dual-reviewer architecture repurposed for documentation adequacy assessment; organizing question = SP-3's tracing claim; three adequacy questions (attribution, trajectory, understanding-and-endorsement); ecological validity + good faith norms for assessment.
+- Section 7 finalized (v1) — CFP_5.4.9_Section7_v1.md (~1,000 words); modlog CFP_4.2.19 (6 entries); session SID-20260324-090000. Note: reproduction test dropped; dual-reviewer architecture repurposed for documentation adequacy assessment; organizing question = SP-3's tracing claim; three adequacy questions (attribution, trajectory, understanding-and-endorsement); ecological validity + good faith norms for assessment.
+- Section 7 v2 (additions approved, not yet implemented) — see pre-Phase 4 step above.
 
 ---
 
@@ -40,7 +50,7 @@ Plan: rewrite conclusion to land on responsible AI-assisted ethics research requ
 When the user types `mhc-start`, do the following in order:
 
 1. **Read this file** in full. It is the master plan for the CFP adaptation.
-2. **Read MEMORY.md** at `C:\Users\loimi\.claude\projects\C--Users-loimi-switchdrive-CURRENTLY-WORKING-ON-AI---assisted-papers-JPEP\memory\MEMORY.md` for project-wide instructions (especially: authoritative section drafts are in `5.4_SectionDrafts/`, NOT `Paper/MDversion/`).
+2. **Read MEMORY.md** if available (path is machine-specific: `~/.claude/projects/<converted-project-path>/memory/MEMORY.md`). On a new machine it may not exist — this file is self-sufficient without it. Key instruction it would provide: authoritative section drafts are in `5.4_SectionDrafts/`, NOT `Paper/MDversion/`.
 3. **Check the progress checklist** (Section B below). Identify the next unchecked item.
 4. **Run `git status` and `git branch`** on the working directory. Confirm you are on branch `cfp-ai-ethics-inquiry`. If not, switch to it.
 5. **Read the source file** for the next section to be drafted (see Section C for locations).
@@ -160,6 +170,12 @@ Contribution: MHC framework + documentation-adequacy + self-exemplification
 - [x] Review + finalize Section 6
 - [x] Draft Section 7 minor reframe (CFP_5.4.9_Section7_v1.md)
 - [x] Review + finalize Section 7
+
+### Phase 3b: Section 7 additions (pre-Phase 4, decided 2026-03-24)
+- [ ] Implement additions A + B + C → save as CFP_5.4.9_Section7_v2.md (see CFP_5.3.3)
+- [ ] Update paper_bibliography.md (3 new entries + Section VII block + housekeeping)
+- [ ] Update references_doc.md (new Section VII CFP block)
+- [ ] Create modlog CFP_4.2.20
 
 ### Phase 4: Conclusion, Abstract, Title
 - [ ] Draft Conclusion rewrite (CFP_5.4.10_Conclusion_v1.md)
