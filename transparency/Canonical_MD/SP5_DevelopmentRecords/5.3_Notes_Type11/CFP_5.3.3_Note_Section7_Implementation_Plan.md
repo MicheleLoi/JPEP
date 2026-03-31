@@ -155,5 +155,8 @@ Log: Section 7 v1 → v2. Two additions: (A) Abdulhai et al. empirical corrobora
 **Estimated word count after additions:** ~1,250 words (Section 7 v2).
 ## Connections (auto)
 
-_No connections found._
+### Source chat (primary)
+- [[_HUBS/CHAT_SID-20260324-173456]]
+### Sibling artifacts (same chat)
+- [[CFP_5.2.1_pdl_section7_additions]]
 

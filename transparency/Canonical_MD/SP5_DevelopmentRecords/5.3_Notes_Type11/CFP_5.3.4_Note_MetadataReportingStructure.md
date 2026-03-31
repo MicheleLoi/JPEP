@@ -18,7 +18,6 @@ related:
   - "transparency/Canonical_MD/obsidian_connections_with_chat_hubs.py (hub script)"
   - "transparency/Canonical_MD/_HUBS/ (generated hub nodes)"
 ---
-
 # Metadata Reporting Structure: Phases, Limitations, and Relevance for SP-1/2/3 Rewrite
 
 ## Note to AI reader
@@ -210,3 +209,9 @@ Two evidence sources were used in combination:
 ---
 
 *End of note.*
+
+
+## Connections (auto)
+
+### Source chat (primary)
+- [[_HUBS/CHAT_SID-20260331-000000]]

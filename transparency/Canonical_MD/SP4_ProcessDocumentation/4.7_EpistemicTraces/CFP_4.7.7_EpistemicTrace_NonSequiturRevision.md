@@ -103,5 +103,8 @@ Session SID-20260311-185449 (started 2026-03-11, continued 2026-03-12). Two main
 *Workflow: CFP Adaptation Phase 2 | Session: SID-20260311-185449*
 ## Connections (auto)
 
-_No connections found._
+### Source chat (primary)
+- [[_HUBS/CHAT_SID-20260311-185449]]
+### Sibling artifacts (same chat)
+- [[CFP_5.3.2_ReviewerB_Section2_PendingDecision]]
 

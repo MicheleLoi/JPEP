@@ -105,5 +105,8 @@ Section 7 v1 → v2. New file: `CFP_5.4.9_Section7_v2.md`.
 *Workflow: Design | Command: MHC-PDL*
 ## Connections (auto)
 
-_No connections found._
+### Source chat (primary)
+- [[_HUBS/CHAT_SID-20260324-173456]]
+### Sibling artifacts (same chat)
+- [[CFP_5.3.3_Note_Section7_Implementation_Plan]]
 

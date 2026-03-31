@@ -43,5 +43,8 @@ Review processes have no detection mechanisms for undisclosed AI involvement. Un
 The problem is one of underspecification, not dishonesty. The four mechanisms do not operate through bad faith—they operate through genuine ambiguity that stronger mandates cannot eliminate, because current disclosure policies establish that AI use must be reported without specifying what must be reported, in what form, or against what standard of adequacy. Closing this gap requires prior philosophical work: specifying what transparency is *for*, what documentation is adequate, and what criteria allow a reader or reviewer to determine whether transparency requirements have been substantively met. The remaining sections undertake that project.
 ## Connections (auto)
 
-_No connections found._
+### Source chat (primary)
+- [[_HUBS/CHAT_SID-20260317-182817]]
+### Sibling artifacts (same chat)
+- [[CFP_4.2.15_ModificationLog_Section2]]; [[CFP_5.4.5_Section2_v2]]
 

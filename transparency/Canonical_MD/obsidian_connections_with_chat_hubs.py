@@ -70,6 +70,7 @@ DEFAULT_REL_FIELDS = [
 
 CHAT_FIELDS = ["source_chat_id", "chat_id", "source_chat", "source_chatid"]  # allow variants
 CHAT_NAME_FIELDS = ["source_chat_name", "chat_name"]
+SESSION_FIELDS = ["session_id"]  # Claude Code SID format: SID-YYYYMMDD-HHMMSS
 
 
 @dataclass
@@ -242,6 +243,14 @@ def build_chat_index(vault: Path) -> Tuple[Dict[str, List[FileEntry]], Dict[Path
                 chat_ids_for_file.append(chat_id)
                 if chat_id not in chat_to_name and num in numbered_names:
                     chat_to_name[chat_id] = numbered_names[num]
+
+        # 3) session_id field (Claude Code SID format: SID-YYYYMMDD-HHMMSS)
+        for k in SESSION_FIELDS:
+            if k in data and data.get(k):
+                sid = str(data.get(k)).strip()
+                if sid and sid not in chat_ids_for_file:
+                    chat_ids_for_file.append(sid)
+                break
 
         if not chat_ids_for_file:
             continue

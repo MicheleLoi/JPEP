@@ -221,5 +221,6 @@ git push
 - **Model:** epistemic constitutional ai/CLAUDE_UPDATE_BRIEF_SWISS.md
 ## Connections (auto)
 
-_No connections found._
+### Source chat (primary)
+- [[_HUBS/CHAT_SID-20260126-000000]]
 

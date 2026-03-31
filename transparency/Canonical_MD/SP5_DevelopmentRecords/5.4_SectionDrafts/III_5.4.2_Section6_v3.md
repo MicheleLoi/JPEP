@@ -100,5 +100,8 @@ Lloyd, D. (2025). Epistemic responsibility: toward a community standard for huma
 Santoni de Sio, F., & van den Hoven, J. (2018). Meaningful human control over autonomous systems: a philosophical account. *Frontiers in Robotics and AI*, 5, 15.
 ## Connections (auto)
 
-_No connections found._
+### Source chat (primary)
+- [[_HUBS/CHAT_SID-20260302-152952]]
+### Sibling artifacts (same chat)
+- [[III_4.7.3_MHC_Tracing_SP_Reconception]]
 

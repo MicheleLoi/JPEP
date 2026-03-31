@@ -48,5 +48,8 @@ Taken jointly, they also entail a further consequence: documentation produced un
 The framework developed in Section 6 is designed to satisfy all three. Its documentation requirements are process-grounded rather than retrospective, designed for willing practitioners rather than for potential evaders, and structured so that comprehensive honest documentation emerges naturally from genuine AI-assisted work while remaining credibly differentiated from nominal compliance. What follows specifies how.
 ## Connections (auto)
 
-_No connections found._
+### Source chat (primary)
+- [[_HUBS/CHAT_SID-20260317-191544]]
+### Sibling artifacts (same chat)
+- [[CFP_4.2.17_ModificationLog_Section5]]
 

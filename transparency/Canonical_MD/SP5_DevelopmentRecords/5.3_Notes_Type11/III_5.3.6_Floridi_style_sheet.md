@@ -47,5 +47,6 @@ Compulsive listing — turning everything into bullet points or numbered lists w
 Excessive bolding — bolding every third phrase as if the reader can't find the important parts themselves.
 ## Connections (auto)
 
-_No connections found._
+### Source chat (primary)
+- [[_HUBS/CHAT_SID-20260303-102634]]
 

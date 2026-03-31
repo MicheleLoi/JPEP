@@ -364,6 +364,11 @@ Before finalizing, verify:
 | 2026-01-28 | Major revision: added hard constraints, mandatory reading, keep/modify/add structure | First draft (III_5.4.2_Section6_v3.md) was defective — produced without reading existing Section 6, resulting in blank-slate rewrite that lost existing philosophical arguments and structural decisions |
 ## Connections (auto)
 
+### Source chat (primary)
+- [[_HUBS/CHAT_SID-20260202-115248]]
+### Sibling artifacts (same chat)
+- [[III_4.4.4_SectionGuidance_Section3_EssentiallyContested]]; [[III_4.7.2_WorkingDrafts_Belong_to_SP5]]; [[III_5.2.1_pdl_sections_3_and_6_MHC_integration]]; [[III_5.4.1_Section3_v3]]
+
 ### Explicit links (inputs/outputs/etc.)
 **inputs_for_drafting_ai:**
 - UNRESOLVED: This document (self-sufficient prompt); UNRESOLVED: 6.1; UNRESOLVED: 6.4; UNRESOLVED: transparency/TEMP/Santoni_de_sio_frobt-05-00015.xml (optional - for direct quotes on tracking/tracing); UNRESOLVED: transparency/TEMP/Lloyd_frai-08-1635691.xml (optional - for engagement with Lloyd's standards)

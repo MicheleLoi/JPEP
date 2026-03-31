@@ -54,5 +54,8 @@ User responds with one of:
 - `revise: [instruction]` — apply revisions, produce v2, return to Reviewer B
 ## Connections (auto)
 
-_No connections found._
+### Source chat (primary)
+- [[_HUBS/CHAT_SID-20260311-185449]]
+### Sibling artifacts (same chat)
+- [[CFP_4.7.7_EpistemicTrace_NonSequiturRevision]]
 

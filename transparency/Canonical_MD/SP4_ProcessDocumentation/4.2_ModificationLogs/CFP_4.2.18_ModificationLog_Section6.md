@@ -130,5 +130,8 @@ The v3 source draft:
 **Reviewer B (v3):** APPROVE. All five criteria satisfied. One minor note on table rendering (no content change required).
 ## Connections (auto)
 
-_No connections found._
+### Source chat (primary)
+- [[_HUBS/CHAT_SID-20260323-190000]]
+### Sibling artifacts (same chat)
+- [[CFP_5.4.8_Section6_v3]]
 

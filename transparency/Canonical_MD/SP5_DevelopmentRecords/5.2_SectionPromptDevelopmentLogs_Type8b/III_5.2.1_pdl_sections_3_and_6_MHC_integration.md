@@ -580,6 +580,11 @@ Section 3 was a complete rewrite (as specified in guidance). The guidance was se
 **Constraint identified (2026-01-28):** SP-1 through SP-5 as specified in v1 are hard constraints on the entire paper — all revisions ground the existing apparatus, they do not redesign it.
 ## Connections (auto)
 
+### Source chat (primary)
+- [[_HUBS/CHAT_SID-20260202-115248]]
+### Sibling artifacts (same chat)
+- [[III_4.4.4_SectionGuidance_Section3_EssentiallyContested]]; [[III_4.4.5_SectionGuidance_Section6_MHC]]; [[III_4.7.2_WorkingDrafts_Belong_to_SP5]]; [[III_5.4.1_Section3_v3]]
+
 ### Explicit links (inputs/outputs/etc.)
 **related_documents:**
 - UNRESOLVED: III_4.7.1_Reasonable_Human_Control_in_AI.md, Full paper2511.08639v1.md

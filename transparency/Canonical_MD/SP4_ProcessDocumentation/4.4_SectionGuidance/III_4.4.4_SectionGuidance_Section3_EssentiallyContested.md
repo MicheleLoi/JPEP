@@ -176,6 +176,11 @@ If deeper context needed:
    `transparency/Canonical_MD/SP5_DevelopmentRecords/5.2_SectionPromptDevelopmentLogs_Type8b/III_5.2.1_pdl_sections_3_and_6_MHC_integration.md`
 ## Connections (auto)
 
+### Source chat (primary)
+- [[_HUBS/CHAT_SID-20260202-115248]]
+### Sibling artifacts (same chat)
+- [[III_4.4.5_SectionGuidance_Section6_MHC]]; [[III_4.7.2_WorkingDrafts_Belong_to_SP5]]; [[III_5.2.1_pdl_sections_3_and_6_MHC_integration]]; [[III_5.4.1_Section3_v3]]
+
 ### Explicit links (inputs/outputs/etc.)
 **inputs_for_drafting_ai:**
 - UNRESOLVED: This document (self-sufficient prompt); UNRESOLVED: transparency/TEMP/Santoni de Sio et al. (2016) Why less praise for enhanced performance - OUP.pdf (optional - for direct quotes); UNRESOLVED: Paper/MDversion/Full paper2511.08639v1.md (for current Section 3 to be replaced)

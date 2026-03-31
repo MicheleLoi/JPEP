@@ -56,5 +56,8 @@ Documentation assessment is itself a learning practice. Early assessors are nece
 The self-exemplification of this article creates an immediate opportunity. The supplementary materials (SP-1 through SP-5) represent one implementation of the framework's requirements. Whether they are adequate—whether SP-3's tracing claim is supported by SP-4's underlying materials, whether the intellectual trajectory is legible, whether the author's understanding and endorsement are evidenced—is precisely the question this article invites the community to address. The framework provides its own first test case.
 ## Connections (auto)
 
-_No connections found._
+### Source chat (primary)
+- [[_HUBS/CHAT_SID-20260324-090000]]
+### Sibling artifacts (same chat)
+- [[CFP_4.2.19_ModificationLog_Section7]]
 
