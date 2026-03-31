@@ -286,7 +286,8 @@ def generate_connections_block(
     # --- 1) Source chat skeleton (primary) ---
     chat_id = file_to_chat.get(file_entry.path)
     if chat_id:
-        hub_stem = f"{hubs_folder.rstrip('/').rstrip('\\')}/CHAT_{chat_id}"
+        hubs_folder_clean = hubs_folder.rstrip('/').rstrip('\\')
+        hub_stem = f"{hubs_folder_clean}/CHAT_{chat_id}"
         # Obsidian wants paths without extension; keep forward slash
         hub_stem = hub_stem.replace("\\", "/")
         chat_name = chat_to_name.get(chat_id, "")
