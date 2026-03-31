@@ -46,8 +46,7 @@ Together, these three conditions—ecological validity, good faith orientation, 
 Taken jointly, they also entail a further consequence: documentation produced under such a framework cannot function as raw disclosure to be taken at face value, but must constitute a defended claim about its own adequacy — one that the author is responsible for justifying and that others can assess.
 
 The framework developed in Section 6 is designed to satisfy all three. Its documentation requirements are process-grounded rather than retrospective, designed for willing practitioners rather than for potential evaders, and structured so that comprehensive honest documentation emerges naturally from genuine AI-assisted work while remaining credibly differentiated from nominal compliance. What follows specifies how.
-
-
 ## Connections (auto)
 
 _No connections found._
+

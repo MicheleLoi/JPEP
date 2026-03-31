@@ -172,8 +172,7 @@ If deeper context needed:
 
 4. **For PDL development history:**
    `transparency/Canonical_MD/SP5_DevelopmentRecords/5.2_SectionPromptDevelopmentLogs_Type8b/III_5.2.1_pdl_sections_3_and_6_MHC_integration.md`
-
-
 ## Connections (auto)
 
 _No connections found._
+

@@ -41,8 +41,7 @@ The argument above would be of limited significance if AI-assisted scholarship r
 Review processes have no detection mechanisms for undisclosed AI involvement. Unlike data fabrication or plagiarism, AI-assisted argument development leaves no forensic trace that reviewers or editors can identify. The scholarly record is accumulating under conditions of systematic opacity: work is being evaluated, cited, assigned, and built upon by readers who cannot assess the degree of human judgment constitutive of the arguments they are engaging. For a field whose subject matter is the normative evaluation of human action and whose methods are themselves contested, this is not a peripheral concern about research administration. It is a constitutive epistemic problem.
 
 The problem is one of underspecification, not dishonesty. The four mechanisms do not operate through bad faith—they operate through genuine ambiguity that stronger mandates cannot eliminate, because current disclosure policies establish that AI use must be reported without specifying what must be reported, in what form, or against what standard of adequacy. Closing this gap requires prior philosophical work: specifying what transparency is *for*, what documentation is adequate, and what criteria allow a reader or reviewer to determine whether transparency requirements have been substantively met. The remaining sections undertake that project.
-
-
 ## Connections (auto)
 
 _No connections found._
+

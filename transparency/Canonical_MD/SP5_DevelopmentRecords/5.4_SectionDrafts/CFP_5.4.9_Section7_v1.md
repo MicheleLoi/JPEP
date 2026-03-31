@@ -54,8 +54,7 @@ Calibration matters. The depth of documentation review should be proportional to
 Documentation assessment is itself a learning practice. Early assessors are necessarily improvising, working without established community norms for what adequate documentation looks like across different types of philosophical work. Norms can only develop through accumulated experience. Assessors who articulate what they found adequate or inadequate, and why, contribute to the community knowledge that Section 6.3 identifies as the framework's long-run goal. Engaged assessment reports—ones that take the documentation seriously rather than approving or rejecting in summary—accelerate community learning in ways that a purely accept-or-reject verdict cannot.
 
 The self-exemplification of this article creates an immediate opportunity. The supplementary materials (SP-1 through SP-5) represent one implementation of the framework's requirements. Whether they are adequate—whether SP-3's tracing claim is supported by SP-4's underlying materials, whether the intellectual trajectory is legible, whether the author's understanding and endorsement are evidenced—is precisely the question this article invites the community to address. The framework provides its own first test case.
-
-
 ## Connections (auto)
 
 _No connections found._
+

@@ -97,7 +97,7 @@ Classical sources cited by standard reference:
 - Metaphysics 982b12-13
 
 This matches standard philosophy paper conventions.
-
 ## Connections (auto)
 
 _No connections found._
+

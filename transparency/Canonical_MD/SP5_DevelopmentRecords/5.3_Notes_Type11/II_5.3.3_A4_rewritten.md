@@ -215,8 +215,7 @@ SP-4 contains the writing process itself: what guided the work (Complete Prompt,
 SP-5 documents how guidance evolved: how exploratory material (Type 2) became actionable instructions (Type 1 and Type 3) via structured refinement (Type 8), plus integrity-supporting notes (Type 11).
 
 This separation keeps artifacts used in the writing process (SP-4) distinct from documentation of the evolution of instructions (SP-5).
-
-
 ## Connections (auto)
 
 _No connections found._
+

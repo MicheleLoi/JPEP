@@ -9,7 +9,7 @@ New citational metrics reflecting the way LLM process information could be devel
 Claude started to introduce dates near users inputs (unclear when, noticed end December 2025)
 
 Chats are the primary reference skeleton. With commercial services, they can be tracked with stable IDs vendor provider, or through internal systems
-
 ## Connections (auto)
 
 _No connections found._
+

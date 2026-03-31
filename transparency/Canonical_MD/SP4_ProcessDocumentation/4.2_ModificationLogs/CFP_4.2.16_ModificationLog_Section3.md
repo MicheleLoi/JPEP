@@ -174,10 +174,9 @@ The Introduction already added the four metaethics references (Enoch 2011; Shafe
 **User approval:** Pending
 
 Per the review protocol (Section D of the work plan), the section is finalized only when both Reviewer B (Opus) and the user (Reviewer A) approve. If Reviewer B requests revisions, a new version will be saved as `CFP_5.4.4_Section3_v2.md` and this log updated with an additional entry documenting what was requested and what changed.
-
-
 ## Connections (auto)
 
 ### Explicit links (inputs/outputs/etc.)
 **related_documents:**
 - UNRESOLVED: CFP_5.3.1_WorkPlan_CFP_Adaptation.md (master work plan); UNRESOLVED: III_5.4.1_Section3_v3.md (source draft); UNRESOLVED: CFP_5.4.4_Section3_v1.md (CFP section draft)
+

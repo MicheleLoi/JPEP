@@ -67,8 +67,7 @@ Type 3 (Modification Log)
 - CFP adaptation drafts are created on branch `cfp-ai-ethics-inquiry`
 - CFP drafts governed by work plan: CFP_5.3.1_WorkPlan_CFP_Adaptation.md
 - See also: III_5.3.5_SteeringNote_v3_Section_Revisions.md (Stage III steering)
-
-
 ## Connections (auto)
 
 _No connections found._
+
