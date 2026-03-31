@@ -62,6 +62,10 @@ DEFAULT_REL_FIELDS = [
     "inputs_see", "inputs_key_source", "inputs_summary",
     "relationship_note", "taxonomy_source_role",
     "salient_outputs", "salient_output_artifact",
+    "output_completed", "output_completed1", "output_completed2",
+    "output_completed3", "output_completed4",
+    "derived_from_artifact",
+    "inputs_for_drafting_ai",
 ]
 
 CHAT_FIELDS = ["source_chat_id", "chat_id", "source_chat", "source_chatid"]  # allow variants

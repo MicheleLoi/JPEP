@@ -11,39 +11,39 @@ date_finalized: 2026-01-26
 status: Complete (Phase 3 - All Guidance Documents Produced)
 version: III (Post-arXiv v2 revision cycle)
 related_documents: "III_4.7.1_Reasonable_Human_Control_in_AI.md, Full paper2511.08639v1.md"
-input_source1_title: "Meaningful Human Control over Autonomous Systems: A Philosophical Account"
-input_source1_authors: "Filippo Santoni de Sio, Jeroen van den Hoven"
-input_source1_journal: "Frontiers in Robotics and AI"
-input_source1_year: 2018
-input_source1_doi: "10.3389/frobt.2018.00015"
-input_source1_location: "transparency/TEMP/Santoni_de_sio_frobt-05-00015.xml"
-input_source1_role: "Source of MHC framework (tracking/tracing conditions)"
-input_source2_file: "transparency/Canonical_MD/SP4_ProcessDocumentation/4.7_EpistemicTraces/III_4.7.1_Reasonable_Human_Control_in_AI.md"
-input_source2_role: "Already completed transfer of MHC to AI-assisted philosophical writing; provides operational checklist"
-input_source3_file: "transparency/TEMP/Note on LLoyd.md"
-input_source3_role: "Shows prior thinking connecting replicability to meaningful human control; objection to text demarcation"
-input_source4_file: "Paper/MDversion/Full paper2511.08639v1.md"
-input_source4_role: "Current paper structure; Sections 3 and 6 as revision targets"
-input_source5_title: "Why Less Praise for Enhanced Performance?"
-input_source5_authors: "Filippo Santoni de Sio, Nadira S. Faber, Julian Savulescu, Nicole A Vincent"
-input_source5_book: "Handbook of Neuroethics (OUP)"
-input_source5_year: 2016
-input_source5_pages: "27-41"
-input_source5_location: "transparency/TEMP/Santoni de Sio et al. (2016) Why less praise for enhanced performance - OUP.pdf"
-input_source5_role: "Nature-of-activities framework; constitutive vs regulative rules; analogical basis for Section 3 rewrite"
-input_source6_title: "Essentially Contested Concepts"
-input_source6_authors: "W. B. Gallie"
-input_source6_journal: "Proceedings of the Aristotelian Society"
-input_source6_year: 1956
-input_source6_doi: "10.1093/aristotelian/56.1.167"
-input_source6_role: "Philosophy as essentially contested concept; meta-level framing for Section 3"
-input_source7_title: "Epistemic responsibility: toward a community standard for human-AI collaborations"
-input_source7_authors: "Dan Lloyd"
-input_source7_journal: "Frontiers in Artificial Intelligence"
-input_source7_year: 2025
-input_source7_doi: "10.3389/frai.2025.1635691"
-input_source7_location: "transparency/TEMP/Lloyd_frai-08-1635691.xml"
-input_source7_role: "Epistemic responsibility standards; partial adoption (reject Standard 4 on text demarcation)"
+ref1_title: "Meaningful Human Control over Autonomous Systems: A Philosophical Account"
+ref1_authors: "Filippo Santoni de Sio, Jeroen van den Hoven"
+ref1_journal: "Frontiers in Robotics and AI"
+ref1_year: 2018
+ref1_doi: "10.3389/frobt.2018.00015"
+ref1_location: "transparency/TEMP/Santoni_de_sio_frobt-05-00015.xml"
+ref1_role: "Source of MHC framework (tracking/tracing conditions)"
+ref2_file: "transparency/Canonical_MD/SP4_ProcessDocumentation/4.7_EpistemicTraces/III_4.7.1_Reasonable_Human_Control_in_AI.md"
+ref2_role: "Already completed transfer of MHC to AI-assisted philosophical writing; provides operational checklist"
+ref3_file: "transparency/TEMP/Note on LLoyd.md"
+ref3_role: "Shows prior thinking connecting replicability to meaningful human control; objection to text demarcation"
+ref4_file: "Paper/MDversion/Full paper2511.08639v1.md"
+ref4_role: "Current paper structure; Sections 3 and 6 as revision targets"
+ref5_title: "Why Less Praise for Enhanced Performance?"
+ref5_authors: "Filippo Santoni de Sio, Nadira S. Faber, Julian Savulescu, Nicole A Vincent"
+ref5_book: "Handbook of Neuroethics (OUP)"
+ref5_year: 2016
+ref5_pages: "27-41"
+ref5_location: "transparency/TEMP/Santoni de Sio et al. (2016) Why less praise for enhanced performance - OUP.pdf"
+ref5_role: "Nature-of-activities framework; constitutive vs regulative rules; analogical basis for Section 3 rewrite"
+ref6_title: "Essentially Contested Concepts"
+ref6_authors: "W. B. Gallie"
+ref6_journal: "Proceedings of the Aristotelian Society"
+ref6_year: 1956
+ref6_doi: "10.1093/aristotelian/56.1.167"
+ref6_role: "Philosophy as essentially contested concept; meta-level framing for Section 3"
+ref7_title: "Epistemic responsibility: toward a community standard for human-AI collaborations"
+ref7_authors: "Dan Lloyd"
+ref7_journal: "Frontiers in Artificial Intelligence"
+ref7_year: 2025
+ref7_doi: "10.3389/frai.2025.1635691"
+ref7_location: "transparency/TEMP/Lloyd_frai-08-1635691.xml"
+ref7_role: "Epistemic responsibility standards; partial adoption (reject Standard 4 on text demarcation)"
 output_completed1: "III_4.4.4_SectionGuidance_Section3_EssentiallyContested.md"
 output_completed1_date: 2026-01-26
 output_completed2: "III_4.4.5_SectionGuidance_Section6_MHC.md"
@@ -581,4 +581,10 @@ Section 3 was a complete rewrite (as specified in guidance). The guidance was se
 ### Explicit links (inputs/outputs/etc.)
 **related_documents:**
 - UNRESOLVED: III_4.7.1_Reasonable_Human_Control_in_AI.md, Full paper2511.08639v1.md
+
+**output_completed1:**
+- UNRESOLVED: III_4.4.4_SectionGuidance_Section3_EssentiallyContested.md
+
+**output_completed2:**
+- UNRESOLVED: III_4.4.5_SectionGuidance_Section6_MHC.md
 
