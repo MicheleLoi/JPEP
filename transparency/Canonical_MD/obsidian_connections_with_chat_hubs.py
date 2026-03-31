@@ -181,16 +181,20 @@ def build_id_index(vault: Path) -> Dict[str, FileEntry]:
     return idx
 
 
-def build_chat_index(vault: Path) -> Tuple[Dict[str, List[FileEntry]], Dict[Path, str], Dict[str, str]]:
+def build_chat_index(vault: Path) -> Tuple[Dict[str, List[FileEntry]], Dict[Path, List[str]], Dict[str, str]]:
     """
     Returns:
       chat_index: chat_id -> list of FileEntry
-      file_to_chat: file_path -> chat_id
+      file_to_chat: file_path -> list of chat_ids (supports multi-source files)
       chat_to_name: chat_id -> chat_name (best effort)
     """
     chat_index: Dict[str, List[FileEntry]] = {}
-    file_to_chat: Dict[Path, str] = {}
+    file_to_chat: Dict[Path, List[str]] = {}
     chat_to_name: Dict[str, str] = {}
+
+    # Pattern for numbered variants: source_chat_id_1, source_chat_id_2, etc.
+    NUMBERED_ID_RE = re.compile(r'^(?:source_chat_id|chat_id)_(\d+)$', re.IGNORECASE)
+    NUMBERED_NAME_RE = re.compile(r'^(?:source_chat_name|chat_name)_(\d+)$', re.IGNORECASE)
 
     for p in vault.rglob("*.md"):
         txt = read_text(p)
@@ -198,28 +202,50 @@ def build_chat_index(vault: Path) -> Tuple[Dict[str, List[FileEntry]], Dict[Path
         if not fm:
             continue
         data = parse_yaml(fm, p)
-        chat_id = None
 
+        chat_ids_for_file: List[str] = []
+
+        # 1) Standard (non-numbered) fields — first match wins
         for k in CHAT_FIELDS:
             if k in data and data.get(k):
-                # keep raw string; normalize whitespace
                 chat_id = str(data.get(k)).strip()
+                if chat_id:
+                    chat_ids_for_file.append(chat_id)
+                    # best effort: capture name
+                    for nk in CHAT_NAME_FIELDS:
+                        if nk in data and data.get(nk):
+                            name = str(data.get(nk)).strip()
+                            if chat_id not in chat_to_name:
+                                chat_to_name[chat_id] = name
+                            break
                 break
 
-        if not chat_id:
+        # 2) Numbered variants: source_chat_id_1, source_chat_id_2, …
+        # Build a map: suffix_number -> (id_key, name_key)
+        numbered: Dict[str, str] = {}  # number_str -> chat_id
+        numbered_names: Dict[str, str] = {}  # number_str -> chat_name
+        for k, v in data.items():
+            m = NUMBERED_ID_RE.match(str(k))
+            if m and v:
+                numbered[m.group(1)] = str(v).strip()
+            m2 = NUMBERED_NAME_RE.match(str(k))
+            if m2 and v:
+                numbered_names[m2.group(1)] = str(v).strip()
+
+        for num in sorted(numbered.keys(), key=int):
+            chat_id = numbered[num]
+            if chat_id and chat_id not in chat_ids_for_file:
+                chat_ids_for_file.append(chat_id)
+                if chat_id not in chat_to_name and num in numbered_names:
+                    chat_to_name[chat_id] = numbered_names[num]
+
+        if not chat_ids_for_file:
             continue
 
         entry = FileEntry(path=p, stem=p.stem)
-        chat_index.setdefault(chat_id, []).append(entry)
-        file_to_chat[p] = chat_id
-
-        # best effort: capture a name if present
-        for nk in CHAT_NAME_FIELDS:
-            if nk in data and data.get(nk):
-                name = str(data.get(nk)).strip()
-                if chat_id not in chat_to_name:
-                    chat_to_name[chat_id] = name
-                break
+        for chat_id in chat_ids_for_file:
+            chat_index.setdefault(chat_id, []).append(entry)
+        file_to_chat[p] = chat_ids_for_file
 
     # stable ordering by filename for determinism
     for cid in chat_index:
@@ -283,30 +309,35 @@ def generate_connections_block(
     lines.append("## Connections (auto)")
     lines.append("")
 
-    # --- 1) Source chat skeleton (primary) ---
-    chat_id = file_to_chat.get(file_entry.path)
-    if chat_id:
+    # --- 1) Source chat skeleton (primary, supports multiple) ---
+    chat_ids = file_to_chat.get(file_entry.path, [])
+    if chat_ids:
         hubs_folder_clean = hubs_folder.rstrip('/').rstrip('\\')
-        safe_id = re.sub(r'[/\\:*?"<>|]', '_', chat_id)
-        hub_stem = f"{hubs_folder_clean}/CHAT_{safe_id}"
-        # Obsidian wants paths without extension; keep forward slash
-        hub_stem = hub_stem.replace("\\", "/")
-        chat_name = chat_to_name.get(chat_id, "")
-        label = "chat" if not chat_name else f"chat: {chat_name}"
         lines.append("### Source chat (primary)")
-        lines.append(f"- {format_link(hub_stem, label, alias_mode='none')}")
-        # siblings
-        sibs = [e for e in chat_index.get(chat_id, []) if e.path != file_entry.path]
-        if sibs:
+        for chat_id in chat_ids:
+            safe_id = re.sub(r'[/\\:*?"<>|]', '_', chat_id)
+            hub_stem = f"{hubs_folder_clean}/CHAT_{safe_id}".replace("\\", "/")
+            chat_name = chat_to_name.get(chat_id, "")
+            label = f"[[{hub_stem}]]" if not chat_name else f"[[{hub_stem}|chat: {chat_name}]]"
+            lines.append(f"- {label}")
+        # siblings across all source chats (deduplicated)
+        all_sibs: List[FileEntry] = []
+        seen_sibs: set = set()
+        for chat_id in chat_ids:
+            for e in chat_index.get(chat_id, []):
+                if e.path != file_entry.path and e.path not in seen_sibs:
+                    seen_sibs.add(e.path)
+                    all_sibs.append(e)
+        if all_sibs:
             lines.append("### Sibling artifacts (same chat)")
             if siblings_mode == "none":
                 lines.append("- _(siblings hidden by config)_")
             else:
-                shown = sibs[:max_siblings]
+                shown = all_sibs[:max_siblings]
                 sib_links = [format_link(s.stem, s.stem, alias_mode="none") for s in shown]
                 lines.append("- " + "; ".join(sib_links))
-                if len(sibs) > max_siblings:
-                    lines.append(f"- _(and {len(sibs) - max_siblings} more...)_")
+                if len(all_sibs) > max_siblings:
+                    lines.append(f"- _(and {len(all_sibs) - max_siblings} more...)_")
         lines.append("")
 
     # --- 2) Explicit relations (inputs/outputs/etc.) ---
