@@ -142,5 +142,6 @@ During Phase 2, the epistemic trace relied on `Paper/MDversion/03_why_engage...`
 4. **Open question** — whether the CFP venue accepts AI-assisted submissions with full transparency documentation. This affects whether the proof-of-concept framing is viable and whether the Appendix can accompany the paper. Should be verified before substantial adaptation work begins.
 ## Connections (auto)
 
-_No connections found._
+### Source chat (primary)
+- [[_HUBS/CHAT_SID-20260302-190708]]
 

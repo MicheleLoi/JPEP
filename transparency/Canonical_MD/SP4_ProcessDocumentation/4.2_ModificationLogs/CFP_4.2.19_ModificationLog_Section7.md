@@ -111,6 +111,11 @@ A phrase connecting assessment norms to ecological validity (Section 5's first p
 **Finalized:** 2026-03-24, session SID-20260324-090000.
 ## Connections (auto)
 
+### Source chat (primary)
+- [[_HUBS/CHAT_SID-20260324-090000]]
+### Sibling artifacts (same chat)
+- [[CFP_5.4.9_Section7_v1]]
+
 ### Explicit links (inputs/outputs/etc.)
 **related_documents:**
 - UNRESOLVED: CFP_5.3.1_WorkPlan_CFP_Adaptation.md (master work plan); UNRESOLVED: Paper/MDversion/07_review_mechanism.md (JPEP source); UNRESOLVED: CFP_5.4.9_Section7_v1.md (CFP section draft); UNRESOLVED: CFP_5.4.8_Section6_v3.md (Section 6 — documentation-adequacy framework)

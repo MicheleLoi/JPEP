@@ -164,6 +164,9 @@ To make the paper operational in your domain, here is a direct translation into 
 If you want, I can take a _specific_ AI-assisted writing workflow you have in mind (brainstorming, outlining, drafting, paraphrasing, translating, polishing) and map each step explicitly onto **tracking** and **tracing** requirements exactly in the style the paper uses for design implications.
 ## Connections (auto)
 
+### Source chat (primary)
+- [[_HUBS/CHAT_SID-20260124-000000]]
+
 ### Explicit links (inputs/outputs/etc.)
 **inputs:**
 - UNRESOLVED: Meaningful Human Control over Autonomous Systems: A Philosophical Account by Santoni de Sio and van Der Hoven; UNRESOLVED: initial human prompt

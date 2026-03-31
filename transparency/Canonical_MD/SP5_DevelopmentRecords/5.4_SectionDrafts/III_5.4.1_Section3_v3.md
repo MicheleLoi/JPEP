@@ -63,5 +63,8 @@ Gallie, W. B. (1956). Essentially contested concepts. *Proceedings of the Aristo
 Santoni de Sio, F., Faber, N. S., Savulescu, J., & Vincent, N. A. (2016). Why less praise for enhanced performance? In J. Clausen & N. Levy (Eds.), *Handbook of Neuroethics* (pp. 27-41). Oxford University Press.
 ## Connections (auto)
 
-_No connections found._
+### Source chat (primary)
+- [[_HUBS/CHAT_SID-20260202-115248]]
+### Sibling artifacts (same chat)
+- [[III_4.4.4_SectionGuidance_Section3_EssentiallyContested]]; [[III_4.4.5_SectionGuidance_Section6_MHC]]; [[III_4.7.2_WorkingDrafts_Belong_to_SP5]]; [[III_5.2.1_pdl_sections_3_and_6_MHC_integration]]
 

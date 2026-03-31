@@ -288,5 +288,8 @@ The dominant transformation is strategic reorientation of the derivation: same p
 *Workflow: Refine | Command: MHC-modlog*
 ## Connections (auto)
 
-_No connections found._
+### Source chat (primary)
+- [[_HUBS/CHAT_SID-20260317-191544]]
+### Sibling artifacts (same chat)
+- [[CFP_5.4.7_Section5_v1]]
 

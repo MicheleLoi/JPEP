@@ -150,6 +150,11 @@ The JPEP source (~1,500 words) serves two purposes: (1) analysis of the incentiv
 **Status:** Finalized — both reviewers approved.
 ## Connections (auto)
 
+### Source chat (primary)
+- [[_HUBS/CHAT_SID-20260317-182817]]
+### Sibling artifacts (same chat)
+- [[CFP_5.4.5_Section2_v2]]; [[CFP_5.4.5_Section2_v3]]
+
 ### Explicit links (inputs/outputs/etc.)
 **related_documents:**
 - UNRESOLVED: CFP_5.3.1_WorkPlan_CFP_Adaptation.md (master work plan); UNRESOLVED: CFP_5.3.2_ReviewerB_Section2_PendingDecision.md (Reviewer B assessment); UNRESOLVED: CFP_5.4.5_Section2_v1.md (initial draft); UNRESOLVED: CFP_5.4.5_Section2_v2.md (post-Reviewer B revision); UNRESOLVED: CFP_5.4.5_Section2_v3.md (finalized draft); UNRESOLVED: Paper/MDversion/02_systemic_barriers_to_disclosure.md (JPEP source)
