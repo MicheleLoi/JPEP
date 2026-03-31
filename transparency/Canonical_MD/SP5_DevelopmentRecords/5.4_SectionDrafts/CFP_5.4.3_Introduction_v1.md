@@ -32,8 +32,7 @@ Tracking requires more than a disclosure mandate. It requires a philosophically 
 We argue for a transparency framework grounded in Meaningful Human Control (Santoni de Sio & van den Hoven 2018) and operationalized through a documentation-adequacy model: a specification of what AI-assisted ethics research must document, what that documentation must demonstrate, and what assessment of documentation adequacy requires. The paper is itself an instance of substantially AI-assisted ethics research conducted under the framework it describes. The transparency apparatus — supplementary packages SP-1 through SP-5, documenting AI involvement, decision rationale, and process records — is implemented in the work here presented. This self-exemplification is a methodological commitment: the framework's value cannot be fully assessed from a description; it must be shown in operation. We acknowledge that the present venue does not include specialized infrastructure for evaluating documentation packages of this scope; community assessment mechanisms for documentation adequacy remain to be developed. We also acknowledge that a transparency framework for essentially contested inquiry is itself a contested proposal — Section 6 treats the framework as a first iteration subject to revision rather than a settled standard.
 
 Section 2 examines the structural barriers to disclosure that motivate this project. Section 3 develops the essentially-contested argument more fully, including the cognitivist objection and its implications for output-evaluation. Sections 4 and 5 address institutional conditions for responsible AI-assisted ethics research. Section 6 specifies the framework in practice. Section 7 addresses community assessment of documentation adequacy. Section 8 concludes.
-
-
 ## Connections (auto)
 
 _No connections found._
+

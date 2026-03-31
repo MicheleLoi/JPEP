@@ -103,8 +103,7 @@ Section 7 v1 → v2. New file: `CFP_5.4.9_Section7_v2.md`.
 
 *PDL generated: 2026-03-24*
 *Workflow: Design | Command: MHC-PDL*
-
-
 ## Connections (auto)
 
 _No connections found._
+

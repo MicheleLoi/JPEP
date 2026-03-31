@@ -52,8 +52,7 @@ related:
 User responds with one of:
 - `approve` — proceed to finalization + CFP_4.2.15 modification log
 - `revise: [instruction]` — apply revisions, produce v2, return to Reviewer B
-
-
 ## Connections (auto)
 
 _No connections found._
+

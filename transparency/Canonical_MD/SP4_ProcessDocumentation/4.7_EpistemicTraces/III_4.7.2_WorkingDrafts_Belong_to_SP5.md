@@ -104,8 +104,7 @@ SP5_DevelopmentRecords/
 - **Triggered by:** Planning discussion in III_5.2.1_pdl_sections_3_and_6_MHC_integration.md
 - **Informs:** Artifact ontology revision (pending)
 - **Related:** Git branching strategy for v3 revisions
-
-
 ## Connections (auto)
 
 _No connections found._
+

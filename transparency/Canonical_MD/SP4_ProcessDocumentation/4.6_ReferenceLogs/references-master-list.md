@@ -106,7 +106,7 @@ Clark, A. & Chalmers, D. "The Extended Mind" [For extended cognition discussion 
 
 ### Citation Style
 Paper should use standard philosophy journal citation format (likely Chicago or APA depending on target journal).
-
 ## Connections (auto)
 
 _No connections found._
+

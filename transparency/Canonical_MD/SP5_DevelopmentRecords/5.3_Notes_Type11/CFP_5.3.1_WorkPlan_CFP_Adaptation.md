@@ -425,8 +425,7 @@ Ethics-specific methods content (reflective equilibrium, casuistry, moral intuit
 ---
 
 *End of work plan.*
-
-
 ## Connections (auto)
 
 _No connections found._
+

@@ -43,7 +43,7 @@ Cataphoric teasing — "Here's the thing…," "Here's where it gets interesting�
 Compulsive listing — turning everything into bullet points or numbered lists when prose would be more natural.  
   
 Excessive bolding — bolding every third phrase as if the reader can't find the important parts themselves.
-
 ## Connections (auto)
 
 _No connections found._
+

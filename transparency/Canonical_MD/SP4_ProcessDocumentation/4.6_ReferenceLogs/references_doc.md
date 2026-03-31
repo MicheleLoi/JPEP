@@ -303,7 +303,7 @@ Wheeler, M. (2018). Talking about more than Heads: the Embodied, Embedded and Ex
 **Sections documented:** I, II (partial), V, VI (no new refs), VII  
 **Sections pending:** VIII, IX, X  
 **Outstanding tasks:** Add Clark (2008), Boden & Edmonds (2009), consider Strathern (1997) for Section II
-
 ## Connections (auto)
 
 _No connections found._
+

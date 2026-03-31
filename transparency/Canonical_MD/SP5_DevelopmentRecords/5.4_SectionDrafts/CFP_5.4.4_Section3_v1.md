@@ -72,8 +72,7 @@ Practices evolve; disciplines transform; what counts as legitimate method shifts
 Gallie, W. B. (1956). Essentially contested concepts. *Proceedings of the Aristotelian Society*, 56, 167-198.
 
 Santoni de Sio, F., Faber, N. S., Savulescu, J., & Vincent, N. A. (2016). Why less praise for enhanced performance? In J. Clausen & N. Levy (Eds.), *Handbook of Neuroethics* (pp. 27-41). Oxford University Press.
-
-
 ## Connections (auto)
 
 _No connections found._
+

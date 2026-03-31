@@ -128,8 +128,7 @@ The rejection of Lloyd's **Standard 4** (intra-textual demarcation) is strengthe
 ## Key Formulation (for use in Section 6 and elsewhere)
 
 > Rather than a reproduction test — which would require running documented inputs through a comparable AI system, and which proves unworkable given model deprecation, non-deterministic outputs, and the time-scale of scholarly production — SP-3 takes a different approach. It does not ask *could the documented inputs reproduce this work?* but *does the documentation adequately show how the intellectual trajectory traces to human understanding and direction?*
-
-
 ## Connections (auto)
 
 _No connections found._
+

@@ -109,8 +109,7 @@ Phase 2 drafting (Sections 2, 4, 5) must be governed by the argumentative suppor
 
 *Trace generated: 2026-03-06*
 *Workflow: Brainstorm | Command: MHC-trace*
-
-
 ## Connections (auto)
 
 _No connections found._
+

@@ -148,10 +148,9 @@ The JPEP source (~1,500 words) serves two purposes: (1) analysis of the incentiv
 **Structure:** Two subsections (2.1 The Incentive Gradient, 2.2 The Scope of the Problem) with pivot to philosophical framework at close of 2.2.
 
 **Status:** Finalized — both reviewers approved.
-
-
 ## Connections (auto)
 
 ### Explicit links (inputs/outputs/etc.)
 **related_documents:**
 - UNRESOLVED: CFP_5.3.1_WorkPlan_CFP_Adaptation.md (master work plan); UNRESOLVED: CFP_5.3.2_ReviewerB_Section2_PendingDecision.md (Reviewer B assessment); UNRESOLVED: CFP_5.4.5_Section2_v1.md (initial draft); UNRESOLVED: CFP_5.4.5_Section2_v2.md (post-Reviewer B revision); UNRESOLVED: CFP_5.4.5_Section2_v3.md (finalized draft); UNRESOLVED: Paper/MDversion/02_systemic_barriers_to_disclosure.md (JPEP source)
+

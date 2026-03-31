@@ -168,9 +168,9 @@ The reproduction test is not a viable operationalization of the MHC tracing cond
 - SP-3 (not SP-4) carries the replicability function: "extends replicability beyond prompt logging to a full account of the documentation system and the argument for its adequacy"
 
 **File after edits:** III_5.4.2_Section6_v3.md (current)
-
 ## Connections (auto)
 
 ### Explicit links (inputs/outputs/etc.)
 **related_documents:**
 - UNRESOLVED: III_4.4.5_SectionGuidance_Section6_MHC.md (guidance file — revised 2026-01-28); UNRESOLVED: III_5.2.1_pdl_sections_3_and_6_MHC_integration.md (PDL — Phase 4 added 2026-01-28); UNRESOLVED: III_5.4.2_Section6_v3.md (current working draft); UNRESOLVED: 4.2; UNRESOLVED: III_4.7.3_MHC_Tracing_SP_Reconception.md (epistemic trace — 2026-03-02)
+

@@ -92,8 +92,7 @@ From the author's perspective, what matters is tracking AI-assisted work in ways
 Lloyd, D. (2025). Epistemic responsibility: toward a community standard for human-AI collaborations. *Frontiers in Artificial Intelligence*, 8, 1635691.
 
 Santoni de Sio, F., & van den Hoven, J. (2018). Meaningful human control over autonomous systems: a philosophical account. *Frontiers in Robotics and AI*, 5, 15.
-
-
 ## Connections (auto)
 
 _No connections found._
+
