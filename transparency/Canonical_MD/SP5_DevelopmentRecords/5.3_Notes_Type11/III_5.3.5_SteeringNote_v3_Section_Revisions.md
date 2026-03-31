@@ -9,7 +9,6 @@ source: "Claude Code (no chat ID)"
 purpose: "Process guide for v3 section drafting with git workflow"
 modeled_on: "epistemic constitutional ai/CLAUDE_UPDATE_BRIEF_SWISS.md"
 ---
-
 # Steering Note: Stage III Section 3 and 6 Revisions
 
 **Date:** 2026-01-26
@@ -218,3 +217,8 @@ git push
 - **Epistemic Trace:** III_4.7.2_WorkingDrafts_Belong_to_SP5.md
 - **Reference Logs:** references_doc.md (Stage III section)
 - **Model:** epistemic constitutional ai/CLAUDE_UPDATE_BRIEF_SWISS.md
+
+
+## Connections (auto)
+
+_No connections found._

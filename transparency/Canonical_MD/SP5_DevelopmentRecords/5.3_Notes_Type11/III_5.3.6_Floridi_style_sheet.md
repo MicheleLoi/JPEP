@@ -2,7 +2,6 @@
 source: human
 date: 2026-03-01
 ---
-
 If you have read a sufficient number of LLM-written and Human-unedited texts, this is what you have probably perceived:  
   
 Correctio / Rhetorical reframing — "Not X, but Y."  
@@ -44,3 +43,7 @@ Cataphoric teasing — "Here's the thing…," "Here's where it gets interesting�
 Compulsive listing — turning everything into bullet points or numbered lists when prose would be more natural.  
   
 Excessive bolding — bolding every third phrase as if the reader can't find the important parts themselves.
+
+## Connections (auto)
+
+_No connections found._

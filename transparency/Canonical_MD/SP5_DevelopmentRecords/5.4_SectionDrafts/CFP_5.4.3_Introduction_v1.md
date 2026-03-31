@@ -11,7 +11,6 @@ source_guidance: "CFP_5.3.1_WorkPlan_CFP_Adaptation.md"
 cfp_target: "AI Tools in Ethics Research (topical collection)"
 word_count: ~1060
 ---
-
 # 1. Introduction
 
 The use of artificial intelligence in academic work has generated substantial discussion across two domains. In education, a focus of concern has emerged: AI tools are held to threaten cognitive development, undermine assessment validity, and erode the trust that sustains pedagogical relationships (Jollimore 2025; Berg & Robbins 2024). In scientific research more broadly, a growing literature addresses disclosure norms, authorship attribution, and the reliability of AI-assisted outputs (Hosseini et al. 2023; Van Woudenberg et al. 2024). Yet one domain remains almost entirely unexamined: the use of AI tools in ethics research specifically. This gap is not incidental. Ethics is where the question is hardest — not because ethical inquiry is generically more demanding, but because what constitutes ethical inquiry, its methods, its epistemic structure, its purpose, is itself fundamentally disputed. Any serious account of AI's role in ethics research must begin from this fact.
@@ -33,3 +32,8 @@ Tracking requires more than a disclosure mandate. It requires a philosophically 
 We argue for a transparency framework grounded in Meaningful Human Control (Santoni de Sio & van den Hoven 2018) and operationalized through a documentation-adequacy model: a specification of what AI-assisted ethics research must document, what that documentation must demonstrate, and what assessment of documentation adequacy requires. The paper is itself an instance of substantially AI-assisted ethics research conducted under the framework it describes. The transparency apparatus — supplementary packages SP-1 through SP-5, documenting AI involvement, decision rationale, and process records — is implemented in the work here presented. This self-exemplification is a methodological commitment: the framework's value cannot be fully assessed from a description; it must be shown in operation. We acknowledge that the present venue does not include specialized infrastructure for evaluating documentation packages of this scope; community assessment mechanisms for documentation adequacy remain to be developed. We also acknowledge that a transparency framework for essentially contested inquiry is itself a contested proposal — Section 6 treats the framework as a first iteration subject to revision rather than a settled standard.
 
 Section 2 examines the structural barriers to disclosure that motivate this project. Section 3 develops the essentially-contested argument more fully, including the cognitivist objection and its implications for output-evaluation. Sections 4 and 5 address institutional conditions for responsible AI-assisted ethics research. Section 6 specifies the framework in practice. Section 7 addresses community assessment of documentation adequacy. Section 8 concludes.
+
+
+## Connections (auto)
+
+_No connections found._

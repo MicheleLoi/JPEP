@@ -11,7 +11,6 @@ archive: MHC-prototype/00_full_conversations/exported/md/
 validated: 2026-03-12T00:00:00
 validation: approved
 ---
-
 # Epistemic Trace: Non-Sequitur Revision + Section 2 Draft
 
 ---
@@ -102,3 +101,8 @@ Session SID-20260311-185449 (started 2026-03-11, continued 2026-03-12). Two main
 
 *Trace generated: 2026-03-12*
 *Workflow: CFP Adaptation Phase 2 | Session: SID-20260311-185449*
+
+
+## Connections (auto)
+
+_No connections found._

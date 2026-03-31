@@ -5,9 +5,6 @@ source_chat_id:
 date: 2025-01-03
 draft_stage: II (after arXiv:2511.08639v1)
 ---
-
-
-
 Complete Appendix Writing Process Documentation
 Overview
 The Appendix A writing process occurred in multiple steps across separate chats due to token limitations and the complexity of developing both the artifact ontology and the appendix content simultaneously.
@@ -247,3 +244,8 @@ Meta-Documentation (November 2025)
 Final Outputs (October 2025)
 ├── 5.3.6 (Appendix text)
 └── 5.3.7 (Figure prompts)Claude è un'AI e può commettere errori. Verifica le risposte.
+
+## Connections (auto)
+
+### Source chat (primary)
+- [[_HUBS/CHAT_['09caeff5-2ff2-48dc-8a3f-66e20ceea81d']]]

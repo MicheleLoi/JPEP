@@ -5,7 +5,6 @@ created: 2026-03-24
 status: ready_to_implement
 session_id: SID-20260324-173456
 ---
-
 # Section 7 Implementation Plan — Pre-Phase 4 Step
 
 **Decided:** 2026-03-24 (SID-20260324-173456)
@@ -154,3 +153,8 @@ Log: Section 7 v1 → v2. Two additions: (A) Abdulhai et al. empirical corrobora
 
 **Final bibliography** (`references_final.md`): defer to Phase 4 completion (after Conclusion + Abstract).
 **Estimated word count after additions:** ~1,250 words (Section 7 v2).
+
+
+## Connections (auto)
+
+_No connections found._

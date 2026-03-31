@@ -3,8 +3,6 @@ source_chat_name: JPEP section 5 writing
 source_chat_link: https://claude.ai/chat/240f00db-62f9-4dcf-86f3-de1257562310
 date: 2025-10-12
 ---
-
-
 # Complete Paper Bibliography
 
 
@@ -248,3 +246,7 @@ Following standard philosophy journal format:
 **Remaining:** Sections VI-IX (original); CFP Sections 2–8 (CFP branch)
 **Last updated:** 2026-03-03
 **New entries added:** Blackburn (1993), Enoch (2011), Gallie (1956), Gibbard (1990), Lloyd (2025), Santoni de Sio et al. (2016), Santoni de Sio & van den Hoven (2018), Shafer-Landau (2003)
+
+## Connections (auto)
+
+_No connections found._

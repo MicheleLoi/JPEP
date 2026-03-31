@@ -10,7 +10,6 @@ source_guidance: "CFP_5.3.1_WorkPlan_CFP_Adaptation.md"
 cfp_target: "AI Tools in Ethics Research (topical collection)"
 word_count: ~950
 ---
-
 # 2. Systemic Barriers to Disclosure
 
 Current publishing policies require disclosure of AI assistance while simultaneously creating professional environments where such disclosure carries reputational costs. The resulting incentive structure does not merely produce individual choices about disclosure—it produces systematic underreporting, and the degree of underreporting scales with the significance of the work. The problem is therefore not soluble by strengthening compliance requirements. This section shows why: the four mechanisms that drive underreporting operate within genuine ambiguities that formal mandates cannot eliminate, and compliance can be achieved without substantive transparency. What is needed is not more stringent reporting requirements but a philosophically specified account of what transparency is for.
@@ -48,3 +47,8 @@ Review processes have no detection mechanisms for undisclosed AI involvement. Un
 The four mechanisms identified in Section 2.1 make clear that the gap between formal disclosure and substantive transparency cannot be closed by strengthening compliance requirements. The mechanisms do not operate through bad faith. They operate through genuine ambiguity—about what counts as "substantial" assistance, about how to characterize temporally extended processes, about which reference class of practice sets the comparison baseline, about how much specificity a disclosure statement requires. Stronger mandates that still leave these questions unanswered will produce the same result: formally adequate statements that leave readers unable to assess the nature and degree of AI involvement.
 
 The problem is one of underspecification, not dishonesty. Current disclosure policies establish that AI use must be reported; they do not specify what must be reported, in what form, or against what standard of adequacy. An author instructed to "disclose AI assistance" faces none of the guidance needed to produce disclosures that serve the purposes disclosure is meant to serve. This is a philosophical problem, not a regulatory gap. Closing it requires prior philosophical work: specifying what transparency is *for*—what information must be preserved for the scholarly record to remain assessable, what documentation is adequate, and what criteria allow a reader or reviewer to determine whether transparency requirements have been substantively met. The remaining sections undertake that project.
+
+
+## Connections (auto)
+
+_No connections found._

@@ -14,7 +14,6 @@ related:
   - "III_5.4.2_Section6_v3.md (authoritative Section 6 draft — MHC + documentation-adequacy)"
   - "target-venue/cfp_ai-ethics-inquiry.md (CFP text)"
 ---
-
 # CFP Introduction: Argumentative Spine Development
 
 ## Session Context
@@ -142,3 +141,8 @@ Five issues Opus flagged for the drafter:
 3. **Section 6.1 link:** The CFP Section 6 adaptation must explicitly connect Section 6.1's thinking-quality argument to the Section 3 essentially-contested argument. They make the same claim at different levels (philosophical vs. practical).
 
 4. **What this session did NOT produce:** A decision on Section 4 (compress vs. cut). This is deferred to after Introduction and Section 3 are finalized, when the Introduction frame will clarify how much institutional context is needed.
+
+
+## Connections (auto)
+
+_No connections found._

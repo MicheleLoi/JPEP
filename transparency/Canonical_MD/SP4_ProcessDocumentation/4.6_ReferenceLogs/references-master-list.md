@@ -2,7 +2,6 @@
 source_chat_name: "JPEP section 3 writing"
 source_chat_link: "https://claude.ai/chat/6e92907a-03f7-413f-b99f-2983f8f44b22"
 ---
-
 # REFERENCES: Master List for AI-Assisted Scholarship Paper
 
 
@@ -107,3 +106,7 @@ Clark, A. & Chalmers, D. "The Extended Mind" [For extended cognition discussion 
 
 ### Citation Style
 Paper should use standard philosophy journal citation format (likely Chicago or APA depending on target journal).
+
+## Connections (auto)
+
+_No connections found._

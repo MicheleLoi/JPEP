@@ -17,3 +17,7 @@ This produced Section VIII guidance (4.4.6) about philosophical values and discl
 This should be 4.4.5
 
 Also let's consider if we want to provide more details, or leave them for the documentation readme
+
+## Connections (auto)
+
+_No connections found._

@@ -3,8 +3,6 @@ source chat name: "Rewriting A4 with project context"
 source chat ID: "19858433-c393-4c1b-bd8d-cf6e16cdb062"
 date: "2026-03-01"
 ---
-
-
 ## A.4 This Article's Supplementary Materials
 
 All supplementary materials are available at: `https://github.com/MicheleLoi/JPEP/tree/main/transparency`
@@ -217,3 +215,8 @@ SP-4 contains the writing process itself: what guided the work (Complete Prompt,
 SP-5 documents how guidance evolved: how exploratory material (Type 2) became actionable instructions (Type 1 and Type 3) via structured refinement (Type 8), plus integrity-supporting notes (Type 11).
 
 This separation keeps artifacts used in the writing process (SP-4) distinct from documentation of the evolution of instructions (SP-5).
+
+
+## Connections (auto)
+
+_No connections found._

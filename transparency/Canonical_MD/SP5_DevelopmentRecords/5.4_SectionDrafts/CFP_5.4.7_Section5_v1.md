@@ -13,7 +13,6 @@ transformation: "Rewrite derivation. Three principles (ecological validity, good
 session_id: SID-20260317-191544
 word_count: ~900
 ---
-
 # 5. Conditions for Adequate Transparency
 
 Section 2 identified the failure of compliance-based disclosure: four mechanisms—definitional flexibility, temporal discounting, comparative framing, and strategic vagueness—allow systematic underreporting without dishonesty, because current mandates specify *that* AI assistance must be reported without specifying what constitutes adequate reporting. The failure is structural. Addressing it requires prior philosophical work: specifying what transparency is *for*, and then identifying the conditions any framework pursuing those purposes must satisfy.
@@ -47,3 +46,8 @@ Together, these three conditions—ecological validity, good faith orientation, 
 Taken jointly, they also entail a further consequence: documentation produced under such a framework cannot function as raw disclosure to be taken at face value, but must constitute a defended claim about its own adequacy — one that the author is responsible for justifying and that others can assess.
 
 The framework developed in Section 6 is designed to satisfy all three. Its documentation requirements are process-grounded rather than retrospective, designed for willing practitioners rather than for potential evaders, and structured so that comprehensive honest documentation emerges naturally from genuine AI-assisted work while remaining credibly differentiated from nominal compliance. What follows specifies how.
+
+
+## Connections (auto)
+
+_No connections found._

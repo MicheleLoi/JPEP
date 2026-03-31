@@ -14,7 +14,6 @@ related:
   - "target-venue/cfp_ai-ethics-inquiry.md (CFP text)"
   - "III_5.3.5_SteeringNote_v3_Section_Revisions.md (prior steering note)"
 ---
-
 # Work Plan: CFP Adaptation for AI Tools in Ethics Research
 
 ---
@@ -426,3 +425,8 @@ Ethics-specific methods content (reflective equilibrium, casuistry, moral intuit
 ---
 
 *End of work plan.*
+
+
+## Connections (auto)
+
+_No connections found._

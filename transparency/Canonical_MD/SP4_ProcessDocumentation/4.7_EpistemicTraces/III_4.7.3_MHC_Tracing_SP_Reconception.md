@@ -13,7 +13,6 @@ related:
   - "III_4.4.5_SectionGuidance_Section6_MHC.md (guidance — needs update)"
   - "appendix.md (A.1–A.3 → SP-3; A.4–A.5 → SP-2)"
 ---
-
 # MHC Tracing Condition and SP Structure Reconception
 
 ## Origin
@@ -129,3 +128,8 @@ The rejection of Lloyd's **Standard 4** (intra-textual demarcation) is strengthe
 ## Key Formulation (for use in Section 6 and elsewhere)
 
 > Rather than a reproduction test — which would require running documented inputs through a comparable AI system, and which proves unworkable given model deprecation, non-deterministic outputs, and the time-scale of scholarly production — SP-3 takes a different approach. It does not ask *could the documented inputs reproduce this work?* but *does the documentation adequately show how the intellectual trajectory traces to human understanding and direction?*
+
+
+## Connections (auto)
+
+_No connections found._
