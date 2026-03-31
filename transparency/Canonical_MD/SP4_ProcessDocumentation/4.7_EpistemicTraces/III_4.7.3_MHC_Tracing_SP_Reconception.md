@@ -4,6 +4,8 @@ document_type: Type 2 - Epistemic Trace
 label: III_4.7.3_MHC_Tracing_SP_Reconception
 title: "MHC Tracing Condition and SP Structure Reconception"
 date: 2026-03-02
+session_id: SID-20260302-152952
+session_id_precision: exact
 source: Claude Code session (Claude Sonnet 4.6)
 status: Complete
 influence: "One-to-many — affects Section 6 draft, Section 7 revision (pending), appendix revision (pending), section guidance III_4.4.5"

@@ -4,6 +4,8 @@ document_type: Type 10 - Epistemic Trace
 label: III_4.7.2_WorkingDrafts_Belong_to_SP5
 title: "Epistemic Trace: Working Drafts Belong to SP5"
 date: 2026-01-26
+session_id: SID-20260202-115248
+session_id_precision: exact
 source: "Claude Code (no chat ID)"
 trigger: "Discussion of how to structure v3 section revisions"
 status: Complete

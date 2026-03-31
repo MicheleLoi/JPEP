@@ -4,6 +4,8 @@ document_type: Type 2 - Epistemic Trace
 label: III_4.7.4_CFP_AIEthicsInquiry_BranchAndFitAnalysis
 title: "CFP Branch Creation and Fit Analysis: AI Tools in Ethics Research"
 date: 2026-03-02
+session_id: SID-20260302-190708
+session_id_precision: exact
 source: "Claude Code / Claude Sonnet 4.6"
 trigger: "User presented CFP for a topical collection on AI tools in ethics research and asked to create a branch and brainstorm adaptations"
 status: Complete

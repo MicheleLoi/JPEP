@@ -4,6 +4,8 @@ document_type: Type 11 - Steering Note
 label: III_5.3.21_SteeringNote_v3_Section_Revisions
 title: "Steering Note: Stage III Section 3 and 6 Revisions"
 date_created: 2026-01-26
+session_id: SID-20260126-000000
+session_id_precision: date-only
 status: Active
 source: "Claude Code (no chat ID)"
 purpose: "Process guide for v3 section drafting with git workflow"

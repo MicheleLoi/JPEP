@@ -4,6 +4,8 @@ document_type: Type 4 - Section Guidance
 section: "III - Why Engage with AI-Assisted Scholarship? (Complete Rewrite)"
 version: III (Post-arXiv v2 revision cycle)
 date_created: 2026-01-26
+session_id: SID-20260202-115248
+session_id_precision: exact
 status: Ready for Drafting
 source: "Claude Code (no chat ID)"
 source_pdl: "III_5.2.1_pdl_sections_3_and_6_MHC_integration.md"
