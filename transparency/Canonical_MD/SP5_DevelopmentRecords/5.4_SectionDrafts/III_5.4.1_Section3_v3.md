@@ -4,6 +4,8 @@ document_type: Type 12 - Section Draft
 section: "3 - Why Engage with AI-Assisted Scholarship?"
 version: v3 (Stage III revision)
 date_created: 2026-01-28
+session_id: SID-20260202-115248
+session_id_precision: exact
 status: Draft
 source: "Claude Code / Claude Opus 4.5"
 source_guidance: "III_4.4.4_SectionGuidance_Section3_EssentiallyContested.md"

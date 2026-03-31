@@ -168,4 +168,45 @@ SP-3 makes the author's case that the tracing condition is satisfied. It should:
 
 ---
 
+## 5. Reconstruction method for III_ session IDs
+
+This section documents how the retroactive `session_id` fields in III_ files were derived. This information does not appear in artifact frontmatter — it is recorded here only, as the per-artifact convention was decided to be minimal (`session_id` + `session_id_precision` only).
+
+### Method
+
+Two evidence sources were used in combination:
+
+**Primary — content matching:** Each conversation export file in `06_conversations/exported/` was scanned for mentions of III_ artifact IDs (e.g. `4.7.3`, `5.4.1`) and stems (e.g. `III_4.7.3`). A match means the artifact was discussed or produced in that session.
+
+**Secondary — date proximity:** The artifact's `date_created` field was compared to the conversation file timestamp (`JPEP_YYYYMMDD_HHMMSS.md`). A conversation within ~7 days of the artifact date was treated as a candidate.
+
+**Decision rules:**
+1. If a conversation export mentions the artifact AND its timestamp is close to `date_created`: use the conversation timestamp. `session_id_precision: exact`.
+2. If multiple conversation exports match: prefer the one closest in date to `date_created`.
+3. If no conversation export exists for the artifact's date (January 2026 files — no exports before 2026-02-02): use `date_created` with 000000 time placeholder. `session_id_precision: date-only`.
+
+### Per-artifact reconstruction record
+
+| File | date_created | session_id | precision | confirmed by |
+|---|---|---|---|---|
+| III_4.7.1 | 2026-01-24 | SID-20260124-000000 | date-only | date only (no Jan exports) |
+| III_4.7.2 | 2026-01-26 | SID-20260202-115248 | exact | JPEP_20260202_115248.md |
+| III_4.4.4 | 2026-01-26 | SID-20260202-115248 | exact | JPEP_20260202_115248.md |
+| III_4.4.5 | 2026-01-26 | SID-20260202-115248 | exact | JPEP_20260202_115248.md |
+| III_5.2.1 | 2026-01-26 | SID-20260202-115248 | exact | JPEP_20260202_115248.md |
+| III_5.3.5 | 2026-01-26 | SID-20260126-000000 | date-only | date only (no Jan exports) |
+| III_5.4.1 | 2026-01-28 | SID-20260202-115248 | exact | JPEP_20260202_115248.md |
+| III_5.3.6 | 2026-03-01 | SID-20260303-102634 | exact | JPEP_20260303_102634.md |
+| III_4.7.3 | 2026-03-02 | SID-20260302-152952 | exact | JPEP_20260302_152952.md |
+| III_4.7.4 | 2026-03-02 | SID-20260302-190708 | exact | JPEP_20260302_190708.md |
+| III_5.4.2 | 2026-03-02 | SID-20260302-152952 | exact | JPEP_20260302_152952.md |
+
+### What this does NOT record
+
+- The full text of matches found in conversation files (not reproduced here — consult the conversation exports directly)
+- The time of day within a session (unknown for date-only entries)
+- Whether the artifact was *created* in the session or merely *referenced* (the distinction is recoverable from conversation content but not encoded in metadata)
+
+---
+
 *End of note.*

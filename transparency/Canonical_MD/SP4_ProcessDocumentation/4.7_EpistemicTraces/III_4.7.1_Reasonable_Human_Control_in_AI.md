@@ -2,6 +2,8 @@
 source chat ID: 6974ad9f-f158-832c-bf58-07e3bf09b2bf
 Source Chat Name: Reasonable Human Control in AI
 date: 2026-01-24
+session_id: SID-20260124-000000
+session_id_precision: date-only
 inputs:
   - "Meaningful Human Control over Autonomous Systems: A Philosophical Account by Santoni de Sio and van Der Hoven"
   - initial human prompt

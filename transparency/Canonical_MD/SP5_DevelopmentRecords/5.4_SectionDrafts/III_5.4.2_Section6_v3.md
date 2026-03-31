@@ -4,6 +4,8 @@ document_type: Type 12 - Section Draft
 section: "6 - Mandatory Transparency in Practice (MHC Integration)"
 version: v3 (Stage III revision)
 date_created: 2026-03-02
+session_id: SID-20260302-152952
+session_id_precision: exact
 status: Draft
 source: "Claude Code / Claude Sonnet 4.6"
 source_guidance: "III_4.4.5_SectionGuidance_Section6_MHC.md (revised 2026-01-28)"

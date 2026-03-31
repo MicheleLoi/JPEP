@@ -1,6 +1,8 @@
 ---
 source: human
 date: 2026-03-01
+session_id: SID-20260303-102634
+session_id_precision: exact
 ---
 If you have read a sufficient number of LLM-written and Human-unedited texts, this is what you have probably perceived:  
   
