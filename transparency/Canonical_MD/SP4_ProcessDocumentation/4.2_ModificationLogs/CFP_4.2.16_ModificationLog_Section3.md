@@ -10,6 +10,12 @@ models:
 date_started: 2026-03-05
 date_last_updated: 2026-03-12
 status: "Finalized (2026-03-05); post-finalization amendments 2026-03-12"
+session_id: SID-20260305-152034
+source_conversation: "JPEP_20260305_152034.md"
+inputs:
+  - "III_5.4.1_Section3_v3.md"
+  - "CFP_5.4.4_Section3_v1.md"
+output_completed: "CFP_5.4.4_Section3_v1.md (finalized)"
 
 related_documents:
   - "CFP_5.3.1_WorkPlan_CFP_Adaptation.md (master work plan)"
@@ -161,9 +167,30 @@ The Introduction already added the four metaethics references (Enoch 2011; Shafe
 
 ---
 
+## Post-Finalization Amendment (2026-04-01) — Section 3 v2 refinements
+
+**Session:** SID-20260401-184454 (reconstructed; no mhc-start was run)
+**Source conversation:** JPEP_20260401_164454.md
+
+**Source file:** `CFP_5.4.4_Section3_v2.md`
+
+### Change A: Level 2 tracking paragraph — reframed (From Answer to Tracking subsection)
+
+**Previous text:** "the Nietzschean cannot distinguish confession from imposture [...] This demand is not foreign to philosophical practice: philosophy already treats citation patterns as expressive of intellectual identity — the extension to AI-assisted production is a new dimension of the same norm."
+
+**Revised text:** Drops "confession from imposture" framing and the appeal to existing philosophical practice. Replaces with: the primary concern is not detecting inauthentic authors but enabling authors whose authentic mode of engagement is technological exploration to express that identity honestly. Opacity forecloses this: the authentic technological explorer becomes indistinguishable from the scholar concealing AI use. Documentation creates conditions under which both the traditional inquirer and the technological explorer are legible as what they are.
+
+**Why:** Two problems with the previous text: (1) "confession from imposture" frames the authenticity argument as primarily about fraud detection, which inverts the argument's proper emphasis — the positive concern is enabling new forms of authentic philosophical practice, not policing inauthentic ones. (2) "not foreign to philosophical practice" grounds the norm in existing convention rather than in the authenticity argument itself; tradition is not a justification.
+
+### Change B: References section — seven entries added
+
+Kierkegaard (1992/1846), Nietzsche (1966/1886), Plato *Apology* (1997), Blackburn (1993), Enoch (2011), Gibbard (1990), Shafer-Landau (2003) added. All cited in body of v2; only Blackburn, Enoch, Gibbard, Shafer-Landau were previously in project reference logs. Kierkegaard passage claim about "ethical and religious claims" was also deleted from the text as overreaching (Kierkegaard's argument in CUP is specifically about religious faith; extension to ethics is not established).
+
+---
+
 ## Current State
 
-**File:** `CFP_5.4.4_Section3_v1.md`
+**File:** `CFP_5.4.4_Section3_v2.md`
 
 **Word count:** ~1410 words
 
@@ -173,10 +200,28 @@ The Introduction already added the four metaethics references (Enoch 2011; Shafe
 
 **User approval:** Pending
 
-Per the review protocol (Section D of the work plan), the section is finalized only when both Reviewer B (Opus) and the user (Reviewer A) approve. If Reviewer B requests revisions, a new version will be saved as `CFP_5.4.4_Section3_v2.md` and this log updated with an additional entry documenting what was requested and what changed.
+## Post-Amendment: Double Contestation + Redundancy Reduction (2026-04-01/02)
+
+**Section 3 v2** produced in SID-20260401-173934 (source conversation: JPEP_20260401_153253.md): double contestation established, Level 2 derivation, parasitism objection addressed. See `CFP_4.2.21_ModificationLog_DoubleContestation_Implementation.md` Step 1.
+
+**Redundancy reduction** in SID-20260401-225323 (source conversation: JPEP_20260401_205323.md): ~1,750 → ~1,290 words (26%). "Requirement of Visibility" subsection deleted; "The Stakes" compressed; parasitism-defense parenthetical tightened. See `CFP_4.2.22_ModificationLog_RedundancyReduction.md`.
+
+**Current authoritative file:** `CFP_5.4.4_Section3_v2.md`
+
+---
+
 ## Connections (auto)
 
+### Source chat (primary)
+- [[_HUBS/CHAT_SID-20260305-152034]]
+
 ### Explicit links (inputs/outputs/etc.)
+**inputs:**
+- UNRESOLVED: III_5.4.1_Section3_v3.md; UNRESOLVED: CFP_5.4.4_Section3_v1.md
+
 **related_documents:**
 - UNRESOLVED: CFP_5.3.1_WorkPlan_CFP_Adaptation.md (master work plan); UNRESOLVED: III_5.4.1_Section3_v3.md (source draft); UNRESOLVED: CFP_5.4.4_Section3_v1.md (CFP section draft)
+
+**output_completed:**
+- UNRESOLVED: CFP_5.4.4_Section3_v1.md (finalized)
 

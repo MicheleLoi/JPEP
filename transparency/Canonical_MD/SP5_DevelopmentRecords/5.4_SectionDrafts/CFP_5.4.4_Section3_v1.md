@@ -8,7 +8,9 @@ status: Revised (2026-03-11)
 revision_note: "First step of cognitivist-objection reply cut on Opus structural review (2026-03-11). Same diagnosis as Introduction: 'thinking quality requires process access' does not answer the context-of-discovery/justification objection. The second step (essential contestedness makes output-evaluation criteria themselves contested) is self-sufficient. The thinking-quality point (cf. Section 6.1) remains available for development there."
 source: "Claude Sonnet 4.6 (Claude Code session)"
 source_guidance: "CFP_5.3.1_WorkPlan_CFP_Adaptation.md"
+source_file: "III_5.4.1_Section3_v3.md"
 cfp_target: "AI Tools in Ethics Research (topical collection)"
+feeds_into: "CFP_4.2.16_ModificationLog_Section3.md"
 word_count: ~1410
 ---
 # Section 3: Why Engage Transparently with AI-Assisted Ethics Research?
@@ -74,5 +76,7 @@ Gallie, W. B. (1956). Essentially contested concepts. *Proceedings of the Aristo
 Santoni de Sio, F., Faber, N. S., Savulescu, J., & Vincent, N. A. (2016). Why less praise for enhanced performance? In J. Clausen & N. Levy (Eds.), *Handbook of Neuroethics* (pp. 27-41). Oxford University Press.
 ## Connections (auto)
 
-_No connections found._
+### Explicit links (inputs/outputs/etc.)
+**feeds_into:**
+- UNRESOLVED: CFP_4.2.16_ModificationLog_Section3.md
 

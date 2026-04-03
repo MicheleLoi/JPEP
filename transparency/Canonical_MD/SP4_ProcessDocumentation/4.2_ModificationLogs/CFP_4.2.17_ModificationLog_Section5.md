@@ -1,6 +1,9 @@
 ---
 artifact_type: modlog
 document: CFP_4.2.17_ModificationLog_Section5
+inputs:
+  - "Paper/MDversion/05_signaling_discontinuity_from_prestige_system.md"
+output_completed: "CFP_5.4.7_Section5_v1.md"
 output_file: transparency/Canonical_MD/SP5_DevelopmentRecords/5.4_SectionDrafts/CFP_5.4.7_Section5_v1.md
 project: JPEP
 created: 2026-03-17
@@ -8,9 +11,7 @@ last_updated: 2026-03-17
 session_id: SID-20260317-191544
 validated: "2026-03-17"
 validation: "approved_with_edits"
-source_conversations:
-  - session: "SID-20260317-191544"
-    exported_as: ""
+source_conversation: "JPEP_20260317_180549.md"
 ---
 # Modification Log — Section 5 (CFP Adaptation)
 
@@ -286,10 +287,30 @@ The dominant transformation is strategic reorientation of the derivation: same p
 
 *Modification Log generated: 2026-03-17*
 *Workflow: Refine | Command: MHC-modlog*
+
+---
+
+## Post-Finalization: Double Contestation + Redundancy Reduction (2026-04-01/02)
+
+**Section 5 v2** produced in SID-20260401-173934 (source conversation: JPEP_20260401_153253.md): dual-purpose authenticity notes added to all three conditions. See `CFP_4.2.21_ModificationLog_DoubleContestation_Implementation.md` Step 5.
+
+**Redundancy reduction** in SID-20260401-225323 (source conversation: JPEP_20260401_205323.md): ~985 → ~760 words (23%). Opening re-summary reduced; §5.4 bridge compressed. See `CFP_4.2.22_ModificationLog_RedundancyReduction.md`.
+
+**Current authoritative file:** `CFP_5.4.7_Section5_v2.md`
+
+---
+
 ## Connections (auto)
 
 ### Source chat (primary)
 - [[_HUBS/CHAT_SID-20260317-191544]]
 ### Sibling artifacts (same chat)
 - [[CFP_5.4.7_Section5_v1]]
+
+### Explicit links (inputs/outputs/etc.)
+**inputs:**
+- UNRESOLVED: Paper/MDversion/05_signaling_discontinuity_from_prestige_system.md
+
+**output_completed:**
+- UNRESOLVED: CFP_5.4.7_Section5_v1.md
 

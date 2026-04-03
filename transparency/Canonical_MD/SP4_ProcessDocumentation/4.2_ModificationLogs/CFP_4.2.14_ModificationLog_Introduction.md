@@ -11,6 +11,11 @@ models:
 date_started: 2026-03-03
 date_last_updated: 2026-03-12
 status: "Finalized (2026-03-03); post-finalization amendments 2026-03-12"
+session_id: SID-20260303-102634
+source_conversation: "JPEP_20260303_102634.md"
+inputs:
+  - "CFP_5.4.3_Introduction_v1.md"
+output_completed: "CFP_5.4.3_Introduction_v1.md (finalized)"
 
 related_documents:
   - "CFP_5.3.1_WorkPlan_CFP_Adaptation.md (master work plan)"
@@ -170,9 +175,30 @@ This log tracks the drafting and revision of the CFP adaptation Introduction (`C
 **Citations after revision:** Jollimore (2025), Berg & Robbins (2024), Hosseini et al. (2023), Van Woudenberg et al. (2024), COPE Council (2024), Elsevier (2023), ACM (2025), Science (2023), Lund & Naheem (2023), Gallie (1956), Santoni de Sio & van den Hoven (2018). [Enoch, Shafer-Landau, Gibbard, Blackburn moved to Section 3.]
 
 **Related trace:** CFP_4.7.7_EpistemicTrace_NonSequiturRevision.md
+## Post-Finalization: Double Contestation + Redundancy Reduction (2026-04-01/02)
+
+**Introduction v2** produced in SID-20260401-173934 (source conversation: JPEP_20260401_153253.md): double contestation signalled, self-exemplification expanded, roadmap modified. See `CFP_4.2.21_ModificationLog_DoubleContestation_Implementation.md` Step 4.
+
+**Redundancy reduction** in SID-20260401-225323 (source conversation: JPEP_20260401_205323.md): ~1,270 → ~730 words (43%). Double-contestation preview replaced with 2 sentences; duplicate "mandates don't specify" paragraph deleted; acknowledgments compressed. See `CFP_4.2.22_ModificationLog_RedundancyReduction.md`.
+
+**Current authoritative file:** `CFP_5.4.3_Introduction_v2.md`
+
+---
+
 ## Connections (auto)
 
+### Source chat (primary)
+- [[_HUBS/CHAT_SID-20260303-102634]]
+### Sibling artifacts (same chat)
+- [[III_5.3.6_Floridi_style_sheet]]
+
 ### Explicit links (inputs/outputs/etc.)
+**inputs:**
+- UNRESOLVED: CFP_5.4.3_Introduction_v1.md
+
 **related_documents:**
 - UNRESOLVED: CFP_5.3.1_WorkPlan_CFP_Adaptation.md (master work plan); UNRESOLVED: CFP_5.4.3_Introduction_v1.md (section draft); UNRESOLVED: CFP_4.7.5_EpistemicTrace_Introduction_Spine.md (argumentative spine trace); UNRESOLVED: III_5.3.6_Floridi_style_sheet.md (style constraints); UNRESOLVED: 4.6_ReferenceLogs/references-master-list.md; UNRESOLVED: 4.6_ReferenceLogs/paper_bibliography.md; UNRESOLVED: 4.6_ReferenceLogs/citations-complete.md
+
+**output_completed:**
+- UNRESOLVED: CFP_5.4.3_Introduction_v1.md (finalized)
 

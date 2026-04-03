@@ -222,6 +222,22 @@ As Mercier (2020) argues in \textit{Not Born Yesterday}, people assess communica
 
 ---
 
+## Section VII: Community Assessment of Documentation Adequacy (CFP adaptation)
+
+**Abdulhai, M., et al. (2026).** "How LLMs distort our written language." arXiv:2603.18161v1.
+**Usage:** Empirical support for non-triviality of understanding-and-endorsement (stance neutralization) and trajectory criteria (output quality misleads). Non-cognitivist analogy.
+**Status:** ✓ CITED — Section 7 §7.2
+
+**Zimmerman, B. J. (2002).** "Becoming a self-regulated learner: An overview." *Theory into Practice*, 41(2), 64–70.
+**Usage:** Forethought → monitoring → self-evaluation cycle as constitutive of genuine intellectual engagement. Maps onto attribution + trajectory + understanding-and-endorsement.
+**Status:** ✓ CITED — Section 7 §7.4 (cost-objection reply)
+
+**Cheng, Z., et al. (2025).** "A meta-analysis addressing the relationship between self-regulated learning strategies and academic performance in online higher education." *Journal of Computing in Higher Education*, 37(1), 195–224.
+**Usage:** Indiscriminate help-seeking in reduced-structure environments degrades epistemic outcomes. Maps AI-offloading onto help-seeking detriment finding.
+**Status:** ✓ CITED — Section 7 §7.4 (cost-objection reply)
+
+---
+
 ## Sections VIII-X
 
 **Status:** Not yet written. References will be added as sections are completed.
@@ -299,10 +315,10 @@ Wheeler, M. (2018). Talking about more than Heads: the Embodied, Embedded and Ex
 
 ## Document Version Control
 
-**Last updated:** Section VII complete  
-**Sections documented:** I, II (partial), V, VI (no new refs), VII  
-**Sections pending:** VIII, IX, X  
-**Outstanding tasks:** Add Clark (2008), Boden & Edmonds (2009), consider Strathern (1997) for Section II
+**Last updated:** 2026-04-02 (Section VII CFP additions)
+**Sections documented:** I, II (partial), III (CFP), V, VI (no new refs), VII (original + CFP)
+**Sections pending:** VIII, IX, X
+**Outstanding tasks:** Add Clark (2008), Boden & Edmonds (2009) — v1 baseline only, not in CFP; consider Strathern (1997) for Section II
 ## Connections (auto)
 
 _No connections found._

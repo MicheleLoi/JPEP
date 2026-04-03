@@ -12,6 +12,11 @@ date_started: 2026-03-24
 date_last_updated: 2026-03-24
 status: "Finalized (2026-03-24)"
 session_id: SID-20260324-090000
+source_conversation: "JPEP_20260324_161447.md"
+inputs:
+  - "Paper/MDversion/07_review_mechanism.md"
+  - "CFP_5.4.9_Section7_v1.md"
+output_completed: "CFP_5.4.9_Section7_v1.md (finalized)"
 
 related_documents:
   - "CFP_5.3.1_WorkPlan_CFP_Adaptation.md (master work plan)"
@@ -109,6 +114,21 @@ A phrase connecting assessment norms to ecological validity (Section 5's first p
 **Reviewer A (user, 2026-03-24):** Approved. Noted that "the restructuring [is] meaningful and valid." Both Reviewer B refinements accepted.
 
 **Finalized:** 2026-03-24, session SID-20260324-090000.
+
+---
+
+## Post-Finalization: Double Contestation + Redundancy Reduction (2026-04-01/02)
+
+**Section 7 v2** produced in SID-20260401-173934 (source conversation: JPEP_20260401_153253.md): Abdulhai stance-neutralization + SRL cost-objection reply. See `CFP_4.2.21_ModificationLog_DoubleContestation_Implementation.md` Step 0.
+
+**Section 7 v3** produced in same session: authenticity enrichments — dual-purpose reading of assessment questions + double contestation payoff in §7.4. See `CFP_4.2.21` Step 3.
+
+**Redundancy reduction** in SID-20260401-225323 (source conversation: JPEP_20260401_205323.md): ~1,440 → ~1,030 words (28%). Reproduction-test paragraph cut to one clause; "documentation assessment is learning practice" deleted; SRL jargon compressed. See `CFP_4.2.22_ModificationLog_RedundancyReduction.md`.
+
+**Current authoritative file:** `CFP_5.4.9_Section7_v3.md`
+
+---
+
 ## Connections (auto)
 
 ### Source chat (primary)
@@ -117,6 +137,12 @@ A phrase connecting assessment norms to ecological validity (Section 5's first p
 - [[CFP_5.4.9_Section7_v1]]
 
 ### Explicit links (inputs/outputs/etc.)
+**inputs:**
+- UNRESOLVED: Paper/MDversion/07_review_mechanism.md; UNRESOLVED: CFP_5.4.9_Section7_v1.md
+
 **related_documents:**
 - UNRESOLVED: CFP_5.3.1_WorkPlan_CFP_Adaptation.md (master work plan); UNRESOLVED: Paper/MDversion/07_review_mechanism.md (JPEP source); UNRESOLVED: CFP_5.4.9_Section7_v1.md (CFP section draft); UNRESOLVED: CFP_5.4.8_Section6_v3.md (Section 6 — documentation-adequacy framework)
+
+**output_completed:**
+- UNRESOLVED: CFP_5.4.9_Section7_v1.md (finalized)
 

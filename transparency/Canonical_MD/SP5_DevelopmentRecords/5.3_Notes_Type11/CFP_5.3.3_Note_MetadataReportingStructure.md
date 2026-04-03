@@ -1,7 +1,7 @@
 ---
 project: JPEP
 document_type: Type 11 - Steering Note
-label: CFP_5.3.4_Note_MetadataReportingStructure
+label: CFP_5.3.3_Note_MetadataReportingStructure
 title: "Metadata Reporting Structure: Phases, Limitations, and Relevance for SP-1/2/3 Rewrite"
 date_created: 2026-03-31
 status: Active
@@ -119,7 +119,7 @@ Section 7 organizes documentation adequacy assessment around three criteria. The
 - Sessions with multiple artifacts (hub density ≥ 2): indicates substantive documented work per session
 
 **Intellectual trajectory** — can evaluators follow how the work developed?
-- Artifacts with at least one resolved input/output link: ~25 of 128 (see relational audit in CFP_5.3.4 context)
+- Artifacts with at least one resolved input/output link: ~25 of 128 (see relational audit in CFP_5.3.3 context)
 - Section drafts with multiple versions (v1 → v2 → v3): Introduction, Section 2, Section 3, Section 6 — each version is a trajectory node
 - Modification log entries per section: quantifies revision depth
 - Conversation exports: 18 sessions documented in `06_conversations/exported/`; temporal span Oct 2025 – Mar 2026
@@ -209,9 +209,8 @@ Two evidence sources were used in combination:
 ---
 
 *End of note.*
-
-
 ## Connections (auto)
 
 ### Source chat (primary)
 - [[_HUBS/CHAT_SID-20260331-000000]]
+

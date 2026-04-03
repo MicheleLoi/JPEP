@@ -10,9 +10,15 @@ models:
   - "Claude Opus 4.6 (2026-03-12, Reviewer B — v1 review)"
   - "Claude Sonnet 4.6 (2026-03-17, revisions — v2, v3)"
 session_id: SID-20260317-182817
+source_conversation: "JPEP_20260317_171901.md"
 date_started: 2026-03-12
 date_last_updated: 2026-03-17
 status: "Finalized (2026-03-17)"
+inputs:
+  - "CFP_5.4.5_Section2_v1.md"
+  - "CFP_5.4.5_Section2_v2.md"
+  - "CFP_5.4.5_Section2_v3.md"
+output_completed: "CFP_5.4.5_Section2_v3.md (finalized)"
 
 related_documents:
   - "CFP_5.3.1_WorkPlan_CFP_Adaptation.md (master work plan)"
@@ -148,6 +154,16 @@ The JPEP source (~1,500 words) serves two purposes: (1) analysis of the incentiv
 **Structure:** Two subsections (2.1 The Incentive Gradient, 2.2 The Scope of the Problem) with pivot to philosophical framework at close of 2.2.
 
 **Status:** Finalized — both reviewers approved.
+## Post-Finalization: Double Contestation + Redundancy Reduction (2026-04-01/02)
+
+**Section 2 v4** produced in SID-20260401-173934 (source conversation: JPEP_20260401_153253.md): closing paragraph expanded with authenticity dimension. See `CFP_4.2.21_ModificationLog_DoubleContestation_Implementation.md` Step 6.
+
+**Redundancy reduction** in SID-20260401-225323 (source conversation: JPEP_20260401_205323.md): ~950 → ~730 words (23%). LLM hedging removed. See `CFP_4.2.22_ModificationLog_RedundancyReduction.md`.
+
+**Current authoritative file:** `CFP_5.4.5_Section2_v4.md`
+
+---
+
 ## Connections (auto)
 
 ### Source chat (primary)
@@ -156,6 +172,12 @@ The JPEP source (~1,500 words) serves two purposes: (1) analysis of the incentiv
 - [[CFP_5.4.5_Section2_v2]]; [[CFP_5.4.5_Section2_v3]]
 
 ### Explicit links (inputs/outputs/etc.)
+**inputs:**
+- UNRESOLVED: CFP_5.4.5_Section2_v1.md; UNRESOLVED: CFP_5.4.5_Section2_v2.md; UNRESOLVED: CFP_5.4.5_Section2_v3.md
+
 **related_documents:**
 - UNRESOLVED: CFP_5.3.1_WorkPlan_CFP_Adaptation.md (master work plan); UNRESOLVED: CFP_5.3.2_ReviewerB_Section2_PendingDecision.md (Reviewer B assessment); UNRESOLVED: CFP_5.4.5_Section2_v1.md (initial draft); UNRESOLVED: CFP_5.4.5_Section2_v2.md (post-Reviewer B revision); UNRESOLVED: CFP_5.4.5_Section2_v3.md (finalized draft); UNRESOLVED: Paper/MDversion/02_systemic_barriers_to_disclosure.md (JPEP source)
+
+**output_completed:**
+- UNRESOLVED: CFP_5.4.5_Section2_v3.md (finalized)
 

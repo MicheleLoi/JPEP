@@ -11,6 +11,7 @@ cfp_target: "AI Tools in Ethics Research (topical collection)"
 source_file: "Paper/MDversion/05_signaling_discontinuity_from_prestige_system.md"
 transformation: "Rewrite derivation. Three principles (ecological validity, good faith, costly signaling) re-derived as normative conditions current disclosure mandates fail to meet, not as features enabled by venue discontinuity. Section 5 serves as diagnostic bridge to Section 6."
 session_id: SID-20260317-191544
+feeds_into: "CFP_4.2.17_ModificationLog_Section5.md"
 word_count: ~900
 ---
 # 5. Conditions for Adequate Transparency
@@ -52,4 +53,8 @@ The framework developed in Section 6 is designed to satisfy all three. Its docum
 - [[_HUBS/CHAT_SID-20260317-191544]]
 ### Sibling artifacts (same chat)
 - [[CFP_4.2.17_ModificationLog_Section5]]
+
+### Explicit links (inputs/outputs/etc.)
+**feeds_into:**
+- UNRESOLVED: CFP_4.2.17_ModificationLog_Section5.md
 

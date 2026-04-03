@@ -5,6 +5,10 @@
 !.gitignore
 !README.md
 
+# consenti Canonical_Figures
+!Canonical_Figures/
+!Canonical_Figures/**
+
 # consenti la cartella Paper/MDversion (e tutto il suo contenuto)
 !Paper/
 !Paper/MDversion/
@@ -22,5 +26,21 @@
 claude code conversations/
 transparency/tmpclaude-*
 
+# escludi backup hub (.bak) e vendor libraries
+transparency/Canonical_MD/_HUBS/*.bak
+transparency/Canonical_MD/lib/
+transparency/SCRIPTS/lib/
+
+# escludi exported script conversations
+transparency/SCRIPTS/06_conversations/**
+
 # escludi cartella temporanea
 transparency/TEMP/
+
+# consenti founding conversation (anonymized da6a830c)
+!06_conversations/
+!06_conversations/imported/
+!06_conversations/imported/Claude_JPEP_idea_origination_(real_world_journal).md
+
+# escludi esplicitamente ur-conversation (non anonimizzata, ID: 6c8d9101-cd3f-4f61-aaf9-f293de92d11c)
+06_conversations/imported/*6c8d9101*

@@ -7,6 +7,7 @@ branch: cfp-ai-ethics-inquiry
 session_id: SID-20260311-185449
 date: 2026-03-12
 status: RESOLVED — v3 finalized (2026-03-17, SID-20260317-182817)
+feeds_into: "CFP_5.4.5_Section2_v2.md"
 related:
   - "CFP_5.4.5_Section2_v1.md (draft under review)"
   - "CFP_5.3.1_WorkPlan_CFP_Adaptation.md (master work plan)"
@@ -57,5 +58,9 @@ User responds with one of:
 ### Source chat (primary)
 - [[_HUBS/CHAT_SID-20260311-185449]]
 ### Sibling artifacts (same chat)
-- [[CFP_4.7.7_EpistemicTrace_NonSequiturRevision]]
+- [[CFP_4.7.7_EpistemicTrace_NonSequiturRevision]]; [[CFP_5.4.5_Section2_v1]]
+
+### Explicit links (inputs/outputs/etc.)
+**feeds_into:**
+- UNRESOLVED: CFP_5.4.5_Section2_v2.md
 

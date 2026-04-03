@@ -18,29 +18,91 @@ related:
 
 ---
 
-## RESUME HERE (last updated 2026-03-24, session SID-20260324-173456)
+## RESUME HERE (last updated 2026-04-03, session SID-20260403-170017)
 
-**Immediate next action:** Implement Section 7 additions (pre-Phase 4 step), then draft Conclusion (Phase 4).
+**This session (SID-20260403-170017):** Contradiction analysis — systematic check of work plan against actual artifact state. Found 3 sessions from 2026-04-03 not narrated in RESUME HERE (SID-20260403-110246, -122011, -163539); added below. Resolved 3 open contradictions in CFP_5.3.17 (#4: 4.7.4→4.4.5 influence is indirect/conceptual, correctly encoded; #5: 5.3.13 is legitimate sibling of fb6251ae, late extraction; #6: SP5.1/5.1 naming is v1-era convention, no correction needed). CFP_5.3.17 status → Complete. Updated CFP_5.3.13 (writer briefing): added §11 (origin layer), §12 (PreliminaryChat chain), 3 new source files, 3 new contributing sessions; status → "research complete; ready for drafting". Added PDL-018: research phase complete; draft v1/v2 and III now, leave CFP phase as placeholder.
 
-**Pre-Phase 4 step — Section 7 additions (PENDING IMPLEMENTATION):**
-Two additions to Section 7 were designed and approved in session SID-20260324-173456 but not yet implemented. Full implementation plan at:
-`transparency/Canonical_MD/SP5_DevelopmentRecords/5.3_Notes_Type11/CFP_5.3.3_Note_Section7_Implementation_Plan.md`
-Design decisions documented at:
-`transparency/Canonical_MD/SP5_DevelopmentRecords/5.2_SectionPromptDevelopmentLogs_Type8b/CFP_5.2.1_pdl_section7_additions.md`
-Summary: (A) Abdulhai et al. (2026) empirical corroboration in §7.2 (~100 words); (B) SRL cost-objection reply in §7.4 (~150 words); (C) new References block. Output: `CFP_5.4.9_Section7_v2.md`. Followed by citation file updates (paper_bibliography.md, references_doc.md). Then create modlog CFP_4.2.20.
+**Next substantive step:** SP-3 drafting (Phase 3c). Research complete (PDL-018). Entry point: read CFP_5.3.13 (writer briefing, 12 sections), then CFP_5.3.15 (origin story), then CFP_5.2.4 PDL-017/018 (scope + methodology + drafting plan), then CFP_4.4.20 (section guidance v3). Draft covers v1/v2 and Stage III in full; CFP phase left as marked placeholder.
 
-**After Section 7 additions:** Draft Conclusion CFP adaptation (Phase 4).
-Source: `Paper/MDversion/08_conclusion.md`
-Plan: rewrite conclusion to land on responsible AI-assisted ethics research requiring a philosophically specified transparency framework; self-exemplification; essentially-contested nature of ethical inquiry means we must track rather than prejudge; community assessment mechanisms remain to be developed. Word target: 400-600 words.
+**Previous session:** 2026-04-03 — PreliminaryChat chain verification (SID-20260403-163539). Tested input-output mapping on PreliminaryChat cluster (4.7.3/4.7.4/4.7.5). Resolved contradictions #1–3 (date conflict, numbering artifact, script issues). Left #4–6 open. Added hub_annotations.yaml entries for 5b8de38b, fb6251ae, e9d55db6. Created CFP_5.3.17. Added 5.2.4.1 to synthetic_nodes.yaml. **Work plan was not updated in that session.**
 
-**State summary:**
-- Phase 1 complete — Introduction + Section 3 both revised post-finalization (first component/step cut; see CFP_4.7.7)
-- Section 2 finalized — CFP_5.4.5_Section2_v3.md (~900 words); modlog CFP_4.2.15
-- Section 4: cut (no standalone section)
-- Section 5 finalized — CFP_5.4.7_Section5_v1.md (~1,350 words); modlog CFP_4.2.17 (9 entries); session SID-20260317-191544
-- Section 6 finalized — CFP_5.4.8_Section6_v3.md (~1,520 words); modlog CFP_4.2.18 (13 entries); session SID-20260323-190000. Note: §6.1 substantially deepened with two-routes argument (process-constitutive + community-level essential contestedness); adverse selection paragraph added §6.3; §6.4 rewritten around AI-assisted synthesis as viability mechanism.
-- Section 7 finalized (v1) — CFP_5.4.9_Section7_v1.md (~1,000 words); modlog CFP_4.2.19 (6 entries); session SID-20260324-090000. Note: reproduction test dropped; dual-reviewer architecture repurposed for documentation adequacy assessment; organizing question = SP-3's tracing claim; three adequacy questions (attribution, trajectory, understanding-and-endorsement); ecological validity + good faith norms for assessment.
-- Section 7 v2 (additions approved, not yet implemented) — see pre-Phase 4 step above.
+**Previous session:** 2026-04-03 — Hub metadata architecture design (SID-20260403-154700). Arose during mhc-start before SP-3 drafting. Designed authoritative-source architecture: `hub_annotations.yaml` is ground truth; hub `.md` files are derived. Key decisions: `continues_from` replaces `prior_chat`; session-level facts stay in YAML only; list form for complex flows. Script must not run until wired to read YAML. Artifacts: CFP_4.7.17 (epistemic trace), CFP_5.3.16 (decision record). Updated `adapt.md` §5. **Work plan was not updated in that session.**
+
+**Previous session:** 2026-04-03 — Ur-conversation import + origin story philology (SID-20260403-154053). Verified export from SID-20260403-135745; executed 3 deferred TODOs. MHC-import of 6c8d9101 ("How LLMs process conversational goals", 2025-10-10, Claude Sonnet 4.5 extended): imported (133K chars, gitignored), hub created, chain links completed. Chain coherence corrected: 2ca5888a hub, 4.7.1 prior_chat, da6a830c hub UUID. hub_annotations.yaml created. Read ur-conversation in full: (1) costly signaling argument originated here; (2) transparency paradox / laundering first named here; (3) the "mess" = pre-systematic starting condition. Created CFP_4.7.16 and CFP_5.3.15.
+
+**Previous session:** 2026-04-03 — Chain walk + 4.1 provenance work (SID-20260403-135745). Chain walk complete; findings in CFP_5.3.13 §10. Moved `III_4.1.2` → `III_4.4.6`. Created `5.3.21_EpistemicOrigin_InputToSynthesis.md` (anonymized source dialogue, 26K chars). Wrote MOD-001 in 4.1. Resolved 5.3.21 vs 4.7.1 (5.3.21 is fuller version; 4.7.1 is incomplete extract).
+
+**Previous session:** 2026-04-03 — SP-3 writer briefing consolidation (SID-20260403-122011). Consolidated all SP-3 preparation into single briefing document. Artifacts: CFP_5.3.13 (writer briefing — the entry point for SP-3 drafting), CFP_4.2.25 (modlog). **Previously not narrated in work plan; artifact was referenced but session was not.**
+
+**Previous session:** 2026-04-03 — Metadata audit + phase sequence reconstruction (SID-20260403-110246). Produced CFP_5.3.12 (phase summary working trace) and CFP_4.2.24 (metadata audit modlog). **Previously not narrated in work plan; indirectly referenced via CFP_5.3.13.**
+
+**Previous session:** 2026-04-03 — Session chain reconstruction + audit rewrite (SID-20260403-131122). Read all 4.4.x (20 files), 4.3.x (5 files), and 4.2.x modlogs. Rewrote `CFP_5.3.5` from scratch. Created `CFP_5.3.14_Note_ChainWalkPlan.md`.
+
+**Previous session:** 2026-04-03 (earlier, SID-20260403-093628) — SP-3 redesign (research-paper approach), two-order argument structure, Opus corpus research on ~140 files. Section 3 v3 drafted. Artifacts: `CFP_4.4.20`, `CFP_5.4.4_Section3_v3.md`, `CFP_4.7.15`, `CFP_4.2.23` (draft, pending review), PDL-017 added to `CFP_5.2.4`.
+
+**Track A — Selected graph research: COMPLETE**
+`CFP_5.3.7_SelectedGraphCandidates.md` produced in session SID-20260401-033111. Three verified candidates; fourth deferred (weaker grounding). No further action needed.
+
+**DOUBLE CONTESTATION + REDUNDANCY REDUCTION: COMPLETE**
+
+All 8 implementation steps executed in SID-20260401-173934 (JPEP_20260401_153253.md). Three-pass redundancy reduction completed in SID-20260401-225323 (JPEP_20260401_205323.md). Additional Section 3/6 refinements in SID-20260401-184454 (JPEP_20260401_164454.md).
+
+The paper's essentially-contested-concept argument now operates at TWO levels (the "double contestation"):
+- Level 1 (meta-ethical): what ethical inquiry IS → tracking requirement
+- Level 2 (ethical): what doing ethical inquiry REQUIRES of the inquirer → authenticity requirement
+
+The authenticity argument has CO-EQUAL WEIGHT with the tracking argument. Tradition: Socrates, Nietzsche, Kierkegaard (NOT Taylor). Artistic parallels: Cohen/AARON, modular synth + Boden & Edmonds. §6.1 rewritten from scratch. Routes renamed: "meta-ethical" (expressivism only) / "ethical" (authenticity tradition).
+
+**Design history:** PDL `CFP_5.2.3` (entries PDL-000 through PDL-009). Source argument: `CFP_4.7.11` (antecedent input — do NOT revise). Design analysis: `CFP_4.7.12` (superseded by PDL-009 decisions). Implementation spec: `CFP_4.4.19_SectionGuidance_SelfExpressionDistribution.md`.
+
+**DO NOT revise CFP_4.7.11.** It is a dated generative input (SID-20260401-111336). The design decisions that transformed it (Taylor → Kierkegaard, Bridge A, AARON, co-equal weight) are recorded in the PDL and implemented through CFP_4.4.19.
+
+**Implementation steps (ALL COMPLETE):**
+
+| Step | Action | Output | Status |
+|------|--------|--------|--------|
+| 0 | Section 7 v2 additions (Abdulhai + SRL) | `CFP_5.4.9_Section7_v2.md` | Done |
+| 1 | Section 3: double contestation | `CFP_5.4.4_Section3_v2.md` | Done |
+| 2 | Section 6: §6.1 rewritten from scratch | `CFP_5.4.8_Section6_v4.md` | Done |
+| 3 | Section 7: authenticity enrichments | `CFP_5.4.9_Section7_v3.md` | Done |
+| 4 | Introduction: signal both levels | `CFP_5.4.3_Introduction_v2.md` | Done |
+| 5 | Section 5: dual-purpose notes | `CFP_5.4.7_Section5_v2.md` | Done |
+| 6 | Section 2: closing note | `CFP_5.4.5_Section2_v4.md` | Done |
+| 7 | Conclusion: full rewrite | `CFP_5.4.10_Conclusion_v1.md` | Done |
+
+**Redundancy reduction (SID-20260401-225323):** ~9,165 → ~6,630 words (28% cut). Three passes + targeted Section 6 edits (expressivism-only route, route renaming, art examples replaced with modular synth + Boden & Edmonds / Cohen/AARON).
+
+**Cross-paper modlogs:**
+- `CFP_4.2.21_ModificationLog_DoubleContestation_Implementation.md` — all 8 steps + author review + reviewer letter + fixes
+- `CFP_4.2.22_ModificationLog_RedundancyReduction.md` — three-pass reduction + Section 6 targeted edits
+- `CFP_4.2.20_ModificationLog_Conclusion.md` — Conclusion creation + redundancy reduction
+
+**Self-referential documentation trace (still relevant for SP-1/2/3 writing):**
+`CFP_4.7.8_EpistemicTrace_SelfReferentialDocumentation.md` — three layers of self-reference; implications for Conclusion (partial instance, not solved example), Section 7 (contemporaneous satisfaction), Appendix A (v1/v2 reconstruction acknowledged).
+
+**Metadata infrastructure state** (updated 2026-04-01): See Section G. Key facts: skeleton 72% coverage (92/128); CFP modlog SID gaps resolved; all 10 section drafts have `feeds_into` links; version chains encoded; 5 v1/v2 modlogs still missing SIDs (medium priority). Steering notes: `CFP_5.3.3` (phase structure), `CFP_5.3.4` (skeleton + connections status).
+
+**Current authoritative files:**
+
+| Section | File | Words (approx) |
+|---------|------|-----------------|
+| Introduction | `CFP_5.4.3_Introduction_v2.md` | ~760 |
+| Section 2 | `CFP_5.4.5_Section2_v4.md` | ~730 |
+| Section 3 | `CFP_5.4.4_Section3_v2.md` | ~1,290 |
+| Section 4 | CUT | — |
+| Section 5 | `CFP_5.4.7_Section5_v2.md` | ~760 |
+| Section 6 | `CFP_5.4.8_Section6_v4.md` | ~1,540 |
+| Section 7 | `CFP_5.4.9_Section7_v3.md` | ~1,030 |
+| Conclusion | `CFP_5.4.10_Conclusion_v1.md` | ~520 |
+| **Total** | | **~6,630** |
+
+**Remaining work:**
+- Phase 3b bibliography/references tasks still open (paper_bibliography.md, references_doc.md updates)
+- Phase 3c: SP-1, SP-2, SP-3 drafting (absorbs former Appendix A; see CFP_5.2.4_pdl_SP1_SP2_SP3.md)
+- Phase 4: Review + finalize Conclusion, then Abstract + Title
+- Phase 5: Integration, full consistency review, final commit
+
+**Appendix A: ELIMINATED** (PDL-004, SID-20260402-105621). SP-1/2/3 absorb all former appendix functions. No section of the paper body references "Appendix A." See CFP_5.2.4_pdl_SP1_SP2_SP3.md.
 
 ---
 
@@ -49,7 +111,7 @@ Plan: rewrite conclusion to land on responsible AI-assisted ethics research requ
 When the user types `mhc-start`, do the following in order:
 
 1. **Read this file** in full. It is the master plan for the CFP adaptation.
-2. **Read MEMORY.md** if available (path is machine-specific: `~/.claude/projects/<converted-project-path>/memory/MEMORY.md`). On a new machine it may not exist — this file is self-sufficient without it. Key instruction it would provide: authoritative section drafts are in `5.4_SectionDrafts/`, NOT `Paper/MDversion/`.
+2. **Read `adapt.md`** (project root). Contains terminology rules, infrastructure requirements, and documentation conventions. Path: `adapt.md` — also registered in `.mhc-config.json` under `project_conventions.path`.
 3. **Check the progress checklist** (Section B below). Identify the next unchecked item.
 4. **Run `git status` and `git branch`** on the working directory. Confirm you are on branch `cfp-ai-ethics-inquiry`. If not, switch to it.
 5. **Read the source file** for the next section to be drafted (see Section C for locations).
@@ -170,15 +232,25 @@ Contribution: MHC framework + documentation-adequacy + self-exemplification
 - [x] Draft Section 7 minor reframe (CFP_5.4.9_Section7_v1.md)
 - [x] Review + finalize Section 7
 
-### Phase 3b: Section 7 additions (pre-Phase 4, decided 2026-03-24)
-- [ ] Implement additions A + B + C → save as CFP_5.4.9_Section7_v2.md (see CFP_5.3.3)
-- [ ] Update paper_bibliography.md (3 new entries + Section VII block + housekeeping)
-- [ ] Update references_doc.md (new Section VII CFP block)
-- [ ] Create modlog CFP_4.2.20
+### Phase 3b: Section 7 additions + double contestation (decided 2026-03-24; executed 2026-04-01)
+- [x] Implement additions A + B + C → CFP_5.4.9_Section7_v2.md (SID-20260401-173934, Step 0)
+- [x] Update paper_bibliography.md (3 new entries + Section VII block + housekeeping; SID-20260402-105621)
+- [x] Update references_doc.md (new Section VII CFP block; SID-20260402-105621)
+- [x] Create modlog CFP_4.2.20 (Conclusion; created 2026-04-02)
+- [x] Double contestation: all 8 implementation steps (SID-20260401-173934); modlog CFP_4.2.21
+- [x] Redundancy reduction: 3 passes, 28% cut (SID-20260401-225323); modlog CFP_4.2.22
+- [x] Section 3/6 refinements: expressivism-only, tradition fixes (SID-20260401-184454)
+
+### Phase 3c: SP-1/2/3 (supplementary materials — absorbs former Appendix A)
+- [ ] Draft SP-1: Summary of how AI was used (CFP_5.2.4 PDL-001/002)
+- [ ] Draft SP-2: Navigation document / index (CFP_5.2.4 PDL-003)
+- [ ] Draft SP-3: Documentation account + adequacy argument (CFP_5.2.4 PDL-003)
+- [ ] Review + finalize SP-1/2/3
 
 ### Phase 4: Conclusion, Abstract, Title
-- [ ] Draft Conclusion rewrite (CFP_5.4.10_Conclusion_v1.md)
-- [ ] Review + finalize Conclusion
+- [x] Draft Conclusion rewrite (CFP_5.4.10_Conclusion_v1.md — SID-20260401-173934, Step 7)
+- [x] Redundancy-reduce Conclusion (SID-20260401-225323)
+- [ ] Review + finalize Conclusion (Reviewer B pending)
 - [ ] Draft Abstract rewrite (CFP_5.4.11_Abstract_v1.md)
 - [ ] Review + finalize Abstract
 - [ ] Draft Title revision
@@ -186,7 +258,7 @@ Contribution: MHC framework + documentation-adequacy + self-exemplification
 
 ### Phase 5: Integration and documentation
 - [ ] Integrate all finalized sections into single paper file
-- [ ] Create modification logs for all adapted sections
+- [x] Create modification logs for all adapted sections (CFP_4.2.14–4.2.22 complete)
 - [ ] Final consistency review (full paper read-through)
 - [ ] Commit finalized CFP version to branch
 
@@ -421,6 +493,73 @@ From III_4.7.4 (corrected Phase 3 analysis):
 ### Main gap remaining
 
 Ethics-specific methods content (reflective equilibrium, casuistry, moral intuitions, thought experiments). The adapted paper does not contain detailed analysis of what AI can/cannot support for specific ethics methods. This is acknowledged as a gap. Options: (a) add a short subsection in Section 3; (b) acknowledge the gap and frame the paper as addressing the prior question (what framework do we need before we can assess method-specific impacts?). Option (b) is recommended -- it is honest and positions the paper correctly.
+
+---
+
+---
+
+## G. METADATA INFRASTRUCTURE STATUS
+
+*This section is updated in place as the skeleton and connections evolve. Last updated: 2026-04-01.*
+
+### Skeleton (session-identity hub nodes)
+
+| Layer | Count | Coverage |
+|---|---|---|
+| Total artifacts with frontmatter | 128 | — |
+| Linked to a session (any type) | 92 | 72% |
+| — UUID exact (v1/v2, Claude.ai) | 62 | |
+| — SID exact (CFP + III reconstructed) | 27 | |
+| — SID date-only (III phase) | 3 | |
+| Orphaned (no session ID) | 36 | 28% |
+| Hub nodes in `_HUBS/` | 51 | |
+
+**Orphan breakdown:** ~6 admin/reference files (correct — no session ID needed); ~10 section drafts (correct by design — see below); ~18 v1/v2 modlogs and summaries (recoverable gap).
+
+**Architectural note:** Section drafts intentionally carry no `session_id`. A draft spans multiple sessions; a single field would capture only the last session and misrepresent the history. The modification log is the correct locus of session-to-revision tracing. When assessing or narrating coverage, point to modlogs for trajectory evidence, not section drafts.
+
+### Modlogs missing session IDs (real skeleton gaps)
+
+| File | Phase | Priority | Notes |
+|---|---|---|---|
+| `CFP_4.2.14_ModificationLog_Introduction.md` | CFP | done | SID-20260303-102634 (JPEP_20260303_102634.md) |
+| `CFP_4.2.16_ModificationLog_Section3.md` | CFP | done | SID-20260305-152034 (JPEP_20260305_152034.md) |
+| `4.2.1_ModificationLog_I_Introduction__S01.md` | v1/v2 | medium | Content-matching needed |
+| `4.2.2_ModificationLog_Section_II__S02.md` | v1/v2 | medium | Content-matching needed |
+| `4.2.3_ModificationLog_Section_III__S02.md` | v1/v2 | medium | Content-matching needed |
+| `4.2.5_ModificationLog_Section_II-III-IV_Consolidation__S02.md` | v1/v2 | medium | Content-matching needed |
+| `4.2.9_ModificationLog_Section_VIII_6__S06.md` | v1/v2 | medium | Content-matching needed |
+| `III_4.2.13_ModificationLog_Section6_v3.md` | III | medium | Use III reconstruction method (CFP_5.3.3 §5) |
+
+### Connections (relational links)
+
+| Layer | Count | Coverage |
+|---|---|---|
+| Artifacts with ≥1 relational link field | 44 / 128 | 34% |
+
+Dense in: CFP phase artifacts, PDLs. Sparse in: v1/v2 modlogs and summaries (relational info in body text, not frontmatter).
+
+**Known code gap:** `output_completed` references to `III_`-prefixed files render as UNRESOLVED in Connection blocks. The hub script's filename prefix regex does not match `III_`-prefixed filenames. Links are correctly recorded in frontmatter; they just do not generate resolved wikilinks. Fix is a one-line regex change in `obsidian_connections_with_chat_hubs.py`.
+
+### Graph visualization
+
+`transparency/SCRIPTS/build_graph.py` generates an interactive HTML graph from SP-4/SP-5 frontmatter. Output: `transparency/Canonical_MD/_GRAPHS/jpep_graph.html`. Run with `python3 build_graph.py` from the `SCRIPTS/` directory. Node colours: amber = session hubs, blue = section drafts, green = modlogs, purple = traces, teal = PDLs, grey = notes. Requires `pyvis` and `networkx` (`pip3 install pyvis networkx`).
+
+### Reference documents for SP-1/2/3 writer
+
+**→ START HERE: `CFP_5.3.13_Note_SP3_WriterBriefing.md`** — consolidated briefing for SP-3 drafting. Contains: confirmed phase sequence (Phases A–E), how documents were routed between writing sessions (the "generic links"), the format field effect (the single most important empirical finding), two author corrections about how to characterise the record, documentation gaps to acknowledge honestly, the three SP-3 strategy decisions already made, and the role of hubs in reconstruction. Read this before touching any of the files below.
+
+For depth on specific topics:
+- `CFP_5.3.9_Note_PhilologicalExplorationLessons.md` — source of the format field effect, author corrections, and SP-3 strategy decisions
+- `CFP_5.3.6_CoworkFindings_ArtifactLinks.md` — verified input/output links for all 5 recovered v1/v2 writing sessions (12 hypotheses confirmed)
+- `CFP_5.3.12_Note_SP3_PhaseSummary_WorkingTrace.md` — phase sequence reconstruction; hub-as-reconstruction-infrastructure; open questions
+- `CFP_5.3.3_Note_MetadataReportingStructure.md` — how the reporting mechanism is structured across phases; summary statistics; SP implications
+- `CFP_5.3.4_Note_SkeletonAndConnectionsStatus.md` — current coverage figures; architectural note on section drafts vs. modlogs; modlog gap table; SP-3 argument guidance
+- `CFP_5.3.5_Note_V1V2MetadataAudit.md` — comprehensive audit of v1/v2 relational metadata; 91 files analyzed; field naming problems; graph extension requirements
+
+**Origin-layer conversations (for SP-3 intellectual history):**
+- `06_conversations/imported/Claude_JPEP_idea_origination_(real_world_journal).md` — da6a830c content (anonymized); the **second step** in the intellectual origin chain; developed Chat X's ideas into a full venue-design proposal over 49 turns; hub: `CHAT_da6a830c-...md`
+- Chat X (UUID: 6c8d9101-cd3f-4f61-aaf9-f293de92d11c, title: "How LLMs process conversational goals") — the **first step**; true intellectual origin of the publishing-barriers argument; imported this session; **gitignored** (not anonymized); hub: `CHAT_6c8d9101-cd3f-4f61-aaf9-f293de92d11c.md`
 
 ---
 

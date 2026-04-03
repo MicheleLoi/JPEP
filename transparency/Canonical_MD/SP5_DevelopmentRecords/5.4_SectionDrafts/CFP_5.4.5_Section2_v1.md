@@ -7,7 +7,10 @@ date_created: 2026-03-12
 status: Draft
 source: "Claude Sonnet 4.6 (Claude Code session)"
 source_guidance: "CFP_5.3.1_WorkPlan_CFP_Adaptation.md"
+source_file: "Paper/MDversion/02_systemic_barriers_to_disclosure.md"
 cfp_target: "AI Tools in Ethics Research (topical collection)"
+session_id: SID-20260311-185449
+feeds_into: "CFP_4.2.15_ModificationLog_Section2.md"
 word_count: ~950
 ---
 # 2. Systemic Barriers to Disclosure
@@ -49,5 +52,12 @@ The four mechanisms identified in Section 2.1 make clear that the gap between fo
 The problem is one of underspecification, not dishonesty. Current disclosure policies establish that AI use must be reported; they do not specify what must be reported, in what form, or against what standard of adequacy. An author instructed to "disclose AI assistance" faces none of the guidance needed to produce disclosures that serve the purposes disclosure is meant to serve. This is a philosophical problem, not a regulatory gap. Closing it requires prior philosophical work: specifying what transparency is *for*—what information must be preserved for the scholarly record to remain assessable, what documentation is adequate, and what criteria allow a reader or reviewer to determine whether transparency requirements have been substantively met. The remaining sections undertake that project.
 ## Connections (auto)
 
-_No connections found._
+### Source chat (primary)
+- [[_HUBS/CHAT_SID-20260311-185449]]
+### Sibling artifacts (same chat)
+- [[CFP_4.7.7_EpistemicTrace_NonSequiturRevision]]; [[CFP_5.3.2_ReviewerB_Section2_PendingDecision]]
+
+### Explicit links (inputs/outputs/etc.)
+**feeds_into:**
+- UNRESOLVED: CFP_4.2.15_ModificationLog_Section2.md
 

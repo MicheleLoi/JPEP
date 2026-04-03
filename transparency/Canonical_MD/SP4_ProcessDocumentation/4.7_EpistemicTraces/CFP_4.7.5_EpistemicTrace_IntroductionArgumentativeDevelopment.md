@@ -5,8 +5,11 @@ label: CFP_4.7.5_EpistemicTrace_IntroductionArgumentativeDevelopment
 title: "CFP Introduction: Argumentative Spine Development"
 date: 2026-03-02
 source: "Claude Code session (Claude Sonnet 4.6) + Claude Opus 4.6 (subagent, agent-a37ba2f)"
+session_id: SID-20260302-192847
+source_conversation: "JPEP_20260302_192847.md"
 status: Complete
-influence: "One-to-many — determines CFP Introduction draft (CFP_5.4.3, pending), informs Section 3 adaptation (CFP_5.4.4, pending)"
+feeds_into: "CFP_5.4.3_Introduction_v1.md"
+influence: "One-to-many — determines CFP Introduction draft (CFP_5.4.3), informs Section 3 adaptation (CFP_5.4.4)"
 related:
   - "CFP_5.3.1_WorkPlan_CFP_Adaptation.md (work plan produced in same session)"
   - "III_4.7.4_CFP_AIEthicsInquiry_BranchAndFitAnalysis.md (fit analysis — prior session)"
@@ -143,5 +146,10 @@ Five issues Opus flagged for the drafter:
 4. **What this session did NOT produce:** A decision on Section 4 (compress vs. cut). This is deferred to after Introduction and Section 3 are finalized, when the Introduction frame will clarify how much institutional context is needed.
 ## Connections (auto)
 
-_No connections found._
+### Source chat (primary)
+- [[_HUBS/CHAT_SID-20260302-192847]]
+
+### Explicit links (inputs/outputs/etc.)
+**feeds_into:**
+- UNRESOLVED: CFP_5.4.3_Introduction_v1.md
 

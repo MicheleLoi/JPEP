@@ -1,0 +1,257 @@
+# hub_annotations.yaml
+#
+# Crystallized ground-truth enrichment for auto-generated session hubs.
+#
+# PURPOSE: stores session-level facts that cannot be inferred from SP4/SP5
+# frontmatter alone — inputs received, artifacts produced, continues_from links,
+# gitignore status, dates. To be wired into the hub-generation script at the
+# end of the current manual philology phase.
+#
+# WIRING INSTRUCTION (for future script integration):
+#   - Script reads this file after generating hub stubs from frontmatter
+#   - For each session key present here, OVERRIDE (not supplement) the
+#     auto-generated fields with annotation data
+#   - Fields not present in annotations are left as auto-generated
+#   - See synthetic_nodes.yaml for the analogous pattern for graph nodes
+#
+# STATUS: crystallization artifact only — not yet wired into any script.
+# GOVERNANCE: see CFP_5.3.16_Note_HubMetadataArchitectureDecisions.md — this file is
+# the authoritative source for session topology; hub .md files are derived.
+# Last updated: 2026-04-03 (SID-20260403-154700, hub architecture design session)
+
+sessions:
+
+  6c8d9101-cd3f-4f61-aaf9-f293de92d11c:
+    title: "How LLMs process conversational goals"
+    date: 2025-10-10
+    model: "Claude Sonnet 4.5 (extended thinking)"
+    platform: Claude.ai
+    gitignored: true
+    import_file: "06_conversations/imported/Claude_How_LLMs_process_conversational_goals_6c8d9101-cd3f-4f61-aaf9-f293de92d11c.md"
+    role: >
+      First step in the intellectual origin chain. The publishing-barriers and
+      prestige-gradient argument originated here. da6a830c begins with the user
+      pasting a "Feature vs Bug Debate" summary extracted from this conversation.
+    feeds_into:
+      - da6a830c-d1c6-4936-a999-0d42e21590a7
+    artifacts_produced: []
+    note: >
+      Content not in public record (gitignored, not anonymized). Hub file is
+      committed; conversation content is not. UUID known; content available
+      locally at import_file.
+
+  da6a830c-d1c6-4936-a999-0d42e21590a7:
+    title: "JPEP idea origination (real world journal)"
+    date: 2025-10-11
+    model: "Claude Sonnet 4.5"
+    continues_from: 6c8d9101-cd3f-4f61-aaf9-f293de92d11c
+    continues_from_note: >
+      da6a830c begins with user pasting a Feature/Bug debate summary from
+      6c8d9101. Claude's extended thinking explicitly recognises this as a
+      continuation: "it seems we had a previous conversation about academic
+      publishing."
+    import_file: "06_conversations/imported/Claude_JPEP_idea_origination_(real_world_journal).md"
+    import_status: anonymized
+    artifacts_produced:
+      - 5.3.21_EpistemicOrigin_InputToSynthesis.md
+    note: >
+      49-turn dialogue. Final three turns are extraction requests that produced
+      the output artifacts. 5.3.21 is Claude's response to extraction request 3
+      ("extract this as prompt, unedited text but for privacy-preserving elisions")
+      — i.e., the anonymized transcript of this conversation itself, produced
+      within this conversation.
+
+  2ca5888a-6a5e-4563-8838-a5c764df33c6:
+    title: "JPEP epistemic trace generation + complete prompt v1 and v2"
+    date: 2025-10-11
+    inputs:
+      - 5.3.21_EpistemicOrigin_InputToSynthesis.md
+    inputs_note: >
+      5.3.21 was produced IN da6a830c as extraction request 3, then pasted by
+      the user into this session as source material. Claude synthesised it into
+      the Complete Prompt format (4.1).
+    artifacts_produced:
+      - 4.1_Complete_Prompt.md
+      - 4.7.1_OriginalTextConversationExtract_Redacted.md
+      - 5.1_paper_prompt_development_log.md
+    artifacts_note: >
+      4.1 is the primary output: human-sourced (5.3.21), Claude-synthesized,
+      human-endorsed. 4.7.1 is an incomplete extract of da6a830c argument-
+      development content, stopping at the extraction-request-1 boundary
+      (mid-sentence, untagged section line 2707). 5.1 is the paper prompt
+      development log initialised in this session.
+
+  5b8de38b-0044-4726-8eab-75e54460ec3e:
+    title: "JPEP 4.7.3 preliminary chat for 8 and appendix start"
+    date: 2025-10-12
+    date_end: 2025-10-13
+    model: "Claude Sonnet 4.5"
+    platform: Claude.ai
+    continues_from: null
+    continues_from_note: >
+      Start of methodology design chain. No prior session in this sub-chain.
+      Primary input is 4.1 (Complete Prompt), produced in 2ca5888a — this is
+      the junction between the origin story chain and the PreliminaryChat chain.
+    inputs:
+      - 4.1_Complete_Prompt.md
+      - 4.7.1_OriginalTextConversationExtract_Redacted.md
+      - 4.7.2_OriginalTextConversation_VisibilityAndStakeholders.md
+      - "4.3.1 through 4.3.5 (Pattern Summaries I–VI; note: I and VI absent despite description)"
+      - 4.5.1 through 4.5.6 (Section Summaries I–VI)
+      - 4.2.1, 4.2.2, 4.2.3, 4.2.4, 4.2.6, 4.2.7 (Modification Logs)
+    inputs_note: >
+      Session used 4.1 (= SP5.1) as its foundational document. Task was to
+      operationalize the existing documentation vision in 4.1 into a concrete
+      reproduction procedure. Pattern Summaries for Sections I and VI were
+      absent despite being listed in the input description (noted in 4.7.3
+      frontmatter).
+    artifacts_produced:
+      - 4.7.3_PreliminaryChat 1.md
+      - 4.7.6.1_primitive_artifacts_description.md
+      - 5.2.6._first_development_sp2.md
+      - 5.3.3_proto_generative_prompt_x.md
+      - 5.3.5_first_proto_reviewer_prompt.md
+      - 5.3.9_architectural_guidance.md
+      - 5.3.10_section8_guidance.md
+      - 5.3.11_reproduction_pack_demonstration.md
+    artifacts_note: >
+      5.3.11 (Reproduction Pack) was produced here and passed to fb6251ae as
+      input to enable the attention-window continuation. 5.3.1 (Artifact
+      ontology expansion) is listed as a salient output in 4.7.3 frontmatter
+      but its source_chat_id points to 5b8de38b — included above implicitly
+      via 5.3.3 (proto generative prompt X was the working label).
+    role: >
+      Start of methodology design chain. Operationalizes 4.1 (Complete Prompt)
+      into a concrete reproduction procedure. Establishes A+B transparency
+      commitment, Reproduction Package concept, and the artifact ontology.
+      Interrupted proactively before attention window exhaustion; continued in
+      fb6251ae.
+
+  fb6251ae-9ce3-4e5e-8b3f-4ef67aa42092:
+    title: "JPEP section (8/9 preliminary chat c'ed; attention window exhaustion prevention)"
+    date: 2025-10-13
+    model: "Claude Sonnet 4.5"
+    platform: Claude.ai
+    continues_from: 5b8de38b-0044-4726-8eab-75e54460ec3e
+    continues_from_note: >
+      Direct continuation of 5b8de38b across an attention-window boundary.
+      Key handoff documents passed in: 5.3.1 (artifact ontology), 5.3.9
+      (architectural guidance), 5.3.11 (Reproduction Pack).
+    inputs:
+      - 5.3.1_Artifact_ontology_expansion.md
+      - 5.3.9_architectural_guidance.md
+      - 5.3.11_reproduction_pack_demonstration.md
+      - 5.2.4.1
+    inputs_note: >
+      5.2.4.1 is a sub-artifact within 5.2.4_pdl_Appendix_a_initial_steps.md
+      (the "Appendix A Reproduction Procedure and Documentation Guide"
+      component). It is a synthetic node — no standalone file exists. See
+      synthetic_nodes.yaml. The UNRESOLVED status in 4.7.4's Connections block
+      for both 5.3.11 and 5.2.4.1 is a script name-resolution failure, not
+      missing artifacts (verified SID-20260403-163539, CFP_5.3.17).
+    artifacts_produced:
+      - 4.4.4_For_Section_VIII-A_now_6_from_5.2.1__S06.md
+      - 4.7.4_PreliminaryChat 2.md
+      - 5.2.1_pdl_section_viii_now_6_A.md
+      - 5.3.13_appendix_guidance_rewritten.md
+    artifacts_note: >
+      4.4.4 is the primary output: Section Guidance for §8-9 and Appendix A.
+      5.3.13 membership in this session VERIFIED (SID-20260403-170017):
+      source_chat_id in 5.3.13 frontmatter confirms fb6251ae; late extraction
+      (2026-01-03) from Oct 2025 conversation. See CFP_5.3.17 #5 (resolved).
+      The one_to_many_influence claim over 4.4.5 in 4.7.4 frontmatter is
+      indirect/conceptual, not a direct output — 4.4.5 was produced in
+      e9d55db6. See CFP_5.3.17 #4 (resolved).
+    role: >
+      Continuation of methodology design chain (5b8de38b). Resolves complexity
+      into clarity: establishes ruthless simplification principle, prohibits
+      category proliferation, fixes clean artifact ontology. Primary output
+      (4.4.4) governs Section 8 writing.
+
+  e9d55db6-9ec7-4d38-b053-2a0975c9f4ef:
+    title: "JPEP 4.7.5 value of transparency"
+    date: 2025-10-15
+    model: "Claude Sonnet 4.5"
+    platform: Claude.ai
+    continues_from: null
+    continues_from_note: >
+      Sideway session — the project's own term, encoded in artifact name
+      4.4.5_For_Section_VIII-B_from_Sideway_chat. Not a continuation of the
+      5b8de38b → fb6251ae methodology design chain. Branches from the Section
+      VII writing track instead.
+    inputs:
+      - "Section VII draft (pre-consolidation; no standalone SP4/SP5 file)"
+      - "VI Section Summary"
+      - "From Section 7 for Section 8 (preliminary guidance from §7 writing)"
+      - "Excerpt of Section VII draft 1"
+    inputs_note: >
+      Inputs are written section content, not SP4/SP5 framework documents.
+      No direct document handoff from 5b8de38b or fb6251ae. Conceptual debt
+      to fb6251ae (which framed Section 8's needs) but no file passed in.
+    artifacts_produced:
+      - 4.7.5_PreliminaryChat 3.md
+      - 4.4.5_For_Section_VIII-B_from_Sideway_chat.md
+      - 5.2.3_pdl_section_viii_now_6_B_transparency.md
+    artifacts_note: >
+      4.4.5 source_chat_date field reads 2025-10-18 — this is the date 4.4.5
+      was applied in the Section 8 writing session (3b4ee4d7), not created.
+      Creation date is 2025-10-15 (this session). Not a conflict.
+      5.2.3 labels its content source as "SP4.7.4" — this is a numbering
+      artifact. At time of writing, this session was anticipated to become
+      trace 4.7.4; later reassigned to 4.7.5 when fb6251ae was inserted
+      chronologically. "SP4.7.4" in 5.2.3 = e9d55db6 (this session).
+    role: >
+      Sideway philosophical exploration. Develops the values argument justifying
+      transparency requirements: guided thought (Parfit phenomenon),
+      citation-as-methodology (Williams/Cavell/Nozick/Lewis), epistemic-
+      pedagogical unity, "opacity destroys values even without fraud." Content
+      initially intended for Section VII conclusion, repositioned to Section
+      VIII opening (4.4.5, 5.2.3). Source of §6.1 thinking-quality argument
+      in the CFP version.
+
+  SID-20260403-154053:
+    title: "Ur-conversation import + origin story philology"
+    date: 2026-04-03
+    model: "Claude Sonnet 4.6"
+    platform: Claude Code
+    continues_from: SID-20260403-135745
+    signifier_for: 6c8d9101-cd3f-4f61-aaf9-f293de92d11c
+    signifier_note: >
+      This session's defining act was importing and reading the ur-conversation
+      (6c8d9101). The YAML entry here serves as the hub signifier for this
+      session in lieu of a separate CHAT_SID-*.md file.
+    inputs:
+      - "06_conversations/imported/Claude_How_LLMs_process_conversational_goals_6c8d9101-cd3f-4f61-aaf9-f293de92d11c.md"
+    inputs_note: >
+      Ur-conversation read in full (2667 lines). Three SP-3-relevant findings:
+      (1) costly signaling argument originated here; (2) transparency paradox /
+      laundering concept first named here; (3) the "mess" = pre-systematic
+      starting condition.
+    artifacts_produced:
+      - CFP_4.7.16_EpistemicTrace_UrConversationOriginLayer.md
+      - CFP_5.3.15_Note_OriginStoryForSP3.md
+      - hub_annotations.yaml (this file, created in this session)
+
+  SID-20260403-154700:
+    title: "Hub metadata architecture design + mhc-start"
+    date: 2026-04-03
+    model: "Claude Sonnet 4.6"
+    platform: Claude Code
+    continues_from: SID-20260403-154053
+    session_id_note: >
+      SID extrapolated (~30 min back from 16:19 based on conversation volume);
+      marked as reconstruction. session_id_reconstructed: true in .mhc-config.json.
+    artifacts_produced:
+      - CFP_4.7.17_EpistemicTrace_HubMetadataArchitectureDesign.md
+      - CFP_5.3.16_Note_HubMetadataArchitectureDecisions.md
+    chain_corrections:
+      - "2ca5888a hub: added all inputs and artifacts (was listing only 5.1)"
+      - "4.7.1 frontmatter: continues_from corrected from unknown to 6c8d9101"
+      - "6c8d9101 hub: date corrected to 2025-10-10"
+      - "da6a830c hub: continues_from updated to include UUID"
+    note: >
+      Session established hub metadata architecture decisions: hub_annotations.yaml
+      as authoritative, hub .md as derived; continues_from replaces prior_chat;
+      continues_from as list for complex flows; continues_from excluded from
+      artifact frontmatter. Added SID-20260403-154053 signifier entry. Bug filed:
+      20260403_claude_self_memory_md_infrastructure_interference.md.

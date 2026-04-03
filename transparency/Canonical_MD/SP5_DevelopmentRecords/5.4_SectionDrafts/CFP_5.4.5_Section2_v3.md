@@ -9,7 +9,9 @@ source: "Claude Sonnet 4.6 (Claude Code session)"
 source_guidance: "CFP_5.3.1_WorkPlan_CFP_Adaptation.md"
 cfp_target: "AI Tools in Ethics Research (topical collection)"
 revision_basis: "CFP_5.4.5_Section2_v2.md — 2.3 folded into close of 2.2"
+derived_from: "CFP_5.4.5_Section2_v2.md"
 session_id: SID-20260317-182817
+feeds_into: "CFP_4.2.15_ModificationLog_Section2.md"
 word_count: ~900
 ---
 # 2. Systemic Barriers to Disclosure
@@ -47,4 +49,8 @@ The problem is one of underspecification, not dishonesty. The four mechanisms do
 - [[_HUBS/CHAT_SID-20260317-182817]]
 ### Sibling artifacts (same chat)
 - [[CFP_4.2.15_ModificationLog_Section2]]; [[CFP_5.4.5_Section2_v2]]
+
+### Explicit links (inputs/outputs/etc.)
+**feeds_into:**
+- UNRESOLVED: CFP_4.2.15_ModificationLog_Section2.md
 
