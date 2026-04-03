@@ -4,6 +4,9 @@ Obsidian Chat-Skeleton generator:
 - builds chat hubs: _HUBS/CHAT_<source_chat_id>.md
 - updates each note that has `source_chat_id` in YAML frontmatter with a
   "## Connections (auto)" section linking to its chat hub + sibling artifacts.
+- reads hub_annotations.yaml for session-level metadata (authoritative source)
+- backs up existing hubs before overwriting; generates verification queue
+  for hubs with manual content not covered by YAML
 
 Designed to be re-runnable + idempotent via markers:
   <!-- CONNECTIONS_AUTO_START -->
@@ -43,6 +46,15 @@ REL_FIELDS_STRONG = ["inputs", "outputs"]
 REL_FIELDS_DERIVED = ["input_artifacts", "influenced_artifacts", "one_to_many_influence"]
 REL_FIELDS_CONTINUITY = ["continuation_of", "continued_by"]
 REL_FIELDS_RELATED = ["related_documents", "salient_outputs"]
+
+# V1/V2 field name variants — map to canonical names for connection rendering
+V1V2_FIELD_ALIASES = {
+    "output_completed": "outputs",
+    "derived_from_artifact": "inputs",
+    "source_chat_id_1": "source_chat_id",
+    "source_chat_id_2": "source_chat_id",
+    "source_chat_id_3": "source_chat_id",
+}
 
 ALL_REL_FIELDS = (
     REL_FIELDS_STRONG
@@ -269,40 +281,240 @@ def _upsert_connections_section(original_text: str, new_auto_block: str) -> str:
     sep = "\n\n" if not original_text.endswith("\n") else "\n"
     return original_text.rstrip() + sep + CONN_HEADER + "\n\n" + new_auto_block + "\n"
 
+
+# ---------------------------------------------------------------------------
+# Hub annotation loading
+# ---------------------------------------------------------------------------
+
+def _load_hub_annotations(yaml_path: Path) -> Dict[str, Dict[str, Any]]:
+    """Load session metadata from hub_annotations.yaml.
+
+    Returns dict keyed by session ID (UUID or SID string) → annotation dict.
+    Returns empty dict if file doesn't exist.
+    """
+    if not yaml_path.exists():
+        return {}
+    with yaml_path.open(encoding="utf-8") as f:
+        data = yaml.safe_load(f) or {}
+    return data.get("sessions", {})
+
+
+def _extract_manual_content(hub_path: Path) -> Optional[str]:
+    """Read an existing hub file and extract content that looks manually added.
+
+    Returns the manual content as a string, or None if the file doesn't exist
+    or has no content beyond auto-generated structure.
+    """
+    if not hub_path.exists():
+        return None
+    text = _read_text(hub_path)
+    fm, body = _split_frontmatter(text)
+
+    # Strip auto-generated blocks
+    cleaned = body
+    if AUTO_START in cleaned and AUTO_END in cleaned:
+        before = cleaned.split(AUTO_START, 1)[0]
+        after = cleaned.split(AUTO_END, 1)[1]
+        cleaned = before + after
+
+    # Strip known auto-generated headers and artifact lists
+    auto_patterns = [
+        r"^# Chat Hub:.*$",
+        r"^## Artifacts generati.*$",
+        r"^- \[\[.*\]\]$",
+        r"^\s*$",
+    ]
+    remaining_lines = []
+    for line in cleaned.split("\n"):
+        is_auto = False
+        for pat in auto_patterns:
+            if re.match(pat, line):
+                is_auto = True
+                break
+        if not is_auto:
+            remaining_lines.append(line)
+
+    manual = "\n".join(remaining_lines).strip()
+    if not manual:
+        return None
+
+    # Also capture any non-standard frontmatter fields
+    auto_fm_keys = {"source_chat_name", "source_chat_id", "artifacts_count", "generated_at"}
+    manual_fm = {k: v for k, v in fm.items() if k not in auto_fm_keys}
+    if manual_fm:
+        fm_text = yaml.safe_dump(manual_fm, sort_keys=False, allow_unicode=True).strip()
+        manual = f"### Frontmatter (non-auto)\n```yaml\n{fm_text}\n```\n\n{manual}"
+
+    return manual if manual.strip() else None
+
+
 def _build_hub_content(
     chat_id: str,
     chat_name: str,
     notes: List[NoteInfo],
+    annotation: Optional[Dict[str, Any]] = None,
 ) -> str:
+    """Build hub .md content from artifact scan + optional YAML annotation."""
     notes_sorted = sorted(notes, key=_sort_key_for_note)
     now = _dt.datetime.now().isoformat(timespec="seconds")
-    fm = {
+
+    # Base frontmatter from artifact scan
+    fm: Dict[str, Any] = {
         "source_chat_name": chat_name,
         "source_chat_id": chat_id,
         "artifacts_count": len(notes),
         "generated_at": now,
     }
+
+    # Enrich with YAML annotation if available
+    if annotation:
+        if "title" in annotation:
+            fm["source_chat_name"] = annotation["title"]
+        if "date" in annotation:
+            fm["date"] = str(annotation["date"])
+        if "date_end" in annotation:
+            fm["date_end"] = str(annotation["date_end"])
+        if "model" in annotation:
+            fm["model"] = annotation["model"]
+        if "platform" in annotation:
+            fm["platform"] = annotation["platform"]
+        if "gitignored" in annotation:
+            fm["gitignored"] = annotation["gitignored"]
+        if "continues_from" in annotation:
+            cf = annotation["continues_from"]
+            if cf is not None:
+                fm["continues_from"] = cf
+        fm["yaml_annotated"] = True
+
     fm_text = yaml.safe_dump(fm, sort_keys=False, allow_unicode=True).strip()
     lines = [
         "---",
         fm_text,
         "---",
         "",
-        f"# Chat Hub: {chat_name}",
-        "",
-        "## Artifacts generati",
     ]
+
+    # Title — use annotation title if available
+    title = annotation.get("title", chat_name) if annotation else chat_name
+    lines.append(f"# Chat Hub: {title}")
+    lines.append("")
+
+    # Session metadata section (from YAML)
+    if annotation:
+        meta_lines = []
+        if "role" in annotation:
+            role = annotation["role"].strip() if isinstance(annotation["role"], str) else str(annotation["role"])
+            meta_lines.append(f"**Role:** {role}")
+        if "continues_from" in annotation and annotation["continues_from"] is not None:
+            cf = annotation["continues_from"]
+            if isinstance(cf, list):
+                cf_links = ", ".join(f"[[_HUBS/CHAT_{c}|{c}]]" for c in cf)
+                meta_lines.append(f"**Continues from:** {cf_links}")
+            elif cf:
+                meta_lines.append(f"**Continues from:** [[_HUBS/CHAT_{cf}|{cf}]]")
+            if "continues_from_note" in annotation:
+                note_text = annotation["continues_from_note"].strip()
+                meta_lines.append(f"> {note_text}")
+        if "note" in annotation:
+            note_text = annotation["note"].strip()
+            meta_lines.append(f"\n{note_text}")
+        if meta_lines:
+            lines.append("## Session metadata")
+            lines.append("")
+            lines.extend(meta_lines)
+            lines.append("")
+
+        # Inputs section (from YAML)
+        if "inputs" in annotation and annotation["inputs"]:
+            lines.append("## Inputs received")
+            lines.append("")
+            for inp in annotation["inputs"]:
+                lines.append(f"- {inp}")
+            if "inputs_note" in annotation:
+                lines.append("")
+                lines.append(f"> {annotation['inputs_note'].strip()}")
+            lines.append("")
+
+    # Artifacts section (always from scan)
+    lines.append("## Artifacts produced")
+    lines.append("")
     for n in notes_sorted:
         lines.append(f"- {_safe_wikilink(n.stem)}")
+
+    # YAML-declared artifacts not found in scan
+    if annotation and "artifacts_produced" in annotation:
+        scanned_stems = {n.stem for n in notes_sorted}
+        yaml_artifacts = annotation["artifacts_produced"]
+        for art in yaml_artifacts:
+            art_stem = Path(art).stem if isinstance(art, str) else str(art)
+            if art_stem not in scanned_stems:
+                lines.append(f"- {art} *(declared in YAML, not found in scan)*")
+        if "artifacts_note" in annotation:
+            lines.append("")
+            lines.append(f"> {annotation['artifacts_note'].strip()}")
+
     lines.append("")
     return "\n".join(lines)
 
+
+def _build_verification_queue(
+    entries: List[Dict[str, Any]],
+    vault: Path,
+) -> str:
+    """Build VERIFICATION_QUEUE.md content."""
+    now = _dt.datetime.now().isoformat(timespec="seconds")
+    lines = [
+        "---",
+        f"generated_at: {now}",
+        "purpose: Manual hub content found during rebuild that needs verification",
+        "action: For each entry, decide whether to migrate content to hub_annotations.yaml or discard",
+        "---",
+        "",
+        "# Hub Verification Queue",
+        "",
+        f"Generated: {now}",
+        "",
+        f"**{len(entries)} hubs** had manual content not covered by YAML annotations.",
+        "For each, check the backup file and decide: migrate to `hub_annotations.yaml`, or discard.",
+        "",
+        "| Hub | Backup | Manual content preview |",
+        "|-----|--------|-----------------------|",
+    ]
+    for e in entries:
+        hub_rel = e["hub_path"].relative_to(vault)
+        bak_rel = e["backup_path"].relative_to(vault)
+        # First 120 chars of manual content, single line
+        preview = e["manual_content"].replace("\n", " ").replace("|", "\\|")[:120]
+        if len(e["manual_content"]) > 120:
+            preview += "…"
+        lines.append(f"| `{hub_rel}` | `{bak_rel}` | {preview} |")
+
+    lines.append("")
+    lines.append("---")
+    lines.append("")
+    lines.append("## Full manual content per hub")
+    lines.append("")
+
+    for e in entries:
+        hub_rel = e["hub_path"].relative_to(vault)
+        lines.append(f"### `{hub_rel}`")
+        lines.append("")
+        lines.append("```markdown")
+        lines.append(e["manual_content"])
+        lines.append("```")
+        lines.append("")
+
+    return "\n".join(lines)
+
+
 def main() -> int:
     ap = argparse.ArgumentParser(
-        description="Generate Obsidian chat hubs + per-note Connections (auto) for a chat-skeleton system (optionally scoped to subfolders)."
+        description="Generate Obsidian chat hubs + per-note Connections (auto) for a chat-skeleton system."
     )
     ap.add_argument("vault", type=str, help="Path to Obsidian vault (root folder).")
     ap.add_argument("--hubs-folder", type=str, default="_HUBS", help="Folder (under vault) where chat hubs are written.")
+    ap.add_argument("--yaml", type=str, default=None,
+                    help="Path to hub_annotations.yaml. Default: <vault>/../SCRIPTS/hub_annotations.yaml")
     ap.add_argument("--no-hubs", action="store_true", help="Do not create/update hub notes; only update connections.")
     ap.add_argument("--dry-run", action="store_true", help="Print what would change without writing files.")
     ap.add_argument("--max-siblings", type=int, default=10, help="Max sibling links per note (use -1 for unlimited).")
@@ -318,6 +530,17 @@ def main() -> int:
     if not vault.exists() or not vault.is_dir():
         print(f"ERROR: vault path does not exist or is not a directory: {vault}", file=sys.stderr)
         return 2
+
+    # Load YAML annotations
+    if args.yaml:
+        yaml_path = Path(args.yaml).expanduser().resolve()
+    else:
+        yaml_path = vault.parent / "SCRIPTS" / "hub_annotations.yaml"
+    annotations = _load_hub_annotations(yaml_path)
+    if annotations:
+        print(f"Loaded {len(annotations)} session annotations from: {yaml_path}")
+    else:
+        print(f"No annotations loaded (looked at: {yaml_path})")
 
     exclude_dirs = list(args.exclude_dir)
     exclude_dirs.append(args.hubs_folder)  # don't scan generated hubs by default
@@ -360,15 +583,50 @@ def main() -> int:
             if isinstance(chat_name, str) and chat_name.strip():
                 chat_name_by_id.setdefault(chat_id, chat_name.strip())
 
+    # Also include YAML-only sessions (sessions in YAML but no artifacts found in scan)
+    for session_id, ann in annotations.items():
+        session_key = str(session_id)
+        if session_key not in chat_index:
+            # YAML-only session — create hub even without scanned artifacts
+            chat_index[session_key] = []
+            if "title" in ann:
+                chat_name_by_id[session_key] = ann["title"]
+
     unique_chats = len(chat_index)
     notes_with_chat = sum(len(v) for v in chat_index.values())
 
+    # Build hubs
     hubs_to_write: List[Tuple[Path, str]] = []
+    verification_entries: List[Dict[str, Any]] = []
+    hubs_yaml_count = 0
+    hubs_auto_count = 0
+
     if not args.no_hubs:
         for chat_id, group in chat_index.items():
             chat_name = chat_name_by_id.get(chat_id, f"(unknown chat name) {chat_id}")
             hub_path = hubs_folder / f"CHAT_{chat_id}.md"
-            hubs_to_write.append((hub_path, _build_hub_content(chat_id, chat_name, group)))
+            annotation = annotations.get(chat_id)
+
+            # Extract manual content from existing hub before overwriting
+            manual = _extract_manual_content(hub_path)
+
+            if annotation:
+                hubs_yaml_count += 1
+            else:
+                hubs_auto_count += 1
+
+            # If manual content exists and no YAML annotation, add to verification queue
+            if manual and not annotation:
+                backup_path = hub_path.with_suffix(".md.bak")
+                verification_entries.append({
+                    "hub_path": hub_path,
+                    "backup_path": backup_path,
+                    "manual_content": manual,
+                    "chat_id": chat_id,
+                })
+
+            content = _build_hub_content(chat_id, chat_name, group, annotation)
+            hubs_to_write.append((hub_path, content))
 
     notes_to_write: List[Tuple[Path, str]] = []
     for chat_id, group in chat_index.items():
@@ -393,11 +651,16 @@ def main() -> int:
             if updated != full_text:
                 notes_to_write.append((n.path, updated))
 
+    # Report
     print(f"Scanned: {len(md_files)} markdown files")
     print(f"Found: {notes_with_chat} files with source_chat_id across {unique_chats} unique chats")
     if not args.no_hubs:
-        print(f"{'Would write' if args.dry_run else 'Will write'} {len(hubs_to_write)} chat hubs in: {hubs_folder}")
+        print(f"{'Would write' if args.dry_run else 'Will write'} {len(hubs_to_write)} chat hubs "
+              f"({hubs_yaml_count} YAML-enriched, {hubs_auto_count} auto-only) in: {hubs_folder}")
     print(f"{'Would modify' if args.dry_run else 'Will modify'} {len(notes_to_write)} notes with Connections (auto)")
+    if verification_entries:
+        print(f"{'Would generate' if args.dry_run else 'Will generate'} VERIFICATION_QUEUE.md "
+              f"with {len(verification_entries)} hubs needing manual review")
 
     if args.dry_run:
         for p, _ in hubs_to_write[:10]:
@@ -408,14 +671,34 @@ def main() -> int:
             print(f"[note] {p.relative_to(vault)}")
         if len(notes_to_write) > 10:
             print(f"... ({len(notes_to_write) - 10} more notes)")
+        if verification_entries:
+            print(f"\nVerification queue entries:")
+            for e in verification_entries:
+                print(f"  - {e['hub_path'].relative_to(vault)}: {e['manual_content'][:80]}...")
         return 0
 
+    # Write hubs (always back up existing hubs before overwriting)
     if not args.no_hubs and hubs_to_write:
         hubs_folder.mkdir(parents=True, exist_ok=True)
+        backed_up = 0
         for p, content in hubs_to_write:
             p.parent.mkdir(parents=True, exist_ok=True)
+            if p.exists():
+                bak = p.with_suffix(".md.bak")
+                shutil.copy2(p, bak)
+                backed_up += 1
             p.write_text(content, encoding="utf-8")
+        if backed_up:
+            print(f"Backed up {backed_up} existing hub files (.md.bak)")
 
+    # Write verification queue
+    if verification_entries:
+        vq_path = hubs_folder / "VERIFICATION_QUEUE.md"
+        vq_content = _build_verification_queue(verification_entries, vault)
+        vq_path.write_text(vq_content, encoding="utf-8")
+        print(f"Wrote VERIFICATION_QUEUE.md with {len(verification_entries)} entries")
+
+    # Write note updates
     for p, updated in notes_to_write:
         if args.backup:
             bak = p.with_suffix(p.suffix + ".bak")

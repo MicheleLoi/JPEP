@@ -11,25 +11,34 @@ source_chat_1_date: 2025-10-19
 source_chat_1_model: Claude Sonnet 4.5
 source_chat_1_scope: Initial writing session (MOD-001 through MOD-005)
 source_chat_2_name: JPEP Picture Appendix 2
-source_chat_2_id: (ChatGPT, no UUID available)
+source_chat_2_id: 68f54fc3-e3e8-832a-80db-4d588bcd1eee
+source_chat_2_platform_title: JPEP Picture Appendix 0
 source_chat_2_date: 2025-10-25
 source_chat_2_model: ChatGPT-5 Thinking
 source_chat_2_scope: Initial SVG generation attempt (MOD-006)
+source_chat_2_url: https://chatgpt.com/g/g-p-6960e68761108191967500de8cb7f87d-jpep/c/68f54fc3-e3e8-832a-80db-4d588bcd1eee
+source_chat_2_id_recovery_note: UUID recovered 2026-04-02. Platform title differs from documentation name (see hub file).
 source_chat_3_name: JPEP Appendix diagram development
-source_chat_3_id: (Claude with SP access, ID not preserved)
+source_chat_3_platform_title: JPEP PIcture Appendix 1
+source_chat_3_id: e9ed4bbf-e6e5-4107-94ed-95b2e5a0b89c
 source_chat_3_date: 2025-10-25 through 2025-10-27
 source_chat_3_model: Claude Sonnet 4.5
+source_chat_3_url: https://claude.ai/chat/e9ed4bbf-e6e5-4107-94ed-95b2e5a0b89c
 source_chat_3_scope: Iterative diagram corrections (MOD-007 through MOD-010)
+source_chat_3_id_recovery_note: UUID recovered 2026-04-02. Platform title differs from documentation name (see hub file).
 source_chat_4_name: JPEP Appendix Nov 2 Prompt development log reconstruction from documentation traces
 source_chat_4_id: 33752551-95f7-496b-8b24-29690b8a3bdb
 source_chat_4_date: 2025-11-01 through 2025-11-02
 source_chat_4_model: Claude Sonnet 4.5
 source_chat_4_scope: Final verification and architectural correction (MOD-011 through MOD-013)
 source_chat_5_name: JPEP Picture Appendix 2 (continuation)
-source_chat_5_id: (continuation of source_chat_2, ID not preserved)
-source_chat_5_date: 2025-11-03
+source_chat_5_platform_title: JPEP Picture Appendix 2
+source_chat_5_id: 9da24385-3382-4815-8321-cc067d169054
+source_chat_5_date: 2025-10-26 through 2025-11-03
 source_chat_5_model: Claude Sonnet 4.5
+source_chat_5_url: https://claude.ai/chat/9da24385-3382-4815-8321-cc067d169054
 source_chat_5_scope: Commentary revision rounds (MOD-014 through MOD-016)
+source_chat_5_id_recovery_note: UUID recovered 2026-04-02. Date corrected from 2025-11-03 to 2025-10-26 through 2025-11-03 (see hub file).
 source_chat_6_name: Rewriting A4 with project context
 source_chat_6_id: 19858433-c393-4c1b-bd8d-cf6e16cdb062
 source_chat_6_date: 2026-01-04 through 2026-01-05
@@ -39,6 +48,9 @@ derived_from_modification_log: Type 7 - Modification Log
 compilation_method: retrospective_integration
 compilation_date: 2026-01-05
 compilation_model: Claude Opus 4.5
+arxiv_version: v1
+v2_diff: "transparency/Canonical_MD/SP5_DevelopmentRecords/5.3_Notes_Type11/II_5.3.3_A4_rewritten.md"
+v2_file: "Paper/arXiv/Full_paper_v2.docx (binary — not readable as text)"
 ---
 
 

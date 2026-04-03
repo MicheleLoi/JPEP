@@ -1,9 +1,13 @@
 ---
-artifact_type: note
-project: JPEP CFP Adaptation
-created: 2026-03-24
+project: JPEP
+document_type: Type 6 - Section Guidance
+label: CFP_4.4.14_SectionGuidance_Section7_Additions
+title: "Section 7 Implementation Plan — Pre-Phase 4 Step"
+date_created: 2026-03-24
 status: ready_to_implement
 session_id: SID-20260324-173456
+derived_from: "CFP_5.2.1_pdl_section7_additions.md"
+feeds_into: "CFP_5.4.9_Section7_v2.md"
 ---
 # Section 7 Implementation Plan — Pre-Phase 4 Step
 
@@ -159,4 +163,8 @@ Log: Section 7 v1 → v2. Two additions: (A) Abdulhai et al. empirical corrobora
 - [[_HUBS/CHAT_SID-20260324-173456]]
 ### Sibling artifacts (same chat)
 - [[CFP_5.2.1_pdl_section7_additions]]
+
+### Explicit links (inputs/outputs/etc.)
+**feeds_into:**
+- UNRESOLVED: CFP_5.4.9_Section7_v2.md
 

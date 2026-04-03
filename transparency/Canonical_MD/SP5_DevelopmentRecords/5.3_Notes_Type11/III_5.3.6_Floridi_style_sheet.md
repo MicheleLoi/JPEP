@@ -49,4 +49,6 @@ Excessive bolding — bolding every third phrase as if the reader can't find the
 
 ### Source chat (primary)
 - [[_HUBS/CHAT_SID-20260303-102634]]
+### Sibling artifacts (same chat)
+- [[CFP_4.2.14_ModificationLog_Introduction]]
 

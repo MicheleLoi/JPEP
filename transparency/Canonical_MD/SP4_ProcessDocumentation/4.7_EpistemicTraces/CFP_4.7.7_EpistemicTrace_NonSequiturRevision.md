@@ -8,6 +8,13 @@ branch: cfp-ai-ethics-inquiry
 session_id: SID-20260311-185449
 source_conversation: JPEP_20260311_175401.md
 archive: MHC-prototype/00_full_conversations/exported/md/
+feeds_into:
+  - "CFP_5.4.3_Introduction_v1.md (non-sequitur cut applied here)"
+  - "CFP_5.4.4_Section3_v1.md (same cut applied here)"
+  - "CFP_5.4.5_Section2_v1.md (produced in this session)"
+output_completed:
+  - "CFP_5.4.5_Section2_v1.md"
+  - "CFP_5.3.2_ReviewerB_Section2_PendingDecision.md"
 validated: 2026-03-12T00:00:00
 validation: approved
 ---
@@ -106,5 +113,12 @@ Session SID-20260311-185449 (started 2026-03-11, continued 2026-03-12). Two main
 ### Source chat (primary)
 - [[_HUBS/CHAT_SID-20260311-185449]]
 ### Sibling artifacts (same chat)
-- [[CFP_5.3.2_ReviewerB_Section2_PendingDecision]]
+- [[CFP_5.3.2_ReviewerB_Section2_PendingDecision]]; [[CFP_5.4.5_Section2_v1]]
+
+### Explicit links (inputs/outputs/etc.)
+**feeds_into:**
+- UNRESOLVED: CFP_5.4.3_Introduction_v1.md (non-sequitur cut applied here); UNRESOLVED: CFP_5.4.4_Section3_v1.md (same cut applied here); UNRESOLVED: CFP_5.4.5_Section2_v1.md (produced in this session)
+
+**output_completed:**
+- UNRESOLVED: CFP_5.4.5_Section2_v1.md; UNRESOLVED: CFP_5.3.2_ReviewerB_Section2_PendingDecision.md
 

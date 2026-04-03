@@ -5,6 +5,8 @@ created: 2026-03-24
 last_updated: 2026-03-24
 status: active
 session_id: SID-20260324-173456
+output_completed: "CFP_4.4.14_SectionGuidance_Section7_Additions.md"
+feeds_into: "CFP_5.4.9_Section7_v2.md"
 validated:
 validation:
 source_conversations:
@@ -15,7 +17,7 @@ source_conversations:
 
 **Scope:** Two additions to Section 7 (CFP_5.4.9) decided in session 2026-03-24, after Phase 3 was marked complete. Based on: (1) review of Abdulhai et al. (2026) on LLM semantic distortion; (2) review of SRL literature (Zimmerman 2002, Cheng et al. 2025, Barnard et al. 2009). Structural planning by Opus.
 
-Implementation deferred. Approved text in `CFP_5.3.3_Note_Section7_Implementation_Plan.md`.
+Implementation deferred. Approved text in `CFP_4.4.14_SectionGuidance_Section7_Additions.md`.
 
 ---
 
@@ -85,7 +87,7 @@ Implementation deferred. Approved text in `CFP_5.3.3_Note_Section7_Implementatio
 2. **Update canonical files only; defer final compilation to Phase 4 completion**: Update `paper_bibliography.md` and `references_doc.md`; leave other three files archival; produce final bibliography after Phase 4.
    - Pros: Maintains tracking without premature consolidation; correct moment for final compilation is after all sections are written
 
-**Decision:** Option 2. See `CFP_5.3.3_Note_Section7_Implementation_Plan.md` for specific file-by-file actions.
+**Decision:** Option 2. See `CFP_4.4.14_SectionGuidance_Section7_Additions.md` for specific file-by-file actions.
 
 **Rationale:** Conclusion/Abstract may introduce additional citations. Consolidation at Phase 4 completion is the right moment. Wheeler verification issue (Clark 2008, Boden & Edmonds 2009) is non-blocking — those works are not cited in any CFP draft.
 
@@ -95,7 +97,7 @@ Implementation deferred. Approved text in `CFP_5.3.3_Note_Section7_Implementatio
 
 ## Current Prompt State
 
-Three decisions made. Section 7 will be extended from ~1,000 to ~1,250 words with two targeted additions. Citation tracking to be updated after implementation. Approved text and step-by-step implementation checklist in `CFP_5.3.3_Note_Section7_Implementation_Plan.md`.
+Three decisions made. Section 7 will be extended from ~1,000 to ~1,250 words with two targeted additions. Citation tracking to be updated after implementation. Approved text and step-by-step implementation checklist in `CFP_4.4.14_SectionGuidance_Section7_Additions.md`.
 
 Section 7 v1 → v2. New file: `CFP_5.4.9_Section7_v2.md`.
 
@@ -108,5 +110,12 @@ Section 7 v1 → v2. New file: `CFP_5.4.9_Section7_v2.md`.
 ### Source chat (primary)
 - [[_HUBS/CHAT_SID-20260324-173456]]
 ### Sibling artifacts (same chat)
-- [[CFP_5.3.3_Note_Section7_Implementation_Plan]]
+- [[CFP_4.4.14_SectionGuidance_Section7_Additions]]
+
+### Explicit links (inputs/outputs/etc.)
+**feeds_into:**
+- UNRESOLVED: CFP_5.4.9_Section7_v2.md
+
+**output_completed:**
+- UNRESOLVED: CFP_4.4.14_SectionGuidance_Section7_Additions.md
 

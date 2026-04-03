@@ -5,10 +5,15 @@ project: JPEP
 topic: Phase 2 strategic analysis — what transfers, what the old paper argued well, what dies
 label: CFP_4.7.6_EpistemicTrace_Phase2StrategicAnalysis
 branch: cfp-ai-ethics-inquiry
-session_id: JPEP-SID-20260306-CFP2
-source_conversation: JPEP_20260306_[session].md
-source_conversation_note: "Placeholder — match by session_id JPEP-SID-20260306-CFP2, written repeatedly in conversation text for grep recovery"
+session_id: SID-20260306-192641
+session_id_precision: exact
+source_conversation: JPEP_20260306_192641.md
+source_conversation_note: "Resolved from placeholder JPEP-SID-20260306-CFP2 — confirmed by grep match in JPEP_20260306_192641.md"
 archive: MHC-prototype/00_full_conversations/exported/md/
+feeds_into:
+  - "CFP_5.3.1_WorkPlan_CFP_Adaptation.md (sections C and F informed by this analysis)"
+  - "CFP_5.4.5_Section2_v1.md (compression strategy confirmed here)"
+  - "CFP_5.4.7_Section5_v1.md (Section 5 derivation change decided here)"
 validated: 2026-03-06T00:00:00
 validation: approved
 ---
@@ -112,5 +117,9 @@ Phase 2 drafting (Sections 2, 4, 5) must be governed by the argumentative suppor
 ## Connections (auto)
 
 ### Source chat (primary)
-- [[_HUBS/CHAT_JPEP-SID-20260306-CFP2]]
+- [[_HUBS/CHAT_SID-20260306-192641]]
+
+### Explicit links (inputs/outputs/etc.)
+**feeds_into:**
+- UNRESOLVED: CFP_5.3.1_WorkPlan_CFP_Adaptation.md (sections C and F informed by this analysis); UNRESOLVED: CFP_5.4.5_Section2_v1.md (compression strategy confirmed here); UNRESOLVED: CFP_5.4.7_Section5_v1.md (Section 5 derivation change decided here)
 

@@ -1,5 +1,5 @@
 ---
-Source Chat Name: Finding JPEP appendix prompt step 3 chat
+source_chat_name: Finding JPEP appendix prompt step 3 chat
 source_chat_id: 09caeff5-2ff2-48dc-8a3f-66e20ceea81d
 date: 2025-01-03
 draft_stage: II (after arXiv:2511.08639v1)
@@ -245,6 +245,19 @@ Final Outputs (October 2025)
 └── 5.3.7 (Figure prompts)Claude è un'AI e può commettere errori. Verifica le risposte.
 ## Connections (auto)
 
+## Connections (auto)
+
+## Connections (auto)
+
+## Connections (auto)
+
+## Connections (auto)
+
+<!-- CONNECTIONS_AUTO_START -->
+### Source chat (primary)
+- [[_HUBS/CHAT_09caeff5-2ff2-48dc-8a3f-66e20ceea81d|chat]]
+
+<!-- CONNECTIONS_AUTO_END -->
 ### Source chat (primary)
 - [[_HUBS/CHAT_09caeff5-2ff2-48dc-8a3f-66e20ceea81d]]
 

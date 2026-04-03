@@ -10,6 +10,7 @@ source_guidance: "CFP_5.3.1_WorkPlan_CFP_Adaptation.md"
 cfp_target: "AI Tools in Ethics Research (topical collection)"
 source_file: "transparency/Canonical_MD/SP5_DevelopmentRecords/5.4_SectionDrafts/III_5.4.2_Section6_v3.md"
 transformation: "Minor reframe: venue/journal → research practice/community; principles → conditions (harmonization with Section 5); explicit connection §6.1 thinking-quality argument → cognitivist-objection defeat (Introduction); virtue dimension added §6.1; adverse selection observation added §6.3; nested concerns diagram updated for ethics framing."
+feeds_into: "CFP_4.2.18_ModificationLog_Section6.md"
 word_count: ~1550
 ---
 # 6. Mandatory Transparency in Practice
@@ -103,5 +104,7 @@ Lloyd, D. (2025). Epistemic responsibility: toward a community standard for huma
 Santoni de Sio, F., & van den Hoven, J. (2018). Meaningful human control over autonomous systems: a philosophical account. *Frontiers in Robotics and AI*, 5, 15.
 ## Connections (auto)
 
-_No connections found._
+### Explicit links (inputs/outputs/etc.)
+**feeds_into:**
+- UNRESOLVED: CFP_4.2.18_ModificationLog_Section6.md
 

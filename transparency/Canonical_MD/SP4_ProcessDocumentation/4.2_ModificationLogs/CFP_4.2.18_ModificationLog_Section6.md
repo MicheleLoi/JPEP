@@ -5,9 +5,16 @@ section: "6 - Mandatory Transparency in Practice"
 label: CFP_4.2.18_ModificationLog_Section6
 date: 2026-03-23
 session_id: SID-20260323-190000
+source_conversation: "JPEP_20260323_182727.md"
 branch: cfp-ai-ethics-inquiry
 source_draft: "CFP_5.4.8_Section6_v3.md"
 source_jpep: "transparency/Canonical_MD/SP5_DevelopmentRecords/5.4_SectionDrafts/III_5.4.2_Section6_v3.md"
+inputs:
+  - "III_5.4.2_Section6_v3.md"
+  - "CFP_5.4.8_Section6_v1.md"
+  - "CFP_5.4.8_Section6_v2.md"
+  - "CFP_5.4.8_Section6_v3.md"
+output_completed: "CFP_5.4.8_Section6_v3.md (finalized)"
 status: Finalized
 reviewers: "Reviewer A (user) + Reviewer B (Claude Opus 4.6)"
 versions_produced: "v1, v2, v3 (CFP_5.4.8_Section6_v1/v2/v3.md)"
@@ -115,6 +122,49 @@ The v3 source draft:
 
 ---
 
+## Post-Finalization Amendments (2026-04-01)
+
+**Session:** SID-20260401-184454 (reconstructed; no mhc-start was run)
+**Source conversation:** JPEP_20260401_164454.md
+
+### MOD-014: §6.1 two-routes paragraph — narrowed to expressivism and authenticity view
+
+**Previous text:** Derived process-documentation requirement from three positions: non-cognitivists, particularists, and constructivists (Route A); cognitivists via essential-contestedness community argument (Route B).
+
+**Revised text:** Route A narrowed to expressivism only. Route B (the cognitivist-can't-foreclose argument) removed. A second independent route added: the authenticity tradition (Socrates, Kierkegaard, Nietzsche) — if the *how* of inquiry is constitutive and we cannot settle whether that tradition is correct, documentation is required to enable assessment on those terms. The two routes (expressivist + authenticity) are stated as independent; documentation satisfies both.
+
+**Why:** Particularism and constructivism are not developed in Section 3; invoking them in §6.1 overreaches the argumentative support the preceding section provides. The cognitivist-can't-foreclose argument is also not sufficiently grounded. Expressivism and the authenticity tradition are the only two positions with established argumentative warrant from Section 3.
+
+### MOD-015: §6.1 traditional values paragraph — replaced with authenticity-grounded version
+
+**Previous text:** "These requirements also actualize traditional values that opacity under AI production threatens. Philosophy has always valued guided thought [...] Philosophy values intellectual honesty [...] It values methodological self-consciousness..."
+
+**Revised text:** Grounds the same concern in the authenticity argument rather than tradition. Primary concern reframed: not detecting inauthentic authors but enabling the authentic technological explorer — whose authentic mode is AI collaboration — to present that identity honestly. Opacity harms such an author by rendering them indistinguishable from the scholar concealing AI use. Expressivist and authenticity-based evaluators named explicitly as the relevant process-dependent positions.
+
+**Why:** "Philosophy has always valued X" is an appeal to tradition without principled justification. The justification for these values is the authenticity argument itself. The reframe also corrects the emphasis of the authenticity argument: the primary concern is enabling a new form of authentic philosophical practice to be legible, not policing fraud.
+
+### MOD-016: §6.1 epistemic virtue paragraph — deleted
+
+**Previous text:** "Full process disclosure is itself an expression of epistemic virtue. The vulnerability it entails [...] This virtue-based observation is not the ground of the requirement — that ground was established above on metaethically neutral terms — but it shows that the requirement converges with what philosophy has always valued in honest intellectual practice."
+
+**Why:** The paragraph explicitly flagged itself as not providing the ground of the requirement, yet appeared immediately before the MHC framework — structurally suggesting it was load-bearing. It also repeated the "philosophy has always valued" appeal to tradition without principled justification. The substantive content (vulnerability of disclosure as genuine engagement) is either captured by the authenticity argument or can be developed there rather than as a free-standing virtue appeal.
+
+### MOD-017: §6.2 three-function list — third function reframed
+
+**Previous text:** "preservation of traditional philosophical values (maintaining attribution, guided thought, and thinking quality assessment)"
+
+**Revised text:** "assessability by process-dependent evaluators — enabling those working within traditions whose evaluative criteria are constitutively process-dependent, namely the expressivist and authenticity-based positions established in Section 3, to conduct their assessment. This third function follows directly from the essential contestedness of ethical inquiry."
+
+**Why:** "Traditional philosophical values" is unjustified as a category without grounding in the argument. The third function is correctly characterized as a requirement of the essential-contestedness argument applied to specific positions with process-dependent criteria.
+
+### MOD-018: §6.2 nested-concerns diagram commentary — updated
+
+**Previous text:** "evaluators whose quality criteria are constitutively process-dependent require tracing to perform their assessments; evaluators operating within a contested field cannot foreclose assessment by those whose criteria are not output-sufficient."
+
+**Revised text:** Names the two positions explicitly — expressivist evaluators and authenticity-tradition evaluators — consistent with the narrowing in MOD-014.
+
+---
+
 ## Reviewer comments
 
 **Reviewer B (v1):** REVISE. Issues: (1) "principles" not harmonized; (2) thinking-quality connection introduced a second independent argument; (3) ~800-1000 word cut needed; (4) "traditional venues" disclaimer not motivated in CFP version.
@@ -128,10 +178,30 @@ The v3 source draft:
 **Reviewer A (v2→v3):** §6.4 rewrite requested (two iterations): (a) first rewrite used auditability/legal-evidence framing — rejected as incoherent with good faith orientation; (b) second rewrite used conversational hedging — rejected as incoherent with academic register; (c) final version: two observations in academic register, first explaining why AI is introduced in documentation, second forward-looking.
 
 **Reviewer B (v3):** APPROVE. All five criteria satisfied. One minor note on table rendering (no content change required).
+
+---
+
+## Post-Amendment: Double Contestation + Redundancy Reduction (2026-04-01/02)
+
+**Section 6 v4** produced in SID-20260401-173934 (source conversation: JPEP_20260401_153253.md): §6.1 rewritten from scratch with meta-ethical route (expressivism) and ethical route (authenticity tradition), convergence, tracing = authenticity. See `CFP_4.2.21_ModificationLog_DoubleContestation_Implementation.md` Step 2.
+
+**Redundancy reduction** in SID-20260401-225323 (source conversation: JPEP_20260401_205323.md): ~1,920 → ~1,540 words (20%). §6.1 Convergence compressed; citation-pattern digression tightened; post-table SP-3 restatement removed; §6.4 hedging cut. Also: meta-ethical route narrowed to expressivism only; routes renamed to "meta-ethical" / "ethical"; art examples replaced with modular synth + Boden & Edmonds / Cohen/AARON. See `CFP_4.2.22_ModificationLog_RedundancyReduction.md`.
+
+**Current authoritative file:** `CFP_5.4.8_Section6_v4.md`
+
+---
+
 ## Connections (auto)
 
 ### Source chat (primary)
 - [[_HUBS/CHAT_SID-20260323-190000]]
 ### Sibling artifacts (same chat)
 - [[CFP_5.4.8_Section6_v3]]
+
+### Explicit links (inputs/outputs/etc.)
+**inputs:**
+- UNRESOLVED: III_5.4.2_Section6_v3.md; UNRESOLVED: CFP_5.4.8_Section6_v1.md; UNRESOLVED: CFP_5.4.8_Section6_v2.md; UNRESOLVED: CFP_5.4.8_Section6_v3.md
+
+**output_completed:**
+- UNRESOLVED: CFP_5.4.8_Section6_v3.md (finalized)
 

@@ -1,10 +1,10 @@
 ---
-source chat name: none
-source chat ID: none
-date: 2026-01-03
-draft_stage: II (after arXiv:2511.08639v1)
-human source activity: analysis of Artifact text (v.1 of publicly available text) after full transparency documentation checking/consolidation
-goal: annotation of changes made necessary for Artifact text of v.2 public test
+source_chat_name: none
+source_chat_id: null  # human-authored note, no AI session
+date: "2026-01-03"
+draft_stage: "II (after arXiv:2511.08639v1)"
+human_source_activity: "analysis of Artifact text (v.1 of publicly available text) after full transparency documentation checking/consolidation"
+goal: "annotation of changes made necessary for Artifact text of v.2 public test"
 ---
 Epistemic trace: correction to Appendix text for v.2
 The description of the three patterns in the development process is general enough to need little rewriting, thanks to missing references to artifacts.

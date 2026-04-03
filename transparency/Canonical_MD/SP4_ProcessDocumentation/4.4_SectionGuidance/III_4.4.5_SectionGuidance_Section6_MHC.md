@@ -1,7 +1,7 @@
 ---
 project: JPEP
 document_type: Type 4 - Section Guidance
-section: "VI - Mandatory Transparency in Practice (MHC Integration)"
+section: "VI - Mandatory Transparency in Practice (Meaningful Human Control Integration)"
 version: III (Post-arXiv v2 revision cycle)
 date_created: 2026-01-26
 date_last_updated: 2026-01-28
@@ -25,7 +25,7 @@ inputs_for_drafting_ai:
 
 **Target length:** 1200-1500 words
 
-**Core task:** Revise Section 6 to explicitly ground the paper's transparency requirements in the **Meaningful Human Control (MHC)** framework. The section operationalizes the meta-philosophical goal established in Section 3: if we cannot settle whether AI changes philosophy, we must at least ensure that whatever is produced remains *traceable* to human intellectual agency.
+**Core task:** Revise Section 6 to explicitly ground the paper's transparency requirements in the **meaningful human control** framework. The section operationalizes the meta-philosophical goal established in Section 3: if we cannot settle whether AI changes philosophy, we must at least ensure that whatever is produced remains *traceable* to human intellectual agency.
 
 > **CRITICAL INSTRUCTION:** This is a REVISION of the existing Section 6, not a blank-slate rewrite. The drafting AI MUST read the current Section 6 (subsections 6.1-6.4) in `Paper/MDversion/Full paper2511.08639v1.md` before drafting. The existing content contains philosophical arguments, structural decisions, and specific formulations that must be preserved or built upon. A draft produced without reading the existing version will be defective.
 
@@ -37,7 +37,7 @@ The following elements from the v1 Section 6 are **hard constraints** — they m
 
 ### SP-1 through SP-5: Fixed Framework
 
-The transparency apparatus (SP-1 through SP-5) as specified in v1 is a **hard constraint** on the entire paper. The revision grounds this apparatus in MHC — it does not redesign, rename, or restructure it. Any reference to SP-1 through SP-5 must match the v1 specification.
+The transparency apparatus (SP-1 through SP-5) as specified in v1 is a **hard constraint** on the entire paper. The revision grounds this apparatus in meaningful human control — it does not redesign, rename, or restructure it. Any reference to SP-1 through SP-5 must match the v1 specification.
 
 ### From 6.1 (From Principles to Practice) — KEEP and BUILD ON
 - **Discovery/justification framework critique:** The rejection of Reichenbach's binary and the argument that article evaluation assesses thinking quality, not just validity
@@ -65,10 +65,10 @@ The transparency apparatus (SP-1 through SP-5) as specified in v1 is a **hard co
 
 ## What the Revision ADDS
 
-The MHC framework provides philosophical grounding for the existing apparatus. The revision should:
+The meaningful human control framework provides philosophical grounding for the existing apparatus. The revision should:
 
-1. **Add MHC as the theoretical foundation** — explain WHY the existing transparency requirements take the form they do (answer: they operationalize the tracing condition for meaningful human control)
-2. **Reframe the existing transparency apparatus through MHC** — show how SP-1 through SP-5 each serve the tracking/tracing conditions
+1. **Add meaningful human control as the theoretical foundation** — explain WHY the existing transparency requirements take the form they do (answer: they operationalize the tracing condition for meaningful human control)
+2. **Reframe the existing transparency apparatus through meaningful human control** — show how SP-1 through SP-5 each serve the tracking/tracing conditions
 3. **Add engagement with Lloyd (2025)** — adopt Standards 1-2, reject Standard 4 (text demarcation)
 4. **Make explicit the three nested concerns** — epistemic integrity, tracing, tracking what philosophy becomes
 
@@ -86,11 +86,11 @@ Section 3 establishes:
 
 ---
 
-## The MHC Framework (Core Conceptual Content)
+## The Meaningful Human Control Framework (Core Conceptual Content)
 
 ### Source: Santoni de Sio & van den Hoven (2018)
 
-The MHC framework was developed for autonomous weapons systems but transfers structurally to AI-assisted scholarship. It identifies **two necessary conditions** for meaningful human control:
+The meaningful human control framework was developed for autonomous weapons systems but transfers structurally to AI-assisted scholarship. It identifies **two necessary conditions** for meaningful human control:
 
 #### 1. The Tracking Condition
 
@@ -229,8 +229,8 @@ OUTERMOST: Track what philosophy becomes
 - **Keep** the existing philosophical values discussion (guided thought, attribution, intellectual honesty, Williams/Cavell/Nozick/Lewis examples)
 - **Keep** the discovery/justification critique
 - **Keep** what the section does NOT argue
-- **Add** connection to Section 3's essentially contested framing: these values require transparency, and MHC specifies what transparency must verify
-- **Add** MHC framework introduction: tracking and tracing conditions
+- **Add** connection to Section 3's essentially contested framing: these values require transparency, and meaningful human control specifies what transparency must verify
+- **Add** meaningful human control framework introduction: tracking and tracing conditions
 - **Add** why tracing is the distinctive challenge (weapons parallel)
 
 ### 6.2 The Transparency Framework — REVISE
@@ -243,7 +243,7 @@ OUTERMOST: Track what philosophy becomes
 
 ### 6.3 Experimental Development — KEEP (minor adjustments only)
 - **Keep** evolutionary framing, community convergence, Level 2 orientation
-- Minor updates for consistency with MHC language if needed
+- Minor updates for consistency with meaningful human control language if needed
 
 ### 6.4 Pilot observations — KEEP (minor adjustments only)
 - **Keep** practical constraints, templates-not-protocols framing
@@ -284,7 +284,7 @@ OUTERMOST: Track what philosophy becomes
 |---------|-------------|
 | Section 3 | Establishes meta-philosophical goal; Section 6 operationalizes it |
 | Section 5 | [Design principles - may need coordination] |
-| **Section 6** | **Grounds transparency in MHC; introduces tracing condition** |
+| **Section 6** | **Grounds transparency in meaningful human control; introduces tracing condition** |
 | Section 7 | Reproduction test as tracing verification (forward reference) |
 | Appendices | Specific artifacts (SP-1 through SP-5) |
 
@@ -293,7 +293,7 @@ OUTERMOST: Track what philosophy becomes
 ## Tone and Style Notes
 
 - Philosophical but practical
-- The MHC framework should feel like a *resource* for thinking, not imposed jargon
+- The meaningful human control framework should feel like a *resource* for thinking, not imposed jargon
 - The Lloyd engagement should be collegial (adopt where possible, explain divergence respectfully)
 - Avoid bureaucratic tone—transparency serves intellectual goals, not compliance
 
@@ -309,7 +309,7 @@ Before finalizing, verify:
 - [ ] Preserves three functions of disclosure and three-component structure from 6.2
 - [ ] Preserves evolutionary framing from 6.3 and pilot observations from 6.4
 - [ ] Opens by connecting to Section 3's meta-philosophical goal
-- [ ] Introduces MHC framework (tracking and tracing)
+- [ ] Introduces meaningful human control framework (tracking and tracing)
 - [ ] Explains why tracing is the key challenge for scholarship
 - [ ] Uses weapons parallel to make tracing concrete
 - [ ] Includes Santoni de Sio & van den Hoven quote on tracing
@@ -338,7 +338,7 @@ Before finalizing, verify:
 
 ### Optional Reading (for deeper context)
 
-2. **For MHC framework details:**
+2. **For meaningful human control framework details:**
    `transparency/TEMP/Santoni_de_sio_frobt-05-00015.xml`
    - Sections on "Tracking" and "Tracing" contain the core framework
    - Section 6.2 has the key quote
@@ -347,9 +347,9 @@ Before finalizing, verify:
    `transparency/TEMP/Lloyd_frai-08-1635691.xml`
    - Body contains the four standards with justifications
 
-4. **For prior MHC transfer work:**
+4. **For prior meaningful human control transfer work:**
    `transparency/Canonical_MD/SP4_ProcessDocumentation/4.7_EpistemicTraces/III_4.7.1_Reasonable_Human_Control_in_AI.md`
-   - Already completed transfer of MHC to AI-assisted writing (operational checklist)
+   - Already completed transfer of meaningful human control to AI-assisted writing (operational checklist)
 
 5. **For PDL development history:**
    `transparency/Canonical_MD/SP5_DevelopmentRecords/5.2_SectionPromptDevelopmentLogs_Type8b/III_5.2.1_pdl_sections_3_and_6_MHC_integration.md`

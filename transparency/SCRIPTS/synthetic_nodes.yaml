@@ -1,0 +1,64 @@
+# synthetic_nodes.yaml
+#
+# Canonical registry of known unresolvable references in JPEP SP4/SP5 frontmatter.
+#
+# These are real inputs or outputs that cannot be represented as SP4/SP5 artifact
+# files — either because they were transient (in-session artifacts, collations,
+# external documents) or because they predate the documentation system.
+#
+# PURPOSE: any graph-building script should read this file and create synthetic
+# nodes for the keys listed here, rather than silently dropping edges to unknown
+# targets. The node represents a real thing; the file just doesn't exist.
+#
+# USAGE IN FRONTMATTER: use the `key` value exactly as the reference target.
+# Example: source_file: paper_collation_oct18
+#
+# DISPLAY GUIDANCE: synthetic nodes should be visually distinct from artifact nodes.
+# Suggested: grey (#95A5A6), dashed border, smaller size, label "(synthetic)".
+#
+# DO NOT conflate with hub nodes (session hubs are real files in _HUBS/).
+# DO NOT add entries here for artifacts that simply haven't been created yet —
+# only for things that genuinely cannot or should not become SP4/SP5 files.
+
+nodes:
+
+  - key: paper_figures_selected
+    label: "Paper figures\n(selected graphs)"
+    tooltip: >
+      The 2–4 selected subgraphs intended as paper figures. Specified in
+      CFP_4.4.17_Guidance_SelectedGraphSpecifications.md and candidates identified
+      in CFP_5.3.7_SelectedGraphCandidates.md. Actual figure files live in
+      Canonical_Figures/ (SVG/PNG) — outside the SP4/SP5 artifact system.
+      Not an SP4/SP5 artifact node; represented synthetically to preserve the
+      graph edge from CFP_4.4.17.
+    why_synthetic: >
+      Figure files (SVG/PNG) are output artefacts in Canonical_Figures/, not
+      SP4/SP5 documentation files. Creating a stub would misrepresent their nature.
+    referenced_by:
+      - "CFP_4.4.17_Guidance_SelectedGraphSpecifications.md (feeds_into)"
+    approximate_date: 2026-04-01
+    color: "#95A5A6"
+    size: 8
+
+  - key: 5.2.4.1
+    label: "Appendix A Reproduction\nProcedure (5.2.4.1)"
+    tooltip: >
+      Sub-artifact within 5.2.4_pdl_Appendix_a_initial_steps.md: the
+      "Appendix A Reproduction Procedure and Documentation Guide" component.
+      Referenced as an input in 4.7.4 (fb6251ae). Not a standalone SP4/SP5 file.
+    why_synthetic: >
+      5.2.4.1 is a section/component within 5.2.4_pdl_Appendix_a_initial_steps.md,
+      not a standalone file. The decimal sub-ID system cannot be resolved by the
+      script to a filename. Verified in SID-20260403-163539 (contradiction check,
+      CFP_5.3.17).
+    referenced_by:
+      - "4.7.4_PreliminaryChat 2.md (inputs)"
+    approximate_date: 2025-10-13
+    color: "#95A5A6"
+    size: 8
+
+  # paper_collation_oct18 — RESOLVED 2026-04-03
+  # The full pre-consolidation paper (Sections I–VI, Oct 18, 2025) was recovered and
+  # imported as a real artifact: SP5_DevelopmentRecords/5.4_SectionDrafts/V1_5.4.0_PaperSnapshot_PreConsolidation_Oct18_2025.md
+  # Any frontmatter still referencing "paper_collation_oct18" should be updated to that filename.
+  # Keeping this comment so the key remains findable in search.

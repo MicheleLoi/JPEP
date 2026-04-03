@@ -10,6 +10,7 @@ source_guidance: "CFP_5.3.1_WorkPlan_CFP_Adaptation.md"
 cfp_target: "AI Tools in Ethics Research (topical collection)"
 source_file: "Paper/MDversion/07_review_mechanism.md"
 session_id: SID-20260324-090000
+feeds_into: "CFP_4.2.19_ModificationLog_Section7.md"
 transformation: "Reframe from journal-specific review mechanism to community assessment of documentation adequacy. Drop reproduction test (rejected in Section 6). Dual-reviewer architecture retained but repurposed: Reviewer B assesses documentation adequacy against the organizing question of SP-3 rather than attempting reproduction. Practical instructions rewritten around adequacy assessment. Self-exemplification noted in §7.4."
 word_count: ~1000
 ---
@@ -60,4 +61,8 @@ The self-exemplification of this article creates an immediate opportunity. The s
 - [[_HUBS/CHAT_SID-20260324-090000]]
 ### Sibling artifacts (same chat)
 - [[CFP_4.2.19_ModificationLog_Section7]]
+
+### Explicit links (inputs/outputs/etc.)
+**feeds_into:**
+- UNRESOLVED: CFP_4.2.19_ModificationLog_Section7.md
 
