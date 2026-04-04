@@ -44,7 +44,7 @@ OBSIDIAN_LINK_RE = re.compile(r"\[\[([^\]]+)\]\]")
 
 REL_FIELDS_STRONG = ["inputs", "outputs"]
 REL_FIELDS_DERIVED = ["input_artifacts", "influenced_artifacts", "one_to_many_influence"]
-REL_FIELDS_CONTINUITY = ["continuation_of", "continued_by"]
+REL_FIELDS_CONTINUITY = []  # removed: continuation_of/continued_by redundant with input/output chain + hub_annotations.yaml
 REL_FIELDS_RELATED = ["related_documents", "salient_outputs"]
 
 # V1/V2 field name variants — map to canonical names for connection rendering
