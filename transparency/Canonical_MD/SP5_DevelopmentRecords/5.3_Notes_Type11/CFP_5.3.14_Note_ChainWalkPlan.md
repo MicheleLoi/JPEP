@@ -11,7 +11,7 @@ source_conversation: SID-20260403-131122
 feeds_into:
   - "SP-3 draft (CFP_5.2.4 PDL-003 / PDL-004)"
   - "CFP_5.3.13_Note_SP3_WriterBriefing.md (update after walk)"
-prerequisite_reading:
+inputs:
   - "CFP_5.3.5_Note_V1V2MetadataAudit.md (session chain in Section A)"
   - "CFP_5.3.13_Note_SP3_WriterBriefing.md (SP-3 writer briefing)"
 ---

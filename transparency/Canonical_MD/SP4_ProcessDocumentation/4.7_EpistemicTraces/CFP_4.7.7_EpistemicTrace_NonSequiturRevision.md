@@ -7,6 +7,11 @@ label: CFP_4.7.7_EpistemicTrace_NonSequiturRevision
 branch: cfp-ai-ethics-inquiry
 session_id: SID-20260311-185449
 source_conversation: JPEP_20260311_175401.md
+inputs:
+  - CFP_5.4.3_Introduction_v1.md
+  - CFP_5.4.4_Section3_v1.md
+  - CFP_5.3.1_WorkPlan_CFP_Adaptation.md
+  - Paper/MDversion/02_systemic_barriers_to_disclosure.md
 archive: MHC-prototype/00_full_conversations/exported/md/
 feeds_into:
   - "CFP_5.4.3_Introduction_v1.md (non-sequitur cut applied here)"

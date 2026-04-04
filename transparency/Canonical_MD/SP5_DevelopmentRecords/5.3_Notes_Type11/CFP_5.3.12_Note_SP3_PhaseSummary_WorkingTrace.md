@@ -5,6 +5,9 @@ label: CFP_5.3.12_Note_SP3_PhaseSummary_WorkingTrace
 title: "Working Trace: Paper Phase Summary for SP-3 (accumulated during metadata audit)"
 date_created: 2026-04-03
 session_id: SID-20260403-110246
+inputs:
+  - CFP_5.3.3_Note_MetadataReportingStructure.md
+  - CFP_5.3.5_Note_V1V2MetadataAudit.md
 status: In progress — accumulating findings
 purpose: "Research input for SP-3 drafting. Findings accumulated during metadata audit (SID-20260403-110246). Each entry records a confirmed chronological fact about how the paper was written, sourced from frontmatter evidence, figure analysis, and user confirmation."
 ---

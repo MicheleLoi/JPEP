@@ -4,6 +4,10 @@ document_type: Type 9 - Epistemic Trace
 title: "Epistemic Trace: The Self-Referential Structure of Documentation"
 date_created: 2026-04-01
 session_id: SID-20260401
+inputs:
+  - CFP_5.3.5_Note_V1V2MetadataAudit.md
+  - CFP_5.3.6_CoworkFindings_ArtifactLinks.md
+  - 4.2.1_ModificationLog_I_Introduction__S01.md
 status: complete
 author: Michele Loi (reflection) + Claude Sonnet 4.6 (transcription)
 feeds_into:

@@ -6,9 +6,10 @@ version: "v1 (CFP adaptation)"
 date_created: 2026-03-17
 status: Finalized
 source: "Claude Sonnet 4.6 (Claude Code session)"
-source_guidance: "CFP_5.3.1_WorkPlan_CFP_Adaptation.md"
+inputs:
+  - CFP_5.3.1_WorkPlan_CFP_Adaptation.md
+  - Paper/MDversion/05_signaling_discontinuity_from_prestige_system.md
 cfp_target: "AI Tools in Ethics Research (topical collection)"
-source_file: "Paper/MDversion/05_signaling_discontinuity_from_prestige_system.md"
 transformation: "Rewrite derivation. Three principles (ecological validity, good faith, costly signaling) re-derived as normative conditions current disclosure mandates fail to meet, not as features enabled by venue discontinuity. Section 5 serves as diagnostic bridge to Section 6."
 session_id: SID-20260317-191544
 feeds_into: "CFP_4.2.17_ModificationLog_Section5.md"

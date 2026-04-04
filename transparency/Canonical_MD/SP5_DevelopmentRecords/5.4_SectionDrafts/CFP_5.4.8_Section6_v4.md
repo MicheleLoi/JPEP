@@ -6,7 +6,9 @@ version: "v4.1 (CFP adaptation, redundancy pass 1)"
 date_created: 2026-04-01
 status: Draft
 source: "Claude Opus 4.6 (Claude Code session)"
-source_file: "CFP_5.4.8_Section6_v4.md"
+inputs:
+  - CFP_4.4.19_SectionGuidance_SelfExpressionDistribution.md
+  - CFP_5.4.8_Section6_v3.md
 derived_from: "CFP_5.4.8_Section6_v4.md"
 cfp_target: "AI Tools in Ethics Research (topical collection)"
 session_id: SID-20260401-173934
@@ -25,9 +27,9 @@ The meta-ethical contestation generates the tracking requirement through two pat
 
 *The ethical route.*
 
-The tradition named in Section 3—Socrates, Kierkegaard, Nietzsche—treats philosophical activity as constitutively self-expressive: the process of inquiry reveals and constitutes the inquirer. If this tradition is right, delegating intellectual production to an AI introduces alien agency into a process whose value lies in disclosing the self. If philosophy is confession, delegation is imposture.
+The tradition named in Section 3—Socrates, Kierkegaard, Nietzsche—treats philosophical activity as constitutively self-expressive: the process of inquiry reveals and constitutes the inquirer. One might argue that if this tradition is right, delegating intellectual production to an AI introduces alien agency into a process whose value lies in disclosing the self — that if philosophy is confession, delegation is imposture.
 
-This objection confuses the medium of expression with its locus. What expresses the self is not the manual production of sentences but the vision that organizes them — the questions selected, the risks taken, the intellectual judgments brought to the whole. Creative practice has long recognized this. In modular synthesis, the composer designs the system architecture — patching together oscillators, filters, and sequencers — rather than controlling every waveform; sonic properties emerge from module interactions in ways not fully predictable from individual settings. In computer-based generative art, the artist establishes abstract rules implemented by a computer such that the system is "partly responsible for coming up with the idea itself" (Boden & Edmonds, 2009, p. 138) — Harold Cohen's AARON is the paradigmatic case. In each instance, creative agency lies in designing the generative structure, not in manual execution.
+But this objection locates self-expression in the wrong place. What expresses the self is not the manual production of sentences but the vision that organizes them — the questions selected, the risks taken, the intellectual judgments brought to the whole. Creative practice has long recognized this. In modular synthesis, the composer designs the system architecture — patching together oscillators, filters, and sequencers — rather than controlling every waveform; sonic properties emerge from module interactions in ways not fully predictable from individual settings. In computer-based generative art, the artist establishes abstract rules implemented by a computer such that the system is "partly responsible for coming up with the idea itself" (Boden & Edmonds, 2009, p. 138) — Harold Cohen's AARON is the paradigmatic case. In each instance, creative agency lies in designing the generative structure, not in manual execution.
 
 Philosophy already recognizes process details as self-expressive. Citation patterns constitute implicit methodological proposals about what resources matter for philosophy; the community reads them as expressive of intellectual identity. AI usage is a new dimension of the same practice: the choice of interlocutor is itself a self-expressive act.
 

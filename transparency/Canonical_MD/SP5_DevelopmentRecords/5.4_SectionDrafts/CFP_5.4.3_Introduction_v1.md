@@ -7,8 +7,8 @@ date_created: 2026-03-03
 status: Revised (2026-03-11)
 revision_note: "First component of cognitivist-objection reply cut on Opus structural review (2026-03-11). Non-sequitur: 'no moral truth-meter' addresses epistemic access to moral reality, not the context-of-discovery/justification distinction the objection turns on. Defeat now rests solely on the essentially-contested-concept argument."
 source: "Claude Sonnet 4.6 (Claude Code session)"
-source_guidance: "CFP_5.3.1_WorkPlan_CFP_Adaptation.md"
-source_file: "CFP_5.3.1_WorkPlan_CFP_Adaptation.md (Section A spine — not Paper/MDversion/01_introduction.md)"
+inputs:
+  - CFP_5.3.1_WorkPlan_CFP_Adaptation.md
 cfp_target: "AI Tools in Ethics Research (topical collection)"
 feeds_into: "CFP_4.2.14_ModificationLog_Introduction.md"
 word_count: ~1060

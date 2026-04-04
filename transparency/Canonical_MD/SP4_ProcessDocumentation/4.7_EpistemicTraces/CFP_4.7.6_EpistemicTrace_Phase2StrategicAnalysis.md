@@ -9,6 +9,11 @@ session_id: SID-20260306-192641
 session_id_precision: exact
 source_conversation: JPEP_20260306_192641.md
 source_conversation_note: "Resolved from placeholder JPEP-SID-20260306-CFP2 — confirmed by grep match in JPEP_20260306_192641.md"
+inputs:
+  - CFP_5.3.1_WorkPlan_CFP_Adaptation.md
+  - Paper/MDversion/02_systemic_barriers_to_disclosure.md
+  - Paper/MDversion/04_the_dilemma_reconsidered_short_term_positioning_and_long_term_transformation.md
+  - Paper/MDversion/05_signaling_discontinuity_from_prestige_system.md
 archive: MHC-prototype/00_full_conversations/exported/md/
 feeds_into:
   - "CFP_5.3.1_WorkPlan_CFP_Adaptation.md (sections C and F informed by this analysis)"

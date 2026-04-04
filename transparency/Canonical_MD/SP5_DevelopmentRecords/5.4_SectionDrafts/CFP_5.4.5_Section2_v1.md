@@ -6,8 +6,9 @@ version: "v1 (CFP adaptation)"
 date_created: 2026-03-12
 status: Draft
 source: "Claude Sonnet 4.6 (Claude Code session)"
-source_guidance: "CFP_5.3.1_WorkPlan_CFP_Adaptation.md"
-source_file: "Paper/MDversion/02_systemic_barriers_to_disclosure.md"
+inputs:
+  - CFP_5.3.1_WorkPlan_CFP_Adaptation.md
+  - Paper/MDversion/02_systemic_barriers_to_disclosure.md
 cfp_target: "AI Tools in Ethics Research (topical collection)"
 session_id: SID-20260311-185449
 feeds_into: "CFP_4.2.15_ModificationLog_Section2.md"

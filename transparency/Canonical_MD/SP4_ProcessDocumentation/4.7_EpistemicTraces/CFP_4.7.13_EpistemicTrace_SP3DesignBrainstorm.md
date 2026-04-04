@@ -6,11 +6,10 @@ model: Claude Opus 4.6
 date: 2026-04-02
 status: Complete
 source_conversation: 06_conversations/exported/JPEP_20260402_145404.md
-cowork_input: CFP_5.3.11_Note_Chat30a52e69_OntologyDiscoveryAnalysis.md
-imported_chats:
+inputs:
+  - CFP_5.3.11_Note_Chat30a52e69_OntologyDiscoveryAnalysis.md
   - 06_conversations/imported/claude.ai_17c34bb3_Technological_Observations_Integration.md
   - 06_conversations/imported/claude.ai_6d599ff5_Appendix_A_Guidance_Development.md
-artifacts_consulted:
   - 4.2.8_ModificationLog_Section_VII_5__S05.md
   - 4.2.9_ModificationLog_Section_VIII_6__S06.md
   - 4.2.10_ModificationLog_Section_IX_7__S07.md

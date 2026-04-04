@@ -6,7 +6,8 @@ version: "v3 (CFP adaptation)"
 date_created: 2026-03-17
 status: Under Review
 source: "Claude Sonnet 4.6 (Claude Code session)"
-source_guidance: "CFP_5.3.1_WorkPlan_CFP_Adaptation.md"
+inputs:
+  - CFP_5.3.1_WorkPlan_CFP_Adaptation.md
 cfp_target: "AI Tools in Ethics Research (topical collection)"
 revision_basis: "CFP_5.4.5_Section2_v2.md — 2.3 folded into close of 2.2"
 derived_from: "CFP_5.4.5_Section2_v2.md"

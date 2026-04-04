@@ -8,6 +8,9 @@ date_created: 2026-04-01
 date_rewritten: 2026-04-03
 status: Active
 session_id: SID-20260403-131122
+inputs:
+  - CFP_5.3.3_Note_MetadataReportingStructure.md
+  - CFP_5.3.6_CoworkFindings_ArtifactLinks.md
 source: "Claude Opus 4.6 (rewrite) + user direction"
 source_conversations:
   - "SID-20260401-000000 (original audit)"

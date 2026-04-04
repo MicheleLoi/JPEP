@@ -5,6 +5,8 @@ label: CFP_5.3.2_ReviewerB_Section2_PendingDecision
 title: "Reviewer B Assessment: Section 2 v1 — Pending User Decision"
 branch: cfp-ai-ethics-inquiry
 session_id: SID-20260311-185449
+inputs:
+  - CFP_5.4.5_Section2_v1.md
 date: 2026-03-12
 status: RESOLVED — v3 finalized (2026-03-17, SID-20260317-182817)
 feeds_into: "CFP_5.4.5_Section2_v2.md"

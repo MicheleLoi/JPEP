@@ -5,6 +5,9 @@ title: "The Self-Expression Argument"
 version: "v1"
 date_created: 2026-04-01
 session_id: SID-20260401-111336
+inputs:
+  - CFP_5.4.8_Section6_v3.md
+  - CFP_5.4.9_Section7_v1.md
 branch: cfp-ai-ethics-inquiry
 status: active — feeds design workflow
 source: "Claude Opus 4.6 (Claude Code session, autonomous draft)"

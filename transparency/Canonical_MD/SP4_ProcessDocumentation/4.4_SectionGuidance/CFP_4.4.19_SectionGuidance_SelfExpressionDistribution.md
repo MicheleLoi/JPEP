@@ -10,9 +10,10 @@ session_id: SID-20260401-140255, SID-20260401-170128
 branch: cfp-ai-ethics-inquiry
 status: active — ready for implementation
 supersedes: "Previous version of this file (SID-20260401-111336) treated authenticity as subordinate enrichment. This version replaces it entirely."
-source_epistemic_trace: CFP_4.7.11_EpistemicTrace_SelfExpressionArgument.md
-source_pdl: CFP_5.2.3_pdl_selfexpression_integration.md
-source_design_analysis: CFP_4.7.12_EpistemicTrace_SelfExpressionIntegrationDesign.md
+inputs:
+  - CFP_4.7.11_EpistemicTrace_SelfExpressionArgument.md
+  - CFP_5.2.3_pdl_selfexpression_integration.md
+  - CFP_4.7.12_EpistemicTrace_SelfExpressionIntegrationDesign.md
 ---
 
 # Section Guidance: Self-Expression/Authenticity Argument — Co-Equal Distribution

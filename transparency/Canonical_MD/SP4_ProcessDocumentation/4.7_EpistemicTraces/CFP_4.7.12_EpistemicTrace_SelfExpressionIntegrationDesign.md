@@ -5,6 +5,12 @@ title: "Design Analysis: Integrating the Self-Expression Argument"
 version: "v1"
 date_created: 2026-04-01
 session_id: SID-20260401-design
+inputs:
+  - CFP_4.7.11_EpistemicTrace_SelfExpressionArgument.md
+  - CFP_5.4.3_Introduction_v1.md
+  - CFP_5.4.4_Section3_v1.md
+  - CFP_5.4.8_Section6_v3.md
+  - CFP_5.4.9_Section7_v1.md
 branch: cfp-ai-ethics-inquiry
 status: active — feeds implementation decisions
 source: "Claude Opus 4.6 (Claude Code session, design analysis)"

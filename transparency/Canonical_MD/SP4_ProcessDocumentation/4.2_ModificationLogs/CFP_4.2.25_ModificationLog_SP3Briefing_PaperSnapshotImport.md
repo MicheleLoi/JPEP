@@ -16,7 +16,7 @@ inputs:
   - "CFP_5.3.5_Note_V1V2MetadataAudit.md (v1/v2 metadata coverage)"
   - "e5ec43be (JPEP whole paper audit session, Oct 18 2025 — accessed via Claude.ai history)"
   - "V1_5.4.0_PaperSnapshot_PreConsolidation_Oct18_2025.md (pasted by author)"
-outputs:
+output_completed:
   - "CFP_5.3.13_Note_SP3_WriterBriefing.md (created — 9-section SP-3 entry point)"
   - "V1_5.4.0_PaperSnapshot_PreConsolidation_Oct18_2025.md (imported — replaces paper_collation_oct18)"
   - "CHAT_SID-20260403-122011.md (hub created)"

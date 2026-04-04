@@ -6,9 +6,10 @@ version: "v1 (CFP adaptation)"
 date_created: 2026-03-24
 status: Finalized
 source: "Claude Sonnet 4.6 (Claude Code session)"
-source_guidance: "CFP_5.3.1_WorkPlan_CFP_Adaptation.md"
+inputs:
+  - CFP_5.3.1_WorkPlan_CFP_Adaptation.md
+  - Paper/MDversion/07_review_mechanism.md
 cfp_target: "AI Tools in Ethics Research (topical collection)"
-source_file: "Paper/MDversion/07_review_mechanism.md"
 session_id: SID-20260324-090000
 feeds_into: "CFP_4.2.19_ModificationLog_Section7.md"
 transformation: "Reframe from journal-specific review mechanism to community assessment of documentation adequacy. Drop reproduction test (rejected in Section 6). Dual-reviewer architecture retained but repurposed: Reviewer B assesses documentation adequacy against the organizing question of SP-3 rather than attempting reproduction. Practical instructions rewritten around adequacy assessment. Self-exemplification noted in §7.4."

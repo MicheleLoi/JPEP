@@ -6,9 +6,10 @@ version: "v2 (CFP adaptation)"
 date_created: 2026-03-23
 status: Draft
 source: "Claude Sonnet 4.6 (Claude Code session)"
-source_guidance: "CFP_5.3.1_WorkPlan_CFP_Adaptation.md"
+inputs:
+  - CFP_5.3.1_WorkPlan_CFP_Adaptation.md
+  - CFP_5.4.8_Section6_v1.md
 cfp_target: "AI Tools in Ethics Research (topical collection)"
-source_file: "CFP_5.4.8_Section6_v1.md"
 transformation: "v1 → v2: §6.1 reordered (two-routes derivation before MHC introduction); opening paragraph revised (removed premature attribution/tracing language); discovery/justification paragraph cut; 'we do not' negative paragraphs removed (positive argument carries the weight); traditional values paragraph reframed to ground attribution in process-dependent criteria; attribution/tracing bridge paragraph revised; 'principles' → 'conditions' harmonized; §6.2 nested-diagram middle-level explanation updated; overall compression."
 revision_note: "Revised following Reviewer A verdict (cut discovery/justification paragraph) + Reviewer B REVISE instructions + multi-round philosophical revision of the ethics-specific paragraph."
 derived_from: "CFP_5.4.8_Section6_v1.md"
