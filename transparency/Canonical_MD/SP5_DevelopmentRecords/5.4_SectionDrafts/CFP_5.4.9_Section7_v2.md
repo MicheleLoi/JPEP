@@ -6,9 +6,10 @@ version: "v2 (CFP adaptation)"
 date_created: 2026-04-01
 status: Draft
 source: "Claude Opus 4.6 (Claude Code session)"
-source_guidance: "CFP_4.4.14_SectionGuidance_Section7_Additions.md"
+inputs:
+  - CFP_4.4.14_SectionGuidance_Section7_Additions.md
+  - CFP_5.4.9_Section7_v1.md
 cfp_target: "AI Tools in Ethics Research (topical collection)"
-source_file: "CFP_5.4.9_Section7_v1.md"
 derived_from: "CFP_5.4.9_Section7_v1.md"
 session_id: SID-20260401-173934
 feeds_into: "CFP_4.2.20_ModificationLog_Section7v2.md"

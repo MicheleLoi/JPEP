@@ -14,7 +14,7 @@ sessions_that_built_this:
   - SID-20260403-154053
 feeds_into:
   - SP-3
-related:
+inputs:
   - CFP_4.7.16_EpistemicTrace_UrConversationOriginLayer.md
   - CFP_5.3.13_Note_SP3_WriterBriefing.md
   - CHAT_6c8d9101-cd3f-4f61-aaf9-f293de92d11c.md

@@ -54,6 +54,20 @@ V1V2_FIELD_ALIASES = {
     "source_chat_id_1": "source_chat_id",
     "source_chat_id_2": "source_chat_id",
     "source_chat_id_3": "source_chat_id",
+    # CFP-era variants (safety net — artifacts normalized to canonical names)
+    "source_documents": "inputs",
+    "sources_read": "inputs",
+    "artifacts_consulted": "inputs",
+    "cowork_input": "inputs",
+    "imported_chats": "inputs",
+    "depends_on": "inputs",
+    "depends_on_2": "inputs",
+    "prerequisite_reading": "inputs",
+    "source_epistemic_trace": "inputs",
+    "source_pdl": "inputs",
+    "source_design_analysis": "inputs",
+    "source_file": "inputs",
+    "source_guidance": "inputs",
 }
 
 ALL_REL_FIELDS = (
@@ -320,7 +334,7 @@ def _extract_manual_content(hub_path: Path) -> Optional[str]:
     # Strip known auto-generated headers and artifact lists
     auto_patterns = [
         r"^# Chat Hub:.*$",
-        r"^## Artifacts generati.*$",
+        r"^## Artifacts.*$",
         r"^- \[\[.*\]\]$",
         r"^\s*$",
     ]

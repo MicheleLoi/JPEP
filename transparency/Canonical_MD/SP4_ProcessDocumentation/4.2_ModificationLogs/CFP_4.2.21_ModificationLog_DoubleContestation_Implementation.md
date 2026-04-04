@@ -18,7 +18,7 @@ inputs:
   - "CFP_5.2.3_pdl_selfexpression_integration.md (design PDL)"
   - "CFP_4.7.11_EpistemicTrace_SelfExpressionArgument.md (generative input)"
   - "CFP_4.7.8_EpistemicTrace_SelfReferentialDocumentation.md (Conclusion input)"
-outputs:
+output_completed:
   - "CFP_5.4.9_Section7_v2.md (Step 0)"
   - "CFP_5.4.4_Section3_v2.md (Step 1)"
   - "CFP_5.4.8_Section6_v4.md (Step 2)"

@@ -7,6 +7,10 @@ date_created: 2026-04-03
 status: Final
 source: "Claude Opus 4.6 (Claude Code session)"
 session_id: SID-20260403-093628
+inputs:
+  - CFP_5.4.4_Section3_v2.md
+  - CFP_4.7.11_EpistemicTrace_SelfExpressionArgument.md
+  - CFP_4.7.12_EpistemicTrace_SelfExpressionIntegrationDesign.md
 related:
   - "CFP_5.4.4_Section3_v2.md (input: Section 3 v2 draft)"
   - "CFP_5.4.4_Section3_v3.md (output: Section 3 v3 draft)"

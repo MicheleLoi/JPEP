@@ -6,9 +6,10 @@ version: "v2 (CFP adaptation)"
 date_created: 2026-03-17
 status: Under Review
 source: "Claude Sonnet 4.6 (Claude Code session)"
-source_guidance: "CFP_5.3.1_WorkPlan_CFP_Adaptation.md"
+inputs:
+  - CFP_5.3.1_WorkPlan_CFP_Adaptation.md
+  - CFP_5.3.2_ReviewerB_Section2_PendingDecision.md
 cfp_target: "AI Tools in Ethics Research (topical collection)"
-revision_basis: "CFP_5.3.2_ReviewerB_Section2_PendingDecision.md"
 derived_from: "CFP_5.4.5_Section2_v1.md"
 session_id: SID-20260317-182817
 feeds_into: "CFP_4.2.15_ModificationLog_Section2.md"

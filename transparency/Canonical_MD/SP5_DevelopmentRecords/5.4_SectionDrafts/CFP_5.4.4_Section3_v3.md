@@ -6,7 +6,9 @@ version: "v3 (CFP adaptation, two-order restructuring)"
 date_created: 2026-04-03
 status: Draft
 source: "Claude Opus 4.6 (Claude Code session)"
-source_file: "CFP_5.4.4_Section3_v3.md"
+inputs:
+  - CFP_4.4.20_SectionGuidance_SP3.md
+  - CFP_5.4.4_Section3_v2.md
 derived_from: "CFP_5.4.4_Section3_v2.md"
 cfp_target: "AI Tools in Ethics Research (topical collection)"
 session_id: SID-20260403-093628

@@ -1,3 +1,19 @@
+---
+project: JPEP
+document_type: Type 11 - Steering Note
+label: CFP_5.3.6_CoworkFindings_ArtifactLinks
+title: "Cowork Findings: Verified Artifact Input/Output Links for V1/V2 Sessions"
+date_created: 2026-04-01
+session_id: SID-20260401-205323
+status: Complete
+inputs:
+  - CFP_5.3.10_Note_UUIDRecovery_CoworkSessions.md
+feeds_into:
+  - CFP_5.3.9_Note_PhilologicalExplorationLessons.md
+  - CFP_5.3.5_Note_V1V2MetadataAudit.md
+  - CFP_5.3.13_Note_SP3_WriterBriefing.md
+---
+
 # Cowork Findings: Artifact Link Recovery
 
 Date: 2026-04-01

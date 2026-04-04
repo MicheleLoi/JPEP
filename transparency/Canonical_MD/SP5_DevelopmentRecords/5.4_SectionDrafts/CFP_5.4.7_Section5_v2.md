@@ -6,7 +6,9 @@ version: "v2.1 (CFP adaptation, redundancy pass 1)"
 date_created: 2026-04-01
 status: Draft
 source: "Claude Opus 4.6 (Claude Code session)"
-source_file: "CFP_5.4.7_Section5_v2.md"
+inputs:
+  - CFP_4.4.19_SectionGuidance_SelfExpressionDistribution.md
+  - CFP_5.4.7_Section5_v1.md
 derived_from: "CFP_5.4.7_Section5_v2.md"
 cfp_target: "AI Tools in Ethics Research (topical collection)"
 session_id: SID-20260401-173934

@@ -6,7 +6,8 @@ version: "v1.1 (CFP adaptation, redundancy pass 1)"
 date_created: 2026-04-01
 status: Draft
 source: "Claude Opus 4.6 (Claude Code session)"
-source_file: "CFP_5.4.10_Conclusion_v1.md"
+inputs:
+  - CFP_5.3.1_WorkPlan_CFP_Adaptation.md
 derived_from: "CFP_5.4.10_Conclusion_v1.md"
 cfp_target: "AI Tools in Ethics Research (topical collection)"
 session_id: SID-20260401-173934

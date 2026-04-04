@@ -5,6 +5,10 @@ label: CFP_5.3.8_ReviewerLetter_DoubleContestation
 title: "Simulated Reviewer Letter: Double Contestation Implementation"
 date_created: 2026-04-01
 session_id: SID-20260401-173934
+inputs:
+  - CFP_5.4.4_Section3_v2.md
+  - CFP_5.4.8_Section6_v4.md
+  - CFP_5.4.9_Section7_v3.md
 status: complete
 purpose: "Internal quality check — simulated review from the perspective of a Philosophy & Technology reviewer assessing the paper for the AI Tools in Ethics Research topical collection"
 ---

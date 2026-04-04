@@ -8,6 +8,8 @@ date_created: 2026-04-01
 status: Active
 session_id: SID-20260401-000000
 session_id_precision: date-only
+inputs:
+  - CFP_5.3.3_Note_MetadataReportingStructure.md
 source: "Claude Sonnet 4.6 (Claude Code session) + user direction"
 relevance_for:
   - SP-1 rewrite (AI use declaration)

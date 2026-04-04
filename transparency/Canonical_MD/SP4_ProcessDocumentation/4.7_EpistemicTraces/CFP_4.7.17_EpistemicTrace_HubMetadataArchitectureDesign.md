@@ -6,6 +6,10 @@ title: "Epistemic Trace: Hub Metadata Architecture Design"
 branch: cfp-ai-ethics-inquiry
 date_created: 2026-04-03
 source_conversation: "SID-20260403-154700 (pending export; next session after JPEP_20260403_133025.md)"
+inputs:
+  - CFP_5.3.13_Note_SP3_WriterBriefing.md
+  - CFP_5.3.15_Note_OriginStoryForSP3.md
+  - hub_annotations.yaml
 status: Complete
 relevance: SP-3 (the documentation architecture this trace describes is what SP-3 must narrate)
 related:

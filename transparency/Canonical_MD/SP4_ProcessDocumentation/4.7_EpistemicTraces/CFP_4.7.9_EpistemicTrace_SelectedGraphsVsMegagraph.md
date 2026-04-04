@@ -4,6 +4,8 @@ document_type: Type 9 - Epistemic Trace
 title: "Epistemic Trace: Selected Graphs vs Megagraph — What Visualization Serves the Argument"
 date_created: 2026-04-01
 session_id: SID-20260401
+inputs:
+  - CFP_5.3.7_SelectedGraphCandidates.md
 status: complete
 author: Michele Loi (direction) + Claude Sonnet 4.6 (transcription)
 feeds_into:

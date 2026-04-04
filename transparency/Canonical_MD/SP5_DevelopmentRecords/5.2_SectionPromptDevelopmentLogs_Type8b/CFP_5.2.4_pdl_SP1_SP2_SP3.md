@@ -16,6 +16,8 @@ source_conversations:
     exported_as: JPEP_20260402_085522.md
   - session: "SID-20260402-165839"
     exported_as: ""
+  - session: "SID-20260403-213917"
+    exported_as: ""
 related:
   - "CFP_5.2.2_pdl_appendix_v3.md (predecessor — appendix-oriented design, partially superseded)"
   - "CFP_4.4.18_SectionGuidance_AppendixA_v3.md (predecessor — content analysis still valid)"
@@ -348,6 +350,118 @@ related:
 
 ---
 
+### PDL-019: Briefing audit complete — what becomes guidance vs. what stays as research notes
+
+| Field | Value |
+|-------|-------|
+| Date | 2026-04-03 |
+| Session | SID-20260403-213917 |
+| Authored by | User (decision) + Opus (audit + execution) |
+
+**Context:** §1–§9 of `CFP_5.3.13` (the SP-3 writer briefing) contained false and misleading claims about 4.1's authorship, 4.7.1's completeness, and the sufficiency of artifact-only reconstruction. An Opus audit against §10–§12 identified 17 problems (three clusters: mischaracterisation of 4.1/4.7.1, overclaiming artifact-only reconstruction, structural incompleteness of the phase sequence and input routing). All 17 corrected in-place. The briefing is now internally consistent.
+
+**Decision — two documents, two roles:**
+
+| Document | Role | What belongs here |
+|----------|------|-------------------|
+| `CFP_5.3.13` (Writer Briefing) | **Research findings** — the drafter reads this first | Evidence, specific findings, detailed modlog-by-modlog analysis, contradiction resolutions, source pointers. Everything the drafter needs to *know*. |
+| `CFP_4.4.20` (Section Guidance) | **Drafting instructions** — the prompt that structures writing | Structure, methodology, constraints, Must Include / Must Avoid rules, voice and tone. Everything the drafter needs to *do*. |
+
+**What moves from 5.3.13 into the guidance (4.4.20 v4):**
+
+1. **Phase 0 (origin layer)** — the guidance's Phase 1 description must note that v1/v2 writing was preceded by an origin layer (Chat X → 6c8d9101 → da6a830c → 4.1). The drafter cannot tell the Phase 1 story without it.
+
+2. **4.1 provenance rule** — Must Avoid: characterising 4.1 as "human-authored" in the sense of human-composed. Correct characterisation: human-sourced, Claude-synthesized, human-endorsed. Add to Must Avoid list.
+
+3. **Complementary evidence sources** — the methodology section should state that artifacts and conversations are complementary: artifacts preserve structure and scope; conversations preserve agency and provenance. Neither alone is sufficient. This replaces any implication that artifact-based reconstruction is self-sufficient.
+
+4. **Format field effect** — Must Include: the template effect finding (89% vs. 2% endorsement evidence) as key evidence for the framework argument.
+
+5. **Author corrections** — Must Avoid: overstating v1/v2 vs. CFP quality gap; drifting toward adversarial verification standards.
+
+6. **Updated gap list** — Must Include: the still-open gaps from §5 (Chat 1, modlogs 4.2.1–4.2.3/4.2.5, Chat X, 6c8d9101 privacy constraint). Must note that 4.1 provenance is reconstructed but not encoded in its own frontmatter.
+
+7. **Multi-AI production** — Must Include: Section VIII's Claude → ChatGPT → manual application cycle as evidence of cross-tool orchestration.
+
+**What stays in 5.3.13 only (research notes, not guidance):**
+
+- §8 (II-III-IV consolidation detail) — specific evidence the drafter will use, but the guidance doesn't need to instruct about it
+- §9 (artifacts as evidence — what they preserve and cannot) — analytical finding; the guidance incorporates its lesson (complementary evidence sources) without reproducing the analysis
+- §10 subsection-level detail (modlog-by-modlog endorsement evidence, guidance file content analysis, Phase B audit detail) — the drafter reads this directly from the briefing
+- §12 contradiction-level detail — resolved; the summary in the guidance suffices; 5.3.17 has depth
+
+**Impact:** CFP_4.4.20 updated to v4. Previous v3 (research-paper structure without chain walk findings) superseded.
+
+---
+
+### PDL-020: CFP chain walk — extending the research methodology to the CFP corpus
+
+| Field | Value |
+|-------|-------|
+| Date | 2026-04-03 |
+| Session | SID-20260403-213917 (post-compaction portion) |
+| Authored by | User (methodology decision, scope correction, scoping of findings) + Opus (corpus reading, synthesis) |
+
+**Context:** PDL-017 established the philological methodology for SP-3 — full corpus reading, structured notes, evidence-first — but explicitly excluded `CFP_`-prefixed files because "the CFP adaptation is still in development." In this session the user declared the CFP rewriting finished, making the CFP corpus a stable object available for the same treatment.
+
+**Human decision 1 — commissioning the chain walk:**
+
+> "the cfp rewriting is finished. Scientifically explore issues that can be evidenced through the chainwalk. A not useful approach: acting like an immature phd. inventing a thesis, attempting to square the facts to confirm it. A useful approach: perform the chainwalk, note apparent conflicts; try to resolve them logically, identify what you learn: is anything interesting about the complexity of writing? is anything interesting about the ability of artifacts to capture it? is anything interesting about the use of technological affordances? Use those for briefing the writing agent"
+
+This is an explicit methodology instruction: three research questions, evidence-first (not thesis-driven), findings intended as input to the SP-3 writer briefing.
+
+**Human decision 2 — scope correction:**
+
+> "you don't need to read v1/v2; we're done with that and III; now we need to cover CFP phase ground, and finalize"
+
+Claude had spawned agents to read the v1/v2 corpus. The user interrupted and corrected: the chain walk covers the CFP phase only. v1/v2 and Stage III are already consolidated in the briefing (§1–§12). This session completes the research by covering the remaining phase.
+
+**Execution:** Six parallel agents read the full CFP corpus — modlogs (12 files), epistemic traces (13 files), section guidance (7 files), notes + PDLs (17 + 4 files), section drafts (19 files), hubs (22 sessions). Context compaction destroyed the first round of agent results; a second round wrote findings to persistent files. Claude also read key modlogs and traces directly.
+
+**Outputs:**
+- `CFP_5.3.18_Note_CFPChainWalk_Findings.md` — synthesised findings under three headings + four cross-cutting observations
+- `_chainwalk_complexity.md` — working notes on writing complexity (~4,000 words, 7 sections)
+- `_chainwalk_drafts.md` — working notes on draft evolution and guidance-vs-reality comparison
+- `_chainwalk_artifacts_tech.md` — working notes on artifact capture ability + technological affordances
+
+**Human decision 3 — format field effect is not a CFP finding:**
+
+The initial synthesis included the "format field effect" (89% vs. 2% endorsement evidence depending on template field presence) as a CFP chain walk finding. The user directed its removal: this finding comes from CFP_5.3.9 (the v1/v2 philological exploration session, SID-20260401-205323) and was already present in the briefing §3. It is not a finding *of* the CFP chain walk; it is a finding *about* the v1/v2 corpus that the chain walk agents picked up from a note file. Removed from CFP_5.3.18, CFP_5.3.13 §13, and CFP_4.4.20. The finding remains where it belongs: in CFP_5.3.9 and in the briefing's pre-existing sections.
+
+**Human decision 4 — integration into briefing and guidance:**
+
+User directed that chain walk findings be compressed into a new §13 of the writer briefing (CFP_5.3.13) and that the section guidance (CFP_4.4.20) be updated with CFP-phase-specific Must Include / Must Avoid items derived from the chain walk. The briefing/guidance split principle from PDL-019 applies: 5.3.13 gets the evidence; 4.4.20 gets the drafting instructions.
+
+**Impact:** PDL-017's CFP exclusion is no longer operative — the CFP corpus has been walked. PDL-018's drafting plan now has a complete evidence base across all three phases. The "CFP placeholder" in the SP-3 draft can be written with the same research depth as v1/v2 and Stage III sections, once the author decides the CFP documentation itself is complete.
+
+---
+
+### PDL-021: Section 6 ethical route — rhetorical correction
+
+| Field | Value |
+|-------|-------|
+| Date | 2026-04-03 |
+| Session | SID-20260403-213917 |
+| Authored by | User (diagnosis + framing instruction) + Opus (analysis) + Sonnet (edit) |
+
+**User's diagnosis:**
+
+> "in section 6: [...] This objection confuses the medium of expression with its locus. this is not well stated. it's saying P then not P"
+
+And the framing instruction:
+
+> "The problem is starting with what we don't believe as a statement of our voice, instead of 'one may argue that' or similar"
+
+**Analysis (Opus):** The passage stated the authenticity objection in the paper's own voice ("If this tradition is right, delegating intellectual production to an AI introduces alien agency..."), then immediately dismissed it ("This objection confuses the medium of expression with its locus"). The logical structure was: assert P, then assert not-P. The real argument the paragraph makes — that self-expression lies in designing the generative structure, not in manual production — was obscured by the dismissive transition sentence.
+
+**Two changes applied to `CFP_5.4.8_Section6_v4.md`:**
+1. Objection reframed as attributed position: "One might argue that..." — no longer in the paper's own voice
+2. Transition sentence replaced: "This objection confuses the medium of expression with its locus" → "But this objection locates self-expression in the wrong place" — says what the paragraph actually argues instead of asserting the negation
+
+**Note:** This is a paper-body edit, not a design decision. It is recorded here rather than in a separate modlog because the change is small (two sentences) and originated from the same session as PDL-019 and PDL-020. A modlog entry for Section 6 (CFP_4.2.18) should reference this PDL entry.
+
+---
+
 ## Open design questions
 
 - Drafting sequence: SP-1 first (shortest), SP-2 next (structural), SP-3 last (depends on the other two)? — likely yes, but SP-3 can begin in parallel given briefing readiness
@@ -356,5 +470,5 @@ related:
 ---
 
 *PDL generated: 2026-04-02*
-*Last updated: 2026-04-03 (PDL-018 added, session SID-20260403-170017)*
+*Last updated: 2026-04-03 (PDL-019 added, session SID-20260403-213917)*
 *Workflow: Design | Command: MHC-PDL*

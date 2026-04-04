@@ -7,6 +7,9 @@ branch: cfp-ai-ethics-inquiry
 date_created: 2026-04-03
 status: Active — authoritative governance document for hub system
 source_conversation: "SID-20260403-154700 (pending export; next session after JPEP_20260403_133025.md)"
+inputs:
+  - CFP_4.7.17_EpistemicTrace_HubMetadataArchitectureDesign.md
+  - hub_annotations.yaml
 related:
   - CFP_4.7.17_EpistemicTrace_HubMetadataArchitectureDesign.md (reasoning trace)
   - hub_annotations.yaml (SCRIPTS/) — the authoritative data store this document governs

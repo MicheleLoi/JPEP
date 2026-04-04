@@ -5,8 +5,9 @@ source_session: SID-20260402-145404
 model: Claude Opus 4.6
 date: 2026-04-02
 status: In Progress
-depends_on: CFP_4.7.13_EpistemicTrace_SP3DesignBrainstorm.md
-depends_on_2: CFP_5.3.7_SelectedGraphCandidates.md
+inputs:
+  - CFP_4.7.13_EpistemicTrace_SP3DesignBrainstorm.md
+  - CFP_5.3.7_SelectedGraphCandidates.md
 ---
 
 # CFP 4.7.14 — SP-3 Visual Design: Figures for the Stories

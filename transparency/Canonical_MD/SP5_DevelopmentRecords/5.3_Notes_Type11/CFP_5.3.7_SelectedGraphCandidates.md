@@ -5,6 +5,8 @@ label: CFP_5.3.7_SelectedGraphCandidates
 title: "Selected Graph Candidates for Paper Figures"
 date_created: 2026-04-01
 session_id: SID-20260401-033111
+inputs:
+  - CFP_4.7.9_EpistemicTrace_SelectedGraphsVsMegagraph.md
 status: draft - pending user validation
 derived_from: "CFP_4.4.17_Guidance_SelectedGraphSpecifications.md"
 ---

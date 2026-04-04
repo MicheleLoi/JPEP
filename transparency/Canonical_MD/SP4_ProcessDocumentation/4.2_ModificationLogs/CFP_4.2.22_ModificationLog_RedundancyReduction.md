@@ -15,7 +15,7 @@ session_id_note: "Reconstructed from first-message UTC (20:53:23) → CEST (22:5
 source_conversation: "JPEP_20260401_205323.md"
 inputs:
   - "All section drafts as produced by SID-20260401-173934 and refined by SID-20260401-184454"
-outputs:
+output_completed:
   - "Same files edited in place (no new version numbers created)"
 related_documents:
   - "CFP_4.2.21_ModificationLog_DoubleContestation_Implementation.md (preceding implementation)"

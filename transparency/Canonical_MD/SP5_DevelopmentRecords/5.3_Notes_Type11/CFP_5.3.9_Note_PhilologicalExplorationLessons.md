@@ -4,6 +4,9 @@ document_type: Type 11 - Note
 title: "Philological Exploration: Lessons for SP-2 and SP-3"
 date: 2026-04-02
 session_id: SID-20260401-205323
+inputs:
+  - CFP_5.3.6_CoworkFindings_ArtifactLinks.md
+  - CFP_5.3.5_Note_V1V2MetadataAudit.md
 status: complete
 author: Michele Loi (direction, corrections) + Claude Sonnet 4.6 (analysis, drafting)
 feeds_into:

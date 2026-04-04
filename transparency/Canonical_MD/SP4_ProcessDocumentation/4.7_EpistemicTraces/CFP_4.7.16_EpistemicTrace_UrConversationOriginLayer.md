@@ -6,6 +6,9 @@ title: "Epistemic Trace: Origin Layer — What the Ur-Conversation Contains and 
 branch: cfp-ai-ethics-inquiry
 date_created: 2026-04-03
 session_id: SID-20260403-154053
+inputs:
+  - 06_conversations/imported/Claude_How_LLMs_process_conversational_goals_6c8d9101-cd3f-4f61-aaf9-f293de92d11c.md
+  - CHAT_da6a830c-d1c6-4936-a999-0d42e21590a7.md
 session_id_note: "SID under reconstruction; session started after SID-20260403-135745 (ended ~13:30 CEST); import timestamp 15:40:53 provides lower bound"
 source_chat_id: 6c8d9101-cd3f-4f61-aaf9-f293de92d11c
 source_chat_note: "Ur-conversation read in full in this session. Content is gitignored (not anonymized, not public). This trace was produced by the AI reading the conversation; it does not quote content directly. The provenance distinction matters: SP-3 cannot cite the content as publicly available — only this trace and the hub are citable."

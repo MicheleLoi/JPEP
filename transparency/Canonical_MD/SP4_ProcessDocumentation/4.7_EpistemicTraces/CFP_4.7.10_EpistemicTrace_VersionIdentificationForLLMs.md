@@ -5,6 +5,8 @@ project: JPEP
 topic: "Version identification for LLMs: text traces vs. git"
 session_id: SID-20260401-033111
 source_conversation: ""
+inputs:
+  - Paper/MDversion/appendix.md
 archive: MHC-W/00_full_conversations/exported/md/
 validated: 2026-04-01
 validation: approved_with_edits

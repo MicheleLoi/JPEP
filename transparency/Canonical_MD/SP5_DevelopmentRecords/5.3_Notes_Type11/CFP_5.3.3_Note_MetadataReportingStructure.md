@@ -7,6 +7,8 @@ date_created: 2026-03-31
 status: Active
 session_id: SID-20260331-000000
 session_id_precision: date-only
+inputs:
+  - CFP_5.3.1_WorkPlan_CFP_Adaptation.md
 source: "Claude Sonnet 4.6 (Claude Code session) + user direction"
 relevance_for:
   - SP-1 rewrite (AI use declaration)

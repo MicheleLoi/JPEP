@@ -13,7 +13,7 @@ inputs:
   - "11 instances of unresolvable prose in relational frontmatter fields (identified by Explore agent)"
   - "final_corrected_flow.png (figure consulted for phase chronology)"
   - "_HUBS/ (used for date reconstruction)"
-outputs:
+output_completed:
   - "7 SP4/SP5 files corrected (see MOD-001 through MOD-007)"
   - "CFP_5.3.12_Note_SP3_PhaseSummary_WorkingTrace.md (created)"
   - "transparency/SCRIPTS/synthetic_nodes.yaml (created)"

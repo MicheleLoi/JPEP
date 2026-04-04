@@ -6,9 +6,10 @@ version: "v4.1 (CFP adaptation, redundancy pass 1)"
 date_created: 2026-04-01
 status: Draft
 source: "Claude Opus 4.6 (Claude Code session)"
-source_guidance: "CFP_4.4.19_SectionGuidance_SelfExpressionDistribution.md"
+inputs:
+  - CFP_4.4.19_SectionGuidance_SelfExpressionDistribution.md
+  - CFP_5.4.5_Section2_v3.md
 cfp_target: "AI Tools in Ethics Research (topical collection)"
-source_file: "CFP_5.4.5_Section2_v4.md"
 derived_from: "CFP_5.4.5_Section2_v4.md"
 session_id: SID-20260401-173934
 transformation: "v4 → v4.1: Redundancy pass 1. Removed duplicate 'philosophically specified account' framing (already in Intro); trimmed mechanism elaborations; removed bolted-on authenticity sentence; removed 'not X — it is Y' LLM tells; cut hedged adoption-data caveat. Net −~200 words."
