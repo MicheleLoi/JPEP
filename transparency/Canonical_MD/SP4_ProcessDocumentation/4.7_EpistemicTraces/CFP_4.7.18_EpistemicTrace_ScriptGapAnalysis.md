@@ -5,7 +5,7 @@ label: CFP_4.7.18_EpistemicTrace_ScriptGapAnalysis
 title: "Epistemic Trace: Hub Script Gap Analysis — What the Normalized Metadata Reveals"
 date_created: 2026-04-04
 session_id: SID-20260404-083911
-source_conversation: ""
+source_conversation: JPEP_20260404_061930.md
 status: Complete
 inputs:
   - obsidian_connections_with_chat_hubs.py

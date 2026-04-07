@@ -9,7 +9,7 @@ output_completed: ""
 feeds_into:
   - "SP-1 draft"
   - "SP-2 draft"
-  - "CFP_4.4.20_SectionGuidance_SP3.md (v2 — graph-led structure)"
+  - "CFP_4.4.20_SectionGuidance_SP3.md (v5 — graph-led + research-paper combined)"
   - "SP-3 draft"
 source_conversations:
   - session: "SID-20260402-105621"
@@ -17,6 +17,10 @@ source_conversations:
   - session: "SID-20260402-165839"
     exported_as: ""
   - session: "SID-20260403-213917"
+    exported_as: ""
+  - session: "SID-20260404-103931"
+    exported_as: ""
+  - session: "SID-20260405-094022"
     exported_as: ""
 related:
   - "CFP_5.2.2_pdl_appendix_v3.md (predecessor — appendix-oriented design, partially superseded)"
@@ -462,6 +466,80 @@ And the framing instruction:
 
 ---
 
+### PDL-022: CFP phase included in corpus; graph-led structure restored and combined with research-paper depth
+
+| Field | Value |
+|-------|-------|
+| Date | 2026-04-04 |
+| Session | SID-20260404-103931 |
+| Authored by | User (three decisions) + Opus (guidance rewrite) |
+
+**Context:** The guidance (CFP_4.4.20 v4) still excluded CFP-prefixed files from the corpus and treated Phase 3 as a placeholder the drafter would characterize from the outside. Meanwhile, the CFP chain walk (PDL-020, SID-20260403-213917) had already read the full CFP corpus and produced substantive findings (CFP_5.3.18). Separately, the graph-led structure from PDL-013 — figures as narrative spine, prose unpacking what each figure shows — had been dropped when SP-3 was reconceived as a research paper (PDL-017). The user judged that the graph-led approach made SP-3 more readable and should be brought back.
+
+**Human decision 1 — CFP phase is no longer excluded:**
+
+> "CFP phase is no longer excluded."
+
+The PDL-017 exclusion ("files prefixed CFP_ are excluded — the CFP adaptation is still in development") and the PDL-018 placeholder plan ("leave an explicit placeholder for CFP phase") are both superseded. The CFP corpus has been walked (PDL-020); its findings are consolidated in CFP_5.3.18 and CFP_5.3.13 §13. The drafter works from these consolidated findings; all three phases are covered.
+
+**Human decision 2 — combine graph-led structure with research-paper depth:**
+
+> "The guidance should use the graphs. The idea of writing around the graph was a good one, but that artifact had a lot of good ideas that make SP3 better to read. The two should be combined."
+
+The PDL-013 approach (figures as structural anchors, each section built around a visual) and the PDL-017 approach (research paper with depth, no length constraint, philological methodology) are combined. Each major section gets an anchor figure; the prose introduces the figure, lets the reader look, and unpacks what it shows. The result is a research paper that reads visually — depth and accessibility together.
+
+**Human decision 3 — no bloated language:**
+
+> "Don't use bloated language like 'format field effect'."
+
+Added to Must Avoid: do not coin labels for findings. Describe what was observed plainly. Say "modlogs with a user-feedback field capture endorsement evidence 89% of the time; those without capture it 2%" — not "the format field effect."
+
+**Impact:** CFP_4.4.20 rewritten as v5. Three changes from v4:
+
+1. **Corpus scope:** All three phases included. The exclusion rationale removed. The methodology section notes that research was completed across prior sessions; the drafter reads the briefing and chain walk findings first, returns to source files for depth.
+
+2. **Structure:** Each section mapped to an anchor figure. Section–figure mapping table added. The figures carry the narrative; the prose unpacks them. A reader who saw only the figures and captions should grasp the main story. Visual specifications from CFP_4.7.14 integrated directly.
+
+3. **Phase 3 content:** Rewritten from a placeholder characterization into a substantive research section with ten numbered findings from the CFP chain walk (CFP_5.3.18), organized under three headings: writing complexity, artifact capture, technological affordances. These are drafting instructions, not research notes — the drafter must narrate them as Phase 3 evidence.
+
+**What is superseded:** PDL-017's CFP exclusion; PDL-018's CFP placeholder plan; the v4 guidance's passive treatment of figures ("available as evidence, placed where the drafter decides"). The PDL-013 graph-led structure is restored in combination with PDL-017's research-paper methodology.
+
+**What carries forward unchanged:** Research question (PDL-017); philological approach; three-phase structure; Must Avoid list (extended with the no-labels rule); honest assessment; error typology (corrected per PDL-016); briefing/guidance split (PDL-019).
+
+**What is also superseded:** PDL-017's "full corpus reading requirement" as a drafting-time instruction. The corpus was read jointly by the author and Claude across nine research sessions. The drafter works from the consolidated findings (CFP_5.3.13, CFP_5.3.18), consulting source files only to clarify specific doubts.
+
+---
+
+### PDL-023: Stage III I/O analysis complete; infrastructure requirements as empirical findings
+
+| Field | Value |
+|-------|-------|
+| Date | 2026-04-05 |
+| Session | SID-20260405-085500 (research), SID-20260405-094022 (integration) |
+| Authored by | User (framing correction) + Opus (trace + guidance rewrite) |
+
+**Context:** The Stage III input/output analysis (CFP_4.7.19, SID-20260405-085500) mapped all 6 sessions and 15 artifacts. An initial draft framed the gaps as "incomplete infrastructure" and narrated the user's developing skill with Claude Code. The user corrected this: MHC-start and CLAUDE.md were in place; errors in field names and missing SIDs are routine session errors, not infrastructure immaturity; SP-3 should not tell the story of the user learning to use Claude.
+
+**Human decision — infrastructure in development, not user learning curve:**
+
+The user reframed the Stage III findings: both the failed draft (no commit, no export) and the session errors (non-standard fields, missing SIDs) are instances of infrastructure that was still being developed. The useful thing for SP-3 is not narrating the development, but noting what each missing element was for. Each gap is a concrete case where a specific infrastructure component — had it been in place — would have preserved something now lost or requiring reconstruction.
+
+The user also identified that the failed draft would have been fully recoverable via `git show` if a commit had been made. This is not a structural limitation of the methodology; it is a missed step. The JSONL for that session is also gone.
+
+**Impact:** CFP_4.4.20 updated to v6. Phase 2 section rewritten:
+
+1. **Removed:** "incomplete infrastructure" narrative, "user compensated manually," toolkit feature comparison (no session IDs, no CLAUDE.md, non-standard fields presented as evidence of MHC-W immaturity).
+
+2. **Added:** Infrastructure requirements table — four concrete cases (no commit, no export, no session ID, unexecuted design) with what each gap means for traceability. Framed as empirical findings, not apology.
+
+3. **Added to Must Include / What the Research Must Cover:** the infrastructure requirements table as a required element of SP-3's Phase 2 narrative.
+
+**What is superseded:** The v5 Phase 2 section's framing of Stage III as a story of toolkit immaturity and user compensation.
+
+**What carries forward unchanged:** Everything else from PDL-022 (three-phase corpus, graph-led structure, no bloated language, consolidated research basis).
+
+---
+
 ## Open design questions
 
 - Drafting sequence: SP-1 first (shortest), SP-2 next (structural), SP-3 last (depends on the other two)? — likely yes, but SP-3 can begin in parallel given briefing readiness
@@ -470,5 +548,5 @@ And the framing instruction:
 ---
 
 *PDL generated: 2026-04-02*
-*Last updated: 2026-04-03 (PDL-019 added, session SID-20260403-213917)*
+*Last updated: 2026-04-05 (PDL-023 added, session SID-20260405-094022)*
 *Workflow: Design | Command: MHC-PDL*
