@@ -12,7 +12,7 @@ inputs:
   - CFP_5.3.6_CoworkFindings_ArtifactLinks.md
   - CFP_5.3.12_Note_SP3_PhaseSummary_WorkingTrace.md
   - CFP_5.3.3_Note_MetadataReportingStructure.md
-last_updated: SID-20260403-213917
+last_updated: SID-20260405-085500
 purpose: "Consolidated entry point for any Claude session drafting SP-3. Synthesises findings from multiple research sessions so the writer does not need to read all source files before starting. Read this first; go to source files for depth."
 contributing_sessions:
   - "SID-20260401-000000 (V1/V2 metadata audit → CFP_5.3.5)"
@@ -24,6 +24,7 @@ contributing_sessions:
   - "SID-20260403-163539 (PreliminaryChat chain verification → CFP_5.3.17)"
   - "SID-20260403-170017 (contradiction analysis; CFP_5.3.17 completed; this briefing updated)"
   - "SID-20260403-213917 (§1–§8 audit against §10–§12 findings; 17 corrections applied; §13 CFP chain walk findings added)"
+  - "SID-20260405-085500 (Stage III input/output analysis; §14 added; CFP_4.7.19 produced)"
 source_v1v2_chats_analyzed:
   - "e5ec43be-0e81-4fdb-946a-4286bfc743d6 (JPEP whole paper audit, Oct 18 2025)"
   - "ffea5b8a-9c81-46c9-bb3c-8138d45c8eec (JPEP consolidated 2 writing)"
@@ -421,3 +422,58 @@ The PreliminaryChat cluster (4.7.3 / 4.7.4 / 4.7.5) was investigated for chain i
 4. **Correctability, not completeness.** Multiple corrections during chain walks demonstrate the record improves through correction, not initial perfection. SP-3's adequacy argument should rest on correctability — errors can be found and fixed — not on an impossible claim of initial completeness.
 
 → *Source: `CFP_5.3.18_Note_CFPChainWalk_Findings.md` (full analysis with per-finding citations)*
+
+---
+
+## 14. Stage III input/output analysis — the framework adoption phase (added SID-20260405-085500)
+
+*This section records findings from a systematic analysis of all 15 III_-prefixed artifacts, their 6 source sessions, and 14 exported conversations. Full analysis in `CFP_4.7.19_EpistemicTrace_StageIII_InputOutputAnalysis.md`.*
+
+---
+
+### Session inventory
+
+Stage III spans January 24 – March 2, 2026 across 6 sessions producing 15 artifacts. One additional undocumented session (January 28, failed Section 6 draft) is known only from secondary evidence.
+
+| Session | Date | Key outputs | Conversation? |
+|---------|------|------------|---------------|
+| SID-20260124-000000 | Jan 24 | III_4.7.1 (MHC trace) | **No** — irrecoverable |
+| SID-20260126/20260202-115248 | Jan 26 – Feb 2 | III_5.3.5, III_5.2.1, III_4.4.4, III_4.4.5, III_4.7.2, III_5.4.1 | Yes (single export spans /clear boundary) |
+| SID-20260202-184000 | Feb 2 | III_5.2.2, III_4.4.6, III_4.2.12 | Yes — **first MHC-start in JPEP** |
+| (undocumented) | Jan 28 | Failed Section 6 draft (overwritten) | **No** — no export, no hub |
+| SID-20260302-152952 | Mar 2 | III_4.7.3, III_5.4.2, III_4.2.13 entries | Yes |
+| SID-20260302-190708 | Mar 2 | III_4.7.4 | Yes — bridge to CFP phase |
+
+### MHC-W adoption
+
+The documentation workflow toolkit (then called "MHC-prototype") was first used in JPEP on February 2, 2026. Commands used: MHC-start, MHC-PDL, MHC-modlog, MHC-prompt. The toolkit was incomplete during Stage III:
+
+- **No session IDs generated** — all Stage III SIDs were reconstructed retrospectively
+- **No CLAUDE.md auto-loading** — the user manually directed Claude to read MHC files
+- **Non-standard frontmatter fields** — `inputs_for_drafting_ai` instead of `inputs`; `ref1`–`ref7` instead of flat lists; no `feeds_into` field on any artifact
+- **No hub infrastructure** — all Stage III hubs were created retrospectively (April 2026)
+
+**For SP-3:** This transitional state is itself evidence. The framework was adopted incrementally, not imposed all at once. The earlier, less-structured documentation is still recoverable because certain features (Claude Code file access, conversation exports, artifact structure) were already in place.
+
+### Documentation gaps
+
+1. **SID-20260124-000000** — the initial MHC framework reading (Claude.ai web). No conversation export found. The session's reasoning is irrecoverable.
+2. **January 28 failed Section 6 draft** — no export, no hub, no JSONL identified. Known only from III_4.2.13 Entry 1 and III_4.4.5 revision timestamp.
+3. **No Section 7 v3 draft** — guidance (III_4.4.6) and PDL (III_5.2.2) designed; execution deferred to CFP phase.
+4. **No v3 integrated paper file** — Phase 4 of III_5.3.5 never executed; superseded by CFP adaptation.
+5. **Frontmatter inconsistencies** — non-standard field names across 10+ artifacts; output declarations missing from 12 of 15 files; no feeds_into links.
+6. **Stale cross-reference** — III_5.2.2 `output_completed` still points to III_4.1.2 (reclassified to III_4.4.6).
+
+### Key findings for SP-3 Phase 2 narrative
+
+1. **Platform shift enables the framework.** Stage III coincides with the shift from Claude.ai web to Claude Code. This is not incidental — Claude Code's file access enables the documentation architecture.
+
+2. **The failed draft is evidence.** The January 28 failure (Opus 4.5) → guidance revision → successful redraft (Sonnet 4.6, March 2) shows iterative model selection and guidance refinement. The failure is documented only through secondary evidence.
+
+3. **The SP reconception emerged from practice.** III_4.7.3 was not planned — the steering note (III_5.3.5) does not anticipate it. It emerged during the Section 6 redraft. This supports the paper's Section 6.3 argument.
+
+4. **Incomplete execution is normal.** Three sections planned; two executed; one deferred. The v3 integration plan superseded by CFP. This is the normal trajectory of research work.
+
+5. **Multi-model delegation begins.** Sonnet for metadata rewrites and drafting; Opus for analysis and review. First evidence of the multi-model pattern that becomes standard in CFP phase.
+
+→ *Source: `CFP_4.7.19_EpistemicTrace_StageIII_InputOutputAnalysis.md`*
