@@ -3,47 +3,84 @@ artifact_type: section_guidance
 document_type: Type 4 - Section Guidance
 label: CFP_4.4.20_SectionGuidance_SP3
 project: JPEP CFP Adaptation
-version: v6
-date: 2026-04-05
-session_id: SID-20260405-094022
+version: v7 (synthetic merge — story spine + thin figure callouts)
+date: 2026-04-07
+session_id: SID-20260407-181422
 source_conversation:
-  - SID-20260404-103931
-  - SID-20260405-094022
+  - SID-20260407-181422
 inputs:
-  - "CFP_5.2.4_pdl_SP1_SP2_SP3.md (PDL-004 through PDL-022)"
+  - "CFP_4.7.20_EpistemicTrace_Section6History.md (Section 6 throughline data)"
+  - "CFP_5.4.9_Section7_v3.md (paper Section 7 — defines the goals SP-3 must serve)"
+  - "CFP_5.2.4_pdl_SP1_SP2_SP3.md PDL-024 (decision: thin guidance + draft-first refine workflow)"
   - "CFP_5.3.13_Note_SP3_WriterBriefing.md (research findings — read first)"
+  - "CFP_5.3.18_Note_CFPChainWalk_Findings.md (CFP-phase chain walk findings)"
+  - "CFP_4.7.19_EpistemicTrace_StageIII_InputOutputAnalysis.md (Stage III I/O + infrastructure findings)"
   - "CFP_5.3.15_Note_OriginStoryForSP3.md (origin layer narrative)"
   - "CFP_5.3.17_Note_PreliminaryChat_ChainVerification.md (PreliminaryChat chain)"
-  - "CFP_5.3.18_Note_CFPChainWalk_Findings.md (CFP-phase chain walk findings)"
-  - "CFP_4.7.13_EpistemicTrace_SP3DesignBrainstorm.md"
-  - "CFP_4.7.14_EpistemicTrace_SP3VisualDesign.md (figure specifications + production plan)"
-  - "CFP_4.7.8_EpistemicTrace_SelfReferentialDocumentation.md"
-  - "CFP_5.3.7_SelectedGraphCandidates.md"
-  - "CFP_5.3.1_WorkPlan_CFP_Adaptation.md"
-  - "CFP_4.7.19_EpistemicTrace_StageIII_InputOutputAnalysis.md (Stage III I/O analysis + infrastructure findings)"
-  - "III_4.7.3_MHC_Tracing_SP_Reconception.md"
-  - "CFP_5.2.2_pdl_appendix_v3.md"
+  - "III_4.7.3_MHC_Tracing_SP_Reconception.md (SP reconception)"
 output_file: ""
 validated: ""
 validation: ""
-supersedes: "CFP_4.4.20_SectionGuidance_SP3.md v5 (2026-04-04; Stage III section lacked infrastructure-requirements framing)"
+supersedes:
+  - "CFP_4.4.20_SectionGuidance_SP3.md v6 (2026-04-05; replaced by Section 6 throughline + draft-first workflow per PDL-024)"
+  - "CFP_4.4.17_Guidance_SelectedGraphSpecifications.md (graph-spec separation eliminated; figure detail moves to consolidated note)"
 ---
 
-# Section Guidance: SP-3 — Documentation Account
+# Section Guidance: SP-3 — Documentation Adequacy Account
+
+*Synthetic merge. Story spine and figure callouts only. Layout, label, and data details for figures live in the consolidated figure-data note (CFP_5.3.X). Section 6 history is canonical in CFP_4.7.20.*
 
 ---
 
-## Purpose Statement
+## Purpose
 
 SP-3 is a research paper in its own right — a dissertation-chapter-length study that uses the JPEP documentation archive as its primary source.
 
 **Research question:** What role did the human author play in JPEP, and how did that role evolve as a function of the changing technological infrastructure?
 
-**Connection to the paper body:** Section 3 argues that the way philosophy is produced — and with it the role of the author — is changing. SP-3 is a case study: the first-person, documented account of what that change looked like from the inside. An older version of the paper also traced how the interaction itself evolved — from prompting and refining outputs, to designing documentation architectures and methodology. SP-3 should trace this evolution as part of its research narrative.
+**The goals SP-3 must serve are defined in the paper's Section 7.** Section 7 specifies that documentation is adequate when it enables evaluators to answer three questions:
 
-**What SP-3 is not:** SP-3 is not a document-type index (SP-2 handles that), not a high-level AI-usage declaration (SP-1 handles that), and not a defence of the record against anticipated objections. SP-3 is research: it reads the archive, reports what it finds, and interprets it.
+1. **Attribution.** Can evaluators locate where human judgment operated — what directions were set, what choices made, where did the work depart from AI-generated material and why?
+2. **Intellectual trajectory.** Can evaluators follow how the work developed — the sequence of questions posed, the moments of revision and redirection, the emergence and testing of key ideas, what was retained under pressure?
+3. **Understanding and endorsement.** Does the documentation give reason to believe the author understood and endorsed what they present — corrections to AI outputs, places where authorial judgment overrode AI suggestion, capacity to explain and defend the argument?
 
-**How SP-3 reads:** The figures carry the narrative. Each major section is anchored by a visual — the prose introduces the figure, gives the reader time to look, and then unpacks what it shows. This is a research paper with depth, not a slideshow — but the figures are the spine, not decoration. A reader who looked only at the figures and their captions should grasp the main story.
+SP-3 is the part of the paper's supplementary materials where the author argues that the JPEP record satisfies these three criteria. Section 7 explicitly invites the community to assess whether SP-3's tracing claim is supported by SP-4 and SP-5. SP-3 is the bridge.
+
+**What SP-3 is not:** SP-3 is not a document-type index (SP-2 handles that), not a high-level AI-usage declaration (SP-1 handles that), not a defence against anticipated objections, and not a development story. It is research: it reads the archive, reports what it finds, interprets it.
+
+---
+
+## How SP-3 reads — the Section 6 throughline
+
+**SP-3 follows the history of one section — Section 6 — from first writing to current state, as the illustrative case for the three Section 7 criteria.**
+
+The reader meets a single concrete case and walks it from beginning to end across two technological regimes and five distinct production stages. They do not have to build a separate mental model for every section in the archive. The throughline IS the argument: by following Section 6, the reader exercises attribution, trajectory, and understanding-and-endorsement on a real case, including its failure modes.
+
+Section 6 is the right illustrative example for four converging reasons:
+
+1. **It carries the central theoretical move.** Section 6 integrates Santoni de Sio & van den Hoven's meaningful human control framework into the paper's argument. It is the section the rest of the paper leans on.
+
+2. **It self-instantiates the paper's argument.** §6.3 makes the methodological claim that documentation practice produces its own requirements — and that claim was *empirically generated* by the experience of writing Section 6 itself. The SP reconception (III_4.7.3, 2026-03-02) emerged inside the Section 6 redraft session. The illustrative example is the paper's argument.
+
+3. **Its history exercises every kind of evidence the documentation system produces.** Across five stages: parallel prompt steering with mid-course correction from a sideways chat (Stage 1); a cross-section feedback loop from the appendix into §6.2 (Stage 2); a failed draft, model switch, and SP reconception (Stage 3); a three-draft session with two reviewers and a 13-entry modlog (Stage 4); a redundancy compression pass (Stage 5).
+
+4. **It contains exactly one ghost.** The Jan 28 lost draft is the only irrecoverable item in the Section 6 history. This is a clean, scoped, acknowledgeable limit case for the "where the record falls short" requirement — not a defining failure of the system.
+
+The full data for the throughline is consolidated in **CFP_4.7.20_EpistemicTrace_Section6History**. Drafters do not need to re-do the philological work; CFP_4.7.20 is canonical for Section 6 facts, dates, UUIDs, and stage transitions.
+
+### Reader background — required before the throughline starts
+
+Before the first figure, SP-3 gives the reader a short paragraph (≤150 words) that:
+
+- Says **what Section 6 is about** (one or two sentences: it argues that mandated transparency requires specified frameworks; it integrates meaningful human control; §6.3 claims documentation practice produces its own requirements).
+- Says **why following its history is worth their time** (one sentence: it lets the reader exercise the three Section 7 criteria on a single concrete case across six months and two technological regimes).
+- Tells them **what to look for** (one sentence: as you read this history, ask yourself the three questions; the figures will help you see the answers).
+
+This background is not optional. Without it, the throughline reads as parochial.
+
+### The other sections are not abandoned
+
+The Section 6 throughline does not mean other sections vanish from SP-3. Other sections are referenced *in support* of claims grounded in Section 6 — to show that the patterns visible on Section 6 recur, that Section 6 is the densest worked example rather than an exception. The synthesis figure (Figure 6) zooms back out to the whole project to make this explicit. The CFP chain walk findings (CFP_5.3.18) and the Stage III infrastructure requirements (CFP_4.7.19) provide the cross-section material the prose draws on.
 
 ---
 
@@ -59,7 +96,7 @@ Artifacts and conversations are complementary evidence sources with different st
 
 ### Research basis
 
-The corpus was read in full across nine research sessions (SID-20260401 through SID-20260404) conducted jointly by the author and Claude. The v1/v2 and Stage III findings are consolidated in `CFP_5.3.13` (writer briefing, §1–§13). The CFP-phase findings are in `CFP_5.3.18` (chain walk note). The drafter works from these two documents; individual source files may be consulted to clarify specific doubts, but a fresh corpus pass is not required or expected.
+The corpus was read in full across nine research sessions (SID-20260401 through SID-20260404) conducted jointly by the author and Claude. The v1/v2 and Stage III findings are consolidated in `CFP_5.3.13` (writer briefing). The CFP-phase findings are in `CFP_5.3.18` (chain walk note). The Section 6 throughline data is consolidated in `CFP_4.7.20` (Section 6 history trace). The drafter works from these three documents; individual source files may be consulted to clarify specific doubts, but a fresh corpus pass is not required or expected.
 
 ### The corpus and its structural history
 
@@ -71,240 +108,131 @@ Three structural moments matter:
 
 2. **Stage III reconception** (2026-03-02, documented in `III_4.7.3_MHC_Tracing_SP_Reconception.md`): the reproduction test was rejected on three grounds (technological infeasibility, scholarly time-scale, the romantic-author assumption). SP roles were reconceived around documentation adequacy. The key formulation: *"Does the documentation adequately show how the intellectual trajectory traces to human understanding and direction?"* The old appendix sections mapped to new SP roles: A.1–A.3 to SP-3, A.4–A.5 to SP-2.
 
-3. **CFP appendix elimination** (2026-04-02, documented in `CFP_5.2.4_pdl_SP1_SP2_SP3.md` PDL-004): the appendix was eliminated entirely. SP-1/2/3 absorb all its functions. No section of the paper body references "Appendix A." The last design iteration still called "Appendix A v3" (`CFP_5.2.2_pdl_appendix_v3.md`) was superseded by this decision.
+3. **CFP appendix elimination** (2026-04-02, documented in `CFP_5.2.4_pdl_SP1_SP2_SP3.md` PDL-004): the appendix was eliminated entirely. SP-1/2/3 absorb all its functions.
 
 This structural history is itself part of the research evidence: the archive documents its own architectural decisions, and the artifacts proving those decisions are citable. The drafter should present this history as methodology — explaining what the corpus is and why it is structured as it is — not as a prefatory orientation block.
 
-### Drafting process
+### Drafting process — draft-first refine workflow
 
-1. Read the briefing (CFP_5.3.13) and CFP chain walk findings (CFP_5.3.18). Consult source files only to clarify specific doubts.
-2. Write a long draft — no length constraint. Structure around the figures (see Proposed Structure below).
-3. Re-read and revise.
-4. Produce final SP-3.
+PDL-024 establishes the workflow: draft SP-3 prose with concrete `[FIGURE N — purpose, what it must show]` placeholder blocks at each anchor point. Placeholders are specific enough that the prose unfolds around them (introduces, gives the reader time to look, then unpacks) but abstract enough that visual details emerge from what the prose actually needs. Each figure is drawn once, against stable surrounding prose, instead of multiple times against guesses. Figures that prove unnecessary when the prose is on the page are dropped without preciousness; figures that become obvious mid-drafting are added.
 
----
+Sequence:
 
-## Proposed Structure
-
-SP-3 is a research paper structured around its figures. Each major section is anchored by one or two visuals that carry the narrative claim; the prose introduces the visual, lets the reader look, and unpacks what it shows. The structure below maps sections to their anchor figures. The drafter may adjust the sequence if the research demands it, but every section should have a visual anchor.
-
-### Opening — the archive at a glance
-
-**Anchor figure: Date Histogram (Visual 7).** Artifact creation dates, bars colored by phase (v1/v2, Stage III, CFP). Two dramatic spikes — 33 artifacts in Oct 13–19 2025, 24 artifacts on Apr 1 2026 — with a gap between them. The visual tells the story before the prose begins: bursts, silence, resumed activity with different tooling.
-
-State the research question. Introduce the archive as the primary source. The histogram is the first evidence: this is what the archive looks like as data.
-
-### Methodology
-
-The philological approach. The corpus description, including the structural history (appendix, SP reconception, appendix elimination). The research methodology: joint author–AI reading across nine sessions, consolidated into briefing and chain walk findings. The conditions for successful retrospective reconstruction (from `CFP_4.7.8`): surviving identifiers, accessible conversations, sufficient internal structure for hypothesis generation, human judgment layer. Two evidence sources: artifacts preserve structure and scope; conversations preserve agency and provenance; neither alone suffices.
-
-### Phase 0: Origin layer — before the documentation framework
-
-The intellectual origin of JPEP predates the documentation framework. SP-3 must narrate this honestly as the starting condition. The chain: Chat X (UUID unknown, true origin of the publishing-barriers argument) → 6c8d9101 (Oct 10, Claude Sonnet 4.5 extended — the ur-conversation, where costly signaling, transparency paradox, and laundering were first named) → da6a830c (49 turns, anonymized, public — developed these into a full venue-design proposal) → 5.3.21 (Claude's anonymized extraction at end of da6a830c, pasted into 2ca5888a) → 4.1 (Claude synthesized 5.3.21 into the Complete Prompt, human endorsed).
-
-**Key provenance fact:** 4.1 (Complete Prompt) is human-sourced, Claude-synthesized, human-endorsed — not human-composed. Every subsequent writing session operated within a framework the human directed and Claude structured. 4.7.1 is an incomplete extract of da6a830c that ends mid-sentence; it served as a register-calibration artifact.
-
-**Privacy constraints:** 6c8d9101 is gitignored (not anonymized). Chat X's UUID is unknown. SP-3 can cite both via hubs and characterise their content via CFP_4.7.16 and CFP_5.3.15, but cannot point readers to the conversations themselves. da6a830c is available anonymized.
-
-See: CFP_5.3.13 §10–§11, CFP_5.3.15.
-
-### Phase 1: v1/v2 — Plan-driven writing
-
-**Anchor figure: Feedback Loop (Visual 3).** Small diagram (4–5 nodes) showing the appendix → Section 6 revision cycle. Artifact IDs annotated: 4.2.11, 4.4.13, 4.2.9 MOD-009. The visual point: the documentation framework is recursive — the appendix about transparency revealed constraints that changed what the paper says about transparency. A circle, not a line.
-
-Tools: Claude.ai web + ChatGPT. Session IDs not established. The Complete Prompt (4.1 — see Phase 0 for its provenance) governed writing of Sections I–VI. Ontology co-development: the Type 2b category emerged from practice, not from pre-planning (evidence: `5.3.1` and `4.4.3` share `source_chat_id: 30a52e69`). The feedback loop: appendix written after the paper body, then fed back into Section 6 revision (evidence: `4.2.11`, `4.4.13`, `4.2.9` MOD-009). The self-philology story: Word/RTF to Canonical Markdown conversion, chat logs as primary ground truth for metadata reconstruction.
-
-**Input routing:** 4.1 and 4.7.1 recurred across multiple writing sessions as shared context; guidance files (4.4.x) — full session-initiation prompts with explicit success criteria — were the operational grounding for each writing session. Section VIII involved a documented multi-AI cycle: Claude wrote the section, a ChatGPT GPT-5 Thinking session produced targeted revisions to §6.5, the author applied the revisions manually.
-
-**Author role in Phase 1:** prompt author and content reviewer. The human wrote prompts, evaluated outputs, and directed revisions — but within a framework the human had designed (via 4.1). Documentation was not a conscious activity; it was a byproduct of using the tools.
-
-### Phase 2: Stage III — Theoretical reorientation and infrastructure in development
-
-**Anchor figure: Contrast Diptych (Visual 4).** Two panels side by side — same section (Introduction), same author, same topic. Left panel (v1/v2): ghost nodes (null chat ID, unarchived intermediate states), no hub, sparse. Right panel (CFP): session hub, named inputs, related_documents links, epistemic trace connection, dense. The visual point: the documentation difference comes from having a framework, not from having different intentions.
-
-Stage III is where the intellectual content and the documentation infrastructure transform together. Meaningful human control theory integrated into the paper (Section 6). The essentially-contested-concept argument entered (Section 3). The reproduction test rejected and the documentation-adequacy model adopted — these are not separate events but emerged from the same session (`III_4.7.3`, 2026-03-02). The SP reconception emerged from practice during the Section 6 redraft, not from advance planning — supporting the paper's argument (Section 6.3) that documentation practice produces its own requirements.
-
-**Input/output chain (6 sessions, 15 artifacts):** External sources (Santoni de Sio 2016/2018, Lloyd 2025, Gallie 1956, paper v1) → PDL and guidance documents → section drafts (Sections 3 and 6 only; Section 7 designed but deferred) → modlogs. Multi-model orchestration begins here: Sonnet for metadata tasks, Opus for analytical discussion, then a model switch after a failed draft (Opus 4.5 → Sonnet 4.6 for Section 6). See `CFP_4.7.19` for the full input/output analysis.
-
-**Infrastructure requirements — empirical findings from the Stage III record.** The recording infrastructure was in development during Stage III. The gaps in the record show concretely what each infrastructure component is for:
-
-| Missing component | Consequence in the record | What it tells you about traceability |
-|---|---|---|
-| No git commit around failed Section 6 draft (Jan 28) | Defective draft overwritten; intermediate state irrecoverable. Known only from modlog entry (III_4.2.13 Entry 1) and guidance revision timestamp. | **Version control preserves intermediate states**, including failures. A commit before or after the session would have made the defective draft recoverable via `git show`. |
-| No conversation export (Jan 28; also SID-20260124-000000) | Reasoning behind the failure and the guidance revision is lost. The artifact record preserves the *fact* of the failure, not the dialogue. | **Conversation exports preserve reasoning and agency attribution** — who identified the problem, how the decision to revise was reached. |
-| No session IDs generated by MHC-W | Session-to-artifact links required retrospective reconstruction via content-matching and timestamps. | **Session identification enables automated traceability.** Without it, every session link is a manual research act. |
-| Unexecuted Section 7 design (III_4.4.6) | Guidance and PDL created but no draft produced. Metadata captures this through absence: no `output_completed`, no matching draft file, steering note never included Section 7 in its plan. | **Metadata preserves negative evidence** — what was planned but never done, and the surrounding context that explains why (the CFP reconception redirected priorities). |
-
-These are not errors to narrate apologetically. They are empirical evidence about what a traceability infrastructure requires — derived from the actual record, not from theory. Each row is a concrete case where a specific infrastructure element, had it been in place, would have preserved something that is now lost or required reconstruction. The drafter should present these as findings, connected to the paper's argument that mandated transparency without specified frameworks produces different results than transparency with them.
-
-**Author role in Phase 2:** evolving toward architectural design. The human was no longer only prompting and reviewing outputs but designing the documentation infrastructure itself — the SP structure, the metadata conventions, the tracing condition.
-
-### Phase 3: CFP — Prospective documentation and its surprises
-
-**Anchor figure: Version Chain (Visual 5).** Section 6, three CFP drafts with `derived_from` links, a modlog with 13 entries, a session hub. The visual point: three versions in one session, each addressing specific philosophical problems identified in the prior version. This is what documentable intellectual trajectory looks like concretely.
-
-**Second anchor: Hub Fan-Out (Visual 8).** Artifacts per session, sorted descending, colored by phase. Busiest session: SID-20260401 (11 artifacts). Typical v1/v2 session: 2–4 artifacts. The asymmetry is the visual argument: same author, different framework, different documentation yield.
-
-The CFP phase is now part of the corpus. The chain walk (SID-20260403-213917, findings in CFP_5.3.18) read 12 modlogs, 13 traces, 17 notes, 4 PDLs, 19 section drafts, 7 guidance documents, and 22 hub files. The findings below are what the drafter must narrate for this phase.
-
-**What the CFP rewriting process reveals about AI-assisted writing:**
-
-1. **Non-linear argument development.** Arguments that look locally sound can be structurally wrong in context. The cognitivist-objection reply had a "first component" that survived through planning, Introduction draft, and Section 3 draft — until an Opus structural review confirmed the user's suspicion it was a non sequitur (CFP_4.7.7). Cutting it modified six files. The artifact record preserves the fact it was cut, but the moment it became visible as a problem lives in conversation.
-
-2. **Cascading cross-section dependencies.** The double contestation implementation (CFP_4.2.21) modified all seven paper sections in sequence, plus author review, simulated reviewer letter, and fixes — in one session. Argument-level changes cannot be localized: adding Level 2 (ethical/authenticity) required touching every section because each contained claims that now needed to serve two justificatory routes.
-
-3. **Redundancy as a structural consequence of modular writing.** The redundancy pass (CFP_4.2.22) found core claims stated 5 times each across sections. Three-pass editing achieved ~28% reduction. This is not primarily LLM stylistic verbosity — it is what happens when each section is drafted in a separate session with its own guidance document. The modularity that enables human control (each section gets its own prompt, its own review) produces redundancy that requires a cross-paper editing pass. That pass is a structural necessity of the methodology, not optional polish.
-
-4. **Expansion-then-contraction.** Across 19 draft versions, first drafts expand (argument, examples, scaffolding), later versions compress (cut signposting, hedging, redundancy). Net paper length barely changed (+2%) despite massive internal restructuring. New content (double contestation, self-expression, artistic parallels) was paid for by cutting boilerplate. Compression concentrated at the edges (Introduction −32%, Section 2 −21%); core sections maintained or grew (Section 3 +6%, Section 7 +7%).
-
-5. **Major argument direction changes.** At least three: Section 4 cut entirely + Section 5 derivation changed from institutional to normative (CFP_4.7.6); self-expression/authenticity argument developed from trace through PDL to cross-paper implementation (CFP_4.7.11 → CFP_4.4.19 → CFP_4.2.21); meta-ethical route narrowed to expressivism only after the user found constructivism and particularism arguments unconvincing (CFP_4.2.22 MOD-R1). The artifacts preserve the trajectory of these changes — what they do NOT preserve is the full reasoning behind user interventions (that lives in conversation).
-
-**What the CFP phase reveals about artifact capture:**
-
-6. **Corrections are ad hoc, not systematic.** CFP_4.7.8 carries a correction_note in frontmatter; date errors in 4.2.3 survived until explicit audit. The record self-corrects over time, but corrections are driven by human audit, not system design. Errors persist until someone looks for them.
-
-7. **Template design determines what gets captured.** Modlogs with a "User Feedback/Decision" field capture endorsement evidence 89% of the time; those without capture it 2% of the time (CFP_5.3.9). This is not a quality difference between authors or sessions — it is what happens when the template asks for something versus when it does not. For SP-3: documentation design shapes what gets recorded, independent of conscientiousness. This is the strongest empirical finding for the paper's argument that mandates without frameworks produce different results than specified frameworks.
-
-**What the CFP phase reveals about technological affordances:**
-
-8. **Claude Code enables cross-paper operations.** The double contestation session (CFP_4.2.21) executed 8 implementation steps writing directly to files. This would have required 8+ copy-paste operations in a web session. The platform affordance changes what kinds of revision are attempted, not just how fast they happen.
-
-9. **Multi-model workflow as quality control.** Sonnet for drafting, Opus for structural review. The non-sequitur case (CFP_4.7.7): Sonnet draft preserved the error; Opus confirmed the user's diagnosis. Different models in different roles, orchestrated by the human.
-
-10. **Context exhaustion produces documentation.** The origin chain (6c8d9101 → da6a830c → 5.3.21 → 2ca5888a → 4.1) exists because context limits required manual extraction across sessions. The extraction acts created artifacts (5.3.21, 4.1) that would not exist in an unlimited-context scenario. Technological constraints can produce documentation.
-
-**Author role in Phase 3:** methodology designer and philologist. The human designs the workflow, steers the documentation architecture, and — in producing SP-3 itself — becomes the philologist of the archive the human built.
-
-### Honest assessment
-
-What the record covers and does not. Error typology: platform-driven gaps (no export, no session ID in early phases), user-driven errors (forgetting to activate automation already created), reconstructable gaps (session IDs recovered via content-matching and timestamps), irrecoverable losses (Chat 1 deleted; 6c8d9101 gitignored). Design-for-reconstructability as the normative lesson: the v1/v2 reconstruction succeeded because certain features (stable UUIDs, sufficient artifact structure) were already in place. The CFP reconstruction succeeded because the infrastructure had matured. Both required reconstruction; both succeeded because the archive structure enabled it — not because one phase was better or worse than the other.
-
-Correctability, not completeness: the documentation record improves through correction (chain walk corrections to CFP_5.3.13, correction_note on CFP_4.7.8, date fixes in 4.2.3), not through initial perfection. SP-3's adequacy argument rests on the fact that errors can be found and fixed, not on a claim that the record was right the first time.
-
-Self-referentiality: applying the paper's own criteria to its own record produced findings not available from theoretical analysis — the self-philology concept, four conditions for reconstruction, the correction_note mechanism. The record is an instance of the problem the paper analyses (CFP_4.7.8), not a solved example.
-
-Platform affordances and limitations: what each platform (Claude.ai web, ChatGPT, Claude Code) made possible and what it did not, and how this shaped the archive (PDL-010). The entire reconstruction depends on vendor-specific affordances — Claude.ai retaining conversation history under stable URLs. The documentation framework's feasibility depends on platform decisions outside the scholar's control.
-
-### Synthesis
-
-**Anchor figure: Macro Timeline (Visual 1).** Horizontal timeline Oct 2025 to Apr 2026, five swim lanes (paper writing, ontology development, appendix/SP design, documentation consolidation, CFP adaptation). Key events annotated. The visual tells the full story in one image: where activities overlap, where bursts happen, where the tooling changes.
-
-An overall assessment of the human author's role across the project. A narrative of how that role evolved — from prompt author to architectural designer to philologist — as a function of the changing technological infrastructure. This evolution is not a progress narrative (the phases represent different documentation architectures, not weak-to-strong development). The synthesis must connect back to the paper body's argument (Section 3): what the JPEP case shows about how AI-assisted philosophy is produced and what it means for the role of the author.
-
-Writing produces its own documentation needs — edge cases discovered through practice, not designed in advance (the synthetic node problem, the correction_note mechanism). This supports the paper's argument for experimental, community-developed practice (Section 6.3).
+1. Read the briefing (CFP_5.3.13), the CFP chain walk findings (CFP_5.3.18), and the Section 6 history trace (CFP_4.7.20). Consult source files only to clarify specific doubts.
+2. Write a long draft of SP-3 with placeholder figure blocks at each anchor point. No length constraint. Structure: Opening (background + research question) → Methodology → Throughline (the Section 6 history, narrated against the three criteria) → Honest Assessment → Synthesis.
+3. When a section's prose is stable, draw that figure against the now-concrete prose needs. Read the consolidated figure-data note (CFP_5.3.X) for layout/label/data details.
+4. Re-read and revise.
+5. Produce final SP-3.
 
 ---
 
-## Figures
+## Figure callouts (thin)
 
-Each section has an anchor figure. The figures are the narrative spine — they carry the claims, and the prose unpacks them. Full specifications and production notes are in `CFP_4.7.14_EpistemicTrace_SP3VisualDesign.md`. Data sources verified in `CFP_5.3.7_SelectedGraphCandidates.md` (for Graphs 1–3).
+Six figures, all anchored on Section 6, mapped to Section 7 criteria. Layout, label text, color choices, node lists, and data sources live in the consolidated figure-data note (`CFP_5.3.X`), not here.
 
-### Section–figure mapping
+| # | Figure | Purpose (one line) | Section 7 criterion |
+|---|---|---|---|
+| 1 | **Section 6 across six months** | Orient the reader to the throughline. Show all five stages on one timeline, with platform/model bands and key artifacts annotated. | Trajectory (overview) |
+| 2 | **The feedback loop** | Show that the appendix work modified Section 6 §6.2 — the documentation framework is recursive. Real artifact nodes (4.4.13, 4.2.9 MOD-009, chat 65a571f1). | Trajectory (recursion) + Attribution |
+| 3 | **Two architectures, one section** | Show that documentation density is a property of the architecture, not the author or the effort. Same section, two regimes (Stage 1 vs Stage 4). | Attribution + Understanding-and-endorsement |
+| 4 | **The three-draft session** | Show that intellectual trajectory is documentable as a directed sequence with annotated transitions. Reasons for each v1→v2→v3 step from CFP_4.2.18. | Trajectory + Understanding-and-endorsement |
+| 5 | **Failure and the visible decision** | Make the model-switch decision visible (Opus 4.5 → Sonnet 4.6) and acknowledge the lost Jan 28 deliberation as the one ghost in the Section 6 history. | Understanding-and-endorsement + acknowledgment of limit |
+| 6 | **Where Section 6 sits in the project** | Synthesis. Show that Section 6 is the densest worked example, not an exception — the same patterns recur across other sections. | All three |
 
-| Section | Anchor figure | What it shows | Data source |
-|---------|---------------|---------------|-------------|
-| Opening | **Visual 7: Date Histogram** | Artifact creation dates by phase; two activity spikes, gap between | YAML `date` fields |
-| Phase 1 | **Visual 3: Feedback Loop** | Appendix → Section 6 revision cycle; recursion | Artifact IDs: 4.2.11, 4.4.13, 4.2.9 |
-| Phase 2 | **Visual 4: Contrast Diptych** | Same section, v1/v2 vs CFP documentation density | CFP_5.3.7 Graph 3 |
-| Phase 3 | **Visual 5: Version Chain** | Section 6 three-draft trajectory with `derived_from` | CFP_5.3.7 Graph 2 |
-| Phase 3 | **Visual 8: Hub Fan-Out** | Artifacts per session, colored by phase | Hub script output |
-| Synthesis | **Visual 1: Macro Timeline** | Full project timeline, five swim lanes | Manual from artifact dates |
-
-### Additional figures (use where they serve the argument)
-
-| Visual | Description | When to use |
-|--------|-------------|-------------|
-| Visual 9 | Connection Density — v1/v2 vs CFP box plot | If the metadata-web density argument needs quantitative support |
-| Visual 10 | Interactive Graph — 225-node HTML | Reference as digital supplement; not for print |
-
-### Production
-
-Scripts in `transparency/SCRIPTS/`. Data for Visuals 7 and 8 already extracted. Visuals 3, 4, 5 need Graphviz/Mermaid drafts. Visual 1 (timeline) needs manual construction (Mermaid gantt → matplotlib or TikZ). See CFP_4.7.14 for tool recommendations per figure.
+The figure callouts above are *purpose statements*, not specifications. The drafter writes the prose first, with placeholder blocks; the figures are drawn when the prose is stable.
 
 ---
 
 ## What the Research Must Cover
 
-- The human author's role in each of the three phases, grounded in documentary evidence from the archive
-- How that role evolved as a function of the changing technological infrastructure (platforms, workflow tools, documentation conventions)
-- The feedback loop (Act 4 from `CFP_4.7.13`): the appendix shaped the paper, demonstrating the recursive character of documentation
-- The ontology co-development (Act 2): the documentation system's categories emerged from the attempt to use them, not from a pre-existing plan
-- The Stage III theoretical turn: meaningful human control and the essentially-contested-concept argument entered here, and the SP reconception happened in the same session — the artifacts document this
-- **Infrastructure requirements for traceability** — derived empirically from Stage III gaps: what version control, conversation export, session IDs, and metadata each preserve; each gap is a concrete case, not a theoretical claim (CFP_4.7.19)
-- The self-philology story: retrospective reconstruction of v1/v2 metadata, and the four conditions for successful reconstruction (`CFP_4.7.8`)
-- **CFP-phase writing complexity:** non-linear argument development, cascading cross-section dependencies, redundancy as structural consequence of modular writing, expansion-then-contraction pattern, major argument direction changes (findings 1–5 above)
-- **CFP-phase artifact capture:** ad hoc corrections, template design determining what gets captured (89% vs 2%), complementary evidence sources (findings 6–7 above)
-- **CFP-phase technological affordances:** Claude Code enabling cross-paper operations, multi-model workflow as quality control, context exhaustion producing documentation (findings 8–10 above)
-- Platform affordances and limitations: what each platform (Claude.ai web, ChatGPT, Claude Code) made possible and what it did not, and how this shaped the archive (PDL-010)
-- An honest assessment of what the record covers and does not cover, including an error typology: platform-driven gaps, user-driven errors, reconstructable gaps, irrecoverable losses (PDL-011, corrected by PDL-016)
-- Design-for-reconstructability as the normative lesson from v1/v2: the reconstruction succeeded because certain features (stable UUIDs, sufficient artifact structure) were already in place
+- The human author's role in each of the production stages of Section 6, grounded in documentary evidence from CFP_4.7.20 and the underlying artifacts
+- How that role evolved as a function of the changing technological infrastructure (platforms, models, workflow tools, documentation conventions)
+- The Section 6 feedback loop (Stage 2): the appendix work shaped §6.2, demonstrating the recursive character of documentation
+- The Stage III theoretical turn within Section 6: meaningful human control integrated, the SP reconception emerging from the same redraft session
+- **Infrastructure requirements for traceability** — derived empirically from the Stage 3b Section 6 case (no commit, no export) and other Stage III cases (CFP_4.7.19)
+- The CFP three-draft session (Stage 4): the cleanest documented version chain in the archive, with both reviewers' input and a 13-entry modlog
+- The redundancy pass (Stage 5): how Section 6 was compressed as part of the cross-paper redundancy work (CFP_4.2.22)
+- The four reconstruction conditions (`CFP_4.7.8`) and their applicability to Section 6 reconstruction
+- **Complementary evidence sources** — artifacts and conversations preserve different things; neither alone suffices for the adequacy claim (CFP_5.3.13 §8)
+- Cross-section context where it supports the throughline: that the Section 6 patterns recur (Section VIII multi-AI production, CFP chain walk findings, etc.)
+- An honest assessment with error typology, focused on what the Section 6 history shows and does not show (corrected per PDL-016: session ID gaps are infrastructure-driven, not user error; user-driven errors = forgetting to activate automation)
+- **Still-open documentation gaps** specific to Section 6 (the Jan 28 lost draft) and to the project (Chat 1 deleted; 6c8d9101 gitignored; CFP_5.3.13 §4)
+- Platform affordances and limitations as they shaped Section 6's history (Claude.ai web → Claude Code; model identities)
 
 ## What the Synthesis Must Achieve
 
-- An overall assessment of the human author's role across the project
+- An overall assessment of the human author's role across the project, anchored in what Section 6 made visible
 - A narrative of how that role evolved — from prompt author to architectural designer to philologist
 - A connection between this evolution and the changing technological infrastructure
-- A connection back to the paper body's argument in Section 3
-- Writing produces its own documentation needs — supports the argument for experimental, community-developed practice
+- A connection back to the paper body's argument in Section 3 and the criteria in Section 7
+- The recognition that writing produces its own documentation needs — supporting the paper's argument for experimental, community-developed practice (Section 6.3)
 
 ---
 
 ## Voice and Tone
 
 ### Register
+
 Accessible academic, with the rhetorical structure of scholarship. SP-3 is a research paper, not supplementary show-and-tell. It can be expansive where the research requires it — there is no word limit — but it earns its length through evidence and analysis.
 
 ### Tone
+
 Direct and confident. The author is not defending the record — they are analyzing it.
 
 ### Stylistic Notes
+
 - No hedging where the evidence is clear. "The modlog records 13 entries" — not "the modlog appears to record approximately 13 entries."
-- Use artifact IDs when citing evidence (e.g., "4.2.9, MOD-009"). The reader has SP-2 for navigation.
+- Use artifact IDs when citing evidence (e.g., "4.2.9 MOD-009"). The reader has SP-2 for navigation.
 - Always write "meaningful human control" in full — never abbreviate. The abbreviation is reserved for workflow commands and artifact prefixes.
 - "Essentially contested concept" — use Gallie's term precisely.
-- Prefer concrete artifact references over generalizations. "The session hub CHAT_SID-20260323-190000 lists two artifacts" is better than "sessions were systematically documented."
+- Prefer concrete artifact references over generalizations.
 - Let figures speak. Introduce the figure, give the reader time to look, then explain what it shows. Do not summarize the figure before showing it.
-- Describe findings plainly. Say "modlogs with a user-feedback field capture endorsement evidence 89% of the time; those without capture it 2%" — not "the format field effect." Name the evidence, not the label.
+- Describe findings plainly. Name the evidence, not the label.
 
 ---
 
 ## Constraints
 
 ### Must Include
-- The philological research basis: joint author–AI reading across nine sessions, consolidated in CFP_5.3.13 and CFP_5.3.18
-- **Phase 0 (origin layer)** — the intellectual chain before 4.1, with its privacy constraints and the provenance of 4.1 itself (human-sourced, Claude-synthesized, human-endorsed)
-- The three writing phases with their characterization of the human author's role
+
+- The Section 6 throughline as the spine of SP-3
+- Reader-background paragraph before the throughline starts
+- The philological research basis: joint author–AI reading across nine sessions, consolidated in CFP_5.3.13, CFP_5.3.18, and CFP_4.7.20
+- **Phase 0 (origin layer)** as background — the intellectual chain before 4.1, with its privacy constraints and the provenance of 4.1 itself (human-sourced, Claude-synthesized, human-endorsed). This is context for Section 6's first stage; it does not require its own throughline.
 - The structural history of the corpus (appendix, SP reconception, appendix elimination) as part of the methodology
-- Stage III as a theoretical turning point — meaningful human control and the essentially-contested-concept argument entered here; the artifacts document it
-- **Stage III infrastructure requirements table** — four concrete cases where missing infrastructure components (commit, export, session ID, metadata fields) produced specific gaps in the record; presented as empirical findings about what traceability requires, not as apology (CFP_4.7.19)
+- Stage III as a theoretical turning point — meaningful human control entered here; the artifacts document it via Section 6 specifically
+- **Stage III infrastructure requirements** — concrete cases where missing infrastructure components produced specific gaps in the record; presented as empirical findings about what traceability requires, not as apology (CFP_4.7.19). The Section 6 Jan 28 case is one of these.
 - The four reconstruction conditions (`CFP_4.7.8`)
-- Design-for-reconstructability as the normative lesson from v1/v2
 - **Complementary evidence sources** — artifacts and conversations preserve different things; neither alone suffices for the adequacy claim (CFP_5.3.13 §8)
-- **Section VIII multi-AI production** — Claude → ChatGPT → manual application as evidence of cross-tool orchestration with documented tool identity
+- **Section VIII multi-AI production** — Claude → ChatGPT → manual application as evidence of cross-tool orchestration with documented tool identity (Stage 1 of Section 6 history)
 - **CFP-phase findings from the chain walk** (CFP_5.3.18): non-linear argument development, cascading dependencies, redundancy as structural effect of modular writing, expansion-then-contraction, ad hoc corrections, template design shaping capture, multi-model workflow, context exhaustion producing documentation
 - **Template design determining what gets captured** — 89% vs 2% endorsement capture depending on whether the template asks for it; strongest empirical finding for the paper's framework argument
-- An honest assessment with error typology (corrected per PDL-016: session ID gaps are infrastructure-driven, not user error; user-driven errors = forgetting to activate automation)
-- **Still-open documentation gaps** (CFP_5.3.13 §4): Chat 1 (deleted), 6c8d9101 (gitignored)
+- An honest assessment with error typology
+- **Still-open documentation gaps** (CFP_5.3.13 §4): Chat 1 (deleted), 6c8d9101 (gitignored), Section 6 Jan 28 lost deliberation
 - Platform affordances and limitations
-- Figures as narrative anchors — every major section has a visual that carries the claim
+- Figures as narrative anchors — every major section has a visual that carries the claim, drawn against stable prose
 
 ### Must Avoid
+
 - Abbreviating "meaningful human control" as "MHC" in the text
 - **Characterising 4.1 as "human-authored" in the sense of human-composed** — correct characterisation: human-sourced, Claude-synthesized, human-endorsed (see CFP_5.3.13 §10)
 - **Treating 4.7.1 as a complete document** — it is an incomplete extract of da6a830c, ends mid-sentence
 - **Claiming artifact-based reconstruction is self-sufficient** — artifacts preserve structure and scope; conversations preserve agency and provenance; SP-3 must use both
 - Framing v1/v2 as "weak" and later phases as "strong" — use "different documentation architectures"
 - **Overstating the v1/v2 vs. CFP quality gap** — both phases required reconstruction; both succeeded because the archive structure enabled it (CFP_5.3.13 §3, Correction 1)
+- **Treating the Section 6 lost Jan 28 draft as the defining feature of any phase** — it is one slip in an otherwise working system; one ghost in the Section 6 history
+- **Treating the modlog as the central documentation unit** — the documentation system is a combination of artifacts (modlogs, traces, PDLs, guidance, notes, hubs, section drafts, pattern summaries); modlogs are one kind of evidence among many
 - **Drifting toward adversarial verification standards** — the paper argues for good-faith adequacy, not tamper-resistance (CFP_5.3.13 §3, Correction 2)
 - Overclaiming completeness
-- Attributing temporal discounting or definitional flexibility to this archive
 - Reintroducing the reproduction-test model
 - Anticipating and rebutting objections — SP-3 is research, not apologetics
-- **Coining labels for findings** — describe what was observed plainly, do not give it a name (e.g., say "modlogs with a user-feedback field capture endorsement evidence 89% of the time" — not "the format field effect")
-- Presenting redundancy as an LLM defect — it is a structural consequence of modular section-by-section writing with separate guidance documents
+- **Coining labels for findings** — describe what was observed plainly
+- Presenting redundancy as an LLM defect — it is a structural consequence of modular section-by-section writing
 - Attributing session ID gaps to user error — the workflow tooling did not generate them in early phases (PDL-016)
+- **Specifying figure layouts in this guidance** — figure detail lives in the consolidated figure-data note (CFP_5.3.X)
 
 ### Length
+
 No upper limit. Longer than a standard paper if the research requires it.
 
 ---
@@ -313,34 +241,28 @@ No upper limit. Longer than a standard paper if the research requires it.
 
 | Element | Source | Reference |
 |---------|--------|-----------|
+| **Goals SP-3 must serve** | Paper Section 7 v3 | CFP_5.4.9_Section7_v3.md |
+| **Section 6 throughline data (canonical)** | Epistemic trace | CFP_4.7.20 |
 | **Research findings (read first)** | Writer briefing | CFP_5.3.13 |
 | **CFP chain walk findings** | Chain walk note | CFP_5.3.18 |
+| **Figure layout/label/data details** | Consolidated note | CFP_5.3.X (figure-data note) |
 | Origin layer narrative | Steering note | CFP_5.3.15 |
 | PreliminaryChat chain verification | Steering note | CFP_5.3.17 |
-| Seven-act macro story | Epistemic trace | CFP_4.7.13 |
-| Visual design and figure specifications | Epistemic trace | CFP_4.7.14 |
-| Graph specifications (verified) | Steering note | CFP_5.3.7 |
+| Stage III I/O analysis + infrastructure requirements | Epistemic trace | CFP_4.7.19 |
 | Self-philology + reconstruction conditions | Epistemic trace | CFP_4.7.8 |
 | Ur-conversation characterization | Epistemic trace | CFP_4.7.16 |
-| Stage III I/O analysis + infrastructure requirements | Epistemic trace | CFP_4.7.19 |
 | SP reconception + reproduction test rejection | Epistemic trace | III_4.7.3 |
-| Last "Appendix A" design iteration (superseded) | PDL | CFP_5.2.2 |
-| Appendix elimination decision | PDL-004 | CFP_5.2.4 |
-| SP-3 scope decision | PDL-007 | CFP_5.2.4 |
-| Platform affordances | PDL-010 | CFP_5.2.4 |
-| Philological standard + error typology | PDL-011 | CFP_5.2.4 |
-| Stage III theoretical turn | PDL-012 | CFP_5.2.4 |
-| Graph-led narrative structure | PDL-013 | CFP_5.2.4 |
-| SP-3 reconception as research paper | PDL-017 | CFP_5.2.4 |
-| CFP chain walk methodology and findings | PDL-020 | CFP_5.2.4 |
-| Briefing/guidance split decision | PDL-019 | CFP_5.2.4 |
+| Workflow + restructure decision | PDL | CFP_5.2.4 PDL-024 |
+| Appendix elimination decision | PDL | CFP_5.2.4 PDL-004 |
+| SP-3 scope decision | PDL | CFP_5.2.4 PDL-007 |
+| Platform affordances | PDL | CFP_5.2.4 PDL-010 |
+| Philological standard + error typology | PDL | CFP_5.2.4 PDL-011 |
 | Section 3 (essentially-contested argument) | Stage III draft | III_5.4.1 |
-| Section 6 (meaningful human control) | Stage III draft | III_5.4.2 |
-| Three transparency criteria | Paper Section 7 | CFP_5.4.9_Section7_v3.md |
+| Section 6 (meaningful human control) — current state | CFP draft | CFP_5.4.8_Section6_v4.md |
+| Three transparency criteria (canonical statement) | Paper Section 7 | CFP_5.4.9_Section7_v3.md |
 
 ---
 
-*Section Guidance v6 — updated 2026-04-05 (SID-20260405-094022)*
-*v5 → v6: Stage III reframed around infrastructure requirements for traceability (four empirical cases); removed "incomplete infrastructure" / "user compensated" narrative; added CFP_4.7.19 to inputs and source mapping*
-*v4 → v5: CFP phase included in corpus; figures as narrative spine; CFP chain walk findings as substantive Phase 3 content*
+*Section Guidance v7 — synthetic merge, 2026-04-07 (SID-20260407-181422)*
+*v6 → v7 (per PDL-024): merged with CFP_4.4.17; figure detail externalized to consolidated note; Section 6 throughline replaces multi-section figure plan; draft-first refine workflow replaces upfront figure specification*
 *Workflow: Design | Command: MHC-PDL*
