@@ -173,7 +173,7 @@ chain_layout = {
     "III_4.2.13_ModificationLog_Section6_v3":    (-0.05, -0.35),  # SUN2→SUN3 bridge
     "HUB_SID-20260302-152952":                    ( 0.58, -0.22),  # hub: produced III_5.4.2
     "III_5.4.2_Section6_v3":                      ( 0.72, -0.42),  # Section 6 v3 draft
-    "CFP_4.2.18_ModificationLog_Section6":        ( 1.00, -0.32),  # CFP Section 6 modlog
+    "CFP_4.2.18_ModificationLog_Section6":        ( 0.65, -0.52),  # CFP Section 6 modlog
     "CFP_4.7.20_EpistemicTrace_Section6History":  ( 0.42, -0.50),  # synthesis: reads all stages
 }
 for nid, xy in chain_layout.items():
