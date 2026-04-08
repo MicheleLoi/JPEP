@@ -586,6 +586,24 @@ A second pattern: across multiple proposal rounds the assistant kept reaching fo
 
 ---
 
+### PDL-025: SP-3 v1 → v2 — first refine pass became a structural rewrite
+
+| Field | Value |
+|-------|-------|
+| Date | 2026-04-07 |
+| Session | SID-20260407-181422 → SID-20260407-190627 |
+| Type | Workflow finding + structural decision |
+
+**What happened.** v1 was drafted under the PDL-024 draft-first workflow using a criterion-spine (Attribution / Trajectory / Understanding-and-Endorsement as the three big sections, Section 6 illustrations woven inside each). On reading, the user found that Section 6 details landed before the reader had a mental model of the project's three writing phases. The first refine pass therefore did not produce surface edits — it produced a structural rewrite to a four-movement phase-spine modeled on the v2 paper appendix: How the paper was written → What documentation was produced → Capabilities/challenges/solutions → Section 6 as worked example. See modlog `CFP_4.2.27`.
+
+**Decision.** Adopt the phase-spine for v2. Section 6 is demoted from spine to Part IV worked example. Section 7's three criteria appear as a mapping table over that worked example (§8) rather than as the spine.
+
+**Finding about the workflow itself.** PDL-024 specified draft-first refinement. The first application of that workflow on a long document (SP-3) showed that "refinement" can legitimately mean *restructure*, not just polish — and that this is a benefit of draft-first, not a failure of it. A criterion-spine looked plausible at planning time and only revealed its readability cost once a full draft existed for the user to read top to bottom. Upfront-planning would not have surfaced this. Recommendation for future SP-3-scale documents: budget for the possibility that the first refine pass is structural; do not treat structural rewrite as sunk cost.
+
+**Versioning under the new single-file convention.** v1 is preserved at git commit 6a2b844; v2 occupies the same file path; `git log -- transparency/Canonical_MD/SP5_DevelopmentRecords/5.4_SectionDrafts/CFP_5.4.11_SP3.md` is the version history. This is the first SP-3 instance of the post-2026-04-07 single-file versioning convention (adapt.md Adaptation Log 2026-04-07 / Project Rule 11).
+
+---
+
 ## Open design questions
 
 - Drafting sequence: SP-1 first (shortest), SP-2 next (structural), SP-3 last (depends on the other two)? — likely yes, but SP-3 can begin in parallel given briefing readiness
@@ -593,5 +611,5 @@ A second pattern: across multiple proposal rounds the assistant kept reaching fo
 ---
 
 *PDL generated: 2026-04-02*
-*Last updated: 2026-04-07 (PDL-024 added, session SID-20260407-181422 — SP-3 guidance restructure)*
+*Last updated: 2026-04-07 (PDL-025 added, session SID-20260407-190627 — SP-3 v1→v2 phase-spine restructure)*
 *Workflow: Design | Command: MHC-PDL*
