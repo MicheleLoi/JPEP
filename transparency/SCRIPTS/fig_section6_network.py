@@ -174,7 +174,7 @@ chain_layout = {
     "HUB_SID-20260302-152952":                    ( 0.58, -0.22),  # hub: produced III_5.4.2
     "III_5.4.2_Section6_v3":                      ( 0.72, -0.42),  # Section 6 v3 draft
     "CFP_4.2.18_ModificationLog_Section6":        ( 1.00, -0.32),  # CFP Section 6 modlog
-    "CFP_4.7.20_EpistemicTrace_Section6History":  ( 0.42, -0.60),  # synthesis: reads all stages
+    "CFP_4.7.20_EpistemicTrace_Section6History":  ( 0.42, -0.50),  # synthesis: reads all stages
 }
 for nid, xy in chain_layout.items():
     if nid in sub.nodes:
@@ -347,22 +347,23 @@ ax.legend(
 
 caption_text = (
     "Figure 3. The documented history of Section 6 across four production phases (Oct 2025 – Apr 2026).\n"
-    "Each node is an artifact in the transparency record (SP-4 or SP-5); each directed edge is a\n"
-    "documented input, derivation, or output relationship. Amber nodes are session hubs — each\n"
-    "representing one working episode. Node colour indicates artifact type (see legend).\n"
-    "  Phase 1 (SUN1, left): PreliminaryChat 1 — methodology design session that produced the\n"
-    "guidance inputs (4.4.4, 4.4.5, upper cluster) used to write Section VIII. Phase 2 (SUN2):\n"
-    "Section VIII first writing (Oct 2025, Claude.ai web); outputs include modlog 4.2.9 and\n"
-    "pattern summary 4.3.5. Phase 3 (SUN3): Stage III MHC integration (Jan–Mar 2026, Claude Code);\n"
-    "a first draft was overwritten without a commit (irrecoverable); guidance was revised with hard\n"
-    "constraints; a model switch from Opus 4.5 to Sonnet 4.6 preceded the successful redraft\n"
-    "(III_5.4.2); the same session produced the SP reconception (III_4.7.3). Phase 4 (SUN4, right):\n"
-    "CFP rewrite (Apr 2026, Claude Opus 4.6); §6.1 rewritten from scratch to integrate the\n"
-    "double-contestation argument; redundancy pass across all sections (−28% words paper-wide).\n"
-    "Cross-cluster edges encode the version chain: each phase's output artifacts are inputs to the\n"
-    "next. The full Section 6 history exercises all three Section 7 criteria: attribution (model\n"
-    "switch, reviewer verdicts), intellectual trajectory (seven distinct transformations), and\n"
-    "understanding-and-endorsement (13-entry modlog CFP_4.2.18 with dual reviewer records)."
+    "Each node is an artifact in SP-4 or SP-5; each directed edge is a documented input, derivation,\n"
+    "or output relationship. Amber nodes are session hubs (one working episode each); node colour\n"
+    "indicates artifact type (see legend). Four session clusters are arranged left-to-right:\n"
+    "SUN1 — PreliminaryChat 1, methodology design (Oct 2025); SUN2 — Section VIII first writing\n"
+    "(Oct 2025, Claude.ai / Sonnet 4.5); SUN3 — Stage III MHC integration (Jan–Mar 2026, Claude\n"
+    "Code); SUN4 — CFP rewrite (Apr 2026, Claude Code / Opus 4.6).\n"
+    "  The lower rail shows the documented version chain connecting the clusters. III_4.2.13\n"
+    "(Stage III modlog) is the bridge between SUN2 and SUN3: it records that 4.2.9 (SUN2's primary\n"
+    "modlog) was the source text, and its outputs include the revised guidance III_4.4.5 and PDL\n"
+    "III_5.2.1 (both SUN3 neighbours). The hub SID-20260302-152952 produced III_5.4.2 (Section 6\n"
+    "v3 draft), which is the direct source_jpep of CFP_5.4.8 (SUN4's Section 6 draft); CFP_4.2.18\n"
+    "records that three-draft CFP session. CFP_4.7.20 (bottom, teal) is a synthesis epistemic trace\n"
+    "that aggregates all four phases and feeds directly into SP-3 drafting.\n"
+    "  The full trace exercises all three Section 7 criteria: attribution (model switch Opus 4.5 →\n"
+    "Sonnet 4.6 after irrecoverable Jan 2026 draft; dual-reviewer verdicts in CFP_4.2.18);\n"
+    "intellectual trajectory (seven documented transformations across 5.5 months); understanding-\n"
+    "and-endorsement (13-entry modlog with both Reviewer A and Reviewer B records visible)."
 )
 fig.text(
     0.26, 0.01, caption_text,
