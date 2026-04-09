@@ -111,6 +111,7 @@ The authenticity argument has CO-EQUAL WEIGHT with the tracking argument. Tradit
 - Phase 3c: SP-1, SP-2, SP-3 drafting (absorbs former Appendix A; see CFP_5.2.4_pdl_SP1_SP2_SP3.md)
 - Phase 4: Review + finalize Conclusion, then Abstract + Title
 - Phase 5: Integration, full consistency review, final commit
+- **Before final commit:** create `CFP_5.3.N_Note_RawConversationsManifest.md` (`document_type: manifest`) listing all files in `06_conversations/`, and add a paragraph to SP-3 stating the policy (raw conversations retained locally, manifest in SP5, available on request, artifact chain is the public spine). Decided 2026-04-08, SID-20260408-122758. When manifest is created: extend `build_graph.py` with ~45-line manifest enrichment pass to upgrade anonymous ChatGPT UUID stubs to named nodes. See `CFP_5.3.22_Note_DecisionRecord_ChatGPTConversationMetadata.md` for full design rationale.
 
 **Appendix A: ELIMINATED** (PDL-004, SID-20260402-105621). SP-1/2/3 absorb all former appendix functions. No section of the paper body references "Appendix A." See CFP_5.2.4_pdl_SP1_SP2_SP3.md.
 
