@@ -64,6 +64,8 @@ The CFP phase is the adaptation of the paper for the *AI Tools in Ethics Researc
 
 [FIGURE 1 — The JPEP writing project on one timeline. Three phase bands across the time axis (2025-10 → 2026-04). Two platforms (Claude.ai web, Claude Code). Four model identities (Sonnet 4.5, Opus 4.5, Sonnet 4.6, Opus 4.6). Major events marked: Section VIII → Section 6 renumbering (Nov 2025), the SP reconception (2026-03-02), the redundancy compression (2026-04-01), the appendix elimination (2026-04-02). Five Section 6 stage markers (the worked example of Part IV). One figure, one orientation. Layout in CFP_5.3.19.]
 
+*Figure 1. The JPEP writing project on one timeline. Five stages across three phases, two platforms, four model identities, and major structural events. Verify: CFP_4.7.20, CFP_5.3.19.*
+
 This is the only orientation figure in SP-3. Everything that follows is detail.
 
 ---
@@ -179,6 +181,8 @@ This stage produces the cleanest documented version chain in the archive. Trajec
 
 [FIGURE 2 — The Section 6 artifact dependency network. Four-hub layout: SUN1 PreliminaryChat 1 (2025-10-12), SUN2 first writing session as Section VIII (2025-10-18), SUN3 Stage III meaningful human control integration (2026-01-26 to 2026-03-02), SUN4 CFP rewrite (2026-03-23 to 2026-04-01). Bridging guidance artifacts 4.4.4 and 4.4.5 link SUN1/SUN2 to SUN3. Lower-rail chain nodes (III_4.2.13, HUB_SID-20260302-152952, III_5.4.2, CFP_4.2.18, CFP_4.7.20) show the SUN2 → SUN3 → SUN4 version path as actual provenance edges. Source: fig_section6_network.svg. Full philological backing in CFP_4.7.20.]
 
+*Figure 2. The documented history of Section 6 across four production phases (Oct 2025 – Apr 2026). Each node is an artifact in SP-4 or SP-5; each directed edge is a documented input, derivation, or output relationship. Amber nodes are session hubs (one working episode each); node colour indicates artifact type (see legend). Four session clusters left-to-right: SUN1 — PreliminaryChat 1, methodology design (Oct 2025); SUN2 — Section VIII first writing (Oct 2025, Claude.ai / Sonnet 4.5); SUN3 — Stage III MHC integration (Jan–Mar 2026, Claude Code / Sonnet 4.6 after model switch); SUN4 — CFP double-contestation + redundancy pass (Apr 2026, Claude Code / Opus 4.6). SUN4's right cluster (11 nodes) contains drafts for every section of the paper — CFP_5.4.3 Introduction, 5.4.5 §2, 5.4.4 §3, 5.4.7 §5, 5.4.8 §6, 5.4.9 §7, 5.4.10 Conclusion — plus modlogs CFP_4.2.20 and CFP_4.2.21; only CFP_5.4.8 (§6) belongs to the Section 6 chain. The lower rail is the version chain: III_4.2.13 bridges SUN2→SUN3; SID-20260302-152952 produced III_5.4.2 (Section 6 v3), the direct source of CFP_5.4.8; CFP_4.2.18 records the three-draft CFP session. CFP_4.7.20 (teal, bottom) synthesises all four phases → SP-3.*
+
 ## 8. Mapping the five stages to the three Section 7 criteria
 
 **Attribution.** Visible human-judgment moments across the throughline: the `4.4.4` guidance authoring the *"embodies its own argument"* principle (Stage 1); the mid-course correction injected from the sideways chat (Stage 1); the `4.4.13` bridging guidance directing simultaneous revisions to §6.2 and Appendix A.2 (Stage 2); the model-switch decision after the Jan 28 failure (Stage 3); Reviewer A's per-paragraph verdicts on v1 → v2 and v2 → v3 (Stage 4); the §6.4 architectural rewrite decision in v3 (Stage 4); the redundancy-pass cut decisions in v4 (Stage 5). Every one of these is reachable from a citable artifact with a date and either a chat UUID or a session ID.
@@ -194,6 +198,8 @@ Section 6 is the densest worked example, not an exception. The patterns visible 
 The Stage III infrastructure-requirements analysis (`CFP_4.7.19`) looks across multiple Stage III sessions and identifies, where relevant, what the modlog layer needed in order to carry process across sessions. The framing is empirical, not apologetic: this project tracks the writing process, not every artifact of it; the question is whether the modlog layer is doing its job, and where (rarely) it isn't.
 
 [FIGURE 3 — Where Section 6 sits in the project. Horizontal swimlanes, one per paper section (1 through 7), against the same time axis as Figure 1. Section 6's lane highlighted; the others present but desaturated. Caption notes that Section 6 was chosen because it exercises all three Section 7 criteria simultaneously and that the same patterns recur in the desaturated lanes. Layout in CFP_5.3.19.]
+
+*Figure 3. Where Section 6 sits in the project. Each band shows the temporal span of one phase's documented activity on that section; width encodes duration, not depth. All seven paper sections have modlog coverage in both the v1/v2 and CFP phases. Section 6 was chosen as the worked example because it exercises all three Section 7 adequacy criteria simultaneously; the other sections are not abandoned — their histories exist and the Section 6 patterns recur across them. Verify: CFP_4.2.14–4.2.20, CFP_5.4.* draft dates, CFP_4.7.20.*
 
 ## 10. What SP-4/SP-5 offers, and what it does not
 
