@@ -206,7 +206,40 @@ Kierkegaard (1992/1846), Nietzsche (1966/1886), Plato *Apology* (1997), Blackbur
 
 **Redundancy reduction** in SID-20260401-225323 (source conversation: JPEP_20260401_205323.md): ~1,750 → ~1,290 words (26%). "Requirement of Visibility" subsection deleted; "The Stakes" compressed; parasitism-defense parenthetical tightened. See `CFP_4.2.22_ModificationLog_RedundancyReduction.md`.
 
-**Current authoritative file:** `CFP_5.4.4_Section3_v2.md`
+**Current authoritative file:** `CFP_5.4.4_Section3_v3.md`
+
+---
+
+## Post-Review: Shoulders Review Response — Second Pass (2026-04-10)
+
+**Session:** SID-20260410-002246
+**Source:** `CFP_5.3.28_Note_ShouldersReview_Evaluation.md` (S30); Opus review consultation
+
+### MOD — Sartre bad faith paragraph: intersubjective bridge added (S30)
+
+**Change:** The Sartrean bad faith paragraph in the "Ethical Inquiry as Essentially Contested" subsection (§3 body, pre-renaming; same section post-renaming) was substantially revised. The first-person dimension is now made explicit ("a flight from the anguish of one's own freedom") and the bridge to intersubjective accountability is built via a new sentence invoking Sartrean being-for-others ("my freedom never exists in isolation; it is constituted in a field of other freedoms"). The closing reframed: "a closing-off of the very contestation that keeps philosophical practice free" replaces "a denial that the personal/existential conception is even a legitimate option — a closing-off of the freedom of philosophy itself."
+
+**Previous text (opening):** "The philosopher who uses AI to build philosophical architectures exercises genuine creative freedom. The bad faith lies not in the use but in treating that use as 'just ordinary business' — denying that it raises questions requiring engagement with others. This is a refusal to acknowledge that one's philosophical practice is free, and that this freedom entails accountability to those who conceive of philosophy differently."
+
+**Revised text (key additions):** "The philosopher who uses AI to build philosophical architectures exercises genuine creative freedom: choices are made about how to delegate, what to accept, where to intervene. The bad faith lies not in the use but in refusing to recognize these as choices... This is self-deception in the strict Sartrean sense: a flight from the anguish of one's own freedom. But for Sartre, my freedom never exists in isolation; it is constituted in a field of other freedoms whose claims on me I can acknowledge or foreclose."
+
+**Why:** Shoulders reviewer (S30) correctly identified that Sartrean bad faith is a first-person concept, and that the passage jumped from first-person self-deception to intersubjective accountability without philosophical grounding. Opus review confirmed the diagnosis: the first-person application was correct in outline but the bridge (being-for-others, mutual implication of freedoms) was missing. The revision builds that bridge explicitly while remaining accessible to non-Sartre-specialist readers. User approved. The reviewer's input was judged a genuine philosophical improvement.
+
+**Affected file:** `CFP_5.4.4_Section3_v3.md`
+
+---
+
+### MOD — Sartre paragraph: tracing condition problematization inserted
+
+**Change:** Five sentences inserted into the Sartre paragraph, after "choices are made about how to delegate, what to accept, where to intervene" and before "The bad faith lies not in the use." Produced by Claude Opus 4.6 on author's explicit invitation; author approved without modification.
+
+**Inserted text:** "Moreover, these choices operate at different levels: one can understand the arc of an argument without having generated its formulation, or endorse a theoretical direction without grasping every inferential step that realizes it. This stratification matters because any requirement that intellectual outputs be traceable to a human author's understanding — a tracing condition of the kind the meaningful human control literature demands — must specify *which level* of understanding suffices. Yet that specification cannot be made independently of a substantive conception of what philosophical work is. If philosophy consists in the selection and ordering of ideas, then understanding at the level of direction may be enough; if it consists in the working-through of each argumentative move, then only execution-level comprehension will do. The tracing condition thus inherits the essential contestedness of the activity it is meant to regulate: it cannot be operationalized without presupposing an answer to the very question that is in dispute."
+
+**Why:** The insertion extends the Sartre paragraph from a diagnosis of bad faith into a genuine problematization of the MHC framework the paper will introduce in Section 5. The key move: Sartrean freedom is multi-level, which means "understanding" in the tracing condition doesn't locate itself at a single level. This reveals that the tracing condition inherits the essential contestedness of philosophical authorship — it cannot be operationalized without presupposing an answer to the question that is in dispute. The argument structure of Section 3 is now genuinely dialectical: not just problem + solution, but problem + solution-that-is-itself-contested + therefore community norm-development is required. This deepens the parallel with the Conclusion's bootstrapping problem and makes the paper's self-awareness structurally motivated rather than merely scrupulous.
+
+**Provenance note:** Opus produced the insertion; the author developed the underlying insight independently through reflection on their own role in the Sartre revision (expert-delegated approval → meta-level independent observation about the tracing condition). The theoretical move from that observation to the Section 3 insertion was collaborative. Author followed Opus's lead on execution; the initiating insight was the author's own.
+
+**Affected file:** `CFP_5.4.4_Section3_v3.md`
 
 ---
 

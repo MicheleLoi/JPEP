@@ -1,4 +1,7 @@
 ---
+build_source: false
+submission_bibliography: paper_bibliography_FINAL.md
+note: "Working document — process notes only. For paper build and submission, use paper_bibliography_FINAL.md."
 source_chat_name: JPEP section 5 writing
 source_chat_link: https://claude.ai/chat/240f00db-62f9-4dcf-86f3-de1257562310
 date: 2025-10-12
@@ -33,14 +36,10 @@ This bibliography compiles all references used across completed sections of the 
 **Blackburn, S.** (1993). *Essays in Quasi-Realism*. New York: Oxford University Press. https://global.oup.com/academic/product/essays-in-quasi-realism-9780195082241
 
 **Boden, M. A., & Edmonds, E. A.** (2009). "What is generative art?" *Digital Creativity*, 20(1-2), 21-46.
-*Note: Verify this is the citation Wheeler uses. If Wheeler cites different Boden & Edmonds work, use that citation.*
-*Not cited in CFP adaptation. Verification needed only if restored in a future version.*
 
 **Byrne, D.** (2012). *How Music Works*. Edinburgh: Canongate.
 
 **Clark, A.** (2008). *Supersizing the Mind: Embodiment, Action, and Cognitive Extension*. Oxford: Oxford University Press.
-*Note: Verify this is the citation Wheeler uses for "cognitive niche construction." If Wheeler cites different Clark work, use that citation.*
-*Not cited in CFP adaptation. Verification needed only if restored in a future version.*
 
 **Cheng, Z., Zhang, Z., Xu, Q., Maeda, Y., & Gu, P.** (2025). "A meta-analysis addressing the relationship between self-regulated learning strategies and academic performance in online higher education." *Journal of Computing in Higher Education*, 37(1), 195–224. https://doi.org/10.1007/s12528-023-09390-1
 
@@ -70,6 +69,8 @@ This bibliography compiles all references used across completed sections of the 
 
 **Lund, B. D., & Naheem, K. T.** (2023). "Can ChatGPT be an author? A study of artificial intelligence authorship policies in top academic journals." *Learned Publishing*. https://doi.org/10.1002/leap.1582
 
+**Mercier, H.** (2020). *Not Born Yesterday: The Science of Who We Trust and What We Believe*. Princeton: Princeton University Press.
+
 **Mill, J. S.** (1859). *On Liberty*. Chapter III: "Of Individuality, as One of the Elements of Well-Being."
 
 **Nietzsche, F.** (1966). *Beyond Good and Evil* (W. Kaufmann, Trans.). Vintage Books. (Original work published 1886)
@@ -80,7 +81,7 @@ This bibliography compiles all references used across completed sections of the 
 
 **Rini, R.** (2025). "Chatbottery." Afterthoughts column, *The Times Literary Supplement*, January 2, 2025. https://www.the-tls.com/regular-features/afterthoughts/chatbottery-afterthoughts-regina-rini
 
-**Santoni de Sio, F., Faber, N. S., Savulescu, J., & Vincent, N. A.** (2016). "Why Less Praise for Enhanced Performance? Moving Beyond Responsibility-Shifting, Authenticity, and Cheating Toward a Nature-of-Activities Approach." In S. Nagel (ed.), *Handbook of Neuroethics*. Oxford: Oxford University Press, pp. 27–41.
+**Santoni de Sio, F., Faber, N. S., Savulescu, J., & Vincent, N. A.** (2016). "Why Less Praise for Enhanced Performance? Moving Beyond Responsibility-Shifting, Authenticity, and Cheating Toward a Nature-of-Activities Approach." In F. Jotterand & V. Dubljević (Eds.), *Cognitive Enhancement: Ethical and Policy Implications in International Perspectives* (pp. 27–41). Oxford: Oxford University Press. https://doi.org/10.1093/acprof:oso/9780199396818.003.0003
 
 **Santoni de Sio, F., & van den Hoven, J.** (2018). "Meaningful Human Control over Autonomous Systems: A Philosophical Account." *Frontiers in Robotics and AI*, 5, 15. https://doi.org/10.3389/frobt.2018.00015
 
@@ -88,11 +89,17 @@ This bibliography compiles all references used across completed sections of the 
 
 **Shafer-Landau, R.** (2003). *Moral Realism: A Defence*. Oxford: Oxford University Press. https://global.oup.com/academic/product/moral-realism-9780199259755
 
+**Strathern, M.** (1997). 'Improving ratings': Audit in the British University system. *European Review*, 5(3), 305–321.
+
 **Van Woudenberg, R., Ranalli, C., & Bracker, D.** (2024). "Authorship and ChatGPT: a Conservative View." *Philosophy & Technology*, 37(1), 1-26. https://doi.org/10.1007/s13347-024-00715-1
 
 **Wheeler, M.** (2018). "Talking about more than Heads: the Embodied, Embedded and Extended Creative Mind." In B. Gaut & M. Kieran (eds.), *Creativity and Philosophy*. London: Routledge, pp. 230-250.
 
 **Zimmerman, B. J.** (2002). "Becoming a self-regulated learner: An overview." *Theory into Practice*, 41(2), 64–70. https://doi.org/10.1207/s15430421tip4102_2
+
+---
+
+## WORKING NOTES (not for submission)
 
 ---
 

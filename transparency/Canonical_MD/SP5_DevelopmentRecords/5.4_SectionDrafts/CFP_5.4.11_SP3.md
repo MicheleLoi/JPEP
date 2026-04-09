@@ -20,6 +20,7 @@ inputs:
   - "Paper/MDversion/appendix.md (v2 appendix — used as structural model)"
 cfp_target: "AI Tools in Ethics Research (topical collection)"
 word_count: ~4500
+section_numbering: pre_renaming
 ---
 
 # SP-3 — Documentation Adequacy Account
@@ -222,6 +223,8 @@ In Phase v1/v2 the role was *prompt author and ontology inventor*. The guidance 
 In Phase Stage III the role was *translator of off-page human input into the manuscript*. Conversations with a colleague and feedback from presenting v2 at a workshop were carried back into the project and implemented in concentrated AI-assisted bursts. The March 2 Section 6 redraft that integrated meaningful human control is the largest documented instance: external dialogue absorbed, translated into the manuscript, and committed in one session. The methodological reorganization that produced the current SP structure happened in the same session, as a consequence of the same absorption — what the off-page dialogue had surfaced about *what the documentation needed to do* became the explicit organizing question of the whole project.
 
 In Phase CFP the role is *editor in dialogue with a second reader and with automated infrastructure*. Reviewer A in conversation with Reviewer B (Claude Opus 4.6 acting as a reviewer rather than as a co-writer); the modlog as the transcript of agreements and refusals; automated metadata handling the bookkeeping that v1/v2 required by hand; the redundancy-pass cutter making the cross-paper compression decisions that modular writing makes necessary.
+
+The CFP phase also produced one case where the human role approximated expert-delegated approval rather than understanding-grounded endorsement: a substantial revision to the Sartre passage in Section 3, produced by Claude Opus 4.6 under explicit invitation, was accepted by the author as philosophically sound without capacity for independent reconstruction. This is a recognizable mode of collaborative scholarship — scholars routinely endorse specialist work they can evaluate but not replicate — but it creates a specific challenge for the tracing condition. The author's reflection on that case generated an observation independently developed: the tracing condition contains an unresolved ambiguity about what depth of understanding is sufficient for endorsement to count as genuine — a question that different conceptions of philosophical authorship may answer differently. The theoretical implication is in the Conclusion; this is the empirical instance.
 
 This is the connection back to Section 3 of the paper, where the essentially-contested character of "AI assistance in philosophy" is established. SP-3 does not claim that the JPEP record settles that contest. Its claim is that the record makes the contestable moments visible enough that the community Section 7 invites can do its work. The paper argues for an experimental, community-developed practice (Section 6.3); SP-3 is one experiment, and the record of how it was conducted — phase by phase, artifact by artifact, with Section 6 as the worked example — is the result it offers up.
 

@@ -153,6 +153,16 @@ Session `SID-20260409-132703`. Commits: `9c25cb7` (figure callout revisions), `c
 
 **Why these are one entry.** Both commits serve the same intent — integrate the three final SVGs into SP-3 coherently — and the caption commit is a direct follow-on to the callout commit. The decision about fig2/4/5 is recorded separately in `CFP_4.2.28` MOD-011 because it pertains to the graph infrastructure record, not to SP-3 prose structure.
 
+### MOD-007: §11 CFP synthesis — expert-delegated approval case added (SID-20260410-002246)
+
+**Change:** Four sentences added to the CFP paragraph in §11 (Synthesis — the human author's role), after the redundancy-pass sentence. Describes the Sartre passage revision as a case where the human role approximated expert-delegated approval rather than understanding-grounded endorsement; frames it as a recognizable mode of collaborative scholarship; records that the author's reflection generated an independently developed observation about the tracing condition's internal ambiguity; points to the Conclusion for the theoretical implication.
+
+**Why:** The §11 CFP synthesis described the phase role uniformly as "editor in dialogue with a second reader." The Sartre case is a different shade: the author followed Opus's philosophical lead on execution while independently developing the meta-level theoretical observation about what that deferral reveals. SP-3 is the right place to record the empirical instance; the Conclusion carries the theoretical payoff. The addition keeps the synthesis honest about the variation in the depth of understanding across the CFP phase, and connects the local instance to the paper's broader argument about the tracing condition.
+
+**Affected text:** SP-3 §11, CFP paragraph.
+
+---
+
 ## Validation
 
 approved

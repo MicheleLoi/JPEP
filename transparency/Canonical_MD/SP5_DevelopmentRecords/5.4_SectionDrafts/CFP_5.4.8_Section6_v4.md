@@ -12,12 +12,13 @@ inputs:
 derived_from: "CFP_5.4.8_Section6_v4.md"
 cfp_target: "AI Tools in Ethics Research (topical collection)"
 session_id: SID-20260401-173934
-transformation: "v4 → v4.1: Redundancy pass 1. Compressed §6.1 opening and Convergence; shortened citation-pattern examples; merged §6.2 implementation paragraph into preceding; cut §6.4 second paragraph (hedging about limitations). Net −~350 words."
+transformation: "v4 → v4.1: Redundancy pass 1. Compressed §5.1 opening and Convergence; shortened citation-pattern examples; merged §5.2 implementation paragraph into preceding; cut §5.4 second paragraph (hedging about limitations). Net −~350 words."
 word_count: ~1570
+section_numbering: pre_renaming
 ---
-# 6. Mandatory Transparency in Practice
+# 5. Mandatory Transparency in Practice
 
-## 6.1 From Conditions to Practice
+## 5.1 From Conditions to Practice
 
 Section 3 established that ethical inquiry is essentially contested at two levels, and that both levels converge on comprehensive process documentation. The two routes to that conclusion are developed here.
 
@@ -39,7 +40,7 @@ What different modes of AI engagement express matters. Documented delegation exp
 
 *The framework.*
 
-The Meaningful Human Control (MHC) framework provides the operationalization. Santoni de Sio and van den Hoven (2018) developed MHC for autonomous weapons systems, but the framework transfers structurally to AI-assisted scholarship. It identifies two necessary conditions. The **tracking condition** requires that system outputs covary with the human operator's relevant reasons. The **tracing condition** is more demanding: outputs must be traceable to proper understanding and endorsement by some human person. As Santoni de Sio and van den Hoven put it, "systems whose actions and states are not traceable to relevant understanding and endorsing by some human person—no matter how intelligent and reason-responsive they may be—are not under meaningful human control" (§6.2).
+The Meaningful Human Control (MHC) framework provides the operationalization. Santoni de Sio and van den Hoven (2018) developed MHC for autonomous weapons systems, but the framework transfers structurally to AI-assisted scholarship. It identifies two necessary conditions. The **tracking condition** requires that system outputs covary with the human operator's relevant reasons. The **tracing condition** is more demanding: outputs must be traceable to proper understanding and endorsement by some human person. As Santoni de Sio and van den Hoven put it, "systems whose actions and states are not traceable to relevant understanding and endorsing by some human person—no matter how intelligent and reason-responsive they may be—are not under meaningful human control" (§6.2) [VERIFY: replace with page number].
 
 Tracing requires that the directing person *understood* what was being produced and *endorses* it as their own intellectual contribution. This is where the two levels converge operationally. The question "did the author understand and endorse?" is precisely the question that Kierkegaard's truth-as-subjectivity makes constitutive and that Nietzsche's confession metaphor requires. A framework satisfying tracing serves both levels of the double contestation.
 
@@ -47,7 +48,7 @@ Tracing presents the distinctive challenge. Tracking is relatively easy: if the 
 
 The three conditions from Section 5—ecological validity, good faith orientation, costly signaling—implement these requirements under AI-mediated conditions.
 
-## 6.2 The Transparency Framework
+## 5.2 The Transparency Framework
 
 Three components structure the disclosure: model and process information establishes technological context; representative prompts and outputs show the author's inputs; process narrative provides a reflective account of the intellectual journey. Together these enable tracing assessment while remaining ecologically valid.
 
@@ -61,7 +62,7 @@ The five transparency elements—SP-1 through SP-5—each serve the tracing cond
 | SP-4: Process Documentation | All writing-phase materials (prompts, guidance, modifications, traces)   | Primary substance against which SP-3's adequacy claim is assessed      |
 | SP-5: Development Records   | How instructions evolved; meta-level documentation                       | Enables deeper tracing of intellectual direction                       |
 
-**Engagement with Lloyd's standards.** Lloyd (2025) proposes four standards for AI-assisted scholarship: *prominence*, *replicability*, *content cross-checking*, and *intra-textual clarity*. We adopt Standards 1 and 2. We reject Standard 4: real workflows involve iterative refinement where "AI text" and "human text" blur. What matters is whether the intellectual trajectory is traceable to human understanding—which is what SP-4 captures.
+**Engagement with Lloyd's standards.** Lloyd (2025) proposes four standards for AI-assisted scholarship: *prominence*, *replicability*, *content cross-checking*, and *intra-textual clarity*. We adopt Standards 1 and 2. We reject Standard 4: in iterative prompt-revision workflows, human editorial judgment is embedded in every clause, making binary attribution of text to "AI" or "human" incoherent — as the process documentation in SP-4 illustrates. What matters is whether the intellectual trajectory is traceable to human understanding, which is what SP-4 captures.
 
 The requirements make explicit three nested concerns:
 
@@ -73,13 +74,13 @@ OUTERMOST: Track what ethics research becomes
             +-- INNERMOST: Maintain epistemic integrity
 ```
 
-## 6.3 Experimental Development and Community Evolution
+## 5.3 Experimental Development and Community Evolution
 
 This framework represents a sketch requiring experimentation. An early community of practice functions as exploratory search: authors experiment with documentation, reviewers with assessment, shared practices evolve through experience. What we propose aims at proof-of-concept. This article demonstrates one possible implementation, showing transparency requirements can be met without technical infrastructure or surveillance bureaucracy.
 
-Research communities organized around opacity face an adverse selection dynamic: as non-transparent AI use becomes widespread, the epistemic value of all undisclosed work diminishes collectively, while scholars committed to transparency bear individual costs. Communities organized around transparency invert this: they attract scholars motivated by the desire to learn from one another's documented practice.
+Research communities organized around opacity face an adverse selection dynamic: as non-transparent AI use becomes widespread, the epistemic value of all undisclosed work diminishes collectively, while scholars committed to transparency bear individual costs. Communities organized around transparency tend toward a different dynamic: they are more likely to attract scholars motivated by the desire to learn from one another's documented practice.
 
-## 6.4 Pilot Observations
+## 5.4 Pilot Observations
 
 The documentation requirements are substantial: prompts, modification logs, epistemic traces, and session records accumulate rapidly. Synthesizing them into the coherent account SP-3 requires is intractable if attempted retrospectively. AI-assisted synthesis—applied immediately after each working session—is what makes the framework viable. A framework requiring transparency about AI use depends, in implementation, on AI assistance to sustain the documentation it requires. The relevant constraint is that synthesis be honest—that the documented account accurately represents the intellectual process. Working from the raw session record during synthesis, rather than from memory alone, reduces the risk of the account becoming more coherent than the process actually was.
 
