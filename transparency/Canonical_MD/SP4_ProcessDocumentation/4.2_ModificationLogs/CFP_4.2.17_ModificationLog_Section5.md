@@ -7,11 +7,13 @@ output_completed: "CFP_5.4.7_Section5_v1.md"
 output_file: transparency/Canonical_MD/SP5_DevelopmentRecords/5.4_SectionDrafts/CFP_5.4.7_Section5_v1.md
 project: JPEP
 created: 2026-03-17
-last_updated: 2026-03-17
+last_updated: 2026-04-09
 session_id: SID-20260317-191544
 validated: "2026-03-17"
 validation: "approved_with_edits"
 source_conversation: "JPEP_20260317_180549.md"
+section_numbering: pre_renaming
+section_number_new: "see section_renumbering in adapt.md"
 ---
 # Modification Log — Section 5 (CFP Adaptation)
 
@@ -297,6 +299,49 @@ The dominant transformation is strategic reorientation of the derivation: same p
 **Redundancy reduction** in SID-20260401-225323 (source conversation: JPEP_20260401_205323.md): ~985 → ~760 words (23%). Opening re-summary reduced; §5.4 bridge compressed. See `CFP_4.2.22_ModificationLog_RedundancyReduction.md`.
 
 **Current authoritative file:** `CFP_5.4.7_Section5_v2.md`
+
+---
+
+## Post-Review: Shoulders Review Response (2026-04-09)
+
+**Session:** SID-20260409-200754
+**Source:** `CFP_5.3.25_Note_ShouldersReview_v1.md` (comment #21 — ecological validity non-standard use); `CFP_5.3.27_Note_ReviewResponse_Draft.md`
+
+### MOD-010: §4.1 — ecological validity flagged as non-standard term
+
+**Change:** The first sentence of §4.1 was revised to flag that "ecologically valid" is used in a non-standard sense. Previous text introduced the concept without acknowledging the terminological divergence from its established methodological usage (generalizability to real-world settings).
+
+**Previous text (abbreviated):** "A requirement is ecologically valid when honest compliance is the natural outcome of doing the work it documents: when documentation arises from the research process itself rather than being reconstructed from it."
+
+**Revised text (abbreviated):** "A requirement is *ecologically valid* — the term is used here in a non-standard sense: not generalizability to real-world settings (its methodological meaning), but process-embeddedness, the property of arising from the research process rather than being reconstructed from it — when honest compliance is the natural outcome of doing the work it documents."
+
+**Why:** Shoulders reviewer (#21) flagged that "ecological validity" carries an established methodological meaning (generalizability) that conflicts with the paper's usage. Without a flag, a reader familiar with research methodology would be misled. The non-standard sense is entirely intentional and philosophically precise — the revision makes that explicit rather than leaving the terminological gap unaddressed.
+
+---
+
+### MOD-011: §4.1 — ecological validity disclaimer reversed; footnote added (SID-20260410-002246)
+
+**Change:** MOD-010's "non-standard sense" disclaimer removed. Replaced with an affirmative formulation — "it produces its intended effect in actual scholarly practice rather than only in an idealized reconstruction of what scholarship is" — with a footnote candidate clarifying the conceptual mapping.
+
+**Footnote text:** "A procedure is ecologically valid if it achieves its intended effect in real-world conditions rather than only in an idealized reconstruction of those conditions — exactly as an experimental finding is ecologically valid if the phenomenon holds outside the laboratory."
+
+**Why:** The MOD-010 disclaimer was unnecessary and self-undermining. The paper's usage of "ecological validity" is not non-standard — it applies the same conceptual structure (natural conditions vs. artificial conditions) to a new domain (documentation practices vs. experimental findings). The mapping is direct: a documentation requirement has ecological validity if it works in actual writing practice, not only in an idealized model of writing where contribution boundaries are pre-planned and cleanly separable. The footnote clarifies this for readers who may not immediately see the analogy, unapologetically. Author's decision: the reviewer's critique was mistaken; the disclaimer was accepted in error.
+
+---
+
+## Post-Review: Second Pass (2026-04-10)
+
+**Session:** SID-20260410-002246
+
+### MOD-012: §4.2 — good faith orientation substantively extended
+
+**Change:** Six paragraphs added to §4.2 after the existing two, before §4.3. Produced by Claude Opus 4.6 at author's explicit invitation (high-effort); author approved without modification.
+
+**Argument added:** Good faith orientation is not merely a corrective for adversarial mandates — it is a structural precondition for any transparency framework operating under essential contestedness. Five connected moves: (1) the Strathern/gaming problem reappears at a deeper level in the paper's own proposal, not only in current mandates: any single normative conception of authorship creates a target against which documentation can be fabricated; (2) essential contestedness does positive work here — the diversity of irreducible evaluative perspectives means no single fabrication strategy can optimize against all assessment criteria simultaneously ("defense in depth"); (3) this structural defense holds only if evaluative diversity is maintained in practice, not collapsed de facto by professional incentives; (4) progress on foundational questions about AI and philosophy requires the community to encounter the full range of practices, including AI-heavy ones — good faith is the condition under which diversity generates learning rather than conformity; (5) good faith at the community level is the practical correlate of essential contestedness at the conceptual level — the community must hold open the question that transparency documentation is meant to help eventually answer.
+
+**Why:** The existing §4.2 was purely defensive — focused on why current mandates fail. The extension makes the positive structural argument: why this paper's own proposal requires good faith, not just why other mandates don't have it. The "defense in depth" move — essential contestedness as a structural feature that prevents gaming — is genuinely novel and not previously stated in the paper. The extension connects backward to Section 3 (essential contestedness, the Sartre/tracing condition ambiguity) and forward to Section 6 (assessment norms) and the Conclusion (tracing condition inherits essential contestedness). Author-initiated; Opus-executed.
+
+**Affected file:** `CFP_5.4.7_Section5_v2.md`
 
 ---
 

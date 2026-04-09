@@ -18,6 +18,8 @@ output_completed: "CFP_5.4.8_Section6_v3.md (finalized)"
 status: Finalized
 reviewers: "Reviewer A (user) + Reviewer B (Claude Opus 4.6)"
 versions_produced: "v1, v2, v3 (CFP_5.4.8_Section6_v1/v2/v3.md)"
+section_numbering: pre_renaming
+section_number_new: "5 - Mandatory Transparency in Practice"
 ---
 # Modification Log: Section 6 CFP Adaptation
 
@@ -188,6 +190,44 @@ The v3 source draft:
 **Redundancy reduction** in SID-20260401-225323 (source conversation: JPEP_20260401_205323.md): ~1,920 → ~1,540 words (20%). §6.1 Convergence compressed; citation-pattern digression tightened; post-table SP-3 restatement removed; §6.4 hedging cut. Also: meta-ethical route narrowed to expressivism only; routes renamed to "meta-ethical" / "ethical"; art examples replaced with modular synth + Boden & Edmonds / Cohen/AARON. See `CFP_4.2.22_ModificationLog_RedundancyReduction.md`.
 
 **Current authoritative file:** `CFP_5.4.8_Section6_v4.md`
+
+---
+
+## Post-Review: Shoulders Review Response (2026-04-09)
+
+**Session:** SID-20260409-200754
+**Source:** `CFP_5.3.25_Note_ShouldersReview_v1.md` (comment #10 — citation locator inconsistency)
+
+### MOD-019: §5.1 — §6.2 citation locator tagged for verification
+
+**Change:** The direct quotation from Santoni de Sio & van den Hoven (2018) in §5.1 used the locator "(§6.2)" — a section number rather than a page number. All other direct quotations in the paper use page numbers. The locator was tagged with `[VERIFY: replace with page number]` pending manual verification against the source.
+
+**Why:** Shoulders reviewer (#10) flagged the inconsistency in citation style. The locator is not wrong in principle — §6.2 of Santoni de Sio & van den Hoven (2018) is a verifiable location — but the paper's citation convention is page-based for direct quotations, and the section-number form may not allow readers to verify the quote in paginated publication formats. Tagging for verification is the correct interim fix; the final value requires the physical or digital source.
+
+**Note on section numbering:** This entry refers to §5.1 of the current (post-renaming) draft. In the pre-renaming numbering this was §6.1. The affected file is `CFP_5.4.8_Section6_v4.md`.
+
+---
+
+## Post-Review: Shoulders Review Response — Second Pass (2026-04-10)
+
+**Session:** SID-20260410-002246
+**Source:** `CFP_5.3.28_Note_ShouldersReview_Evaluation.md` (S28); `CFP_5.3.27_Note_ReviewResponse_Draft.md`
+
+### MOD-020: §5.3 — adverse selection claim hedged
+
+**Change:** "Communities organized around transparency invert this: they attract scholars motivated by the desire to learn from one another's documented practice." → "Communities organized around transparency tend toward a different dynamic: they are more likely to attract scholars motivated by the desire to learn from one another's documented practice."
+
+**Why:** Shoulders reviewer (#28) correctly identified that "invert this" asserts a community-building dynamic that is not formally argued — first-mover disadvantage is at least as plausible a dynamic as the transparency-inverts-selection claim. The revision preserves the intuition (transparency-organized communities have a different selection profile) without promising a formal game-theoretic result. User-approved disposition from CFP_5.3.28 (S28 row).
+
+**Note on section numbering:** §5.3 in post-renaming numbering; §6.3 in pre-renaming. Affected file: `CFP_5.4.8_Section6_v4.md`.
+
+### MOD-021: §5.2 — Lloyd Standard 4 dismissal expanded (S29)
+
+**Change:** One-sentence dismissal expanded to two sentences. Previous: "We reject Standard 4: real workflows involve iterative refinement where 'AI text' and 'human text' blur. What matters is whether the intellectual trajectory is traceable to human understanding—which is what SP-4 captures." Revised: "We reject Standard 4: in iterative prompt-revision workflows, human editorial judgment is embedded in every clause, making binary attribution of text to 'AI' or 'human' incoherent — as the process documentation in SP-4 illustrates. What matters is whether the intellectual trajectory is traceable to human understanding, which is what SP-4 captures."
+
+**Why:** Shoulders reviewer (S29) correctly noted that one sentence of dismissal leaves the premise ("AI text and human text blur") as mere assertion. Opus review confirmed: two sentences warranted, no citation needed — the claim is an empirical observation about iterative workflows evidenced by SP-4 itself. The self-reference ("as the process documentation in SP-4 illustrates") provides the grounding without adding discursive weight. User-approved.
+
+**Note on section numbering:** §5.2 in post-renaming numbering; §6.2 in pre-renaming. Affected file: `CFP_5.4.8_Section6_v4.md`.
 
 ---
 
