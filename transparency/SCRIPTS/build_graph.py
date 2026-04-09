@@ -32,6 +32,7 @@ REL_FIELDS = [
     "feeds_into", "derived_from", "output_completed", "inputs",
     "source_guidance", "source_file", "influenced_artifacts",
     "related_documents", "source_conversations",
+    "related", "related_epistemic_trace_artifact",
 ]
 # Multi-valued variants
 REL_FIELDS_NUMBERED = [
@@ -44,6 +45,10 @@ V1V2_FIELD_MAP = {
     "Inputs":                "inputs",
     "input_artifacts":       "inputs",
     "phase1_inputs":         "inputs",
+    "phase2_inputs":         "inputs",
+    "phase3_inputs":         "inputs",
+    "phase4_inputs":         "inputs",
+    "phase5_inputs":         "inputs",
     "Output":                "output_completed",
     "Outputs":               "output_completed",
     "outputs":               "output_completed",
@@ -51,6 +56,7 @@ V1V2_FIELD_MAP = {
     "influenced_by":         "inputs",
     "Source":                "source_file",
     "conversion_source":     "source_file",
+    "input_to":              "feeds_into",
 }
 
 # Node colours by artifact type
@@ -83,11 +89,26 @@ TYPE_SIZES = {
 FILENAME_PREFIX_RE = re.compile(
     r"^(?:(?:II|III|CFP)_)?(?:SP)?(?P<id>\d+(?:\.\d+)*)"
 )
+ERA_ID_RE = re.compile(
+    r"^(?P<era>(?:II|III|CFP)_)?(?:SP)?(?P<num>\d+(?:\.\d+)*)"
+)
 
 def stem_to_id(stem: str) -> str:
-    """Normalise a filename stem to its dot-ID prefix."""
+    """Normalise a filename stem to its dot-ID prefix (era stripped)."""
     m = FILENAME_PREFIX_RE.match(stem)
     return m.group("id") if m else stem
+
+def stem_to_era_id(s: str):
+    """Return (era, numeric_id) tuple from a stem or reference string.
+    era is '' for bare artifacts, 'III', 'CFP', etc. for prefixed ones.
+    Everything after the numeric code is treated as a description and ignored.
+    abc_X.Y.Z and dfg_X.Y.Z are different; X.Y.Z_foo and X.Y.Z_bar are the same.
+    """
+    m = ERA_ID_RE.match(s.strip())
+    if not m:
+        return None
+    era = (m.group("era") or "").rstrip("_")
+    return (era, m.group("num"))
 
 def classify(data: dict, filename: str) -> str:
     dtype = str(data.get("document_type", "") or data.get("artifact_type", "")).lower()
@@ -112,16 +133,18 @@ def extract_chat_ids(data: dict) -> list[str]:
     lower_keys = {k.lower(): k for k in data.keys()}
 
     # UUID-style fields — standard snake_case and v1/v2 Title Case variants
-    uuid_exact = {"source_chat_id", "chat_id"}
-    uuid_exact_lower = {"source chat id", "chat id", "source_chat_id", "chat_id"}
+    uuid_exact = {"source_chat_id", "chat_id", "upstream_chat_id"}
+    uuid_exact_lower = {"source chat id", "chat id", "source_chat_id", "chat_id", "upstream_chat_id"}
     for k_lower, k_orig in lower_keys.items():
         # Exact match (case-insensitive)
         if k_lower in uuid_exact_lower:
             v = str(data[k_orig]).strip()
             if v and v not in ("", "null", "~"):
                 ids.append(v)
-        # Numbered variants: source_chat_id_1, source_chat_id_2, etc.
-        elif re.match(r"^(?:source.?chat.?id|chat.?id)_\d+$", k_lower):
+        # Numbered variants: source_chat_id_1 / source_chat_id_2 (digit suffix)
+        # or source_chat_1_id / source_chat_2_id (digit in middle — v1/v2 style)
+        elif re.match(r"^(?:source.?chat.?id|chat.?id)_\d+$", k_lower) or \
+             re.match(r"^source.?chat.?\d+.?id$", k_lower):
             v = str(data[k_orig]).strip()
             if v and v not in ("", "null", "~"):
                 ids.append(v)
@@ -131,6 +154,19 @@ def extract_chat_ids(data: dict) -> list[str]:
         sid = str(sid).strip()
         if sid and sid not in ("", "null", "~"):
             ids.append(sid)
+    # phase_N_chat_id — used in two-phase modlogs (e.g. 4.2.9)
+    for k, v in data.items():
+        if re.match(r"^phase\d+_chat_id$", str(k)):
+            v = str(v).strip()
+            if v and v not in ("", "null", "~"):
+                ids.append(v)
+    # Extract UUID from claude.ai chat URLs (e.g. source_chat_link: https://claude.ai/chat/<uuid>)
+    _uuid_re = re.compile(r"claude\.ai/chat/([0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12})", re.IGNORECASE)
+    for k, v in data.items():
+        if "link" in str(k).lower() and isinstance(v, str):
+            m = _uuid_re.search(v)
+            if m:
+                ids.append(m.group(1))
     return list(dict.fromkeys(ids))  # deduplicate while preserving order
 
 def safe_node_id(raw: str) -> str:
@@ -153,12 +189,15 @@ def flatten_value(v) -> list[str]:
                 out.extend(flatten_value(item))
         return out
     s = str(v).strip()
-    # Split on semicolons (hub script concatenates with ;)
-    parts = [p.strip() for p in s.split(";") if p.strip()]
+    # Split on semicolons (hub script concatenates with ;) or commas (v1/v2 inline lists)
+    import re as _fv_re
+    parts = [p.strip() for p in _fv_re.split(r"[;,]", s) if p.strip()]
     result = []
     for part in parts:
         # Strip annotation in parens: "CFP_5.3.1 (master work plan)" → "CFP_5.3.1"
         base = re.sub(r"\s*\(.*?\)\s*$", "", part).strip()
+        # Strip leading prose words before an ID: "see 4.7.4" → "4.7.4"
+        base = re.sub(r"^(?:see|cf\.?|from|ref\.?)\s+", "", base, flags=re.IGNORECASE)
         if base:
             result.append(base)
     return result
@@ -197,21 +236,28 @@ def build_graph(vault: Path) -> nx.DiGraph:
         node_id = safe_node_id(stem)
         atype = classify(data, str(f))
         label = data.get("label") or data.get("title") or stem
-        # Shorten label for display
-        short = re.sub(r"^(?:II|III|CFP)_", "", stem)
-        short = re.sub(r"_v\d+$", "", short)
+        # Label: keep era prefix (CFP_, III_) + numeric code; elide trailing name
+        _m = re.match(r"^((?:II|III|CFP)_)?((?:SP)?\d+(?:\.\d+)*(?:\.\d+)?)", stem)
+        short = ((_m.group(1) or "") + _m.group(2)) if _m else stem
+        # Era for filtering
+        _era_m = re.match(r"^(II|III|CFP)_", stem)
+        era = _era_m.group(1) if _era_m else "v1v2"
 
         G.add_node(
             node_id,
             label=short,
+            full_title=label,
             title=f"{stem}\n{data.get('document_type', atype)}\n{data.get('date_created') or data.get('date') or data.get('created', '')}",
             color=TYPE_COLORS[atype],
             size=TYPE_SIZES[atype],
             node_type=atype,
             stem=stem,
+            era=era,
         )
         dot_id = stem_to_id(stem)
-        id_to_node[dot_id] = node_id
+        era_key = stem_to_era_id(stem)   # (era, numeric) — unambiguous lookup key
+        if era_key:
+            id_to_node[era_key] = node_id
         stem_to_node[stem] = node_id
 
         # --- Add hub nodes for each session ID found ---
@@ -275,20 +321,32 @@ def build_graph(vault: Path) -> nx.DiGraph:
             targets = flatten_value(raw)
             for target in targets:
                 target_stem = Path(target).stem
+                # 1. Exact stem match (most specific)
                 target_node = stem_to_node.get(target_stem)
                 if not target_node:
-                    dot = stem_to_id(target_stem)
-                    target_node = id_to_node.get(dot)
+                    # 2. (era, numeric) from Path stem — works for file-style refs
+                    era_key = stem_to_era_id(target_stem)
+                    if era_key:
+                        target_node = id_to_node.get(era_key)
+                if not target_node:
+                    # 3. (era, numeric) from raw target string — handles "X.Y.Z description"
+                    #    where Path.stem truncates at the first decimal point
+                    era_key = stem_to_era_id(target)
+                    if era_key:
+                        target_node = id_to_node.get(era_key)
                 if target_node and target_node != src_id:
                     if canonical in ("feeds_into", "output_completed"):
                         ecol = "#E74C3C"   # red — output flow
+                        G.add_edge(src_id, target_node, color=ecol, width=1.5, title=canonical)
                     elif canonical in ("inputs", "derived_from", "source_file"):
-                        ecol = "#3498DB"   # blue — input flow
+                        ecol = "#3498DB"   # blue — input flow (target feeds into src)
+                        G.add_edge(target_node, src_id, color=ecol, width=1.5, title=canonical)
                     elif canonical == "source_guidance":
                         ecol = "#95A5A6"   # grey — guidance
+                        G.add_edge(src_id, target_node, color=ecol, width=1.5, title=canonical)
                     else:
                         ecol = "#BDC3C7"   # light grey — lateral
-                    G.add_edge(src_id, target_node, color=ecol, width=1.5, title=canonical)
+                        G.add_edge(src_id, target_node, color=ecol, width=1.5, title=canonical)
 
         # Standard CFP/III fields
         for field in REL_FIELDS + REL_FIELDS_NUMBERED:
@@ -299,6 +357,26 @@ def build_graph(vault: Path) -> nx.DiGraph:
             _add_rel_edges(v1_field, canonical)
 
     return G
+
+# ---------------------------------------------------------------------------
+# Era filtering
+# ---------------------------------------------------------------------------
+
+def filter_era(G: nx.DiGraph, era: str) -> nx.DiGraph:
+    """Return a subgraph containing only artifacts from `era` and the hub nodes
+    that connect to at least one artifact in that era.
+    era values: 'v1v2', 'III', 'CFP'
+    """
+    # Artifact nodes in this era
+    art_nodes = {n for n in G.nodes if G.nodes[n].get("era") == era}
+    # Hub nodes with at least one edge to an artifact in this era
+    hub_nodes = {
+        n for n in G.nodes
+        if G.nodes[n].get("node_type") == "hub"
+        and any(nbr in art_nodes for nbr in G.successors(n))
+    }
+    keep = art_nodes | hub_nodes
+    return G.subgraph(keep).copy()
 
 # ---------------------------------------------------------------------------
 # Render
@@ -375,3 +453,12 @@ if __name__ == "__main__":
     print(f"Scanning: {vault}")
     G = build_graph(vault)
     render(G, output)
+
+    # Era-specific graphs
+    graphs_dir = output.parent
+    for era, fname in [("v1v2", "jpep_graph_v1v2.html"),
+                       ("III",  "jpep_graph_III.html"),
+                       ("CFP",  "jpep_graph_CFP.html")]:
+        print(f"\n--- Era: {era} ---")
+        G_era = filter_era(G, era)
+        render(G_era, graphs_dir / fname)
