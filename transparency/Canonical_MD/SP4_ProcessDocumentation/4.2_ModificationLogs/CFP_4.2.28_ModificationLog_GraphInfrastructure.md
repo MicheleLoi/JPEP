@@ -209,3 +209,30 @@ with 4.4.4 and 4.4.5 as the bridging guidance artifacts.
 **Change:** All three scripts now save SVG only (no `dpi=150` PNG). Existing PNG
 files (`fig1_timeline.png`, `fig6_swimlanes.png`, `fig_section6_network.png`) deleted.
 User will apply final touches manually in SVG.
+
+---
+
+## MOD-011 — fig2/4/5 scripts dropped from SP-3 figure set
+
+**Files affected:** `fig2_feedback_loop.py`, `fig4_three_draft_session.py`,
+`fig5_visible_decision.py` (scripts retained in `transparency/SCRIPTS/` but not
+part of the SP-3 build)
+
+**Decision:** fig2, fig4, and fig5 are not included in the SP-3 figure set.
+
+**Reconstruction:** The three scripts were written within `SID-20260408-145906`
+(14:59–18:04, Apr 8 2026) but were absent from that session's `artifacts_produced`
+list and from the stated goal, which covered fig1, fig6, fig_section6_network, and
+the HTML bonus only. MOD-010 then converted the three canonical figures to SVG;
+fig2/4/5 were not included in that conversion. No subsequent session addressed them.
+The build uses SVG only (see MOD-010); fig2/4/5 produce PNG and were never converted.
+
+**Consequence for SP-3:** The three figure callouts (`[FIGURE 2]` — feedback loop,
+`[FIGURE 4]` — three-draft session, `[FIGURE 5]` — visible decision) are removed
+from `CFP_5.4.11_SP3.md`. The prose in §7 already covers the content of all three
+in full; the figures were illustrative, not load-bearing. Figure numbering in SP-3
+is revised: fig1_timeline.svg remains Figure 1; fig6_swimlanes.svg becomes Figure 2;
+fig_section6_network.svg becomes Figure 3.
+
+**Evidence source:** `session_topology.yaml` entries for `SID-20260408-145906` and
+`SID-20260408-191811`; this modlog MOD-010.
