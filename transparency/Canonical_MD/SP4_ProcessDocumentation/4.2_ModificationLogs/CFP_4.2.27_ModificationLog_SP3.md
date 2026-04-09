@@ -8,6 +8,8 @@ session_id:
   - SID-20260407-181422
   - SID-20260407-190627
   - SID-20260408-122758
+  - SID-20260409-132703
+  - SID-20260409-145640
 source_conversation: SID-20260407-181422
 status: Complete
 inputs:
@@ -17,7 +19,7 @@ inputs:
   - CFP_5.3.19_Note_SP3_FigureDataSpecs.md
   - Paper/MDversion/appendix.md (v2 appendix — structural model)
 output_completed:
-  - CFP_5.4.11_SP3.md (v2)
+  - CFP_5.4.11_SP3.md (v3 — figure callouts revised per MOD-006)
 related:
   - CFP_5.2.4_pdl_SP1_SP2_SP3.md (PDL-024, PDL-025)
 ---
@@ -125,10 +127,36 @@ Same session as MOD-004 (`SID-20260408-122758`), continuing the read-through of 
 
 **Why these are one entry.** Four edits, one continuous read-through of v2 by the user against the conversations-policy revision pass that produced MOD-004. They are bundled because the read-through was a single intent (correct everything that survived the v1 → v2 restructure but was wrong on its merits), and because three of the four corrections fix recurring failure modes already named in MOD-003: correlation-for-causation around the model switch, mislocated phase-attribution of phenomena that span phases, and over-featuring of insignificant gaps in §10.
 
+### MOD-006: Figure integration — fig2/4/5 dropped, network added as Figure 2, captions embedded
+
+Session `SID-20260409-132703`. Commits: `9c25cb7` (figure callout revisions), `c2ba911` (captions).
+
+**Background.** After the graph infrastructure overhaul (`CFP_4.2.28`, sessions SID-20260408-145906 and SID-20260408-191811), the project had three SVG figures: `fig1_timeline.svg`, `fig6_swimlanes.svg`, and `fig_section6_network.svg`. SP-3 v2 still referenced five figures — fig1, fig2 (feedback loop), fig4 (three-draft session), fig5 (visible decision), and fig6 (swimlanes) — inherited from the CFP_5.3.19 figure spec. fig2, fig4, and fig5 had no corresponding SVG files.
+
+**Diagnosis.** Session topology for SID-20260408-145906 (`artifacts_produced` list) showed only the three canonical figure scripts registered; `CFP_4.2.28` MOD-010 confirmed those three were converted to SVG-only while fig2/4/5 were not included in that conversion scope. No subsequent session built or converted them. The reason is structural: the session that produced fig2/4/5 scripts had a different, pre-specified goal (fig1 + fig6 + fig_section6_network + HTML bonus); fig2/4/5 were written as informal extras and never entered the artifact chain.
+
+**Decision: drop fig2/4/5.** Prose in SP-3 §7 covers the content of all three in full — the feedback-loop structure, the three-draft session, and the visible-decision example are named and explained in the running text. The figures were illustrative, not load-bearing. Decision recorded in `CFP_4.2.28` MOD-011.
+
+**SP-3 changes (first commit, 9c25cb7):**
+
+1. **Part IV figure numbering revised.** The three remaining figures renumbered: `fig1_timeline.svg` stays as Figure 1; `fig_section6_network.svg` becomes Figure 2 (promoted from the former "bonus" §10 slot); `fig6_swimlanes.svg` becomes Figure 3.
+2. **[FIGURE 2], [FIGURE 4], [FIGURE 5] callouts removed.** Three inline callouts deleted from Part IV body text. Associated placeholder prose ("see Figure X") removed or absorbed into surrounding sentences where needed.
+3. **fig_section6_network relocated to Part IV.** The network figure placed as Figure 2 immediately after §7 (Stage 5 / the five-stage walkthrough), where it functions as the visual synthesis of the Section 6 history just recounted. Previously it sat only in §10 as a bonus; in that position the figure arrived after the reader had left the worked example. The §10 bonus paragraph trimmed to HTML interactive graphs only.
+4. **fig6_swimlanes retained as Figure 3 in §9.** Position unchanged; callout updated from `[FIGURE 6]` to `[FIGURE 3]`.
+
+**SP-3 changes (second commit, c2ba911):**
+
+5. **Figure captions embedded.** Each figure callout followed by an italic caption line drawn directly from the corresponding Python script's `caption` variable. This is to make Word integration easier: SVG files do not carry extractable text, so the caption must be present in the MD. The three captions:
+   - *Figure 1.* From `fig1_timeline.py`: the project timeline, five stages, three phases, two platforms, four model identities, major structural events.
+   - *Figure 2.* From `fig_section6_network.py`: four-hub chain from PreliminaryChat 1 (2025-10-12) through two methodology sessions (2025-10-13, 2025-10-15) into the Section 6/VIII writing session (2025-10-18); lower-rail version chain; bridge artifacts 4.4.4 and 4.4.5; SUN4 cross-paper scope.
+   - *Figure 3.* From `fig6_swimlanes.py`: swimlane view of where Section 6 sits across stages and phases.
+
+**Why these are one entry.** Both commits serve the same intent — integrate the three final SVGs into SP-3 coherently — and the caption commit is a direct follow-on to the callout commit. The decision about fig2/4/5 is recorded separately in `CFP_4.2.28` MOD-011 because it pertains to the graph infrastructure record, not to SP-3 prose structure.
+
 ## Validation
 
 approved
 
 ---
 
-*Modlog records the v1 → v2 restructure executed in session SID-20260407-181422, logged in post-compaction session SID-20260407-190627, and the conversations-as-source-material policy revision pass executed in session SID-20260408-122758. v1 frozen at commit 6a2b844 and recoverable via `git show 6a2b844:transparency/Canonical_MD/SP5_DevelopmentRecords/5.4_SectionDrafts/CFP_5.4.11_SP3.md`. v2 lives at the same path under the post-2026-04-07 single-file versioning convention; substantive intra-v2 revisions tracked as MOD-NNN entries here.*
+*Modlog records the v1 → v2 restructure executed in session SID-20260407-181422, logged in post-compaction session SID-20260407-190627; the conversations-as-source-material policy revision pass executed in session SID-20260408-122758; and the figure integration pass executed in session SID-20260409-132703. v1 frozen at commit 6a2b844 and recoverable via `git show 6a2b844:transparency/Canonical_MD/SP5_DevelopmentRecords/5.4_SectionDrafts/CFP_5.4.11_SP3.md`. v2 at commit 57fb483. v3 lives at the same path under the single-file versioning convention; substantive intra-version revisions tracked as MOD-NNN entries here.*
