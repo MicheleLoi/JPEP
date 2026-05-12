@@ -9,7 +9,7 @@ models:
   - "Claude Sonnet 4.6 (2026-03-03, initial draft + revisions)"
   - "Claude Opus 4.6 (2026-03-03, Reviewer B — two review rounds)"
 date_started: 2026-03-03
-date_last_updated: 2026-03-12
+date_last_updated: 2026-04-09
 status: "Finalized (2026-03-03); post-finalization amendments 2026-03-12"
 session_id: SID-20260303-102634
 source_conversation: "JPEP_20260303_102634.md"
@@ -182,6 +182,47 @@ This log tracks the drafting and revision of the CFP adaptation Introduction (`C
 **Redundancy reduction** in SID-20260401-225323 (source conversation: JPEP_20260401_205323.md): ~1,270 → ~730 words (43%). Double-contestation preview replaced with 2 sentences; duplicate "mandates don't specify" paragraph deleted; acknowledgments compressed. See `CFP_4.2.22_ModificationLog_RedundancyReduction.md`.
 
 **Current authoritative file:** `CFP_5.4.3_Introduction_v2.md`
+
+---
+
+## Post-Finalization: Shoulders S2 Response — Cognitivist Reformulation (2026-04-09)
+
+**Session:** SID-20260409-173842
+
+**Source:** `CFP_5.3.25_Note_ShouldersReview_v1.md` (S2 — "question-begging charge is itself question-beggable"); `CFP_5.3.27_Note_ReviewResponse_Draft.md` (S2 agreed reply, anchoring the move in sociological non-convergence of the community rather than a metaethical verdict).
+
+### Entry 9 — Cognitivist paragraph: "question-begging" charge dropped; community-default framing introduced
+
+**Change:** The cognitivist-objection paragraph was reformulated. The previous version called the objection "question-begging" because it "presupposes that ethics tracks truth and that output-evaluation criteria are therefore settled." The revised version drops the charge, concedes the cognitivist conditional ("if ethics tracks truth, then evaluate the outputs") as valid on its own terms, and relocates the difficulty to the silent deployment of that conditional as community default — given that practitioners who reject the antecedent are present in the community and have not been expelled.
+
+**Previous text (paragraph 3 of v2):**
+
+> "Ethical inquiry" is, in Gallie's (1956) sense, an essentially contested concept... **The cognitivist objection presupposes that ethics tracks truth and that output-evaluation criteria are therefore settled — but this presupposition is precisely what is most contested in metaethics. The objection is question-begging.** Section 3 develops this argument...
+
+**Revised text:**
+
+> "Ethical inquiry" is, in Gallie's (1956) sense, an essentially contested concept... **The cognitivist conditional — *if ethics tracks truth, then evaluate the outputs* — is valid on its own terms, but silently deploying it as community default presupposes precisely what the discipline has not settled; the community includes practitioners who reject the antecedent, and their positions have not been expelled.** Section 3 develops this argument...
+
+**Why:** The Shoulders S2 objection observed that the "question-begging" charge could be levelled symmetrically back at the paper's own argument (which presupposes that expressivist/existentialist positions are live options). The agreed reply (CFP_5.3.27, S2) was that the symmetry argument misreads the contested-concepts move: cognitivists "could level that charge, but until they decide to create a separate community they just can't assume they are surrounded by like-minded individuals and they cannot fail to care... the community has never decided to expel them." This revision implements that reply at the textual level: the conditional's internal validity is conceded; what's denied is that the discipline's sociological state licenses its silent community-wide deployment.
+
+**Note — Earlier traces of "question-begging":** Entry 2 (2026-03-03) had introduced "question-begging" as a replacement for the original "defeats itself" framing on Opus's Round-1 recommendation. Entry 8 (2026-03-12, post-finalization compression) preserved it in the compressed Introduction. The present revision (2026-04-09) supersedes both: the charge is dropped in favour of a sociologically anchored formulation.
+
+### Side change — Roadmap renumbered (post-2026-04-09 section renaming)
+
+The final paragraph's section pointers were updated:
+
+| Old number | New number | Title |
+|---|---|---|
+| Section 5 | Section 4 | Conditions for Adequate Transparency |
+| Section 6 | Section 5 | Mandatory Transparency in Practice |
+| Section 7 | Section 6 | Community Assessment of Documentation Adequacy |
+| Section 8 | Section 7 | Conclusion |
+
+See `adapt.md` (`section_renumbering`) and `CFP_5.3.26_Note_DecisionRecord_SectionRenumbering.md`.
+
+### Side change — Frontmatter
+
+`section_numbering: pre_renaming` marker added.
 
 ---
 
