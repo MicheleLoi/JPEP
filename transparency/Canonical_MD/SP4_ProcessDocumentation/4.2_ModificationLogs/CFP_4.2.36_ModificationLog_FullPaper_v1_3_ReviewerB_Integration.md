@@ -252,3 +252,28 @@ Implicit rationale (consistent with the broader v1.3 integration logic): JPEP al
 **Verification trail:** Czech Charles University course PDF of Barnes (1956) translation, Parts One and Two, downloaded to `~/AppData/Local/Temp/sartre_verify.pdf` for the session; TOC at front-matter pp. v–vi; Bad Faith chapter at pp. 47–72; the literal quote on p. 49.
 
 **Bibliography:** No new entry. Sartre (1956) added to `paper_bibliography_FINAL.md` and the paper's References block in v1.1 (MOD-004 of CFP_4.2.34).
+
+---
+
+### MOD-008 — §5.2: Lloyd Standard 3 (content cross-checking) acknowledged as orthogonal duty (footnote)
+
+| Field | Value |
+|-------|-------|
+| Date | 2026-05-13 |
+| Type | Gap closure; orthogonality acknowledgment |
+| Source of finding | Reviewer B specific recommendation #7 (should) — Lloyd Standard 3 silently dropped in §5.2 |
+
+**Issue:** §5.2's Lloyd engagement listed all four of Lloyd's (2025) standards (*prominence*, *replicability*, *content cross-checking*, *intra-textual clarity*) but took positions only on Standards 1, 2, and 4. Standard 3 was named in the list but un-addressed. Reviewer B: "you adopt Standards 1 and 2 and reject Standard 4 — but you don't address Standard 3 (content cross-checking), which raises a separate kind of duty (factual verification) that your framework doesn't speak to. A sentence acknowledging the orthogonal nature of cross-checking would close this gap."
+
+**Change:** §5.2 Lloyd-engagement paragraph: a footnote attached to "We adopt Standards 1 and 2." between the adoption clause and the Standard 4 rejection clause:
+
+> ^[Standard 3 (content cross-checking) names a distinct duty — factual verification of claims and citations — orthogonal to the tracing condition this framework addresses. The author bears it under standard scholarly practice whether or not AI was used; the apparatus proposed here neither substitutes for nor supersedes it.]
+
+**Framing decisions (recorded):**
+
+- **Footnote, not body text.** Author requirement: *"footnote."* Standard 3 is a real duty but orthogonal to JPEP's argumentative spine; body-text engagement would over-weight it relative to its load-bearing role.
+- **Orthogonality framing.** "Distinct duty… orthogonal" — names a category distinction, not a hierarchy claim. JPEP is not claiming Standard 3 is unimportant; it's claiming it does different work.
+- **No mention of LLM hallucination / fabrication.** Tempting (Standard 3 is genuinely intensified under AI use), but it would pull JPEP into empirical claims about AI behavior that the argument doesn't otherwise need to make. The reader knows.
+- **No engagement with how cross-checking would interact with SP-4.** The orthogonality claim is enough; deeper integration would over-promise.
+
+**Bibliography:** No new entry. Lloyd (2025) was already in the bibliography from the v1 baseline.
