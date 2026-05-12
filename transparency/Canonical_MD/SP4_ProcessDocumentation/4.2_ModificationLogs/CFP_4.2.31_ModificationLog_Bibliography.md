@@ -205,6 +205,24 @@ Both bibliography files updated:
 
 ---
 
+### MOD-011 — References unified: "Classical Sources" subheader removed; Plato folded into alphabetical list (SID-20260513-003000)
+
+| Field | Value |
+|-------|-------|
+| Date | 2026-05-13 |
+| Session | SID-20260513-003000 |
+| Type | Structural — Section Unification |
+
+**Change:** The `# References` section of `Paper/MDversion/CFP_FullPaper_v1.md` previously contained two subheaders — `### Classical Sources` (containing only "**Plato.** *Apology* 38a.") and `### Primary Sources (Alphabetical)` (containing every other entry). Both subheaders removed; the single Plato entry inserted in alphabetical position between **Nietzsche, F.** (1966) and **Resnik, D. B., & Hosseini, M.** (2025). The `# References` top-level header is now the sole label, and entries form a single uninterrupted alphabetical sequence.
+
+**Why:** User direction (SID-20260513-003000): "References should be unique, no 'classical sources' separation." The two-subheader structure singled out a single entry for special treatment and created two visual zones in a section that was substantively one list. With only one classical-source entry in the bibliography, the subheader carried more structural weight than the content justified. Unified alphabetical ordering is the standard reader-friendly form for a bibliography of this size (~50 entries).
+
+**Plato entry preserved verbatim** ("**Plato.** *Apology* 38a.") — no edition or translator information added; merge only.
+
+**Affected file:** `Paper/MDversion/CFP_FullPaper_v1.md` (version bumped v1.4 → v1.5). Note: the underlying `paper_bibliography_FINAL.md` (`transparency/Canonical_MD/SP4_ProcessDocumentation/4.6_ReferenceLogs/paper_bibliography_FINAL.md`) was *not* touched in this change — only the assembled paper's References block. A follow-on alignment pass against `paper_bibliography_FINAL.md` may be wanted before submission.
+
+---
+
 ## Items Deferred to Reference-Checking Pass
 
 | Entry | Issue | Status |
@@ -226,6 +244,9 @@ Both bibliography files updated:
 | Consistency Fix | 1 | MOD-004 (SdSio 2016 editors) |
 | Cleanup | 1 | MOD-005 (inline notes, working-notes separator) |
 | New Artifact | 1 | MOD-006 (paper_bibliography_FINAL.md) |
+| Structural — section unification | 1 | MOD-011 (Classical Sources subheader removed; Plato folded into alphabetical list) |
+
+*Note: MOD-007 through MOD-010 (reference verification work, 2026-04-10) entered the modlog body but were never added to this summary table; backlog noted, full reconciliation deferred to a later cleanup pass.*
 
 ---
 
