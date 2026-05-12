@@ -3,14 +3,15 @@ project: JPEP
 document_type: Type 12 - Section Draft
 label: CFP_5.4.12_SP2
 section: "SP-2 — Navigation and Architecture Guide"
-version: v1
+version: v2
 date_created: 2026-04-09
 status: Draft (provisional)
 source: "Claude Sonnet 4.6 (Claude Code session)"
 session_id:
   - SID-20260409-150705
   - SID-20260512-111348
-date_last_updated: 2026-05-12
+  - SID-20260513-003000
+date_last_updated: 2026-05-13
 produced_by_prompt: ""
 inputs:
   - CFP_5.4.11_SP3.md
@@ -18,8 +19,8 @@ inputs:
   - CFP_5.2.4_pdl_SP1_SP2_SP3.md (PDL-006)
 cfp_target: "AI Tools in Ethics Research (topical collection)"
 versioning_convention: git_inplace
-word_count: ~2200
-note: "File inventories refreshed 2026-05-12 (SID-20260512-111348) to add: SP-4 entries CFP_4.2.29/30/31/32, CFP_4.4.21, paper_bibliography_FINAL.md; SP-5 entries CFP_5.2.5, CFP_5.3.23–28, CFP_session_log.md, CFP_5.4.13 (SP-1), CFP_5.4.14 (AI Usage Archive). §8 section-numbering table updated to post-2026-04-09 numbering; §2 Type 8a path corrected to SP-5/5.1; §4.1 hubs paragraph reframed honestly about the empty _HUBS directory. A final enumeration check before submission (Phase 5) remains scheduled."
+word_count: ~2300
+note: "File inventories refreshed 2026-05-12 (SID-20260512-111348) to add: SP-4 entries CFP_4.2.29/30/31/32, CFP_4.4.21, paper_bibliography_FINAL.md; SP-5 entries CFP_5.2.5, CFP_5.3.23–28, CFP_session_log.md, CFP_5.4.13 (SP-1), CFP_5.4.14 (AI Usage Archive). §8 section-numbering table updated to post-2026-04-09 numbering; §2 Type 8a path corrected to SP-5/5.1; §4.1 hubs paragraph reframed honestly about the empty _HUBS directory. v2 (2026-05-13, SID-20260513-003000): SP-1/SP-2/SP-3 moved from 5.4_SectionDrafts/ to top-level sibling folders of SP4_*/SP5_* under transparency/Canonical_MD/ (commit e317eac); new §5.0 added to inventory them at their new paths; §6's §5.4 table trimmed of the three moved rows; §1 updated. Phase 5 final enumeration check pending."
 section_numbering: pre_renaming
 ---
 
@@ -27,11 +28,13 @@ section_numbering: pre_renaming
 
 ## 1. What this document is
 
-SP-2 is a map. It describes the architecture of the JPEP documentation archive: the document type ontology, the metadata infrastructure that links artifacts across sessions and phases, and a structured inventory of everything in SP-4 and SP-5.
+SP-2 is a map. It describes the architecture of the JPEP documentation archive: the document type ontology, the metadata infrastructure that links artifacts across sessions and phases, and a structured inventory of everything in the archive.
+
+**Archive layout.** SP-1, SP-2 (this document), SP-3, SP-4, and SP-5 sit as sibling folders at the top level of `transparency/Canonical_MD/`. SP-1, SP-2, and SP-3 each contain a single Markdown file (the archive part itself, retaining its CFP-era `CFP_5.4.X_*.md` filename for git-history continuity across the 2026-05-13 move from `5.4_SectionDrafts/`). SP-4 and SP-5 contain the numbered process-documentation and development-record subfolders inventoried in §§5–6 below. §5.0 inventories the three single-file SP archive parts at their post-move paths.
 
 Read SP-1 before this document for the AI usage declaration and a one-page orientation to the archive. Read SP-3 for the documentation adequacy account — the argument that the record satisfies the attribution, trajectory, and understanding-and-endorsement criteria that Section 7 specifies.
 
-**Provisional note.** File inventories in §§5–6 were refreshed 2026-05-12 (SID-20260512-111348) to incorporate artifacts created since 2026-04-09 (the externalization arc plus the SP-1/SP-2 production and review-response sessions). A final enumeration check before submission (Phase 5) remains scheduled.
+**Provisional note.** File inventories in §§5.0–6 were refreshed 2026-05-12 (SID-20260512-111348) to incorporate artifacts created since 2026-04-09 (the externalization arc plus the SP-1/SP-2 production and review-response sessions), and again 2026-05-13 (SID-20260513-003000) to add §5.0 and trim §5.4 in light of the SP-1/SP-2/SP-3 move. A final enumeration check before submission (Phase 5) is being run alongside the v2 commit.
 
 ---
 
@@ -110,6 +113,22 @@ Static SVG figures and interactive HTML graphs are in `transparency/Canonical_MD
 The interactive HTML graphs support pan, zoom, and node inspection. They are local-only (same evidential status as conversation files): indexed by the SP-5 manifest, available on request. The static SVG figures are the public-facing evidence in SP-3.
 
 Generation scripts for all figures are in `transparency/SCRIPTS/`.
+
+---
+
+## 5.0 SP-1 / SP-2 / SP-3 inventory (single-file top-level archive parts)
+
+The three orientation documents lifted from the paper body by the 2026-05-12 externalization decision live at the top level of `transparency/Canonical_MD/`, each in its own folder containing one Markdown file. Filenames preserve the CFP-era `CFP_5.4.X_*.md` form for git-history continuity across the 2026-05-13 `git mv` (commit `e317eac`); `git log --follow` traverses the rename. `versioning_convention: git_inplace` applies to all three.
+
+| Folder | File | Subject |
+|--------|------|---------|
+| `transparency/Canonical_MD/SP1_AIUsageDeclaration/` | `CFP_5.4.13_SP1.md` | SP-1 — AI Usage Declaration and Archive Orientation. Models, platforms, roles, and phase/prefix conventions across the project. Short orientation document (~700 words). |
+| `transparency/Canonical_MD/SP2_NavigationAndArchitecture/` | `CFP_5.4.12_SP2.md` | SP-2 — Navigation and Architecture Guide. **This file.** Document-type ontology, metadata infrastructure, hub system, and structured inventory of the archive. |
+| `transparency/Canonical_MD/SP3_DocumentationAdequacy/` | `CFP_5.4.11_SP3.md` | SP-3 — Documentation Adequacy Account. Four-movement phase-spine reading of the writing process; the argument that the record satisfies Section 7's attribution, trajectory, and understanding-and-endorsement criteria. |
+
+The `document_type: Type 12 - Section Draft` frontmatter on these files is a vestige of their pre-externalization filing as section drafts inside SP-5/5.4. It is retained as a known imprecision until a project decision is made about what to relabel them; this does not affect their function as top-level archive parts.
+
+The closing-note `CFP_5.4.14_AIUsageArchive.md` is **not** an archive part — it is the unnumbered closing section that remains in the paper body and introduces this archive. It is inventoried in §6's §5.4 table.
 
 ---
 
@@ -425,10 +444,9 @@ SP-5 (`transparency/Canonical_MD/SP5_DevelopmentRecords/`) contains development 
 | `CFP_5.4.8_Section6_v4.md` | Section 6 | legacy_multifile |
 | `CFP_5.4.9_Section7_v3.md` | Section 7 | legacy_multifile |
 | `CFP_5.4.10_Conclusion_v1.md` | Conclusion | legacy_multifile |
-| `CFP_5.4.11_SP3.md` | SP-3 — Documentation Adequacy Account | git_inplace |
-| `CFP_5.4.12_SP2.md` | SP-2 — Navigation and Architecture Guide (this file) | git_inplace |
-| `CFP_5.4.13_SP1.md` | SP-1 — AI Usage Declaration and Archive Orientation | git_inplace |
 | `CFP_5.4.14_AIUsageArchive.md` | AI Usage and Documentation Archive (unnumbered closing note in the paper body; introduces the externalized archive) | git_inplace |
+
+> **Note (2026-05-13).** SP-1 / SP-2 / SP-3 were previously listed here (`CFP_5.4.13_SP1.md`, `CFP_5.4.12_SP2.md`, `CFP_5.4.11_SP3.md`). At commit `e317eac` they moved to top-level sibling folders of SP-4 / SP-5 and are now inventoried in §5.0 above. `git log --follow` traverses the rename.
 
 **Superseded per-version files** (historical; not for submission):
 
@@ -485,4 +503,4 @@ The consolidation of II/III/IV into current Section 2 is documented in `4.2.5_Mo
 
 ---
 
-*SP-2 — SID-20260409-150705. Provisional: file inventories to be verified before submission (Phase 5).*
+*SP-2 — v1 SID-20260409-150705; v2 SID-20260513-003000 (commit `e317eac`: SP-1/2/3 moved to top-level folders; §5.0 added; §5.4 trimmed). Phase 5 final enumeration check in progress.*
