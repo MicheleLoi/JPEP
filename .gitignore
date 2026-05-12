@@ -37,6 +37,9 @@ transparency/SCRIPTS/06_conversations/**
 # escludi cartella temporanea
 transparency/TEMP/
 
+# escludi Python bytecode cache
+**/__pycache__/
+
 # consenti founding conversation (anonymized da6a830c)
 !06_conversations/
 !06_conversations/imported/
