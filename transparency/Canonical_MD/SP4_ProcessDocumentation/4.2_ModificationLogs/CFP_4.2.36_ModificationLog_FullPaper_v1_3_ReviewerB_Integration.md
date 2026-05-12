@@ -112,3 +112,105 @@ The prescription in question — Hosseini, Resnik & Holmes (2023), restated in R
 - **Mecacci, G., & Santoni de Sio, F.** (2020). "Meaningful human control as reason-responsiveness: the case of dual-mode vehicles." *Ethics and Information Technology*, 22, 103–115. https://doi.org/10.1007/s10676-019-09519-w
 
 **Scope discipline:** Source draft `CFP_5.4.8_Section6_v4.md` (which now occupies §5 in post-renumbering) is unchanged. The rewrite lives only in `Paper/MDversion/CFP_FullPaper_v1.md`, per project rule 1.
+
+---
+
+### MOD-004 — §3.7: Schwitzgebel et al. (2024) cited as empirical anchor for the signal-to-process severance
+
+| Field | Value |
+|-------|-------|
+| Date | 2026-05-12 |
+| Type | Empirical anchor for a previously asserted claim |
+| Source of finding | Reviewer B specific recommendation #5 (should) — direct empirical evidence for §3.7's central claim |
+
+**Issue:** §3.7 asserted that "AI systems can produce text exhibiting every surface marker of genuine philosophical engagement … without any corresponding human intellectual process" without citing any empirical work. Reviewer B identified Schwitzgebel, Schwitzgebel & Strasser (2024, *Mind & Language*) as the direct empirical anchor: Dennett experts (N=25) distinguished real Dennett from a GPT-3 fine-tuned model only 51% of the time.
+
+**Change:** §3.7 paragraph 2: a single sentence inserted between "systematically severable" and "This is not the familiar risk that a philosopher might exaggerate engagement…":
+
+> Early empirical work supports the severance trajectory while reminding us how recent it is: Schwitzgebel, Schwitzgebel & Strasser (2024) found that experts on Daniel Dennett's work could distinguish Dennett's own answers from those of a GPT-3 model fine-tuned on his corpus only 51% of the time — above chance (20%) but well below the hypothesized 80%, in a study that used technology now several generations behind. The current rate is a matter of speculation; the direction of travel is not.
+
+**Framing decisions (recorded — author-driven):**
+
+- "*Above chance*, not 'couldn't tell.'" The 51% figure is presented with both the 20% baseline (chance) and the 80% hypothesis named, so the reader sees the result as "experts did better than blind guessing but well below their own hypothesis." This was an author requirement: *"don't exaggerate; first of all, they guessed above chance."*
+- **Old technology flagged.** "Several generations behind" anchors the date without picking a fight about exactly how many generations. Author requirement: *"this is very old technology."*
+- **Current rate marked speculative.** "The current rate is a matter of speculation; the direction of travel is not." Author requirement: *"today we can speculate."*
+
+The triple hedge preserves §3.7's argumentative force without making any single claim that could be falsified by tomorrow's empirical paper.
+
+**Bibliography entry added:**
+
+- **Schwitzgebel, E., Schwitzgebel, D., & Strasser, A.** (2024). "Creating a Large Language Model of a Philosopher." *Mind & Language*. https://doi.org/10.1111/mila.12466
+
+---
+
+### MOD-005 — §6.2: Sourati et al. (2025) as cross-disciplinary convergence footnote alongside Abdulhai
+
+| Field | Value |
+|-------|-------|
+| Date | 2026-05-12 |
+| Type | Footnote-level convergence pointer; weak evidential status acknowledged |
+| Source of finding | Reviewer B specific recommendation #9 (could) — author specified maximum-modesty framing |
+
+**Issue:** §6.2 currently cites only Abdulhai et al. (2026 preprint) for the LLM stance-neutralization / homogenization point. Reviewer B suggested adding a "homogenization" companion paper to strengthen the empirical convergence (originally misattributed to "Doshi & Hauser"; correct attribution is Sourati, Ziabari & Dehghani 2025).
+
+**Change:** §6.2 paragraph closing sentence (no body text change; a footnote attached at the end of "…output assessment alone cannot detect the loss that process documentation would reveal."):
+
+> ^[A broader cross-disciplinary synthesis pointing in the same direction — though it is review rather than new empirical evidence, and should be weighted accordingly — is Sourati, Ziabari & Dehghani (2025) on the homogenising effect of LLMs on linguistic and reasoning styles.]
+
+**Framing decisions (recorded — author-driven):**
+
+- "*Super modest, maximum a footnote.*" Authored as footnote, not body text. Author requirement: *"sourati: super modest, maximum a footnote, acknowledging the weak evidential status."*
+- **Explicit weak evidential status.** "Review rather than new empirical evidence, and should be weighted accordingly" — names the synthesis-not-data nature of the source.
+- **Convergence-only framing.** "Pointing in the same direction" positions Sourati as confirmatory of Abdulhai, not as an independent evidential anchor.
+
+**Bibliography entry added:**
+
+- **Sourati, Z., Ziabari, A. S., & Dehghani, M.** (2025). "The Homogenizing Effect of LLMs on Human Cognition." arXiv:2508.01491. https://arxiv.org/abs/2508.01491
+
+---
+
+### MOD-006 — §3.3: Williams inversion stated explicitly and justified; Moseley (2014) cited only as cf.
+
+| Field | Value |
+|-------|-------|
+| Date | 2026-05-12 |
+| Type | Major argumentative addition; new philosophical engagement |
+| Source of finding | Reviewer B specific recommendation #4 (should) — Williams ground-projects-to-duty inversion needs explicit defense |
+
+**Issue:** §3.3's existing Williams paragraph deployed ground projects to ground a transparency duty without acknowledging that Williams himself used the same apparatus to *resist* moral demands rather than as their source. The inversion was real but unacknowledged. Reviewer B flagged this as an obvious target for an attentive Williams-literate reviewer. Author-driven decision: engage Williams directly (not via Moseley), justify the inversion philosophically.
+
+**Change:** §3.3 — three new paragraphs inserted after the existing Williams paragraph (line 128) and before the Cordasco objection paragraph. ~285 words total. Architecture:
+
+1. **State the inversion plainly.** "A scrupulous reader will register an inversion. Williams himself deployed ground projects *against* moral demands rather than as their source… We are arguing the other direction — a duty grounded *in* a ground project. The inversion is real and bears explanation."
+
+2. **Distinguish demand types.** Williams's anti-utilitarian argument bites only against *external/abandonment-requiring* demands. The transparency duty is *internal/coherence-requiring* — it asks only that the agent's relation to the practice remain legible to the community in whose space the practice is pursued.
+
+3. **Social/relational integrity + AI-specific resolution.** Philosophy is, in the Williams sense, conducted before a community whose recognition partly constitutes the practice. Concealment of AI-driven changes threatens integrity; transparency preserves it. Closes with the synthesis: "Williams used integrity to refuse the demand that one abandon a constitutive project; we use integrity to refuse the demand that one carry on the project under conditions that make it illegible to those for whom it is pursued. Both deployments work against erasure; they differ only in the direction from which erasure threatens." Moseley (2014) cited only as a parenthetical cf. for the broader secondary-lit debate.
+
+**Author intent (recorded verbatim):** *"I don't think that the moseley paper says anything new; it deserves at most a cf, no direct engagement. But we must directly engage with Williams. So yes, let's be explicit about the invertion. And let's justify it for christ's sake."*
+
+The decision to engage Williams directly rather than via Moseley narrows the philosophical move to a re-reading of Williams's own apparatus rather than a dependence on secondary literature. The strongest version of the argument is the "two deployments both work against erasure, differing only in threat-direction" synthesis — which (if it lands) does not deny the inversion but shows that it preserves the deeper structure of Williams's concern.
+
+**Bibliography entry added:**
+
+- **Moseley, D. D.** (2014). "Revisiting Williams on Integrity." *Journal of Value Inquiry*, 48(1), 53–68. https://doi.org/10.1007/s10790-013-9402-0
+
+**Scope discipline:** Source draft `CFP_5.4.4_Section3_v3.md` is unchanged. The new paragraphs live only in `Paper/MDversion/CFP_FullPaper_v1.md`, per project rule 1.
+
+---
+
+## Items Rejected for Integration (recorded for audit trail)
+
+### Cavalcante Siebert et al. (2025) — rejected
+
+| Field | Value |
+|-------|-------|
+| Date | 2026-05-12 |
+| Source of finding | Reviewer B specific recommendation #10 (could) — MHC operationalisation literature |
+| Decision | Rejected for integration |
+
+Reviewer B suggested a light-touch citation of Cavalcante Siebert et al. (2025), *Science and Engineering Ethics*, "Principles and Framework for the Operationalisation of MHC Over Autonomous Systems," positioning JPEP's SP-1–SP-5 apparatus as an epistemic-domain analogue of the operationalisation work happening in physical-systems MHC. Recommendation tagged `could` (lowest priority). Author decision after triage: rejected.
+
+**Author rationale (recorded verbatim):** *"cavalcante siebert: ignore."*
+
+Implicit rationale (consistent with the broader v1.3 integration logic): JPEP already cites Santoni de Sio & van den Hoven (2018) for the MHC framework and Mecacci & Santoni de Sio (2020) for the proximity scale of reasons. A third MHC-operationalisation reference adds bibliographic weight without adding argumentative work; the paper's MHC engagement is sufficiently anchored. No bibliography entry added. No body-text mention.
