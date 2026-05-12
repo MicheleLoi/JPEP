@@ -4,11 +4,11 @@ document_type: Type 12 - Section Draft (integrated)
 section: "Full paper — CFP integrated draft"
 label: CFP_FullPaper_v1
 title: "The Journal of Prompt Engineered (Moral) Philosophy: Or, Why AI-Assisted Ethics Research Requires Process Transparency"
-version: v1.1
+version: v1.2
 date_created: 2026-05-12
 status: Draft (Phase 5 integration)
-source: "Claude Opus 4.7 (Claude Code session SID-20260512-171552) — assembly; v1.1 cleanup pass in SID-20260512-223052"
-assembly: "v1 = concatenation of finalized section drafts at their authoritative versions, with section-local reference lists stripped and replaced by paper_bibliography_FINAL.md. v1.1 = in-place cleanup of cross-reference drift (§4/§5/§6 body), Boden & Edmonds page number corrected (p. 138 → p. 29), Santoni de Sio §6.2 VERIFY tag removed (Frontiers article is online-only — section reference is the correct locator), and Sartre + Boden & Edmonds added to paper_bibliography_FINAL.md."
+source: "Claude Opus 4.7 (Claude Code session SID-20260512-171552) — assembly; v1.1 cleanup + v1.2 reviewer-driven revision in SID-20260512-223052"
+assembly: "v1 = concatenation of finalized section drafts at their authoritative versions, with section-local reference lists stripped and replaced by paper_bibliography_FINAL.md. v1.1 = in-place cleanup of cross-reference drift (§4/§5/§6 body), Boden & Edmonds page number corrected (p. 138 → p. 29), Santoni de Sio §6.2 VERIFY tag removed (Frontiers article is online-only — section reference is the correct locator), and Sartre + Boden & Edmonds added to paper_bibliography_FINAL.md. v1.2 = reviewer-driven revisions: References block synced to paper_bibliography_FINAL.md (Boden + Sartre entries — closes a v1.1 propagation gap), §3.2 'logically independent' softened to 'distinct + not equivalent + non-entailing', §3.5 closing extended to acknowledge that the reproducibility defeat extends rather than supplements §3.3's agent-integrity grounding, §7 'and held' sentence rewritten to preserve §6.4 feasibility/adequacy distinction."
 versioning_convention: git_inplace
 inputs:
   - CFP_5.4.15_Abstract_v1.md
@@ -40,7 +40,7 @@ known_issues:
 ## Abstract
 
 Existing AI disclosure mandates in scholarship leave transparency philosophically unspecified. We argue that ethical inquiry is essentially contested at two independent levels — about what it is and what it demands of the inquirer — defeating output-only evaluation, welfare-economic dismissal, and reproducibility framings alike. The transparency duty is grounded in agent-integrity. We develop a documentation-adequacy framework operationalizing Meaningful Human Control through five transparency elements (SP-1–SP-5), demonstrated by the paper itself, whose full documentation record is archived at a persistent identifier.
-
+che
 ---
 
 # 1. Introduction
@@ -115,7 +115,7 @@ The difficulty of answering this question is not accidental. It reflects the fac
 
 **The personal/existential conception.** A philosophical tradition running from Socrates through Kierkegaard and Nietzsche treats philosophical activity as constitutively tied to the inquirer. Socrates held that the unexamined life is not worth living, treating philosophy as a discipline of self-knowledge rather than a body of conclusions (*Apology* 38a). Kierkegaard insisted that the *how* of relating to truth matters constitutively (*Concluding Unscientific Postscript*). Nietzsche described every great philosophy as "the confession of its originator, and a species of involuntary and unconscious autobiography" (*Beyond Good and Evil* §6). On this conception, philosophical outputs cannot be evaluated independently of who produced them and how — not because the arguments are invalid, but because the activity is partly constituted by the inquirer's engagement with it. The existence and canonical status of this tradition shows that "philosophy is just truth-tracking through argument" is not the only legitimate option: if it were, these thinkers would not occupy the positions they do.
 
-These two conceptions are logically independent. One is a metaethical thesis about the nature of ethical claims; the other is a thesis about the nature of philosophical practice. But they converge on the same consequence: outputs alone cannot settle whether a piece of ethical work is what it purports to be.
+These two conceptions are distinct in what they target. One is a metaethical thesis about the nature of ethical claims; the other is a thesis about the nature of philosophical practice. They are not equivalent — accepting one does not entail the other — but they converge on the same consequence: outputs alone cannot settle whether a piece of ethical work is what it purports to be.
 
 ## 3.3 Ethical Inquiry as Essentially Contested
 
@@ -153,7 +153,7 @@ This disanalogy matters, and it matters honestly. If transparency in philosophy 
 
 What AI threatens is not the link between method and verification but the link between text and agent. Williams's ground-projects — identity-constituting commitments, mode of engagement, the philosopher's relation to her own thinking — have historically been carried by the ordinary features of philosophical writing alongside the arguments themselves. AI severs that link without compromising the argument: it can produce an argument that no agent stands behind. The reproducibility frame cannot register this because it was never about agents in the first place.
 
-The transparency duty argued for in this paper is therefore grounded in agent-integrity, not in methodological-integrity-as-reproducibility. The conditions specified in §4 and the framework specified in §5 are not adaptations of science's reproducibility apparatus to a new domain. They are a different kind of apparatus, addressing a different kind of worry: not whether the path to a conclusion can be verified, but whether the conclusion bears the marks of an agent at all.
+The transparency duty argued for in this paper is therefore grounded in agent-integrity, not in methodological-integrity-as-reproducibility. The conditions specified in §4 and the framework specified in §5 are not adaptations of science's reproducibility apparatus to a new domain. They are a different kind of apparatus, addressing a different kind of worry: not whether the path to a conclusion can be verified, but whether the conclusion bears the marks of an agent at all. This is not, strictly speaking, a third defeat independent of the first two: it extends the agent-integrity grounding developed in §3.3, applying it to a related framing — reproducibility — that the cognitivist case did not directly address.
 
 ## 3.6 From Answer to Tracking
 
@@ -335,7 +335,7 @@ The self-exemplification of this article creates an immediate opportunity, but i
 
 This paper has argued that because the standards for evaluating philosophical work are essentially contested — at the level of what inquiry is and what it demands of the inquirer — AI-assisted ethics research requires comprehensive process documentation that enables the full community of legitimate evaluators to assess work on their own terms. The framework specifies a documentation apparatus — SP-1 through SP-5 — that functions simultaneously as tracking instrument and as philosophical self-expression: a record of what an author chose to investigate, where they followed the AI, where they overrode it. The instantiation of that apparatus for the present paper is described, with a persistent identifier, in the closing note that follows this conclusion.
 
-This self-exemplification requires honest acknowledgment. The commitment to documentation was present from the outset — an ex ante intention, not a retrospective reconstruction. That intention is what made the later infrastructure work feasible: without it, the artifact chain that enabled chain-level traceability could not have been rebuilt at all. But feasible is not the same as costless. The infrastructure layer — automated session identifiers, standardized frontmatter, chain-level traceability — was not in place from the start and had to be built while the work was underway, in the manner of Neurath's boat: plank by plank, without the option of dry dock. The three criteria of Section 6 were tested against the paper's own record and held. What the experience revealed is not a logical gap in the framework but a practical one: documentation infrastructure planned from the beginning is substantially less costly than documentation infrastructure retrofitted to an existing record, even when the original intention was always there.
+This self-exemplification requires honest acknowledgment. The commitment to documentation was present from the outset — an ex ante intention, not a retrospective reconstruction. That intention is what made the later infrastructure work feasible: without it, the artifact chain that enabled chain-level traceability could not have been rebuilt at all. But feasible is not the same as costless. The infrastructure layer — automated session identifiers, standardized frontmatter, chain-level traceability — was not in place from the start and had to be built while the work was underway, in the manner of Neurath's boat: plank by plank, without the option of dry dock. The three criteria of Section 6 were tested against the paper's own record and were applicable in the sense the framework requires — whether the record satisfies them is a question for the community, not the author. What the experience revealed is not a logical gap in the framework but a practical one: documentation infrastructure planned from the beginning is substantially less costly than documentation infrastructure retrofitted to an existing record, even when the original intention was always there.
 
 The framework's limitations should be stated plainly. It has been developed and tested through a single case: one paper, one author, one disciplinary context. The author assessed their own implementation — no independent evaluation has been conducted. Whether the argument extends to other humanistic disciplines that share philosophy's evaluative contestedness — history, literary criticism, political theory — is an open question not addressed here. And there is a bootstrapping problem: arguing for documentation standards while simultaneously implementing them means the adequacy of the implementation cannot be fully verified before the standards it motivates are themselves settled.
 
@@ -382,7 +382,7 @@ This paper was produced with substantial AI assistance over multiple writing pha
 
 **Blackburn, S.** (1993). *Essays in Quasi-Realism*. New York: Oxford University Press.
 
-**Boden, M. A., & Edmonds, E. A.** (2009). What is generative art? *Digital Creativity*, 20(1-2), 21-46. [TO BE ADDED to paper_bibliography_FINAL.md]
+**Boden, M. A., & Edmonds, E. A.** (2009). "What is Generative Art?" *Digital Creativity*, 20(1–2), 21–46. https://doi.org/10.1080/14626260902867915
 
 **Cheng, Z., Zhang, Z., Xu, Q., Maeda, Y., & Gu, P.** (2025). "A meta-analysis addressing the relationship between self-regulated learning strategies and academic performance in online higher education." *Journal of Computing in Higher Education*, 37(1), 195–224. https://doi.org/10.1007/s12528-023-09390-1
 
@@ -418,7 +418,7 @@ This paper was produced with substantial AI assistance over multiple writing pha
 
 **Santoni de Sio, F., & van den Hoven, J.** (2018). "Meaningful Human Control over Autonomous Systems: A Philosophical Account." *Frontiers in Robotics and AI*, 5, 15. https://doi.org/10.3389/frobt.2018.00015
 
-**Sartre, J.-P.** (1956). *Being and Nothingness* (H. E. Barnes, Trans.). New York: Philosophical Library. (Original work published 1943) [TO BE ADDED to paper_bibliography_FINAL.md]
+**Sartre, J.-P.** (1956). *Being and Nothingness: An Essay on Phenomenological Ontology* (H. E. Barnes, Trans.). New York: Philosophical Library. (Original work published 1943)
 
 **Science.** (2023). "Science Journals: Editorial Policies." https://www.science.org/content/page/science-journals-editorial-policies
 
