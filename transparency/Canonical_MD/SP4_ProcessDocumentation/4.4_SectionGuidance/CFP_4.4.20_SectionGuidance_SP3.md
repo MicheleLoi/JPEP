@@ -24,6 +24,8 @@ validation: ""
 supersedes:
   - "CFP_4.4.20_SectionGuidance_SP3.md v6 (2026-04-05; replaced by Section 6 throughline + draft-first workflow per PDL-024)"
   - "CFP_4.4.17_Guidance_SelectedGraphSpecifications.md (graph-spec separation eliminated; figure detail moves to consolidated note)"
+section_numbering: pre_renaming
+section_number_new: "see section_renumbering in adapt.md"
 ---
 
 # Section Guidance: SP-3 — Documentation Adequacy Account

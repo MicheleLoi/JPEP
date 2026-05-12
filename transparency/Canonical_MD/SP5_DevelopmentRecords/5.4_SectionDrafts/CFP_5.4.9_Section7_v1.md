@@ -14,6 +14,7 @@ session_id: SID-20260324-090000
 feeds_into: "CFP_4.2.19_ModificationLog_Section7.md"
 transformation: "Reframe from journal-specific review mechanism to community assessment of documentation adequacy. Drop reproduction test (rejected in Section 6). Dual-reviewer architecture retained but repurposed: Reviewer B assesses documentation adequacy against the organizing question of SP-3 rather than attempting reproduction. Practical instructions rewritten around adequacy assessment. Self-exemplification noted in §7.4."
 word_count: ~1000
+section_numbering: pre_renaming
 ---
 # 7. Community Assessment of Documentation Adequacy
 

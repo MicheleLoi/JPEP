@@ -13,6 +13,7 @@ cfp_target: "AI Tools in Ethics Research (topical collection)"
 transformation: "Minor reframe: venue/journal → research practice/community; principles → conditions (harmonization with Section 5); explicit connection §6.1 thinking-quality argument → cognitivist-objection defeat (Introduction); virtue dimension added §6.1; adverse selection observation added §6.3; nested concerns diagram updated for ethics framing."
 feeds_into: "CFP_4.2.18_ModificationLog_Section6.md"
 word_count: ~1550
+section_numbering: pre_renaming
 ---
 # 6. Mandatory Transparency in Practice
 

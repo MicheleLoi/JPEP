@@ -12,6 +12,7 @@ inputs:
 cfp_target: "AI Tools in Ethics Research (topical collection)"
 feeds_into: "CFP_4.2.14_ModificationLog_Introduction.md"
 word_count: ~1060
+section_numbering: pre_renaming
 ---
 # 1. Introduction
 

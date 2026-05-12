@@ -14,6 +14,7 @@ transformation: "Rewrite derivation. Three principles (ecological validity, good
 session_id: SID-20260317-191544
 feeds_into: "CFP_4.2.17_ModificationLog_Section5.md"
 word_count: ~900
+section_numbering: pre_renaming
 ---
 # 5. Conditions for Adequate Transparency
 

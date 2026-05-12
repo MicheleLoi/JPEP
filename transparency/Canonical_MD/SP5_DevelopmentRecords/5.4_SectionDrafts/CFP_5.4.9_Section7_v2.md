@@ -15,6 +15,7 @@ session_id: SID-20260401-173934
 feeds_into: "CFP_4.2.20_ModificationLog_Section7v2.md"
 transformation: "v1 → v2: Addition A (Abdulhai et al. stance-neutralization evidence) appended to §7.2; Addition B (SRL cost-objection reply) inserted in §7.4; References block added. Net +~250 words."
 word_count: ~1250
+section_numbering: pre_renaming
 ---
 # 7. Community Assessment of Documentation Adequacy
 
