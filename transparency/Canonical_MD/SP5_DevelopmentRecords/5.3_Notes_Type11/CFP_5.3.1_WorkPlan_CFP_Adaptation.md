@@ -57,10 +57,10 @@ Archive contents on disk:
 
 **Other deferred items (Phase 5 / pre-submission):**
 
-- `[persistent identifier: forthcoming]` placeholder in `CFP_5.4.14` — resolved at archive upload.
+- **Persistent identifier (Zenodo DOI) for the externalized archive — Path A (publish at submission, not now).** Plan: after all intellectual revisions are complete (Williams, Tier 3 edits, Abstract, Title, Phase 5 read-through), tag the final submission commit on GitHub (e.g. `v1.0-jpep-cfp-submission`); enable the GitHub→Zenodo integration (one-time setup at https://zenodo.org/account/settings/github/); cut a GitHub Release on the tag; Zenodo auto-archives the tagged commit and mints a DOI; replace `[persistent identifier: forthcoming]` in `CFP_5.4.14` with the DOI. Repo remote: `https://github.com/MicheleLoi/JPEP.git`. **Tool note:** Claude can drive the Zenodo browser-side steps via the Chrome MCP plugin (`mcp__Claude_in_Chrome__*` tools) when the time comes; the user handles Zenodo login and OAuth approval (credential boundaries), Claude handles navigation, GitHub-toggle, release metadata, and the post-DOI updates to `CFP_5.4.14` and SP-1 line 81.
 - Inline excerpts in `CFP_5.4.14` — pick one modlog entry + one figure to reproduce inline (forward promise currently kept as placeholder).
 - SP-3 pre-renaming section references throughout `CFP_5.4.11_SP3.md`.
-- SP-1 branch-merge-tense marker (`CFP_5.4.13_SP1.md` line 81) — resolve at merge.
+- SP-1 branch-merge-tense marker (`CFP_5.4.13_SP1.md` line 81) — resolve at submission. Merging the branch into `main` is **not strictly necessary** if the submission state is pinned via a tag + DOI; the SP-1 line can read "the submission state is preserved at tag `<name>` (commit `<SHA>`), archived at DOI `<DOI>`." Whether to also merge to `main` for discoverability is a separate housekeeping decision.
 - Source-conversations manifest (`CFP_5.3.N_Note_RawConversationsManifest.md`) — promised in SP-2 §7.
 - Figure-numbering reconciliation in SP-3 (file names 1/2/4/5/6 vs SP-3 narrative 1/2/3/4/5).
 - Cleanup anomalies: `.bak` file in 4.4_SectionGuidance, `.patch.txt` in 5.3_Notes, space in `5.2.8 pdl-appendix-2.md`.
