@@ -253,6 +253,37 @@ The v3 source draft:
 
 ---
 
+## Post-Review: Shoulders Review Response — Third Pass (2026-05-12)
+
+**Session:** SID-20260512-154043
+**Source:** `CFP_5.3.27_Note_ReviewResponse_Draft.md` (lines 25–30, Shoulders S1 — MHC transfer not argued)
+
+### MOD-023: §5.1 — MHC framework introduction rewritten to remove analogy framing (S1)
+
+**Change:** The opening of the MHC framework sub-section was rewritten. The previous text used the phrase "transfers structurally to AI-assisted scholarship," which suggested an argument by structural analogy from autonomous weapons systems. The Shoulders reviewer (S1) flagged this exact phrasing: "the move from autonomous weapons systems to scholarly authorship is asserted ('transfers structurally') without examining which features carry over and which don't."
+
+**Previous text:**
+
+> The Meaningful Human Control (MHC) framework provides the operationalization. Santoni de Sio and van den Hoven (2018) developed MHC for autonomous weapons systems, but the framework transfers structurally to AI-assisted scholarship. It identifies two necessary conditions.
+
+**Revised text:**
+
+> The Meaningful Human Control (MHC) framework provides the operationalization. Santoni de Sio and van den Hoven (2018) developed MHC for autonomous weapons systems; our debt is conceptual, not analogical. We apply the tracking and tracing conditions to AI-assisted scholarship on the basis of §3's independent argument from agent-integrity. The features that distinguish weapons systems — catastrophic stakes, physical irreversibility, kinetic control — play no role here; what carries over is the philosophical content of what it means to track an agent's reasoning and to trace an output to an agent's understanding. MHC identifies two necessary conditions.
+
+**Why:** The S1 reviewer's framing of the objection is not particularly strong — they assumed the paper was arguing by analogy from weapons to philosophy when in fact §3 makes an independent argument for why tracing and tracking are required for AI-assisted ethical inquiry. But the phrase "transfers structurally" was a genuine trigger for the misreading: it does suggest structural transfer, which is what would license an analogy reading. Two intellectual points needed to be made explicit:
+
+1. **Borrowing concepts, not vocabulary.** The tracking and tracing conditions are fully-developed philosophical concepts in the MHC literature — not just labels. We use the conceptual content. What we do not do is import the weapons-context justification for those concepts.
+
+2. **Justification is independent.** §3 (as of v5; see modlog CFP_4.2.23) grounds the transparency duty for AI-assisted ethical inquiry in agent-integrity (Williams), independent of any analogy with weapons. The §5 MHC introduction now cross-references this independent ground.
+
+The revision also names what does *not* carry over (catastrophic stakes, physical irreversibility, kinetic control) and what does (the philosophical content of tracking an agent's reasoning and tracing an output to an agent's understanding). This forecloses any better-formulated version of the same objection.
+
+Decision rationale recorded in plan addendum (`C:\Users\loimi\.claude\plans\abstract-shimmying-metcalfe.md`, "S1 — MHC Borrowing Is Conceptual, Not Analogical"). User correction during planning: "we're not borrowing the vocabulary but the concepts" — distinct from my earlier framing.
+
+**Note on section numbering:** §5.1 in post-renaming numbering; §6.1 in pre-renaming. Affected file: `CFP_5.4.8_Section6_v4.md`. Frontmatter version bumped v4.1 → v4.2 in place per single-file convention.
+
+---
+
 ## Connections (auto)
 
 ### Source chat (primary)
