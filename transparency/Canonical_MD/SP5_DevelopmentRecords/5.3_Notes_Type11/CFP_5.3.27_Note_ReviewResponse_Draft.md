@@ -9,7 +9,13 @@ status: Active
 inputs:
   - CFP_5.3.24_Note_ReviewerB_OpusReview_v1.md
   - CFP_5.3.25_Note_ShouldersReview_v1.md
-feeds_into: revision decisions — paper sections
+feeds_into:
+  - "CFP_4.2.23_ModificationLog_Section3_v3.md (v3 → v4 Cordasco engagement; v4 → v5 reproducibility disanalogy; v5 → v5.1 O2 scope)"
+  - "CFP_4.2.18_ModificationLog_Section6.md (MOD-023, S1 MHC borrowing as conceptual not analogical)"
+  - "CFP_4.2.19_ModificationLog_Section7.md (Entry 7 S3 Abdulhai hedging; Entry 9 O5 feasibility/adequacy)"
+  - "CFP_4.7.21_EpistemicTrace_AgentIntegrityGrounding.md (philosophical development trace)"
+  - "CFP_4.4.22_SectionGuidance_Section3.md (§3 hard constraints derived from review)"
+  - "CFP_5.3.29_Note_CordascoCorpusBriefing.md (research briefing for §3 v4 engagement)"
 ---
 
 # Review Response Draft

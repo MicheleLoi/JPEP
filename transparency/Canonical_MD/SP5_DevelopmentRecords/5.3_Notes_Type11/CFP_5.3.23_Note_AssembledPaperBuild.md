@@ -6,7 +6,19 @@ document_subtype: build_record
 date_created: 2026-04-09
 session_id: SID-20260409-155040
 status: Complete
-feeds_into: AI review session (next session)
+inputs:
+  - "CFP_5.4.3_Introduction_v2.md (v2.1 at build time)"
+  - "CFP_5.4.5_Section2_v4.md (v4.1 at build time)"
+  - "CFP_5.4.4_Section3_v3.md (v3 at build time)"
+  - "CFP_5.4.7_Section5_v2.md (v2.1 at build time)"
+  - "CFP_5.4.8_Section6_v4.md (v4.1 at build time)"
+  - "CFP_5.4.9_Section7_v3.md (v3.1 at build time)"
+  - "CFP_5.4.10_Conclusion_v1.md (v1.1 at build time)"
+  - "paper_bibliography.md (pre-FINAL bibliography at build time)"
+  - "build_paper.py (assembly script)"
+feeds_into:
+  - "CFP_5.3.24_Note_ReviewerB_OpusReview_v1.md"
+  - "CFP_5.3.25_Note_ShouldersReview_v1.md"
 ---
 
 # Assembled Paper Build — CFP Version
