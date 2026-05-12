@@ -219,7 +219,23 @@ Both bibliography files updated:
 
 **Plato entry preserved verbatim** ("**Plato.** *Apology* 38a.") — no edition or translator information added; merge only.
 
-**Affected file:** `Paper/MDversion/CFP_FullPaper_v1.md` (version bumped v1.4 → v1.5). Note: the underlying `paper_bibliography_FINAL.md` (`transparency/Canonical_MD/SP4_ProcessDocumentation/4.6_ReferenceLogs/paper_bibliography_FINAL.md`) was *not* touched in this change — only the assembled paper's References block. A follow-on alignment pass against `paper_bibliography_FINAL.md` may be wanted before submission.
+**Affected file:** `Paper/MDversion/CFP_FullPaper_v1.md` (version bumped v1.4 → v1.5). Note: the underlying `paper_bibliography_FINAL.md` was *not* touched in this change — only the assembled paper's References block. Alignment pass against `paper_bibliography_FINAL.md` recorded as MOD-012 below.
+
+---
+
+### MOD-012 — `paper_bibliography_FINAL.md` aligned with MOD-011 (SID-20260513-003000)
+
+| Field | Value |
+|-------|-------|
+| Date | 2026-05-13 |
+| Session | SID-20260513-003000 |
+| Type | Alignment — Source-of-Truth Sync |
+
+**Change:** `transparency/Canonical_MD/SP4_ProcessDocumentation/4.6_ReferenceLogs/paper_bibliography_FINAL.md` was updated to match the unified-References structure applied to `CFP_FullPaper_v1.md` in MOD-011. The same two subheaders (`### Classical Sources` and `### Primary Sources (Alphabetical)`) were removed; the single Plato entry was repositioned alphabetically between Nietzsche and Resnik; the `## References` header is now the sole section label and entries form one uninterrupted alphabetical sequence. Frontmatter `last_updated` bumped to 2026-05-13; `SID-20260513-003000` added to `session_id`.
+
+**Why:** `paper_bibliography_FINAL.md` is the `build_source: true` bibliography (per its own frontmatter) — the file from which the assembled paper's References block is meant to be regenerated. Leaving its structure divergent from the live paper's structure would set up a re-divergence on the next assembly pass. The alignment closes that gap before submission.
+
+**Affected file:** `transparency/Canonical_MD/SP4_ProcessDocumentation/4.6_ReferenceLogs/paper_bibliography_FINAL.md`. No further changes to the assembled paper required.
 
 ---
 
@@ -245,6 +261,7 @@ Both bibliography files updated:
 | Cleanup | 1 | MOD-005 (inline notes, working-notes separator) |
 | New Artifact | 1 | MOD-006 (paper_bibliography_FINAL.md) |
 | Structural — section unification | 1 | MOD-011 (Classical Sources subheader removed; Plato folded into alphabetical list) |
+| Alignment — Source-of-Truth Sync | 1 | MOD-012 (paper_bibliography_FINAL.md aligned with MOD-011) |
 
 *Note: MOD-007 through MOD-010 (reference verification work, 2026-04-10) entered the modlog body but were never added to this summary table; backlog noted, full reconciliation deferred to a later cleanup pass.*
 

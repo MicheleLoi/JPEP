@@ -6,11 +6,12 @@ title: "Complete Paper Bibliography — Submission Ready"
 status: Active
 build_source: true
 note: "USE THIS FILE to build the paper bibliography for submission. paper_bibliography.md is the working document (process notes, section-by-section usage). This file contains only submission-ready entries."
-last_updated: 2026-05-12
+last_updated: 2026-05-13
 session_id:
   - SID-20260409-200754
   - SID-20260512-154043
   - SID-20260512-223052
+  - SID-20260513-003000
 inputs:
   - paper_bibliography.md
   - CFP_5.4.4_Section3_v3.md (Williams entry — missing from working bib)
@@ -27,12 +28,6 @@ inputs:
 ---
 
 ## References
-
-### Classical Sources
-
-**Plato.** *Apology* 38a.
-
-### Primary Sources (Alphabetical)
 
 **Abdulhai, M., Prabhu, A., Wongkamjan, W., Nasseri, S. A., Nenkova, A., Dreyer, M., Ren, X., & Mathur, N.** (2026). "How LLMs distort our written language." arXiv:2603.18161v1. https://arxiv.org/abs/2603.18161
 
@@ -81,6 +76,8 @@ inputs:
 **Moseley, D. D.** (2014). "Revisiting Williams on Integrity." *Journal of Value Inquiry*, 48(1), 53–68. https://doi.org/10.1007/s10790-013-9402-0
 
 **Nietzsche, F.** (1966). *Beyond Good and Evil* (W. Kaufmann, Trans.). New York: Vintage Books. (Original work published 1886)
+
+**Plato.** *Apology* 38a.
 
 **Resnik, D. B., & Hosseini, M.** (2025). "Disclosing artificial intelligence use in scientific research and publication: When should disclosure be mandatory, optional, or unnecessary?" *Accountability in Research*, 33(2). https://doi.org/10.1080/08989621.2025.2481949
 
