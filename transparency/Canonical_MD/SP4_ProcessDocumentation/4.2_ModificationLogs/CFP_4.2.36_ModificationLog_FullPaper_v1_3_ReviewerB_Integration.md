@@ -321,3 +321,28 @@ Implicit rationale (consistent with the broader v1.3 integration logic): JPEP al
 **Bibliography:** No changes.
 
 **Scope discipline:** The trimmed paragraph lives only in `Paper/MDversion/CFP_FullPaper_v1.md`. Source draft (CFP_5.4.4_Section3_v3.md, now also marked as Section3_v5/v5.1 — the multi-versioned source) is unchanged.
+
+---
+
+### MOD-010 — Abstract softened to match MOD-003's §3.5 reframing
+
+| Field | Value |
+|-------|-------|
+| Date | 2026-05-13 |
+| Type | Single-phrase precision edit |
+| Source of finding | Reviewer A follow-on; flagged in MOD-003 as a deferred downstream consequence |
+
+**Issue:** The v1.2 abstract closed its second sentence with "defeating output-only evaluation, welfare-economic dismissal, and reproducibility framings alike." The word "alike" implied that the three defeats were structurally parallel. MOD-003 (v1.3) reframed the §3.5 reproducibility defeat as an *extension* of the §3.3 agent-integrity grounding rather than an independent third defeat. After MOD-003, the abstract's "alike" overstated symmetry.
+
+**Change:** Abstract second sentence:
+
+- Before: "We argue that ethical inquiry is essentially contested at two independent levels — about what it is and what it demands of the inquirer — defeating output-only evaluation, welfare-economic dismissal, and reproducibility framings alike."
+- After: "We argue that ethical inquiry is essentially contested at two independent levels — about what it is and what it demands of the inquirer — defeating output-only evaluation and welfare-economic dismissal — and, by extension, reproducibility framings."
+
+The "by extension" carries MOD-003's logic into the abstract: the cognitivist and welfare-economic defeats come directly from the essential-contestedness analysis; the reproducibility defeat falls to the same agent-integrity grounding rather than being a parallel third defeat.
+
+**Not changed:** The abstract's "two independent levels" phrasing was *not* softened despite MOD-002's softening of §3.2's "logically independent conceptions." Reason: "two independent levels" is a claim about levels of contestation (metaethical vs. personal/existential), which is structurally weaker than the §3.2 claim about logical independence of the two conceptions themselves. R3 did not flag it; it remains defensible without modification.
+
+**Net change:** +10 characters in the abstract. No other text touched.
+
+**Bibliography:** No changes.
