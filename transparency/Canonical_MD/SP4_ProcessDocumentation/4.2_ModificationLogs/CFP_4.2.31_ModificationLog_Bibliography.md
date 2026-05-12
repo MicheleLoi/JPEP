@@ -239,6 +239,24 @@ Both bibliography files updated:
 
 ---
 
+### MOD-013 — Mercier (2020) removed: citation lived only in cut §4.3 (SID-20260513-003000)
+
+| Field | Value |
+|-------|-------|
+| Date | 2026-05-13 |
+| Session | SID-20260513-003000 |
+| Type | Reference Removal — downstream of paper-body cut |
+
+**Change:** **Mercier, H.** (2020). *Not Born Yesterday: The Science of Who We Trust and What We Believe*. Princeton: Princeton University Press — removed from both the assembled paper's References block (`Paper/MDversion/CFP_FullPaper_v1.md`) and from `paper_bibliography_FINAL.md`.
+
+**Why:** Mercier (2020) was originally added in MOD-002 of this modlog as a missing reference for the costly-signaling argument in §4.3 ("As Mercier (2020) argues in *Not Born Yesterday*, signals costly to produce are harder to fake and thus more credible"). In the v1.6 compression pass (SID-20260513-003000), the entire §4.3 "Cost Structure and Costly Signaling" subsection was cut (logged as MOD-014 in `CFP_4.2.17`). Mercier is now cited nowhere in the paper. Removing the bibliography entry keeps the References block aligned with citations actually appearing in the body. This reverses MOD-002 in this modlog.
+
+**Affected files:**
+- `Paper/MDversion/CFP_FullPaper_v1.md` (References block — MOD-014 in `CFP_4.2.17` records the upstream paper-body cut)
+- `transparency/Canonical_MD/SP4_ProcessDocumentation/4.6_ReferenceLogs/paper_bibliography_FINAL.md`
+
+---
+
 ## Items Deferred to Reference-Checking Pass
 
 | Entry | Issue | Status |

@@ -361,6 +361,26 @@ The dominant transformation is strategic reorientation of the derivation: same p
 
 ---
 
+### MOD-014: §4.3 (Cost Structure / Costly Signaling) cut entirely; §4 renumbered 4.1/4.2/4.3 with old §4.4 becoming new §4.3 (SID-20260513-003000)
+
+**Change:** The entire §4.3 "Cost Structure and Costly Signaling" subsection of `Paper/MDversion/CFP_FullPaper_v1.md` was deleted. ~470 words removed: the false-equivalence framing of compliance-based mandates, the Mercier (2020) costly-signaling claim (signals costly to produce are harder to fake; what is costly here is the *documented activity* not the documentation), and the reviewer-objection-and-conjecture paragraph about fabrication cost. The previous §4.4 ("From Conditions to Framework") was renumbered to §4.3. Cascade fixes:
+
+- **§4 introduction** (paragraph immediately under "# 4. Conditions for Adequate Transparency"): "Three conditions emerge. First... Second... Third, it must create a *cost structure* that makes comprehensive disclosure both easier than strategic minimization and credibly differentiated from nominal compliance." → "Two conditions emerge. First, the framework must be *ecologically valid*... Second, it must be *oriented toward good faith*..."
+- **§4.3 opener** (formerly §4.4): "These three conditions specify what compliance-based mandates lack... Section 5 develops the framework designed to satisfy all three." → "These two conditions specify what compliance-based mandates lack... Section 5 develops the framework designed to satisfy both."
+- **§5.1 closing bridge:** "The three conditions from Section 4—ecological validity, good faith orientation, costly signaling—implement these requirements under AI-mediated conditions." → "The two conditions from Section 4—ecological validity, good faith orientation—implement these requirements under AI-mediated conditions."
+
+Also removed downstream: **Mercier (2020)** from the References block and from `paper_bibliography_FINAL.md` (cited nowhere else after the §4.3 cut). Logged as MOD-013 in `CFP_4.2.31`.
+
+**Why:** User direction (SID-20260513-003000): "the paper is too long; the costly signaling part can be deleted completely." The costly-signaling argument was already framed in the previous §4.3 as a "bonus property" that "supports but does not ground the framework" — explicitly not load-bearing. The reviewer-objection-and-conjecture paragraph (also part of the cut) acknowledged that fabrication may in fact be cheaper than authentic production and that the "costly signal" claim is "only a conjecture." Cutting the subsection removes ~470 words while losing no argumentative scaffolding the framework depends on. The §4 conditions list narrows from three to two — both genuinely load-bearing (ecological validity and good faith orientation are referenced throughout §§5–6).
+
+**Affected files:**
+- `Paper/MDversion/CFP_FullPaper_v1.md` (version bumped v1.5 → v1.6)
+- `transparency/Canonical_MD/SP4_ProcessDocumentation/4.6_ReferenceLogs/paper_bibliography_FINAL.md` (Mercier removed; see MOD-013 in CFP_4.2.31)
+
+Source draft `CFP_5.4.7_Section5_v2.md` not touched (frozen v1 baseline).
+
+---
+
 ## Connections (auto)
 
 ### Source chat (primary)

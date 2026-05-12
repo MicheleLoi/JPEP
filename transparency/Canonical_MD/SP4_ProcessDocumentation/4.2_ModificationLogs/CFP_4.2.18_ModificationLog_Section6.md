@@ -321,6 +321,26 @@ What remains in §5.1: the *framework* subsection (MHC operationalization, Santo
 
 ---
 
+### MOD-026: §5.2 Lloyd footnote compressed to ~40-word dismissive form (SID-20260513-003000)
+
+**Change:** The Lloyd footnote at §5.2 (anchored to "...remaining ecologically valid.") was rewritten from a ~140-word four-standard treatment (MOD-025, earlier this session) to a ~40-word dismissive note that points only at what we reject.
+
+**Previous footnote (MOD-025, ~140 words):**
+
+> On how this proposal stands relative to Lloyd's (2025) four standards for AI-assisted scholarship — *prominence*, *replicability*, *content cross-checking*, *intra-textual clarity* — we adopt Standards 1 and 2 as Lloyd intends them: SP-1 implements prominence, and SP-3 through SP-5 implement the duty to provide enough process information for a reader to follow how the work was done. Standard 2 is *not* a call for reproducibility; the reproducibility reading — that another inquirer should be able to reproduce the result — we reject on the grounds developed in §3.5: reproducibility is the wrong model for ethics, and the transparency duty argued for here is grounded in agent-integrity, not in methodological recoverability. Standard 3 (content cross-checking) names a distinct, orthogonal scholarly duty — factual verification of claims and citations — that the author bears under standard scholarly practice whether or not AI was used; the apparatus proposed here neither substitutes for nor supersedes it. Standard 4 we reject: binary attribution of text to "AI" or "human" is incoherent for iterative prompt-revision workflows where editorial judgment is embedded in every clause — as the SP-4 archive of this paper illustrates. What matters for §5's framework is whether the intellectual trajectory is traceable to human understanding.
+
+**Revised footnote (~40 words):**
+
+> Cf. Lloyd (2025) (four standards: prominence, replicability, content cross-checking, intra-textual clarity). We reject Standard 2 on the reproducibility reading (see §3.5) and Standard 4 (binary AI/human attribution — incoherent for iterative prompt-revision workflows).
+
+**Why:** User direction (SID-20260513-003000): "the lloyd footnote should be much shorter, almost dismissive, just point to what we reject." The previous version's treatment of Standards 1 and 3 (which we adopt as ordinary scholarly practice) carried more apparatus than the framework's relation to Lloyd warranted. The compressed version preserves the substantive contribution of MOD-025 — the explicit distinction between Standard 2 as Lloyd intends it and the reproducibility reading rejected in §3.5 — while removing the polite-engagement treatment of standards that don't conflict with the framework. Standards 1 and 3 are no longer mentioned in the footnote at all; their adoption is implicit in the framework's design.
+
+**Affected file:** `Paper/MDversion/CFP_FullPaper_v1.md` (version bumped v1.5 → v1.6). Source draft `CFP_5.4.8_Section6_v4.md` not touched.
+
+**Note:** MOD-025 (the longer version) is preserved as an entry in this modlog as the immediate predecessor; MOD-026 is the v1.6 successor in a single same-session sequence. The two together document the user's progression from "I want clarity on Standard 2" (MOD-025) to "I want this much shorter" (MOD-026).
+
+---
+
 ## Connections (auto)
 
 ### Source chat (primary)
