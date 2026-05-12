@@ -89,6 +89,26 @@ The episode has two layers that the paragraph captures together: at the object l
 
 ---
 
+### MOD-004 — §7 final paragraph trimmed: preparation compressed, punch preserved (SID-20260513-003000)
+
+**Change:** The Conclusion's final paragraph in `Paper/MDversion/CFP_FullPaper_v1.md` was trimmed from ~150 words to ~80 words. The two "preparation" sentences that restated §3.7's implicit-process-signals argument (the "traditional philosophical writing was already rich…" sentence and the "AI severs the connection…" sentence) were collapsed into a single subordinate clause anchored by an explicit §3.7 cross-reference. The two closing "punch" sentences are preserved verbatim.
+
+**Previous text (~150 words):**
+
+> The deepest reason for these requirements, however, is not that AI introduces something unprecedented into philosophical practice, but that it removes something that was always there. Traditional philosophical writing was already rich with implicit process signals — citation patterns, the structure of reasoning pursued as discovery, the depth and specificity of engagement with sources — that allowed the scholarly community to infer whether an author's actual process met the evaluative criteria they cared about. AI severs the connection between these signals and any underlying process: outputs can exhibit every marker of genuine philosophical engagement without any corresponding human intellectual journey having taken place. The explicit transparency requirement proposed here is therefore not a new imposition on philosophy. It is the conscious replacement of something that was always needed and is now, for the first time, no longer reliably supplied by the text itself.
+
+**Revised text (~80 words):**
+
+> The deepest reason for these requirements, however, is not that AI introduces something unprecedented into philosophical practice but that it removes something that was always there: the implicit signals — citation patterns, reasoning structure, engagement with sources — by which the community could once infer process from text (§3.7). The explicit transparency requirement proposed here is therefore not a new imposition on philosophy. It is the conscious replacement of something that was always needed and is now, for the first time, no longer reliably supplied by the text itself.
+
+**Why:** User direction (SID-20260513-003000): "the final punch is good, but the preparation should be briefer." The preparation sentences restated content that §3.7 already carries (the implicit-process-signals argument; the AI-severs-the-connection claim). With §3.7's signal-to-process severance framing already in place, the Conclusion did not need to re-establish the empirical observation — only to deliver the rhetorical move that turns it into the framing for the entire framework (*not new imposition, but conscious replacement*). CFP_4.2.36 MOD-009 (v1.3) had already trimmed §3.7 to make room for the Conclusion's reprise; this MOD now trims the reprise to match.
+
+**Affected file:** `Paper/MDversion/CFP_FullPaper_v1.md` (version bumped v1.4 → v1.5). Source draft `CFP_5.4.10_Conclusion_v1.md` not touched.
+
+**Convention note:** Per user direction this session, section-level modlogs are the landing place for changes that happen directly in the integrated paper.
+
+---
+
 ## Modification Summary
 
 ### By Type
@@ -97,6 +117,7 @@ The episode has two layers that the paragraph captures together: at the object l
 | Epistemic Calibration | 1 | MOD-001: retrospective → infrastructure gap |
 | New Content — Limitation Added | 1 | MOD-002: tracing condition ambiguity, essential contestedness |
 | Structural Recast — Externalization | 1 | MOD-003: opening sentence as framework spec + closing-note pointer |
+| Compression — Reprise trimmed | 1 | MOD-004: final-paragraph preparation collapsed; punch preserved |
 
 ### Key Themes
 Review-response corrections and additions to the Conclusion. MOD-001 fixed an inaccuracy in the self-exemplification paragraph. MOD-002 adds a substantive new limitation arising from implementation: the tracing condition contains an unresolved ambiguity about what depth of understanding is sufficient, which may itself be essentially contested. MOD-003 (2026-05-12) implements the externalization decision (CFP_5.2.5 PDL-001): the opening sentence's claim about *this paper's* documentation apparatus is recast as a *framework* specification, with the per-paper instantiation pointed to the new unnumbered closing note.
