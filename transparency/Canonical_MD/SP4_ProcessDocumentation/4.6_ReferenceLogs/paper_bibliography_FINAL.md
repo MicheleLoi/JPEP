@@ -74,6 +74,8 @@ inputs:
 
 **Lund, B. D., & Naheem, K. T.** (2023). "Can ChatGPT be an author? A study of artificial intelligence authorship policies in top academic journals." *Learned Publishing*. https://doi.org/10.1002/leap.1582
 
+**Mecacci, G., & Santoni de Sio, F.** (2020). "Meaningful human control as reason-responsiveness: the case of dual-mode vehicles." *Ethics and Information Technology*, 22, 103–115. https://doi.org/10.1007/s10676-019-09519-w
+
 **Mercier, H.** (2020). *Not Born Yesterday: The Science of Who We Trust and What We Believe*. Princeton: Princeton University Press.
 
 **Nietzsche, F.** (1966). *Beyond Good and Evil* (W. Kaufmann, Trans.). New York: Vintage Books. (Original work published 1886)

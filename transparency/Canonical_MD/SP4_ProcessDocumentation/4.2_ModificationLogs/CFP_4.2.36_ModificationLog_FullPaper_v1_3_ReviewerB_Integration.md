@@ -85,3 +85,30 @@ The prescription in question — Hosseini, Resnik & Holmes (2023), restated in R
 **Author intent (recorded verbatim from session):** "this is the current norm adopted by Philosophical Review, for example, it's clearly absurd; i couldn't apply, it would have been ridiculous, meaningless, and create an immediate 'double standard' in relation to other top submissions (by modifying the style etc) etc... Please develop this argument for me. of course don't cite personal experience, build the personal [impersonal] case." The argument as drafted does not appeal to personal experience and does not name any specific venue. The "double standard" insight — that selective application creates a stylistic differentiation that itself penalizes disclosure — is the load-bearing move and is presented as a structural consequence of the prescription, not as a complaint about its application.
 
 **Scope discipline:** Source draft `CFP_5.4.7_Section5_v2.md` (which now occupies §4 in post-renumbering) is unchanged. The rewrite lives only in `Paper/MDversion/CFP_FullPaper_v1.md`, per project rule 1.
+
+---
+
+### MOD-003 — §5.1: tracking treated as its own challenge (not "relatively easy"); Mecacci & Santoni de Sio (2020) engaged
+
+| Field | Value |
+|-------|-------|
+| Date | 2026-05-12 |
+| Type | Philosophical hedge + framework integration |
+| Source of finding | Reviewer B specific recommendation #3 (should) — tracking/tracing asymmetry challenge |
+
+**Issue:** §5.1 paragraph 2 (the middle paragraph of the MHC subsection) claimed tracking was "relatively easy" because "if the author iterates with the AI, the result will generally track their intentions." Reviewer B flagged that Mecacci & Santoni de Sio (2020) — and the downstream MHC operationalisation literature — treat *tracking* as the harder problem because of *reasons underdetermination*: the author's "relevant reasons" admit of a proximity scale (very-distal background commitments → distal philosophical positions → proximal editorial intentions → very-proximal in-the-moment choices), and iteration may track proximal intentions without tracking distal philosophical commitments. The original "relatively easy" phrasing was overconfident in a way an attentive MHC-literate reviewer would catch.
+
+**Change:** §5.1 middle paragraph rewritten from 3 sentences (~60 words) to one ~180-word paragraph:
+
+- Before: `Tracing presents the distinctive challenge. Tracking is relatively easy: if the author iterates with the AI, the result will generally track their intentions. But if the author cannot explain why an argument works, defend it against objections, or identify its philosophical commitments, tracing fails.`
+- After (full text in the paper): symmetrically treats both conditions as challenging in different ways; engages Mecacci & Santoni de Sio (2020) on the proximity scale of reasons; introduces the distinction between proximal local-coherence tracking (which iteration secures) and distal-commitment tracking (which it does not automatically secure); then sketches how the existing framework supports the harder claim via (i) the pre-drafting layer of SP-5 (section guidance, epistemic traces) that externalizes distal commitments before generation, and (ii) the modification-log layer of SP-4 that records overrides where the author's distal reasons asserted themselves against the proximal grain. Closes with explicit epistemic modesty: "Neither layer certifies tracking; both supply the visibility conditions under which it can be assessed."
+
+**Framing decision (recorded):** The new paragraph treats tracking as *its own* challenge rather than as "the harder of the two." Flipping tracing/tracking primacy outright would force consequential downstream changes in §6 and §7 (both of which lean heavily on tracing as the central locus where philosophical authorship is at stake) — changes Reviewer B did not request and that would expand scope beyond what this MOD targets. The chosen framing — "each condition fails differently; neither is straightforwardly secured" — addresses the M&SdS challenge without restructuring the paper's emphasis.
+
+**No new framework machinery introduced:** The new paragraph leans on SP-4 (modification logs) and SP-5 (section guidance, epistemic traces) — both already specified in the §5.2 framework table. The contribution is making explicit how existing machinery serves *tracking*, which the original passage did not say at all.
+
+**Bibliography entry added (both `paper_bibliography_FINAL.md` and the paper's References block):**
+
+- **Mecacci, G., & Santoni de Sio, F.** (2020). "Meaningful human control as reason-responsiveness: the case of dual-mode vehicles." *Ethics and Information Technology*, 22, 103–115. https://doi.org/10.1007/s10676-019-09519-w
+
+**Scope discipline:** Source draft `CFP_5.4.8_Section6_v4.md` (which now occupies §5 in post-renumbering) is unchanged. The rewrite lives only in `Paper/MDversion/CFP_FullPaper_v1.md`, per project rule 1.
