@@ -18,7 +18,7 @@ related:
 
 ---
 
-## RESUME HERE (last updated 2026-05-12, session SID-20260512-154043)
+## RESUME HERE (last updated 2026-05-12, session SID-20260512-171552)
 
 **This section is the canonical entry point for resuming JPEP work.** Per-session granular history is in `CFP_session_log.md` (same folder); this section summarises state and points forward.
 
@@ -65,11 +65,14 @@ The "visibility argument" sketch in `CFP_5.3.27` lines 76–81 (Williams Greek t
 
 **Tier 3 review edits complete (S1, O2, O5, S3).**
 
+**Phase 4 — Title + Abstract DONE 2026-05-12 (SID-20260512-171552, commit `a7294d0`).**
+
+- **Title:** *The Journal of Prompt Engineered (Moral) Philosophy: Or, Why AI-Assisted Ethics Research Requires Process Transparency.* The "Frankenstein; or, …" structure: a wink upfront (the project's own working name reread as a self-aware framing of what the paper is about), an argumentative CFP-anchor after the "Or." User-selected from a field of nine candidates; the sober variants foregrounding agent-integrity or documentation-adequacy were declined in favor of the argumentative subtitle that names the question rather than the answer.
+- **Abstract:** ~80 words. Saved in `CFP_5.4.15_Abstract_v1.md` (numbers 11–14 were taken by SP-3, SP-2, SP-1, and the AI Usage Archive). Drafted in two passes: first an over-balanced v1 keyed to Introduction + §3 + Conclusion alone; then a v2 rebalanced against the actual post-v5 paper weights (§3 carries ~30% of body weight and defeats three truth-tracking-adjacent framings — cognitivist, Cordasco/welfare-economic, reproducibility; §5 framework + §6 dual assessment proportionally weighted); then v3 compressed by ~70% to the philosophical core (§3 contestedness + three defeats, agent-integrity grounding, framework name, self-exemplification + archive). §4 conditions, §6 dual assessment, and the "restoration" closing were explicit trade-offs against the compression target. Modlog `CFP_4.2.33_ModificationLog_AbstractTitle.md` records both decisions (MOD-001 abstract, MOD-002 title).
+
 **Next substantive step, in priority order:**
 
-1. **Phase 4: Abstract + Title.** Both need drafting/finalization. Abstract should reflect post-renumbering, post-externalization, post-v5.1 §3 architecture (agent-integrity grounding; not reproducibility-based; moral not post-institutional). Title should signal: transparency + AI-assisted ethics research + methodology.
-2. Phase 4: Abstract + Title.
-3. Phase 5: final read-through + Zenodo/OSF upload of the archive + DOI substitution in `CFP_5.4.14` + source-conversations manifest creation + branch merge + paper DOCX/PDF rebuild.
+1. **Phase 5: final pre-submission integration.** Final read-through of the full paper body (§1–§7 + closing note) for consistency with the new §3 v5.1 architecture and the externalised SP-1/SP-2/SP-3. Tag the submission commit on GitHub; enable GitHub→Zenodo integration; mint DOI; replace `[persistent identifier: forthcoming]` in `CFP_5.4.14_AIUsageArchive.md` and SP-1 line 81. Create source-conversations manifest (`CFP_5.3.N_Note_RawConversationsManifest.md`) promised in SP-2 §7. Branch merge to `main` (housekeeping, not strictly required given tag + DOI). Rebuild DOCX/PDF.
 
 **Other deferred items (Phase 5 / pre-submission):**
 
