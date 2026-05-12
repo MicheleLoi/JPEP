@@ -160,3 +160,85 @@ SP-1, SP-3, SP-4 folders, SP-5 folders, source-conversations manifest all assess
 - Rebuild paper DOCX/PDF after intellectual revisions are complete.
 - Phase 4: Abstract and Title.
 - Phase 5: full enumeration check before submission.
+
+---
+
+## SID-20260512-154043 — 2026-05-12
+
+**Goal:** Engage Carlo Ludovico Cordasco's welfare-economic critique of AI governance as a potential objector in §3; then close out Tier 3 review-response items.
+
+**Mode:** as-we-go.
+
+**Done — Cordasco engagement + §3 agent-integrity grounding:**
+
+User clarification before drafting: "we're not asking about a post-institutional duty of transparency but a moral one." This fixed the register for the entire arc that followed. A research subagent collected and analyzed all 12 posts in Cordasco's *Paperclips and Other Alignment Problems* Substack; central thesis = "welfare-accounting humility." User instruction: **treat as objector only**, not ally.
+
+- `5372121` — **§3 v3 → v4** (Cordasco welfare-economic objection-response). Three paragraphs after the Williams paragraph: (1) steelmanned objection paraphrasing Cordasco 2026a/2026b; (2) welfare-on-welfare reply drawing on §6 metacognitive-monitoring (Zimmerman 2002; Cheng et al. 2025) and old §4 generative-framework argument — *added at user's correction* "the welfare argument can be replied to with a welfare argument"; (3) register reply preserving the moral-vs-post-institutional distinction. Bibliography (`paper_bibliography_FINAL.md`) updated with Cordasco 2026a, 2026b per Berg & Robbins Substack precedent. §3 modlog CFP_4.2.23 extended with v3 → v4 entry.
+
+- `bcfb25a` — **§3 v4 → v5** (reproducibility disanalogy + agent-integrity grounding) + full JPEP chain documentation. Decisive user moves:
+  - "These values belong to truth-conducive methodology. Not good for this argument. Integrity is not methodological integrity. This should be emphasized."
+  - "Cavell may be added, Lewis not relevant."
+  - "This is philosophy, not science. The usual arguments for methodological integrity as reproducibility DON'T apply… You should explain why that is, and what other argument is needed. Reconsider where to place this in the paper. I think it's very important."
+  - New §3 subsection "Reproducibility Is Not the Issue" inserted between "Why Output-Evaluation Fails in Ethics" and "From Answer to Tracking" (placement delegated by user; recorded in trace §8). ~390 words. Cavell added to visibility-subsection exemplar list (Williams Greek tragedy / Nozick decision theory / Parfit working-through / Cavell ordinary-language + film). Lewis explicitly omitted as instrumental methodology.
+  - Three new artifacts created per user direction "plan a documentation that is coherent with the JPEP methodology":
+    - **`CFP_4.7.21_EpistemicTrace_AgentIntegrityGrounding`** — covers the §3 v3 → v5 arc as one philosophical movement (welfare-economic objection-response → reproducibility disanalogy → agent-integrity grounding). Preserves verbatim the four decisive user interventions.
+    - **`CFP_5.3.29_Note_CordascoCorpusBriefing`** — 12-post corpus analysis with rationale for citing only Posts 10/11 and reasons for not citing the three candidate-ally posts (Locke/Jack, taste-evolution, peer-review).
+    - **`CFP_4.4.22_SectionGuidance_Section3`** — CFP-era guidance (supersedes Stage III `III_4.4.4`); records new §3 architecture and six hard constraints (agent ≠ methodological integrity; no truth-conducive values list; moral not post-institutional; reproducibility doesn't transfer; cognitivism is illustration not premise; pre-renaming numbering).
+  - §3 modlog CFP_4.2.23 extended with v4 → v5 entry.
+
+**Done — Tier 3 review-response items (S1, O2, O5, S3):**
+
+- `cd6e670` — **§5 v4.1 → v4.2 (S1 — MHC transfer).** Opening of "The framework" sub-section rewritten. Removed "transfers structurally" (the exact phrase the Shoulders reviewer flagged). Replaced with: "our debt is conceptual, not analogical… we apply the tracking and tracing conditions to AI-assisted scholarship on the basis of §3's independent argument from agent-integrity." Names what doesn't carry over (catastrophic stakes, physical irreversibility, kinetic control) and what does (the philosophical content of tracking and tracing). Decisive user correction during planning: "we're not borrowing the vocabulary but the concepts." Modlog CFP_4.2.18 MOD-023.
+
+- `a4e48b5` — **§6 v3.1 → v3.2 (O5 — Circularity).** §6.4 self-exemplification passage rewritten to make the feasibility/adequacy distinction explicit. The article's self-citation is evidence of *feasibility* ("that the substantive philosophical work of a paper can be extensively documented without the documentation displacing or hollowing out the inquiry it records"), not evidence of *adequacy* (community-settled). Closing aphorism: "Feasibility is what an author can demonstrate by exhibition; adequacy is what only the community can settle." Modlog CFP_4.2.19 Entry 9.
+
+- `6f8fb60` — **§3 v5 → v5.1 (O2 — Comparison cases).** One sentence added at end of paragraph 2 of "Reproducibility Is Not the Issue": "The contrast we draw is between ethics and empirical science specifically; we make no claim here about disciplines whose evidentiary structures fall between these poles, like history, literary criticism, or political theory." Modlog CFP_4.2.23 v5 → v5.1 entry.
+
+- `a96a404` — **S3 audit (Abdulhai hedging).** Confirmed already done at 2026-04-09 per CFP_4.2.19 Entry 7. All four Shoulders concerns (preprint status, study design, operationalization, domain inference) already addressed in §6 v3.2 line 42. Abdulhai cited only in §6. Work plan tracker updated to reflect actual state.
+
+**Three negative results and one positive grounding closed off in §3:**
+
+§3 now explicitly forecloses three outcome-based framings — (1) cognitivist output-evaluation, (2) reproducibility-as-methodological-soundness, (3) welfare-economic cost-benefit — and positively grounds the transparency duty in agent-integrity (Williams's ground-projects). The transparency duty is not welfare-economic, not methodological-soundness, not reproducibility-style; it is what integrity requires when AI severs the historical text-agent link.
+
+**Produced (artifacts):**
+
+| Artifact | Path |
+|----------|------|
+| Epistemic trace | `4.7_EpistemicTraces/CFP_4.7.21_EpistemicTrace_AgentIntegrityGrounding.md` |
+| Cordasco corpus briefing | `5.3_Notes_Type11/CFP_5.3.29_Note_CordascoCorpusBriefing.md` |
+| §3 section guidance (CFP-era) | `4.4_SectionGuidance/CFP_4.4.22_SectionGuidance_Section3.md` |
+| §3 draft updates (v3 → v4 → v5 → v5.1, in place) | `5.4_SectionDrafts/CFP_5.4.4_Section3_v3.md` |
+| §5 draft updates (v4.1 → v4.2, in place) | `5.4_SectionDrafts/CFP_5.4.8_Section6_v4.md` |
+| §6 draft updates (v3.1 → v3.2, in place) | `5.4_SectionDrafts/CFP_5.4.9_Section7_v3.md` |
+| §3 modlog extensions (v3→v4, v4→v5, v5→v5.1) | `4.2_ModificationLogs/CFP_4.2.23_ModificationLog_Section3_v3.md` |
+| §5 modlog extension (MOD-023) | `4.2_ModificationLogs/CFP_4.2.18_ModificationLog_Section6.md` |
+| §6 modlog extension (Entry 9) | `4.2_ModificationLogs/CFP_4.2.19_ModificationLog_Section7.md` |
+| Bibliography (Cordasco entries) | `4.6_ReferenceLogs/paper_bibliography_FINAL.md` |
+| Work plan RESUME HERE updated | `5.3_Notes_Type11/CFP_5.3.1_WorkPlan_CFP_Adaptation.md` |
+
+**Commits:** `5372121`, `bcfb25a`, `cd6e670`, `a4e48b5`, `6f8fb60`, `a96a404`.
+
+**Decisions made (recorded here, not just in modlogs):**
+
+- Cordasco engaged as objector only, not ally — three candidate-ally posts (Locke/Jack, taste, peer-review) declined under user directive.
+- Welfare critique answered *on welfare ground* before the register move, not only by register-shift — at user correction.
+- Disanalogy with science placed as new §3 subsection mid-section (between cognitivist defeat and tracking pivot), not at start of §3 or §5 — user delegated; I judged.
+- Williams's integrity construed as **agent-integrity**, not methodological integrity — at user correction; recorded as Hard Constraint 1 in CFP_4.4.22.
+- "Philosophical values" framings (intellectual honesty / methodological self-consciousness / guided thought) rejected as truth-conducive — at user correction; Hard Constraint 2.
+- Cavell exemplar accepted (existential signature); Lewis rejected (instrumental methodology).
+- MHC borrowing is **conceptual not analogical** — at user correction "we're not borrowing the vocabulary but the concepts."
+- Self-citation = feasibility (author-demonstrable), not adequacy (community-settled).
+- Tier 3 disposition for S1, O5, O2: engage (modlog-grain); for S3: confirm already done. Pattern summary considered and declined by user.
+
+**Open (deferred):**
+
+- Phase 4: Abstract + Title.
+- Phase 5: final read-through, Zenodo upload, DOI substitution in `CFP_5.4.14`, source-conversations manifest, branch merge, paper DOCX/PDF rebuild.
+- Inline excerpts in `CFP_5.4.14` (forward promise).
+- SP-3 pre-renaming section references.
+- SP-1 branch-merge-tense marker (line 81) — resolve at submission with tag + DOI.
+- Source-conversations manifest (`CFP_5.3.N_Note_RawConversationsManifest.md`) — promised in SP-2 §7.
+- Figure-numbering reconciliation in SP-3.
+- Cleanup anomalies: `.bak`, `.patch.txt`, space in `5.2.8 pdl-appendix-2.md`.
+
+**Next:** Phase 4 (Abstract + Title), reflecting post-renumbering, post-externalization, and the v5.1 §3 architecture (agent-integrity grounding; not reproducibility-based; moral not post-institutional).
