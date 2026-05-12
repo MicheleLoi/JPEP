@@ -14,6 +14,7 @@ derived_from: "CFP_5.4.5_Section2_v1.md"
 session_id: SID-20260317-182817
 feeds_into: "CFP_4.2.15_ModificationLog_Section2.md"
 word_count: ~1100
+section_numbering: pre_renaming
 ---
 # 2. Systemic Barriers to Disclosure
 

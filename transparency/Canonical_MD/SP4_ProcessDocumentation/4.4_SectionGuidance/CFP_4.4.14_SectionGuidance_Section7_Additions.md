@@ -8,6 +8,8 @@ status: ready_to_implement
 session_id: SID-20260324-173456
 derived_from: "CFP_5.2.1_pdl_section7_additions.md"
 feeds_into: "CFP_5.4.9_Section7_v2.md"
+section_numbering: pre_renaming
+section_number_new: "6 - Community Assessment of Documentation Adequacy"
 ---
 # Section 7 Implementation Plan — Pre-Phase 4 Step
 

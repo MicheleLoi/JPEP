@@ -17,6 +17,7 @@ cfp_target: "AI Tools in Ethics Research (topical collection)"
 versioning_convention: git_inplace
 word_count: ~2200
 note: "Provisional. File inventories are complete as of SID-20260409-150705. A final enumeration check is scheduled before submission (Phase 5)."
+section_numbering: pre_renaming
 ---
 
 # SP-2 — Navigation and Architecture Guide

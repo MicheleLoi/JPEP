@@ -14,6 +14,7 @@ cfp_target: "AI Tools in Ethics Research (topical collection)"
 session_id: SID-20260401-173934
 transformation: "v2 → v2.1: Redundancy pass 1. Deleted 'Requirement of Visibility' subsection (pure signposting); compressed 'The Stakes' to 2 sentences merged into 'From Answer to Tracking'; shortened Level 2 parasitic-objection defense; merged 'This compounds' paragraph; trimmed nature-of-activities examples. Net −~400 words."
 word_count: ~1350
+section_numbering: pre_renaming
 ---
 # Section 3: Why Engage Transparently with AI-Assisted Ethics Research?
 

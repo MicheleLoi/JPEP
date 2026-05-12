@@ -18,6 +18,7 @@ versioning_convention: git_inplace
 word_count: ~700
 pending:
   - "Part 2 / Documentation conventions: branch merge sentence written in future tense as of 2026-04-09. Update to past tense and remove inline marker when cfp-ai-ethics-inquiry is merged into main."
+section_numbering: pre_renaming
 ---
 
 # SP-1 — AI Usage Declaration and Archive Orientation

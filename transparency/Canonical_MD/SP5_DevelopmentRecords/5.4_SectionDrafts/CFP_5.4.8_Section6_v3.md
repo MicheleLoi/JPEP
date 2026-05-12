@@ -15,6 +15,7 @@ session_id: SID-20260323-190000
 feeds_into: "CFP_4.2.18_ModificationLog_Section6.md"
 transformation: "v2 → v3: §6.2 SP-3 paragraph rewritten (removed internal reproduction-test development history, stated positively); §6.4 entirely rewritten as single paragraph on two-layer architecture (raw transcript as ground truth + SP-3 as AI-assisted synthesis); timestamp claim removed as obsolete; 'training examples' framing cut."
 word_count: ~1520
+section_numbering: pre_renaming
 ---
 # 6. Mandatory Transparency in Practice
 

@@ -13,6 +13,7 @@ inputs:
 cfp_target: "AI Tools in Ethics Research (topical collection)"
 feeds_into: "CFP_4.2.16_ModificationLog_Section3.md"
 word_count: ~1410
+section_numbering: pre_renaming
 ---
 # Section 3: Why Engage Transparently with AI-Assisted Ethics Research?
 

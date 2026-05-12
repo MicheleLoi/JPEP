@@ -15,6 +15,7 @@ revision_note: "Revised following Reviewer A verdict (cut discovery/justificatio
 derived_from: "CFP_5.4.8_Section6_v1.md"
 feeds_into: "CFP_4.2.18_ModificationLog_Section6.md"
 word_count: ~1600
+section_numbering: pre_renaming
 ---
 # 6. Mandatory Transparency in Practice
 

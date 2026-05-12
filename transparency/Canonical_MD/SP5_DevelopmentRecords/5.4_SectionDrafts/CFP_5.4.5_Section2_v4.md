@@ -14,6 +14,7 @@ derived_from: "CFP_5.4.5_Section2_v4.md"
 session_id: SID-20260401-173934
 transformation: "v4 → v4.1: Redundancy pass 1. Removed duplicate 'philosophically specified account' framing (already in Intro); trimmed mechanism elaborations; removed bolted-on authenticity sentence; removed 'not X — it is Y' LLM tells; cut hedged adoption-data caveat. Net −~200 words."
 word_count: ~750
+section_numbering: pre_renaming
 ---
 # 2. Systemic Barriers to Disclosure
 

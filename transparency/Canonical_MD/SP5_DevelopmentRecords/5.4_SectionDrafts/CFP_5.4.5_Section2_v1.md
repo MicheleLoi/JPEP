@@ -13,6 +13,7 @@ cfp_target: "AI Tools in Ethics Research (topical collection)"
 session_id: SID-20260311-185449
 feeds_into: "CFP_4.2.15_ModificationLog_Section2.md"
 word_count: ~950
+section_numbering: pre_renaming
 ---
 # 2. Systemic Barriers to Disclosure
 
