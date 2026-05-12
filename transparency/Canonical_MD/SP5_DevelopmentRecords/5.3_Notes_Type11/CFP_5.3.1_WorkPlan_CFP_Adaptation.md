@@ -61,10 +61,13 @@ The "visibility argument" sketch in `CFP_5.3.27` lines 76–81 (Williams Greek t
 - **S1 (MHC transfer)** — DONE 2026-05-12. §5 MHC introduction rewritten: "transfers structurally" removed; borrowing characterized as conceptual not analogical; cross-reference to §3 v5 agent-integrity grounding added. See `CFP_4.2.18` MOD-023.
 - **O5 (Circularity)** — DONE 2026-05-12. §6.4 self-exemplification passage rewritten to make the feasibility/adequacy distinction explicit; self-citation explicitly framed as evidence-of-feasibility (author-demonstrable), not evidence-of-adequacy (community-settled). See `CFP_4.2.19` Entry 9.
 - **O2 (Comparison cases)** — DONE 2026-05-12. §3 v5.1: one-sentence scope marker added at end of paragraph 2 of "Reproducibility Is Not the Issue" — disanalogy limited to ethics-vs-empirical-science specifically; history, literary criticism, political theory explicitly out of scope. See `CFP_4.2.23` v5 → v5.1 entry.
+- **S3 (Abdulhai preprint over-relied on)** — Already DONE 2026-04-09. Confirmed during S3 audit 2026-05-12. §6 v3.2 hedging covers all four Shoulders concerns: preprint status flagged ("An arXiv preprint... — unreviewed at the time of writing"); study design hedged ("appropriate caution"); operationalization explicitly named; domain inference flagged ("remains to be established... If the finding generalizes..."). Abdulhai cited only in §6; not in §3 or elsewhere. Global bibliography entry already marks it as arXiv. See `CFP_4.2.19` Entry 7. The work plan tracker was lagging the actual state; no new edit needed.
+
+**Tier 3 review edits complete (S1, O2, O5, S3).**
 
 **Next substantive step, in priority order:**
 
-1. Tier 3 review edits remaining (S3 Abdulhai hedging — see `CFP_5.3.27_Note_ReviewResponse_Draft.md` for items).
+1. **Phase 4: Abstract + Title.** Both need drafting/finalization. Abstract should reflect post-renumbering, post-externalization, post-v5.1 §3 architecture (agent-integrity grounding; not reproducibility-based; moral not post-institutional). Title should signal: transparency + AI-assisted ethics research + methodology.
 2. Phase 4: Abstract + Title.
 3. Phase 5: final read-through + Zenodo/OSF upload of the archive + DOI substitution in `CFP_5.4.14` + source-conversations manifest creation + branch merge + paper DOCX/PDF rebuild.
 
