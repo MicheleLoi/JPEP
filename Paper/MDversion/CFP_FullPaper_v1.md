@@ -4,11 +4,12 @@ document_type: Type 12 - Section Draft (integrated)
 section: "Full paper — CFP integrated draft"
 label: CFP_FullPaper_v1
 title: "The Journal of Prompt Engineered (Moral) Philosophy: Or, Why AI-Assisted Ethics Research Requires Process Transparency"
-version: v1
+version: v1.1
 date_created: 2026-05-12
 status: Draft (Phase 5 integration)
-source: "Claude Opus 4.7 (Claude Code session SID-20260512-171552) — assembly only; no substantive edits"
-assembly: "Concatenation of finalized section drafts at their authoritative versions, with section-local reference lists stripped and replaced by paper_bibliography_FINAL.md. No content edited; cross-reference inconsistencies preserved from sources."
+source: "Claude Opus 4.7 (Claude Code session SID-20260512-171552) — assembly; v1.1 cleanup pass in SID-20260512-223052"
+assembly: "v1 = concatenation of finalized section drafts at their authoritative versions, with section-local reference lists stripped and replaced by paper_bibliography_FINAL.md. v1.1 = in-place cleanup of cross-reference drift (§4/§5/§6 body), Boden & Edmonds page number corrected (p. 138 → p. 29), Santoni de Sio §6.2 VERIFY tag removed (Frontiers article is online-only — section reference is the correct locator), and Sartre + Boden & Edmonds added to paper_bibliography_FINAL.md."
+versioning_convention: git_inplace
 inputs:
   - CFP_5.4.15_Abstract_v1.md
   - CFP_5.4.3_Introduction_v2.md
@@ -19,15 +20,14 @@ inputs:
   - CFP_5.4.9_Section7_v3.md (renumbered §6, frontmatter v3.2)
   - CFP_5.4.10_Conclusion_v1.md (renumbered §7, frontmatter v2)
   - CFP_5.4.14_AIUsageArchive.md (unnumbered closing note)
-  - transparency/Canonical_MD/SP4_ProcessDocumentation/4.6_ReferenceLogs/paper_bibliography_FINAL.md
-session_id: SID-20260512-171552
+  - transparency/Canonical_MD/SP4_ProcessDocumentation/4.6_ReferenceLogs/paper_bibliography_FINAL.md (v1.1: Sartre 1956 + Boden & Edmonds 2009 added)
+session_id:
+  - SID-20260512-171552
+  - SID-20260512-223052
 cfp_target: "AI Tools in Ethics Research (topical collection)"
 word_count: ~8,640 (body, excluding references)
 section_numbering: post_renaming
 known_issues:
-  - "Cross-reference drift: §4 body says 'Section 6 develops the framework' (should be §5); §5 body says 'The three conditions from Section 5' (should be §4); §6 body says 'Section 6 established what transparency documentation must do' (should be §5) and 'The good faith orientation from Section 5' (should be §4). Conclusion §7 references to 'Section 6' for documentation-adequacy criteria and dual assessment appear correct in new numbering."
-  - "Missing bibliography entries: Sartre (1956), Being and Nothingness — cited in §3; Boden & Edmonds (2009) — cited in §5 with page number. Both need adding to paper_bibliography_FINAL.md."
-  - "VERIFY tag in §5: 'Santoni de Sio and van den Hoven (§6.2) [VERIFY: replace with page number]' — needs page-number lookup before submission."
   - "Cavell mentioned as exemplar in §3 without formal citation — consistent with Nozick/Parfit/Williams treatment as agent-signature exemplars; intentional, not an omission."
 ---
 
@@ -217,7 +217,7 @@ A reviewer objected that AI tools could generate plausible-seeming process docum
 
 ## 4.4 From Conditions to Framework
 
-These three conditions specify what compliance-based mandates lack. They also entail that documentation cannot function as raw disclosure taken at face value but must constitute a defended claim about its own adequacy — one the author justifies and others can assess. Section 6 develops the framework designed to satisfy all three.
+These three conditions specify what compliance-based mandates lack. They also entail that documentation cannot function as raw disclosure taken at face value but must constitute a defended claim about its own adequacy — one the author justifies and others can assess. Section 5 develops the framework designed to satisfy all three.
 
 The framework is not uniquely determined by these conditions. An alternative would be to integrate detailed process documentation into the paper itself — a methodology section specifying AI's role in each argumentative move. But this would settle, by formatting convention, the very question this paper argues is essentially contested. The paper has treated as an open question whether AI assistance changes the nature of philosophical activity enough to make it a *different* activity. Requiring a methodology section answers that question from one particular direction: it treats AI-assisted philosophy as the kind of empirical-style inquiry that requires procedural reporting separable from its conclusions. Yet philosophy, as traditionally practiced, does not have methodology sections — that absence is not an oversight but a feature of its identity as a non-empirical discipline. Mandating such sections when AI is used would therefore adopt one contested position as a disciplinary norm, foreclosing the debate rather than contributing to it. The problem is compounded by the fact that this would also presuppose that method is separable from argument in philosophy — itself a substantive philosophical claim. The supplementary structure keeps both questions available. This is a first iteration offered for community refinement, not a claim of unique necessity.
 
@@ -237,7 +237,7 @@ The meta-ethical contestation generates the tracking requirement through two pat
 
 The tradition named in Section 3—Socrates, Kierkegaard, Nietzsche—treats philosophical activity as constitutively self-expressive: the process of inquiry reveals and constitutes the inquirer. One might argue that if this tradition is right, delegating intellectual production to an AI introduces alien agency into a process whose value lies in disclosing the self — that if philosophy is confession, delegation is imposture.
 
-But this objection locates self-expression in the wrong place. What expresses the self is not the manual production of sentences but the vision that organizes them — the questions selected, the risks taken, the intellectual judgments brought to the whole. Creative practice has long recognized this. In modular synthesis, the composer designs the system architecture — patching together oscillators, filters, and sequencers — rather than controlling every waveform; sonic properties emerge from module interactions in ways not fully predictable from individual settings. In computer-based generative art, the artist establishes abstract rules implemented by a computer such that the system is "partly responsible for coming up with the idea itself" (Boden & Edmonds, 2009, p. 138) — Harold Cohen's AARON is the paradigmatic case. In each instance, creative agency lies in designing the generative structure, not in manual execution.
+But this objection locates self-expression in the wrong place. What expresses the self is not the manual production of sentences but the vision that organizes them — the questions selected, the risks taken, the intellectual judgments brought to the whole. Creative practice has long recognized this. In modular synthesis, the composer designs the system architecture — patching together oscillators, filters, and sequencers — rather than controlling every waveform; sonic properties emerge from module interactions in ways not fully predictable from individual settings. In computer-based generative art, the artist establishes abstract rules implemented by a computer such that the system is "partly responsible for coming up with the idea itself" (Boden & Edmonds, 2009, p. 29) — Harold Cohen's AARON is the paradigmatic case. In each instance, creative agency lies in designing the generative structure, not in manual execution.
 
 Philosophy already recognizes process details as self-expressive. Citation patterns constitute implicit methodological proposals about what resources matter for philosophy; the community reads them as expressive of intellectual identity. AI usage is a new dimension of the same practice: the choice of interlocutor is itself a self-expressive act.
 
@@ -247,13 +247,13 @@ What different modes of AI engagement express matters. Documented delegation exp
 
 *The framework.*
 
-The Meaningful Human Control (MHC) framework provides the operationalization. Santoni de Sio and van den Hoven (2018) developed MHC for autonomous weapons systems; our debt is conceptual, not analogical. We apply the tracking and tracing conditions to AI-assisted scholarship on the basis of §3's independent argument from agent-integrity. The features that distinguish weapons systems — catastrophic stakes, physical irreversibility, kinetic control — play no role here; what carries over is the philosophical content of what it means to track an agent's reasoning and to trace an output to an agent's understanding. MHC identifies two necessary conditions. The **tracking condition** requires that system outputs covary with the human operator's relevant reasons. The **tracing condition** is more demanding: outputs must be traceable to proper understanding and endorsement by some human person. As Santoni de Sio and van den Hoven put it, "systems whose actions and states are not traceable to relevant understanding and endorsing by some human person—no matter how intelligent and reason-responsive they may be—are not under meaningful human control" (§6.2) [VERIFY: replace with page number].
+The Meaningful Human Control (MHC) framework provides the operationalization. Santoni de Sio and van den Hoven (2018) developed MHC for autonomous weapons systems; our debt is conceptual, not analogical. We apply the tracking and tracing conditions to AI-assisted scholarship on the basis of §3's independent argument from agent-integrity. The features that distinguish weapons systems — catastrophic stakes, physical irreversibility, kinetic control — play no role here; what carries over is the philosophical content of what it means to track an agent's reasoning and to trace an output to an agent's understanding. MHC identifies two necessary conditions. The **tracking condition** requires that system outputs covary with the human operator's relevant reasons. The **tracing condition** is more demanding: outputs must be traceable to proper understanding and endorsement by some human person. As Santoni de Sio and van den Hoven put it, "systems whose actions and states are not traceable to relevant understanding and endorsing by some human person—no matter how intelligent and reason-responsive they may be—are not under meaningful human control" (§6.2).
 
 Tracing requires that the directing person *understood* what was being produced and *endorses* it as their own intellectual contribution. This is where the two levels converge operationally. The question "did the author understand and endorse?" is precisely the question that Kierkegaard's truth-as-subjectivity makes constitutive and that Nietzsche's confession metaphor requires. A framework satisfying tracing serves both levels of the double contestation.
 
 Tracing presents the distinctive challenge. Tracking is relatively easy: if the author iterates with the AI, the result will generally track their intentions. But if the author cannot explain why an argument works, defend it against objections, or identify its philosophical commitments, tracing fails.
 
-The three conditions from Section 5—ecological validity, good faith orientation, costly signaling—implement these requirements under AI-mediated conditions.
+The three conditions from Section 4—ecological validity, good faith orientation, costly signaling—implement these requirements under AI-mediated conditions.
 
 ## 5.2 The Transparency Framework
 
@@ -297,7 +297,7 @@ The documentation requirements are substantial: prompts, modification logs, epis
 
 ## 6.1 From Disclosure to Assessment
 
-Section 6 established what transparency documentation must do: enable evaluators across the community of legitimate positions to trace intellectual contributions to human understanding and direction. How should the scholarly community assess whether what is disclosed is adequate?
+Section 5 established what transparency documentation must do: enable evaluators across the community of legitimate positions to trace intellectual contributions to human understanding and direction. How should the scholarly community assess whether what is disclosed is adequate?
 
 Documentation adequacy is not self-certifying. An author can produce well-labelled supplementary files that do not enable tracing. Assessment is required—and the community needs a shared approach. The standard is documentation adequacy—does the disclosed record enable tracing assessment?—not reproduction success.
 
@@ -323,7 +323,7 @@ These assessments address distinct questions. Work with strong philosophical qua
 
 ## 6.4 Epistemic Norms for Assessment
 
-The good faith orientation from Section 5 shapes documentation assessment. Assessment is epistemic inquiry: the question is whether the record enables the assessor to understand how this work came to be. Calibration matters: depth of review should be proportional to the complexity of the claimed contribution. Work claiming AI generated a central philosophical insight requires more sustained tracing than work claiming AI assisted with structuring a well-understood argument.
+The good faith orientation from Section 4 shapes documentation assessment. Assessment is epistemic inquiry: the question is whether the record enables the assessor to understand how this work came to be. Calibration matters: depth of review should be proportional to the complexity of the claimed contribution. Work claiming AI generated a central philosophical insight requires more sustained tracing than work claiming AI assisted with structuring a well-understood argument.
 
 A natural objection: documentation requirements impose disproportionate costs. But AI tools create a reduced-structure epistemic environment that invites indiscriminate cognitive offloading. The documentation requirements re-impose metacognitive monitoring — forethought, self-evaluation, attribution tracking — that counteracts this risk (Zimmerman, 2002; Cheng et al., 2025).
 

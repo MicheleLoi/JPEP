@@ -10,11 +10,13 @@ last_updated: 2026-05-12
 session_id:
   - SID-20260409-200754
   - SID-20260512-154043
+  - SID-20260512-223052
 inputs:
   - paper_bibliography.md
   - CFP_5.4.4_Section3_v3.md (Williams entry — missing from working bib)
   - CFP_5.3.27_Note_ReviewResponse_Draft.md (Strathern, Mercier — added from review)
   - "Cordasco Substack corpus (two posts cited in §3 v4)"
+  - "Crossref API (Boden & Edmonds 2009 DOI verification, SID-20260512-223052)"
 ---
 
 # Complete Paper Bibliography
@@ -39,6 +41,8 @@ inputs:
 **Berg, A., & Robbins, H.** (2024). "The Cognitive Divide." *The Point*. https://thepointmag.substack.com/p/the-cognitive-divide
 
 **Blackburn, S.** (1993). *Essays in Quasi-Realism*. New York: Oxford University Press.
+
+**Boden, M. A., & Edmonds, E. A.** (2009). "What is Generative Art?" *Digital Creativity*, 20(1-2), 21–46. https://doi.org/10.1080/14626260902867915
 
 **Cheng, Z., Zhang, Z., Xu, Q., Maeda, Y., & Gu, P.** (2025). "A meta-analysis addressing the relationship between self-regulated learning strategies and academic performance in online higher education." *Journal of Computing in Higher Education*, 37(1), 195–224. https://doi.org/10.1007/s12528-023-09390-1
 
@@ -73,6 +77,8 @@ inputs:
 **Santoni de Sio, F., Faber, N. S., Savulescu, J., & Vincent, N. A.** (2016). "Why Less Praise for Enhanced Performance? Moving Beyond Responsibility-Shifting, Authenticity, and Cheating Toward a Nature-of-Activities Approach." In F. Jotterand & V. Dubljević (Eds.), *Cognitive Enhancement: Ethical and Policy Implications in International Perspectives* (pp. 27–41). Oxford: Oxford University Press. https://doi.org/10.1093/acprof:oso/9780199396818.003.0003
 
 **Santoni de Sio, F., & van den Hoven, J.** (2018). "Meaningful Human Control over Autonomous Systems: A Philosophical Account." *Frontiers in Robotics and AI*, 5, 15. https://doi.org/10.3389/frobt.2018.00015
+
+**Sartre, J.-P.** (1956). *Being and Nothingness: An Essay on Phenomenological Ontology* (H. E. Barnes, Trans.). New York: Philosophical Library. (Original work published 1943)
 
 **Science.** (2023). "Science Journals: Editorial Policies." https://www.science.org/content/page/science-journals-editorial-policies
 
