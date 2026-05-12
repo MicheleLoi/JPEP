@@ -2,19 +2,25 @@
 project: JPEP
 document_type: Type 12 - Section Draft
 section: "6 - Mandatory Transparency in Practice"
-version: "v4.1 (CFP adaptation, redundancy pass 1)"
+version: "v4.2 (CFP adaptation, S1 Shoulders reviewer reply — MHC borrowing clarified as conceptual, not analogical)"
 date_created: 2026-04-01
+date_last_modified: 2026-05-12
 status: Draft
-source: "Claude Opus 4.6 (Claude Code session)"
+source: "Claude Opus 4.6 (Claude Code session) / Claude Sonnet 4.6 for v4.2 clarification"
 inputs:
   - CFP_4.4.19_SectionGuidance_SelfExpressionDistribution.md
   - CFP_5.4.8_Section6_v3.md
+  - CFP_5.3.27_Note_ReviewResponse_Draft.md
+  - "CFP_5.4.4_Section3_v3.md (frontmatter v5; cross-referenced as the independent ground for the conceptual borrowing of MHC)"
 derived_from: "CFP_5.4.8_Section6_v4.md"
 cfp_target: "AI Tools in Ethics Research (topical collection)"
-session_id: SID-20260401-173934
-transformation: "v4 → v4.1: Redundancy pass 1. Compressed §5.1 opening and Convergence; shortened citation-pattern examples; merged §5.2 implementation paragraph into preceding; cut §5.4 second paragraph (hedging about limitations). Net −~350 words."
-word_count: ~1570
+session_id:
+  - SID-20260401-173934
+  - SID-20260512-154043
+transformation: "v4 → v4.1: Redundancy pass 1. Compressed §5.1 opening and Convergence; shortened citation-pattern examples; merged §5.2 implementation paragraph into preceding; cut §5.4 second paragraph (hedging about limitations). Net −~350 words. v4.1 → v4.2: S1 Shoulders reviewer reply — MHC framework introduction rewritten to remove 'transfers structurally' analogy phrasing; conceptual-not-analogical clarification added with cross-reference to §3 v5 agent-integrity grounding. Net +~60 words."
+word_count: ~1630
 section_numbering: pre_renaming
+versioning_convention: git_inplace
 ---
 # 5. Mandatory Transparency in Practice
 
@@ -40,7 +46,7 @@ What different modes of AI engagement express matters. Documented delegation exp
 
 *The framework.*
 
-The Meaningful Human Control (MHC) framework provides the operationalization. Santoni de Sio and van den Hoven (2018) developed MHC for autonomous weapons systems, but the framework transfers structurally to AI-assisted scholarship. It identifies two necessary conditions. The **tracking condition** requires that system outputs covary with the human operator's relevant reasons. The **tracing condition** is more demanding: outputs must be traceable to proper understanding and endorsement by some human person. As Santoni de Sio and van den Hoven put it, "systems whose actions and states are not traceable to relevant understanding and endorsing by some human person—no matter how intelligent and reason-responsive they may be—are not under meaningful human control" (§6.2) [VERIFY: replace with page number].
+The Meaningful Human Control (MHC) framework provides the operationalization. Santoni de Sio and van den Hoven (2018) developed MHC for autonomous weapons systems; our debt is conceptual, not analogical. We apply the tracking and tracing conditions to AI-assisted scholarship on the basis of §3's independent argument from agent-integrity. The features that distinguish weapons systems — catastrophic stakes, physical irreversibility, kinetic control — play no role here; what carries over is the philosophical content of what it means to track an agent's reasoning and to trace an output to an agent's understanding. MHC identifies two necessary conditions. The **tracking condition** requires that system outputs covary with the human operator's relevant reasons. The **tracing condition** is more demanding: outputs must be traceable to proper understanding and endorsement by some human person. As Santoni de Sio and van den Hoven put it, "systems whose actions and states are not traceable to relevant understanding and endorsing by some human person—no matter how intelligent and reason-responsive they may be—are not under meaningful human control" (§6.2) [VERIFY: replace with page number].
 
 Tracing requires that the directing person *understood* what was being produced and *endorses* it as their own intellectual contribution. This is where the two levels converge operationally. The question "did the author understand and endorse?" is precisely the question that Kierkegaard's truth-as-subjectivity makes constitutive and that Nietzsche's confession metaphor requires. A framework satisfying tracing serves both levels of the double contestation.
 
