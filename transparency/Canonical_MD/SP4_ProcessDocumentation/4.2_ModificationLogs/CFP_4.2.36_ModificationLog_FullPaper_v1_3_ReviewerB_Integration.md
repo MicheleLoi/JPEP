@@ -214,3 +214,41 @@ Reviewer B suggested a light-touch citation of Cavalcante Siebert et al. (2025),
 **Author rationale (recorded verbatim):** *"cavalcante siebert: ignore."*
 
 Implicit rationale (consistent with the broader v1.3 integration logic): JPEP already cites Santoni de Sio & van den Hoven (2018) for the MHC framework and Mecacci & Santoni de Sio (2020) for the proximity scale of reasons. A third MHC-operationalisation reference adds bibliographic weight without adding argumentative work; the paper's MHC engagement is sufficiently anchored. No bibliography entry added. No body-text mention.
+
+---
+
+### MOD-007 — §3.3: Sartrean passage anchored more carefully; "self-deception" gloss rejected per Sartre's own argument
+
+| Field | Value |
+|-------|-------|
+| Date | 2026-05-13 |
+| Type | Targeted philosophical anchoring; correction of a previously inaccurate gloss |
+| Source of finding | Reviewer B specific recommendation #6 (should) — "Reconsider the Sartrean bad-faith framing in §3.3"; author-led during integration after reading the source on p. 49 |
+
+**Issue:** The §3.3 Sartrean passage glossed bad faith as "self-deception" twice — once at the opening ("what Sartre would recognize as *bad faith* — a denial of freedom in the form of self-deception") and once at the transition to the inter-subjective register ("This is self-deception in the strict Sartrean sense"). Reviewer B flagged that the passage "inherits interpretive disputes (whether bad faith requires explicit self-deception)." On reading Sartre's actual argument on pp. 48–49 of the Barnes translation, a stronger problem surfaced: Sartre's argument in Part I Ch. 2 §I is precisely *against* the lie-to-oneself / self-deception model. At p. 48 he grants "bad faith is a lie to oneself" only "on condition that we distinguish the lie to oneself from lying in general," and then develops at length why the dyadic lie-to-oneself model fails — it requires a duality of consciousness that Sartre's translucency-of-consciousness thesis rules out. So glossing bad faith as "self-deception" in §3.3 was doing the very thing Sartre is arguing against.
+
+**Author observation (recorded verbatim, second turn on this MOD):** *"I learned something about bad faith, which is not self-deception at all."* The catch is correct; Sartre uses "self-deception" only to immediately complicate it past recognition. The Change 1 draft that called bad faith "the structurally specific form of self-deception" was withdrawn in favor of an explicit-denial framing before integration.
+
+**Changes:**
+
+*§3.3 opening sentence rewritten.*
+
+- Before: "The point extends beyond epistemology. Silently treating the output-only view as exhaustive is not merely an unjustified assumption; it is what Sartre would recognize as *bad faith* — a denial of freedom in the form of self-deception."
+- After: "The point extends beyond epistemology. Silently treating the output-only view as exhaustive is not merely an unjustified assumption; it is, on the Sartrean account in *Being and Nothingness*, Part I Chapter 2 (Sartre, 1956), an instance of bad faith — not self-deception in the ordinary sense (which would require a duality of consciousness Sartre rejects), but the unitary structural posture in which 'I must know the truth very exactly in order to conceal it more carefully' (Sartre, 1956, p. 49). What the argument requires is this access-and-refusal structure. The cognitivism/non-cognitivism dispute is visible to anyone working in the discipline; the silent default deployment proceeds as if it were not."
+
+*§3.3 transition to the inter-subjective register rewritten.*
+
+- Before: "This is self-deception in the strict Sartrean sense: a flight from the anguish of one's own freedom. But for Sartre, my freedom never exists in isolation; it is constituted in a field of other freedoms whose claims on me I can acknowledge or foreclose."
+- After: "It is the flight from the anguish of one's own freedom that Sartre describes. The Sartrean apparatus has a second register, developed in *Being and Nothingness*, Part III, Chapter 1 §IV, 'The Look' (Sartre, 1956): my freedom never exists in isolation; it is constituted in a field of other freedoms whose claims on me I can acknowledge or foreclose."
+
+**Three anchoring moves consolidated:**
+
+1. **Textual anchor for bad faith** — Part I Chapter 2 of *Being and Nothingness* (verified against the Barnes 1956 translation TOC at front-matter p. v).
+2. **Literal quote from p. 49** — *"I must know the truth very exactly in order to conceal it more carefully"* — supplies the access-and-refusal structure in Sartre's own words rather than via the JPEP gloss.
+3. **Textual anchor for the inter-subjective register** — Part III, Chapter 1 §IV ("The Look"), pp. 252ff. (verified against TOC at front-matter p. vi; the Wikipedia summary that called Chapter 1 itself "The Look" was imprecise — Chapter 1 is titled "The Existence of Others" and the Look is its fourth section).
+
+**Why this is not just hedging:** R3's worry was that the Sartre passage "inherits interpretive disputes." The refinement does not merely add a hedge to the disputed gloss — it removes the disputed gloss entirely and replaces it with what Sartre actually says. The argument is more faithful to *Being and Nothingness* in the revised version than in the original, and a Sartre-literate reviewer will read it as a careful reading rather than a name-drop.
+
+**Verification trail:** Czech Charles University course PDF of Barnes (1956) translation, Parts One and Two, downloaded to `~/AppData/Local/Temp/sartre_verify.pdf` for the session; TOC at front-matter pp. v–vi; Bad Faith chapter at pp. 47–72; the literal quote on p. 49.
+
+**Bibliography:** No new entry. Sartre (1956) added to `paper_bibliography_FINAL.md` and the paper's References block in v1.1 (MOD-004 of CFP_4.2.34).
