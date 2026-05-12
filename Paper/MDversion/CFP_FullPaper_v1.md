@@ -1,0 +1,433 @@
+---
+project: JPEP
+document_type: Type 12 - Section Draft (integrated)
+section: "Full paper — CFP integrated draft"
+label: CFP_FullPaper_v1
+title: "The Journal of Prompt Engineered (Moral) Philosophy: Or, Why AI-Assisted Ethics Research Requires Process Transparency"
+version: v1
+date_created: 2026-05-12
+status: Draft (Phase 5 integration)
+source: "Claude Opus 4.7 (Claude Code session SID-20260512-171552) — assembly only; no substantive edits"
+assembly: "Concatenation of finalized section drafts at their authoritative versions, with section-local reference lists stripped and replaced by paper_bibliography_FINAL.md. No content edited; cross-reference inconsistencies preserved from sources."
+inputs:
+  - CFP_5.4.15_Abstract_v1.md
+  - CFP_5.4.3_Introduction_v2.md
+  - CFP_5.4.5_Section2_v4.md
+  - CFP_5.4.4_Section3_v3.md (frontmatter v5.1)
+  - CFP_5.4.7_Section5_v2.md (renumbered §4)
+  - CFP_5.4.8_Section6_v4.md (renumbered §5, frontmatter v4.2)
+  - CFP_5.4.9_Section7_v3.md (renumbered §6, frontmatter v3.2)
+  - CFP_5.4.10_Conclusion_v1.md (renumbered §7, frontmatter v2)
+  - CFP_5.4.14_AIUsageArchive.md (unnumbered closing note)
+  - transparency/Canonical_MD/SP4_ProcessDocumentation/4.6_ReferenceLogs/paper_bibliography_FINAL.md
+session_id: SID-20260512-171552
+cfp_target: "AI Tools in Ethics Research (topical collection)"
+word_count: ~8,640 (body, excluding references)
+section_numbering: post_renaming
+known_issues:
+  - "Cross-reference drift: §4 body says 'Section 6 develops the framework' (should be §5); §5 body says 'The three conditions from Section 5' (should be §4); §6 body says 'Section 6 established what transparency documentation must do' (should be §5) and 'The good faith orientation from Section 5' (should be §4). Conclusion §7 references to 'Section 6' for documentation-adequacy criteria and dual assessment appear correct in new numbering."
+  - "Missing bibliography entries: Sartre (1956), Being and Nothingness — cited in §3; Boden & Edmonds (2009) — cited in §5 with page number. Both need adding to paper_bibliography_FINAL.md."
+  - "VERIFY tag in §5: 'Santoni de Sio and van den Hoven (§6.2) [VERIFY: replace with page number]' — needs page-number lookup before submission."
+  - "Cavell mentioned as exemplar in §3 without formal citation — consistent with Nozick/Parfit/Williams treatment as agent-signature exemplars; intentional, not an omission."
+---
+
+# The Journal of Prompt Engineered (Moral) Philosophy
+
+## Or, Why AI-Assisted Ethics Research Requires Process Transparency
+
+---
+
+## Abstract
+
+Existing AI disclosure mandates in scholarship leave transparency philosophically unspecified. We argue that ethical inquiry is essentially contested at two independent levels — about what it is and what it demands of the inquirer — defeating output-only evaluation, welfare-economic dismissal, and reproducibility framings alike. The transparency duty is grounded in agent-integrity. We develop a documentation-adequacy framework operationalizing Meaningful Human Control through five transparency elements (SP-1–SP-5), demonstrated by the paper itself, whose full documentation record is archived at a persistent identifier.
+
+---
+
+# 1. Introduction
+
+The use of artificial intelligence in academic work has generated substantial discussion across two domains. In education, AI tools are held to threaten cognitive development, undermine assessment validity, and erode the trust that sustains pedagogical relationships (Jollimore 2025; Berg & Robbins 2024). In scientific research more broadly, a growing literature addresses disclosure norms, authorship attribution, and the reliability of AI-assisted outputs (Hosseini et al. 2023; Van Woudenberg et al. 2024). Yet one domain remains almost entirely unexamined: the use of AI tools in ethics research specifically. This gap is not incidental. Ethics is where the question is hardest — not because ethical inquiry is generically more demanding, but because what constitutes ethical inquiry, its methods, its epistemic structure, its purpose, is itself fundamentally disputed.
+
+Contemporary journal policies require disclosure of AI assistance (COPE Council 2024; Elsevier 2023; ACM 2025; Science 2023), a norm now adopted by the majority of major journals (Lund & Naheem 2023). Yet these policies specify *that* AI assistance must be reported without philosophical clarity about what transparency is meant to serve. Is there a principled case for process transparency in ethics research at all?
+
+The most direct challenge takes a familiar form. If ethics is in the business of tracking moral truth, then what matters is whether the arguments produced are sound, the conclusions defensible, the reasoning valid. A sound argument is sound regardless of how it was produced: by solitary reflection, by collaborative conversation, or by iterative prompting of a language model. Process transparency confuses the context of discovery with the context of justification. Evaluate the outputs.
+
+"Ethical inquiry" is, in Gallie's (1956) sense, an essentially contested concept: practitioners disagree not only about first-order moral questions but about what methods are appropriate, what epistemic standards apply, and what purposes ethical reasoning serves. The cognitivist conditional — if ethics tracks truth, then evaluate the outputs — is valid on its own terms, but silently deploying it as community default presupposes precisely what the discipline has not settled; the community includes practitioners who reject the antecedent, and their positions have not been expelled. Section 3 develops this argument and extends it to a second level: we disagree not only about what ethical inquiry *is* but about what *doing* it requires of the inquirer — whether authentic personal engagement is constitutive, as the tradition from Socrates through Kierkegaard and Nietzsche maintains, or whether only the quality of the resulting arguments matters.
+
+If output-evaluation criteria are contested, the achievable goal for transparency is not evaluation against agreed standards but *tracking*: monitoring what ethics research is becoming under AI assistance and accumulating the evidentiary record that makes future normative judgments possible. Tracking is prior to evaluation: it creates the visibility without which damage cannot be detected. If we cannot settle what ethical authoring demands of the author, documentation enables each tradition to assess work on its own terms. Comprehensive process documentation serves both requirements through independent routes — for complex philosophical work involving contested methods and irreducible judgment, where AI assistance is most consequential.
+
+We argue for a transparency framework grounded in Meaningful Human Control (Santoni de Sio & van den Hoven 2018) and operationalized through a documentation-adequacy model: a specification of what AI-assisted ethics research must document, what that documentation must demonstrate, and what assessment of documentation adequacy requires. The paper is itself an instance of substantially AI-assisted ethics research conducted under the framework it describes. The framework specifies five transparency elements (SP-1 through SP-5); the documentation record produced during this paper's writing instantiates them and is archived at the persistent identifier given at the end of this paper. This self-exemplification is a methodological commitment: the framework's value cannot be fully assessed from a description; it must be shown in operation. The documentation record functions simultaneously as a tracking instrument and as a form of philosophical self-expression: a record of what the author chose to investigate, where they followed the AI, and where they overrode it. The framework is a first iteration subject to revision, not a settled standard.
+
+Section 2 examines structural barriers to disclosure. Section 3 develops the essentially-contested argument. Section 4 addresses conditions for adequate transparency. Section 5 specifies the framework. Section 6 addresses community assessment of documentation adequacy. Section 7 concludes. A closing note describes the documentation archive associated with this paper.
+
+---
+
+# 2. Systemic Barriers to Disclosure
+
+Current publishing policies require AI disclosure but create professional environments where disclosure carries reputational costs. The resulting incentive structure produces systematic underreporting that scales with the significance of the work. The mechanisms driving underreporting operate within genuine ambiguities that formal mandates cannot eliminate.
+
+## 2.1 The Incentive Gradient
+
+Disclosure decisions occur under asymmetric conditions. Disclosure is permanent—methodological characterizations become part of the scholarly record, traveling with work through citations and career evaluations. Significance is uncertain—authors cannot predict at submission which articles will prove influential. Professional costs are front-loaded—stigma associated with disclosed AI assistance operates immediately, affecting initial reception regardless of eventual impact.
+
+These asymmetries create a gradient of pressure toward underreporting. For minor work, honest disclosure carries relatively low cost. For potentially significant work, disclosure becomes fraught. For career-defining work, the incentive to underreport reaches maximum strength.
+
+The underreporting need not be dishonest. Several mechanisms exploit genuine ambiguities in how AI-assisted processes might be characterized, operating even among scholars committed to honesty.
+
+The first is *definitional flexibility*. Terms like "substantial AI assistance" and "minimal editorial support" lack precise boundaries. An author who engaged in extensive AI-assisted exploration during early argument development but substantially revised all prose in later drafts faces genuine uncertainty about proper characterization. When professional stakes are high, this uncertainty resolves in favor of lower reported involvement.
+
+A second mechanism involves *temporal discounting of early-stage AI involvement*. Scholars naturally privilege later stages of work when forming narrative accounts of their process. If initial argument exploration involved significant AI dialogue but final drafting required extensive human revision, authors retrospectively frame the AI involvement as scaffolding that was replaced rather than as integral to the work's development.
+
+A third mechanism operates through *comparative framing*. Authors compare their process not to traditional unassisted writing but to hypothetical greater AI dependence: "I didn't merely accept ChatGPT's suggestions; I critically evaluated and substantially revised everything." The reference point shifts from "traditional unassisted scholarship" to "passive acceptance of AI output."
+
+Finally, *strategic vagueness* allows authors to satisfy disclosure requirements while preserving interpretive flexibility. Phrases like "AI tools were consulted during drafting" provide formal compliance without specifying degree of involvement.
+
+These mechanisms combine to produce not deliberate fraud but predictable response to incentive structures that penalize transparency while demanding formal disclosure. The result is a *transparency paradox*: where transparency matters most, we get least, because the work most likely to shape scholarly discourse faces the strongest pressure to underreport.
+
+## 2.2 The Scope of the Problem
+
+The argument above would be of limited significance if AI-assisted scholarship remained rare. AI writing and analysis tools have diffused rapidly across academic disciplines. AI assistance is plausibly present in precisely the tasks most central to ethical scholarship: argument development, objection-testing, literature synthesis, prose revision. The relevant question is no longer whether AI assistance is present in significant scholarship but whether it is visible.
+
+Review processes have no detection mechanisms for undisclosed AI involvement. Unlike data fabrication or plagiarism, AI-assisted argument development leaves no forensic trace that reviewers or editors can identify. The scholarly record is accumulating under conditions of systematic opacity: work is being evaluated, cited, assigned, and built upon by readers who cannot assess the degree of human judgment constitutive of the arguments they are engaging.
+
+The problem is one of underspecification. The four mechanisms operate through genuine ambiguity that stronger mandates cannot eliminate, because current disclosure policies establish that AI use must be reported without specifying what must be reported, in what form, or against what standard of adequacy. The remaining sections undertake that project.
+
+---
+
+# 3. Why Engage Transparently with AI-Assisted Ethics Research?
+
+The practice of ethics research is changing. Scholars increasingly work with AI systems in ways that were impossible a decade ago — drafting arguments through iterative dialogue, testing objections against synthetic interlocutors, refining formulations across hundreds of exchanges. It is happening now, across institutions and subdisciplines, with varying degrees of visibility.
+
+This raises a natural question: does AI assistance change ethics research *continuously* or *discontinuously*? Is it like the shift from typewriters to word processors — a change in the tools of production that leaves the essential activity untouched? Or is it something more fundamental — a transformation in what ethical inquiry actually is?
+
+We cannot answer this question directly. The difficulty is not merely empirical but conceptual. Whether AI assistance changes ethical inquiry depends on what features of that inquiry are *constitutive* versus merely *regulative*. And on this, there is no neutral ground.
+
+## 3.1 The Nature-of-Activities Problem
+
+A parallel difficulty arises in debates about cognitive enhancement. Santoni de Sio, Faber, Savulescu, and Vincent (2016) observe that evaluating whether an enhancement "changes" an activity requires distinguishing constitutive rules from regulative ones. Running a marathon on roller-skates is not running a marathon — the prohibition on wheels is constitutive. But the ninety-minute duration of football games is arbitrary. Most rules "fall somewhere between these two extremes" (Santoni de Sio et al., 2016, p. 34), and where a given rule falls is often contested.
+
+The same framework applies to ethical inquiry. Is unaided cognition constitutive of ethical work, or merely regulative? Is the process of reaching moral conclusions through one's own reasoning — attending to relevant considerations, exercising moral sensitivity, making judgments under uncertainty — part of what makes an activity ethical inquiry? Or could ethics research be conducted through iterative prompting and refinement, with the human contribution lying in the questions posed, the directions pursued, and the endorsement of outputs?
+
+## 3.2 Two Conceptions That Resist Output-Only Evaluation
+
+The difficulty of answering this question is not accidental. It reflects the fact that the philosophical tradition harbors at least two well-established conceptions of ethical and philosophical inquiry that resist any attempt to evaluate work solely by examining its outputs.
+
+**The expressivist conception.** Whether ethical inquiry tracks mind-independent moral facts or serves expressive, constructive, or social coordination functions remains genuinely open (see Enoch 2011; Shafer-Landau 2003 for realist positions; Gibbard 1990; Blackburn 1993 for expressivist alternatives). If expressivism is correct and ethical claims do not correspond to moral facts, then there is no truth against which outputs can be checked. What matters is the process through which evaluative commitments are formed, tested, and refined. Output-only evaluation presupposes a cognitivist metaethics that is itself contested.
+
+**The personal/existential conception.** A philosophical tradition running from Socrates through Kierkegaard and Nietzsche treats philosophical activity as constitutively tied to the inquirer. Socrates held that the unexamined life is not worth living, treating philosophy as a discipline of self-knowledge rather than a body of conclusions (*Apology* 38a). Kierkegaard insisted that the *how* of relating to truth matters constitutively (*Concluding Unscientific Postscript*). Nietzsche described every great philosophy as "the confession of its originator, and a species of involuntary and unconscious autobiography" (*Beyond Good and Evil* §6). On this conception, philosophical outputs cannot be evaluated independently of who produced them and how — not because the arguments are invalid, but because the activity is partly constituted by the inquirer's engagement with it. The existence and canonical status of this tradition shows that "philosophy is just truth-tracking through argument" is not the only legitimate option: if it were, these thinkers would not occupy the positions they do.
+
+These two conceptions are logically independent. One is a metaethical thesis about the nature of ethical claims; the other is a thesis about the nature of philosophical practice. But they converge on the same consequence: outputs alone cannot settle whether a piece of ethical work is what it purports to be.
+
+## 3.3 Ethical Inquiry as Essentially Contested
+
+"Ethical inquiry" is what Gallie (1956) termed an *essentially contested concept* — a concept whose proper application is itself the subject of ongoing dispute among competent practitioners. Practitioners disagree not only about first-order moral questions but about what methods are appropriate, what epistemic standards apply, and what purposes ethical reasoning serves. The two conceptions identified above are instances of this contestation, not marginal positions.
+
+This essential contestedness has a direct consequence. Because no one can prejudge which conception of ethical inquiry is correct — because the dispute between the cognitivist output-only view and its alternatives is itself constitutive of the discipline — no one can silently assume that output-evaluation suffices. To proceed as though only argument quality matters, without disclosure, is to impose one contested conception as though it were settled. Transparency is the condition under which each position can assess work on its own terms.
+
+The point extends beyond epistemology. Silently treating the output-only view as exhaustive is not merely an unjustified assumption; it is what Sartre would recognize as *bad faith* — a denial of freedom in the form of self-deception. The philosopher who uses AI to build philosophical architectures exercises genuine creative freedom: choices are made about how to delegate, what to accept, where to intervene. Moreover, these choices operate at different levels: one can understand the arc of an argument without having generated its formulation, or endorse a theoretical direction without grasping every inferential step that realizes it. This stratification matters because any requirement that intellectual outputs be traceable to a human author's understanding — a tracing condition of the kind the meaningful human control literature demands — must specify *which level* of understanding suffices. Yet that specification cannot be made independently of a substantive conception of what philosophical work is. If philosophy consists in the selection and ordering of ideas, then understanding at the level of direction may be enough; if it consists in the working-through of each argumentative move, then only execution-level comprehension will do. The tracing condition thus inherits the essential contestedness of the activity it is meant to regulate: it cannot be operationalized without presupposing an answer to the very question that is in dispute. The bad faith lies not in the use but in refusing to recognize these as choices — treating them as "just ordinary business" that raises no questions. This is self-deception in the strict Sartrean sense: a flight from the anguish of one's own freedom. But for Sartre, my freedom never exists in isolation; it is constituted in a field of other freedoms whose claims on me I can acknowledge or foreclose. The philosopher who denies that their practice involves significant choices thereby pre-empts the space in which colleagues — who may conceive of philosophical inquiry differently — could legitimately put those choices in question. Where essential contestedness shows that the output-only assumption is epistemically unjustified, the Sartrean analysis adds an ethical dimension: maintaining the assumption is not innocent ignorance but a refusal to hold oneself open to accountability — a closing-off of the very contestation that keeps philosophical practice free.
+
+Bernard Williams's notion of integrity specifies the social dimension of this accountability. Your *ground projects* — the commitments constitutive of your identity as an agent — include your mode of philosophical inquiry: how you think, what methods you employ, how you relate to your own work (Williams, 1981). When that mode changes significantly through AI assistance, transparency is how you honor the coherence of those commitments before a community that has reason to care about them. Integrity in this technical sense is not about reputation; it is about maintaining the legibility of your identity-constituting commitments in conditions where they are changing.
+
+**A welfare-economic challenge.** A natural objection comes from informal work in welfare-oriented analysis of AI in academic life. Cordasco (2026a, 2026b) argues that frameworks evaluating AI's impact on intellectual practice exhibit a structural asymmetry: the costs of restriction — measurable skill decay, friction, documentation overhead — are visible within the framework that specifies them, while the deepest benefits of unconstrained AI-assisted work consist in emergent reorganizations of competency that the framework's prior categories cannot register. Specifying transparency conditions in advance, on this view, risks locking in pre-AI conceptions of good ethical inquiry: the new forms of question identification, the restructured relationships between exploration and judgment, the methodologies AI-assisted ethics may yet make possible are not the kinds of things that generate the traces a transparency apparatus demands. The architecture of the demand is asymmetric — costs inside the framework, benefits outside it — and a default toward permissive experimentation, the objection concludes, follows.
+
+**The welfare calculation runs the other way.** The objection prices the costs of restriction inside the framework and treats benefits as emerging outside it. But the cost side is incomplete on its own terms. AI-assisted intellectual practice creates what learning theorists call a reduced-structure epistemic environment: one in which the cognitive scaffolding that ordinarily forces forethought, self-evaluation, and attribution tracking is absent. Without external structure, the well-documented tendency is toward indiscriminate cognitive offloading (Zimmerman, 2002; Cheng et al., 2025) — a point developed in §6. Documentation requirements re-impose this missing structure; they are not friction added to a frictionless practice but scaffolding restored to a practice whose default conditions invite undisciplined offloading. The welfare cost of *not* requiring transparency is the foreseeable erosion of the metacognitive habits that make philosophical work philosophical at all. The benefit side is also misdescribed. The framework here is generative rather than restrictive: by making process visible, it creates conditions for community-level methodological learning, accumulated patterns of insight and dead-end across submissions, and external recognition from adjacent fields. These are precisely the emergent reorganizations of competency Cordasco's account celebrates; the architectural asymmetry he diagnoses applies to *restrictive* mandates, not to frameworks designed to make practice legible as it evolves.
+
+**And the moral duty stands independently.** Even setting the welfare calculation aside, the transparency duty argued for here is not grounded in such a calculation. It is a moral requirement that flows from the inquirer's own commitments: on the Williams account, certain commitments are constitutive of the agent and cannot be traded against external goods, because they are partly what the agent is. If philosophical practice is among one's ground projects, the legibility of how that practice is conducted is not an external compliance cost; it is internal to doing the work with integrity. Welfare-accounting can tell us whether a given *institutionalization* of transparency is welfare-improving on net — and Cordasco's critique applies properly there, downstream of the moral duty. It does not reach the duty itself.
+
+## 3.4 Why Output-Evaluation Fails in Ethics
+
+It might seem that this conceptual difficulty does not matter for practical assessment. Surely we can evaluate AI-assisted outputs on their merits: Are the arguments valid? Are the conclusions defensible? This is the cognitivist objection: if ethics tracks truth, evaluate the outputs.
+
+This objection deserves a serious reply rather than circumvention.
+
+The cognitivist conditional — if ethics tracks truth and output-evaluation criteria are settled, then process transparency is unnecessary — is valid on its own terms. The problem lies not in its logic but in its silent deployment as a default for a discipline that has not settled the antecedent. The philosophical community includes expressivists who deny that ethical claims track truth and thinkers in the personal/existential tradition who deny that output-evaluation criteria exhaust what matters. These are not marginal positions; Gallie's point is precisely that the discipline has kept the question open. To treat the cognitivist antecedent as settled — as the operative assumption governing assessment practice — is to foreclose evaluation by practitioners whose alternative conceptions remain legitimate. The problem is not that the cognitivist is wrong — they may well be right — but that the dispute has not been settled to the community's satisfaction, and acting as though it had imposes one party's standards on a community that has yet to converge.
+
+A qualification: the argument does not establish that process information is required for every ethical argument. For simple applied ethics reasoning with clear premises and valid inferences, output-evaluation may suffice. The claim is restricted to complex work involving contested methods, irreducible judgment, and genuine philosophical insight — precisely where AI assistance is most consequential, and where AI systems can produce outputs satisfying surface criteria without the understanding those criteria are meant to track.
+
+## 3.5 Reproducibility Is Not the Issue
+
+The cognitivist objection is not the only truth-tracking framing the AI-transparency question invites. A second, related framing is more familiar still: the model of methodological transparency that empirical science has developed under the name of reproducibility. On that model, a researcher's duty is to disclose enough about method that others can verify the path from procedure to result. The duty is grounded in science's truth-tracking aim — methods are the route to claims about a mind-independent world, and verification requires that others be able to traverse the route.
+
+Philosophy does not have this structure. The "evidence" for a philosophical claim is the argument itself, which is already in the published text. There is no experimental method to reproduce; there is only reasoning to evaluate. A reader who wants to test a philosophical claim re-reads the argument, considers objections, traces the inferences — but does not, in any literal sense, replicate the process by which the author arrived at it. The standard of evaluation is the argument's force, not the recoverability of the steps the author took to formulate it. The contrast we draw is between ethics and empirical science specifically; we make no claim here about disciplines whose evidentiary structures fall between these poles, like history, literary criticism, or political theory, which mix factual and interpretive elements in ways that may have transparency implications distinct from both.
+
+This disanalogy matters, and it matters honestly. If transparency in philosophy were grounded in reproducibility, AI-generated philosophy would raise no special problem: the argument is "reproducible" — anyone can read it. The reproducibility frame, in other words, is structurally blind to what AI threatens in philosophy. To borrow it would be to misdescribe the worry. There is no methodological-soundness argument here that does the work the paper requires.
+
+What AI threatens is not the link between method and verification but the link between text and agent. Williams's ground-projects — identity-constituting commitments, mode of engagement, the philosopher's relation to her own thinking — have historically been carried by the ordinary features of philosophical writing alongside the arguments themselves. AI severs that link without compromising the argument: it can produce an argument that no agent stands behind. The reproducibility frame cannot register this because it was never about agents in the first place.
+
+The transparency duty argued for in this paper is therefore grounded in agent-integrity, not in methodological-integrity-as-reproducibility. The conditions specified in §4 and the framework specified in §5 are not adaptations of science's reproducibility apparatus to a new domain. They are a different kind of apparatus, addressing a different kind of worry: not whether the path to a conclusion can be verified, but whether the conclusion bears the marks of an agent at all.
+
+## 3.6 From Answer to Tracking
+
+If the question of what ethical inquiry is cannot be answered — and if output-evaluation cannot substitute for understanding what AI assistance does to the activity — what can be done?
+
+We can *track what ethics research is becoming*. Rather than presupposing that AI either does or does not transform ethical inquiry, we can create conditions under which the scholarly community can observe, compare, and evaluate different modes of ethical production.
+
+The uncertainty compounds as AI-assisted practice itself evolves — from prompting to steering to perhaps architecture building. If we cannot anticipate what the salient human contribution will become, we cannot prejudge whether it preserves or transforms ethical work.
+
+The same logic applies at the level of the inquirer. If we cannot settle what ethical authoring requires of the author, we should create conditions under which each position can assess work on its own terms. Documentation is the feasibility condition: without it, the Socratic reader cannot evaluate whether the inquirer has examined their own practice, the Kierkegaardian cannot assess whether the author's *how* constitutes genuine engagement. The primary concern is not detecting simulation but enabling expression: authors whose mode of engagement is technological exploration should be able to express that identity honestly. Opacity renders the explorer indistinguishable from the scholar concealing AI use.
+
+The question is whether change in ethics research will be visible enough for the community to understand it and documented enough for intellectual responsibility to be maintained.
+
+## 3.7 The Disruption of Implicit Process Signals
+
+Traditional philosophical writing was already rich with implicit process evidence. Citation patterns, argumentative structure, and stylistic signatures all functioned as signals from which the scholarly community could infer features of the author's intellectual process. When Nozick deployed decision-theoretic reasoning to motivate libertarian conclusions, when Parfit developed objections with a transparency that displayed a mind encountering and working through difficulties in real time, when Williams brought Greek tragedy into dialogue with contemporary moral philosophy, or when Cavell paired ordinary-language philosophy with film criticism — these were not decorative choices. They constituted implicit methodological declarations that enabled readers across traditions to assess whether the process criteria they cared about had been satisfied. The expressivist reader could evaluate whether evaluative commitments had been formed through genuine confrontation with alternatives. The reader in the personal/existential tradition could assess whether the author's mode of engagement bore the marks of authentic philosophical labor. These assessments were fallible — philosophers have always been capable of performing depth they do not possess — but the connection between textual signal and underlying process was reliable enough to function as a *de facto* transparency mechanism.
+
+This reliability was not accidental. It rested on a contingent but stable fact about how philosophical texts were produced: a philosopher who cited Korsgaard with precision and engaged her arguments at the level of their internal structure had, in all likelihood, read and wrestled with Korsgaard. The essential contestedness of ethical inquiry was always present, the need for process information always real. But the need did not present itself acutely, because the implicit signals were adequate. The transparency requirement existed; it was satisfied by the ordinary features of philosophical writing itself.
+
+AI severs the connection on which this mechanism depends. AI systems can produce text exhibiting every surface marker of genuine philosophical engagement — appropriate citation depth, the structure of reasoning-as-discovery, the elaboration of objections that signals intellectual honesty — without any corresponding human intellectual process. The outputs replicate the signals while the connection to process is not merely weakened but systematically severable. This is not the familiar risk that a philosopher might exaggerate engagement with sources; it is a qualitative break in the reliability of the signal-to-process inference. And it is why AI *specifically* triggers an explicit transparency requirement. The requirement is not new. What is new is that the implicit mechanism that previously satisfied it — the legibility of process through the ordinary features of philosophical prose — no longer functions. What the scholarly community has always needed is now, for the first time, no longer supplied by the text itself.
+
+---
+
+# 4. Conditions for Adequate Transparency
+
+Section 2 identified four mechanisms enabling systematic underreporting within genuine interpretive ambiguity. The failure is structural: current mandates leave the content and purpose of disclosure unspecified. Addressing it requires specifying what transparency is *for* and what conditions an adequate framework must satisfy.
+
+Three conditions emerge. First, the framework must be *ecologically valid*—its requirements must work in actual scholarly practice. Second, it must be *oriented toward good faith*—designed for scholars committed to transparency rather than aimed at catching evasion. Third, it must create a *cost structure* that makes comprehensive disclosure both easier than strategic minimization and credibly differentiated from nominal compliance.
+
+## 4.1 Ecological Validity
+
+A requirement is *ecologically valid* — it produces its intended effect in actual scholarly practice rather than only in an idealized reconstruction of what scholarship is^[A procedure is ecologically valid if it achieves its intended effect in real-world conditions rather than only in an idealized reconstruction of those conditions — exactly as an experimental finding is ecologically valid if the phenomenon holds outside the laboratory.] — when honest compliance is the natural outcome of doing the work it documents. Current disclosure mandates lack this property. Scholars report AI use in formats designed for other purposes — acknowledgments sections, journal submission checklists — ensuring that documentation is produced retrospectively, from memory, under submission deadline pressure. The four mechanisms from Section 2 exploit the interpretive latitude that retrospective, open-ended characterization creates.
+
+This also serves the authenticity requirement: only documentation emerging from actual practice captures the structure of decisions constituting the inquirer's philosophical identity.
+
+## 4.2 Good Faith Orientation
+
+Current mandates are adversarially structured: they require transparency under conditions where transparency is penalized. Adding surveillance compounds the problem. Surveillance bureaucracy burdens honest scholars, while arms races between gaming strategies and detection countermeasures favor sophisticated actors over conscientious ones. As Strathern (1997) observed, "when a measure becomes a target, it ceases to be a good measure."
+
+The mechanisms from Section 2 operate within legitimate interpretive latitude that current mandates create; closing those ambiguities requires philosophical specification, not surveillance. Requirements that scholars committed to transparency find reasonable and useful will generate better documentation than requirements designed to catch evasion. Accountability follows from specificity: requirements that leave minimal interpretive latitude make substantive compliance the path of least resistance.
+
+The argument so far has been defensive: adversarial mandates fail, so design for good faith instead. But a stronger claim is available. Good faith orientation is not merely a corrective for the defects of surveillance-based mandates; it is a structural precondition for any transparency framework that operates under essential contestedness. The reason is that the gaming problem reappears at a deeper level than current mandates create, and it reappears precisely because of the argument developed in Section 3.
+
+The Strathern mechanism — a measure that becomes a target ceases to function as a measure — operates not only on existing disclosure requirements but on any transparency framework that allows a single normative conception of authorship to become the implicit evaluative standard. If the scholarly community converges on one view of what the proper distribution of human and AI contributions should look like — treating, say, execution-level engagement as the threshold for authentic philosophical authorship — then documentation becomes gameable along that conception. AI systems can generate process documentation that performs compliance with the accepted model: producing records that exhibit the right frequency of human interventions, the right pattern of override decisions, the right density of independent intellectual contribution, without any of these reflecting the actual process. The gaming threat that Section 2 identified in current mandates is not an artifact of those mandates' vagueness; it is a structural consequence of any regime in which there is a known target to hit. Specificity closes the gap between what is required and what can be reported ambiguously. But specificity cannot, by itself, prevent a different failure: the fabrication of documentation that satisfies specific requirements in letter while misrepresenting the underlying process. What prevents this second failure is the absence of a single normative target against which fabrication can be optimized.
+
+This is where essential contestedness does positive work. Section 3 argued that because the scholarly community has not converged on what ethical inquiry requires of the inquirer, no single conception of adequate human contribution can function as the community's operative standard. That non-convergence, which might appear to be a weakness, is in fact a structural defense against gaming. When evaluators approach documentation from diverse and mutually irreducible perspectives, there is no single performance that satisfies all of them simultaneously. Documentation that performs execution-level engagement to satisfy one tradition may fail the tests that another tradition applies; documentation that performs the right kind of self-expressive vulnerability may lack the inferential rigor a cognitivist demands. The diversity of legitimate evaluative perspectives functions as something analogous to what information security calls defense in depth: no single fabrication strategy can optimize against all assessment criteria at once, because the criteria are not reducible to a common metric.
+
+But this structural defense holds only under a specific community condition. If the community approaches diverse documentation with a pre-settled view of what authentic human authorship should look like — if one conception achieves de facto dominance through professional incentive structures, hiring practices, or the politics of prestige — then the diversity of evaluative perspectives collapses in practice even if it persists in principle. The gaming problem returns: sophisticated actors tune their documentation to fit whatever model the community actually rewards, including using AI to generate records that exhibit the markers of the favored mode of engagement. Good faith orientation is what prevents this collapse. It names the community disposition under which evaluative diversity is maintained in practice: the willingness to encounter documentation of human-AI collaboration on its own terms rather than measuring it against a template of what the right kind of human contribution looks like.
+
+The practical consequence is significant. Progress on the foundational questions this paper has identified — what AI assistance changes about ethical inquiry, what different modes of collaboration produce philosophically — requires the community to encounter the full range of documented practices. This includes cases where AI contributed most of the philosophical content and the human's role was closer to expert-delegated endorsement: recognizing arguments as sound, selecting among alternatives, setting directions, but not generating the philosophical architecture independently. If professional judgment makes such cases undisclosable — if fear of reputational consequences collapses all documented practice toward a narrow band of acceptably human-looking collaboration — then the evidentiary base for normative development is truncated precisely where it would be most informative. Transparency reveals the diversity; good faith is the condition under which that diversity generates learning rather than conformity.
+
+This connects directly to the paper's central claim. Because there is no settled view of what philosophical authorship requires, the framework must not presuppose one. Good faith at the community level is the practical correlate of essential contestedness at the conceptual level. Just as no individual can silently deploy the output-only assumption without foreclosing the contestation that keeps philosophical practice free, so no community can silently enforce a fixed conception of what the human-AI relationship should look like without undermining the conditions under which transparency documentation serves its purpose. Assessment under essential contestedness requires the assessor to hold open the question that the documentation is meant to help the community eventually answer.
+
+## 4.3 Cost Structure and Costly Signaling
+
+A third failure of compliance-based mandates is false equivalence. A single sentence — "AI tools were used in preparation of this manuscript" — satisfies the same formal requirement as comprehensive process documentation. Without differentiation, the evidentiary value of disclosure collapses.
+
+This observation points to a bonus property of adequate documentation — one that supports but does not ground the framework. As Mercier (2020) argues in *Not Born Yesterday*, signals costly to produce are harder to fake and thus more credible. What is costly here is not documentation itself but the *documented activity*: the hundreds of decisions, iterations, and exchanges that constitute genuine AI-assisted philosophical work. Documentation is expensive because there must be something substantial to document. A scholar who has not genuinely engaged with the process has nothing authentic to record.
+
+A reviewer objected that AI tools could generate plausible-seeming process documentation, making fabrication costs lower than authentic production costs. This objection deserves acknowledgment rather than dismissal. The framework is designed for a non-adversarial context — scholars committed to transparency, not sophisticated fabricators. The conjecture — and it is only a conjecture — is that documentation of sufficient specificity and internal consistency, with cross-referenced decisions, evolving terminology, and genuine dead ends, may become recognizable over time as distinct from fabricated accounts. The framework cultivates this property; it cannot guarantee it.
+
+## 4.4 From Conditions to Framework
+
+These three conditions specify what compliance-based mandates lack. They also entail that documentation cannot function as raw disclosure taken at face value but must constitute a defended claim about its own adequacy — one the author justifies and others can assess. Section 6 develops the framework designed to satisfy all three.
+
+The framework is not uniquely determined by these conditions. An alternative would be to integrate detailed process documentation into the paper itself — a methodology section specifying AI's role in each argumentative move. But this would settle, by formatting convention, the very question this paper argues is essentially contested. The paper has treated as an open question whether AI assistance changes the nature of philosophical activity enough to make it a *different* activity. Requiring a methodology section answers that question from one particular direction: it treats AI-assisted philosophy as the kind of empirical-style inquiry that requires procedural reporting separable from its conclusions. Yet philosophy, as traditionally practiced, does not have methodology sections — that absence is not an oversight but a feature of its identity as a non-empirical discipline. Mandating such sections when AI is used would therefore adopt one contested position as a disciplinary norm, foreclosing the debate rather than contributing to it. The problem is compounded by the fact that this would also presuppose that method is separable from argument in philosophy — itself a substantive philosophical claim. The supplementary structure keeps both questions available. This is a first iteration offered for community refinement, not a claim of unique necessity.
+
+---
+
+# 5. Mandatory Transparency in Practice
+
+## 5.1 From Conditions to Practice
+
+Section 3 established that ethical inquiry is essentially contested at two levels, and that both levels converge on comprehensive process documentation. The two routes to that conclusion are developed here.
+
+*The meta-ethical route.*
+
+The meta-ethical contestation generates the tracking requirement through two paths. For the expressivist, quality criteria are constitutively process-dependent: coherence on expressivist accounts is coherence of a *person's* evaluative attitudes — an AI can produce text exhibiting surface coherence among evaluative claims without any attitude being held, expressed, or revised. The output underdetermines whether the relevant process occurred. For the cognitivist, essential contestedness means no tradition can treat its evaluative criteria as the default for the field. The community of legitimate evaluators includes expressivists whose criteria are constitutively process-dependent, and their assessments cannot proceed from the output alone. Process documentation is therefore required on both accounts.
+
+*The ethical route.*
+
+The tradition named in Section 3—Socrates, Kierkegaard, Nietzsche—treats philosophical activity as constitutively self-expressive: the process of inquiry reveals and constitutes the inquirer. One might argue that if this tradition is right, delegating intellectual production to an AI introduces alien agency into a process whose value lies in disclosing the self — that if philosophy is confession, delegation is imposture.
+
+But this objection locates self-expression in the wrong place. What expresses the self is not the manual production of sentences but the vision that organizes them — the questions selected, the risks taken, the intellectual judgments brought to the whole. Creative practice has long recognized this. In modular synthesis, the composer designs the system architecture — patching together oscillators, filters, and sequencers — rather than controlling every waveform; sonic properties emerge from module interactions in ways not fully predictable from individual settings. In computer-based generative art, the artist establishes abstract rules implemented by a computer such that the system is "partly responsible for coming up with the idea itself" (Boden & Edmonds, 2009, p. 138) — Harold Cohen's AARON is the paradigmatic case. In each instance, creative agency lies in designing the generative structure, not in manual execution.
+
+Philosophy already recognizes process details as self-expressive. Citation patterns constitute implicit methodological proposals about what resources matter for philosophy; the community reads them as expressive of intellectual identity. AI usage is a new dimension of the same practice: the choice of interlocutor is itself a self-expressive act.
+
+What different modes of AI engagement express matters. Documented delegation expresses willingness to test a new medium and commitment to visibility. Concealment misrepresents the process — the text performs a philosophical identity not the author's own. Documentation restores the conditions for self-expression: the vulnerability of disclosure — making visible uncertainties, iterations, moments where AI moved ahead of authorial understanding — is what distinguishes confession from curated narrative.
+
+*Convergence.* The conditions enabling tracking are the same conditions enabling self-expression under AI assistance. A transparency framework does not constrain authorial identity; it is what makes authorial identity legible when the production process is no longer self-evident from the text.
+
+*The framework.*
+
+The Meaningful Human Control (MHC) framework provides the operationalization. Santoni de Sio and van den Hoven (2018) developed MHC for autonomous weapons systems; our debt is conceptual, not analogical. We apply the tracking and tracing conditions to AI-assisted scholarship on the basis of §3's independent argument from agent-integrity. The features that distinguish weapons systems — catastrophic stakes, physical irreversibility, kinetic control — play no role here; what carries over is the philosophical content of what it means to track an agent's reasoning and to trace an output to an agent's understanding. MHC identifies two necessary conditions. The **tracking condition** requires that system outputs covary with the human operator's relevant reasons. The **tracing condition** is more demanding: outputs must be traceable to proper understanding and endorsement by some human person. As Santoni de Sio and van den Hoven put it, "systems whose actions and states are not traceable to relevant understanding and endorsing by some human person—no matter how intelligent and reason-responsive they may be—are not under meaningful human control" (§6.2) [VERIFY: replace with page number].
+
+Tracing requires that the directing person *understood* what was being produced and *endorses* it as their own intellectual contribution. This is where the two levels converge operationally. The question "did the author understand and endorse?" is precisely the question that Kierkegaard's truth-as-subjectivity makes constitutive and that Nietzsche's confession metaphor requires. A framework satisfying tracing serves both levels of the double contestation.
+
+Tracing presents the distinctive challenge. Tracking is relatively easy: if the author iterates with the AI, the result will generally track their intentions. But if the author cannot explain why an argument works, defend it against objections, or identify its philosophical commitments, tracing fails.
+
+The three conditions from Section 5—ecological validity, good faith orientation, costly signaling—implement these requirements under AI-mediated conditions.
+
+## 5.2 The Transparency Framework
+
+Three components structure the disclosure: model and process information establishes technological context; representative prompts and outputs show the author's inputs; process narrative provides a reflective account of the intellectual journey. Together these enable tracing assessment while remaining ecologically valid.
+
+The five transparency elements—SP-1 through SP-5—each serve the tracing condition:
+
+| Transparency Element        | What It Documents                                                        | How It Serves Tracing                                                  |
+| --------------------------- | ------------------------------------------------------------------------ | ---------------------------------------------------------------------- |
+| SP-1: Declaration           | Summary of how AI was used                                               | First point of contact; makes visible what requires tracing            |
+| SP-2: Navigation            | Structured index enabling access to SP-3, SP-4, and SP-5                 | Makes the documentation system legible and accessible                  |
+| SP-3: Documentation Account | Detailed explanation of how AI was used; argument for adequacy           | Primary site of the tracing claim                                      |
+| SP-4: Process Documentation | All writing-phase materials (prompts, guidance, modifications, traces)   | Primary substance against which SP-3's adequacy claim is assessed      |
+| SP-5: Development Records   | How instructions evolved; meta-level documentation                       | Enables deeper tracing of intellectual direction                       |
+
+**Engagement with Lloyd's standards.** Lloyd (2025) proposes four standards for AI-assisted scholarship: *prominence*, *replicability*, *content cross-checking*, and *intra-textual clarity*. We adopt Standards 1 and 2. We reject Standard 4: in iterative prompt-revision workflows, human editorial judgment is embedded in every clause, making binary attribution of text to "AI" or "human" incoherent — as the process documentation in this paper's archived SP-4 illustrates. What matters is whether the intellectual trajectory is traceable to human understanding, which is what an SP-4 captures.
+
+The requirements make explicit three nested concerns:
+
+```
+OUTERMOST: Track what ethics research becomes
+    |
+    +-- MIDDLE: Ensure meaningful human control (tracing condition)
+            |
+            +-- INNERMOST: Maintain epistemic integrity
+```
+
+## 5.3 Experimental Development and Community Evolution
+
+This framework represents a sketch requiring experimentation. An early community of practice functions as exploratory search: authors experiment with documentation, reviewers with assessment, shared practices evolve through experience. What we propose aims at proof-of-concept. This article demonstrates one possible implementation, showing transparency requirements can be met without technical infrastructure or surveillance bureaucracy.
+
+Research communities organized around opacity face an adverse selection dynamic: as non-transparent AI use becomes widespread, the epistemic value of all undisclosed work diminishes collectively, while scholars committed to transparency bear individual costs. Communities organized around transparency tend toward a different dynamic: they are more likely to attract scholars motivated by the desire to learn from one another's documented practice.
+
+## 5.4 Pilot Observations
+
+The documentation requirements are substantial: prompts, modification logs, epistemic traces, and session records accumulate rapidly. Synthesizing them into the coherent account SP-3 requires is intractable if attempted retrospectively. AI-assisted synthesis—applied immediately after each working session—is what makes the framework viable. A framework requiring transparency about AI use depends, in implementation, on AI assistance to sustain the documentation it requires. The relevant constraint is that synthesis be honest—that the documented account accurately represents the intellectual process. Working from the raw session record during synthesis, rather than from memory alone, reduces the risk of the account becoming more coherent than the process actually was.
+
+---
+
+# 6. Community Assessment of Documentation Adequacy
+
+## 6.1 From Disclosure to Assessment
+
+Section 6 established what transparency documentation must do: enable evaluators across the community of legitimate positions to trace intellectual contributions to human understanding and direction. How should the scholarly community assess whether what is disclosed is adequate?
+
+Documentation adequacy is not self-certifying. An author can produce well-labelled supplementary files that do not enable tracing. Assessment is required—and the community needs a shared approach. The standard is documentation adequacy—does the disclosed record enable tracing assessment?—not reproduction success.
+
+## 6.2 The Organizing Question
+
+Documentation is adequate when it enables evaluators to answer three questions.
+
+*Attribution*: Can evaluators locate the human contribution — not in the trivial sense of confirming human involvement, but in the substantive sense of identifying where human judgment operated? What directions were set, what choices made, where did the work depart from AI-generated material and why? Attribution is required because evaluators whose quality criteria are process-dependent cannot conduct their assessments without it. It also enables assessing whether the work constitutes genuine intellectual engagement rather than passive relay.
+
+*Intellectual trajectory*: Can evaluators follow how the work developed — the sequence of questions posed, the moments of revision and redirection, the emergence and testing of key ideas? Documentation that presents only a polished outcome falls short regardless of length. The trajectory reveals the author's intellectual character: what they found worth pursuing, where they changed course, what they retained under pressure.
+
+*Understanding and endorsement*: Does the documentation give reason to believe the author understood and endorsed what they present? The documentation should make visible: corrections to AI outputs, places where authorial judgment overrode AI suggestion, capacity to explain and defend the argument. The goal is not proof but reasonable grounds for attributing the contribution to the author's understanding.
+
+Recent empirical evidence underscores why these criteria are non-trivial. An arXiv preprint by Abdulhai et al. (2026) — unreviewed at the time of writing — reports that LLM-assisted writing produces a 68.9% increase in stance neutralization in a general-text corpus; the study design and operationalization of "stance neutralization" should be treated with appropriate caution, and the inference to ethics research specifically remains to be established. If the finding generalizes, AI systematically erases the author's evaluative commitments while increasing surface markers of expressiveness. On expressivist or sentimentalist accounts, a tool that neutralizes stance while preserving the appearance of engagement threatens ethical inquiry at its core. LLM-assisted texts score higher on perceived quality metrics even as genuine evaluative content diminishes — output assessment alone cannot detect the loss that process documentation would reveal.
+
+## 6.3 A Dual Assessment Structure
+
+*Quality assessment* proceeds as in standard peer review: evaluation of argument strength, conceptual clarity, originality, and scholarly rigor. This reads the submitted article.
+
+*Documentation adequacy assessment* examines whether the tracing condition is satisfied. The assessor reads SP-1 through SP-3 and, as needed, SP-4 and SP-5. SP-1 is an AI usage declaration with sufficient archival orientation for a reader to understand what kind of record they are entering — models used, roles, phases of development, session identification conventions, entry points. SP-2 is a navigation document: the document type ontology, the metadata infrastructure, and a structured index to all process documentation and development records. SP-3 is a documentation adequacy account: it argues that the record satisfies the three criteria specified above, presents the writing process narrative and selected documentation graphs as evidence, and acknowledges where the record falls short. SP-4 and SP-5 contain the process documentation and development records themselves. Does the record enable attribution, trajectory-following, and reasonable inference to understanding-and-endorsement?
+
+These assessments address distinct questions. Work with strong philosophical quality may have inadequate documentation; work with exemplary documentation may have weak arguments.
+
+## 6.4 Epistemic Norms for Assessment
+
+The good faith orientation from Section 5 shapes documentation assessment. Assessment is epistemic inquiry: the question is whether the record enables the assessor to understand how this work came to be. Calibration matters: depth of review should be proportional to the complexity of the claimed contribution. Work claiming AI generated a central philosophical insight requires more sustained tracing than work claiming AI assisted with structuring a well-understood argument.
+
+A natural objection: documentation requirements impose disproportionate costs. But AI tools create a reduced-structure epistemic environment that invites indiscriminate cognitive offloading. The documentation requirements re-impose metacognitive monitoring — forethought, self-evaluation, attribution tracking — that counteracts this risk (Zimmerman, 2002; Cheng et al., 2025).
+
+The self-exemplification of this article creates an immediate opportunity, but it must be read carefully. The article's documentation archive serves here as evidence of *feasibility* — that the substantive philosophical work of a paper can be extensively documented without the documentation displacing or hollowing out the inquiry it records. It does not constitute evidence of *adequacy*: whether the SP-3 in that archive actually supports its tracing claim against the underlying SP-4 materials is the question this article invites the community to address. Feasibility is what an author can demonstrate by exhibition; adequacy is what only the community can settle.
+
+---
+
+# 7. Conclusion
+
+This paper has argued that because the standards for evaluating philosophical work are essentially contested — at the level of what inquiry is and what it demands of the inquirer — AI-assisted ethics research requires comprehensive process documentation that enables the full community of legitimate evaluators to assess work on their own terms. The framework specifies a documentation apparatus — SP-1 through SP-5 — that functions simultaneously as tracking instrument and as philosophical self-expression: a record of what an author chose to investigate, where they followed the AI, where they overrode it. The instantiation of that apparatus for the present paper is described, with a persistent identifier, in the closing note that follows this conclusion.
+
+This self-exemplification requires honest acknowledgment. The commitment to documentation was present from the outset — an ex ante intention, not a retrospective reconstruction. That intention is what made the later infrastructure work feasible: without it, the artifact chain that enabled chain-level traceability could not have been rebuilt at all. But feasible is not the same as costless. The infrastructure layer — automated session identifiers, standardized frontmatter, chain-level traceability — was not in place from the start and had to be built while the work was underway, in the manner of Neurath's boat: plank by plank, without the option of dry dock. The three criteria of Section 6 were tested against the paper's own record and held. What the experience revealed is not a logical gap in the framework but a practical one: documentation infrastructure planned from the beginning is substantially less costly than documentation infrastructure retrofitted to an existing record, even when the original intention was always there.
+
+The framework's limitations should be stated plainly. It has been developed and tested through a single case: one paper, one author, one disciplinary context. The author assessed their own implementation — no independent evaluation has been conducted. Whether the argument extends to other humanistic disciplines that share philosophy's evaluative contestedness — history, literary criticism, political theory — is an open question not addressed here. And there is a bootstrapping problem: arguing for documentation standards while simultaneously implementing them means the adequacy of the implementation cannot be fully verified before the standards it motivates are themselves settled.
+
+A further ambiguity emerged from implementation. The tracing condition requires understanding and endorsement — but understanding admits of degrees, and what depth of understanding is sufficient for endorsement to be genuinely one's own is not settled by the framework. The present paper includes passages where the author's role approximated expert-delegated approval: recognizing an argument as philosophically sound without the capacity to reconstruct it independently. This is a familiar mode of collaborative scholarship, but it reveals that the tracing condition contains a concept whose adequate specification remains open. What counts as sufficient understanding for a philosophical contribution to be genuinely one's own may itself be contested along the lines the paper identifies: different conceptions of philosophical authorship — output-evaluative and process-dependent alike — may draw the threshold differently. The tracing condition is not immune to the essential contestedness it was introduced to manage. The observation itself arose independently — from the author's reflection on their own role in revising a passage where philosophical expertise had been delegated — and is an instance of the kind of meta-level authorial contribution that process documentation is designed to make visible.
+
+These limitations point toward what is needed if the framework is taken seriously. Journal disclosure requirements need philosophical specification, not just formal mandates; a checkbox confirming AI use tells evaluators nothing they can act on. Norms governing documentation adequacy can only develop through practice and community assessment — the dual assessment structure of Section 6 is a starting architecture, not a settled standard. The risk that documentation requirements become audit machinery is real: bureaucratic compliance can displace the genuine intellectual engagement that documentation is meant to make visible. The good faith and ecological validity conditions resist this displacement, but the tension must be monitored as practices develop.
+
+The deepest reason for these requirements, however, is not that AI introduces something unprecedented into philosophical practice, but that it removes something that was always there. Traditional philosophical writing was already rich with implicit process signals — citation patterns, the structure of reasoning pursued as discovery, the depth and specificity of engagement with sources — that allowed the scholarly community to infer whether an author's actual process met the evaluative criteria they cared about. AI severs the connection between these signals and any underlying process: outputs can exhibit every marker of genuine philosophical engagement without any corresponding human intellectual journey having taken place. The explicit transparency requirement proposed here is therefore not a new imposition on philosophy. It is the conscious replacement of something that was always needed and is now, for the first time, no longer reliably supplied by the text itself.
+
+---
+
+# AI Usage and Documentation Archive
+
+This paper was produced with substantial AI assistance over multiple writing phases, on multiple platforms, with multiple models. The transparency framework specified in §5 was applied to its production. The framework requires more than disclosure: it requires that the disclosed record enable readers to (i) trace which contributions to the argument originated with the author and which with AI, (ii) identify where authorial judgment overrode AI suggestion, and (iii) form a defensible estimate of whether the author understands and endorses what they present. The criteria for assessing whether such a record is *adequate* are given in §6.
+
+**Archive.** The full documentation record produced during the writing of this paper is archived at [persistent identifier: forthcoming]. It comprises:
+
+- *AI-usage summary* (SP-1): a concise statement of how AI was used in producing the paper — models, platforms, phases, scope of involvement; the entry point for a reader who wants a quick orientation before deciding how deep to go.
+- *Navigation index* (SP-2): an index to the rest of the archive, organised by paper section and by writing phase, allowing targeted retrieval rather than exhaustive reading.
+- *Documentation-adequacy account* (SP-3): a phase-by-phase narrative of how the framework was applied, what worked, what failed, and what infrastructure the framework's adequacy turns out to require.
+- *Process documentation* (SP-4): modification logs documenting each substantive revision — prior text, revised text, source model and session, reasoning; epistemic traces crystallising exploratory turns into stable claims; prompt-development logs documenting what was specified before generation.
+- *Development records* (SP-5): versioned section drafts (v1 through final) for each section; section-guidance documents specifying constraints before drafting; pattern summaries distilling recurring revision patterns into reusable principles.
+- *Source conversations*: the underlying conversation transcripts with each model, indexed by session identifier and linked to the artifacts produced from them.
+
+**Inline excerpts.** Two excerpts appear inline as worked examples: one modification-log entry illustrating an accepted revision, and one figure showing how guidance, prompt, draft, and modification log connect in a single revision session. They are not the framework; they are evidence that the framework is implementable on a real instance of the kind of work the paper addresses.
+
+**Scope and limits.** The framework was developed alongside the paper. Not every phase of the paper's production carried the documentation infrastructure that the framework requires; SP-3 records where the framework's specification outran the conditions of its own application. These gaps are themselves part of the disclosed record. The archive is not offered as a model of perfect compliance with a finished framework; it is the empirical instance from which the framework's specification was derived and against which it can be tested.
+
+---
+
+# References
+
+### Classical Sources
+
+**Plato.** *Apology* 38a.
+
+### Primary Sources (Alphabetical)
+
+**Abdulhai, M., Prabhu, A., Wongkamjan, W., Nasseri, S. A., Nenkova, A., Dreyer, M., Ren, X., & Mathur, N.** (2026). "How LLMs distort our written language." arXiv:2603.18161v1. https://arxiv.org/abs/2603.18161
+
+**ACM.** (2025). "ACM Policy on Authorship." Updated September 16, 2025. https://www.acm.org/publications/policies/new-acm-policy-on-authorship
+
+**Berg, A., & Robbins, H.** (2024). "The Cognitive Divide." *The Point*. https://thepointmag.substack.com/p/the-cognitive-divide
+
+**Blackburn, S.** (1993). *Essays in Quasi-Realism*. New York: Oxford University Press.
+
+**Boden, M. A., & Edmonds, E. A.** (2009). What is generative art? *Digital Creativity*, 20(1-2), 21-46. [TO BE ADDED to paper_bibliography_FINAL.md]
+
+**Cheng, Z., Zhang, Z., Xu, Q., Maeda, Y., & Gu, P.** (2025). "A meta-analysis addressing the relationship between self-regulated learning strategies and academic performance in online higher education." *Journal of Computing in Higher Education*, 37(1), 195–224. https://doi.org/10.1007/s12528-023-09390-1
+
+**COPE Council.** (2024). "COPE position — Authorship and AI." Committee on Publication Ethics. https://doi.org/10.24318/cCVRZBms
+
+**Cordasco, C. L.** (2026a). "The Invisible Upside of Cognitive Offloading." *Paperclips and Other Alignment Problems* (Substack), 1 February 2026. https://carlolc.substack.com/p/the-invisible-upside-of-cognitive
+
+**Cordasco, C. L.** (2026b). "Acemoglu et al (2026) are wrong about AI & Human Cognition." *Paperclips and Other Alignment Problems* (Substack), 2 March 2026. https://carlolc.substack.com/p/acemoglu-et-al-2026-are-wrong-about
+
+**Elsevier.** (2023). "The use of generative AI and AI-assisted technologies in writing for Elsevier." https://www.elsevier.com/about/policies-and-standards/the-use-of-generative-ai-and-ai-assisted-technologies-in-writing-for-elsevier
+
+**Enoch, D.** (2011). *Taking Morality Seriously: A Defense of Robust Realism*. Oxford: Oxford University Press.
+
+**Gallie, W. B.** (1956). "Essentially Contested Concepts." *Proceedings of the Aristotelian Society*, 56, 167–198. https://doi.org/10.1093/aristotelian/56.1.167
+
+**Gibbard, A.** (1990). *Wise Choices, Apt Feelings: A Theory of Normative Judgment*. Cambridge, MA: Harvard University Press.
+
+**Hosseini, M., Rasmussen, L. M., & Resnik, D. B.** (2023). "Using AI to write scholarly publications." *Accountability in Research*, 31(7), 715–723. https://doi.org/10.1080/08989621.2023.2168535
+
+**Jollimore, T.** (2025). "I Used to Teach Students. Now I Catch ChatGPT Cheats." *The Walrus*, March 5, 2025. https://thewalrus.ca/i-used-to-teach-students-now-i-catch-chatgpt-cheats/
+
+**Kierkegaard, S.** (1992). *Concluding Unscientific Postscript to Philosophical Fragments* (H. V. Hong & E. H. Hong, Trans.). Princeton: Princeton University Press. (Original work published 1846)
+
+**Lloyd, D.** (2025). "Epistemic responsibility: toward a community standard for human-AI collaborations." *Frontiers in Artificial Intelligence*, 8, 1635691. https://doi.org/10.3389/frai.2025.1635691
+
+**Lund, B. D., & Naheem, K. T.** (2023). "Can ChatGPT be an author? A study of artificial intelligence authorship policies in top academic journals." *Learned Publishing*. https://doi.org/10.1002/leap.1582
+
+**Mercier, H.** (2020). *Not Born Yesterday: The Science of Who We Trust and What We Believe*. Princeton: Princeton University Press.
+
+**Nietzsche, F.** (1966). *Beyond Good and Evil* (W. Kaufmann, Trans.). New York: Vintage Books. (Original work published 1886)
+
+**Santoni de Sio, F., Faber, N. S., Savulescu, J., & Vincent, N. A.** (2016). "Why Less Praise for Enhanced Performance? Moving Beyond Responsibility-Shifting, Authenticity, and Cheating Toward a Nature-of-Activities Approach." In F. Jotterand & V. Dubljević (Eds.), *Cognitive Enhancement: Ethical and Policy Implications in International Perspectives* (pp. 27–41). Oxford: Oxford University Press. https://doi.org/10.1093/acprof:oso/9780199396818.003.0003
+
+**Santoni de Sio, F., & van den Hoven, J.** (2018). "Meaningful Human Control over Autonomous Systems: A Philosophical Account." *Frontiers in Robotics and AI*, 5, 15. https://doi.org/10.3389/frobt.2018.00015
+
+**Sartre, J.-P.** (1956). *Being and Nothingness* (H. E. Barnes, Trans.). New York: Philosophical Library. (Original work published 1943) [TO BE ADDED to paper_bibliography_FINAL.md]
+
+**Science.** (2023). "Science Journals: Editorial Policies." https://www.science.org/content/page/science-journals-editorial-policies
+
+**Shafer-Landau, R.** (2003). *Moral Realism: A Defence*. Oxford: Oxford University Press.
+
+**Strathern, M.** (1997). 'Improving ratings': Audit in the British University system. *European Review*, 5(3), 305–321.
+
+**Van Woudenberg, R., Ranalli, C., & Bracker, D.** (2024). "Authorship and ChatGPT: a Conservative View." *Philosophy & Technology*, 37(1), 1–26. https://doi.org/10.1007/s13347-024-00715-1
+
+**Williams, B.** (1981). "Persons, Character and Morality." In *Moral Luck: Philosophical Papers 1973–1980* (pp. 1–19). Cambridge: Cambridge University Press.
+
+**Zimmerman, B. J.** (2002). "Becoming a self-regulated learner: An overview." *Theory into Practice*, 41(2), 64–70. https://doi.org/10.1207/s15430421tip4102_2
