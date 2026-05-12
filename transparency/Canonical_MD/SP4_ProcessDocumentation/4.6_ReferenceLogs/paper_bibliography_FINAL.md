@@ -12,6 +12,7 @@ session_id:
   - SID-20260512-154043
   - SID-20260512-223052
   - SID-20260513-003000
+note: "2026-05-13 (v1.6 compression pass): Mercier (2020) removed — citation lived only in §4.3 Cost Structure / Costly Signaling, which was cut entirely. Plato/Classical Sources unification already done earlier same day (MOD-011/012). Logged as MOD-013 in CFP_4.2.31."
 inputs:
   - paper_bibliography.md
   - CFP_5.4.4_Section3_v3.md (Williams entry — missing from working bib)
@@ -70,8 +71,6 @@ inputs:
 **Lund, B. D., & Naheem, K. T.** (2023). "Can ChatGPT be an author? A study of artificial intelligence authorship policies in top academic journals." *Learned Publishing*. https://doi.org/10.1002/leap.1582
 
 **Mecacci, G., & Santoni de Sio, F.** (2020). "Meaningful human control as reason-responsiveness: the case of dual-mode vehicles." *Ethics and Information Technology*, 22, 103–115. https://doi.org/10.1007/s10676-019-09519-w
-
-**Mercier, H.** (2020). *Not Born Yesterday: The Science of Who We Trust and What We Believe*. Princeton: Princeton University Press.
 
 **Moseley, D. D.** (2014). "Revisiting Williams on Integrity." *Journal of Value Inquiry*, 48(1), 53–68. https://doi.org/10.1007/s10790-013-9402-0
 
