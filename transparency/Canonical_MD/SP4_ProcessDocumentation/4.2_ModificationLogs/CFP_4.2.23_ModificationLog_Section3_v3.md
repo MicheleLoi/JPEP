@@ -2,7 +2,7 @@
 project: JPEP
 document_type: Type 3 - Modification Log
 label: CFP_4.2.23_ModificationLog_Section3_v3
-title: "Modification Log: Section 3 v2 → v3 → v4 → v5 (Two-Order Restructuring; Cordasco Objection-Response; Reproducibility Disanalogy)"
+title: "Modification Log: Section 3 v2 → v3 → v4 → v5 → v5.1 (Two-Order Restructuring; Cordasco Objection-Response; Reproducibility Disanalogy; O2 Scope Clarification)"
 date_created: 2026-04-03
 date_last_modified: 2026-05-12
 status: Draft
@@ -243,4 +243,40 @@ Placement decision (delegated by user; chosen as new mid-§3 subsection between 
 
 ## Status (v5)
 
-Draft — applied to file; pending user review of the new subsection in context after commit.
+Draft — applied to file; pending user review of the new subsection in context after commit. Superseded by v5 → v5.1 entry below.
+
+---
+
+# v5 → v5.1 (O2 Opus B Comparison-Cases Reply — Scope of Disanalogy Clarified)
+
+*Session SID-20260512-154043, 2026-05-12.*
+
+## The Objection
+
+Opus B (O2) in [CFP_5.3.27 lines 83–89](../../SP5_DevelopmentRecords/5.3_Notes_Type11/CFP_5.3.27_Note_ReviewResponse_Draft.md): "The paper only contrasts ethics with mathematics and experimental science. What about history, literary criticism, political theory? If the argument generalizes to all humanistic scholarship, the framing is misleadingly narrow."
+
+User's reply (CFP_5.3.27 line 89): "not an objection. I don't know other disciplines enough for taking that responsibility. And this can't be taken an objection. Science and mathematics are relevant because the analogy with them grounds an objection. But it's not immediately plausible for those fields (perhaps with the exception of history, that tends ot be factual)."
+
+## What v5.1 Adds
+
+A single sentence at the end of paragraph 2 of "Reproducibility Is Not the Issue":
+
+> "The contrast we draw is between ethics and empirical science specifically; we make no claim here about disciplines whose evidentiary structures fall between these poles, like history, literary criticism, or political theory, which mix factual and interpretive elements in ways that may have transparency implications distinct from both."
+
+~55 words. §3 word count ~2,470 → ~2,525.
+
+## Why the Change Was Made
+
+The §3 v5 disanalogy is drawn between ethics-as-philosophical-inquiry and empirical science. Without an explicit scope marker, a reader could over-generalize the disanalogy to cover all humanistic scholarship — exactly what Opus B's O2 charged. The fix is a scope marker, not a defense: the paper simply names the three disciplines Opus B raised and explicitly defers ("we make no claim here") rather than arguing the disanalogy doesn't apply to them.
+
+The placement (end of paragraph 2, where the philosophy-side disanalogy is established) catches the over-generalization before the reader has a chance to form it. The reasoning behind the deferral is consistent with the rest of the section: §3 is explicit (in `CFP_4.4.22` section guidance, hard constraint #4) that the section "does not generalize to disciplines other than ethical inquiry. Generalization to other humanistic disciplines is acknowledged as out of scope."
+
+## Files Touched
+
+- `CFP_5.4.4_Section3_v3.md` — body insert at end of paragraph 2 of "Reproducibility Is Not the Issue" subsection; frontmatter version bumped v5 → v5.1 in place.
+- `CFP_5.3.1_WorkPlan_CFP_Adaptation.md` — RESUME HERE updated.
+- This modlog — extended with the v5 → v5.1 entry above.
+
+## Status (v5.1)
+
+Draft — applied to file; pending user review of the new sentence in context after commit.
