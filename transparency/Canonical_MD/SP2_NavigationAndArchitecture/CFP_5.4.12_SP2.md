@@ -453,6 +453,7 @@ Folder: `5.1_PaperPromptDevelopmentLog_Type8a/`. One file.
 | `CFP_5.3.27_Note_ReviewResponse_Draft.md` | Consolidated review response draft (Opus + Shoulders) |
 | `CFP_5.3.28_Note_ShouldersReview_Evaluation.md` | Shoulders review evaluation, per-item (2026-04-10) |
 | `CFP_5.3.29_Note_CordascoCorpusBriefing.md` | Cordasco corpus briefing (provenance for the §3 welfare-economic objection material) |
+| `CFP_5.3.30_Note_RawConversationsManifest.md` | Manifest of files in `06_conversations/` (74 exported sessions + 12 imported externals + 3 root files); retention policy; SID reconstruction note; per SP-2 §7 |
 | `CFP_session_log.md` | Per-session log (`document_subtype: session_log`; appended as-we-go, one section per SID) |
 
 ### 5.4 — Section Drafts (Type 12)
@@ -499,7 +500,7 @@ The `06_conversations/` directory (project root) is gitignored. It contains expo
 
 v1/v2 conversations remain on the platforms where they were authored (Claude.ai, ChatGPT) and are accessible via the author's accounts. One conversation is excluded even at the manifest layer: the origin chat (`6c8d9101`), which is not anonymized and is gitignored; its intellectual content was extracted in anonymized form into `da6a830c`, which is public. One further v1/v2 conversation was deleted by the user and is not reconstructable.
 
-A manifest note (`CFP_5.3.N_Note_RawConversationsManifest.md`, to be created before submission) indexes all conversation files with session IDs, dates, and fingerprints, and states the retention policy. Conversations are available on request.
+A manifest note — [`CFP_5.3.30_Note_RawConversationsManifest.md`](../SP5_DevelopmentRecords/5.3_Notes_Type11/CFP_5.3.30_Note_RawConversationsManifest.md) (created 2026-05-13, SID-20260513-003000) — indexes all conversation files in `06_conversations/` with session IDs, dates, sizes, and provenance notes, and states the retention policy. Conversations are available on request.
 
 ---
 
