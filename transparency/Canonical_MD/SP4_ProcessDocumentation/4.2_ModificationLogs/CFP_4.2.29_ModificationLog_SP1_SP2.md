@@ -4,7 +4,10 @@ document_type: Type 3 - Modification Log
 label: CFP_4.2.29_ModificationLog_SP1_SP2
 title: "Modification Log: SP-1 and SP-2 v1 production"
 date_created: 2026-04-09
-session_id: SID-20260409-150705
+date_last_updated: 2026-05-12
+session_id:
+  - SID-20260409-150705
+  - SID-20260512-111348
 status: Active
 inputs:
   - CFP_5.4.11_SP3.md
@@ -60,10 +63,56 @@ Four corrections made during the drafting session before commit.
 
 **Why these are one entry.** Five corrections all arising from the same drafting session read-through, all corrections to misstatements rather than design changes, all resolved before commit.
 
-## Validation
+---
 
-approved
+## Post-Update: SP-2 inventory refresh and corrections (2026-05-12)
+
+**Session:** SID-20260512-111348
+
+**Source:** disk enumeration of SP-4 and SP-5 (Explore subagent) vs SP-2's stated inventory; SP-2 §1's own provisional disclaimer (which explicitly scheduled a refresh). The day's externalization arc (commits 42be9de + 5eaf2ea + 285efbd) produced multiple new SP-4 and SP-5 artifacts that needed to be reflected in the navigation index for the archive to deliver on the closing note's (CFP_5.4.14) promise.
+
+### MOD-004 — SP-2 inventory refresh + three corrections
+
+**What:** `CFP_5.4.12_SP2.md` updated in place. Changes:
+
+1. **Frontmatter** — converted `session_id` to a list (added SID-20260512-111348); added `date_last_updated: 2026-05-12`; rewrote the `note` field to reflect the refresh and itemise the added entries.
+
+2. **§1 provisional note** — rewritten to record that inventories were refreshed today; Phase 5 final pass before submission remains scheduled.
+
+3. **§2 ontology table** — Type 8a row corrected: pointer changed from "SP-5 / 5.2" to "SP-5 / 5.1". The project-level PDL lives in its own `5.1_PaperPromptDevelopmentLog_Type8a/` subfolder, distinct from the Type 8b PDLs in `5.2_SectionPromptDevelopmentLogs_Type8b/`. Previously this navigation pointer was wrong; a reader following it would have landed in the wrong folder.
+
+4. **§4.1 hub paragraph** — rewritten to acknowledge that the `_HUBS/` directory is currently empty. Earlier hub `.md` files were removed during the UUID/SID recovery work (per `adapt.md` project rule 4: "deleted hub files in git status signal successful UUID/SID recovery, not missing sessions"). The hub-generation script has not been re-run because it is not yet wired to read `hub_annotations.yaml` directly. The YAML file remains authoritative.
+
+5. **§5.1 (4.6 Reference Logs)** — added `paper_bibliography_FINAL.md` row.
+
+6. **§5.2 (4.2 Modlogs)** — added rows for `CFP_4.2.29`, `CFP_4.2.30`, `CFP_4.2.31`, `CFP_4.2.32`.
+
+7. **§5.4 (4.4 Section Guidance)** — added `CFP_4.4.21` row.
+
+8. **§6.1 (5.2 PDLs)** — added `CFP_5.2.5` row.
+
+9. **§6.2 (5.3 Notes)** — added rows for `CFP_5.3.23`, `5.3.24`, `5.3.25` (note + raw), `5.3.26`, `5.3.27`, `5.3.28`, and `CFP_session_log.md`.
+
+10. **§6.3 (5.4 Section Drafts)** — added rows for `CFP_5.4.13` (SP-1) and `CFP_5.4.14` (AI Usage Archive) in the authoritative-current-versions table.
+
+11. **§8 section-numbering table** — rewritten. Replaced the three-column "v1/v2 Roman / Intermediate / Current" layout (which used pre-2026-04-09 numbers in the Current column) with a two-column "v1/v2 Roman / Current CFP §" layout using post-2026-04-09 numbering throughout. Added a row for the new unnumbered closing note (`CFP_5.4.14`) and updated the Appendix A row to record both the 2026-03-02 SP reconception and the 2026-05-12 externalization. The supporting prose now cites `CFP_5.3.26` (renumbering decision record) and `CFP_5.2.5` (externalization PDL).
+
+**Why:** SP-2 §1 marked the inventories provisional with a scheduled refresh; the externalization arc made that refresh load-bearing for the archive's navigability (the closing note in the paper body points readers to the archive, and SP-2 is where they orient). The three corrections (Type 8a path, _HUBS honesty, §8 numbering) addressed gaps already present in SP-2 v1 but salient under the externalization. The full Phase 5 enumeration check remains scheduled for pre-submission.
+
+**Anomalies surfaced (flagged, not addressed in this pass):**
+
+- `III_4.4.5_SectionGuidance_Section6_MHC.md.bak` — tracked .bak file in 4.4_SectionGuidance.
+- `II_5.3.4_cfd43f4c6a1c3a1e70bedf1ed3109c8425e35ef6.patch.txt` — patch file in 5.3_Notes.
+- `5.2.8 pdl-appendix-2.md` — leading space in filename.
+
+Pre-existing housekeeping items unrelated to the externalization; left for a separate cleanup pass.
 
 ---
 
-*Modlog records SP-1 and SP-2 v1 production in session SID-20260409-150705. Both files committed at 7f8d8a0. Single-file versioning convention: future revisions tracked as MOD-NNN entries here; prior versions recoverable via git.*
+## Validation
+
+approved (v1 production, 2026-04-09); approved (Post-Update MOD-004, 2026-05-12).
+
+---
+
+*Modlog records SP-1 and SP-2 v1 production in session SID-20260409-150705. Both files committed at 7f8d8a0. Single-file versioning convention: revisions tracked as MOD-NNN entries here; prior versions recoverable via git. SP-2 refreshed in SID-20260512-111348 (MOD-004 above).*

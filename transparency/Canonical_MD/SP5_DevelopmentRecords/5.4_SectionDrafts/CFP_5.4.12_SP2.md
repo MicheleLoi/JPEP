@@ -7,7 +7,10 @@ version: v1
 date_created: 2026-04-09
 status: Draft (provisional)
 source: "Claude Sonnet 4.6 (Claude Code session)"
-session_id: SID-20260409-150705
+session_id:
+  - SID-20260409-150705
+  - SID-20260512-111348
+date_last_updated: 2026-05-12
 produced_by_prompt: ""
 inputs:
   - CFP_5.4.11_SP3.md
@@ -16,7 +19,7 @@ inputs:
 cfp_target: "AI Tools in Ethics Research (topical collection)"
 versioning_convention: git_inplace
 word_count: ~2200
-note: "Provisional. File inventories are complete as of SID-20260409-150705. A final enumeration check is scheduled before submission (Phase 5)."
+note: "File inventories refreshed 2026-05-12 (SID-20260512-111348) to add: SP-4 entries CFP_4.2.29/30/31/32, CFP_4.4.21, paper_bibliography_FINAL.md; SP-5 entries CFP_5.2.5, CFP_5.3.23–28, CFP_session_log.md, CFP_5.4.13 (SP-1), CFP_5.4.14 (AI Usage Archive). §8 section-numbering table updated to post-2026-04-09 numbering; §2 Type 8a path corrected to SP-5/5.1; §4.1 hubs paragraph reframed honestly about the empty _HUBS directory. A final enumeration check before submission (Phase 5) remains scheduled."
 section_numbering: pre_renaming
 ---
 
@@ -28,7 +31,7 @@ SP-2 is a map. It describes the architecture of the JPEP documentation archive: 
 
 Read SP-1 before this document for the AI usage declaration and a one-page orientation to the archive. Read SP-3 for the documentation adequacy account — the argument that the record satisfies the attribution, trajectory, and understanding-and-endorsement criteria that Section 7 specifies.
 
-**Provisional note.** This document is marked provisional. The file inventories in §§5–6 are complete as of the date above. They will be verified in a final enumeration pass before submission.
+**Provisional note.** File inventories in §§5–6 were refreshed 2026-05-12 (SID-20260512-111348) to incorporate artifacts created since 2026-04-09 (the externalization arc plus the SP-1/SP-2 production and review-response sessions). A final enumeration check before submission (Phase 5) remains scheduled.
 
 ---
 
@@ -45,7 +48,7 @@ JPEP uses eleven document types. Types 1–8 and 11–12 are listed here; the ga
 | 5 | Section Summaries | SP-4 / 4.5 | v1/v2 | Maintained continuity across sections during the long v1/v2 writing project. Dormant in CFP — the function is handled by session handoff conventions and hub annotations. |
 | 6 | Reference Logs | SP-4 / 4.1 (root) | all | Static bibliography files. Not chain-linked artifacts; maintained by convention rather than by template. |
 | 7 | Modification Logs | SP-4 / 4.2 | all | Record what changed during writing and why. Numbered per section (MOD-001 upward); each entry has a bounded subject. The primary evidence layer for attribution and understanding-and-endorsement claims. |
-| 8a | Project-level PDLs | SP-5 / 5.2 | all | Prompt development logs that document decisions about what to generate at the project level (e.g., the design of `4.1`, the SP-1/2/3 architecture). |
+| 8a | Project-level PDLs | SP-5 / 5.1 | all | Prompt development logs that document decisions about what to generate at the project level (e.g., the design of `4.1`, the SP-1/2/3 architecture). The single Type 8a file lives in its own subfolder (`5.1_PaperPromptDevelopmentLog_Type8a/`) — distinct from the Type 8b section-level PDLs in `5.2_SectionPromptDevelopmentLogs_Type8b/`. |
 | 8b | Section-level PDLs | SP-5 / 5.2 | all | Prompt development logs that document decisions about how a specific section was to be drafted. Stored in the same folder as 8a; distinguished by scope and naming. |
 | 11 | Notes | SP-5 / 5.3 | all | Capture working decisions, organizational choices, and research findings that do not fit other types. Four subtypes distinguished by naming convention and `document_type` frontmatter field: `work_plan`, `decision_record`, `chain_walk`, `briefing`. |
 | 12 | Section Drafts | SP-5 / 5.4 | III, CFP | Versioned drafts of paper sections and supplementary packages, treated as explicit artifacts with provenance. Produced by a prompt, consumed by a modification log. JPEP custom type. |
@@ -86,7 +89,7 @@ Every Claude Code session has a session ID of the form `SID-YYYYMMDD-HHMMSS`. Ev
 
 `hub_annotations.yaml` (in `transparency/SCRIPTS/`) is the authoritative source for session topology. It records, for each session hub: the session ID, the chat UUID (for v1/v2 sessions), predecessor sessions (`continues_from`), and the inputs and outputs of that session.
 
-Hub `.md` files in `SP4_ProcessDocumentation/_HUBS/` are derived from the YAML file. The hub-generation script is not yet wired to read `hub_annotations.yaml` directly; the architectural decision governing this is in `CFP_5.3.16_Note_HubMetadataArchitectureDecisions.md`.
+Hub `.md` files (when present in `SP4_ProcessDocumentation/_HUBS/`) are derived from `hub_annotations.yaml`. As of 2026-05-12 the `_HUBS/` directory is empty — earlier hub `.md` files were removed during the UUID/SID recovery work (see `adapt.md` project rule 4: "deleted hub files in git status signal successful UUID/SID recovery, not missing sessions"). The hub-generation script has not been re-run because it is not yet wired to read `hub_annotations.yaml` directly. The YAML file remains the authoritative source for session topology regardless of the derived `.md` state. The architectural decision governing this is in `CFP_5.3.16_Note_HubMetadataArchitectureDecisions.md`.
 
 The `continues_from` field records session predecessor relationships. It uses a YAML list form for complex multi-input flows (e.g. a session that continues both a prior writing session and a prior research session). `continues_from` is a session-level fact, recorded in the YAML only; it does not appear in individual artifact frontmatter.
 
@@ -125,7 +128,8 @@ Reference logs (Type 6) are also stored in this folder:
 | File | Description |
 |------|-------------|
 | `citations-complete.md` | Full citation list |
-| `paper_bibliography.md` | Paper bibliography |
+| `paper_bibliography.md` | Paper bibliography (working) |
+| `paper_bibliography_FINAL.md` | Paper bibliography (finalized 2026-04-10 after Shoulders bibliography verification pass; see CFP_4.2.31) |
 | `references-master-list.md` | Master reference list |
 | `references_doc.md` | References document |
 | `section5_refs.md` | Section 5 references |
@@ -175,6 +179,10 @@ Reference logs (Type 6) are also stored in this folder:
 | `CFP_4.2.26_ModificationLog_FrontmatterNormalization.md` | Frontmatter normalization pass |
 | `CFP_4.2.27_ModificationLog_SP3.md` | SP-3 draft |
 | `CFP_4.2.28_ModificationLog_GraphInfrastructure.md` | Graph infrastructure and figure integration |
+| `CFP_4.2.29_ModificationLog_SP1_SP2.md` | SP-1 and SP-2 v1 production (2026-04-09) |
+| `CFP_4.2.30_ModificationLog_Conclusion_ReviewResponse.md` | Conclusion review response — live Conclusion modlog target (MOD-001 2026-04-09; MOD-002 2026-04-10; MOD-003 2026-05-12 for externalization Edit 5) |
+| `CFP_4.2.31_ModificationLog_Bibliography.md` | Bibliography verification pass (MOD-007–010, 2026-04-10) |
+| `CFP_4.2.32_ModificationLog_AIUsageArchive.md` | AI Usage and Documentation Archive closing note (CFP_5.4.14), v1 (2026-05-12) |
 
 ### 4.3 — Pattern Summaries (Type 4)
 
@@ -225,6 +233,7 @@ Reference logs (Type 6) are also stored in this folder:
 | `CFP_4.4.18_SectionGuidance_AppendixA_v3.md` | Appendix A v3 (superseded by SP-1/2/3 architecture) |
 | `CFP_4.4.19_SectionGuidance_SelfExpressionDistribution.md` | Self-expression and double contestation |
 | `CFP_4.4.20_SectionGuidance_SP3.md` | SP-3 (current version: v7) |
+| `CFP_4.4.21_SectionGuidance_ExternalizationImplementation.md` | Externalization of SP-1/2/3 from paper body — per-section to-dos (2026-05-12) |
 
 ### 4.5 — Section Summaries (Type 5)
 
@@ -328,6 +337,7 @@ SP-5 (`transparency/Canonical_MD/SP5_DevelopmentRecords/`) contains development 
 | `CFP_5.2.2_pdl_appendix_v3.md` | Appendix v3 (predecessor PDL; superseded by CFP_5.2.4) |
 | `CFP_5.2.3_pdl_selfexpression_integration.md` | Self-expression / double contestation (PDL-000 through PDL-009) |
 | `CFP_5.2.4_pdl_SP1_SP2_SP3.md` | SP-1/2/3 design (PDL-004 onward; authoritative SP architecture decisions) |
+| `CFP_5.2.5_pdl_AIUsageArchive.md` | AI Usage and Documentation Archive closing note + externalization decision (PDL-001–006, 2026-05-12) |
 
 ### 5.3 — Notes (Type 11)
 
@@ -394,6 +404,13 @@ SP-5 (`transparency/Canonical_MD/SP5_DevelopmentRecords/`) contains development 
 | `CFP_5.3.20_Note_SessionLog_Fig6Network.md` | Session log — fig6 network |
 | `CFP_5.3.21_Note_SessionLog_GraphAudit.md` | Session log — graph audit |
 | `CFP_5.3.22_Note_DecisionRecord_ChatGPTConversationMetadata.md` | Decision record — ChatGPT conversation metadata design |
+| `CFP_5.3.23_Note_AssembledPaperBuild.md` | Assembled paper build record (2026-04-09) |
+| `CFP_5.3.24_Note_ReviewerB_OpusReview_v1.md` | Reviewer B (Claude Opus 4.6) review of the assembled paper (2026-04-09) |
+| `CFP_5.3.25_Note_ShouldersReview_v1.md` + `CFP_5.3.25_ShouldersReview_raw.md` | Shoulders external review (structured note + raw file, 2026-04-09) |
+| `CFP_5.3.26_Note_DecisionRecord_SectionRenumbering.md` | Decision record — section renumbering effective 2026-04-09 (old 5/6/7/8 → new 4/5/6/7) |
+| `CFP_5.3.27_Note_ReviewResponse_Draft.md` | Consolidated review response draft (Opus + Shoulders) |
+| `CFP_5.3.28_Note_ShouldersReview_Evaluation.md` | Shoulders review evaluation, per-item (2026-04-10) |
+| `CFP_session_log.md` | Per-session log (`document_subtype: session_log`; appended as-we-go, one section per SID) |
 
 ### 5.4 — Section Drafts (Type 12)
 
@@ -410,6 +427,8 @@ SP-5 (`transparency/Canonical_MD/SP5_DevelopmentRecords/`) contains development 
 | `CFP_5.4.10_Conclusion_v1.md` | Conclusion | legacy_multifile |
 | `CFP_5.4.11_SP3.md` | SP-3 — Documentation Adequacy Account | git_inplace |
 | `CFP_5.4.12_SP2.md` | SP-2 — Navigation and Architecture Guide (this file) | git_inplace |
+| `CFP_5.4.13_SP1.md` | SP-1 — AI Usage Declaration and Archive Orientation | git_inplace |
+| `CFP_5.4.14_AIUsageArchive.md` | AI Usage and Documentation Archive (unnumbered closing note in the paper body; introduces the externalized archive) | git_inplace |
 
 **Superseded per-version files** (historical; not for submission):
 
@@ -445,21 +464,24 @@ A manifest note (`CFP_5.3.N_Note_RawConversationsManifest.md`, to be created bef
 
 The paper's section numbering changed across phases as the argument was reorganized and one section was cut.
 
-| v1/v2 title (Roman numeral) | Intermediate | Current |
-|---------------------------|--------------|---------|
-| I — Introduction | — | 1 — Introduction |
-| II — [original §2] | → consolidated | 2 — Systemic Barriers and the Need for a Policy |
-| III — [original §3] | → consolidated into §2 | — |
-| IV — [original §4] | → consolidated into §2 | — |
-| V — [original §5] | → Section 3 | 3 — Essentially Contested Concepts and the Community Approach |
-| VI — [original §6] | → Section 4 | *CUT in CFP phase* |
-| VII — [original §7] | → Section 5 | 5 — [Documentation as Practice] |
-| VIII — [original §8] | → Section 6 | 6 — Meaningful Human Control and Transparency Requirements |
-| IX — [original §9] | → Section 7 | 7 — Community Assessment of Documentation Adequacy |
-| Conclusion | — | Conclusion |
-| Appendix A | → SP-1/2/3 | *Eliminated; absorbed into SP-1/2/3* |
+The paper's section numbering changed across phases as the argument was reorganized, one section was cut, and a second renumbering took effect 2026-04-09 (recorded in `adapt.md` `section_renumbering` and `CFP_5.3.26_Note_DecisionRecord_SectionRenumbering.md`). The table below shows v1/v2 Roman numerals against the current (post-2026-04-09) CFP numbering.
 
-The consolidation of II/III/IV into current Section 2 is documented in `4.2.5_ModificationLog_Section_II-III-IV_Consolidation__S02.md`. The elimination of former Section 4 (old VI) and the appendix are documented in `CFP_5.2.4_pdl_SP1_SP2_SP3.md` (PDL-004). The SP reconception that replaced the appendix with SP-1/2/3 is documented in `III_4.7.3_MHC_Tracing_SP_Reconception.md`.
+| v1/v2 title (Roman) | Current CFP § | Title |
+|---|---|---|
+| I — Introduction | §1 | Introduction |
+| II — [original §2] | →§2 (consolidated) | Systemic Barriers to Disclosure |
+| III — [original §3] | →§2 (consolidated) | (merged into Systemic Barriers) |
+| IV — [original §4] | →§2 (consolidated) | (merged into Systemic Barriers) |
+| V — [original §5] | §3 | Essentially Contested Concepts and the Community Approach (Why Engage with AI-Assisted Scholarship?) |
+| VI — [original §6] | (cut) | Cut in CFP phase |
+| VII — [original §7] | §4 | Conditions for Adequate Transparency |
+| VIII — [original §8] | §5 | Mandatory Transparency in Practice |
+| IX — [original §9] | §6 | Community Assessment of Documentation Adequacy |
+| Conclusion | §7 | Conclusion |
+| — | (unnumbered closing note) | AI Usage and Documentation Archive (added 2026-05-12; introduces the externalized SP-1–SP-5 archive) |
+| Appendix A | (eliminated) | Replaced by SP-1/SP-2/SP-3 in 2026-03-02 SP reconception; SP-1/SP-2/SP-3 externalized to documentation archive 2026-05-12 |
+
+The consolidation of II/III/IV into current Section 2 is documented in `4.2.5_ModificationLog_Section_II-III-IV_Consolidation__S02.md`. The elimination of former Section 4 (old VI) and the appendix are documented in `CFP_5.2.4_pdl_SP1_SP2_SP3.md` (PDL-004). The SP reconception that replaced the appendix with SP-1/2/3 is documented in `III_4.7.3_MHC_Tracing_SP_Reconception.md`. The 2026-04-09 renumbering (which shifted old §5/§6/§7/§8 to current §4/§5/§6/§7) is documented in `CFP_5.3.26_Note_DecisionRecord_SectionRenumbering.md`. The 2026-05-12 externalization of SP-1/SP-2/SP-3 from paper body to documentation archive is recorded in `CFP_5.2.5_pdl_AIUsageArchive.md` (PDL-001).
 
 ---
 
