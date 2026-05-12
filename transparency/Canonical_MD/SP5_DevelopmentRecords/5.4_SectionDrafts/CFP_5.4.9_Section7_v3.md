@@ -14,16 +14,17 @@ cfp_target: "AI Tools in Ethics Research (topical collection)"
 session_id: SID-20260401-173934
 transformation: "v3 → v3.1: Redundancy pass 1. Cut reproduction-test paragraph to 1 sentence; compressed authenticity readings in §7.2 assessment questions; deleted 'documentation assessment is learning practice' paragraph (duplicates §6.3); compressed self-regulated learning argument; removed 'double contestation finds its resolution' restatement. Net −~370 words."
 word_count: ~1070
+section_numbering: pre_renaming
 ---
-# 7. Community Assessment of Documentation Adequacy
+# 6. Community Assessment of Documentation Adequacy
 
-## 7.1 From Disclosure to Assessment
+## 6.1 From Disclosure to Assessment
 
 Section 6 established what transparency documentation must do: enable evaluators across the community of legitimate positions to trace intellectual contributions to human understanding and direction. How should the scholarly community assess whether what is disclosed is adequate?
 
 Documentation adequacy is not self-certifying. An author can produce well-labelled supplementary files that do not enable tracing. Assessment is required—and the community needs a shared approach. The standard is documentation adequacy—does the disclosed record enable tracing assessment?—not reproduction success.
 
-## 7.2 The Organizing Question
+## 6.2 The Organizing Question
 
 Documentation is adequate when it enables evaluators to answer three questions.
 
@@ -33,9 +34,9 @@ Documentation is adequate when it enables evaluators to answer three questions.
 
 *Understanding and endorsement*: Does the documentation give reason to believe the author understood and endorsed what they present? The documentation should make visible: corrections to AI outputs, places where authorial judgment overrode AI suggestion, capacity to explain and defend the argument. The goal is not proof but reasonable grounds for attributing the contribution to the author's understanding.
 
-Recent empirical evidence underscores why these criteria are non-trivial. Abdulhai et al. (2026) find that LLM-assisted writing produces a 68.9% increase in stance neutralization—AI systematically erases the author's evaluative commitments while increasing surface markers of expressiveness. On expressivist or sentimentalist accounts, a tool that neutralizes stance while preserving the appearance of engagement threatens ethical inquiry at its core. LLM-assisted texts score higher on perceived quality metrics even as genuine evaluative content diminishes — output assessment alone cannot detect the loss that process documentation would reveal.
+Recent empirical evidence underscores why these criteria are non-trivial. An arXiv preprint by Abdulhai et al. (2026) — unreviewed at the time of writing — reports that LLM-assisted writing produces a 68.9% increase in stance neutralization in a general-text corpus; the study design and operationalization of "stance neutralization" should be treated with appropriate caution, and the inference to ethics research specifically remains to be established. If the finding generalizes, AI systematically erases the author's evaluative commitments while increasing surface markers of expressiveness. On expressivist or sentimentalist accounts, a tool that neutralizes stance while preserving the appearance of engagement threatens ethical inquiry at its core. LLM-assisted texts score higher on perceived quality metrics even as genuine evaluative content diminishes — output assessment alone cannot detect the loss that process documentation would reveal.
 
-## 7.3 A Dual Assessment Structure
+## 6.3 A Dual Assessment Structure
 
 *Quality assessment* proceeds as in standard peer review: evaluation of argument strength, conceptual clarity, originality, and scholarly rigor. This reads the submitted article.
 
@@ -43,7 +44,7 @@ Recent empirical evidence underscores why these criteria are non-trivial. Abdulh
 
 These assessments address distinct questions. Work with strong philosophical quality may have inadequate documentation; work with exemplary documentation may have weak arguments.
 
-## 7.4 Epistemic Norms for Assessment
+## 6.4 Epistemic Norms for Assessment
 
 The good faith orientation from Section 5 shapes documentation assessment. Assessment is epistemic inquiry: the question is whether the record enables the assessor to understand how this work came to be. Calibration matters: depth of review should be proportional to the complexity of the claimed contribution. Work claiming AI generated a central philosophical insight requires more sustained tracing than work claiming AI assisted with structuring a well-understood argument.
 
