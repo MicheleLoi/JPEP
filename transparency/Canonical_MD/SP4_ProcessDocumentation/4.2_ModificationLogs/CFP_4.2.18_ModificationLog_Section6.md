@@ -284,6 +284,43 @@ Decision rationale recorded in plan addendum (`C:\Users\loimi\.claude\plans\abst
 
 ---
 
+### MOD-024: §5.1 — meta-ethical route / ethical route / convergence recap removed; section trimmed to MHC framework (SID-20260513-003000)
+
+**Change:** §5.1 ("From Conditions to Practice") in the integrated paper `Paper/MDversion/CFP_FullPaper_v1.md` was trimmed by ~550 words. Removed:
+
+1. The opening recap paragraph ("Section 3 established that ethical inquiry is essentially contested at two levels, and that both levels converge on comprehensive process documentation. The two routes to that conclusion are developed here.").
+2. The *meta-ethical route* subsection paragraph (~110 words) restating §3's expressivist + cognitivist convergence on the tracking requirement.
+3. The *ethical route* subsection (~340 words across four paragraphs) — the Socrates/Kierkegaard/Nietzsche recap; the modular-synthesis / Cohen's AARON / Boden & Edmonds (2009, p. 29) illustration of agent-integrity in generative creative practice; the citation-patterns-as-implicit-methodology paragraph; and the documented-delegation-vs-concealment paragraph.
+4. The *Convergence* paragraph (~50 words).
+
+What remains in §5.1: the *framework* subsection (MHC operationalization, Santoni de Sio quote, tracing-requires-understanding paragraph, the MOD-003 tracking/tracing asymmetry paragraph engaging Mecacci & Santoni de Sio 2020, and the closing bridge to the three conditions from §4). The section is now substantially shorter and leads directly with the framework rather than with a recap.
+
+**Why:** User direction (SID-20260513-003000): §5.1 had become repetitive — the two-routes recap material doubled what §3 already establishes, and "a summary of the arguments is useful, but fits more in the previous section." The recap is moved to the end of §4.4 as a tight summary (MOD-013 in `CFP_4.2.17`).
+
+**Flag for review (substantive content removed, not merely recap):** The modular-synthesis / AARON / citation-patterns / different-modes content in the ethical-route subsection was *not* purely a recap of §3 — it added illustration (the Boden & Edmonds 2009 modular-synthesis analogy and the AARON case) that §3.3 does not contain in that form. §3.3 carries the Williams + Sartre agent-integrity argument; §3.7 carries the citation-patterns-as-implicit-methodological-declaration claim about Nozick/Parfit/Williams/Cavell. The modular-synthesis / AARON / Boden-Edmonds material is therefore now absent from the paper. Originally added in the double-contestation work (CFP_4.2.21 implementation pass, SID-20260401-173934). Candidate locations if reinstatement is wanted: §3.3 (as illustration of the agent-integrity argument) or a short footnote at §5.1. Flagged here rather than pre-empted, per user mandate of clarity over preservation.
+
+**Affected file:** `Paper/MDversion/CFP_FullPaper_v1.md` (CFP_FullPaper version bumped v1.3 → v1.4). Source draft `CFP_5.4.8_Section6_v4.md` not touched (frozen v1 baseline).
+
+---
+
+### MOD-025: §5.2 — "Engagement with Lloyd's standards" paragraph converted to footnote; Standard 2 explicitly distinguished from reproducibility (SID-20260513-003000)
+
+**Change:** The standalone "**Engagement with Lloyd's standards.**" paragraph in §5.2 (introduced in MOD-021 with the Standard 4 dismissal, then extended in CFP_4.2.36 MOD-008 with a Standard 3 footnote) was removed from main text. Its content — restructured for clarity — is consolidated into a single footnote attached to the closing sentence of the §5.2 lead paragraph ("Together these enable tracing assessment while remaining ecologically valid.^[…]"). The previous nested footnote on Standard 3 is folded in.
+
+**Substantive clarification.** The previous main-text wording "We adopt Standards 1 and 2" left an unresolved contradiction with §3.5 ("Reproducibility Is Not the Issue"): Standard 2 is *replicability*, which a reader could reasonably take to entail reproducibility — the very framing §3.5 rejects. The new footnote resolves this explicitly: we adopt Standards 1 and 2 *as Lloyd intends them* (prominence; the duty to provide enough process information for a reader to follow how the work was done), but we *reject* the reproducibility reading of Standard 2 on the grounds developed in §3.5. The transparency duty argued for in this paper is grounded in agent-integrity, not in methodological recoverability.
+
+**New footnote (verbatim):**
+
+> On how this proposal stands relative to Lloyd's (2025) four standards for AI-assisted scholarship — *prominence*, *replicability*, *content cross-checking*, *intra-textual clarity* — we adopt Standards 1 and 2 as Lloyd intends them: SP-1 implements prominence, and SP-3 through SP-5 implement the duty to provide enough process information for a reader to follow how the work was done. Standard 2 is *not* a call for reproducibility; the reproducibility reading — that another inquirer should be able to reproduce the result — we reject on the grounds developed in §3.5: reproducibility is the wrong model for ethics, and the transparency duty argued for here is grounded in agent-integrity, not in methodological recoverability. Standard 3 (content cross-checking) names a distinct, orthogonal scholarly duty — factual verification of claims and citations — that the author bears under standard scholarly practice whether or not AI was used; the apparatus proposed here neither substitutes for nor supersedes it. Standard 4 we reject: binary attribution of text to "AI" or "human" is incoherent for iterative prompt-revision workflows where editorial judgment is embedded in every clause — as the SP-4 archive of this paper illustrates. What matters for §5's framework is whether the intellectual trajectory is traceable to human understanding.
+
+**Why:** User direction (SID-20260513-003000): "too much room to this analysis; I suggest reconsidering a place as a footnote or aside. IMPORTANT=clarity. We adopt Standards 1 and 2. False 2 is reproducibility, we criticize it not adopt it." Two operational consequences: (i) the Lloyd engagement moves out of the main body's argumentative flow into a single footnote; (ii) the previously latent contradiction with §3.5 is made explicit and resolved in the only place it now lives (the footnote). Standards 3 and 4 keep their previous treatment but are now in the same footnote rather than spread across main text + nested footnote, which makes the framework's overall position more scannable. Net effect on §5.2 main text: the section now flows from "Three components structure the disclosure…" directly into the SP-1–SP-5 table and the nested-concerns diagram, without an intervening engagement paragraph.
+
+**Affected file:** `Paper/MDversion/CFP_FullPaper_v1.md` (CFP_FullPaper version bumped v1.3 → v1.4). Source draft `CFP_5.4.8_Section6_v4.md` not touched.
+
+**Convention note:** Per user direction this session, section-level modlogs are the landing place for changes to §5 content even when applied directly to the integrated paper rather than to the source draft.
+
+---
+
 ## Connections (auto)
 
 ### Source chat (primary)
