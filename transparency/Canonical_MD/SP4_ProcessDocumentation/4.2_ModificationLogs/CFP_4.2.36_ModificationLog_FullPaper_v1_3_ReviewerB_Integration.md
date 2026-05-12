@@ -346,3 +346,44 @@ The "by extension" carries MOD-003's logic into the abstract: the cognitivist an
 **Net change:** +10 characters in the abstract. No other text touched.
 
 **Bibliography:** No changes.
+
+---
+
+### MOD-011 — §7: self-indulgence / disproportionality acknowledged as a limitation the framework itself makes visible
+
+| Field | Value |
+|-------|-------|
+| Date | 2026-05-13 |
+| Type | Substantive argumentative addition; new philosophical concession |
+| Source of finding | Author-driven, late in v1.3 — not a reviewer recommendation |
+
+**Issue / motivation:** During v1.3 session review, the author observed that the project has an unmistakable self-indulgent aspect: the ratio of documentation produced (SP-4, SP-5, modlogs, epistemic traces, hubs, etc.) to argument delivered (~8,640-word paper) is extreme. R2 and R3 did not flag this; the author raised it directly: *"it is obvious that one aspect of this paper is self-indulgence. Just look at the amount of documentation produced in relation to the outcome. I would like to explore whether we can acknowledge this and use it creatively in the context of the argument."*
+
+**Argumentative logic of the move:** The paper's existing self-exemplification position is *feasibility, not adequacy* (§6.4). The self-indulgence concession is a deeper variant — not "this is one case" but "this case is potentially disproportionate to what the framework actually requires." Acknowledging it does three things simultaneously:
+
+1. **Demonstrates good faith.** The §4.2 "good faith orientation" the paper asks of the community is enacted by the author at the point where defensiveness would be tempting.
+2. **Makes the framework's calibration question visible.** Where adequate documentation ends and over-documentation begins is a *community-level* question that §6's dual assessment is positioned to address. The framework gains specificity by naming where it *doesn't* dictate.
+3. **Activates the Williams/Sartrean apparatus** (MOD-006, MOD-007). The author's mode of relation to the framework is itself a ground project; the chosen mode (maximalist documentation) is one expression of philosophical identity among several legitimate ones. Concealing the excess would be bad faith in the Sartrean access-and-refusal sense; disclosing it is the framework operating as designed.
+
+**Risk managed in the drafting:** The move can read as humble-bragging ("look how much I documented" disguised as a confession). The drafted register keeps the *framework's calibration question* load-bearing rather than the author's character. "The author chose excess" lets the community judge the excess; "I may have overdone it" would court the humble-brag and was deliberately avoided.
+
+**Change:** §7 — a new paragraph inserted after the existing limitations paragraph (ending "before the standards it motivates are themselves settled") and before the existing "A further ambiguity emerged from implementation" paragraph:
+
+> A further limitation the framework itself makes visible: the ratio of documentation produced to argument delivered in this case is, plausibly, disproportionate to what the framework actually requires. The author chose to produce more than an austere reading of SP-1 through SP-5 would demand. That choice is part of the disclosed record, and the community is in a position to assess it — as zealous responsibility, as self-indulgence, or as some mixture. The framework supports the assessment rather than preempting it. Where over-documentation begins to substitute for the inquiry it is meant to make visible is a community-level question the dual assessment structure of §6 is positioned to address.
+
+**Why this paragraph and not a sentence in the closing note:** Two candidate homes were considered — §7 (visible to every reader; integrates with the existing limitations work) and the closing note's "Scope and limits" section (archive-specific; lower visibility). §7 was chosen because the disproportionality acknowledgment is structurally a self-assessment limitation of the same character as the bootstrapping / single-case / self-assessment items already in §7, and most readers will never see the closing note.
+
+**Six framing choices recorded:**
+
+1. *"The framework itself makes visible"* — names the move as one the framework supports, not as confession smuggled in despite the framework.
+2. *"Plausibly disproportionate"* — concedes the possibility while leaving the final judgment to the community; not a self-condemnation.
+3. *"What the framework actually requires" vs. "what the author chose"* — separates the framework's demands from the author's implementation choices; preserves the framework's defensibility while admitting the implementation may have exceeded it.
+4. *"Zealous responsibility, self-indulgence, or some mixture"* — lists the community's range of possible assessments without preempting any of them. Includes "self-indulgence" verbatim per author's framing.
+5. *"The framework supports the assessment rather than preempting it"* — keeps the framework's role active (it enables the judgment) rather than passive (it's a target of judgment).
+6. *"Where over-documentation begins to substitute for the inquiry it is meant to make visible is a community-level question"* — names the calibration question explicitly and positions it as one §6 is built to handle.
+
+**Author intent recorded verbatim:** *"it is obvious that one aspect of this paper is self-indulgence. Just look at the amount of documentation produced in relation to the outcome. I would like to explore whether we can acknowledge this and use it creatively in the context of the argument."*
+
+**Bibliography:** No changes.
+
+**Scope discipline:** New paragraph lives only in `Paper/MDversion/CFP_FullPaper_v1.md`. The Conclusion source draft (`CFP_5.4.10_Conclusion_v1.md`) is unchanged.
