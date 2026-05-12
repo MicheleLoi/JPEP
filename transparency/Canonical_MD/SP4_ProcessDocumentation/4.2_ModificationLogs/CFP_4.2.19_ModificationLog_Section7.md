@@ -9,7 +9,7 @@ models:
   - "Claude Sonnet 4.6 (2026-03-24, initial CFP adaptation)"
   - "Claude Opus 4.6 (2026-03-24, Reviewer B)"
 date_started: 2026-03-24
-date_last_updated: 2026-03-24
+date_last_updated: 2026-05-12
 status: "Finalized (2026-03-24)"
 session_id: SID-20260324-090000
 source_conversation: "JPEP_20260324_161447.md"
@@ -145,6 +145,28 @@ A phrase connecting assessment norms to ecological validity (Section 5's first p
 **Why:** Both Shoulders reviewers (#1, #2, #25) and the Opus review flagged that the Abdulhai citation was presenting a preprint finding as established empirical fact, and that the inference from "LLM-assisted writing generally" to "ethics research specifically" was unsupported. The user's agreed response (CFP_5.3.27, S3): "use appropriate hedging about the findings." The revision retains the evidential weight of the finding while calibrating the epistemic status correctly.
 
 **Note on section numbering:** This entry refers to §6.2 of the current (post-renaming) draft. In pre-renaming numbering this was §7.2. The affected file is `CFP_5.4.9_Section7_v3.md`.
+
+---
+
+## Post-Review: Externalization of SP Apparatus — Community Assessment edit (2026-05-12)
+
+**Session:** SID-20260512-111348
+
+**Source:** `CFP_5.2.5_pdl_AIUsageArchive.md` (PDL-001 rationale; PDL-005 specification); `CFP_4.4.21_SectionGuidance_ExternalizationImplementation.md`.
+
+### Entry 8 — §6.4 closing sentence re-pointed to archive (Edit 4)
+
+**Change:** The §6.4 closing passage previously read "The supplementary materials represent one implementation. Whether SP-3's tracing claim is supported by SP-4's underlying materials is the question this article invites the community to address." The revision replaces "the supplementary materials" with "the documentation archive associated with this article" and reformulates the SP-3/SP-4 reference to locate them in that archive. §6.3's description of what an assessor reads (SP-1 → SP-5) is **kept unchanged** — it is framework-level voice and remains correct under the externalization.
+
+**Previous text:**
+
+> The self-exemplification of this article creates an immediate opportunity. The supplementary materials represent one implementation. Whether SP-3's tracing claim is supported by SP-4's underlying materials is the question this article invites the community to address.
+
+**Revised text:**
+
+> The self-exemplification of this article creates an immediate opportunity. The documentation archive associated with this article represents one implementation. Whether the SP-3 in that archive supports its tracing claim against the underlying SP-4 materials is the question this article invites the community to address.
+
+**Why:** Per CFP_5.2.5 (PDL-005): the community-invitation framing is preserved; the referent of "the supplementary materials" shifts from in-paper to in-archive. The §6.3 framework-level description (an assessor reads SP-1 through SP-5) is unchanged.
 
 ---
 

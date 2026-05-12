@@ -231,6 +231,28 @@ The v3 source draft:
 
 ---
 
+## Post-Review: Externalization of SP Apparatus — Mandatory Transparency edit (2026-05-12)
+
+**Session:** SID-20260512-111348
+
+**Source:** `CFP_5.2.5_pdl_AIUsageArchive.md` (PDL-001 rationale; PDL-005 specification); `CFP_4.4.21_SectionGuidance_ExternalizationImplementation.md`.
+
+### MOD-022 — Lloyd-engagement sentence re-pointed to archive (Edit 3)
+
+**Change:** The Lloyd-engagement passage at the end of §5.2 previously read "as the process documentation in SP-4 illustrates… which is what SP-4 captures." The revision marks the example as *this paper's archived SP-4* and the second mention as a generic *an SP-4*, preserving the framework's normative voice while locating the per-paper instance in the archive. The SP-1–SP-5 framework table in §5.2 is **kept unchanged** — it specifies the framework's transparency elements at the normative level. §5.4 Pilot Observations was reviewed: no per-paper SP-3 claim is present; no rewrite required.
+
+**Previous text:**
+
+> …making binary attribution of text to "AI" or "human" incoherent — as the process documentation in SP-4 illustrates. What matters is whether the intellectual trajectory is traceable to human understanding, which is what SP-4 captures.
+
+**Revised text:**
+
+> …making binary attribution of text to "AI" or "human" incoherent — as the process documentation in this paper's archived SP-4 illustrates. What matters is whether the intellectual trajectory is traceable to human understanding, which is what an SP-4 captures.
+
+**Why:** Per CFP_5.2.5 (PDL-005): in-paper claims of the form "this paper contains SP-X" become "the SP-X for this paper is in the archive" or are recast in framework voice. The Lloyd-engagement line was the only such claim in §5 outside the framework table; the table itself is normative and unchanged.
+
+---
+
 ## Connections (auto)
 
 ### Source chat (primary)
