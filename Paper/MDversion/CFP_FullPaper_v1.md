@@ -43,7 +43,7 @@ known_issues:
 ## Abstract
 
 Existing AI disclosure mandates in scholarship leave transparency philosophically unspecified. We argue that ethical inquiry is essentially contested at two independent levels — about what it is and what it demands of the inquirer — defeating output-only evaluation and welfare-economic dismissal — and, by extension, reproducibility framings. The transparency duty is grounded in agent-integrity. We develop a documentation-adequacy framework operationalizing Meaningful Human Control through five transparency elements (SP-1–SP-5), demonstrated by the paper itself, whose full documentation record is archived at a persistent identifier.
-che
+
 ---
 
 # 1. Introduction
