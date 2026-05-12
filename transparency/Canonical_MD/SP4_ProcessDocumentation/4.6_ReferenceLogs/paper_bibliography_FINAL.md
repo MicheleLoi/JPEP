@@ -6,12 +6,15 @@ title: "Complete Paper Bibliography — Submission Ready"
 status: Active
 build_source: true
 note: "USE THIS FILE to build the paper bibliography for submission. paper_bibliography.md is the working document (process notes, section-by-section usage). This file contains only submission-ready entries."
-last_updated: 2026-04-09
-session_id: SID-20260409-200754
+last_updated: 2026-05-12
+session_id:
+  - SID-20260409-200754
+  - SID-20260512-154043
 inputs:
   - paper_bibliography.md
   - CFP_5.4.4_Section3_v3.md (Williams entry — missing from working bib)
   - CFP_5.3.27_Note_ReviewResponse_Draft.md (Strathern, Mercier — added from review)
+  - "Cordasco Substack corpus (two posts cited in §3 v4)"
 ---
 
 # Complete Paper Bibliography
@@ -40,6 +43,10 @@ inputs:
 **Cheng, Z., Zhang, Z., Xu, Q., Maeda, Y., & Gu, P.** (2025). "A meta-analysis addressing the relationship between self-regulated learning strategies and academic performance in online higher education." *Journal of Computing in Higher Education*, 37(1), 195–224. https://doi.org/10.1007/s12528-023-09390-1
 
 **COPE Council.** (2024). "COPE position — Authorship and AI." Committee on Publication Ethics. https://doi.org/10.24318/cCVRZBms
+
+**Cordasco, C. L.** (2026a). "The Invisible Upside of Cognitive Offloading." *Paperclips and Other Alignment Problems* (Substack), 1 February 2026. https://carlolc.substack.com/p/the-invisible-upside-of-cognitive
+
+**Cordasco, C. L.** (2026b). "Acemoglu et al (2026) are wrong about AI & Human Cognition." *Paperclips and Other Alignment Problems* (Substack), 2 March 2026. https://carlolc.substack.com/p/acemoglu-et-al-2026-are-wrong-about
 
 **Elsevier.** (2023). "The use of generative AI and AI-assisted technologies in writing for Elsevier." https://www.elsevier.com/about/policies-and-standards/the-use-of-generative-ai-and-ai-assisted-technologies-in-writing-for-elsevier
 

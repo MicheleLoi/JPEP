@@ -2,16 +2,21 @@
 project: JPEP
 document_type: Type 3 - Modification Log
 label: CFP_4.2.23_ModificationLog_Section3_v3
-title: "Modification Log: Section 3 v2 → v3 (Two-Order Restructuring)"
+title: "Modification Log: Section 3 v2 → v3 (Two-Order Restructuring) + v3 → v4 (Cordasco Welfare-Economic Objection)"
 date_created: 2026-04-03
+date_last_modified: 2026-05-12
 status: Draft
-source: "Claude Opus 4.6 (Claude Code session)"
-source_conversation: SID-20260403-093628
+source: "Claude Opus 4.6 (Claude Code session) / Claude Sonnet 4.6 for v4 entry"
+session_id:
+  - SID-20260403-093628
+  - SID-20260512-154043
 related:
   - "CFP_5.4.4_Section3_v2.md (input: v2 draft)"
-  - "CFP_5.4.4_Section3_v3.md (output: v3 draft)"
+  - "CFP_5.4.4_Section3_v3.md (output: v3 draft, in-place-updated to v4)"
   - "CFP_4.7.15_EpistemicTrace_AuthenticityArgumentDevelopment.md (epistemic trace)"
   - "CFP_4.2.21_ModificationLog_DoubleContestation_Implementation.md (prior: double contestation implementation)"
+  - "CFP_5.4.9_Section7_v3.md (source of metacognitive-monitoring counter-argument reused in v4)"
+  - "Paper/MDversion/04_the_dilemma_reconsidered_short_term_positioning_and_long_term_transformation.md (source of generative-framework welfare argument reused in v4)"
 feeds_into:
   - "CFP_5.4.4_Section3_v3.md"
 ---
@@ -89,3 +94,67 @@ Philosophical development in session SID-20260403-000000 (2026-04-03). The user 
 ## Status
 
 Draft — pending user review.
+
+---
+
+# v3 → v4 (Cordasco Welfare-Economic Objection-Response Added)
+
+*Session SID-20260512-154043, 2026-05-12.*
+
+## What v3 Contained at the Williams Hinge
+
+The Williams paragraph (line 51 of v3) introduced ground-projects integrity as the social dimension of accountability — the inquirer owes the community legibility of identity-constituting commitments when AI assistance significantly changes the mode of philosophical inquiry. It closed the ethical case for transparency before the section moved to "Why Output-Evaluation Fails in Ethics." The paragraph did its work in two registers (epistemics and integrity) but did not address a different kind of objection: a welfare-economic one questioning whether transparency apparatus passes a cost-benefit test in the first place.
+
+## What v4 Adds
+
+Three new paragraphs inserted between the Williams paragraph and the "Why Output-Evaluation Fails in Ethics" subsection. ~585 words added; §3 v4 lands at ~2,080 words against the section guidance target of 800–1,000 (target now revised upward; expansion accepted as the section carries the paper's core argumentative weight).
+
+### 1. **A welfare-economic challenge** (~205 words)
+
+Steelmanned objection paraphrasing Cordasco (2026a, "The Invisible Upside of Cognitive Offloading"; 2026b, "Acemoglu et al (2026) are wrong about AI & Human Cognition"). Core argument: frameworks evaluating AI's impact on intellectual practice exhibit a structural asymmetry — costs of restriction (skill decay, friction, documentation overhead) are visible within the framework that specifies them, while the deepest benefits (emergent reorganizations of competency) are constitutively outside it. Specifying transparency conditions in advance risks freezing pre-AI categories and excluding the very forms of value AI-assisted ethics may yet make possible.
+
+### 2. **The welfare calculation runs the other way** (~230 words)
+
+Welfare-on-welfare reply that engages Cordasco on his own register rather than retreating to a different one. Two moves:
+
+- **Cost side correction.** AI-assisted intellectual practice creates a reduced-structure epistemic environment in which the cognitive scaffolding that ordinarily forces forethought, self-evaluation, and attribution tracking is absent. Documentation requirements re-impose this missing structure rather than adding friction to a frictionless practice. The welfare cost of *not* requiring transparency is the foreseeable erosion of metacognitive habits. Cites Zimmerman (2002) and Cheng et al. (2025); gestures forward to §6, where this argument is developed at length.
+- **Benefit side correction.** The framework here is generative, not restrictive. By making process visible it creates conditions for community-level methodological learning, accumulated patterns across submissions, and external recognition from adjacent fields — precisely the emergent benefits Cordasco's account celebrates. The architectural asymmetry he diagnoses applies to restrictive mandates, not to frameworks designed to make practice legible as it evolves.
+
+This move recovers welfare-economic reasoning the paper already deploys elsewhere (§6 metacognitive-monitoring response to the "disproportionate costs" objection; old §4 "Positive Feedback Loops" generative-framework argument now adapted from journal-creation framing to a generic transparency-framework claim).
+
+### 3. **And the moral duty stands independently** (~150 words)
+
+Register-distinction reply. Even setting the welfare calculation aside, the transparency duty is not grounded in such a calculation. On the Williams account, certain commitments are constitutive of the agent and cannot be traded against external goods; the legibility of philosophical practice is internal to integrity, not an external compliance cost. Welfare-accounting applies properly to *institutionalizations* of the duty — disclosure regimes, journal policies — which are downstream questions. It does not reach the moral duty itself.
+
+## Why the Changes Were Made
+
+**Two reasons.**
+
+First, the moral-vs-post-institutional distinction needed to be made explicit. The Williams paragraph in v3 specified the integrity grounding of the transparency duty but left implicit that this duty is moral (flowing from the inquirer's commitments) rather than post-institutional (compliance with disclosure regimes). The Cordasco engagement makes the distinction load-bearing: by anticipating a critique that targets institutional architectures of restriction, the paragraph clarifies that the duty defended here is not such an architecture.
+
+Second, the strongest available welfare-economic critique of AI-governance frameworks deserves a steelmanned reply on its own terms before the register move. Conceding the welfare ground entirely to Cordasco would weaken the paper: the paper does in fact have welfare-economic resources (metacognitive monitoring, generative-framework intertemporal benefits) that engage the critique directly. The three-paragraph structure presents the strongest objection, replies on welfare ground using the paper's existing resources, then preserves the moral case as primary. The institutional-encoding question (where Cordasco's critique does apply) is explicitly conceded as downstream.
+
+## Source of Changes
+
+User direction in session SID-20260512-154043 (2026-05-12). Three substantive decisions:
+
+1. Treat Cordasco as a potential objector, not a sympathetic interlocutor (rejecting the alternative of citing him as an ally for the Locke-position framing).
+2. Steelman the objection rather than caricature it.
+3. Reply *with a welfare argument*, not only by retreating to a different register. Source material identified: §6 v3 line 51 (metacognitive monitoring with Zimmerman/Cheng citations) and old `Paper/MDversion/04_the_dilemma_reconsidered...md` (positive-feedback-loop and external-recognition arguments now adapted from journal-creation framing).
+
+Citation convention: non-literal paraphrase + Substack reference, following the Berg & Robbins (*The Point*) precedent already in the paper. The Cordasco corpus is informal and not peer-reviewed; the citations register the position taken seriously without elevating it to scholarly authority. Author paraphrases all attributed claims; no direct quotes from the Substack are used.
+
+## Files Touched
+
+- `CFP_5.4.4_Section3_v3.md` — body insert after Williams paragraph; frontmatter version bumped v3 → v4 in place (single-file convention; `versioning_convention: git_inplace` added); local references list extended with Cheng (2025), Cordasco (2026a, 2026b), Zimmerman (2002).
+- `paper_bibliography_FINAL.md` — two Cordasco entries added alphabetically between COPE Council and Elsevier.
+- `CFP_5.3.1_WorkPlan_CFP_Adaptation.md` — RESUME HERE updated: §3 row no longer flags "Williams on integrity paragraph pending discussion".
+- This modlog — extended with the v3 → v4 entry above.
+
+## Deferred (not addressed in this revision)
+
+The "visibility argument" sketched in `CFP_5.3.27_Note_ReviewResponse_Draft.md` lines 76–81 (philosophy's implicit process signals — Williams on Greek tragedy, Cavell, Nozick, Lewis) is a separate deferred item from Opus Reviewer B's O1 objection. It remains a Tier 3 review edit item; the new paragraphs do not pre-empt it.
+
+## Status (v4)
+
+Draft — applied to file; pending user review of the paragraphs in context after commit.
