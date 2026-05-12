@@ -170,6 +170,37 @@ A phrase connecting assessment norms to ecological validity (Section 5's first p
 
 ---
 
+## Post-Review: Opus B Review Response — Circularity (2026-05-12)
+
+**Session:** SID-20260512-154043
+**Source:** `CFP_5.3.27_Note_ReviewResponse_Draft.md` (lines 113–119, Opus B O5 — Circularity)
+
+### Entry 9 — §6.4 self-exemplification: feasibility/adequacy distinction made explicit (O5)
+
+**Change:** The §6.4 self-exemplification passage was rewritten to make explicit the distinction Opus B's O5 objection charged the paper with conflating: the article's self-citation is evidence of *feasibility* (that creative philosophical work can be documented without the documentation displacing or hollowing out the inquiry it records), not evidence of *adequacy* (whether THIS instance's SP-3 actually supports its tracing claim — a community-level question).
+
+**Previous text:**
+
+> The self-exemplification of this article creates an immediate opportunity. The documentation archive associated with this article represents one implementation. Whether the SP-3 in that archive supports its tracing claim against the underlying SP-4 materials is the question this article invites the community to address.
+
+**Revised text:**
+
+> The self-exemplification of this article creates an immediate opportunity, but it must be read carefully. The article's documentation archive serves here as evidence of *feasibility* — that the substantive philosophical work of a paper can be extensively documented without the documentation displacing or hollowing out the inquiry it records. It does not constitute evidence of *adequacy*: whether the SP-3 in that archive actually supports its tracing claim against the underlying SP-4 materials is the question this article invites the community to address. Feasibility is what an author can demonstrate by exhibition; adequacy is what only the community can settle.
+
+**Why:** Opus B (O5) charged: "The paper argues for a transparency framework, then cites its own implementation as evidence. The implementation is not independently assessed. Feasibility and adequacy are conflated." User reply in CFP_5.3.27 (line 119): "Does it cite itself as evidence? Yes, but evidence of what? It's an evidence of feasibility. It answers the objection: but documenting creative thought, as in philosophical writing, is impossible, without making a dead corpse out of it."
+
+The previous version was already on the right side rhetorically — "the question this article invites the community to address" places adequacy-assessment with the community — but did not name the distinction explicitly. The new version:
+
+1. **Names feasibility as the author-demonstrable claim** and specifies what feasibility shows: that documentation does not displace or hollow out the inquiry (the "dead corpse" worry, recast in measured register).
+2. **Names adequacy as the community-settled claim** and keeps the existing closing sentence ("the question this article invites the community to address") repositioned as the adequacy question.
+3. **Closes with an aphorism** — "Feasibility is what an author can demonstrate by exhibition; adequacy is what only the community can settle" — that makes the distinction memorable and forecloses the conflation charge.
+
+The revision preserves the §6.4 placement (under "Epistemic Norms for Assessment") and the existing assessment-norm context: this is what the community does, this is what the author has done, and the difference between exhibition and assessment is now load-bearing.
+
+**Note on section numbering:** §6.4 in post-renaming numbering; §7.4 in pre-renaming. Affected file: `CFP_5.4.9_Section7_v3.md`. Frontmatter version bumped v3.1 → v3.2 in place per single-file convention.
+
+---
+
 ## Connections (auto)
 
 ### Source chat (primary)
