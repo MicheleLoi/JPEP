@@ -242,3 +242,46 @@ User clarification before drafting: "we're not asking about a post-institutional
 - Cleanup anomalies: `.bak`, `.patch.txt`, space in `5.2.8 pdl-appendix-2.md`.
 
 **Next:** Phase 4 (Abstract + Title), reflecting post-renumbering, post-externalization, and the v5.1 §3 architecture (agent-integrity grounding; not reproducibility-based; moral not post-institutional).
+
+---
+
+## SID-20260512-223052 → SID-20260512-234756 — 2026-05-12 / 2026-05-13
+
+**Goal:** Phase 5 commits 2+: CFP_FullPaper assembled, v1.1 cleanup, v1.2 (Reviewer A) revisions, v1.3 (Reviewer B) integration. Two parallel Opus peer reviews launched. Word export for journal.
+
+**Mode:** as-we-go.
+
+**Done — twelve commits on `cfp-ai-ethics-inquiry`** (per-MOD detail in CFP_4.2.34 / .35 / .36):
+
+| Commit | Substance | Modlog |
+|---|---|---|
+| `ca921f3` | v1 assembly anchor | — |
+| `fb128e4` | v1.1: cross-refs §4/§5/§6; Boden p.138 → p.29; Santoni de Sio VERIFY tag removed; Sartre + Boden bib entries | `CFP_4.2.34` |
+| `d073295` | Work plan: Phase 5 Commit 2 marker | — |
+| `a0a9d9f` | v1.2 Reviewer A: References sync; §3.2 softened; §3.5 reproducibility-as-extension; §7 "and held" rewritten | `CFP_4.2.35` |
+| `a1e0e77` | v1.3 MOD-001: BaHammam at §2.1 (priority check vs Chat X 2025-10-10) | `CFP_4.2.36` |
+| `08363d0` | v1.3 MOD-002: §4.4 engages Hosseini-Resnik-Holmes three-location prescription | `CFP_4.2.36` |
+| `6e24a8e` | v1.3 MOD-003: §5.1 tracking treated as own challenge; Mecacci & SdS engaged | `CFP_4.2.36` |
+| `ec3499c` | v1.3 MOD-004/005/006: Schwitzgebel §3.7; Sourati §6.2 footnote; Williams inversion §3.3 | `CFP_4.2.36` |
+| `ad30a3b` | v1.3 MOD-007: §3.3 Sartrean passage anchored (Part I Ch.2 + Part III Ch.1 §IV); "self-deception" gloss rejected per Sartre's own argument | `CFP_4.2.36` |
+| `bb386d8` | v1.3 MOD-008: §5.2 footnote acknowledging Lloyd Standard 3 | `CFP_4.2.36` |
+| `c3115e4` | v1.3 MOD-009: §3.7 ¶3 trimmed; §7 owns the closing punch | `CFP_4.2.36` |
+| `2a2622a` | v1.3 MOD-010: abstract softened ("alike" → "by extension") | `CFP_4.2.36` |
+| `e3b3ee1` | v1.3 MOD-011: §7 self-indulgence / disproportionality acknowledged | `CFP_4.2.36` |
+
+**Reviews:** Two background Opus agents — Reviewer A (CFP-fit, `af86e142f849c37e2`) + Reviewer B (state-of-art, `a0cb1bffadb4cb593`). Both returned **Minor Revision**. Reviewer A's 4 flagged items integrated in v1.2; Reviewer B's 9 flagged items integrated in v1.3. One item rejected: Cavalcante Siebert (third MHC-operationalisation reference deemed redundant given Santoni de Sio 2018 + Mecacci & Santoni de Sio 2020).
+
+**Method:** every accepted item = own MOD = own commit (granular revert path); rejections recorded in modlog audit trail; author rationale captured verbatim across MOD entries — notably *"with AI, we're never sure where it takes the idea from"* (MOD-001), *"I learned something about bad faith, which is not self-deception at all"* (MOD-007), and *"it is obvious that one aspect of this paper is self-indulgence... use it creatively in the context of the argument"* (MOD-011).
+
+**Sartre verification:** Czech Charles University course PDF of the Barnes (1956) translation pulled to local temp; TOC verified at front-matter pp. v–vi; the literal quote in MOD-007 anchored to book p. 49. (The Wikipedia summary's "Part 3, Ch. 1: The Look" was imprecise — Chapter 1 is titled "The Existence of Others"; The Look is its fourth section.)
+
+**Bibliography additions (eight new entries):** BaHammam 2025, Hosseini-Resnik-Holmes 2023, Resnik & Hosseini 2025 (author order corrected from Reviewer B's "Hosseini & Resnik"), Schilke & Reimann 2025, Mecacci & Santoni de Sio 2020, Schwitzgebel et al. 2024, Sourati et al. 2025, Moseley 2014 (cf. only).
+
+**Side-effects of session:**
+- Zotero MCP server config added to `~/.claude/mcp.json` (HTTP, port 23120). Requires Claude Code restart to activate.
+- Word export to `Paper/journal/CFP_FullPaper_v1.docx` (47 KB) via pandoc.
+
+**Deferred:**
+- Phase 5 final consistency read-through of v1.3.
+- Update RESUME HERE in `CFP_5.3.1` to point at `e3b3ee1` (held — user discretion on whether to update before or after read-through).
+- Zenodo DOI mint at submission tag; source-conversations manifest; branch merge to `main`; `build_paper.py` fix (references stale `paper_bibliography.md`, lacks Abstract).
