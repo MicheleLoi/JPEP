@@ -345,6 +345,22 @@ The dominant transformation is strategic reorientation of the derivation: same p
 
 ---
 
+### MOD-013: §4.4 — summary paragraph appended; absorbs §5.1 recap content (SID-20260513-003000)
+
+**Change:** A summary paragraph (~140 words) appended to the end of §4.4 ("From Conditions to Framework") in the integrated paper `Paper/MDversion/CFP_FullPaper_v1.md`. The paragraph recapitulates Section 3's two-level essentially-contested argument (meta-ethical route + ethical / agent-integrity route) and states the convergence on the operational requirement ("did the author understand and endorse this?") that §5 is about to develop.
+
+**New text:**
+
+> To recapitulate the route from Section 3 before turning to the framework: the essential contestedness of ethical inquiry operates at two levels. Meta-ethically, the cognitivism/non-cognitivism dispute means no tradition can treat its own evaluative criteria as the default; for expressivism in particular, those criteria are constitutively process-dependent and the output underdetermines whether the relevant attitude was held. Ethically, the agent-integrity tradition — Socrates, Kierkegaard, Nietzsche, Williams — treats philosophical activity as constitutively self-expressive: what is at stake is whether the inquirer's relation to her own thinking remains legible in the text. Both levels converge on a single operational requirement: a framework that makes the process visible enough for the question "did the author understand and endorse this?" to be answerable. The next section develops one.
+
+**Why:** Twin to MOD-024 in `CFP_4.2.18` (§5.1 trim). The user observed that §5.1 had become repetitive — it recapped Section 3 before turning to MHC — and that the summary "fits more in the previous section." Moving the recap to the end of §4.4 has two effects: (i) §4 now closes with an explicit bridge that completes the §3 → §5 path inside the conditions-to-framework section that already does that bridging work, and (ii) §5.1 sheds ~550 words of recap and can lead directly with the MHC framework operationalization. The recap is intentionally compressed: it identifies the two routes by name (meta-ethical / ethical), names the agent-integrity tradition exemplars carried across from §3.3, and lands on the operational question the framework is meant to answer — without redeveloping the arguments that §3 already establishes.
+
+**Convention note:** Per user direction this session (SID-20260513-003000), section-level modlogs are the landing place for changes that happen directly in the integrated paper `CFP_FullPaper_v1.md`, even though the source section draft (`CFP_5.4.7_Section5_v2.md`) is not itself touched. The frozen source draft remains the v1 baseline; the integrated paper accumulates v1.x revisions; modlog entries here describe what changed *in the integrated paper* for this section's content.
+
+**Affected file:** `Paper/MDversion/CFP_FullPaper_v1.md` (CFP_FullPaper version bumped v1.3 → v1.4).
+
+---
+
 ## Connections (auto)
 
 ### Source chat (primary)
