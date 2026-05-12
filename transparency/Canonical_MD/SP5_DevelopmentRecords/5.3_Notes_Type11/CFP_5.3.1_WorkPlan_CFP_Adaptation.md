@@ -18,7 +18,7 @@ related:
 
 ---
 
-## RESUME HERE (last updated 2026-05-12, session SID-20260512-171552, after commit `33aa741`)
+## RESUME HERE (last updated 2026-05-12, session SID-20260512-223052, after commit `fb128e4`)
 
 **This section is the canonical entry point for resuming JPEP work.** Per-session granular history is in `CFP_session_log.md` (same folder); this section summarises state and points forward.
 
@@ -70,36 +70,30 @@ The "visibility argument" sketch in `CFP_5.3.27` lines 76–81 (Williams Greek t
 - **Title:** *The Journal of Prompt Engineered (Moral) Philosophy: Or, Why AI-Assisted Ethics Research Requires Process Transparency.* The "Frankenstein; or, …" structure: a wink upfront (the project's own working name reread as a self-aware framing of what the paper is about), an argumentative CFP-anchor after the "Or." User-selected from a field of nine candidates; the sober variants foregrounding agent-integrity or documentation-adequacy were declined in favor of the argumentative subtitle that names the question rather than the answer.
 - **Abstract:** ~80 words. Saved in `CFP_5.4.15_Abstract_v1.md` (numbers 11–14 were taken by SP-3, SP-2, SP-1, and the AI Usage Archive). Drafted in two passes: first an over-balanced v1 keyed to Introduction + §3 + Conclusion alone; then a v2 rebalanced against the actual post-v5 paper weights (§3 carries ~30% of body weight and defeats three truth-tracking-adjacent framings — cognitivist, Cordasco/welfare-economic, reproducibility; §5 framework + §6 dual assessment proportionally weighted); then v3 compressed by ~70% to the philosophical core (§3 contestedness + three defeats, agent-integrity grounding, framework name, self-exemplification + archive). §4 conditions, §6 dual assessment, and the "restoration" closing were explicit trade-offs against the compression target. Modlog `CFP_4.2.33_ModificationLog_AbstractTitle.md` records both decisions (MOD-001 abstract, MOD-002 title).
 
-**Phase 5 — IN PROGRESS (started 2026-05-12, SID-20260512-171552).**
+**Phase 5 — IN PROGRESS (started 2026-05-12, SID-20260512-171552; v1.1 cleanup completed in SID-20260512-223052).**
 
-`Paper/MDversion/CFP_FullPaper_v1.md` exists (assembled earlier today; not yet committed). Its frontmatter `known_issues:` flags three problems: cross-reference drift in §4/§5/§6 body text; missing bibliography entries for Sartre (1956) and Boden & Edmonds (2009); a `[VERIFY: replace with page number]` tag on the Santoni de Sio & van den Hoven §6.2 quote in §5. Versioning convention chosen: single file, `git_inplace` — v1 stays in place; v1.1 is the post-cleanup state via frontmatter version bump. No submission-anchor pin needed (the Tier 3 review was of an earlier assembly, `CFP_5.3.23_Note_AssembledPaperBuild`, not of CFP_FullPaper_v1).
+`Paper/MDversion/CFP_FullPaper_v1.md` now at v1.1 (commit `fb128e4`). v1 assembly anchor is preserved at commit `ca921f3`. Single-file `git_inplace` versioning: `git diff ca921f3..fb128e4 -- Paper/MDversion/CFP_FullPaper_v1.md` is the authoritative v1 → v1.1 change record. No submission-anchor pin needed (the Tier 3 review was of an earlier assembly, `CFP_5.3.23_Note_AssembledPaperBuild`, not of CFP_FullPaper_v1).
 
 **Phase 5 — Commit 1 (Tier 3 review chain story-completeness) — DONE (commits `33aa741` + `13679ee`).**
 Structured `inputs:` and `feeds_into:` added to `CFP_5.3.23`, `CFP_5.3.24`, `CFP_5.3.25`, `CFP_5.3.27`. The chain `5.3.23 → {5.3.24, 5.3.25} → 5.3.27 → {4.2.23, 4.2.18, 4.2.19, 4.7.21, 4.4.22, 5.3.29}` is now graph-traversable in frontmatter (no prose-only links). Modlog entries already linked review docs at the entry level via `Source:` lines — no body edits required.
 
 Session-level fact added to `transparency/SCRIPTS/hub_annotations.yaml` for `SID-20260409-173842` (the response-draft session whose `session_topology.yaml` entry had `inputs: []` and an empty `goal`). hub_annotations.yaml is the project's documented authoritative source for non-inferable session-level facts (per `CFP_5.3.16` governance, 2026-04-03), git-tracked. `session_topology.yaml` itself is gitignored (local-only) and updated by `mhc_end.py` at session end — only `artifacts_produced` is auto-derived; goals/inputs are hand-maintained. **Backlog:** most SIDs from 2026-04-09 onwards are not yet in `hub_annotations.yaml`; the intended graph-builder wiring is also still pending. Both are flagged in the new hub_annotations entry's `note` for future backfill.
 
-**Phase 5 — Commit 2 (CFP_FullPaper v1.1 cleanup) — TODO.**
+**Phase 5 — Commit 2 (CFP_FullPaper v1.1 cleanup) — DONE (commits `ca921f3` v1 anchor + `fb128e4` v1.1 cleanup).**
 
-Detailed steps preserved in plan file `~/.claude/plans/please-self-correct-these-problems-cryptic-shamir.md`. Summary in order:
+All five planned changes applied in `Paper/MDversion/CFP_FullPaper_v1.md`:
 
-1. Load `WebSearch` + `WebFetch` via ToolSearch.
-2. Web-verify Sartre 1956 *Being and Nothingness* — find canonical Philosophical Library 1956 edition publisher details and a traceable ISBN (likely a Washington Square / Routledge reissue — flag which edition). Cross-check via WorldCat or Google Books.
-3. Web-verify Boden & Edmonds 2009 "What is generative art?" — resolve DOI via Crossref API (`https://api.crossref.org/works?query.title=What+is+generative+art&query.author=Boden+Edmonds`) or Taylor & Francis publisher page for *Digital Creativity* 20(1-2):21-46.
-4. WebFetch the open-access Santoni de Sio & van den Hoven 2018 article (DOI `10.3389/frobt.2018.00015` on Frontiers) and locate the quoted passage `"systems whose actions and states are not traceable to relevant understanding..."`; record the page or section number.
-5. Present a confirmation table in chat with clickable DOI/WorldCat/Frontiers links. **Pause for user verification.**
-6. After user OK: insert Sartre and Boden & Edmonds alphabetically in `transparency/Canonical_MD/SP4_ProcessDocumentation/4.6_ReferenceLogs/paper_bibliography_FINAL.md`.
-7. Update `Paper/MDversion/CFP_FullPaper_v1.md`:
-    - Replace `[VERIFY: replace with page number]` in §5 quote with the resolved page number.
-    - Fix cross-reference drift in body only: §4 "Section 6 develops the framework" → "§5 develops…"; §5 "The three conditions from Section 5" → "from §4"; §6 "Section 6 established what transparency documentation must do" → "§5 established…"; §6 "good faith orientation from Section 5" → "from §4".
-    - Bump frontmatter `version: v1.1`; add `versioning_convention: git_inplace`; update `assembly:` to describe v1.1 changes; reduce `known_issues:` to anything still outstanding; refresh `inputs:` to point to updated bibliography.
-8. Do NOT edit the source section drafts. Their `section_numbering: pre_renaming` keeps them authoritative in source form; cross-ref corrections live only in the assembled paper.
-9. Create modlog `transparency/Canonical_MD/SP4_ProcessDocumentation/4.2_ModificationLogs/CFP_4.2.34_ModificationLog_FullPaperAssembly.md` with MOD entries for the v1.1 cleanup (cross-refs, bib entries, page number).
-10. Commit. Message style: "CFP_FullPaper v1.1: cross-refs reconciled; bibliography filled; page number resolved".
-11. Update this RESUME HERE on completion.
+1. Cross-reference reconciliation (§4 / §5 / §6 body) — four post-renumbering references corrected (see MOD-001 in `CFP_4.2.34`).
+2. Boden & Edmonds (2009) page corrected: `p. 138` → `p. 29`. Quote unchanged.
+3. Santoni de Sio & van den Hoven (2018) `[VERIFY: replace with page number]` tag removed — Frontiers is online-only; `(§6.2)` is the correct locator.
+4. Bibliography additions: Sartre (1956) and Boden & Edmonds (2009, with DOI `10.1080/14626260902867915`) added to `paper_bibliography_FINAL.md`.
+5. Frontmatter bumped to `version: v1.1`; `versioning_convention: git_inplace`; `session_id` extended to list form; `assembly` rewritten; `known_issues` pruned to one remaining intentional design note (Cavell-without-formal-citation, by design).
 
-**Deferred post-v1.1 (subsequent sessions):**
+Modlog: `transparency/Canonical_MD/SP4_ProcessDocumentation/4.2_ModificationLogs/CFP_4.2.34_ModificationLog_FullPaperAssembly.md` (MOD-001 through MOD-005, all approved).
 
+**Next-up post-v1.1 (subsequent sessions):**
+
+- Phase 5 final consistency review — full read-through of v1.1 against §5 transparency framework as a coherence check; no scope for further edits unless something material surfaces.
 - Zenodo DOI mint: tag submission commit on GitHub; enable GitHub→Zenodo integration; cut Release; replace `[persistent identifier: forthcoming]` in `CFP_5.4.14_AIUsageArchive.md` and SP-1 line 81. Browser steps drivable via Chrome MCP plugin.
 - Source-conversations manifest (`CFP_5.3.N_Note_RawConversationsManifest.md`) promised in SP-2 §7.
 - Branch merge to `main` (housekeeping; not strictly required given tag + DOI).
