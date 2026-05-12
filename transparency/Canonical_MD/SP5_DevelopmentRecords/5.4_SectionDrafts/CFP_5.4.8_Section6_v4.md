@@ -62,7 +62,7 @@ The five transparency elements—SP-1 through SP-5—each serve the tracing cond
 | SP-4: Process Documentation | All writing-phase materials (prompts, guidance, modifications, traces)   | Primary substance against which SP-3's adequacy claim is assessed      |
 | SP-5: Development Records   | How instructions evolved; meta-level documentation                       | Enables deeper tracing of intellectual direction                       |
 
-**Engagement with Lloyd's standards.** Lloyd (2025) proposes four standards for AI-assisted scholarship: *prominence*, *replicability*, *content cross-checking*, and *intra-textual clarity*. We adopt Standards 1 and 2. We reject Standard 4: in iterative prompt-revision workflows, human editorial judgment is embedded in every clause, making binary attribution of text to "AI" or "human" incoherent — as the process documentation in SP-4 illustrates. What matters is whether the intellectual trajectory is traceable to human understanding, which is what SP-4 captures.
+**Engagement with Lloyd's standards.** Lloyd (2025) proposes four standards for AI-assisted scholarship: *prominence*, *replicability*, *content cross-checking*, and *intra-textual clarity*. We adopt Standards 1 and 2. We reject Standard 4: in iterative prompt-revision workflows, human editorial judgment is embedded in every clause, making binary attribution of text to "AI" or "human" incoherent — as the process documentation in this paper's archived SP-4 illustrates. What matters is whether the intellectual trajectory is traceable to human understanding, which is what an SP-4 captures.
 
 The requirements make explicit three nested concerns:
 
