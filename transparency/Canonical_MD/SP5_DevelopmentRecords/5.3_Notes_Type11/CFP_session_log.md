@@ -93,3 +93,39 @@ validation: approved
 
 **Deferred to next session:**
 - Williams on integrity (Section 3) — paragraph present but not yet discussed or revised
+
+---
+
+## SID-20260512-111348 — 2026-05-12
+
+**Goal:** Resume after ~1-month gap; triage uncommitted Apr 9–10 working state; reorient to next intellectual step (Williams/integrity, Phase 4).
+
+**Mode:** as-we-go.
+
+**Done so far:**
+- Triaged 20 modified + 13 untracked files in working tree; split into five logical commits.
+- `b3888a8` — `section_numbering: pre_renaming` frontmatter tagging on 17 legacy section drafts (completes the renumbering bookkeeping started 2026-04-09).
+- `50d57d7` — Section 7 v3 + modlog Entry 7: Shoulders S3 response (Abdulhai 2026 preprint hedged; headings renumbered 7.x → 6.x).
+- `46ba26d` — Introduction v2 + modlog Entry 9: Shoulders S2 response (cognitivist "question-begging" charge dropped; community-default framing introduced; roadmap renumbered).
+- `6877847` — gitignore: exclude `**/__pycache__/`.
+- `c34d83d` — SP-3 figure set (fig1/2/4/5/6 + generator scripts + caption helpers) added.
+- `c23fb91` — CFP_session_log.md first commit (file existed untracked).
+
+**Also done — strategic restructuring (externalization of SP-1/SP-2/SP-3):**
+
+User challenged the functionality of embedded SP-1/SP-2/SP-3 for the CFP venue, explicitly setting aside sunk cost. Analysis (venue review-infrastructure mismatch + word budget + reusability + asymmetric submission risk) recommended aggressive externalization to a documentation archive. User committed. Workflow per user request: PDL → section_guidance → execute → modlogs.
+
+- `42be9de` — Chain head: CFP_5.2.5_pdl_AIUsageArchive (PDL with reasoning + spec, six entries PDL-001 through PDL-006) + CFP_4.4.21_SectionGuidance_ExternalizationImplementation (per-section to-dos with exact before/after text).
+- `5eaf2ea` — Execution: five inline edits to existing sections (§1 Intro Edits 1+2, §5 Mandatory Transparency Edit 3, §6 Community Assessment Edit 4, §7 Conclusion Edit 5) + new closing section CFP_5.4.14_AIUsageArchive (~430 words, unnumbered, between §7 and References; numerical SP-1 → SP-5 ordering corrected mid-conversation).
+- `285efbd` — Modlogs: new CFP_4.2.32 (for CFP_5.4.14) + four appends (CFP_4.2.14 Entries 10/11; CFP_4.2.18 MOD-022; CFP_4.2.19 Entry 8; CFP_4.2.30 MOD-003). All cross-reference CFP_5.2.5 and CFP_4.4.21.
+
+Framework remains taught in body (§5 SP-1–SP-5 table preserved; §6.3 framework voice preserved). Paper claim shifts from "the SPs are in this paper" to "the SPs are instantiated in the archive associated with this paper."
+
+**Open:**
+- Williams on integrity (Section 3) — still deferred from SID-20260410-002246.
+- Tier 3 review edits: S1, O2, O5, S3 (from SID-20260409-173842 "Next" list).
+- Figure-numbering reconciliation: file names use 1/2/4/5/6 but SP-3 narrative calls them 1/2/3/4/5.
+- Persistent identifier for the externalized archive (Zenodo/OSF upload) — placeholder `[persistent identifier: forthcoming]` in CFP_5.4.14.
+- Inline excerpts in CFP_5.4.14 — which modlog entry and which figure (forward promise kept; picks deferred).
+- Rebuild paper DOCX/PDF after intellectual revisions are complete.
+- Phase 4: Abstract and Title.
