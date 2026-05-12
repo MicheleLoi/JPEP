@@ -9,7 +9,10 @@ status: Complete
 reviewed_artifact: build/CFP_paper_combined.md (CFP_paper.docx)
 reviewed_artifact_label: CFP_5.3.23_Note_AssembledPaperBuild
 reviewer: Claude Opus 4.6 (Reviewer B, via Claude Code Agent)
-feeds_into: revision decisions — next session
+inputs:
+  - "CFP_5.3.23_Note_AssembledPaperBuild.md (the artifact reviewed)"
+feeds_into:
+  - "CFP_5.3.27_Note_ReviewResponse_Draft.md"
 ---
 
 # Reviewer B — Opus 4.6 Review of CFP Paper (v1 assembled draft)

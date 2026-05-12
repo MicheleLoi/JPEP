@@ -10,8 +10,11 @@ reviewed_artifact: build/CFP_paper.docx
 reviewed_artifact_label: CFP_5.3.23_Note_AssembledPaperBuild
 reviewer: Shoulders AI peer review (shoulde.rs) — model unspecified
 source_file: CFP_5.3.25_ShouldersReview_raw.md (same folder)
-feeds_into: revision decisions — next session
 related: CFP_5.3.24_Note_ReviewerB_OpusReview_v1
+inputs:
+  - "CFP_5.3.23_Note_AssembledPaperBuild.md (the artifact reviewed)"
+feeds_into:
+  - "CFP_5.3.27_Note_ReviewResponse_Draft.md"
 ---
 
 # Shoulders AI Peer Review — CFP Paper (v1 assembled draft)
