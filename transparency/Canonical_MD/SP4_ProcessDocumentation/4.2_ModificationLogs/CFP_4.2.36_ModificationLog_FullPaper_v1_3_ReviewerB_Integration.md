@@ -277,3 +277,47 @@ Implicit rationale (consistent with the broader v1.3 integration logic): JPEP al
 - **No engagement with how cross-checking would interact with SP-4.** The orthogonality claim is enough; deeper integration would over-promise.
 
 **Bibliography:** No new entry. Lloyd (2025) was already in the bibliography from the v1 baseline.
+
+---
+
+### MOD-009 — §3.7 ¶3 trimmed to remove redundancy with §7 closing paragraph
+
+| Field | Value |
+|-------|-------|
+| Date | 2026-05-13 |
+| Type | Editorial trim; redundancy removal |
+| Source of finding | Reviewer B specific recommendation #8 (should) — §3.7 / §7 closing paragraph restate the same argument with overlapping wording; R3's verdict: §7 version is rhetorically stronger; consider trimming §3.7 |
+
+**Issue:** §3.7 paragraph 3 (AI-severs-the-connection development) and §7's closing paragraph (the paper's rhetorical close) made the same five moves with substantially overlapping wording: (a) "AI severs the connection," (b) citation patterns + structure of reasoning + engagement-with-sources triple, (c) outputs exhibiting every marker without corresponding human intellectual process, (d) "requirement not new / not a new imposition," (e) "always needed, now no longer supplied by the text itself." §3.7 ¶3 also carried unique substantive content (the Schwitzgebel empirical anchor from MOD-004, the "qualitative break" framing, the "AI specifically triggers" claim) that should be retained.
+
+**Change:** §3.7 paragraph 3 rewritten from ~290 words (with Schwitzgebel addition) to ~165 words. Strategy: cut overlapping framings; keep unique substantive content; let §7 own the rhetorical close.
+
+**What was preserved (verbatim or near-verbatim):**
+
+- Schwitzgebel, Schwitzgebel & Strasser (2024) empirical anchor with full triple hedge (above-chance baseline named, old-technology flagged, current-rate marked speculative).
+- "This is not the familiar risk that a philosopher might exaggerate engagement with sources; it is a qualitative break in the signal-to-process inference" — the framing that distinguishes JPEP's worry from the familiar misrepresentation concern.
+- "And the reason AI *specifically* triggers an explicit transparency requirement" — the AI-specificity claim (now folded into the qualitative-break sentence rather than standing alone).
+- Italicized *specifically* preserved.
+
+**What was cut (now lives only in §7's closing paragraph):**
+
+- "AI severs the connection on which this mechanism depends" — §7 opens its closing paragraph with the same move ("AI severs the connection between these signals and any underlying process").
+- "The outputs replicate the signals while the connection to process is not merely weakened but systematically severable" — §7's "outputs can exhibit every marker… without any corresponding human intellectual journey" covers the same ground.
+- "The requirement is not new. What is new is that the implicit mechanism that previously satisfied it — the legibility of process through the ordinary features of philosophical prose — no longer functions. What the scholarly community has always needed is now, for the first time, no longer supplied by the text itself" — §7's "not a new imposition on philosophy. It is the conscious replacement of something that was always needed and is now, for the first time, no longer reliably supplied by the text itself" reprises this as the paper's final rhetorical move.
+
+**Two stylistic decisions recorded:**
+
+1. **Opening sentence changed.** Was "AI severs the connection on which this mechanism depends." Now "The disruption is concrete." Reason: avoid the verb echo with §7 (both used "severs"); "disruption" picks up the section title ("The Disruption of Implicit Process Signals"); declarative opener restores narrative momentum.
+2. **Stem "sever-" removed from §3.7 entirely.** "Severance trajectory" → "the trajectory"; "systematically severable" → "structurally detachable." §7's closing now owns the "sever" stem as the rhetorical close.
+3. **New closing sentence forward-points.** "The Conclusion returns to what this means." Reserves §7's punchline; doesn't spoil it.
+
+**Word counts:**
+
+- §3.7 paragraph 3 before: ~290 words (with MOD-004 Schwitzgebel addition).
+- §3.7 paragraph 3 after: ~165 words.
+- Net trim: ~125 words.
+- §3.7 as a whole: ~620 → ~500 words; the implicit-signals mechanism is fully established in paragraphs 1 and 2 (which carry the Nozick/Parfit/Williams/Cavell exemplars, the Korsgaard example, the *de facto* transparency claim); paragraph 3 now makes the AI-disruption claim with the empirical anchor and the qualitative-break framing, then yields to §7 for the rhetorical close.
+
+**Bibliography:** No changes.
+
+**Scope discipline:** The trimmed paragraph lives only in `Paper/MDversion/CFP_FullPaper_v1.md`. Source draft (CFP_5.4.4_Section3_v3.md, now also marked as Section3_v5/v5.1 — the multi-versioned source) is unchanged.
