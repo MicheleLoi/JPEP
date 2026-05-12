@@ -2,7 +2,7 @@
 project: JPEP
 document_type: Type 3 - Modification Log
 label: CFP_4.2.23_ModificationLog_Section3_v3
-title: "Modification Log: Section 3 v2 → v3 (Two-Order Restructuring) + v3 → v4 (Cordasco Welfare-Economic Objection)"
+title: "Modification Log: Section 3 v2 → v3 → v4 → v5 (Two-Order Restructuring; Cordasco Objection-Response; Reproducibility Disanalogy)"
 date_created: 2026-04-03
 date_last_modified: 2026-05-12
 status: Draft
@@ -12,8 +12,11 @@ session_id:
   - SID-20260512-154043
 related:
   - "CFP_5.4.4_Section3_v2.md (input: v2 draft)"
-  - "CFP_5.4.4_Section3_v3.md (output: v3 draft, in-place-updated to v4)"
-  - "CFP_4.7.15_EpistemicTrace_AuthenticityArgumentDevelopment.md (epistemic trace)"
+  - "CFP_5.4.4_Section3_v3.md (output: v3 draft, in-place-updated to v4 then v5)"
+  - "CFP_4.7.15_EpistemicTrace_AuthenticityArgumentDevelopment.md (trace for v2 → v3)"
+  - "CFP_4.7.21_EpistemicTrace_AgentIntegrityGrounding.md (trace for v3 → v4 → v5)"
+  - "CFP_5.3.29_Note_CordascoCorpusBriefing.md (research briefing for v4 Cordasco engagement)"
+  - "CFP_4.4.22_SectionGuidance_Section3.md (CFP-era section guidance reflecting v5 architecture)"
   - "CFP_4.2.21_ModificationLog_DoubleContestation_Implementation.md (prior: double contestation implementation)"
   - "CFP_5.4.9_Section7_v3.md (source of metacognitive-monitoring counter-argument reused in v4)"
   - "Paper/MDversion/04_the_dilemma_reconsidered_short_term_positioning_and_long_term_transformation.md (source of generative-framework welfare argument reused in v4)"
@@ -157,4 +160,87 @@ The "visibility argument" sketched in `CFP_5.3.27_Note_ReviewResponse_Draft.md` 
 
 ## Status (v4)
 
-Draft — applied to file; pending user review of the paragraphs in context after commit.
+Draft — applied to file; user reviewed in context. Status superseded by v5 entry below (continuous philosophical movement).
+
+---
+
+# v4 → v5 (Reproducibility Disanalogy + Agent-Integrity Grounding)
+
+*Session SID-20260512-154043, 2026-05-12 (same session as v3 → v4; continuous philosophical movement).*
+
+## What v4 Left Latent
+
+The v3 → v4 change made the moral-vs-post-institutional distinction load-bearing (the transparency duty is moral, not a compliance regime). But two further framings were still available to a sympathetic-but-uncommitted reader and were not closed off:
+
+1. The reading on which Williams's integrity should be construed as *methodological integrity* — i.e., the duty is about whether the inquirer's method is sound, and AI threatens methodological soundness.
+2. The reading on which the transparency duty is the philosophical analog of science's *reproducibility* — i.e., methods transparency for AI in philosophy is just methods transparency for AI in science applied to a new domain.
+
+Both readings are off-target for what the paper is doing, but until v5 the paper did not say so explicitly. A science-trained reviewer could plausibly read v4 as making the second-style argument.
+
+## What v5 Adds
+
+### 1. New subsection: "Reproducibility Is Not the Issue"
+
+Inserted between "Why Output-Evaluation Fails in Ethics" and "From Answer to Tracking." Five paragraphs, ~390 words. The argument:
+
+- **P1 (the science model).** Methodological transparency in empirical science is grounded in reproducibility, which is grounded in science's truth-tracking aim — methods are routes to claims about a mind-independent world; verification requires others to traverse the route.
+- **P2 (the disanalogy).** Philosophy does not have this structure. The evidence for a philosophical claim is the argument itself, already in the text. There is no experimental method to reproduce; only reasoning to evaluate.
+- **P3 (the honest concession).** If transparency in philosophy were grounded in reproducibility, AI-generated philosophy would raise no special problem (the argument is "reproducible" by being read). The reproducibility frame is structurally blind to what AI threatens in philosophy. Anyone justifying AI transparency in philosophy via reproducibility is misdescribing the worry.
+- **P4 (what is threatened).** What AI threatens is the link between text and agent — Williams's ground-projects, identity-constituting commitments, mode of engagement. AI severs that link without compromising the argument. The reproducibility frame cannot register this because it was never about agents.
+- **P5 (positive grounding).** The transparency duty in this paper is grounded in *agent-integrity*, not in *methodological-integrity-as-reproducibility*. The framework in §4–§5 is a different kind of apparatus addressing a different kind of worry — not whether the path to a conclusion can be verified, but whether the conclusion bears the marks of an agent at all.
+
+### 2. Cavell added to the visibility-subsection exemplar sentence
+
+Existing list (Nozick, Parfit, Williams) extended with Cavell (ordinary-language philosophy paired with film criticism). Lewis (modal logic / metaphysics) deliberately not added: Lewis's bridge-building is more naturally read as instrumental methodology serving truth-tracking; §3 tracks *agent-signatures*, not *instrumental moves*. The distinction is now a hard constraint recorded in the §3 section guidance (`CFP_4.4.22`).
+
+### 3. Frontmatter
+
+- `version:` v4 → v5 (in place; single-file convention)
+- `transformation:` extended to document v4 → v5 change
+- `word_count:` ~2,080 → ~2,470
+- `inputs:` extended to reference the new section guidance (`CFP_4.4.22`), the Cordasco corpus briefing (`CFP_5.3.29`), and the review-response sketch (`CFP_5.3.27`)
+
+## What v5 Deliberately Does NOT Do
+
+1. **No list of "philosophical values" framed in truth-conducive terms.** The earlier-considered list (intellectual honesty, methodological self-consciousness, guided thought) was rejected as smuggling truth-tracking framings back into the section. The user's correction (decisive 2026-05-12) is recorded in the §3 section guidance as Hard Constraint 2.
+
+2. **No claim that philosophy does not aim at truth.** The disanalogy is "philosophy's evidence is the argument itself, so reproducibility doesn't apply *even if* philosophy is truth-tracking." The cognitivism / non-cognitivism dispute is left open exactly where §3 elsewhere leaves it.
+
+3. **No use of "methodology" or "methodological" when describing what the paper's transparency duty is for.** The duty is grounded in *agent-integrity* (Williams), not methodological soundness. Hard Constraint 1 in the §3 section guidance.
+
+## Why the Change Was Made
+
+User direction in session SID-20260512-154043 (same session as v4):
+
+> "This is philosophy, not science. The usual arguments for methodological integrity as reproducibility DON'T apply to the usage of AI. You should explain why that is, and what other argument is needed. Reconsider where to place this in the paper. I think it's very important."
+
+This crystallized a tension latent across v3 and v4: the paper's transparency argument needed to be explicitly distinguished from a methodological-reproducibility argument applied to a new domain. Without that distinction, a reasonable reader could read the paper as a science-style argument and dismiss it as redundant ("we already know how to do methods transparency for AI").
+
+The disanalogy is also philosophically deeper than a clarification. It explains:
+- Why the cognitivist defeat doesn't fully settle the truth-tracking framing (reproducibility is the cognitivist's natural fallback).
+- Why the framework needs an *agent-integrity* grounding rather than a *methodological-soundness* grounding.
+- Why AI specifically triggers transparency (it severs the text-agent link, not the method-verification link).
+- How the Cordasco response coheres with the rest of §3 (Cordasco's welfare-economic framing is a third truth-tracking-adjacent framing; the disanalogy joins the cognitivist and Cordasco defeats as a set of three).
+
+## Source of Changes
+
+User direction in session SID-20260512-154043. Three corrections during drafting that shaped the final form:
+
+1. **Cavell yes, Lewis no.** Lewis was rejected as instrumental methodology; Cavell accepted as existential signature. Recorded in section guidance as the agent-signature-vs-instrumental-methodology criterion.
+2. **No truth-conducive values list.** Intellectual honesty, methodological self-consciousness, guided thought — rejected as smuggling truth-tracking back in. Recorded in section guidance as Hard Constraint 2.
+3. **The "totally honest" move.** Reproducibility doesn't transfer from science; the agent-integrity replacement must be made explicit. The disanalogy argument and placement decision followed.
+
+Placement decision (delegated by user; chosen as new mid-§3 subsection between cognitivist defeat and tracking pivot): reasoning recorded in trace `CFP_4.7.21` §8.
+
+## Files Touched
+
+- `CFP_5.4.4_Section3_v3.md` — new subsection inserted; Cavell added to exemplar sentence; frontmatter version bumped v4 → v5 in place.
+- `CFP_4.4.22_SectionGuidance_Section3.md` — new CFP-era section guidance created (supersedes `III_4.4.4`); records new architecture, hard constraints, exemplar criteria.
+- `CFP_4.7.21_EpistemicTrace_AgentIntegrityGrounding.md` — new trace recording the philosophical development across v3 → v4 → v5.
+- `CFP_5.3.29_Note_CordascoCorpusBriefing.md` — new briefing preserving the Cordasco corpus research.
+- `CFP_5.3.1_WorkPlan_CFP_Adaptation.md` — RESUME HERE updated.
+- This modlog — extended with the v4 → v5 entry above.
+
+## Status (v5)
+
+Draft — applied to file; pending user review of the new subsection in context after commit.

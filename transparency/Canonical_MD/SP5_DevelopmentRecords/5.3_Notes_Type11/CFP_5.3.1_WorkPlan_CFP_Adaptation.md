@@ -30,7 +30,7 @@ related:
 |---|---|---|---|
 | 1 | Introduction | `CFP_5.4.3_Introduction_v2.md` | Done; SP-claim externalised |
 | 2 | Systemic Barriers to Disclosure | `CFP_5.4.5_Section2_v4.md` | Done |
-| 3 | Why Engage with AI-Assisted Scholarship? | `CFP_5.4.4_Section3_v3.md` (frontmatter v4) | Done — Cordasco welfare-economic objection-response added 2026-05-12 (see CFP_4.2.23 modlog) |
+| 3 | Why Engage with AI-Assisted Scholarship? | `CFP_5.4.4_Section3_v3.md` (frontmatter v5) | Done — Cordasco objection-response (v4) + reproducibility disanalogy / agent-integrity grounding (v5) added 2026-05-12. See `CFP_4.7.21` (trace), `CFP_4.2.23` (modlog), `CFP_4.4.22` (section guidance), `CFP_5.3.29` (Cordasco briefing) |
 | 4 | Conditions for Adequate Transparency | `CFP_5.4.7_Section5_v2.md` | Done (good-faith extension 2026-04-10) |
 | 5 | Mandatory Transparency in Practice | `CFP_5.4.8_Section6_v4.md` | Done; SP-claim externalised |
 | 6 | Community Assessment of Documentation Adequacy | `CFP_5.4.9_Section7_v3.md` | Done; Abdulhai hedge + SP-claim externalised |
@@ -47,11 +47,18 @@ Archive contents on disk:
 - SP-4 folder: `transparency/Canonical_MD/SP4_ProcessDocumentation/`
 - SP-5 folder: `transparency/Canonical_MD/SP5_DevelopmentRecords/`
 
-**Williams on integrity (§3) — RESOLVED 2026-05-12 (SID-20260512-154043).** Three-paragraph engagement with Cordasco's welfare-economic objection added after the Williams paragraph: steelmanned objection, welfare-on-welfare reply (metacognitive monitoring + generative framework), register reply (moral duty does not reduce to welfare calculation). The moral-vs-post-institutional distinction is now load-bearing in §3. §3 v4 word count ~2,080. See `CFP_4.2.23_ModificationLog_Section3_v3.md` v3 → v4 entry for full rationale.
+**§3 Cordasco + reproducibility-disanalogy / agent-integrity grounding — RESOLVED 2026-05-12 (SID-20260512-154043).** Two changes treated as one philosophical movement clarifying what kind of argument JPEP's transparency duty is.
+
+- **v4:** Three-paragraph engagement with Cordasco's welfare-economic objection added after the Williams paragraph: steelmanned objection, welfare-on-welfare reply (metacognitive monitoring + generative framework), register reply (moral duty does not reduce to welfare calculation). Moral-vs-post-institutional distinction made load-bearing.
+- **v5:** New subsection "Reproducibility Is Not the Issue" added between cognitivist defeat and tracking pivot. Explicit disanalogy with science's reproducibility model; explicit grounding of the transparency duty in agent-integrity rather than methodological-integrity-as-reproducibility. Cavell added to exemplar list; Lewis explicitly excluded as instrumental methodology.
+
+§3 v5 word count ~2,470. Three negative results closed off (not welfare-economic, not methodological-soundness, not reproducibility-style) + one positive grounding (agent-integrity, Williams). See trace `CFP_4.7.21` for philosophical development, modlog `CFP_4.2.23` for change record, section guidance `CFP_4.4.22` for hard constraints, briefing `CFP_5.3.29` for Cordasco corpus provenance.
+
+The "visibility argument" sketch in `CFP_5.3.27` lines 76–81 (Williams Greek tragedy / Cavell / Nozick / Lewis as a values-language list) is *partially* absorbed in v5 (Cavell added; Lewis rejected; values-language deliberately omitted). Further integration would require respecting the agent-vs-methodology distinction now in section guidance.
 
 **Next substantive step, in priority order:**
 
-1. Tier 3 review edits (S1, O2, O5, S3 — see `CFP_5.3.27_Note_ReviewResponse_Draft.md` for items). Note that the "visibility argument" sketch in CFP_5.3.27 lines 76–81 (philosophy's implicit process signals) is a deferred Tier 3 item and is *not* pre-empted by the v4 Cordasco engagement.
+1. Tier 3 review edits (S1, O2, O5, S3 — see `CFP_5.3.27_Note_ReviewResponse_Draft.md` for items).
 2. Phase 4: Abstract + Title.
 3. Phase 5: final read-through + Zenodo/OSF upload of the archive + DOI substitution in `CFP_5.4.14` + source-conversations manifest creation + branch merge + paper DOCX/PDF rebuild.
 

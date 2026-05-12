@@ -2,16 +2,19 @@
 project: JPEP
 document_type: Type 12 - Section Draft
 section: "3 - Why Engage Transparently with AI-Assisted Ethics Research?"
-version: "v4 (CFP adaptation, Cordasco welfare-economic objection-response added)"
+version: "v5 (CFP adaptation, reproducibility disanalogy + agent-integrity grounding added; Cavell exemplar)"
 date_created: 2026-04-03
 date_last_modified: 2026-05-12
 status: Draft
-source: "Claude Opus 4.6 (Claude Code session) / Claude Sonnet 4.6 for v4 expansion"
+source: "Claude Opus 4.6 (Claude Code session) / Claude Sonnet 4.6 for v4 and v5 expansion"
 inputs:
+  - CFP_4.4.22_SectionGuidance_Section3.md
   - CFP_4.4.20_SectionGuidance_SP3.md
   - CFP_5.4.4_Section3_v2.md
   - CFP_5.4.9_Section7_v3.md
   - Paper/MDversion/04_the_dilemma_reconsidered_short_term_positioning_and_long_term_transformation.md
+  - CFP_5.3.27_Note_ReviewResponse_Draft.md
+  - CFP_5.3.29_Note_CordascoCorpusBriefing.md
   - "Cordasco, 'The Invisible Upside of Cognitive Offloading' (Substack, 2026)"
   - "Cordasco, 'Acemoglu et al (2026) are wrong about AI & Human Cognition' (Substack, 2026)"
 derived_from: "CFP_5.4.4_Section3_v2.md"
@@ -19,8 +22,8 @@ cfp_target: "AI Tools in Ethics Research (topical collection)"
 session_id:
   - SID-20260403-093628
   - SID-20260512-154043
-transformation: "v2 → v3: Two-order restructuring (see CFP_4.2.23 modlog). v3 → v4: Three-paragraph engagement with Cordasco's welfare-economic objection added after the Williams paragraph — steelmanned objection, welfare-on-welfare reply (metacognitive monitoring + generative framework), register reply (moral duty does not reduce to welfare calculation). Net change ~+585 words."
-word_count: ~2080
+transformation: "v2 → v3: Two-order restructuring (see CFP_4.2.23 modlog and CFP_4.7.15 trace). v3 → v4: Three-paragraph engagement with Cordasco's welfare-economic objection added after the Williams paragraph — steelmanned objection, welfare-on-welfare reply (metacognitive monitoring + generative framework), register reply (moral duty does not reduce to welfare calculation). v4 → v5: New subsection 'Reproducibility Is Not the Issue' inserted between 'Why Output-Evaluation Fails in Ethics' and 'From Answer to Tracking' — disanalogy with science, explicit grounding of the transparency duty in agent-integrity rather than methodological-integrity-as-reproducibility; Cavell added to exemplar list in the visibility subsection (see CFP_4.7.21 trace). Net change v4 → v5 ~+400 words; cumulative v3 → v5 ~+985 words."
+word_count: ~2470
 section_numbering: pre_renaming
 versioning_convention: git_inplace
 ---
@@ -74,6 +77,18 @@ The cognitivist conditional — if ethics tracks truth and output-evaluation cri
 
 A qualification: the argument does not establish that process information is required for every ethical argument. For simple applied ethics reasoning with clear premises and valid inferences, output-evaluation may suffice. The claim is restricted to complex work involving contested methods, irreducible judgment, and genuine philosophical insight — precisely where AI assistance is most consequential, and where AI systems can produce outputs satisfying surface criteria without the understanding those criteria are meant to track.
 
+## Reproducibility Is Not the Issue
+
+The cognitivist objection is not the only truth-tracking framing the AI-transparency question invites. A second, related framing is more familiar still: the model of methodological transparency that empirical science has developed under the name of reproducibility. On that model, a researcher's duty is to disclose enough about method that others can verify the path from procedure to result. The duty is grounded in science's truth-tracking aim — methods are the route to claims about a mind-independent world, and verification requires that others be able to traverse the route.
+
+Philosophy does not have this structure. The "evidence" for a philosophical claim is the argument itself, which is already in the published text. There is no experimental method to reproduce; there is only reasoning to evaluate. A reader who wants to test a philosophical claim re-reads the argument, considers objections, traces the inferences — but does not, in any literal sense, replicate the process by which the author arrived at it. The standard of evaluation is the argument's force, not the recoverability of the steps the author took to formulate it.
+
+This disanalogy matters, and it matters honestly. If transparency in philosophy were grounded in reproducibility, AI-generated philosophy would raise no special problem: the argument is "reproducible" — anyone can read it. The reproducibility frame, in other words, is structurally blind to what AI threatens in philosophy. To borrow it would be to misdescribe the worry. There is no methodological-soundness argument here that does the work the paper requires.
+
+What AI threatens is not the link between method and verification but the link between text and agent. Williams's ground-projects — identity-constituting commitments, mode of engagement, the philosopher's relation to her own thinking — have historically been carried by the ordinary features of philosophical writing alongside the arguments themselves. AI severs that link without compromising the argument: it can produce an argument that no agent stands behind. The reproducibility frame cannot register this because it was never about agents in the first place.
+
+The transparency duty argued for in this paper is therefore grounded in agent-integrity, not in methodological-integrity-as-reproducibility. The conditions specified in §4 and the framework specified in §5 are not adaptations of science's reproducibility apparatus to a new domain. They are a different kind of apparatus, addressing a different kind of worry: not whether the path to a conclusion can be verified, but whether the conclusion bears the marks of an agent at all.
+
 ## From Answer to Tracking
 
 If the question of what ethical inquiry is cannot be answered — and if output-evaluation cannot substitute for understanding what AI assistance does to the activity — what can be done?
@@ -88,7 +103,7 @@ The question is whether change in ethics research will be visible enough for the
 
 ## The Disruption of Implicit Process Signals
 
-Traditional philosophical writing was already rich with implicit process evidence. Citation patterns, argumentative structure, and stylistic signatures all functioned as signals from which the scholarly community could infer features of the author's intellectual process. When Nozick deployed decision-theoretic reasoning to motivate libertarian conclusions, when Parfit developed objections with a transparency that displayed a mind encountering and working through difficulties in real time, or when Williams brought Greek tragedy into dialogue with contemporary moral philosophy — these were not decorative choices. They constituted implicit methodological declarations that enabled readers across traditions to assess whether the process criteria they cared about had been satisfied. The expressivist reader could evaluate whether evaluative commitments had been formed through genuine confrontation with alternatives. The reader in the personal/existential tradition could assess whether the author's mode of engagement bore the marks of authentic philosophical labor. These assessments were fallible — philosophers have always been capable of performing depth they do not possess — but the connection between textual signal and underlying process was reliable enough to function as a *de facto* transparency mechanism.
+Traditional philosophical writing was already rich with implicit process evidence. Citation patterns, argumentative structure, and stylistic signatures all functioned as signals from which the scholarly community could infer features of the author's intellectual process. When Nozick deployed decision-theoretic reasoning to motivate libertarian conclusions, when Parfit developed objections with a transparency that displayed a mind encountering and working through difficulties in real time, when Williams brought Greek tragedy into dialogue with contemporary moral philosophy, or when Cavell paired ordinary-language philosophy with film criticism — these were not decorative choices. They constituted implicit methodological declarations that enabled readers across traditions to assess whether the process criteria they cared about had been satisfied. The expressivist reader could evaluate whether evaluative commitments had been formed through genuine confrontation with alternatives. The reader in the personal/existential tradition could assess whether the author's mode of engagement bore the marks of authentic philosophical labor. These assessments were fallible — philosophers have always been capable of performing depth they do not possess — but the connection between textual signal and underlying process was reliable enough to function as a *de facto* transparency mechanism.
 
 This reliability was not accidental. It rested on a contingent but stable fact about how philosophical texts were produced: a philosopher who cited Korsgaard with precision and engaged her arguments at the level of their internal structure had, in all likelihood, read and wrestled with Korsgaard. The essential contestedness of ethical inquiry was always present, the need for process information always real. But the need did not present itself acutely, because the implicit signals were adequate. The transparency requirement existed; it was satisfied by the ordinary features of philosophical writing itself.
 
