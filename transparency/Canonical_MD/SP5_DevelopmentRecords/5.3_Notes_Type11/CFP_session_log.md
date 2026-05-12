@@ -285,3 +285,30 @@ User clarification before drafting: "we're not asking about a post-institutional
 - Phase 5 final consistency read-through of v1.3.
 - Update RESUME HERE in `CFP_5.3.1` to point at `e3b3ee1` (held — user discretion on whether to update before or after read-through).
 - Zenodo DOI mint at submission tag; source-conversations manifest; branch merge to `main`; `build_paper.py` fix (references stale `paper_bibliography.md`, lacks Abstract).
+
+---
+
+## SID-20260513-003000 — 2026-05-13
+
+**Goal:** Restructure: move externalized SP-1/SP-2/SP-3 archive parts from `5.4_SectionDrafts/` to top-level sibling folders of `SP4_*` and `SP5_*` under `transparency/Canonical_MD/`, then run the Phase 5 final enumeration check of SP-2 inventory.
+
+**Rationale:** The 2026-05-12 externalization lifted SP-1/2/3 out of the paper body but left them filed as if they were Type-12 section drafts inside SP-5. SP-2 in particular is the navigation document for the entire archive (SP-4 + SP-5 + the SPs themselves) and was therefore filed inside one of the things it indexes. The move makes the on-disk layout match the post-externalization architecture.
+
+**Done:**
+
+| Commit | Substance |
+|---|---|
+| `e317eac` | `git mv` SP-1/SP-2/SP-3 from `5.4_SectionDrafts/` to `SP1_AIUsageDeclaration/`, `SP2_NavigationAndArchitecture/`, `SP3_DocumentationAdequacy/`. Pure rename — filenames preserved (`CFP_5.4.13_SP1.md`, `CFP_5.4.12_SP2.md`, `CFP_5.4.11_SP3.md`); git rename detection 100% on all three. |
+| *(this commit)* | Prose path-reference updates: `CFP_4.2.27_ModificationLog_SP3.md` closing line, `CFP_5.2.4_pdl_SP1_SP2_SP3.md` PDL-025 versioning note, `CFP_5.3.1` archive-contents bullets + RESUME HERE timestamp + move note. Session log entry (this one). |
+
+**Method.** Two-pass reconnaissance via Explore agents before the move: confirmed source/destination both git-tracked, no name collisions, no stray `.bak`/`_v*` files for the SPs. Fan-out grep across the repo identified only 5 path-prefixed references (in 3 files) needing prose updates; all other references use bare filenames and survive the move unchanged.
+
+**Out of scope of this session (per plan):**
+- Rename to drop `CFP_5.4.X_` section-draft prefix in the filenames.
+- Update `document_type: Type 12 - Section Draft` frontmatter in moved files.
+- `_GRAPHS/jpep_graph_CFP.html` and `_GRAPHS/jpep_graph.html` regeneration (flagged in work plan move-note).
+- Pre-existing uncommitted change to `target-venue/cfp_ai-ethics-inquiry.md` (separate concern).
+
+**Next within session:**
+- Commit C: SP-2 self-update — add §5.0 top-level SP-1/2/3 inventory section; trim SP-1/2/3 rows from §5.4 section-drafts table; append `note:` to frontmatter recording the move.
+- Audit phase: spawn two independent Sonnet agents in parallel for the Phase 5 final SP-2 inventory verification; cross-check reports; reconciliation report to user.
