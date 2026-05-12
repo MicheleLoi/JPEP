@@ -78,6 +78,8 @@ inputs:
 
 **Mercier, H.** (2020). *Not Born Yesterday: The Science of Who We Trust and What We Believe*. Princeton: Princeton University Press.
 
+**Moseley, D. D.** (2014). "Revisiting Williams on Integrity." *Journal of Value Inquiry*, 48(1), 53–68. https://doi.org/10.1007/s10790-013-9402-0
+
 **Nietzsche, F.** (1966). *Beyond Good and Evil* (W. Kaufmann, Trans.). New York: Vintage Books. (Original work published 1886)
 
 **Resnik, D. B., & Hosseini, M.** (2025). "Disclosing artificial intelligence use in scientific research and publication: When should disclosure be mandatory, optional, or unnecessary?" *Accountability in Research*, 33(2). https://doi.org/10.1080/08989621.2025.2481949
@@ -90,9 +92,13 @@ inputs:
 
 **Schilke, O., & Reimann, M.** (2025). "The transparency dilemma: How AI disclosure erodes trust." *Organizational Behavior and Human Decision Processes*, 188, 104405. https://doi.org/10.1016/j.obhdp.2025.104405
 
+**Schwitzgebel, E., Schwitzgebel, D., & Strasser, A.** (2024). "Creating a Large Language Model of a Philosopher." *Mind & Language*. https://doi.org/10.1111/mila.12466
+
 **Science.** (2023). "Science Journals: Editorial Policies." https://www.science.org/content/page/science-journals-editorial-policies
 
 **Shafer-Landau, R.** (2003). *Moral Realism: A Defence*. Oxford: Oxford University Press.
+
+**Sourati, Z., Ziabari, A. S., & Dehghani, M.** (2025). "The Homogenizing Effect of LLMs on Human Cognition." arXiv:2508.01491. https://arxiv.org/abs/2508.01491
 
 **Strathern, M.** (1997). 'Improving ratings': Audit in the British University system. *European Review*, 5(3), 305–321.
 
