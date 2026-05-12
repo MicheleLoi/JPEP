@@ -18,9 +18,63 @@ related:
 
 ---
 
-## RESUME HERE (last updated 2026-04-05, session SID-20260405-094022)
+## RESUME HERE (last updated 2026-05-12, session SID-20260512-111348)
 
-**This session (SID-20260405-094022):** Documentation extraction + Stage III framing correction. First half: wrote work plan narrations for two prior sessions (SID-20260404-103931 and SID-20260405-085500) whose updates were not written before session end. Second half: analyzed what Stage III research contributes to SP-3. User corrected initial framing: the "incomplete infrastructure / user compensated manually" narrative was wrong — MHC-start and CLAUDE.md were in place; errors in field names and missing SIDs are routine session errors, not evidence of toolkit immaturity; SP-3 should not narrate the user's developing Claude skill. Correct framing: infrastructure was in development, and each gap shows empirically what a specific infrastructure component is for (version control preserves intermediate states; exports preserve reasoning; session IDs enable automated traceability; standardised fields enable machine-readable traceability). The failed Jan 28 draft would have been fully recoverable via `git show` if a commit had been made — two missed steps, not a structural limitation. Artifacts: PDL-023 in CFP_5.2.4; feedback file `20260405_user_commit_as_recovery_mechanism.md` in MHC-W-Prototype inbox. Updated: CFP_4.4.20 (v5 → v6, Phase 2 rewritten with infrastructure-requirements table), CFP_4.7.19 (§5.2–5.3 and §6.2 corrected), CFP_5.3.1 (this file).
+**This section is the canonical entry point for resuming JPEP work.** Per-session granular history is in `CFP_session_log.md` (same folder); this section summarises state and points forward.
+
+**Branch:** `cfp-ai-ethics-inquiry` (pending merge to `main` before submission).
+
+**Paper body status (post-2026-04-09 numbering, post-2026-05-12 externalization):**
+
+| § | Title | File | Status |
+|---|---|---|---|
+| 1 | Introduction | `CFP_5.4.3_Introduction_v2.md` | Done; SP-claim externalised |
+| 2 | Systemic Barriers to Disclosure | `CFP_5.4.5_Section2_v4.md` | Done |
+| 3 | Why Engage with AI-Assisted Scholarship? | `CFP_5.4.4_Section3_v3.md` | Done — **Williams on integrity paragraph pending discussion** |
+| 4 | Conditions for Adequate Transparency | `CFP_5.4.7_Section5_v2.md` | Done (good-faith extension 2026-04-10) |
+| 5 | Mandatory Transparency in Practice | `CFP_5.4.8_Section6_v4.md` | Done; SP-claim externalised |
+| 6 | Community Assessment of Documentation Adequacy | `CFP_5.4.9_Section7_v3.md` | Done; Abdulhai hedge + SP-claim externalised |
+| 7 | Conclusion | `CFP_5.4.10_Conclusion_v1.md` | Done; opening recast 2026-05-12 |
+| — | AI Usage and Documentation Archive (unnumbered closing note) | `CFP_5.4.14_AIUsageArchive.md` | v1, 2026-05-12 |
+
+**SP-1/SP-2/SP-3 externalization (2026-05-12):** SP-1, SP-2, SP-3 no longer appear in the paper body. They live in a documentation archive (Zenodo or equivalent, DOI pending) alongside the SP-4 and SP-5 folders. The closing note introduces the archive; the §5 SP-1–SP-5 framework table and §6 assessment description remain framework-level. PDL: `CFP_5.2.5_pdl_AIUsageArchive.md`. Per-section to-dos with exact before/after text: `CFP_4.4.21_SectionGuidance_ExternalizationImplementation.md`.
+
+Archive contents on disk:
+
+- SP-1: `transparency/Canonical_MD/SP5_DevelopmentRecords/5.4_SectionDrafts/CFP_5.4.13_SP1.md` (v1)
+- SP-2: `transparency/Canonical_MD/SP5_DevelopmentRecords/5.4_SectionDrafts/CFP_5.4.12_SP2.md` (v1, inventory refreshed 2026-05-12)
+- SP-3: `transparency/Canonical_MD/SP5_DevelopmentRecords/5.4_SectionDrafts/CFP_5.4.11_SP3.md` (v3)
+- SP-4 folder: `transparency/Canonical_MD/SP4_ProcessDocumentation/`
+- SP-5 folder: `transparency/Canonical_MD/SP5_DevelopmentRecords/`
+
+**Next substantive step: Williams on integrity (§3).** Explicitly deferred from SID-20260410-002246: *"paragraph present but not yet discussed or revised."* Open `CFP_5.4.4_Section3_v3.md`, locate the Williams paragraph, decide together whether to keep / revise / remove.
+
+**Then, in priority order:**
+
+1. Tier 3 review edits (S1, O2, O5, S3 — see `CFP_5.3.27_Note_ReviewResponse_Draft.md` for items).
+2. Phase 4: Abstract + Title.
+3. Phase 5: final read-through + Zenodo/OSF upload of the archive + DOI substitution in `CFP_5.4.14` + source-conversations manifest creation + branch merge + paper DOCX/PDF rebuild.
+
+**Other deferred items (Phase 5 / pre-submission):**
+
+- `[persistent identifier: forthcoming]` placeholder in `CFP_5.4.14` — resolved at archive upload.
+- Inline excerpts in `CFP_5.4.14` — pick one modlog entry + one figure to reproduce inline (forward promise currently kept as placeholder).
+- SP-3 pre-renaming section references throughout `CFP_5.4.11_SP3.md`.
+- SP-1 branch-merge-tense marker (`CFP_5.4.13_SP1.md` line 81) — resolve at merge.
+- Source-conversations manifest (`CFP_5.3.N_Note_RawConversationsManifest.md`) — promised in SP-2 §7.
+- Figure-numbering reconciliation in SP-3 (file names 1/2/4/5/6 vs SP-3 narrative 1/2/3/4/5).
+- Cleanup anomalies: `.bak` file in 4.4_SectionGuidance, `.patch.txt` in 5.3_Notes, space in `5.2.8 pdl-appendix-2.md`.
+- Phase 5 final enumeration check of SP-2 inventory.
+
+---
+
+**This session (SID-20260512-111348, 2026-05-12):** Triage of uncommitted Apr 9–10 work + SP-1/SP-2/SP-3 externalization + SP-2 inventory refresh. 11 commits ending at `8eb8dc1`. Detail in `CFP_session_log.md`.
+
+**Bridge period (2026-04-09 → 2026-04-10, five sessions):** Paper assembly via pandoc; Opus Reviewer B review + Shoulders external review; review-response revision pass; philosophical extensions (Sartre, good faith, tracing-condition ambiguity). SP-1 + SP-2 v1 produced. Section renumbering 2026-04-09 (old §5/§6/§7/§8 → new §4/§5/§6/§7; see `CFP_5.3.26_Note_DecisionRecord_SectionRenumbering.md`). Final commit of the bridge period: `19993b3`. Per-session detail in `CFP_session_log.md`.
+
+---
+
+**Previous session (SID-20260405-094022):** Documentation extraction + Stage III framing correction. First half: wrote work plan narrations for two prior sessions (SID-20260404-103931 and SID-20260405-085500) whose updates were not written before session end. Second half: analyzed what Stage III research contributes to SP-3. User corrected initial framing: the "incomplete infrastructure / user compensated manually" narrative was wrong — MHC-start and CLAUDE.md were in place; errors in field names and missing SIDs are routine session errors, not evidence of toolkit immaturity; SP-3 should not narrate the user's developing Claude skill. Correct framing: infrastructure was in development, and each gap shows empirically what a specific infrastructure component is for (version control preserves intermediate states; exports preserve reasoning; session IDs enable automated traceability; standardised fields enable machine-readable traceability). The failed Jan 28 draft would have been fully recoverable via `git show` if a commit had been made — two missed steps, not a structural limitation. Artifacts: PDL-023 in CFP_5.2.4; feedback file `20260405_user_commit_as_recovery_mechanism.md` in MHC-W-Prototype inbox. Updated: CFP_4.4.20 (v5 → v6, Phase 2 rewritten with infrastructure-requirements table), CFP_4.7.19 (§5.2–5.3 and §6.2 corrected), CFP_5.3.1 (this file).
 
 **Previous session (SID-20260405-085500):** Stage III input/output analysis — completing the research base for SP-3 Phase 2 narrative. Read all 15 III_-prefixed artifacts and 14 exported Stage III conversations. Mapped input/output relations across 6 Stage III sessions (Jan 24 – Mar 2, 2026). Key findings: (1) metadata captures unexecuted designs — III_4.4.6 (Section 7 guidance) was created Feb 2 but never used; the first Section 7 draft (CFP_5.4.9 v1, Mar 24) was produced under different, CFP-specific guidance; the absence of `output_completed` and the missing draft file together tell the story. (2) First MHC-start in JPEP was Feb 2 (Session 4), path was `MHC-prototype` (not yet renamed). (3) The SP reconception (III_4.7.3) emerged during Session 5, not planned in advance. User correction: the Type 8a/4 (Complete Prompt vs Section Guidance) distinction is a v1 ontology, not a Stage III development — the III_4.1.2 → III_4.4.6 reclassification was a filing error, not an ontology evolution. Artifacts: CFP_4.7.19 (epistemic trace). Updated: CFP_5.3.13 (§14 on Stage III), CFP_4.4.20 (Stage III findings added).
 
@@ -210,6 +264,8 @@ Contribution: MHC framework + documentation-adequacy + self-exemplification
 ---
 
 ## B. PROGRESS CHECKLIST
+
+> **Note (2026-05-12):** The RESUME HERE section at the top of this file is the authoritative current status. The checklist below is preserved as historical evidence of the original plan; some items are now complete or superseded (Phase 3c SP-1/SP-2/SP-3 are done and have been externalised; the Conclusion has been finalised through Reviewer B). Update individual checkboxes opportunistically; do not treat as the source of truth.
 
 ### Phase 0: Setup
 - [x] Branch created (`cfp-ai-ethics-inquiry` from `III-v3-mhc-revision` at 76435f2)
