@@ -3,9 +3,9 @@ project: JPEP
 document_type: Type 12 - Section Draft
 label: CFP_5.4.12_SP2
 section: "SP-2 — Navigation and Architecture Guide"
-version: v2
+version: v3
 date_created: 2026-04-09
-status: Draft (provisional)
+status: Draft (Phase 5 audit applied)
 source: "Claude Sonnet 4.6 (Claude Code session)"
 session_id:
   - SID-20260409-150705
@@ -19,8 +19,8 @@ inputs:
   - CFP_5.2.4_pdl_SP1_SP2_SP3.md (PDL-006)
 cfp_target: "AI Tools in Ethics Research (topical collection)"
 versioning_convention: git_inplace
-word_count: ~2300
-note: "File inventories refreshed 2026-05-12 (SID-20260512-111348) to add: SP-4 entries CFP_4.2.29/30/31/32, CFP_4.4.21, paper_bibliography_FINAL.md; SP-5 entries CFP_5.2.5, CFP_5.3.23–28, CFP_session_log.md, CFP_5.4.13 (SP-1), CFP_5.4.14 (AI Usage Archive). §8 section-numbering table updated to post-2026-04-09 numbering; §2 Type 8a path corrected to SP-5/5.1; §4.1 hubs paragraph reframed honestly about the empty _HUBS directory. v2 (2026-05-13, SID-20260513-003000): SP-1/SP-2/SP-3 moved from 5.4_SectionDrafts/ to top-level sibling folders of SP4_*/SP5_* under transparency/Canonical_MD/ (commit e317eac); new §5.0 added to inventory them at their new paths; §6's §5.4 table trimmed of the three moved rows; §1 updated. Phase 5 final enumeration check pending."
+word_count: ~2500
+note: "v1 (2026-04-09, SID-20260409-150705): initial inventory. v2 (2026-05-13, SID-20260513-003000): SP-1/SP-2/SP-3 moved from 5.4_SectionDrafts/ to top-level sibling folders of SP4_*/SP5_* (commit e317eac); new §5.0 added; §6's §5.4 table trimmed of the three moved rows; §1 updated. v3 (2026-05-13, SID-20260513-003000): Phase 5 dual-auditor pass applied — (A1) reference logs moved from §5/4.1 to new §5/4.6 subsection, §2 ontology Type 6 row corrected (real path: SP-4/4.6, not SP-4/4.1); (A2) §4.1 hubs paragraph rewritten — git history shows the hub .md files were never deleted as adapt.md rule 4 / CFP_5.3.16 claimed; 60 files still present at Canonical_MD/_HUBS/ (not at SP4_ProcessDocumentation/_HUBS/ as previously stated), last regenerated 2026-04-03 (commit de15a23); (A3) new §6/5.1 subsection added inventorying 5.1_paper_prompt_development_log.md; (A4) four new modlogs registered: CFP_4.2.33–36 (AbstractTitle, FullPaperAssembly, v1.2 ReviewerRevisions, v1.3 ReviewerB Integration); (A5) four other late artifacts registered: CFP_4.4.22 (4.4), CFP_4.7.21 (4.7), CFP_5.3.29 (5.3), CFP_5.4.15 (5.4); (A6) three PNG figures added to §4.2 with 'not used in paper body or SP-3' note; §7 updated to point at the new CFP_5.3.30 manifest (separate commit). Held for separate user decision (not registered in this v3): backup zip, orphaned scripts at Canonical_MD/ root, .bak in 4.4_SectionGuidance, .patch.txt in 5.3_Notes, _chainwalk_*.md files, v3_Conversations_Claude_Code/ placeholder, Sources*/ disposition."
 section_numbering: pre_renaming
 ---
 
@@ -34,7 +34,7 @@ SP-2 is a map. It describes the architecture of the JPEP documentation archive: 
 
 Read SP-1 before this document for the AI usage declaration and a one-page orientation to the archive. Read SP-3 for the documentation adequacy account — the argument that the record satisfies the attribution, trajectory, and understanding-and-endorsement criteria that Section 7 specifies.
 
-**Provisional note.** File inventories in §§5.0–6 were refreshed 2026-05-12 (SID-20260512-111348) to incorporate artifacts created since 2026-04-09 (the externalization arc plus the SP-1/SP-2 production and review-response sessions), and again 2026-05-13 (SID-20260513-003000) to add §5.0 and trim §5.4 in light of the SP-1/SP-2/SP-3 move. A final enumeration check before submission (Phase 5) is being run alongside the v2 commit.
+**Provisional note.** File inventories in §§5.0–6 were refreshed 2026-05-12 (SID-20260512-111348), expanded 2026-05-13 to add §5.0 for the moved SP-1/SP-2/SP-3, and audited 2026-05-13 in a dual-auditor Phase 5 enumeration pass (this v3) that surfaced and corrected several discrepancies — see frontmatter `note:` for the full list. Items held for separate user decision (legacy backup zip, orphaned scripts, `.bak`/`.patch.txt` files, etc.) are not registered here; they sit on a separate post-v3 cleanup chip-list.
 
 ---
 
@@ -49,7 +49,7 @@ JPEP uses eleven document types. Types 1–8 and 11–12 are listed here; the ga
 | 3 | Section Guidance | SP-4 / 4.4 | all | Versioned constraint documents specifying how a section is to be written. Accumulate mid-course corrections and reviewer feedback across sessions. Produced after traces, consumed by PDLs. JPEP custom type. |
 | 4 | Pattern Summaries | SP-4 / 4.3 | all | Methodological lessons distilled from modification logs after a writing session, formatted as operational guidance for the next session's fresh AI instance. Originally called MOD summaries; renamed and formalized in the v1/v2 Section 6 consolidation. JPEP custom type. |
 | 5 | Section Summaries | SP-4 / 4.5 | v1/v2 | Maintained continuity across sections during the long v1/v2 writing project. Dormant in CFP — the function is handled by session handoff conventions and hub annotations. |
-| 6 | Reference Logs | SP-4 / 4.1 (root) | all | Static bibliography files. Not chain-linked artifacts; maintained by convention rather than by template. |
+| 6 | Reference Logs | SP-4 / 4.6 | all | Static bibliography files. Not chain-linked artifacts; maintained by convention rather than by template. `paper_bibliography_FINAL.md` is the `build_source: true` file used at assembly. |
 | 7 | Modification Logs | SP-4 / 4.2 | all | Record what changed during writing and why. Numbered per section (MOD-001 upward); each entry has a bounded subject. The primary evidence layer for attribution and understanding-and-endorsement claims. |
 | 8a | Project-level PDLs | SP-5 / 5.1 | all | Prompt development logs that document decisions about what to generate at the project level (e.g., the design of `4.1`, the SP-1/2/3 architecture). The single Type 8a file lives in its own subfolder (`5.1_PaperPromptDevelopmentLog_Type8a/`) — distinct from the Type 8b section-level PDLs in `5.2_SectionPromptDevelopmentLogs_Type8b/`. |
 | 8b | Section-level PDLs | SP-5 / 5.2 | all | Prompt development logs that document decisions about how a specific section was to be drafted. Stored in the same folder as 8a; distinguished by scope and naming. |
@@ -88,11 +88,11 @@ Every Claude Code session has a session ID of the form `SID-YYYYMMDD-HHMMSS`. Ev
 
 ## 4. Hub system and graph infrastructure
 
-### 4.1 hub_annotations.yaml
+### 4.1 hub_annotations.yaml and the derived _HUBS/ layer
 
-`hub_annotations.yaml` (in `transparency/SCRIPTS/`) is the authoritative source for session topology. It records, for each session hub: the session ID, the chat UUID (for v1/v2 sessions), predecessor sessions (`continues_from`), and the inputs and outputs of that session.
+`hub_annotations.yaml` (in `transparency/SCRIPTS/`) is the authoritative source for session topology. It records, for each session hub: the session ID, the chat UUID (for v1/v2 sessions), predecessor sessions (`continues_from`), and the inputs and outputs of that session. The architectural decision establishing YAML as authoritative source is in `CFP_5.3.16_Note_HubMetadataArchitectureDecisions.md`.
 
-Hub `.md` files (when present in `SP4_ProcessDocumentation/_HUBS/`) are derived from `hub_annotations.yaml`. As of 2026-05-12 the `_HUBS/` directory is empty — earlier hub `.md` files were removed during the UUID/SID recovery work (see `adapt.md` project rule 4: "deleted hub files in git status signal successful UUID/SID recovery, not missing sessions"). The hub-generation script has not been re-run because it is not yet wired to read `hub_annotations.yaml` directly. The YAML file remains the authoritative source for session topology regardless of the derived `.md` state. The architectural decision governing this is in `CFP_5.3.16_Note_HubMetadataArchitectureDecisions.md`.
+**Derived `.md` hub layer.** The hub-generation script (`obsidian_connections_with_chat_hubs.py` in `transparency/SCRIPTS/`) produces a `CHAT_*.md` stub file per hub at `transparency/Canonical_MD/_HUBS/` (NOT inside `SP4_ProcessDocumentation/` as earlier versions of this section incorrectly stated). As of 2026-05-13 the directory contains 60 `CHAT_*.md` files plus `VERIFICATION_QUEUE.md`, last regenerated 2026-04-03 at commit `de15a23` ("Rebuild hub infrastructure with YAML-authoritative architecture"). The script has not been re-run since; the files therefore reflect the project state as of 2026-04-03, not the current post-externalization architecture (no SP-1/SP-2/SP-3 hubs, for example). **Historical note:** `adapt.md` project rule 4 and the original v1 wording of this paragraph claimed that hub `.md` files had been "removed during UUID/SID recovery work." Git history (`git log -- transparency/Canonical_MD/_HUBS/`) contradicts this — there is no mass-deletion commit; the files entered git in a series of regenerating commits Mar 31 – Apr 3 and have remained since. The discrepancy was surfaced by the Phase 5 audit. The YAML file remains the authoritative source for session topology regardless of the derived `.md` state.
 
 The `continues_from` field records session predecessor relationships. It uses a YAML list form for complex multi-input flows (e.g. a session that continues both a prior writing session and a prior research session). `continues_from` is a session-level fact, recorded in the YAML only; it does not appear in individual artifact frontmatter.
 
@@ -109,6 +109,9 @@ Static SVG figures and interactive HTML graphs are in `transparency/Canonical_MD
 | `jpep_graph_CFP.html` | Interactive graph, CFP phase only. |
 | `jpep_graph_III.html` | Interactive graph, Stage III only. |
 | `jpep_graph_v1v2.html` | Interactive graph, v1/v2 phase only. |
+| `fig2_feedback_loop.png` | Generated by `fig2_feedback_loop.py`. Not used in paper body or SP-3 — graph-infrastructure output (see CFP_4.2.28). Retained as evidence of the figure-generation work. |
+| `fig4_three_draft_session.png` | Generated by `fig4_three_draft_session.py`. Not used in paper body or SP-3; same status as above. |
+| `fig5_visible_decision.png` | Generated by `fig5_visible_decision.py`. Not used in paper body or SP-3; same status as above. |
 
 The interactive HTML graphs support pan, zoom, and node inspection. They are local-only (same evidential status as conversation files): indexed by the SP-5 manifest, available on request. The static SVG figures are the public-facing evidence in SP-3.
 
@@ -142,16 +145,7 @@ SP-4 (`transparency/Canonical_MD/SP4_ProcessDocumentation/`) contains process do
 |------|-------------|
 | `4.1_Complete_Prompt.md` | The foundational input artifact. Human-sourced from origin chat `6c8d9101`, Claude-synthesized in session `2ca5888a`, human-endorsed. Provenance established in CFP-era philological sessions (CFP_4.7.16, CFP_5.3.15). |
 
-Reference logs (Type 6) are also stored in this folder:
-
-| File | Description |
-|------|-------------|
-| `citations-complete.md` | Full citation list |
-| `paper_bibliography.md` | Paper bibliography (working) |
-| `paper_bibliography_FINAL.md` | Paper bibliography (finalized 2026-04-10 after Shoulders bibliography verification pass; see CFP_4.2.31) |
-| `references-master-list.md` | Master reference list |
-| `references_doc.md` | References document |
-| `section5_refs.md` | Section 5 references |
+Reference logs (Type 6) live in `4.6_ReferenceLogs/` — see §4.6 below.
 
 ### 4.2 — Modification Logs (Type 7)
 
@@ -202,6 +196,10 @@ Reference logs (Type 6) are also stored in this folder:
 | `CFP_4.2.30_ModificationLog_Conclusion_ReviewResponse.md` | Conclusion review response — live Conclusion modlog target (MOD-001 2026-04-09; MOD-002 2026-04-10; MOD-003 2026-05-12 for externalization Edit 5) |
 | `CFP_4.2.31_ModificationLog_Bibliography.md` | Bibliography verification pass (MOD-007–010, 2026-04-10) |
 | `CFP_4.2.32_ModificationLog_AIUsageArchive.md` | AI Usage and Documentation Archive closing note (CFP_5.4.14), v1 (2026-05-12) |
+| `CFP_4.2.33_ModificationLog_AbstractTitle.md` | Abstract + Title decisions (2026-05-12) — MOD-001 abstract, MOD-002 title |
+| `CFP_4.2.34_ModificationLog_FullPaperAssembly.md` | CFP_FullPaper assembly + v1.1 cleanup pass (2026-05-12) |
+| `CFP_4.2.35_ModificationLog_FullPaper_v1_2_ReviewerRevisions.md` | v1.2 Reviewer A integration pass (2026-05-12) |
+| `CFP_4.2.36_ModificationLog_FullPaper_v1_3_ReviewerB_Integration.md` | v1.3 Reviewer B integration pass (2026-05-12 → 2026-05-13); MOD-001 through MOD-011 |
 
 ### 4.3 — Pattern Summaries (Type 4)
 
@@ -253,6 +251,7 @@ Reference logs (Type 6) are also stored in this folder:
 | `CFP_4.4.19_SectionGuidance_SelfExpressionDistribution.md` | Self-expression and double contestation |
 | `CFP_4.4.20_SectionGuidance_SP3.md` | SP-3 (current version: v7) |
 | `CFP_4.4.21_SectionGuidance_ExternalizationImplementation.md` | Externalization of SP-1/2/3 from paper body — per-section to-dos (2026-05-12) |
+| `CFP_4.4.22_SectionGuidance_Section3.md` | Section 3 hard constraints — agent-integrity grounding; reproducibility-rejection (2026-05-12) |
 
 ### 4.5 — Section Summaries (Type 5)
 
@@ -269,6 +268,19 @@ All v1/v2 phase. Dormant in CFP.
 | `4.5.7_SectionSummary_Section_VIII__S06.md` | Section VIII |
 | `4.5.8_SectionSummary_Section_IX__S07.md` | Section IX |
 | `4.5.9_SectionSummary_Conclusion__S10.md` | Conclusion |
+
+### 4.6 — Reference Logs (Type 6)
+
+Folder: `transparency/Canonical_MD/SP4_ProcessDocumentation/4.6_ReferenceLogs/`. Static bibliography files; not chain-linked. `paper_bibliography_FINAL.md` is the `build_source: true` file used at paper assembly.
+
+| File | Description |
+|------|-------------|
+| `citations-complete.md` | Full citation list (working) |
+| `paper_bibliography.md` | Paper bibliography (working — process notes, section-by-section usage) |
+| `paper_bibliography_FINAL.md` | Paper bibliography (submission-ready; finalized 2026-04-10 after Shoulders bibliography verification; see CFP_4.2.31; aligned with assembled paper's References block 2026-05-13) |
+| `references-master-list.md` | Master reference list |
+| `references_doc.md` | References document |
+| `section5_refs.md` | Section 5 references (legacy) |
 
 ### 4.7 — Epistemic Traces (Type 2)
 
@@ -318,6 +330,7 @@ All v1/v2 phase. Dormant in CFP.
 | `CFP_4.7.18_EpistemicTrace_ScriptGapAnalysis.md` | Script gap analysis |
 | `CFP_4.7.19_EpistemicTrace_StageIII_InputOutputAnalysis.md` | Stage III input/output analysis |
 | `CFP_4.7.20_EpistemicTrace_Section6History.md` | Section 6 five-stage history (philological backing for SP-3 Part IV) |
+| `CFP_4.7.21_EpistemicTrace_AgentIntegrityGrounding.md` | Agent-integrity grounding for the §3 transparency duty (2026-05-12) |
 
 ---
 
@@ -325,7 +338,15 @@ All v1/v2 phase. Dormant in CFP.
 
 SP-5 (`transparency/Canonical_MD/SP5_DevelopmentRecords/`) contains development records: Types 8, 11, and 12.
 
-### 5.2 — Prompt Development Logs (Types 8a/8b)
+### 5.1 — Project-level Prompt Development Log (Type 8a)
+
+Folder: `5.1_PaperPromptDevelopmentLog_Type8a/`. One file.
+
+| File | Scope |
+|------|-------|
+| `5.1_paper_prompt_development_log.md` | Project-level PDL covering paper-wide decisions about what to generate (distinct from the section-level Type 8b PDLs in §5.2 below). |
+
+### 5.2 — Section-level Prompt Development Logs (Type 8b)
 
 **v1/v2 phase:**
 
@@ -357,6 +378,8 @@ SP-5 (`transparency/Canonical_MD/SP5_DevelopmentRecords/`) contains development 
 | `CFP_5.2.3_pdl_selfexpression_integration.md` | Self-expression / double contestation (PDL-000 through PDL-009) |
 | `CFP_5.2.4_pdl_SP1_SP2_SP3.md` | SP-1/2/3 design (PDL-004 onward; authoritative SP architecture decisions) |
 | `CFP_5.2.5_pdl_AIUsageArchive.md` | AI Usage and Documentation Archive closing note + externalization decision (PDL-001–006, 2026-05-12) |
+
+(SP-2 §6 §5.2 inventories Type 8b only; Type 8a lives in `5.1_PaperPromptDevelopmentLog_Type8a/` and is inventoried in §5.1 above.)
 
 ### 5.3 — Notes (Type 11)
 
@@ -429,6 +452,7 @@ SP-5 (`transparency/Canonical_MD/SP5_DevelopmentRecords/`) contains development 
 | `CFP_5.3.26_Note_DecisionRecord_SectionRenumbering.md` | Decision record — section renumbering effective 2026-04-09 (old 5/6/7/8 → new 4/5/6/7) |
 | `CFP_5.3.27_Note_ReviewResponse_Draft.md` | Consolidated review response draft (Opus + Shoulders) |
 | `CFP_5.3.28_Note_ShouldersReview_Evaluation.md` | Shoulders review evaluation, per-item (2026-04-10) |
+| `CFP_5.3.29_Note_CordascoCorpusBriefing.md` | Cordasco corpus briefing (provenance for the §3 welfare-economic objection material) |
 | `CFP_session_log.md` | Per-session log (`document_subtype: session_log`; appended as-we-go, one section per SID) |
 
 ### 5.4 — Section Drafts (Type 12)
@@ -445,6 +469,7 @@ SP-5 (`transparency/Canonical_MD/SP5_DevelopmentRecords/`) contains development 
 | `CFP_5.4.9_Section7_v3.md` | Section 7 | legacy_multifile |
 | `CFP_5.4.10_Conclusion_v1.md` | Conclusion | legacy_multifile |
 | `CFP_5.4.14_AIUsageArchive.md` | AI Usage and Documentation Archive (unnumbered closing note in the paper body; introduces the externalized archive) | git_inplace |
+| `CFP_5.4.15_Abstract_v1.md` | Abstract draft (2026-05-12); modlog: CFP_4.2.33 | git_inplace |
 
 > **Note (2026-05-13).** SP-1 / SP-2 / SP-3 were previously listed here (`CFP_5.4.13_SP1.md`, `CFP_5.4.12_SP2.md`, `CFP_5.4.11_SP3.md`). At commit `e317eac` they moved to top-level sibling folders of SP-4 / SP-5 and are now inventoried in §5.0 above. `git log --follow` traverses the rename.
 
@@ -503,4 +528,4 @@ The consolidation of II/III/IV into current Section 2 is documented in `4.2.5_Mo
 
 ---
 
-*SP-2 — v1 SID-20260409-150705; v2 SID-20260513-003000 (commit `e317eac`: SP-1/2/3 moved to top-level folders; §5.0 added; §5.4 trimmed). Phase 5 final enumeration check in progress.*
+*SP-2 — v1 SID-20260409-150705; v2 SID-20260513-003000 (commit `e317eac`: SP-1/2/3 moved to top-level folders; §5.0 added; §5.4 trimmed); v3 SID-20260513-003000 (Phase 5 dual-auditor pass applied: §2/§4.1/§4.2/§5.0/§5/§6 corrections — see frontmatter `note:` for the full list).*
