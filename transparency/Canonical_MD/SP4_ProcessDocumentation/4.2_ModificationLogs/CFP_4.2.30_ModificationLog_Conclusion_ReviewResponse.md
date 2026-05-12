@@ -67,6 +67,28 @@ The episode has two layers that the paragraph captures together: at the object l
 
 ---
 
+## Post-Review: Externalization of SP Apparatus — Conclusion edit (2026-05-12)
+
+**Session:** SID-20260512-111348
+
+**Source:** `CFP_5.2.5_pdl_AIUsageArchive.md` (PDL-001 rationale; PDL-005 specification); `CFP_4.4.21_SectionGuidance_ExternalizationImplementation.md`.
+
+### MOD-003 — Opening sentence reformulation (Edit 5)
+
+**Change:** The Conclusion's opening sentence previously read "The paper's documentation apparatus — SP-1 through SP-5 — functions simultaneously as tracking instrument and as philosophical self-expression…" The revision recasts the apparatus claim as a *framework specification* (what the framework requires of an AI-assisted ethics paper) rather than a *self-description* (what this paper contains). A second sentence then points the reader to the closing note for the per-paper instantiation, including the persistent identifier.
+
+**Previous text:**
+
+> The paper's documentation apparatus — SP-1 through SP-5 — functions simultaneously as tracking instrument and as philosophical self-expression: a record of what the author chose to investigate, where they followed the AI, where they overrode it.
+
+**Revised text:**
+
+> The framework specifies a documentation apparatus — SP-1 through SP-5 — that functions simultaneously as tracking instrument and as philosophical self-expression: a record of what an author chose to investigate, where they followed the AI, where they overrode it. The instantiation of that apparatus for the present paper is described, with a persistent identifier, in the closing note that follows this conclusion.
+
+**Why:** Per CFP_5.2.5 (PDL-005): the Conclusion's first sentence was the most overt instance of "the paper's documentation apparatus" framing. The recast preserves the philosophical-self-expression characterisation as a *framework* property and points to the closing note for the *paper-instance*. The remainder of §7 (Neurath's boat, limitations, tracing-condition ambiguity, traditional process signals) is unchanged.
+
+---
+
 ## Modification Summary
 
 ### By Type
@@ -74,9 +96,10 @@ The episode has two layers that the paragraph captures together: at the object l
 |------|-------|----------|
 | Epistemic Calibration | 1 | MOD-001: retrospective → infrastructure gap |
 | New Content — Limitation Added | 1 | MOD-002: tracing condition ambiguity, essential contestedness |
+| Structural Recast — Externalization | 1 | MOD-003: opening sentence as framework spec + closing-note pointer |
 
 ### Key Themes
-Review-response corrections and additions to the Conclusion. MOD-001 fixed an inaccuracy in the self-exemplification paragraph. MOD-002 adds a substantive new limitation arising from implementation: the tracing condition contains an unresolved ambiguity about what depth of understanding is sufficient, which may itself be essentially contested.
+Review-response corrections and additions to the Conclusion. MOD-001 fixed an inaccuracy in the self-exemplification paragraph. MOD-002 adds a substantive new limitation arising from implementation: the tracing condition contains an unresolved ambiguity about what depth of understanding is sufficient, which may itself be essentially contested. MOD-003 (2026-05-12) implements the externalization decision (CFP_5.2.5 PDL-001): the opening sentence's claim about *this paper's* documentation apparatus is recast as a *framework* specification, with the per-paper instantiation pointed to the new unnumbered closing note.
 
 ---
 

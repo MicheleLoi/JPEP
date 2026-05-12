@@ -9,7 +9,7 @@ models:
   - "Claude Sonnet 4.6 (2026-03-03, initial draft + revisions)"
   - "Claude Opus 4.6 (2026-03-03, Reviewer B — two review rounds)"
 date_started: 2026-03-03
-date_last_updated: 2026-04-09
+date_last_updated: 2026-05-12
 status: "Finalized (2026-03-03); post-finalization amendments 2026-03-12"
 session_id: SID-20260303-102634
 source_conversation: "JPEP_20260303_102634.md"
@@ -223,6 +223,42 @@ See `adapt.md` (`section_renumbering`) and `CFP_5.3.26_Note_DecisionRecord_Secti
 ### Side change — Frontmatter
 
 `section_numbering: pre_renaming` marker added.
+
+---
+
+## Post-Finalization: Externalization of SP Apparatus — Introduction edits (2026-05-12)
+
+**Session:** SID-20260512-111348
+
+**Source:** `CFP_5.2.5_pdl_AIUsageArchive.md` (PDL-001 rationale; PDL-005 specification); `CFP_4.4.21_SectionGuidance_ExternalizationImplementation.md` (per-section to-dos).
+
+### Entry 10 — Framework/contribution sentence: SP claim re-pointed to archive (Edit 1)
+
+**Change:** The framework/contribution paragraph (paragraph 5 of v2) previously claimed that "the transparency apparatus — supplementary packages SP-1 through SP-5 — is implemented in the work here presented." The revision re-points the apparatus to a documentation archive associated with the paper, preserving the framework's normative specification while removing the implicit claim that SP-1–SP-5 follow as pages of this article.
+
+**Previous text:**
+
+> The transparency apparatus — supplementary packages SP-1 through SP-5, documenting AI involvement, decision rationale, and process records — is implemented in the work here presented.
+
+**Revised text:**
+
+> The framework specifies five transparency elements (SP-1 through SP-5); the documentation record produced during this paper's writing instantiates them and is archived at the persistent identifier given at the end of this paper.
+
+**Why:** Per CFP_5.2.5 (PDL-001): venue review-infrastructure mismatch and asymmetric submission risk argue for externalising SP-1/SP-2/SP-3 to a documentation archive rather than embedding them in the paper body. The framework's normative force is preserved; the per-paper instantiation now lives in the archive described in the closing note.
+
+### Entry 11 — Roadmap final paragraph updated (Edit 2)
+
+**Change:** The roadmap line "Section 7 reflects on the paper's own practice" was both stale (under the 2026-04-09 renumbering, §7 is the Conclusion) and inconsistent with the externalization. Replaced with "Section 7 concludes. A closing note describes the documentation archive associated with this paper."
+
+**Previous text:**
+
+> Section 2 examines structural barriers to disclosure. Section 3 develops the essentially-contested argument. Section 4 addresses conditions for adequate transparency. Section 5 specifies the framework. Section 6 addresses community assessment of documentation adequacy. Section 7 reflects on the paper's own practice.
+
+**Revised text:**
+
+> Section 2 examines structural barriers to disclosure. Section 3 develops the essentially-contested argument. Section 4 addresses conditions for adequate transparency. Section 5 specifies the framework. Section 6 addresses community assessment of documentation adequacy. Section 7 concludes. A closing note describes the documentation archive associated with this paper.
+
+**Why:** Per CFP_5.2.5 (PDL-002): the closing note is unnumbered, placed between §7 Conclusion and References, matching journal practice for Data Availability Statements. The roadmap must therefore name the closing note explicitly without ascribing a section number to it.
 
 ---
 
