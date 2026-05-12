@@ -290,25 +290,45 @@ User clarification before drafting: "we're not asking about a post-institutional
 
 ## SID-20260513-003000 — 2026-05-13
 
-**Goal:** Restructure: move externalized SP-1/SP-2/SP-3 archive parts from `5.4_SectionDrafts/` to top-level sibling folders of `SP4_*` and `SP5_*` under `transparency/Canonical_MD/`, then run the Phase 5 final enumeration check of SP-2 inventory.
+**Goal as planned:** Restructure — move externalized SP-1/SP-2/SP-3 archive parts from `5.4_SectionDrafts/` to top-level sibling folders of `SP4_*` and `SP5_*` under `transparency/Canonical_MD/`, then run the Phase 5 final enumeration check of SP-2 inventory.
 
-**Rationale:** The 2026-05-12 externalization lifted SP-1/2/3 out of the paper body but left them filed as if they were Type-12 section drafts inside SP-5. SP-2 in particular is the navigation document for the entire archive (SP-4 + SP-5 + the SPs themselves) and was therefore filed inside one of the things it indexes. The move makes the on-disk layout match the post-externalization architecture.
+**Goal as it evolved:** The planned move was executed cleanly; before the audit phase the user redirected to two clarity passes on the assembled paper (`CFP_FullPaper_v1.md` v1.3 → v1.4 → v1.5) and a bibliography alignment, on the grounds that pre-submission clarity work should land before the inventory audit. Audit phase deferred to next session.
 
-**Done:**
+**Rationale (move):** The 2026-05-12 externalization lifted SP-1/2/3 out of the paper body but left them filed as if they were Type-12 section drafts inside SP-5. SP-2 in particular is the navigation document for the entire archive (SP-4 + SP-5 + the SPs themselves) and was therefore filed inside one of the things it indexes. The move makes the on-disk layout match the post-externalization architecture.
 
-| Commit | Substance |
-|---|---|
-| `e317eac` | `git mv` SP-1/SP-2/SP-3 from `5.4_SectionDrafts/` to `SP1_AIUsageDeclaration/`, `SP2_NavigationAndArchitecture/`, `SP3_DocumentationAdequacy/`. Pure rename — filenames preserved (`CFP_5.4.13_SP1.md`, `CFP_5.4.12_SP2.md`, `CFP_5.4.11_SP3.md`); git rename detection 100% on all three. |
-| *(this commit)* | Prose path-reference updates: `CFP_4.2.27_ModificationLog_SP3.md` closing line, `CFP_5.2.4_pdl_SP1_SP2_SP3.md` PDL-025 versioning note, `CFP_5.3.1` archive-contents bullets + RESUME HERE timestamp + move note. Session log entry (this one). |
+**Rationale (clarity passes):** User-flagged repetition between §5.1, §7's closing paragraph, and §3.7 (the latter trimmed back in v1.3 MOD-009 specifically to make room for the §7 reprise). Pre-submission audit pass surfaced a latent contradiction in the §5.2 Lloyd-standards engagement: "We adopt Standards 1 and 2" sits in tension with §3.5 because Lloyd's Standard 2 is replicability, and the reproducibility reading is what §3.5 rejects. The "false 2" framing — adopt Standards 1 and 2 in Lloyd's intended sense, reject the reproducibility reading — was made explicit in the new footnote.
 
-**Method.** Two-pass reconnaissance via Explore agents before the move: confirmed source/destination both git-tracked, no name collisions, no stray `.bak`/`_v*` files for the SPs. Fan-out grep across the repo identified only 5 path-prefixed references (in 3 files) needing prose updates; all other references use bare filenames and survive the move unchanged.
+**Done — seven commits on `cfp-ai-ethics-inquiry`:**
 
-**Out of scope of this session (per plan):**
-- Rename to drop `CFP_5.4.X_` section-draft prefix in the filenames.
-- Update `document_type: Type 12 - Section Draft` frontmatter in moved files.
-- `_GRAPHS/jpep_graph_CFP.html` and `_GRAPHS/jpep_graph.html` regeneration (flagged in work plan move-note).
-- Pre-existing uncommitted change to `target-venue/cfp_ai-ethics-inquiry.md` (separate concern).
+| Commit | Substance | Logged in |
+|---|---|---|
+| `e317eac` | `git mv` SP-1/SP-2/SP-3 from `5.4_SectionDrafts/` to `SP1_AIUsageDeclaration/`, `SP2_NavigationAndArchitecture/`, `SP3_DocumentationAdequacy/`. Pure rename — filenames preserved; git rename detection 100% on all three. | (move-only; no MOD) |
+| `1d17371` | Prose path-reference updates: `CFP_4.2.27` closing line + `CFP_5.2.4` PDL-025 versioning note + `CFP_5.3.1` RESUME HERE bump and archive-contents bullets. Session-start log entry. | (prose update; no MOD) |
+| `4ecf2ef` | **SP-2 v1 → v2.** New §5.0 (top-level SP-1/2/3 inventory) inserted between §4 (hubs) and §5 (SP-4 inventory); SP-1/SP-2/SP-3 rows removed from §6's §5.4 table; §1 architecture paragraph added; frontmatter note: extended. | (SP-2 self-update; documented in frontmatter `note:`) |
+| `6e5f934` | **CFP_FullPaper v1.3 → v1.4 — clarity pass.** §4.4 summary paragraph appended (recapping §3 two-route convergence); §5.1 trimmed by ~550 words (meta-ethical route + ethical route + convergence subsections removed; modular-synth / Cohen AARON / Boden & Edmonds illustration cut and flagged for reinstatement consideration); §5.2 "Engagement with Lloyd's standards" paragraph converted to footnote anchored to the §5.2 lead paragraph; Standard 2 distinguished explicitly from reproducibility. | MOD-013 (`CFP_4.2.17`); MOD-024 + MOD-025 (`CFP_4.2.18`) |
+| `c88d7dd` | **CFP_FullPaper v1.4 → v1.5 — clarity pass.** §7 final paragraph trimmed from ~150 → ~80 words (preparation collapsed into single subordinate clause with §3.7 cross-reference; both punch sentences preserved verbatim); References block unified (`### Classical Sources` and `### Primary Sources (Alphabetical)` subheaders removed; Plato folded into alphabetical sequence between Nietzsche and Resnik). | MOD-004 (`CFP_4.2.30`); MOD-011 (`CFP_4.2.31`) |
+| `4a38bbf` | **Bibliography alignment.** `paper_bibliography_FINAL.md` updated to match MOD-011 — same subheaders removed, Plato repositioned, `last_updated` bumped. Closes re-divergence risk on next assembly pass (file is `build_source: true`). | MOD-012 (`CFP_4.2.31`) |
+| *(this commit)* | Session log close — this entry rewritten to record the full session arc, all seven commits, the mid-session pivot, the deferred items, and the explicit modlog-routing convention. | — |
 
-**Next within session:**
-- Commit C: SP-2 self-update — add §5.0 top-level SP-1/2/3 inventory section; trim SP-1/2/3 rows from §5.4 section-drafts table; append `note:` to frontmatter recording the move.
-- Audit phase: spawn two independent Sonnet agents in parallel for the Phase 5 final SP-2 inventory verification; cross-check reports; reconciliation report to user.
+**Modlog-routing convention introduced this session.** User direction: for changes that land directly in the integrated paper `CFP_FullPaper_v1.md` (not in source section drafts), use the section-level modlogs rather than the FullPaper assembly modlog (`CFP_4.2.36`). Reasoning: section-level modlogs become the single living record of all changes to that section's content over time, regardless of which file the change was applied to. Applied to MOD-013 (`CFP_4.2.17` for §4 work), MOD-024/025 (`CFP_4.2.18` for §5 work), MOD-004 (`CFP_4.2.30` for Conclusion), MOD-011/012 (`CFP_4.2.31` for Bibliography).
+
+**Method.** Two-pass reconnaissance via Explore agents before the move: confirmed source/destination both git-tracked, no name collisions, no stray `.bak`/`_v*` files. Fan-out grep across the repo identified only 5 path-prefixed references (in 3 files) needing prose updates; all other references use bare filenames and survived the move unchanged. Plan written and approved before execution (`also-i-think-that-quirky-teacup.md`). Clarity passes were user-driven mid-session and did not go through a plan-mode pass — each was an interrupt with directional guidance, executed inline.
+
+**Substantive content removed (flagged for review).** The §5.1 trim cut the modular-synthesis / Cohen AARON / Boden & Edmonds (2009, p. 29) illustration of agent-integrity in generative creative practice — substantive material added in the original double-contestation work (CFP_4.2.21, SID-20260401-173934), not pure recap of §3. Candidate reinstatement locations (§3.3 as illustration, or short §5.1 footnote) are recorded in `CFP_4.2.18` MOD-024 and in `CFP_FullPaper_v1.md` `known_issues`. Awaiting user decision.
+
+**State at session close.**
+- Paper: `CFP_FullPaper_v1.md` at v1.5 (commit `4a38bbf`); ~8,160 body words (net −480 across v1.4 + v1.5 from v1.3); References block aligned with `paper_bibliography_FINAL.md`.
+- Archive layout: SP-1/SP-2/SP-3 live as siblings of SP-4/SP-5 at `transparency/Canonical_MD/SP[1-3]_*/CFP_5.4.X_*.md`; `git log --follow` traverses the move cleanly on all three.
+- Work plan: `CFP_5.3.1` RESUME HERE bumped to point at commit `e317eac` (the SP move); the v1.4 and v1.5 commits post-date the RESUME HERE timestamp.
+
+**Deferred from this session (carry forward):**
+- **Phase 5 final SP-2 inventory enumeration check.** Plan in place (`also-i-think-that-quirky-teacup.md`): two independent Sonnet auditors run in parallel against SP-2 §5.0/§5/§6; cross-check reports; reconciliation table to user; audit-driven fixes as separate commit pass. Briefs drafted; not yet spawned.
+- **`_GRAPHS/jpep_graph_CFP.html` and `jpep_graph.html` regeneration.** Stale on SP-1/2/3 paths post-move; flagged in `CFP_5.3.1` move-note.
+- **`CFP_FullPaper_v1.md` `document_type: Type 12 - Section Draft` frontmatter** on moved SP-1/2/3 files (vestigial after the move — needs a project decision on a new type label).
+- **Rename to drop `CFP_5.4.X_` section-draft prefix** in moved SP filenames (deferred per plan).
+- **Reinstatement of modular-synthesis / AARON / Boden-Edmonds illustration** cut from §5.1 — pending user decision on location.
+- **CFP_4.2.31 modlog summary backlog.** MOD-007 through MOD-010 entered the body but never the summary table; MOD-011/012 added; full reconciliation deferred.
+- **RESUME HERE re-bump.** Currently points at `e317eac` (SP move); the latest commit is `4a38bbf`. Update at next session start or when convenient.
+- **Pre-existing uncommitted change to `target-venue/cfp_ai-ethics-inquiry.md`** still hanging — separate concern, never addressed this session.
+
+**Next session entry point:** RESUME HERE in `CFP_5.3.1` (now points at commit `e317eac`; the seven-commit arc described above runs through to `4a38bbf`). Audit phase is the first scheduled item, but user discretion on whether to take the §5.1 illustration-reinstatement decision first.
