@@ -50,7 +50,7 @@ The good faith orientation from Section 5 shapes documentation assessment. Asses
 
 A natural objection: documentation requirements impose disproportionate costs. But AI tools create a reduced-structure epistemic environment that invites indiscriminate cognitive offloading. The documentation requirements re-impose metacognitive monitoring — forethought, self-evaluation, attribution tracking — that counteracts this risk (Zimmerman, 2002; Cheng et al., 2025).
 
-The self-exemplification of this article creates an immediate opportunity. The supplementary materials represent one implementation. Whether SP-3's tracing claim is supported by SP-4's underlying materials is the question this article invites the community to address.
+The self-exemplification of this article creates an immediate opportunity. The documentation archive associated with this article represents one implementation. Whether the SP-3 in that archive supports its tracing claim against the underlying SP-4 materials is the question this article invites the community to address.
 
 ---
 
