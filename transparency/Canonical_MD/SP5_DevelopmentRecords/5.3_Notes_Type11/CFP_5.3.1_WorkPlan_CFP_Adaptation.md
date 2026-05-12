@@ -18,7 +18,7 @@ related:
 
 ---
 
-## RESUME HERE (last updated 2026-05-12, session SID-20260512-111348)
+## RESUME HERE (last updated 2026-05-12, session SID-20260512-154043)
 
 **This section is the canonical entry point for resuming JPEP work.** Per-session granular history is in `CFP_session_log.md` (same folder); this section summarises state and points forward.
 
@@ -30,7 +30,7 @@ related:
 |---|---|---|---|
 | 1 | Introduction | `CFP_5.4.3_Introduction_v2.md` | Done; SP-claim externalised |
 | 2 | Systemic Barriers to Disclosure | `CFP_5.4.5_Section2_v4.md` | Done |
-| 3 | Why Engage with AI-Assisted Scholarship? | `CFP_5.4.4_Section3_v3.md` | Done — **Williams on integrity paragraph pending discussion** |
+| 3 | Why Engage with AI-Assisted Scholarship? | `CFP_5.4.4_Section3_v3.md` (frontmatter v4) | Done — Cordasco welfare-economic objection-response added 2026-05-12 (see CFP_4.2.23 modlog) |
 | 4 | Conditions for Adequate Transparency | `CFP_5.4.7_Section5_v2.md` | Done (good-faith extension 2026-04-10) |
 | 5 | Mandatory Transparency in Practice | `CFP_5.4.8_Section6_v4.md` | Done; SP-claim externalised |
 | 6 | Community Assessment of Documentation Adequacy | `CFP_5.4.9_Section7_v3.md` | Done; Abdulhai hedge + SP-claim externalised |
@@ -47,11 +47,11 @@ Archive contents on disk:
 - SP-4 folder: `transparency/Canonical_MD/SP4_ProcessDocumentation/`
 - SP-5 folder: `transparency/Canonical_MD/SP5_DevelopmentRecords/`
 
-**Next substantive step: Williams on integrity (§3).** Explicitly deferred from SID-20260410-002246: *"paragraph present but not yet discussed or revised."* Open `CFP_5.4.4_Section3_v3.md`, locate the Williams paragraph, decide together whether to keep / revise / remove.
+**Williams on integrity (§3) — RESOLVED 2026-05-12 (SID-20260512-154043).** Three-paragraph engagement with Cordasco's welfare-economic objection added after the Williams paragraph: steelmanned objection, welfare-on-welfare reply (metacognitive monitoring + generative framework), register reply (moral duty does not reduce to welfare calculation). The moral-vs-post-institutional distinction is now load-bearing in §3. §3 v4 word count ~2,080. See `CFP_4.2.23_ModificationLog_Section3_v3.md` v3 → v4 entry for full rationale.
 
-**Then, in priority order:**
+**Next substantive step, in priority order:**
 
-1. Tier 3 review edits (S1, O2, O5, S3 — see `CFP_5.3.27_Note_ReviewResponse_Draft.md` for items).
+1. Tier 3 review edits (S1, O2, O5, S3 — see `CFP_5.3.27_Note_ReviewResponse_Draft.md` for items). Note that the "visibility argument" sketch in CFP_5.3.27 lines 76–81 (philosophy's implicit process signals) is a deferred Tier 3 item and is *not* pre-empted by the v4 Cordasco engagement.
 2. Phase 4: Abstract + Title.
 3. Phase 5: final read-through + Zenodo/OSF upload of the archive + DOI substitution in `CFP_5.4.14` + source-conversations manifest creation + branch merge + paper DOCX/PDF rebuild.
 

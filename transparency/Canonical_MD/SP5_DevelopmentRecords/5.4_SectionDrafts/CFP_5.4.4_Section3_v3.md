@@ -2,19 +2,27 @@
 project: JPEP
 document_type: Type 12 - Section Draft
 section: "3 - Why Engage Transparently with AI-Assisted Ethics Research?"
-version: "v3 (CFP adaptation, two-order restructuring)"
+version: "v4 (CFP adaptation, Cordasco welfare-economic objection-response added)"
 date_created: 2026-04-03
+date_last_modified: 2026-05-12
 status: Draft
-source: "Claude Opus 4.6 (Claude Code session)"
+source: "Claude Opus 4.6 (Claude Code session) / Claude Sonnet 4.6 for v4 expansion"
 inputs:
   - CFP_4.4.20_SectionGuidance_SP3.md
   - CFP_5.4.4_Section3_v2.md
+  - CFP_5.4.9_Section7_v3.md
+  - Paper/MDversion/04_the_dilemma_reconsidered_short_term_positioning_and_long_term_transformation.md
+  - "Cordasco, 'The Invisible Upside of Cognitive Offloading' (Substack, 2026)"
+  - "Cordasco, 'Acemoglu et al (2026) are wrong about AI & Human Cognition' (Substack, 2026)"
 derived_from: "CFP_5.4.4_Section3_v2.md"
 cfp_target: "AI Tools in Ethics Research (topical collection)"
-session_id: SID-20260403-093628
-transformation: "v2 → v3: Two-order restructuring. First-order parallel (expressivism // personal/existential view) replaces two-route framing. Second-order parallel (essential contestedness + Sartrean bad faith deepening) added. Williams integrity paragraph added. Personal/existential tradition developed as positive first-order conception. Net change ~+150 words."
-word_count: ~1500
+session_id:
+  - SID-20260403-093628
+  - SID-20260512-154043
+transformation: "v2 → v3: Two-order restructuring (see CFP_4.2.23 modlog). v3 → v4: Three-paragraph engagement with Cordasco's welfare-economic objection added after the Williams paragraph — steelmanned objection, welfare-on-welfare reply (metacognitive monitoring + generative framework), register reply (moral duty does not reduce to welfare calculation). Net change ~+585 words."
+word_count: ~2080
 section_numbering: pre_renaming
+versioning_convention: git_inplace
 ---
 # 3. Why Engage Transparently with AI-Assisted Ethics Research?
 
@@ -49,6 +57,12 @@ This essential contestedness has a direct consequence. Because no one can prejud
 The point extends beyond epistemology. Silently treating the output-only view as exhaustive is not merely an unjustified assumption; it is what Sartre would recognize as *bad faith* — a denial of freedom in the form of self-deception. The philosopher who uses AI to build philosophical architectures exercises genuine creative freedom: choices are made about how to delegate, what to accept, where to intervene. Moreover, these choices operate at different levels: one can understand the arc of an argument without having generated its formulation, or endorse a theoretical direction without grasping every inferential step that realizes it. This stratification matters because any requirement that intellectual outputs be traceable to a human author's understanding — a tracing condition of the kind the meaningful human control literature demands — must specify *which level* of understanding suffices. Yet that specification cannot be made independently of a substantive conception of what philosophical work is. If philosophy consists in the selection and ordering of ideas, then understanding at the level of direction may be enough; if it consists in the working-through of each argumentative move, then only execution-level comprehension will do. The tracing condition thus inherits the essential contestedness of the activity it is meant to regulate: it cannot be operationalized without presupposing an answer to the very question that is in dispute. The bad faith lies not in the use but in refusing to recognize these as choices — treating them as "just ordinary business" that raises no questions. This is self-deception in the strict Sartrean sense: a flight from the anguish of one's own freedom. But for Sartre, my freedom never exists in isolation; it is constituted in a field of other freedoms whose claims on me I can acknowledge or foreclose. The philosopher who denies that their practice involves significant choices thereby pre-empts the space in which colleagues — who may conceive of philosophical inquiry differently — could legitimately put those choices in question. Where essential contestedness shows that the output-only assumption is epistemically unjustified, the Sartrean analysis adds an ethical dimension: maintaining the assumption is not innocent ignorance but a refusal to hold oneself open to accountability — a closing-off of the very contestation that keeps philosophical practice free.
 
 Bernard Williams's notion of integrity specifies the social dimension of this accountability. Your *ground projects* — the commitments constitutive of your identity as an agent — include your mode of philosophical inquiry: how you think, what methods you employ, how you relate to your own work (Williams, 1981). When that mode changes significantly through AI assistance, transparency is how you honor the coherence of those commitments before a community that has reason to care about them. Integrity in this technical sense is not about reputation; it is about maintaining the legibility of your identity-constituting commitments in conditions where they are changing.
+
+**A welfare-economic challenge.** A natural objection comes from informal work in welfare-oriented analysis of AI in academic life. Cordasco (2026a, 2026b) argues that frameworks evaluating AI's impact on intellectual practice exhibit a structural asymmetry: the costs of restriction — measurable skill decay, friction, documentation overhead — are visible within the framework that specifies them, while the deepest benefits of unconstrained AI-assisted work consist in emergent reorganizations of competency that the framework's prior categories cannot register. Specifying transparency conditions in advance, on this view, risks locking in pre-AI conceptions of good ethical inquiry: the new forms of question identification, the restructured relationships between exploration and judgment, the methodologies AI-assisted ethics may yet make possible are not the kinds of things that generate the traces a transparency apparatus demands. The architecture of the demand is asymmetric — costs inside the framework, benefits outside it — and a default toward permissive experimentation, the objection concludes, follows.
+
+**The welfare calculation runs the other way.** The objection prices the costs of restriction inside the framework and treats benefits as emerging outside it. But the cost side is incomplete on its own terms. AI-assisted intellectual practice creates what learning theorists call a reduced-structure epistemic environment: one in which the cognitive scaffolding that ordinarily forces forethought, self-evaluation, and attribution tracking is absent. Without external structure, the well-documented tendency is toward indiscriminate cognitive offloading (Zimmerman, 2002; Cheng et al., 2025) — a point developed in §6. Documentation requirements re-impose this missing structure; they are not friction added to a frictionless practice but scaffolding restored to a practice whose default conditions invite undisciplined offloading. The welfare cost of *not* requiring transparency is the foreseeable erosion of the metacognitive habits that make philosophical work philosophical at all. The benefit side is also misdescribed. The framework here is generative rather than restrictive: by making process visible, it creates conditions for community-level methodological learning, accumulated patterns of insight and dead-end across submissions, and external recognition from adjacent fields. These are precisely the emergent reorganizations of competency Cordasco's account celebrates; the architectural asymmetry he diagnoses applies to *restrictive* mandates, not to frameworks designed to make practice legible as it evolves.
+
+**And the moral duty stands independently.** Even setting the welfare calculation aside, the transparency duty argued for here is not grounded in such a calculation. It is a moral requirement that flows from the inquirer's own commitments: on the Williams account, certain commitments are constitutive of the agent and cannot be traded against external goods, because they are partly what the agent is. If philosophical practice is among one's ground projects, the legibility of how that practice is conducted is not an external compliance cost; it is internal to doing the work with integrity. Welfare-accounting can tell us whether a given *institutionalization* of transparency is welfare-improving on net — and Cordasco's critique applies properly there, downstream of the moral duty. It does not reach the duty itself.
 
 ## Why Output-Evaluation Fails in Ethics
 
@@ -86,6 +100,12 @@ AI severs the connection on which this mechanism depends. AI systems can produce
 
 Blackburn, S. (1993). *Essays in Quasi-Realism*. Oxford University Press.
 
+Cheng, Z., Zhang, Z., Xu, Q., Maeda, Y., & Gu, P. (2025). A meta-analysis addressing the relationship between self-regulated learning strategies and academic performance in online higher education. *Journal of Computing in Higher Education*, 37(1), 195–224.
+
+Cordasco, C. L. (2026a). The invisible upside of cognitive offloading. *Paperclips and Other Alignment Problems* (Substack), 1 February. https://carlolc.substack.com/p/the-invisible-upside-of-cognitive
+
+Cordasco, C. L. (2026b). Acemoglu et al (2026) are wrong about AI & human cognition. *Paperclips and Other Alignment Problems* (Substack), 2 March. https://carlolc.substack.com/p/acemoglu-et-al-2026-are-wrong-about
+
 Enoch, D. (2011). *Taking Morality Seriously: A Defense of Robust Realism*. Oxford University Press.
 
 Gallie, W. B. (1956). Essentially contested concepts. *Proceedings of the Aristotelian Society*, 56, 167-198.
@@ -105,3 +125,5 @@ Sartre, J.-P. (1956). *Being and Nothingness* (H. E. Barnes, Trans.). Philosophi
 Shafer-Landau, R. (2003). *Moral Realism: A Defence*. Oxford University Press.
 
 Williams, B. (1981). Persons, character and morality. In *Moral Luck: Philosophical Papers 1973-1980* (pp. 1-19). Cambridge University Press.
+
+Zimmerman, B. J. (2002). Becoming a self-regulated learner: An overview. *Theory into Practice*, 41(2), 64–70.
