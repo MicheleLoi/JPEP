@@ -38,6 +38,8 @@ inputs:
 
 **ACM.** (2025). "ACM Policy on Authorship." Updated September 16, 2025. https://www.acm.org/publications/policies/new-acm-policy-on-authorship
 
+**BaHammam, A. S.** (2025). "The Transparency Paradox: Why Researchers Avoid Disclosing AI Assistance in Scientific Writing." *Nature and Science of Sleep*, 17, 2569–2574. https://doi.org/10.2147/NSS.S568375
+
 **Berg, A., & Robbins, H.** (2024). "The Cognitive Divide." *The Point*. https://thepointmag.substack.com/p/the-cognitive-divide
 
 **Blackburn, S.** (1993). *Essays in Quasi-Realism*. New York: Oxford University Press.
