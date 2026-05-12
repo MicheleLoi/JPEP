@@ -270,3 +270,28 @@ sessions:
       continues_from as list for complex flows; continues_from excluded from
       artifact frontmatter. Added SID-20260403-154053 signifier entry. Bug filed:
       20260403_claude_self_memory_md_infrastructure_interference.md.
+
+  SID-20260409-173842:
+    title: "Review response draft — point-by-point response to Opus B + Shoulders"
+    date: 2026-04-09
+    platform: Claude Code
+    continues_from: SID-20260409-155040
+    inputs:
+      - CFP_5.3.24_Note_ReviewerB_OpusReview_v1.md
+      - CFP_5.3.25_Note_ShouldersReview_v1.md
+    inputs_note: >
+      The two AI reviews produced by the previous session (SID-20260409-155040,
+      review of CFP_5.3.23 build) fed into a synthesised point-by-point response
+      document. The original session_topology.yaml entry left both fields empty.
+    artifacts_produced:
+      - CFP_5.3.27_Note_ReviewResponse_Draft.md
+    note: >
+      Entry inserted ad-hoc 2026-05-12 (SID-20260512-171552) during Tier 3
+      review-chain story-completeness work. Backlog: most SIDs from 2026-04-09
+      onwards (review-session SID-20260409-155040, Tier 3 implementation
+      SID-20260512-154043, current SID-20260512-171552, and several others)
+      are not yet entered in this file. The intended wiring of hub_annotations
+      into the graph builder is still pending per the 2026-04-03 governance
+      note above. Frontmatter inputs/feeds_into on the artifacts of those
+      sessions are correct (commit 33aa741); the gap is at the session-level
+      ground-truth file only.
