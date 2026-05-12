@@ -129,6 +129,25 @@ A phrase connecting assessment norms to ecological validity (Section 5's first p
 
 ---
 
+## Post-Review: Shoulders + Opus Review Response (2026-04-09)
+
+**Session:** SID-20260409-200754
+**Source:** `CFP_5.3.25_Note_ShouldersReview_v1.md` (comments #1, #2, #25); `CFP_5.3.24_Note_ReviewerB_OpusReview_v1.md` (§2 Section Notes — §7.2); `CFP_5.3.27_Note_ReviewResponse_Draft.md` (S3)
+
+### Entry 7 — §6.2 Abdulhai passage: preprint status and scope hedged
+
+**Change:** The paragraph reporting Abdulhai et al. (2026) findings was revised to add appropriate hedging: (1) the preprint status is flagged explicitly ("An arXiv preprint by Abdulhai et al. (2026) — unreviewed at the time of writing"); (2) the study scope is noted ("in a general-text corpus"); (3) the inference to ethics research specifically is qualified ("whether this finding extends to ethics research specifically remains to be established"); (4) the rest of the paragraph is preserved but framed as conditional ("If the finding generalizes...").
+
+**Previous text (opening):** "Recent empirical evidence underscores why these criteria are non-trivial. Abdulhai et al. (2026) find that LLM-assisted writing produces a 68.9% increase in stance neutralization..."
+
+**Revised text (opening):** "Recent empirical evidence underscores why these criteria are non-trivial. An arXiv preprint by Abdulhai et al. (2026) — unreviewed at the time of writing — reports that LLM-assisted writing produces a 68.9% increase in stance neutralization in a general-text corpus; the study design and operationalization of 'stance neutralization' should be treated with appropriate caution, and the inference to ethics research specifically remains to be established. If the finding generalizes..."
+
+**Why:** Both Shoulders reviewers (#1, #2, #25) and the Opus review flagged that the Abdulhai citation was presenting a preprint finding as established empirical fact, and that the inference from "LLM-assisted writing generally" to "ethics research specifically" was unsupported. The user's agreed response (CFP_5.3.27, S3): "use appropriate hedging about the findings." The revision retains the evidential weight of the finding while calibrating the epistemic status correctly.
+
+**Note on section numbering:** This entry refers to §6.2 of the current (post-renaming) draft. In pre-renaming numbering this was §7.2. The affected file is `CFP_5.4.9_Section7_v3.md`.
+
+---
+
 ## Connections (auto)
 
 ### Source chat (primary)
