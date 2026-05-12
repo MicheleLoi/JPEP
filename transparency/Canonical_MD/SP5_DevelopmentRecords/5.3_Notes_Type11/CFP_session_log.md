@@ -132,6 +132,12 @@ User asked where the next session would read project status without confusion. D
 
 **One canonical place to read state going forward:** `CFP_5.3.1_WorkPlan_CFP_Adaptation.md` → RESUME HERE section. Session log is the complement (story vs. state).
 
+**Submission strategy clarified at session end:**
+
+- **Path A** (publish at submission, not now): Zenodo upload happens after Williams + Tier 3 + Phase 4 (Abstract/Title) + Phase 5 (final read-through) are complete. Then tag the submission commit, mint a GitHub Release, Zenodo auto-archives and assigns a DOI, paper gets the DOI.
+- **Merging to `main` is housekeeping, not a citation requirement.** A tag + DOI pins the submission state regardless of branch state. SP-1 line 81 marker will be replaced with tag + commit SHA + DOI at submission rather than awaiting a merge.
+- **Chrome MCP available** (`mcp__Claude_in_Chrome__*`) — when the time comes, Claude can drive the Zenodo browser-side steps (navigation, GitHub-integration toggle, release metadata, DOI capture); user handles login + OAuth.
+
 **Also done — archive-readiness catch-up:**
 
 User asked for a review of SP-4 and SP-5 contents vs SP-2's stated inventory, then a commit plan and step-by-step doc updates toward session end. Plan written and approved (overwrites the earlier externalization plan in `~/.claude/plans/`).
