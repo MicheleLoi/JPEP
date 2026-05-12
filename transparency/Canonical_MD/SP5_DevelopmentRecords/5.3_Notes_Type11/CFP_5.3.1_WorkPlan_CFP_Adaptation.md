@@ -18,7 +18,7 @@ related:
 
 ---
 
-## RESUME HERE (last updated 2026-05-12, session SID-20260512-223052, after commit `fb128e4`)
+## RESUME HERE (last updated 2026-05-13, session SID-20260513-003000, after commit `e317eac` — SP-1/2/3 move)
 
 **This section is the canonical entry point for resuming JPEP work.** Per-session granular history is in `CFP_session_log.md` (same folder); this section summarises state and points forward.
 
@@ -41,11 +41,13 @@ related:
 
 Archive contents on disk:
 
-- SP-1: `transparency/Canonical_MD/SP5_DevelopmentRecords/5.4_SectionDrafts/CFP_5.4.13_SP1.md` (v1)
-- SP-2: `transparency/Canonical_MD/SP5_DevelopmentRecords/5.4_SectionDrafts/CFP_5.4.12_SP2.md` (v1, inventory refreshed 2026-05-12)
-- SP-3: `transparency/Canonical_MD/SP5_DevelopmentRecords/5.4_SectionDrafts/CFP_5.4.11_SP3.md` (v3)
+- SP-1: `transparency/Canonical_MD/SP1_AIUsageDeclaration/CFP_5.4.13_SP1.md` (v1)
+- SP-2: `transparency/Canonical_MD/SP2_NavigationAndArchitecture/CFP_5.4.12_SP2.md` (v1, inventory refreshed 2026-05-12; final enumeration check 2026-05-13)
+- SP-3: `transparency/Canonical_MD/SP3_DocumentationAdequacy/CFP_5.4.11_SP3.md` (v3)
 - SP-4 folder: `transparency/Canonical_MD/SP4_ProcessDocumentation/`
 - SP-5 folder: `transparency/Canonical_MD/SP5_DevelopmentRecords/`
+
+**Note (2026-05-13, SID-20260513-003000, commit `e317eac`):** SP-1, SP-2, SP-3 moved from `5.4_SectionDrafts/` to top-level sibling folders of `SP4_*` and `SP5_*` under `transparency/Canonical_MD/`. Filenames preserved (pure `git mv`); use `git log --follow` to traverse history across the rename. Files retain `document_type: Type 12 - Section Draft` for now — relabelling deferred (out of scope of the move commit). Generated HTML graphs in `_GRAPHS/` may be stale until regenerated.
 
 **§3 Cordasco + reproducibility-disanalogy / agent-integrity grounding — RESOLVED 2026-05-12 (SID-20260512-154043).** Two changes treated as one philosophical movement clarifying what kind of argument JPEP's transparency duty is.
 

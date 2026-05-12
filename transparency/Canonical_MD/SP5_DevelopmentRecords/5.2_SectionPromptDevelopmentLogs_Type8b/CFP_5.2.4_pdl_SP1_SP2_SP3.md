@@ -600,7 +600,7 @@ A second pattern: across multiple proposal rounds the assistant kept reaching fo
 
 **Finding about the workflow itself.** PDL-024 specified draft-first refinement. The first application of that workflow on a long document (SP-3) showed that "refinement" can legitimately mean *restructure*, not just polish — and that this is a benefit of draft-first, not a failure of it. A criterion-spine looked plausible at planning time and only revealed its readability cost once a full draft existed for the user to read top to bottom. Upfront-planning would not have surfaced this. Recommendation for future SP-3-scale documents: budget for the possibility that the first refine pass is structural; do not treat structural rewrite as sunk cost.
 
-**Versioning under the new single-file convention.** v1 is preserved at git commit 6a2b844; v2 occupies the same file path; `git log -- transparency/Canonical_MD/SP5_DevelopmentRecords/5.4_SectionDrafts/CFP_5.4.11_SP3.md` is the version history. This is the first SP-3 instance of the post-2026-04-07 single-file versioning convention (adapt.md Adaptation Log 2026-04-07 / Project Rule 11).
+**Versioning under the new single-file convention.** v1 is preserved at git commit 6a2b844; v2 occupies the same historical file path; at commit e317eac (2026-05-13, SID-20260513-003000) the file moved to `transparency/Canonical_MD/SP3_DocumentationAdequacy/CFP_5.4.11_SP3.md` along with SP-1 and SP-2; `git log --follow -- transparency/Canonical_MD/SP3_DocumentationAdequacy/CFP_5.4.11_SP3.md` is the version history across the rename. This is the first SP-3 instance of the post-2026-04-07 single-file versioning convention (adapt.md Adaptation Log 2026-04-07 / Project Rule 11).
 
 ---
 
