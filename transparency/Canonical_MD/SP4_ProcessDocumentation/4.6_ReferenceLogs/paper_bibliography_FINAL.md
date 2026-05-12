@@ -64,6 +64,8 @@ inputs:
 
 **Hosseini, M., Rasmussen, L. M., & Resnik, D. B.** (2023). "Using AI to write scholarly publications." *Accountability in Research*, 31(7), 715–723. https://doi.org/10.1080/08989621.2023.2168535
 
+**Hosseini, M., Resnik, D. B., & Holmes, K.** (2023). "The ethics of disclosing the use of artificial intelligence tools in writing scholarly manuscripts." *Research Ethics*. https://doi.org/10.1177/17470161231180449
+
 **Jollimore, T.** (2025). "I Used to Teach Students. Now I Catch ChatGPT Cheats." *The Walrus*, March 5, 2025. https://thewalrus.ca/i-used-to-teach-students-now-i-catch-chatgpt-cheats/
 
 **Kierkegaard, S.** (1992). *Concluding Unscientific Postscript to Philosophical Fragments* (H. V. Hong & E. H. Hong, Trans.). Princeton: Princeton University Press. (Original work published 1846)
@@ -76,11 +78,15 @@ inputs:
 
 **Nietzsche, F.** (1966). *Beyond Good and Evil* (W. Kaufmann, Trans.). New York: Vintage Books. (Original work published 1886)
 
+**Resnik, D. B., & Hosseini, M.** (2025). "Disclosing artificial intelligence use in scientific research and publication: When should disclosure be mandatory, optional, or unnecessary?" *Accountability in Research*, 33(2). https://doi.org/10.1080/08989621.2025.2481949
+
 **Santoni de Sio, F., Faber, N. S., Savulescu, J., & Vincent, N. A.** (2016). "Why Less Praise for Enhanced Performance? Moving Beyond Responsibility-Shifting, Authenticity, and Cheating Toward a Nature-of-Activities Approach." In F. Jotterand & V. Dubljević (Eds.), *Cognitive Enhancement: Ethical and Policy Implications in International Perspectives* (pp. 27–41). Oxford: Oxford University Press. https://doi.org/10.1093/acprof:oso/9780199396818.003.0003
 
 **Santoni de Sio, F., & van den Hoven, J.** (2018). "Meaningful Human Control over Autonomous Systems: A Philosophical Account." *Frontiers in Robotics and AI*, 5, 15. https://doi.org/10.3389/frobt.2018.00015
 
 **Sartre, J.-P.** (1956). *Being and Nothingness: An Essay on Phenomenological Ontology* (H. E. Barnes, Trans.). New York: Philosophical Library. (Original work published 1943)
+
+**Schilke, O., & Reimann, M.** (2025). "The transparency dilemma: How AI disclosure erodes trust." *Organizational Behavior and Human Decision Processes*, 188, 104405. https://doi.org/10.1016/j.obhdp.2025.104405
 
 **Science.** (2023). "Science Journals: Editorial Policies." https://www.science.org/content/page/science-journals-editorial-policies
 
