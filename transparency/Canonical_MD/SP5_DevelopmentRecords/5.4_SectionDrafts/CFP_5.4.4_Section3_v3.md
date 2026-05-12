@@ -2,7 +2,7 @@
 project: JPEP
 document_type: Type 12 - Section Draft
 section: "3 - Why Engage Transparently with AI-Assisted Ethics Research?"
-version: "v5 (CFP adaptation, reproducibility disanalogy + agent-integrity grounding added; Cavell exemplar)"
+version: "v5.1 (CFP adaptation, O2 Opus B comparison-cases reply — scope of disanalogy clarified)"
 date_created: 2026-04-03
 date_last_modified: 2026-05-12
 status: Draft
@@ -22,8 +22,8 @@ cfp_target: "AI Tools in Ethics Research (topical collection)"
 session_id:
   - SID-20260403-093628
   - SID-20260512-154043
-transformation: "v2 → v3: Two-order restructuring (see CFP_4.2.23 modlog and CFP_4.7.15 trace). v3 → v4: Three-paragraph engagement with Cordasco's welfare-economic objection added after the Williams paragraph — steelmanned objection, welfare-on-welfare reply (metacognitive monitoring + generative framework), register reply (moral duty does not reduce to welfare calculation). v4 → v5: New subsection 'Reproducibility Is Not the Issue' inserted between 'Why Output-Evaluation Fails in Ethics' and 'From Answer to Tracking' — disanalogy with science, explicit grounding of the transparency duty in agent-integrity rather than methodological-integrity-as-reproducibility; Cavell added to exemplar list in the visibility subsection (see CFP_4.7.21 trace). Net change v4 → v5 ~+400 words; cumulative v3 → v5 ~+985 words."
-word_count: ~2470
+transformation: "v2 → v3: Two-order restructuring (see CFP_4.2.23 modlog and CFP_4.7.15 trace). v3 → v4: Three-paragraph engagement with Cordasco's welfare-economic objection added after the Williams paragraph — steelmanned objection, welfare-on-welfare reply (metacognitive monitoring + generative framework), register reply (moral duty does not reduce to welfare calculation). v4 → v5: New subsection 'Reproducibility Is Not the Issue' inserted between 'Why Output-Evaluation Fails in Ethics' and 'From Answer to Tracking' — disanalogy with science, explicit grounding of the transparency duty in agent-integrity rather than methodological-integrity-as-reproducibility; Cavell added to exemplar list in the visibility subsection (see CFP_4.7.21 trace). v5 → v5.1: O2 Opus B comparison-cases reply — single sentence added at end of 'Reproducibility Is Not the Issue' paragraph 2 limiting the disanalogy's scope to the ethics-vs-empirical-science contrast; other humanistic disciplines (history, literary criticism, political theory) explicitly out of scope. Net change v4 → v5 ~+400 words; v5 → v5.1 ~+55 words; cumulative v3 → v5.1 ~+1040 words."
+word_count: ~2525
 section_numbering: pre_renaming
 versioning_convention: git_inplace
 ---
@@ -81,7 +81,7 @@ A qualification: the argument does not establish that process information is req
 
 The cognitivist objection is not the only truth-tracking framing the AI-transparency question invites. A second, related framing is more familiar still: the model of methodological transparency that empirical science has developed under the name of reproducibility. On that model, a researcher's duty is to disclose enough about method that others can verify the path from procedure to result. The duty is grounded in science's truth-tracking aim — methods are the route to claims about a mind-independent world, and verification requires that others be able to traverse the route.
 
-Philosophy does not have this structure. The "evidence" for a philosophical claim is the argument itself, which is already in the published text. There is no experimental method to reproduce; there is only reasoning to evaluate. A reader who wants to test a philosophical claim re-reads the argument, considers objections, traces the inferences — but does not, in any literal sense, replicate the process by which the author arrived at it. The standard of evaluation is the argument's force, not the recoverability of the steps the author took to formulate it.
+Philosophy does not have this structure. The "evidence" for a philosophical claim is the argument itself, which is already in the published text. There is no experimental method to reproduce; there is only reasoning to evaluate. A reader who wants to test a philosophical claim re-reads the argument, considers objections, traces the inferences — but does not, in any literal sense, replicate the process by which the author arrived at it. The standard of evaluation is the argument's force, not the recoverability of the steps the author took to formulate it. The contrast we draw is between ethics and empirical science specifically; we make no claim here about disciplines whose evidentiary structures fall between these poles, like history, literary criticism, or political theory, which mix factual and interpretive elements in ways that may have transparency implications distinct from both.
 
 This disanalogy matters, and it matters honestly. If transparency in philosophy were grounded in reproducibility, AI-generated philosophy would raise no special problem: the argument is "reproducible" — anyone can read it. The reproducibility frame, in other words, is structurally blind to what AI threatens in philosophy. To borrow it would be to misdescribe the worry. There is no methodological-soundness argument here that does the work the paper requires.
 

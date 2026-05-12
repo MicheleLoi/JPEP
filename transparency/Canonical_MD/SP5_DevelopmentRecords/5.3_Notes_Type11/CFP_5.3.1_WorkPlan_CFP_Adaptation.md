@@ -60,10 +60,11 @@ The "visibility argument" sketch in `CFP_5.3.27` lines 76–81 (Williams Greek t
 
 - **S1 (MHC transfer)** — DONE 2026-05-12. §5 MHC introduction rewritten: "transfers structurally" removed; borrowing characterized as conceptual not analogical; cross-reference to §3 v5 agent-integrity grounding added. See `CFP_4.2.18` MOD-023.
 - **O5 (Circularity)** — DONE 2026-05-12. §6.4 self-exemplification passage rewritten to make the feasibility/adequacy distinction explicit; self-citation explicitly framed as evidence-of-feasibility (author-demonstrable), not evidence-of-adequacy (community-settled). See `CFP_4.2.19` Entry 9.
+- **O2 (Comparison cases)** — DONE 2026-05-12. §3 v5.1: one-sentence scope marker added at end of paragraph 2 of "Reproducibility Is Not the Issue" — disanalogy limited to ethics-vs-empirical-science specifically; history, literary criticism, political theory explicitly out of scope. See `CFP_4.2.23` v5 → v5.1 entry.
 
 **Next substantive step, in priority order:**
 
-1. Tier 3 review edits remaining (O2 comparison cases, S3 Abdulhai hedging — see `CFP_5.3.27_Note_ReviewResponse_Draft.md` for items).
+1. Tier 3 review edits remaining (S3 Abdulhai hedging — see `CFP_5.3.27_Note_ReviewResponse_Draft.md` for items).
 2. Phase 4: Abstract + Title.
 3. Phase 5: final read-through + Zenodo/OSF upload of the archive + DOI substitution in `CFP_5.4.14` + source-conversations manifest creation + branch merge + paper DOCX/PDF rebuild.
 
