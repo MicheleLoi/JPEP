@@ -223,6 +223,24 @@ Both bibliography files updated:
 
 ---
 
+### MOD-014 — Sourati (2025) removed: citation lived only in cut §6.2 footnote (SID-20260513-094035)
+
+| Field | Value |
+|-------|-------|
+| Date | 2026-05-13 |
+| Session | SID-20260513-094035 |
+| Type | Reference Removal — downstream of paper-body cut |
+
+**Change:** **Sourati, Z., Ziabari, A. S., & Dehghani, M.** (2025). "The Homogenizing Effect of LLMs on Human Cognition." arXiv:2508.01491 — removed from both the assembled paper's References block (`Paper/MDversion/CFP_FullPaper_v1.md`) and from `paper_bibliography_FINAL.md`.
+
+**Why:** Sourati (2025) was originally added in MOD-006 of CFP_4.2.36 (v1.3 Reviewer B integration) as a cross-disciplinary convergence pointer in a §6.2 inline footnote attached to the Abdulhai paragraph. In the v1.7 compression pass (SID-20260513-094035), the entire Abdulhai paragraph was cut to one sentence and the Sourati footnote was removed entirely on the grounds that it compounded the paragraph's hedging problem — *"review rather than new empirical evidence, and should be weighted accordingly"* was a second hedge stacked on the Abdulhai paragraph's own multi-clause hedges. See Entry 7 in `CFP_4.2.19` for the upstream paper-body cut and the Opus evaluation rationale. Sourati is now cited nowhere in the paper.
+
+**Affected files:**
+- `Paper/MDversion/CFP_FullPaper_v1.md` (References block — Entry 7 in `CFP_4.2.19` records the upstream paper-body cut)
+- `transparency/Canonical_MD/SP4_ProcessDocumentation/4.6_ReferenceLogs/paper_bibliography_FINAL.md`
+
+---
+
 ### MOD-012 — `paper_bibliography_FINAL.md` aligned with MOD-011 (SID-20260513-003000)
 
 | Field | Value |

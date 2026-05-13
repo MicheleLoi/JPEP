@@ -4,7 +4,7 @@ document_type: Type 12 - Section Draft (integrated)
 section: "Full paper — CFP integrated draft"
 label: CFP_FullPaper_v1
 title: "The Journal of Prompt Engineered (Moral) Philosophy: Or, Why AI-Assisted Ethics Research Requires Process Transparency"
-version: v1.6
+version: v1.7
 date_created: 2026-05-12
 date_last_updated: 2026-05-13
 status: Draft (Phase 5 integration)
@@ -26,8 +26,9 @@ session_id:
   - SID-20260512-171552
   - SID-20260512-223052
   - SID-20260513-003000
+  - SID-20260513-094035
 cfp_target: "AI Tools in Ethics Research (topical collection)"
-word_count: ~7,560 (body, excluding references; v1.4 net ≈ −410; v1.5 net ≈ −70 from §7 reprise; v1.6 net ≈ −600: ~−470 §4.3 cut + ~−100 Lloyd footnote + ~−30 §4 intro / §5.1 closing condition-count tightening)
+word_count: ~7,440 (body, excluding references; v1.4 net ≈ −410; v1.5 net ≈ −70 from §7 reprise; v1.6 net ≈ −600; v1.7 net ≈ −120: §6.2 Abdulhai paragraph cut to one sentence + Sourati footnote removed)
 section_numbering: post_renaming
 known_issues:
   - "Cavell mentioned as exemplar in §3 without formal citation — consistent with Nozick/Parfit/Williams treatment as agent-signature exemplars; intentional, not an omission."
@@ -300,7 +301,7 @@ Documentation is adequate when it enables evaluators to answer three questions.
 
 *Understanding and endorsement*: Does the documentation give reason to believe the author understood and endorsed what they present? The documentation should make visible: corrections to AI outputs, places where authorial judgment overrode AI suggestion, capacity to explain and defend the argument. The goal is not proof but reasonable grounds for attributing the contribution to the author's understanding.
 
-Recent empirical evidence underscores why these criteria are non-trivial. An arXiv preprint by Abdulhai et al. (2026) — unreviewed at the time of writing — reports that LLM-assisted writing produces a 68.9% increase in stance neutralization in a general-text corpus; the study design and operationalization of "stance neutralization" should be treated with appropriate caution, and the inference to ethics research specifically remains to be established. If the finding generalizes, AI systematically erases the author's evaluative commitments while increasing surface markers of expressiveness. On expressivist or sentimentalist accounts, a tool that neutralizes stance while preserving the appearance of engagement threatens ethical inquiry at its core. LLM-assisted texts score higher on perceived quality metrics even as genuine evaluative content diminishes — output assessment alone cannot detect the loss that process documentation would reveal.^[A broader cross-disciplinary synthesis pointing in the same direction — though it is review rather than new empirical evidence, and should be weighted accordingly — is Sourati, Ziabari & Dehghani (2025) on the homogenising effect of LLMs on linguistic and reasoning styles.]
+Abdulhai et al. (2026) report a 68.9% increase in stance neutralization in LLM-assisted writing — if the finding generalises, output assessment alone cannot detect what process documentation would reveal.
 
 ## 6.3 A Dual Assessment Structure
 
@@ -422,8 +423,6 @@ This paper was produced with substantial AI assistance over multiple writing pha
 **Science.** (2023). "Science Journals: Editorial Policies." https://www.science.org/content/page/science-journals-editorial-policies
 
 **Shafer-Landau, R.** (2003). *Moral Realism: A Defence*. Oxford: Oxford University Press.
-
-**Sourati, Z., Ziabari, A. S., & Dehghani, M.** (2025). "The Homogenizing Effect of LLMs on Human Cognition." arXiv:2508.01491. https://arxiv.org/abs/2508.01491
 
 **Strathern, M.** (1997). 'Improving ratings': Audit in the British University system. *European Review*, 5(3), 305–321.
 

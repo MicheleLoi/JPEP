@@ -95,6 +95,30 @@ A phrase connecting assessment norms to ecological validity (Section 5's first p
 
 ---
 
+## Entry 7 — §6.2 empirical-scaffolding compression: Abdulhai paragraph cut to one sentence; Sourati footnote removed (SID-20260513-094035)
+
+**Change:** The §6.2 "Recent empirical evidence" paragraph and its inline Sourati footnote in `Paper/MDversion/CFP_FullPaper_v1.md` were collapsed from ~150 words (paragraph) + ~30 words (footnote) to one sentence.
+
+**Previous text (~180 words):**
+
+> Recent empirical evidence underscores why these criteria are non-trivial. An arXiv preprint by Abdulhai et al. (2026) — unreviewed at the time of writing — reports that LLM-assisted writing produces a 68.9% increase in stance neutralization in a general-text corpus; the study design and operationalization of "stance neutralization" should be treated with appropriate caution, and the inference to ethics research specifically remains to be established. If the finding generalizes, AI systematically erases the author's evaluative commitments while increasing surface markers of expressiveness. On expressivist or sentimentalist accounts, a tool that neutralizes stance while preserving the appearance of engagement threatens ethical inquiry at its core. LLM-assisted texts score higher on perceived quality metrics even as genuine evaluative content diminishes — output assessment alone cannot detect the loss that process documentation would reveal.^[A broader cross-disciplinary synthesis pointing in the same direction — though it is review rather than new empirical evidence, and should be weighted accordingly — is Sourati, Ziabari & Dehghani (2025) on the homogenising effect of LLMs on linguistic and reasoning styles.]
+
+**Revised text (one sentence, ~35 words):**
+
+> Abdulhai et al. (2026) report a 68.9% increase in stance neutralization in LLM-assisted writing — if the finding generalises, output assessment alone cannot detect what process documentation would reveal.
+
+**Why:** Per Opus's Phase 5 evaluation of §6 + §7 (SID-20260513-094035): the previous paragraph's hedges accumulated to the point where the citation did less work than the space it consumed ("unreviewed at the time of writing... should be treated with appropriate caution... inference to ethics research specifically remains to be established... *If* the finding generalizes..."). The compressed version preserves what is load-bearing for §6.2 — the empirical pointer + the connection to output-assessment insufficiency — and drops the interpretation chain (stance erasure → expressivist/sentimentalist threat → surface-vs-genuine evaluative content) which restated rather than added to the three criteria the subsection introduces. The Sourati footnote was a second, more heavily-hedged piece of scaffolding for the same point ("review rather than new empirical evidence, and should be weighted accordingly") and compounded the hedging problem; removed entirely. The single-hedge sentence retained ("if the finding generalises") is the minimum the empirical claim needs.
+
+**Downstream:** Sourati (2025) is now cited nowhere in the paper. Bibliography entry removed from both `Paper/MDversion/CFP_FullPaper_v1.md` References block and `paper_bibliography_FINAL.md` (logged as MOD-014 in `CFP_4.2.31`). Abdulhai (2026) remains cited; bibliography entry retained.
+
+**Affected files:**
+- `Paper/MDversion/CFP_FullPaper_v1.md` (version bumped v1.6 → v1.7; word_count ~7,440)
+- `transparency/Canonical_MD/SP4_ProcessDocumentation/4.6_ReferenceLogs/paper_bibliography_FINAL.md` (Sourati removed)
+
+Source draft `CFP_5.4.9_Section7_v3.md` not touched (frozen v1 baseline). Per session convention, section-level modlogs (this one for §6 work — old §7 = new §6) are the landing place for direct-to-integrated-paper changes.
+
+---
+
 ## Entry 6 — Self-exemplification (closing paragraph)
 
 **Change:** §7.4 closes with a paragraph inviting the community to assess this article's own SP-1 through SP-5 materials.
