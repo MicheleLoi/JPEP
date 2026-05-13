@@ -18,7 +18,9 @@ related:
 
 ---
 
-## RESUME HERE (last updated 2026-05-13, session SID-20260513-003000, after commit `e317eac` — SP-1/2/3 move)
+## RESUME HERE (last updated 2026-05-13, session SID-20260513-094035, after commit `2fd9531` — paper at v1.7, pipeline relocated)
+
+**Quick state.** Paper: `Paper/MDversion/CFP_FullPaper_v1.md` at v1.7 (10,647 words / 25 pages per Word; ~9,546 §§1-7 body wc -w). Cumulative compression from v1.3 baseline ≈ −1,200 words across v1.4 (§5.1 trim + §4.4 summary added) + v1.5 (§7 reprise trim) + v1.6 (§4.3 Cost Structure / Costly Signaling cut + Lloyd footnote → dismissive + Mercier removed) + v1.7 (§6.2 Abdulhai paragraph → one sentence + Sourati footnote removed). Hub/graph pipeline relocated to top-level `_pipeline/` (gitignored, not shipped); only the 3 SVGs remain in `transparency/Canonical_MD/_GRAPHS/`. SP-2 at v5; CFP_5.3.30 raw-conversations manifest created. See `CFP_session_log.md` SID-20260513-094035 entry for the full arc and `_pipeline/HUBS_AND_GRAPHS_PLAN.md` for the deferred Tier-1.5/1/2 plan on resuming hub/graph work post-submission.
 
 **This section is the canonical entry point for resuming JPEP work.** Per-session granular history is in `CFP_session_log.md` (same folder); this section summarises state and points forward.
 

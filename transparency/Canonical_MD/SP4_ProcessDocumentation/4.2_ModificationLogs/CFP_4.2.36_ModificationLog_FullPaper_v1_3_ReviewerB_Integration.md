@@ -4,12 +4,14 @@ document: CFP_FullPaper v1.3 — Reviewer B literature-integration pass (ongoing
 output_file: CFP_4.2.36_ModificationLog_FullPaper_v1_3_ReviewerB_Integration.md
 project: JPEP
 created: 2026-05-12
-last_updated: 2026-05-12
-session_id: SID-20260512-223052
+last_updated: 2026-05-13
+session_id:
+  - SID-20260512-223052
+  - SID-20260512-234756
 inputs:
   - Paper/MDversion/CFP_FullPaper_v1.md (v1.2, commit a0a9d9f)
   - Opus state-of-the-art peer review, background agent a0cb1bffadb4cb593, SID-20260512-223052 (deferred items listed in CFP_4.2.35)
-  - transparency/Canonical_MD/_HUBS/CHAT_6c8d9101-cd3f-4f61-aaf9-f293de92d11c.md (priority-check anchor: earliest documented Claude interaction, 2025-10-10)
+  - "Hub stub for chat UUID 6c8d9101 (priority-check anchor: earliest documented Claude interaction on the transparency-paradox topic, 2025-10-10). The hub `.md` file was at `transparency/Canonical_MD/_HUBS/CHAT_6c8d9101-…md` when this modlog was active and has been relocated to `_pipeline/_HUBS/` (gitignored, not shipped) in commit 9792297 on 2026-05-13 as part of the pipeline relocation. The empirical priority-check itself used the file at its prior location during the v1.3 work."
   - https://pmc.ncbi.nlm.nih.gov/articles/PMC12515416/ (BaHammam 2025, transparency-paradox editorial)
 output_completed: Paper/MDversion/CFP_FullPaper_v1.md (v1.3, ongoing)
 feeds_into: Phase 5 final consistency review
