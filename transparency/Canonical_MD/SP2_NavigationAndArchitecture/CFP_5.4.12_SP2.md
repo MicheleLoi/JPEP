@@ -35,7 +35,7 @@ SP-2 is a map. It describes the architecture of the JPEP documentation archive: 
 
 Read SP-1 before this document for the AI usage declaration and a one-page orientation to the archive. Read SP-3 for the documentation adequacy account — the argument that the record satisfies the attribution, trajectory, and understanding-and-endorsement criteria that Section 7 specifies.
 
-**Provisional note.** File inventories in §§5.0–6 were refreshed 2026-05-12 (SID-20260512-111348), expanded 2026-05-13 to add §5.0 for the moved SP-1/SP-2/SP-3, and audited 2026-05-13 in a dual-auditor Phase 5 enumeration pass (this v3) that surfaced and corrected several discrepancies — see frontmatter `note:` for the full list. Items held for separate user decision (legacy backup zip, orphaned scripts, `.bak`/`.patch.txt` files, etc.) are not registered here; they sit on a separate post-v3 cleanup chip-list.
+**Provisional note.** File inventories in §§5.0–6 were refreshed 2026-05-12, expanded 2026-05-13 to add §5.0 for the moved SP-1/SP-2/SP-3, audited 2026-05-13 in a dual-auditor Phase 5 enumeration pass (v3), and finalized 2026-05-13 (v5+) with the pipeline relocation. A set of pre-submission exclusions was applied via `.gitignore` in the same session: a pre-CFP backup zip, an orphan utility script, a legacy patch file, three chain-walk scratch notes, an empty placeholder folder, three pre-CFP source-material folders (Sources MD/, Sources word/, Sources_RTF/), and a Deprecated/ folder — all retained locally for the author's reference but excluded from the shipped archive. Rationale recorded in `CFP_session_log.md` SID-20260513-094035 entry; `.gitignore` patterns documented inline.
 
 ---
 
