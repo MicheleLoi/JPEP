@@ -28,7 +28,7 @@ session_id:
   - SID-20260513-003000
   - SID-20260513-094035
 cfp_target: "AI Tools in Ethics Research (topical collection)"
-word_count: "~9,546 §§1-7 body / ~10,900 total document (incl. Abstract 83, AI Usage Archive 443, References 725). Per-section: §1 718, §2 592, §3 3598, §4 2104, §5 886, §6 725, §7 883. Note: earlier frontmatter versions of this field reported ~7,440 — that figure was derived by subtracting recorded deltas from the v1.3 assembly modlog's claimed ~8,640 baseline; the baseline itself understated the count (the real v1.3 body was probably ~10,600). v1.4–v1.7 net change from cumulative deltas ≈ −1,200 words; corrected v1.7 total reconciles to current ~9,546 measured by wc -w on §§1-7."
+word_count: "Word: 10,647 / 25 pages (authoritative; Word includes textboxes, footnotes, endnotes). wc -w breakdown: §§1-7 body 9,546 (§1 718, §2 592, §3 3598, §4 2104, §5 886, §6 725, §7 883); Abstract 83; AI Usage Archive 443; References 725. Earlier frontmatter versions reported ~7,440 — that was an arithmetic-from-v1.3-baseline figure where the baseline itself was understated. v1.4–v1.7 cumulative compression ≈ −1,200 words. Confirmed against Word count 2026-05-13 (SID-20260513-094035)."
 section_numbering: post_renaming
 known_issues:
   - "Cavell mentioned as exemplar in §3 without formal citation — consistent with Nozick/Parfit/Williams treatment as agent-signature exemplars; intentional, not an omission."
