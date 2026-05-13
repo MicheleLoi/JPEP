@@ -20,7 +20,14 @@ related:
 
 ## RESUME HERE (last updated 2026-05-13, session SID-20260513-094035, after commit `2fd9531` — paper at v1.7, pipeline relocated)
 
-**Quick state.** Paper: `Paper/MDversion/CFP_FullPaper_v1.md` at v1.7 (10,647 words / 25 pages per Word; ~9,546 §§1-7 body wc -w). Cumulative compression from v1.3 baseline ≈ −1,200 words across v1.4 (§5.1 trim + §4.4 summary added) + v1.5 (§7 reprise trim) + v1.6 (§4.3 Cost Structure / Costly Signaling cut + Lloyd footnote → dismissive + Mercier removed) + v1.7 (§6.2 Abdulhai paragraph → one sentence + Sourati footnote removed). Hub/graph pipeline relocated to top-level `_pipeline/` (gitignored, not shipped); only the 3 SVGs remain in `transparency/Canonical_MD/_GRAPHS/`. SP-2 at v5; CFP_5.3.30 raw-conversations manifest created. See `CFP_session_log.md` SID-20260513-094035 entry for the full arc and `_pipeline/HUBS_AND_GRAPHS_PLAN.md` for the deferred Tier-1.5/1/2 plan on resuming hub/graph work post-submission.
+**Quick state.** Paper: `Paper/MDversion/CFP_FullPaper_v1.md` at v1.7 (10,647 words / 25 pages per Word). Cumulative compression v1.3 → v1.7 ≈ −1,200 words. Hub/graph pipeline relocated to top-level `_pipeline/` (gitignored). SP-2 at v5+. Raw-conversations manifest at `CFP_5.3.30`. **Pre-submission chip-list resolved via `.gitignore`** (2026-05-13, SID-20260513-094035): backup zip, orphan utility script, legacy patch file, chain-walk scratch notes, empty placeholder folder, pre-CFP source folders, and Deprecated/ all retained locally but excluded from the shipped archive. Frontmatter `source:`/`assembly:`/`known_issues:` slimmed to prevent change-log content leaking into docx custom properties. `.docx` and `.pdf` regenerated. See `CFP_session_log.md` SID-20260513-094035 for the full arc and `_pipeline/HUBS_AND_GRAPHS_PLAN.md` for the deferred Tier-1.5/1/2 hub-and-graph plan. **Archive is submission-ready.**
+
+**Submission-ready items NOT done (deferred deliberately):**
+
+- Opus's full §6+§7 compression recommendations beyond the §6.2 Abdulhai/Sourati cut (parked; ~700 words of further trims identified).
+- Opus's §§5–6 flow fix — expand §5.2 SP-N table from one-line to two-line cells, importing concrete artifact-type names from §6.3's prose re-description (parked; ~+80 / −60 words, ~zero net change).
+- §3 eval — at 3,598 words / 38% of body, untouched by Opus's reviews so far (parked).
+- Zenodo DOI mint at submission tag; insert DOI into `CFP_5.4.14` and SP-1.
 
 **This section is the canonical entry point for resuming JPEP work.** Per-session granular history is in `CFP_session_log.md` (same folder); this section summarises state and points forward.
 

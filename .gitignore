@@ -40,6 +40,38 @@ transparency/TEMP/
 # escludi Python bytecode cache
 **/__pycache__/
 
+# === Pre-submission exclusions (2026-05-13, SID-20260513-094035) ===
+# Chip-list items not part of the shipped archive. Retained locally for the
+# author's reference; excluded from publication. Each item below has documented
+# rationale in CFP_session_log.md and was reviewed before exclusion.
+
+# B1 — Pre-CFP backup zip (Jan 4, superseded by git history)
+transparency/Canonical MD_backup.zip
+
+# B3 — Utility script orphaned at Canonical_MD/ root (duplicate of scripts/
+# functionality; no longer used in the pipeline)
+transparency/Canonical_MD/check_missing_yaml.py
+
+# B5 — Legacy git patch artifact (Jan 6, full SHA in filename)
+transparency/Canonical_MD/SP5_DevelopmentRecords/5.3_Notes_Type11/II_5.3.4_*.patch.txt
+
+# B6 — Working chain-walk scratch files (Apr 4; underscore-prefixed; not
+# formally registered in SP-2 inventory)
+transparency/Canonical_MD/SP5_DevelopmentRecords/5.3_Notes_Type11/_chainwalk_*.md
+
+# B7 — Empty placeholder folder that was never populated
+transparency/Canonical_MD/v3_Conversations_Claude_Code/
+
+# D1 — Pre-CFP source materials (Word/RTF/Markdown originals from before
+# the artifact-archive structure was finalized; preserved on disk, not shipped)
+transparency/Sources MD/
+transparency/Sources word/
+transparency/Sources_RTF/
+
+# D2 — Explicitly-deprecated material (one predecessor PDL kept on disk
+# but not part of the active archive)
+transparency/Deprecated/
+
 # consenti founding conversation (anonymized da6a830c)
 !06_conversations/
 !06_conversations/imported/

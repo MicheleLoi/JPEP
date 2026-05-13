@@ -40,7 +40,7 @@ inputs:
 
 **Blackburn, S.** (1993). *Essays in Quasi-Realism*. New York: Oxford University Press.
 
-**Boden, M. A., & Edmonds, E. A.** (2009). "What is Generative Art?" *Digital Creativity*, 20(1-2), 21–46. https://doi.org/10.1080/14626260902867915
+**Boden, M. A., & Edmonds, E. A.** (2009). "What is Generative Art?" *Digital Creativity*, 20(1–2), 21–46. https://doi.org/10.1080/14626260902867915
 
 **Cheng, Z., Zhang, Z., Xu, Q., Maeda, Y., & Gu, P.** (2025). "A meta-analysis addressing the relationship between self-regulated learning strategies and academic performance in online higher education." *Journal of Computing in Higher Education*, 37(1), 195–224. https://doi.org/10.1007/s12528-023-09390-1
 

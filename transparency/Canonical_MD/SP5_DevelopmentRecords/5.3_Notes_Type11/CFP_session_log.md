@@ -369,13 +369,49 @@ User clarification before drafting: "we're not asking about a post-institutional
 - §7 ¶6 forward-agenda compression (~40 words)
 - Potential §3 evaluation (untouched by Opus this round; 38% of body)
 
-**Deferred (chip list from prior session, still parked):**
-- B1 `Canonical MD_backup.zip` removal
-- B3 `check_missing_yaml.py` disposition
-- B5 `.patch.txt` removal
-- B6 `_chainwalk_*.md` files disposition
-- B7 `v3_Conversations_Claude_Code/` placeholder removal
-- D1 `Sources MD/`, `Sources_word/`, `Sources_RTF/` disposition
-- D2 `transparency/Deprecated/` disposition
-- `adapt.md` rule 4 rewrite to match git reality
-- Mar 31 hub-creation session documentation gap
+**Deferred (chip list from prior session — RESOLVED late in this session via gitignore-and-park):**
+- B1 `Canonical MD_backup.zip` — gitignored ✓
+- B3 `check_missing_yaml.py` — gitignored ✓
+- B5 `.patch.txt` — gitignored ✓
+- B6 `_chainwalk_*.md` files — gitignored ✓
+- B7 `v3_Conversations_Claude_Code/` placeholder — gitignored ✓
+- D1 `Sources MD/`, `Sources_word/`, `Sources_RTF/` — gitignored ✓
+- D2 `transparency/Deprecated/` — gitignored ✓
+- `adapt.md` rule 4 rewrite — done ✓
+- Mar 31 hub-creation session documentation gap — still parked (no fix applied; not blocking submission)
+
+---
+
+## Finalization addendum — SID-20260513-094035 (closing commits)
+
+After the dual-auditor reconciliation and the pipeline relocation, the session continued with:
+
+- **`63a9aa2`** Hub-architecture design rollup (SID-20260403-154700 → JPEP_20260403_193831.md).
+- **`05b615d`** Hub script re-run (later superseded by relocation).
+- **`7f477a7`** CFP_FullPaper v1.7: §6.2 Abdulhai paragraph → one sentence; Sourati footnote + bibliography entry removed.
+- **`f2d01aa`** Frontmatter word_count correction (~7,440 → measured ~9,546 §§1-7 / ~10,900 total document).
+- **`9792297`** Pipeline relocation: `transparency/SCRIPTS/` + `_HUBS/` + HTML/PNG outputs in `_GRAPHS/` moved to top-level `_pipeline/` (gitignored, not shipped).
+- **`a95159c`** Frontmatter word_count updated to Word's authoritative 10,647 / 25 pp.
+- **`2fd9531`** Frontmatter `source:` field slimmed to prevent change-log leakage into docx custom properties (after Word search surfaced "Cost Structure / Costly Signaling" in document metadata even though §4.3 was cut in v1.6).
+- **`05e19eb`** Consistency-audit fixes: `CFP_4.2.36` `last_updated` bumped to 2026-05-13; work plan RESUME HERE heading bumped to current state.
+- **(this commit)** Pre-submission finalization: chip-list resolved via `.gitignore` (15 files untracked across B1–B7 + D1–D2); `adapt.md` rule 4 rewritten to match git reality (pipeline relocated, not deleted); frontmatter `assembly:` and `known_issues:` fields also slimmed to prevent further change-log leakage into Word custom properties; Boden & Edmonds en-dash normalised in `paper_bibliography_FINAL.md`; SP-2 §1 provisional-note extended to record the gitignore-and-park decision; work plan RESUME HERE Quick-state paragraph updated.
+
+**Archive state at session close.**
+
+- `transparency/` contains only what ships to Zenodo. No pipeline assets, no legacy backups, no scratch files.
+- `Paper/MDversion/CFP_FullPaper_v1.md` at v1.7 with slim frontmatter (no change-log leakage to Word custom properties).
+- `Paper/journal/CFP_FullPaper_v1.docx` and `.pdf` regenerated from current source.
+- `_pipeline/` (gitignored) preserves the hub/graph pipeline + the deferred-work plan.
+- `06_conversations/` (gitignored) preserves the raw conversation transcripts.
+- Pre-submission exclusions (gitignored from `transparency/`) preserve the source materials and legacy items locally without shipping them.
+
+**Pre-submission deferred (not blocking):**
+
+- Opus §6+§7 further compression (parked).
+- Opus §§5–6 flow fix — expand §5.2 SP-N table (parked).
+- §3 evaluation (parked).
+- Zenodo DOI mint and insertion into CFP_5.4.14 + SP-1 line 81 (at submission time).
+- Cosmetic: SP-2 §5 subsection numbering quirk (parked).
+- Documentation of Mar 31 hub-creation session (parked).
+
+**Session closes here. Use `/mhc-end` to finalize the MHC-W session record.**
