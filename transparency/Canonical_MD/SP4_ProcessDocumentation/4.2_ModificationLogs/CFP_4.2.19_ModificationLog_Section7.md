@@ -225,6 +225,107 @@ The revision preserves the §6.4 placement (under "Epistemic Norms for Assessmen
 
 ---
 
+## Entry 8 — §6.4 absorbs the gaming-defense argument relocated from former §4.2 (SID-20260513-current)
+
+**Companion entry to MOD-015 in `CFP_4.2.17`.** The §4 collapse moved the Strathern / fabrication-vs-vagueness / defense-in-depth / community-condition argument out of former §4.2 and into §6.4, where it belongs operationally. §6.4 grows from 3 paragraphs (~340w) to 5 paragraphs (~735w).
+
+**Change.**
+
+§6.4 now opens with two new paragraphs (Paras 1–2, ~370w combined) developing the gaming-defense argument before the existing calibration / cost-objection / self-exemplification material. The opening paragraph of pre-revision §6.4 ("The good faith orientation from Section 4 shapes documentation assessment") is also rewritten into the new Para 3 transition ("Within these norms, calibration matters") — the "from Section 4" backreference is dropped since §4 no longer hosts a good-faith condition; the calibration content itself is unchanged.
+
+**Para 1 (new, ~175w) — "Specificity is necessary but insufficient."** Strathern (1997) target-as-measure extended to any single-target regime; AI systems can fabricate documentation matching whatever the accepted model is (frequency of human interventions, override patterns, density of independent intellectual contribution). Specificity closes vagueness-gaming; it cannot close fabrication-gaming. Lands on the anchor sentence preserved from pre-revision line 209: "What prevents this second failure is the absence of a single normative target against which fabrication can be optimized."
+
+**Para 2 (new, ~195w) — "Evaluative diversity as defense-in-depth + community condition."** References §3.3's essential-contestedness work rather than re-deriving it ("Section 3 argued that no tradition can treat its own evaluative criteria as the operative standard for ethical inquiry; this has a structural consequence for assessment practice"). The "defense in depth" label preserved verbatim — it is the only handle for the structural claim. Community-condition rider preserved: if one conception of authentic human authorship achieves de facto dominance through professional incentive structures or hiring practices, the diversity collapses in practice. Good faith at the community level — encountering documentation on its own terms rather than against a template — is the disposition under which the defense remains operative. ("Good faith" is introduced here locally; not labeled as a §4 condition.)
+
+**Para 3 (rewritten transition + retained content, ~80w).** Opener changed from "The good faith orientation from Section 4 shapes documentation assessment" to "Within these norms, calibration matters." The subsequent content (assessment as epistemic inquiry, depth-proportional-to-claimed-contribution, AI-generated-central-insight vs. structuring-a-well-understood-argument) is unchanged.
+
+**Paras 4–5 (unchanged).** Cost-objection rebuttal (Zimmerman 2002; Cheng et al. 2025) and self-exemplification paragraph (feasibility vs. adequacy) retained verbatim.
+
+**Cut from the original pre-revision §4.2 gaming-defense (not relocated).** Two paragraphs of former §4.2 were not brought into §6.4:
+
+- Pre-revision §4.2 paragraph 5 (former line 215, ~140w) — "Practical consequence" about cases where AI contributed most of the philosophical content. The argument that the community must encounter the full range of practices is forward-looking and is implicitly handled by §7's evidentiary-base sentences and the conclusion's monitoring claim.
+- Pre-revision §4.2 paragraph 6 (former line 217, ~140w) — "Connects to central claim" recap drawing the individual-bad-faith / community-good-faith parallel. The parallel is implicit in §3.3 (individual) + new §6.4 Para 2 (community); explicit restatement was redundant.
+
+**Why this placement.** The gaming-defense argument is about how *evaluators* encounter documentation under assessment, not about adequacy-conditions on the framework's design. §6.4 is the assessment-norms section; the argument's central insight (no single normative target can defeat fabrication, only evaluative diversity can) answers the foreseeable reader question "won't your SP-1–SP-5 just create a richer target to game?" — a question that only properly arises after the framework has been introduced. The pre-revision placement in §4.2 fired the argument one section ahead of the framework it was defending.
+
+**Strathern (1997)** moves from §4 (former location) to §6.4 (new location). The citation is the same; no bibliography update required.
+
+**Section guidance.** Constraints recorded in `CFP_4.4.24_SectionGuidance_Section6_GamingDefense.md` (created before this edit): (a) fabrication-vs-vagueness distinction load-bearing; (b) "defense in depth" label verbatim-preserved; (c) do not re-derive essential contestedness — reference §3.3 instead; (d) drop "from Section 4" backreferences.
+
+**Word count.** §6 total: 702w → 1,087w (gain of +385w; the gaming-defense block adds ~395w including the transition sentence; small corresponding compression elsewhere in §6.4 not made — no further changes in this entry).
+
+**Affected files:**
+- `Paper/MDversion/CFP_FullPaper_v1.md` (v1.7 → v1.8 — same version bump as MOD-015)
+- New: `transparency/Canonical_MD/SP4_ProcessDocumentation/4.4_SectionGuidance/CFP_4.4.24_SectionGuidance_Section6_GamingDefense.md`
+
+**Note on section numbering:** §6.4 in post-renaming numbering (current paper structure). The companion modlog `CFP_4.2.17` retains "Section5" in its filename per the renumbering convention (old §5 = current §4).
+
+---
+
+## Entry 9 — §6 → §5 renumbering after the §5↔§6 swap; minor knock-on rephrasings (SID-20260513-current; v1.8 → v1.9)
+
+**Companion entry to MOD-028 in `CFP_4.2.18`.** The §5↔§6 swap moved this file's content (formerly §6 "Community Assessment of Documentation Adequacy") to §5 of the integrated paper. Content is largely unchanged; the rephrasings recorded here are the small knock-ons needed because §5 now *precedes* the framework section that follows it.
+
+**Why the renumbering.** See MOD-028 in `CFP_4.2.18` for the originating rationale. Briefly: the framework apparatus was firing before the criteria it was meant to satisfy. The criteria belong first.
+
+**Change.**
+
+§5 in the integrated paper now contains the content of former §6 with these minor edits:
+
+- *§5.1 opener (former §6.1):* "Section 5 established what transparency documentation must do: enable evaluators across the community of legitimate positions to trace intellectual contributions to human understanding and direction." → "Adequate transparency documentation must enable evaluators across the community of legitimate positions to assess how a work came to be." (Removed backward reference to a section that no longer precedes §5; rephrased forward-orientation.)
+- *§5.1 closing of paragraph 1:* "How should the scholarly community assess whether what is disclosed is adequate?" tightened. "Documentation adequacy is not self-certifying. An author can produce well-labelled supplementary files that do not enable tracing." → "...that do not enable any such assessment." (Removed MHC vocabulary "enable tracing" — replaced with phrasing that does not pre-suppose MHC's tracing-condition, since MHC is now introduced only in §6.)
+- *§5.1 closing sentence:* "The standard is documentation adequacy—does the disclosed record enable tracing assessment?—not reproduction success." → "...does the disclosed record enable the assessor to infer how the work came to be?—not reproduction success." (Same reason: dropped "tracing assessment" pre-supposition.)
+- *§5.3 (former §6.3):* "Documentation adequacy assessment examines whether the tracing condition is satisfied." → "Documentation adequacy assessment examines whether the record enables the assessor to infer how the work came to be." (Dropped "tracing condition" — MHC vocabulary defers to §6.)
+- *§5.4 opening sentence (former §6.4):* "The dual structure just described raises a deeper question about what makes the framework's specifications robust against gaming." → "...what makes any framework's specifications robust against gaming." (The paragraph now precedes the framework's introduction in §6; the rephrasing makes the argument's generality explicit — it applies to any specification regime, not specifically to ours.)
+- *§5.4 self-exemplification paragraph:* "whether the SP-3 in that archive actually supports its tracing claim against the underlying SP-4 materials" → "whether the documentation account in that archive actually supports its claim against the underlying process materials." (Reduces reliance on SP-3/SP-4 labels appearing before §6 introduces them in fuller form; the SP-3 / SP-4 labels are still introduced briefly in §5.3, so this rephrasing is for prose-flow rather than necessity.)
+
+**No content cut, no content added.** §5 word count is essentially unchanged: ~1,087w (former §6) → ~1,103w (current §5). The +16w drift is from the longer paraphrases.
+
+**Bibliography.** No entries added or removed at this level. Strathern (1997) remains cited in §5.4 (the gaming-defense paragraph relocated from former §4.2 in Phase 1, now sitting in §5.4 of the swapped structure). Zimmerman 2002 and Cheng et al. 2025 still cited in the cost-objection rebuttal paragraph.
+
+**Affected files:**
+- `Paper/MDversion/CFP_FullPaper_v1.md` (v1.8 → v1.9 — same version bump as MOD-028 in `CFP_4.2.18`)
+
+**Note on section numbering.** This file (`CFP_4.2.19_ModificationLog_Section7.md`) was named for the old-§7 numbering (pre-first-renumbering). After the first renumbering, the file tracked current-§6 content. After this MOD's §5↔§6 swap, the file tracks current-§5 content. The filename is preserved per the project's renumbering convention; the content tag is "current §5 of the integrated paper at v1.9".
+
+---
+
+## Entry 9b — §5.3 SP-X labels replaced with functional names (post-Entry-9 polish; SID-20260513-current)
+
+**Issue.** Entry 9 left the §5.3 ("A Dual Assessment Structure") paragraph using SP-X labels as the reader's first encounter with the apparatus — "The assessor reads SP-1 through SP-3 and, as needed, SP-4 and SP-5. SP-1 is an AI usage declaration..." The labels drop cold: the reader has not been told what SP stands for, what the apparatus is, or why there are five elements. User feedback (this session): "this is the first time sp are mentioned. you drop those documentation records label that have absolutely no meaning for the reader, without preparation."
+
+**Fix.** §5.3 paragraph rewritten to describe the documentation archive by *function*, using italicized functional names that §6 will then attach SP-X labels to. The functional descriptors are now: *usage declaration*, *navigation document*, *documentation adequacy account*, and *process materials and development records*. The reader meets these concepts first in §5.3; §6's "SP-1 (Declaration) is the entry point…" then formally labels them.
+
+**Companion edits.** Two other sites that used "(SP-1 through SP-5)" before §6 defined the labels are also corrected:
+
+- **Abstract:** "five transparency elements (SP-1–SP-5)" → "five transparency elements" (the parenthetical labels are not needed in an abstract).
+- **Introduction (§1):** "The framework specifies five transparency elements (SP-1 through SP-5)" → "The framework specifies five transparency elements". The labels first appear in §6 where they are properly introduced.
+
+**Resulting order of first-use.** SP-X labels now appear in the paper body for the first time at §6 line 247 ("Five elements compose the apparatus. SP-1 (Declaration) is the entry point…"). The only earlier occurrence is in the frontmatter `source:` field (administrative metadata, not body prose). Subsequent uses in §7 / AI Usage Archive are all after §6's introduction.
+
+**Word count effect.** §5.3 grew slightly (+~30w) from the more discursive description. §1 and Abstract shrank by ~10w combined. Net negligible.
+
+**Affected file:** `Paper/MDversion/CFP_FullPaper_v1.md` (still v1.9; in-place polish under the same version bump as Entry 9 / MOD-028).
+
+---
+
+## Entry 9c — §5.4 defense-in-depth: concrete example added (SID-20260513-current; v1.9 in-place)
+
+**Issue.** User feedback: "il punto sulla defense in depth non è chiarissimo. io farei un esempio: in futuro una comunità potrebbe guardare X, un'altra guardare Y." The pre-edit paragraph gestured at two traditions abstractly ("execution-level engagement…" vs "self-expressive vulnerability…") without showing which artifacts each tradition would actually examine. The defense-in-depth claim was structurally argued but not grounded.
+
+**Fix.** Replaced the abstract two-traditions gesture with a concrete two-communities example that names the §5.3 artifacts each would examine:
+
+- *Community focused on the modification logs* — looking for inferential moments where authorial judgment engaged the argument, places where the author caught and corrected reasoning errors an AI draft had introduced. (Cognitivist-leaning, argument-quality-focused.)
+- *Community focused on the section guidance and early epistemic traces* — looking for evidence that the questions explored were genuinely the author's, that the inquiry bore first-person philosophical engagement rather than competent third-person execution. (Personal-expressive-leaning, agent-integrity-focused.)
+
+The example uses the same artifacts §5.3 has just established (modification logs, section guidance, epistemic traces), so the reader sees the apparatus doing the work the framework's defense rests on. The concluding move ("the criteria are not reducible to a common metric — no single fabrication strategy can optimize against all assessment criteria at once") is unchanged in substance but now lands after a concrete grounding rather than as an abstract claim.
+
+**Word count.** §5: 1,126w → 1,192w (+66w). The example replaces a ~30w abstract gesture; net add is ~50–55w. §5 still within reasonable bounds for the assessment section (largest section after §3).
+
+**Affected file:** `Paper/MDversion/CFP_FullPaper_v1.md` (still v1.9; in-place polish under the same version bump as Entry 9 / Entry 9b / MOD-028).
+
+---
+
 ## Connections (auto)
 
 ### Source chat (primary)

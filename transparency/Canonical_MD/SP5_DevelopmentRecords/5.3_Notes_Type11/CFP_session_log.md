@@ -415,3 +415,86 @@ After the dual-auditor reconciliation and the pipeline relocation, the session c
 - Documentation of Mar 31 hub-creation session (parked).
 
 **Session closes here. Use `/mhc-end` to finalize the MHC-W session record.**
+
+---
+
+## SID-20260513-174139 — three-restructure arc (v1.7 → v1.10) + Reviewer-1 revision + paper-artifact organisation (2026-05-13, ~17:41 → ~23:00)
+
+**Session marker note.** The SessionStart hook did not register a `current_session` in `.mhc-config.json` (cause not investigated; the JSONL was preserved and recovered manually via `extract_conversation.py` on macOS at session end). The session ID used here (`SID-20260513-174139`) reflects the JSONL first-message timestamp; export landed at `MHC-W/00_full_conversations/exported/md/JPEP_20260513_174139.md` and at the project copy `conversations/exported/JPEP_20260513_174139.md`.
+
+**Driver.** User direction "let's focus on real work" after the line-ending diff cleanup at session open. The session compounded three discrete restructures and a Reviewer-1 revision pass into a coherent v1.7 → v1.10 arc, cutting ~1,500 net body words while sharpening the argumentative spine.
+
+### Phase 1 — §4 collapse + §6.4 gaming-defense absorption (v1.7 → v1.8)
+
+Diagnosed at session open: §4 ("Conditions for Adequate Transparency") was 2,089w / ~20% of body; only §4.3 (Hosseini-Resnik-Holmes critique) carried distinctive philosophical work. §4.1 (ecological validity) and §4.2 (good faith orientation, gaming-defense excursion) were either labels or arguments firing one section ahead of where they belonged. Author decision: cut §4.1 + §4.2 first half; relocate §4.2's gaming-defense (Strathern → fabrication-vs-vagueness → defense-in-depth → community condition, ~700w) to §6.4 where it operationally lives (assessment); retitle §4 to "Why Existing AI-Disclosure Formats Don't Fit Philosophy."
+
+**Net effect:** §4 from 2,089w → 614w (cut ~1,475w); §6.4 absorbed ~370w compressed gaming-defense; net body cut ~1,100w (~10%). Downstream knock-ons: §3.5, §5.1, §5.2, §7 line 335 — paraphrased to drop the cut "two-conditions" labels.
+
+**Artefacts:** `CFP_4.4.23_SectionGuidance_Section4.md` (new), `CFP_4.4.24_SectionGuidance_Section6_GamingDefense.md` (new). Modlog entries: `CFP_4.2.17` MOD-015 (§4 collapse); `CFP_4.2.18` MOD-027 (§5 knock-ons); `CFP_4.2.19` Entry 8 (§6.4 absorption); `CFP_4.2.30` MOD-005 (§7 paraphrase).
+
+### Phase 2 — §5 ↔ §6 swap + §6 compression to feasibility sketch (v1.8 → v1.9)
+
+Diagnosed on read-through after Phase 1: logical order was upside-down (framework apparatus before assessment criteria), and §5.1's "thickening the tracking claim" paragraph (Mecacci/proximal-distal + SP-4/SP-5 anatomy) read abruptly. Decision: swap §5 and §6. New §5 = "Community Assessment of Documentation Adequacy" (was §6, content largely preserved with forward-vs-backward orientation knock-ons). New §6 = "A Feasible Apparatus" (was §5, compressed 852w → 444w as a feasibility sketch, not a specification). Cut: the abrupt "thickening" paragraph, the SP-N specification table, the nested-concerns ASCII diagram, the Lloyd footnote (its substantive work now carried structurally by §3.5 + the gaming-defense in §5.4). Subsequent SP-5 reframing (MOD-029): dropped "versioned drafts" as a defining SP-5 element; SP-5 reframed around section guidance + pattern summaries — the modlog in SP-4 is the canonical narrative trace.
+
+**Net effect:** §6 from 852w → 444w; §5 unchanged in size (~1,087w). Cumulative v1.7 → v1.9 body cut: ~1,500w. Section number references rewired across §1 outline, §3.5, §4 closing, §5.1 opener, §5.3, §7 (three sites), AI Usage Archive (two sites).
+
+**Artefacts:** `CFP_4.4.25_SectionGuidance_Section6_FeasibilitySketch.md` (new). Modlog: `CFP_4.2.18` MOD-028 (primary), `CFP_4.2.19` Entry 9 (§5 renumbering knock-ons). Multiple follow-up polishes: Entry 9b (SP-X labels removed from §5.3 in favour of functional names since SP-X is introduced first in §6); Entry 9c (defense-in-depth example concretised); MOD-006 (source conversations moved out of archive list, marked on-request).
+
+### Phase 3 — Reviewer-1 (Opus) revise & resubmit (v1.9 → v1.10)
+
+User direction: spawn an Opus agent to read v1.9 cold and give a sincere review; treat its output as Reviewer-1 whose critique is fully accepted; revise to genuinely improve, not to hedge. Opus identified four weaknesses + one missed opportunity:
+
+1. §3.3 Sartre paragraph (454w) overcooked — "imported rhetorical heavy artillery."
+2. §3.3 Williams inversion acknowledged but not earned — "the paragraph it does not have."
+3. §3.3 Cordasco welfare-economic exchange (477w / three bold paragraphs) misplaced and over-weighted — "two Substack posts absorbing disproportionate dialectical space."
+4. §6 SP-N apparatus under-defended — "why these five? texture of an institutional artifact."
+5. Existential dimension "quoted, not joined" — §3.7 and §7 closing gesture at the loss, then walk past.
+
+**Execution:** Three Opus writing agents orchestrated in parallel. Agent A (§3.3 surgical, all three coupled moves), Agent B (§6 SP-N derivation from §5.2 criteria), Agent C (§7 closing loss inhabited).
+
+**Net effect:** §3 from 3,545w → 3,128w (cut ~417w; §3.3 ~1,300w → ~860w). §6 from 483w → 594w (+111w derivation). §7 from 907w → 963w (+56w loss-inhabiting). Cumulative v1.7 → v1.10 body cut: ~1,500w net (8,046w v1.9 → 7,796w v1.10).
+
+**Modlog entries:** `CFP_4.2.23` v5.1 → v5.2 (§3.3 Sartre + Williams + Cordasco); `CFP_4.2.18` MOD-030 (§6 derivation); `CFP_4.2.30` MOD-007 (§7 loss inhabited).
+
+### Phase 4 — Paper-artifact organisation + build pipeline
+
+User flagged: "ogni volta improvvisi" — output paper-artifact paths had been inconsistent across sessions (`build/`, `Paper/journal/`, mixed names). Established and committed convention as `adapt.md` rule #12: master markdown at `Paper/MDversion/CFP_FullPaper_v1.md` (in-place versioning), Word/PDF outputs at `Paper/journal/CFP_FullPaper_v{X_Y}.docx` (always versioned). Renamed v1.7 outputs that had unversioned filenames; moved v1.9 docx from `build/` into `Paper/journal/`; deleted residues of the old `build_paper.py`; preserved `build/SP_combined.*` and `build/sp1/2/3*` (separate LaTeX pipeline). Rewrote `build_paper.py` to write directly to `Paper/journal/` with version derived from the master's frontmatter. Adaptation Log entry dated 2026-05-13 records the decision.
+
+### Phase 5 — Minor polish (SDS quote page reference)
+
+User noticed SDS 2018 quote in §6 lacked a page citation. Located the quote via the locally-archived XML at `transparency/TEMP/Santoni_de_sio_frobt-05-00015.xml` (section 6.2 "Tracing"), then via the Frontiers PDF fetched from the journal's web endpoint and parsed with `pypdf`. Quote is on **p. 9** of the 14-page article. Added `(p. 9)` and `[…]` ellipsis marker for the previously-unmarked omission of "be they a designer, a controller, a user, etc." from the original.
+
+### Artefacts produced this session
+
+Section guidance (3 new):
+- `CFP_4.4.23_SectionGuidance_Section4.md`
+- `CFP_4.4.24_SectionGuidance_Section6_GamingDefense.md`
+- `CFP_4.4.25_SectionGuidance_Section6_FeasibilitySketch.md`
+
+Modlog entries (across 5 files):
+- `CFP_4.2.17` MOD-015 (§4 collapse, primary)
+- `CFP_4.2.18` MOD-027 / MOD-028 / MOD-029 / MOD-030 (§5/§6 swap, SP-5 reframing, SP-N derivation)
+- `CFP_4.2.19` Entry 8 / 9 / 9b / 9c (§6.4 absorption, §5 renumbering, SP-X polish, defense-in-depth example)
+- `CFP_4.2.23` v5.1 → v5.2 (§3.3 Reviewer-1 surgical)
+- `CFP_4.2.30` MOD-005 / MOD-006 / MOD-007 (§7 knock-on, archive-bullet cleanup, loss-inhabiting)
+
+Paper artefacts (Paper/MDversion + Paper/journal):
+- `Paper/MDversion/CFP_FullPaper_v1.md` (v1.7 → v1.10)
+- `Paper/journal/CFP_FullPaper_v1_7.docx/.pdf` (renamed from unversioned)
+- `Paper/journal/CFP_FullPaper_v1_10.docx` (final, regenerated via build_paper.py)
+
+Build pipeline:
+- `build_paper.py` rewritten — reads `Paper/MDversion/CFP_FullPaper_v1.md`, writes versioned `.docx` to `Paper/journal/`. Uses MHC-L's `_format_docx.py` for markdown→docx conversion. `python-docx` installed user-local.
+
+Convention:
+- `adapt.md` rule #12 added (paper artifact paths) + Adaptation Log 2026-05-13 entry.
+
+### Carry-forward
+
+- **§3.3 stratification-of-understanding argument** (cut from the Sartre paragraph in Phase 3 Move 1) — about which level of understanding suffices for the tracing condition. Not relocated; candidate for SP-3 (Documentation Account) discussion of adequacy conditions, not for body paper.
+- **§5.2 Lloyd Standard 4 footnote** — cut in Phase 2 (§6 compression dropped its anchor); Lloyd 2025 bibliography entry retained but in-text citation no longer exists. Verify at next pass whether to keep Lloyd in bibliography.
+- **Submission-time tasks** unchanged from prior session log: Zenodo DOI mint + insertion into `CFP_5.4.14` line 81; SP-2 §5 subsection numbering quirk (cosmetic, parked); Mar 31 hub-creation session documentation (parked).
+- **§3 still 28% of body** (3,128w). Was 37% at v1.7. Further compression possible but not pressing at this revision pass.
+- **Opus reviewer's two unhappy-reader profiles** (rigorous analytic metaethicist + serious Cavellian) now both addressed at v1.10 via Phase 3 moves. The "happy author" profile (Vallor/Floridi/Tasioulas/O'Neill/Santoni de Sio meliorist mode) is preserved.
+
+**Session closes here. Use `/mhc-end` to finalize the MHC-W session record.**
