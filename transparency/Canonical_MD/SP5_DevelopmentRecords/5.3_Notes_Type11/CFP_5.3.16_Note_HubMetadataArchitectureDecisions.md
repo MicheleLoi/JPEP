@@ -6,7 +6,7 @@ title: "Hub Metadata Architecture: Decision Record"
 branch: cfp-ai-ethics-inquiry
 date_created: 2026-04-03
 status: Active — authoritative governance document for hub system
-source_conversation: "SID-20260403-154700 (pending export; next session after JPEP_20260403_133025.md)"
+source_conversation: "SID-20260403-154700 — direct turn-by-turn export of this session was never generated (export pipeline gap). The session's content is integrated in JPEP_20260403_193831.md (the successor session, started 19:38 same day), which references SID-20260403-154700 by name 5 times and summarises the architecture decision recorded here. Rollup confirmed in SID-20260513-094035 audit; see CFP_5.3.30 §3.1."
 inputs:
   - CFP_4.7.17_EpistemicTrace_HubMetadataArchitectureDesign.md
   - hub_annotations.yaml

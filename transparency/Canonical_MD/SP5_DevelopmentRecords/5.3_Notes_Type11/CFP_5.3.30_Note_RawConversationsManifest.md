@@ -5,9 +5,14 @@ document_subtype: manifest
 label: CFP_5.3.30_Note_RawConversationsManifest
 title: "Raw Conversations Manifest — index of files in 06_conversations/"
 date_created: 2026-05-13
+date_last_updated: 2026-05-13
 status: Active
-session_id: SID-20260513-003000
+session_id:
+  - SID-20260513-003000
+  - SID-20260513-094035
 versioning_convention: git_inplace
+version: v1.1
+note: "v1 (SID-20260513-003000): initial manifest. v1.1 (SID-20260513-094035): §3.1 extended with explicit 'Known missing direct export' subsection documenting SID-20260403-154700 (hub-architecture design session) and its rollup into JPEP_20260403_193831.md."
 inputs:
   - 06_conversations/exported/ (directory listing)
   - 06_conversations/imported/ (directory listing)
@@ -133,7 +138,9 @@ Files are listed chronologically by reconstructed SID. Sizes in bytes. Files wit
 | SID-20260409-233204 | `JPEP_SID-20260409-233204.md` | 41,689 |
 | SID-20260410-002246 | `JPEP_SID-20260410-002246.md` | 65,302 |
 
-**Coverage gap.** Sessions from 2026-04-10 onward (SID-20260512-* and SID-20260513-003000, the v1.x compression-pass and Phase 5 sessions) have not been re-exported into this directory and are absent from this manifest. The `.mhc-config.json` `session_history` array tracks their existence with SHA256 fingerprints; conversation exports for those sessions exist in the MHC-W export pipeline and can be reproduced on demand. Listing them here is deferred to the next manifest refresh.
+**Coverage gap (post-2026-04-10).** Sessions from 2026-04-10 onward (SID-20260512-* and SID-20260513-003000 and -094035, the v1.x compression-pass + Phase 5 + hubs-audit sessions) have not been re-exported into this directory and are absent from this manifest. The `.mhc-config.json` `session_history` array tracks their existence with SHA256 fingerprints; conversation exports for those sessions exist in the MHC-W export pipeline and can be reproduced on demand. Listing them here is deferred to the next manifest refresh.
+
+**Known missing direct export — SID-20260403-154700 (hub-architecture design session).** Two artifacts (`CFP_4.7.17_EpistemicTrace_HubMetadataArchitectureDesign.md` and `CFP_5.3.16_Note_HubMetadataArchitectureDecisions.md`) are stamped with `session_id: SID-20260403-154700`. No file named `JPEP_20260403_154700.md` exists on disk; the session's direct turn-by-turn export was never generated (pre-`.mhc-config.json` `session_history` era; export pipeline gap). The session's content is integrated in `JPEP_20260403_193831.md` (the successor session, started 19:38 same day), which references SID-20260403-154700 by name **5 times** (at lines 1244, 1360, 1366, 1374, 1420 of that file) and summarises the hub-architecture decision recorded in the two CFP artifacts. **The successor session's export is therefore the substantive provenance record for SID-20260403-154700, in summary/integration form rather than as a raw turn-by-turn transcript.** Verified 2026-05-13 (SID-20260513-094035). The two CFP artifacts' frontmatter `source_conversation` fields have been updated to record this rollup explicitly.
 
 ### 3.2 SHA256 fingerprints
 

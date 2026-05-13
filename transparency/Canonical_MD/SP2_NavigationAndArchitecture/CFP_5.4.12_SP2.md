@@ -3,7 +3,7 @@ project: JPEP
 document_type: Type 12 - Section Draft
 label: CFP_5.4.12_SP2
 section: "SP-2 — Navigation and Architecture Guide"
-version: v3
+version: v4
 date_created: 2026-04-09
 status: Draft (Phase 5 audit applied)
 source: "Claude Sonnet 4.6 (Claude Code session)"
@@ -11,6 +11,7 @@ session_id:
   - SID-20260409-150705
   - SID-20260512-111348
   - SID-20260513-003000
+  - SID-20260513-094035
 date_last_updated: 2026-05-13
 produced_by_prompt: ""
 inputs:
@@ -93,6 +94,8 @@ Every Claude Code session has a session ID of the form `SID-YYYYMMDD-HHMMSS`. Ev
 `hub_annotations.yaml` (in `transparency/SCRIPTS/`) is the authoritative source for session topology. It records, for each session hub: the session ID, the chat UUID (for v1/v2 sessions), predecessor sessions (`continues_from`), and the inputs and outputs of that session. The architectural decision establishing YAML as authoritative source is in `CFP_5.3.16_Note_HubMetadataArchitectureDecisions.md`.
 
 **Derived `.md` hub layer.** The hub-generation script (`obsidian_connections_with_chat_hubs.py` in `transparency/SCRIPTS/`) produces a `CHAT_*.md` stub file per hub at `transparency/Canonical_MD/_HUBS/` (NOT inside `SP4_ProcessDocumentation/` as earlier versions of this section incorrectly stated). As of 2026-05-13 the directory contains 60 `CHAT_*.md` files plus `VERIFICATION_QUEUE.md`, last regenerated 2026-04-03 at commit `de15a23` ("Rebuild hub infrastructure with YAML-authoritative architecture"). The script has not been re-run since; the files therefore reflect the project state as of 2026-04-03, not the current post-externalization architecture (no SP-1/SP-2/SP-3 hubs, for example). **Historical note:** `adapt.md` project rule 4 and the original v1 wording of this paragraph claimed that hub `.md` files had been "removed during UUID/SID recovery work." Git history (`git log -- transparency/Canonical_MD/_HUBS/`) contradicts this — there is no mass-deletion commit; the files entered git in a series of regenerating commits Mar 31 – Apr 3 and have remained since. The discrepancy was surfaced by the Phase 5 audit. The YAML file remains the authoritative source for session topology regardless of the derived `.md` state.
+
+**Provenance of the hub-architecture design decision.** The YAML-authoritative architecture was designed in session **SID-20260403-154700**, documented in `CFP_4.7.17_EpistemicTrace_HubMetadataArchitectureDesign.md` (reasoning trace) and `CFP_5.3.16_Note_HubMetadataArchitectureDecisions.md` (decision record). The direct turn-by-turn export of that session was never generated (export pipeline gap); the substantive provenance record is `06_conversations/exported/JPEP_20260403_193831.md` (the successor session, started 19:38 same day), which references SID-20260403-154700 by name 5 times and summarises the decision. Full rollup detail in `CFP_5.3.30_Note_RawConversationsManifest.md` §3.1.
 
 The `continues_from` field records session predecessor relationships. It uses a YAML list form for complex multi-input flows (e.g. a session that continues both a prior writing session and a prior research session). `continues_from` is a session-level fact, recorded in the YAML only; it does not appear in individual artifact frontmatter.
 
@@ -529,4 +532,4 @@ The consolidation of II/III/IV into current Section 2 is documented in `4.2.5_Mo
 
 ---
 
-*SP-2 — v1 SID-20260409-150705; v2 SID-20260513-003000 (commit `e317eac`: SP-1/2/3 moved to top-level folders; §5.0 added; §5.4 trimmed); v3 SID-20260513-003000 (Phase 5 dual-auditor pass applied: §2/§4.1/§4.2/§5.0/§5/§6 corrections — see frontmatter `note:` for the full list).*
+*SP-2 — v1 SID-20260409-150705; v2 SID-20260513-003000 (commit `e317eac`: SP-1/2/3 moved to top-level folders; §5.0 added; §5.4 trimmed); v3 SID-20260513-003000 (Phase 5 dual-auditor pass applied: §2/§4.1/§4.2/§5.0/§5/§6 corrections — see frontmatter `note:` for the full list); v4 SID-20260513-094035 (§4.1: provenance paragraph added for the SID-20260403-154700 hub-architecture design session, confirming its rollup into JPEP_20260403_193831.md).*
