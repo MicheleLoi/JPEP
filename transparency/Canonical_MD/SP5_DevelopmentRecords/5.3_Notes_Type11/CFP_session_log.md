@@ -332,3 +332,50 @@ User clarification before drafting: "we're not asking about a post-institutional
 - **Pre-existing uncommitted change to `target-venue/cfp_ai-ethics-inquiry.md`** still hanging — separate concern, never addressed this session.
 
 **Next session entry point:** RESUME HERE in `CFP_5.3.1` (now points at commit `e317eac`; the seven-commit arc described above runs through to `4a38bbf`). Audit phase is the first scheduled item, but user discretion on whether to take the §5.1 illustration-reinstatement decision first.
+
+---
+
+## SID-20260513-094035 — 2026-05-13
+
+**Goal:** Phase 5 dual-auditor reconciliation + further compression passes + hubs/graphs decision. Started as a hubs-investigation session and expanded into multiple coordinated commits.
+
+**Done — commits:**
+
+| Commit | Substance |
+|---|---|
+| `63a9aa2` | Hub-architecture design rollup: SID-20260403-154700 (no direct export) confirmed integrated in JPEP_20260403_193831.md; CFP_4.7.17, CFP_5.3.16, CFP_5.3.30, SP-2 §4.1 all updated. |
+| `05b615d` | Hub script re-run: 39 hubs regenerated, 73 notes' Connections (auto) refreshed, 3 new hubs added. SP-2 §4.1 updated. (Subsequently superseded — see pipeline relocation below.) |
+| `7f477a7` | CFP_FullPaper v1.7: §6.2 Abdulhai paragraph cut to one sentence; Sourati footnote removed; Sourati removed from References + paper_bibliography_FINAL.md. Per Opus eval of §6+§7. |
+| `f2d01aa` | Frontmatter word_count correction: ~7,440 → ~9,546 §§1-7 / ~10,900 total document (matches Word's count). Per-section breakdown recorded. |
+| *(this commit)* | Pipeline relocation: `transparency/SCRIPTS/` + `transparency/Canonical_MD/_HUBS/` + HTML/PNG outputs in `_GRAPHS/` moved to top-level `_pipeline/` (gitignored, not shipped). Three SVG figures remain in `transparency/Canonical_MD/_GRAPHS/`. Deferred plan in `_pipeline/HUBS_AND_GRAPHS_PLAN.md`. SP-2 §4.1+§4.2 rewritten; SP-1 §"session-topology" updated; this work plan updated; this session log entry. |
+
+**Opus evaluation of §6 + §7** (run with "no acqua passata" framing — evaluate as if writing fresh). Returned bottom-line: compress §6 + §7 by ~875 words across (~12% of body); specific cuts identified. Of those, only the §6.2 Abdulhai/Sourati cuts were executed in this session (commit `7f477a7`). The remaining Opus cuts are on the parked list for separate decisions. The user also noted §3 is 38% of body (3,598 words) and is the largest available compression target — not yet evaluated.
+
+**Hubs/graphs decision.** After analysing the hub layer (Tier 1: one-line script fix; Tier 2: backfill hub_annotations.yaml; Tier 3: full freshness), the user decided to ship without the hub layer and the interactive graphs for v1. The pipeline was relocated into `_pipeline/` at project top level — gitignored, so it doesn't ship to Zenodo, but easy to find for local work. The three SVG figures used in SP-3 narrative remain in the archive.
+
+**State at session close.**
+- Paper: `CFP_FullPaper_v1.md` at v1.7 (~9,546 §§1-7 body / ~10,900 total document; docx regenerated at `Paper/journal/CFP_FullPaper_v1.docx`).
+- Archive: `transparency/` no longer contains the hub-system pipeline; only SVG figures remain in `_GRAPHS/`. SP-1, SP-2 (v5), the work plan, and the hub-discussion artifacts (CFP_4.7.17, CFP_5.3.16) all updated to reflect the freeze.
+- Pipeline: `_pipeline/` at project root contains `scripts/`, `_HUBS/`, `_GRAPHS/` (HTMLs + PNGs), `README.md`, `HUBS_AND_GRAPHS_PLAN.md`. Gitignored.
+
+**Deferred (Opus cuts not yet applied):**
+- §6.1 filler (~55 words)
+- §6.3 SP-1/2/3/4/5 re-description (~120 words)
+- §6.4 offloading-rebuttal duplicate (~50 words) + feasibility/adequacy paragraph relocation to §7
+- §7 ¶1 thesis-restatement compression (~40 words)
+- §7 ¶2 Neurath-boat retrofitting cut (~150 words)
+- §7 ¶3+¶4 merge
+- §7 ¶5 tracing-unsettledness relocate to §5.1 footnote (~150 words)
+- §7 ¶6 forward-agenda compression (~40 words)
+- Potential §3 evaluation (untouched by Opus this round; 38% of body)
+
+**Deferred (chip list from prior session, still parked):**
+- B1 `Canonical MD_backup.zip` removal
+- B3 `check_missing_yaml.py` disposition
+- B5 `.patch.txt` removal
+- B6 `_chainwalk_*.md` files disposition
+- B7 `v3_Conversations_Claude_Code/` placeholder removal
+- D1 `Sources MD/`, `Sources_word/`, `Sources_RTF/` disposition
+- D2 `transparency/Deprecated/` disposition
+- `adapt.md` rule 4 rewrite to match git reality
+- Mar 31 hub-creation session documentation gap
