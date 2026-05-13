@@ -228,6 +228,8 @@ This separation keeps artifacts used in the writing process (SP-4) distinct from
 
 ## Connections (auto)
 
+## Connections (auto)
+
 <!-- CONNECTIONS_AUTO_START -->
 ### Source chat (primary)
 - [[_HUBS/CHAT_19858433-c393-4c1b-bd8d-cf6e16cdb062|chat]]

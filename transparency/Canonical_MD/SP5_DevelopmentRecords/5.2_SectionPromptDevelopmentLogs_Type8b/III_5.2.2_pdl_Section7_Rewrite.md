@@ -125,6 +125,8 @@ formatting_note: "Original MHC-W table-based format preserved"
 
 ## Connections (auto)
 
+## Connections (auto)
+
 <!-- CONNECTIONS_AUTO_START -->
 ### Source chat (primary)
 - [[_HUBS/CHAT_SID-20260202-184000|chat]]
@@ -132,13 +134,5 @@ formatting_note: "Original MHC-W table-based format preserved"
 ### Sibling artifacts (same chat)
 - [[III_4.2.12_ModificationLog_Section3_v3]]
 - [[III_4.4.6_SectionGuidance_Section7_Rewrite]]
-
-### Inputs
-- [[III_5.4.1_Section3_v3.md]]
-- [[III_5.4.2_Section6_v3.md]]
-- [[Paper/MDversion/07_review_mechanism.md]]
-
-### Related
-- [[III_4.2.12_ModificationLog_Section3_v3.md]]
 
 <!-- CONNECTIONS_AUTO_END -->
