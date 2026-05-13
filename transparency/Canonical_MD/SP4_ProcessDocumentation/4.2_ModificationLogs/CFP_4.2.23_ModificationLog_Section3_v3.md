@@ -280,3 +280,42 @@ The placement (end of paragraph 2, where the philosophy-side disanalogy is estab
 ## Status (v5.1)
 
 Draft — applied to file; pending user review of the new sentence in context after commit.
+
+---
+
+## v5.1 → v5.2 — Reviewer 1 (Opus) revision: §3.3 surgical (Sartre trim + Williams inversion defended + Cordasco compressed to footnote) (SID-20260513-current; CFP_FullPaper v1.9 → v1.10)
+
+**Driver.** An Opus agent read CFP_FullPaper v1.9 cold (only the paper, no archive context) and produced a sincere reviewer-style assessment. User accepted the critique in full and directed a substantive revision — additions and cuts, no hedging. The §3.3 portion of that revision is recorded here. The §6 SP-N derivation (Move 4) is recorded in `CFP_4.2.18` MOD-030; the §7 closing loss-inhabiting (Move 5) is recorded in `CFP_4.2.30` MOD-007.
+
+**Reviewer 1 (Opus) on §3.3 — three problems:**
+
+1. *Sartre paragraph overcooked* (former line 129, 454w). "Tries to do too much; tonally clashes with the careful, hedged voice elsewhere; reads as imported rhetorical heavy artillery rather than a needed step." Requires its target to be more philosophically self-aware than the empirical situation supports.
+2. *Williams inversion not earned* (former lines 133+135, 146w). "A scrupulous Williams reader will notice that 'legibility before a community' starts to sound a lot like the externally-imposed coherence demand Williams was suspicious of. The Moseley parenthetical does not discharge the obligation. This is the place the paper most needs a paragraph it does not have."
+3. *Cordasco welfare-economic exchange misplaced* (former lines 139+141+143, 477w). "Two Substack posts by a single author absorbing disproportionate dialectical space inside the central philosophical section. Should be a footnote or its own subsection; the interlocutor needs to be more representative of a position than a particular blogger."
+
+**Move 1 — Sartre trim (454w → 113w, net −341w).** Replaced the multi-strand 454w paragraph at former line 129 with a single short paragraph anchored on the access-and-refusal structural claim. Sartre 1956 still cited (lightly, once, no quotation). Cut entirely: the *Being and Nothingness* page citation and quoted phrase ("I must know the truth very exactly..."), the Look apparatus / second-register passage on freedom-as-constituted-in-a-field-of-other-freedoms, the entire stratification-of-understanding sub-argument (direction-level vs execution-level comprehension, with its corollary that the tracing condition inherits essential contestedness), the closing "flight from anguish" framing. The trimmed paragraph keeps the philosophical work: silently defaulting to output-evaluation is access-and-refusal, not innocent ignorance.
+
+**Move 2 — Williams inversion properly defended (146w → 264w, net +118w).** Replaced the two thin paragraphs at former lines 133+135 with a single paragraph that takes the inversion seriously and defends it via two distinctions Williams's own integrity objection already presupposes:
+
+- *Abandonment vs legibility.* Williams's target was demands requiring relinquishment of a constitutive project. Partial visibility of how a project is conducted under altered conditions is not relinquishment; it is the project as conducted, made legible. The duty does not ask the philosopher to stop philosophising or to philosophise differently.
+- *Internal vs external.* Williams's target was demands imposed from outside the agent's constitutive commitments. The transparency demand here is internal to the project's identity-conditions: philosophy is a practice partly constituted by recognition within a community of inquiry, so legibility before that community is part of what makes it this kind of practice — not a coherence-demand imposed from outside.
+
+The new paragraph closes with: "The inversion is real, but the duty is internal to the integrity of the project, not external to it." Intended to discharge the philosophically sharp objection Reviewer 1 named.
+
+**Move 3 — Cordasco compressed to footnote (477w body → ~160w body + ~70w footnote, net −247w).** Replaced the three bold-labelled paragraphs ("**A welfare-economic challenge.**" / [reply] / "**And the moral duty stands independently.**") with one body paragraph that characterises the welfare-economic objection as a *type* (informal welfare-oriented analysis of AI in academic life), reproduces its structural shape (costs inside framework / benefits outside / default-to-permissive follows), and gives the two-part reply: cost side incomplete (reduced-structure epistemic environment + indiscriminate cognitive offloading, with Zimmerman 2002 / Cheng et al. 2025 preserved); moral duty independent of welfare calculation (Williams ground projects + welfare-economic analysis applying downstream to *institutionalisation*). Footnoted Cordasco (2026a, 2026b) as the specific instance, with explicit framing: "We engage Cordasco as a specific instance of the welfare-economic objection-type rather than as a representative interlocutor."
+
+Dropped: the bold-labelled three-paragraph format; the cross-reference "— a point developed in §5" (the brief mention here is now compact enough to stand alone); the generative-not-restrictive four-sentence move on community-level methodological learning (judgment call: belongs in §6 if anywhere, not at the close of a §3.3 reply paragraph). Cordasco 2026a/2026b bibliography entries retained.
+
+**Word count.** §3 total: 3,545w → 3,128w (net −417w). §3.3 sub-section ~860w (was ~1,300w across the same span). §3 retains its role as the largest section but is now ~28% body share (was ~37%).
+
+**Affected files:**
+- `Paper/MDversion/CFP_FullPaper_v1.md` (v1.9 → v1.10; primary edit target).
+- `Paper/journal/CFP_FullPaper_v1_10.docx` (regenerated via `build_paper.py`).
+
+**Historical-reference note.** The bold labels "**A welfare-economic challenge.**" and "**And the moral duty stands independently.**" no longer appear in §3.3. Any modlog or section-guidance entry cross-referencing those bold labels by name remains valid as a historical record (the entries describe what was at the time of writing) — the labels are not re-introduced.
+
+**What was deferred, not done.** Reviewer 1's diagnosis of the existential-tradition dimension being "quoted, not joined" is addressed in `CFP_4.2.30` MOD-007 (§7 closing loss-inhabiting). The Sartre stratification-of-understanding argument cut from the original paragraph — about which level of understanding suffices for the tracing condition — may have a natural home in the SP-3 (Documentation Account) layer of the archive, not in the body paper. Not relocated this revision; left as a candidate for the archive's adequacy-conditions discussion.
+
+## Status (v5.2)
+
+Draft — applied to file at CFP_FullPaper v1.10; pending user review of the new §3.3 in context after commit.

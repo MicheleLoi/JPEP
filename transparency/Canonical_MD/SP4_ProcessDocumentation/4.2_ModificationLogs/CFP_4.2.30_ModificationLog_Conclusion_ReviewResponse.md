@@ -109,6 +109,40 @@ The episode has two layers that the paragraph captures together: at the object l
 
 ---
 
+## MOD-005: §7 limitations paragraph — two-conditions sentence paraphrased (knock-on from §4 collapse) (SID-20260513-current)
+
+**Cross-reference entry.** Records the §7 knock-on edit driven by the §4 collapse documented in MOD-015 of `CFP_4.2.17`. See that entry for the originating decision.
+
+**Change.** The closing sentence of the limitations paragraph in the Conclusion was paraphrased to remove the two-conditions handle, which no longer exists after the §4 collapse.
+
+**Previous text:**
+
+> The good faith and ecological validity conditions resist this displacement, but the tension must be monitored as practices develop.
+
+**Revised text:**
+
+> Documentation that emerges from genuine practice — and a community that encounters it on its own terms rather than against a fixed template of what human-AI collaboration should look like — resists this displacement, but the tension must be monitored as practices develop.
+
+**Why.** The previous sentence relied on "good faith" and "ecological validity" as a coupled rhetorical handle. With both labels cut from the paper (per MOD-015), the sentence needed paraphrase. The replacement preserves the rhetorical balance (two conjoined conditions) by stating them in their substantive form: documentation-from-practice + community-encountering-it-in-good-faith. The "monitor the tension" half is unchanged.
+
+**Affected file:** `Paper/MDversion/CFP_FullPaper_v1.md` (v1.7 → v1.8 — same version bump as MOD-015 / Entry 8 in `CFP_4.2.19` / MOD-027 in `CFP_4.2.18`).
+
+---
+
+## MOD-006: AI Usage Archive — source conversations moved out of the archive list, marked on-request (SID-20260513-current; v1.9 in-place)
+
+**Issue.** The closing AI Usage Archive note listed "Source conversations" as a sixth bullet alongside SP-1 through SP-5, implying that the raw conversation transcripts with each model are part of the distributed archive. They are not. Per author direction this session: source conversations are retained but not distributed; they are available upon request.
+
+**Change.** The "Source conversations" bullet removed from the archive's contents list (which now ends at SP-5). A separate inline paragraph introduced between the bullet list and "**Inline excerpts.**":
+
+> **Source conversations.** The raw transcripts of the conversations with each model — from which the artifacts above are derived — are *not* part of the archive. They are retained by the author, indexed by session identifier, and available upon request.
+
+**Why.** The previous wording conflated two distinct things: (a) the documentation derived from conversations (modlogs, traces, prompts, guidance) — these are in the archive; (b) the raw conversation transcripts themselves — these are retained but not distributed. The correction makes the distinction explicit and honest. It also pre-empts a reasonable concern about archive size and reader navigability (raw transcripts would multiply the archive's volume severalfold without proportional epistemic gain — the derived artifacts are what the framework asks the community to assess).
+
+**Affected file:** `Paper/MDversion/CFP_FullPaper_v1.md` (still v1.9; in-place polish under the same version bump as MOD-005 / MOD-028 / MOD-029).
+
+---
+
 ## Modification Summary
 
 ### By Type
@@ -118,9 +152,34 @@ The episode has two layers that the paragraph captures together: at the object l
 | New Content — Limitation Added | 1 | MOD-002: tracing condition ambiguity, essential contestedness |
 | Structural Recast — Externalization | 1 | MOD-003: opening sentence as framework spec + closing-note pointer |
 | Compression — Reprise trimmed | 1 | MOD-004: final-paragraph preparation collapsed; punch preserved |
+| Knock-on paraphrase from §4 collapse | 1 | MOD-005: two-conditions sentence rewritten without the labels |
 
 ### Key Themes
-Review-response corrections and additions to the Conclusion. MOD-001 fixed an inaccuracy in the self-exemplification paragraph. MOD-002 adds a substantive new limitation arising from implementation: the tracing condition contains an unresolved ambiguity about what depth of understanding is sufficient, which may itself be essentially contested. MOD-003 (2026-05-12) implements the externalization decision (CFP_5.2.5 PDL-001): the opening sentence's claim about *this paper's* documentation apparatus is recast as a *framework* specification, with the per-paper instantiation pointed to the new unnumbered closing note.
+Review-response corrections and additions to the Conclusion. MOD-001 fixed an inaccuracy in the self-exemplification paragraph. MOD-002 adds a substantive new limitation arising from implementation: the tracing condition contains an unresolved ambiguity about what depth of understanding is sufficient, which may itself be essentially contested. MOD-003 (2026-05-12) implements the externalization decision (CFP_5.2.5 PDL-001): the opening sentence's claim about *this paper's* documentation apparatus is recast as a *framework* specification, with the per-paper instantiation pointed to the new unnumbered closing note. MOD-005 (2026-05-13) paraphrases the limitations sentence to drop the two-conditions labels cut from §4. MOD-007 (2026-05-13) inhabits the loss the closing paragraph had previously only gestured at, per Reviewer 1's "quoted, not joined" diagnosis.
+
+---
+
+## MOD-007: §7 closing paragraph — loss inhabited at agent and reader registers (Reviewer 1 / Opus revision; SID-20260513-current; v1.9 → v1.10)
+
+**Driver.** Reviewer 1 (Opus, reading v1.9 cold) identified the closing paragraph of §7 as the paper's most significant missed opportunity: the existential dimension of the loss AI imposes on philosophical practice is "quoted, not joined." The author "gestures at" the paper this could have been (about what is *lost* when the implicit signal economy of philosophical prose breaks) "in §3.7 and the final paragraph of the Conclusion, then walks past it toward the institutional proposal." For a Cavellian or post-Heideggerian / Kierkegaardian reader, the framework's whole register — adequacy criteria, dual assessment structure, SP-1 through SP-5 — would feel like exactly the audit-machinery the rest of the Conclusion briefly worries about, unless the closing inhabits the loss it claims to be responding to.
+
+**Change.** A two-sentence insertion (~58w) added between the diagnosis sentence (which ends "…the community could once infer process from text (§3.7)") and the meliorist closing (which begins "The explicit transparency requirement proposed here is therefore not a new imposition on philosophy"). The insertion:
+
+> What is lost in this break is not a convenience. The philosopher whose citational precision and argumentative texture once just *were* the visible mark of having done the work can no longer count on prose to carry that mark; and the reader can no longer read the text as a window onto the inquiry behind it.
+
+**Registers chosen.** The insertion inhabits the *agent* register (the philosopher whose ordinary craft no longer carries its own warrant) and the *reader* register (whose inference is structurally severed). The *practice* register is left implicit; it is already named in §3.7 ("the de facto transparency mechanism… was satisfied by the ordinary features of philosophical writing itself") and would tip into checklist if cataloged here. The choice prioritises the two figures who actually carry the loss in lived terms over an abstract "practice."
+
+**Tonal calibration.** The insertion uses a Williams-register restraint: direct, undecorative, the cost named without dressing. It does not become Cavellian lament. The meliorist closing ("It is the conscious replacement of something that was always needed and is now, for the first time, no longer reliably supplied by the text itself") survives verbatim — the addition lands *before* it, giving the final line more weight by giving the reader the felt sense of what the explicit-replacement is replacing.
+
+**Word count.** §7 closing paragraph: ~95w → ~148w (+53w). §7 total: 907w → 963w (+56w). Body net offset by the §3 trim — paper continues to shrink net.
+
+**Why the inhabiting move matters for the paper's standing with one of its two unhappy readers.** Reviewer 1 named two scholar profiles who would not author this paper: the rigorous analytic metaethicist (who finds the Williams/Sartre/Kierkegaard apparatus too light to ground a normative conclusion) and the serious post-Cavellian existential thinker (who feels the existential tradition is "used as a debating chip in an institutional-policy argument without ever inhabiting it"). The first profile's objection is addressed by the §3.3 revision (Sartre trim + Williams inversion defended in `CFP_4.2.23` v5.1 → v5.2): the apparatus becomes lighter where it was overcooked and more philosophically rigorous where it was thin. The second profile's objection is addressed *here*: §7 closes by inhabiting, briefly, the loss the framework is responding to, rather than walking past it. The paper is now defensible against both readings without compromising its meliorist-and-procedural commitments — the loss is felt for two sentences, then the institutional proposal closes from a more honest emotional position.
+
+**Affected files:**
+- `Paper/MDversion/CFP_FullPaper_v1.md` (v1.9 → v1.10)
+- `Paper/journal/CFP_FullPaper_v1_10.docx` (regenerated)
+
+Cross-references: companion entries are in `CFP_4.2.23` (v5.1 → v5.2, §3.3 surgical revision — Moves 1, 2, 3) and `CFP_4.2.18` (MOD-030, §6 SP-N derivation from §5.2 criteria — Move 4). All three are Reviewer 1 (Opus) revision moves landing together at v1.10.
 
 ---
 

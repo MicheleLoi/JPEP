@@ -381,6 +381,60 @@ Source draft `CFP_5.4.7_Section5_v2.md` not touched (frozen v1 baseline).
 
 ---
 
+### MOD-015: §4 collapse — two-conditions scaffolding cut; section retitled and reduced to the Hosseini critique; gaming-defense relocated to §6.4 (SID-20260513-current)
+
+**Change.** §4 of `Paper/MDversion/CFP_FullPaper_v1.md` reduced from 2,089w to 614w (~70% cut). The section now contains only the Hosseini-Resnik-Holmes critique, retitled accordingly.
+
+Removed entirely (no relocation):
+- §4 introduction — "two conditions emerge" framing (~78w)
+- §4.1 Ecological Validity — the entire subsection including the ecological-validity footnote definition (~151w)
+- §4.2 Good Faith Orientation — first two paragraphs stating the good-faith condition (~250w)
+- §4.3 closing recap — "to recapitulate the route from Section 3 before turning to the framework" paragraph (~120w; §5.1 already does this work operationally at the "did the author understand and endorse?" sentence)
+- §4 subsection structure — §4.1/§4.2/§4.3 numbering dropped; the new §4 runs as four paragraphs without subsections
+
+Relocated (compressed) to §6.4:
+- §4.2 gaming-defense argument (former lines 207–217, ~700w) → §6.4 Paras 1–2 (~370w compressed). See MOD-013 in `CFP_4.2.19`.
+
+Retained in §4 (light editing):
+- Former §4.3 opening paragraph (Hosseini setup, ~95w) — kept; opener slightly trimmed (the prior "These two conditions specify what compliance-based mandates lack" framing sentence cut)
+- Former §4.3 paragraphs 2–3 (methods-section + reference-list-and-supplementary critique, ~495w) — **merged into one paragraph** trimmed to ~280w. Both developed the same move ("the prescription presupposes contested ontology X"); the methods-section paragraph in particular over-elaborated the method-is-continuous-with-argument thesis (~60w of restatement removed). The disciplinary-self-understanding sentence ("A reader of a Kantian or Wittgensteinian or contemporary analytic paper is meant to follow the method in the argument; the prose is the method") preserved verbatim.
+- Former §4.3 paragraph 4 (self-defeat / visible-anomaly, ~165w) — **kept near-verbatim** (~95% length). This is the philosophically novel contribution of the section; the BaHammam 2025 / Schilke & Reimann 2025 transparency-paradox callback survives intact.
+- Former §4.3 closing synthesis (~230w) — trimmed to ~115w. Specifically: dropped the §5-marketing sentence ("The supplementary architecture proposed in §5 — SP-1 through SP-5 — preserves comprehensive process documentation while keeping it structurally separable from the paper's own conventional form. That separability is the work the framework is doing.") since §5 itself does that work. The (i)/(ii)/(iii) numbered recap retained; (iii) rewritten to paraphrase the cut ecological-validity label ("imposing requirements that work only in an idealized reconstruction of scholarly practice rather than in the practice itself").
+
+**Section title change.** "Conditions for Adequate Transparency" → "Why Existing AI-Disclosure Formats Don't Fit Philosophy." The previous title named a function the section no longer performs (stating framework conditions). The new title names what the section actually does: contest the most influential alternative on grounds specific to philosophy. Alternative titles considered and rejected: "Against the Three-Location Prescription" (too narrowly centered on the specific paper rather than the structural critique); "The Philosophical Inadequacy of Existing AI-Disclosure Formats" (verbose).
+
+**Why this restructure.**
+
+(a) **Reader-experience.** §4 was structurally backwards: it asked the reader to absorb 2,089w of normative scaffolding (two conditions + a gaming-defense argument) before §5 introduced the framework that scaffolding was supposed to characterize. With §4 reduced to its actually-substantive content (the Hosseini critique), the §3 → §4 → §5 flow tightens: contestedness (§3) → critique of existing disclosure formats (§4) → the framework (§5).
+
+(b) **Argumentative placement.** The gaming-defense argument is about how *evaluators* encounter documentation under assessment, not about adequacy-conditions on the framework's design. Its natural home is §6.4 (the assessment-norms section), where it answers the foreseeable reader question "won't your SP-1–SP-5 just create a richer target to game?" — a question that only arises after the framework has been introduced. The relocation makes the argument fire at the right moment in the reader's experience.
+
+(c) **The two labels were doing minimal work.** "Ecological validity" re-described §2's diagnosis with a new name. "Good faith orientation" named a community disposition that §6.4 now characterizes directly. In both cases the label-machinery cost the reader cognitive overhead without earning argumentative payoff. Removing the labels and paraphrasing downstream references trades a small amount of rhetorical compression (no more "the two conditions from Section 4" handle) for substantially better signal-to-noise in §4 itself.
+
+(d) **Pre-collapse §4.2's distinctive contribution preserved.** The fabrication-vs-vagueness distinction and the "defense in depth" structural insight — the paper's most distinctive structural contribution to the AI-transparency literature — survive in §6.4 in compressed form (~370w doing the work of ~700w). The Hosseini critique's self-defeat / visible-anomaly argument (the section's novel philosophical move) survives in §4 near-verbatim. The net loss in argumentative content is approximately the two recap-and-payoff paragraphs of pre-collapse §4.2 (former lines 215 and 217, ~280w combined), which echoed material already present in §3.3 and §7.
+
+**Knock-on edits to downstream sections.** All four cross-references to the two-conditions framing were paraphrased away or deleted:
+
+- **§3.5 (`Paper/MDversion/CFP_FullPaper_v1.md` paragraph closing the agent-integrity grounding):** "The conditions specified in §4 and the framework specified in §5 are not adaptations of science's reproducibility apparatus to a new domain." → "The framework specified in §5 is not an adaptation of science's reproducibility apparatus to a new domain." (Single-phrase paraphrase; not separately modlogged.)
+- **§5.1 closing bridge sentence:** "The two conditions from Section 4—ecological validity, good faith orientation—implement these requirements under AI-mediated conditions." → deleted entirely. The preceding paragraph (the SP-4/SP-5 tracking-thickening discussion) already establishes the operational bridge. See cross-reference entry in `CFP_4.2.18`.
+- **§5.2 framework-three-components synthesis:** "while remaining ecologically valid" → "while remaining workable in actual scholarly practice". The Lloyd footnote at the same line is unchanged. See cross-reference entry in `CFP_4.2.18`.
+- **§7 limitations paragraph:** "The good faith and ecological validity conditions resist this displacement, but the tension must be monitored as practices develop." → "Documentation that emerges from genuine practice — and a community that encounters it on its own terms rather than against a fixed template of what human-AI collaboration should look like — resists this displacement, but the tension must be monitored as practices develop." Paraphrase preserves the rhetorical balance (two conjoined conditions) without the cut labels. See cross-reference entry in `CFP_4.2.20`.
+
+**Bibliography.** No entries added or removed. Strathern (1997) moves from §4 to §6.4; Hosseini, Resnik & Holmes (2023), Resnik & Hosseini (2025), BaHammam (2025), Schilke & Reimann (2025) remain cited in §4. No update to `paper_bibliography_FINAL.md` required.
+
+**Section guidance.** Constraint document `CFP_4.4.23_SectionGuidance_Section4.md` was created before this edit, recording: (a) the load-bearing claim of Move 3 (self-defeat / visible-anomaly); (b) the disciplinary-self-understanding sentence as non-cuttable inside Move 1; (c) the deliberate removal of the two-conditions labels; (d) provisional section title. Companion guidance `CFP_4.4.24_SectionGuidance_Section6_GamingDefense.md` records the §6.4 absorption constraints.
+
+**Word count.** §4: 2,089w → 614w (target band 580–720w, hit at the middle). Net §4 cut: 1,475w. ~370w resurrected in §6.4. Net body cut: ~1,100w (~10% of pre-collapse body). Frontmatter `word_count:` set to "pending Word recount" with estimate ~9,545w / ~22–23 pages; previous v1.7 was 10,647w / 25 pages (Word, authoritative).
+
+**Affected files:**
+- `Paper/MDversion/CFP_FullPaper_v1.md` (CFP_FullPaper version v1.7 → v1.8)
+- New: `transparency/Canonical_MD/SP4_ProcessDocumentation/4.4_SectionGuidance/CFP_4.4.23_SectionGuidance_Section4.md`
+- New: `transparency/Canonical_MD/SP4_ProcessDocumentation/4.4_SectionGuidance/CFP_4.4.24_SectionGuidance_Section6_GamingDefense.md`
+
+Source draft `CFP_5.4.7_Section5_v2.md` not touched (frozen v1 baseline; per the modlog-routing convention introduced in SID-20260513-003000, changes that land in the integrated paper are recorded in section-level modlogs, not in source drafts).
+
+---
+
 ## Connections (auto)
 
 ### Source chat (primary)

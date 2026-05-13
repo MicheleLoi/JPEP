@@ -341,6 +341,146 @@ What remains in §5.1: the *framework* subsection (MHC operationalization, Santo
 
 ---
 
+### MOD-027: §5.1 and §5.2 — two-conditions handle removed (knock-on from §4 collapse) (SID-20260513-current)
+
+**Cross-reference entry.** Records the §5 knock-on edits driven by the §4 collapse documented in MOD-015 of `CFP_4.2.17`. See that entry for the originating decision and the full restructuring rationale.
+
+**Change.**
+
+- **§5.1 closing bridge sentence deleted.** Previous text: "The two conditions from Section 4—ecological validity, good faith orientation—implement these requirements under AI-mediated conditions." This sentence relied on the "two conditions from Section 4" handle that no longer exists after the §4 collapse. The preceding paragraph (the SP-4/SP-5 tracking-thickening discussion ending "Neither layer certifies tracking; both supply the visibility conditions under which it can be assessed") already establishes the operational bridge from MHC conditions to the framework's tracking/tracing apparatus; the deleted sentence was repeating that work with a now-broken handle.
+- **§5.2 framework synthesis paraphrase.** Previous text (immediately preceding the Lloyd footnote anchor): "Together these enable tracing assessment while remaining ecologically valid." → "Together these enable tracing assessment while remaining workable in actual scholarly practice." The "ecologically valid" label has been removed from the paper; the paraphrase preserves the substantive claim (the framework must fit how scholars actually work) without the label. The Lloyd footnote at this anchor is unchanged from MOD-026.
+
+**Note on the Lloyd footnote (no edit this entry).** The footnote's reasoning is independent of the ecological-validity label and survives without change. A small open item: post-restructure, the gaming-defense argument in §6.4 now does the work the Lloyd Standard 4 sentence ("binary AI/human attribution — incoherent for iterative prompt-revision workflows") was previously doing implicitly in isolation. A forward cross-reference from the Lloyd footnote to §6.4 is possible in a follow-up pass; not blocking, not made here.
+
+**Why this entry exists in `CFP_4.2.18` rather than only in `CFP_4.2.17`.** Per the modlog-routing convention introduced in SID-20260513-003000, section-level modlogs are the landing place for changes to that section's content over time. The §5.1 sentence deletion and §5.2 paraphrase are edits to §5's content even though they are downstream consequences of a §4 decision; recording them here keeps the §5 modlog complete as the living record of §5's accumulated changes.
+
+**Word count.** §5: ~864w → 852w (net –12w from the deletion of the §5.1 sentence; the §5.2 paraphrase is approximately length-neutral). Negligible.
+
+**Affected files:**
+- `Paper/MDversion/CFP_FullPaper_v1.md` (v1.7 → v1.8 — same version bump as MOD-015 / Entry 8 in `CFP_4.2.19`)
+
+---
+
+### MOD-028: §5 ↔ §6 swap + §6 compression to a ~450w feasibility sketch (SID-20260513-current; v1.8 → v1.9)
+
+**Primary entry for the second restructure.** This file (`CFP_4.2.18`) historically tracks the content that was current §5 at v1.8 (the framework section, originally drafted as old §6 and renumbered §5 after the first renumbering). After this MOD's §5↔§6 swap, that content lives in §6 of the integrated paper. Companion entry recording the §5 (former §6) renumbering knock-ons is in `CFP_4.2.19`.
+
+**Why this restructure.**
+
+Read-through after Phase 1 (MOD-015 / MOD-027 / Entry 8 / MOD-005 — the §4 collapse + §6.4 gaming-defense absorption) revealed two persistent problems in §§5–6:
+
+(a) **Logical order was upside-down.** The framework apparatus (§5: MHC + SP-1–SP-5 specification) was presented *before* the assessment criteria it was meant to satisfy (§6: attribution / trajectory / understanding-and-endorsement; gaming-defense; calibration). A philosophical reader wants criteria first, then mechanism — "what should adequate transparency enable us to see?" then "here, sketched, is one apparatus that lets us see it."
+
+(b) **The "thickening the tracking claim" paragraph at former §5.1 read abruptly.** It dropped technical detail (Mecacci & Santoni de Sio 2020 proximal/distal scale; SP-4 modification-logs vs SP-5 pre-drafting layer) on a reader who had not yet been told what assessment is *for*. It attempted to do too much in one paragraph: explain the proximal-distal tracking ambiguity, name SP-5 and SP-4 internal anatomy, and qualify the tracking claim against fabrication.
+
+**The structural answer.** Swap §5 and §6. Compress the new §6 (former §5) from 852w → ~450w as a feasibility sketch rather than a specification. The specification proper lives in SP-3 (the documentation-adequacy account) in the archive, not in the body paper.
+
+**Author decisions (recorded for repeatability via AskUserQuestion).**
+
+1. Aggressive sketch (~450w) for new §6. Drop the SP-N specification table. Drop the nested-concerns ASCII diagram. Prose-only.
+2. Cut the "thickening the tracking claim" paragraph entirely (no relocation). The gaming-defense argument in §5.4 (former §6.4) already does the structural work the paragraph was attempting (qualifying the tracking claim against fabrication-gaming). The proximal/distal scale is off-topic at the level a sketch needs.
+
+**Change — new §6: "A Feasible Apparatus" (was §5 "Mandatory Transparency in Practice"). Target: ~450w. Achieved: 444w.**
+
+Three paragraphs, no subsections:
+
+1. *MHC paragraph (~145w).* Tracking condition (system outputs covary with operator's relevant reasons) and tracing condition (outputs traceable to a human person's understanding and endorsement) introduced via Santoni de Sio and van den Hoven (2018). Application to AI-assisted scholarship on §3's agent-integrity grounding. Verbatim SDS quote on tracing retained, with the section locator dropped (avoids confusion with the paper's own subsection numbering, which no longer includes a §6.2). The dual-contestation move from §3 (Kierkegaard, Williams) referenced briefly in one closing modifier rather than its own paragraph.
+2. *SP-N apparatus paragraph (~200w).* Prose-only characterization of SP-1 through SP-5. SP-1 (Declaration, entry point); SP-2 (Navigation, structured index); SP-3 (Documentation Account, primary site of the tracing claim); SP-4 (Process Documentation: *modification logs*, *epistemic traces*, *prompt-development logs* — named explicitly per user direction: "briefly describe our inventions (the modlog etc)"); SP-5 (Development Records, versioned drafts + section guidance). The table and ASCII nested-concerns diagram are cut; prose carries the apparatus characterization at the depth a sketch requires.
+3. *Experimental-status + synthesis paragraph (~100w).* Merge of former §5.3 first paragraph + former §5.4. Framework is a sketch requiring experimentation. AI-assisted synthesis is what makes the framework implementable. The dependency is honest: a transparency-about-AI framework that depends on AI to maintain its own documentation.
+
+**Cut from former §5 (not relocated):**
+
+- *Former §5.1 second paragraph* (~75w) — "Tracing requires that the directing person *understood*…" The new §6 first paragraph absorbs the essential move in one closing sentence; the Kierkegaard / Nietzsche / double-contestation parallel becomes a brief modifier rather than a full paragraph.
+- *Former §5.1 third paragraph* (~165w) — the abrupt "thickening the tracking claim in two modest ways" paragraph. Mecacci & Santoni de Sio (2020) citation drops from §6 in-text; bibliography entry retained as honest debt of the conceptual framing.
+- *Former §5.2 first paragraph* (~70w) — "Three components structure the disclosure: model and process information…" The three-components framing is implicit in the SP-N enumeration; redundant prose cut.
+- *Former §5.2 SP-N table* (~95w) — replaced by prose one-liners. Readers wanting the specification have SP-2 (the navigation document) referenced from the body sketch.
+- *Former §5.2 ASCII nested-concerns diagram* (~30w) — visual scaffolding the sketch doesn't need.
+- *Former §5.2 Lloyd footnote* — cut entirely along with its anchor sentence (the former §5.2 first paragraph). The footnote's substantive content — rejecting Lloyd Standard 2 on the reproducibility reading and Standard 4 on binary-attribution-incoherence — is now carried structurally: Standard 2 by §3.5 (reproducibility-is-not-the-issue); Standard 4 by §5.4's gaming-defense argument (which establishes why single-target attribution is fabricable). Lloyd (2025) remains in the bibliography pending a follow-up check.
+- *Former §5.3 second paragraph* (~80w) — adverse-selection community dynamics. Overlaps with §7's community-level monitoring claim; cut for word-budget compliance.
+
+**Section title change.** "Mandatory Transparency in Practice" → "A Feasible Apparatus." Provisional. The new title names what the section is doing (sketching a feasible apparatus that satisfies the criteria of §5) rather than promising a normative prescription. Alternatives considered: "A Feasibility Sketch" (rejected — under-promises the apparatus characterization); "The Framework" (rejected — too bare); "Mandatory Transparency in Practice" preserved (rejected — implies prescription rather than feasibility demonstration).
+
+**Knock-on edits to other sections (executed in this MOD).** All §5/§6 numbered references audited and updated to reflect post-swap section assignments. The companion edits in §3, §4, §5.4 (former §6.4), and §7 are listed in `CFP_4.2.19` Entry 9 (the §5-renumbering companion entry); briefly:
+
+- Introduction outline at line 63: rewritten to reflect new section labels and order.
+- §3.3 Cordasco section: "developed in §6" → "developed in §5".
+- §3.5: "framework specified in §5" → "§6".
+- §4 closing: "framework specified in the next section" → "framework specified in this paper" (drops the anaphora; the next section is now §5 the criteria, not the framework).
+- §5.4 opening of the relocated gaming-defense block: "the framework's specifications" → "any framework's specifications" (the paragraph now precedes the framework's introduction; rephrasing makes the argument's generality explicit).
+- §7 Conclusion: "three criteria of Section 6" → "Section 5"; "dual assessment structure of §6" → "§5" (two occurrences); "framework specified in §5" → "§6"; "criteria … given in §6" → "§5".
+
+Frontmatter:
+- `version: v1.8` → `v1.9`.
+- `inputs:` renumbering tags updated.
+- `word_count:` annotation updated to record cumulative v1.7 → v1.9 cuts (~1,500w total estimated).
+
+**Section guidance.** Constraint document `CFP_4.4.25_SectionGuidance_Section6_FeasibilitySketch.md` was created before this edit, recording: (a) §6 is a sketch, not a specification; (b) drop the table and ASCII diagram deliberately; (c) MHC introduced here for the first time in the paper; (d) the abrupt proximal/distal paragraph intentionally cut; (e) modlog must be named explicitly per user direction.
+
+**Word count.** §6: 852w → 444w. Net §6 cut: 408w. §5 (former §6) is essentially unchanged in size (~1,087w → 1,103w with minor rephrasings). Cumulative §1–§7 awk count: ~9,400w (pre-v1.8) → ~8,300w (v1.8) → ~7,920w (v1.9). Estimated Word count: ~9,145w (v1.9 from baseline 10,647w at v1.7).
+
+**Affected files:**
+- `Paper/MDversion/CFP_FullPaper_v1.md` (v1.8 → v1.9)
+- New: `transparency/Canonical_MD/SP4_ProcessDocumentation/4.4_SectionGuidance/CFP_4.4.25_SectionGuidance_Section6_FeasibilitySketch.md`
+
+Source draft `CFP_5.4.8_Section6_v4.md` not touched (frozen baseline; per the modlog-routing convention, changes to integrated-paper content are recorded in section-level modlogs).
+
+---
+
+### MOD-029: SP-5 reframed — "versioned drafts" removed; SP-5 is guidance + pattern summaries; modlog is the canonical change trace (SID-20260513-current; v1.9 in-place)
+
+**Issue.** Post-MOD-028 reading flagged that the SP-5 description across §5.3, §6, and §7's AI Usage Archive listed "versioned section drafts" as if they were a defining feature of the apparatus. They are not. Versioned drafts exist only in phases of the JPEP project where git was in use and Claude began producing copies as part of workflow; they were not present in Phase 1. They are accidental artifacts of certain tools, not essential to what the framework is for.
+
+**The framework's purpose at the SP-5 layer is explanation, not audit.** The canonical change trace is the *modification log* in SP-4 — narrative, compressed, decision-oriented. SP-5 is the *intentional* layer: the constraints set before drafting (section guidance) and the lessons distilled after (pattern summaries). Including "versioned drafts" in SP-5's defining description shifts the framework from explaining to auditing — the wrong frame for what this paper proposes.
+
+**Change.**
+
+Three sites edited:
+
+1. *§5.3 (Dual Assessment Structure, in current §5 — companion entry in `CFP_4.2.19`):* the list of "process materials and development records" inside the assessor-reads paragraph dropped "versioned section drafts" and rewrote the SP-5 elements as "the section guidance that constrained drafting, and pattern summaries distilling what successive revisions taught." Also: "documentation_logs documenting each substantive revision" → "modification logs narrating each substantive revision" (signals narrative-not-audit framing).
+
+2. *§6 (SP-N apparatus paragraph, this file's primary scope):* the SP-5 sentence rewritten —
+   - Before: "SP-5 (Development Records) holds versioned section drafts and the section guidance that constrained them — how instructions evolved across the writing process."
+   - After: "SP-5 (Development Records) holds the section guidance that constrained drafting and the pattern summaries distilling what successive revisions taught — the *before* and *after* of the writing project's instructions to itself. The focus is explanation, not reconstruction: the canonical trace of what changed and why is the modlog in SP-4, more compressed and more narrative than any complete snapshot could be."
+   - The added second sentence explicitly distinguishes SP-5 (intentional layer) from SP-4 (change trace), preempting the audit framing.
+
+3. *§7 AI Usage Archive (closing note — `CFP_4.2.30` companion entry):* dropped "versioned section drafts (v1 through final) for each section" from the SP-5 bullet. The bullet now reads: "section-guidance documents specifying constraints before drafting; pattern summaries distilling recurring revision patterns into reusable principles."
+
+**Why this matters for the paper's thesis.** The argument throughout the paper is that documentation should make the *process visible enough for assessment*, with the criteria attribution/trajectory/understanding-and-endorsement. None of these criteria require versioned drafts. Attribution and trajectory are served by the modlog (which records *decisions* with their reasoning). Understanding-and-endorsement is served by the documentation account (SP-3) arguing from the materials. Versioned drafts would *additionally* enable byte-level reconstruction of the writing process — an audit capability not asked for by the assessment framework. Including them in the framework's specification overcommits: it would force authors using less-versioned workflows to either approximate them retroactively or omit a defining SP-5 element. The reframing keeps SP-5 honestly minimal.
+
+**Word-count effect.** §5: +4w (richer description). §6: +39w (the new SP-5 sentence is longer because it carries the framing distinction explicitly). §6 lands at 483w, still inside the 400–500w target band. §7 Archive description: −10w (cleaner). Cumulative §1–§7: 7,980w (was 7,937w pre-edit; +43w net, all in the SP-5 explanatory work).
+
+**Affected files:**
+- `Paper/MDversion/CFP_FullPaper_v1.md` (still v1.9; in-place polish under the same version bump as MOD-028)
+- `Paper/journal/CFP_FullPaper_v1_9.docx` (regenerated)
+
+---
+
+### MOD-030: §6 SP-N apparatus paragraph — derivation from §5.2 criteria added (Reviewer 1 / Opus revision; SID-20260513-current; v1.9 → v1.10)
+
+**Driver.** Opus reviewer (reading v1.9 cold) flagged that §6's SP-N apparatus paragraph "names the five elements but does not argue for them. Why *these* five? Why this allocation of work between modlogs, epistemic traces, and prompt-development logs? The framework's name-and-acronym apparatus has the texture of an institutional artifact rather than something derived from §5's three criteria."
+
+**Change.** The §6 SP-N apparatus paragraph (the second paragraph of §6) is rewritten to embed the derivation from §5.2's three criteria (*attribution*, *intellectual trajectory*, *understanding-and-endorsement*). The opening sentence now announces the principle: "Five elements compose the apparatus, each answering to one or more of the three criteria specified in §5.2." Each element is then characterised as before, with a closing tag identifying its criterion(s):
+
+- *SP-1 (Declaration)* → *attribution* at the orientation level.
+- *SP-2 (Navigation)* → structurally enabling for all three (without an index, none is assessable in practice).
+- *SP-3 (Documentation Account)* → carries all three explicitly (the author's adequacy claim must speak to each criterion).
+- *SP-4 (Process Documentation)* → *attribution* (where authorial judgment becomes locatable) + *understanding-and-endorsement* (modlog reasoning fields inspectable at the level of individual decisions).
+- *SP-5 (Development Records)* → *intellectual trajectory* (instructions evolve visibly) + *understanding-and-endorsement* of a different kind than SP-4 supplies (the constraints the author placed on themselves before generation).
+
+The post-tag sentence carrying the modlog-as-canonical-trace move (from MOD-029) survives intact.
+
+**Word count.** §6 SP-N paragraph: ~202w → ~287w (+85w). §6 total: 483w → 594w (+111w; modest growth from the embedded derivation). Body net is offset by the §3 trim (−417w from `CFP_4.2.23` v5.1 → v5.2) — paper continues to shrink net (−250w total across the three Reviewer-1 moves).
+
+**Why the derivation matters for the framework's standing.** Reviewer 1's diagnosis was that the apparatus reads as "an institutional artifact rather than something derived from §5's three criteria." The derivation move converts the apparatus paragraph from a description-of-elements to a derivation-from-criteria: the five elements are now visibly responsive to the assessment criteria the framework has set itself, rather than appearing as a list of conventions a particular project happened to settle on. A reader who accepts §5.2's criteria can now follow the argument from criteria → apparatus rather than encountering the apparatus as a separate institutional fact.
+
+**Affected files:**
+- `Paper/MDversion/CFP_FullPaper_v1.md` (v1.9 → v1.10)
+- `Paper/journal/CFP_FullPaper_v1_10.docx` (regenerated)
+
+Cross-references: companion entries are in `CFP_4.2.23` (v5.1 → v5.2, §3.3 surgical revision) and `CFP_4.2.30` (MOD-007, §7 closing loss-inhabiting). All three are Reviewer 1 (Opus) revision moves landing together at v1.10.
+
+---
+
 ## Connections (auto)
 
 ### Source chat (primary)

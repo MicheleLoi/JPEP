@@ -79,3 +79,6 @@ transparency/Deprecated/
 
 # escludi esplicitamente ur-conversation (non anonimizzata, ID: 6c8d9101-cd3f-4f61-aaf9-f293de92d11c)
 06_conversations/imported/*6c8d9101*
+
+# macOS metadata files (anywhere in the tree)
+.DS_Store
