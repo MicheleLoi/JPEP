@@ -177,6 +177,8 @@ Sections 7.1 and 7.2 combined: ~650-700 words (similar to current length)
 
 ## Connections (auto)
 
+## Connections (auto)
+
 <!-- CONNECTIONS_AUTO_START -->
 ### Source chat (primary)
 - [[_HUBS/CHAT_SID-20260202-184000|chat]]
@@ -184,12 +186,5 @@ Sections 7.1 and 7.2 combined: ~650-700 words (similar to current length)
 ### Sibling artifacts (same chat)
 - [[III_4.2.12_ModificationLog_Section3_v3]]
 - [[III_5.2.2_pdl_Section7_Rewrite]]
-
-### Inputs
-- [[III_5.2.2_pdl_Section7_Rewrite.md]]
-- [[III_4.2.12_ModificationLog_Section3_v3.md]]
-- [[III_5.4.1_Section3_v3.md]]
-- [[III_5.4.2_Section6_v3.md]]
-- [[Paper/MDversion/07_review_mechanism.md]]
 
 <!-- CONNECTIONS_AUTO_END -->

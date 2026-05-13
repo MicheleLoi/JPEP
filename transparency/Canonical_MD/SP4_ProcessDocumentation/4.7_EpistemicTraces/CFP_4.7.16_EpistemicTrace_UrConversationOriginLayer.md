@@ -120,6 +120,8 @@ The gap must be named honestly in SP-3: the earliest layer of the intellectual c
 
 ## Connections (auto)
 
+## Connections (auto)
+
 <!-- CONNECTIONS_AUTO_START -->
 ### Source chat (primary)
 - [[_HUBS/CHAT_6c8d9101-cd3f-4f61-aaf9-f293de92d11c|chat]]

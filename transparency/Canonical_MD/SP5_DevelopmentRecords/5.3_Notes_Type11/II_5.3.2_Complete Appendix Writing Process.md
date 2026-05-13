@@ -253,6 +253,8 @@ Final Outputs (October 2025)
 
 ## Connections (auto)
 
+## Connections (auto)
+
 <!-- CONNECTIONS_AUTO_START -->
 ### Source chat (primary)
 - [[_HUBS/CHAT_09caeff5-2ff2-48dc-8a3f-66e20ceea81d|chat]]

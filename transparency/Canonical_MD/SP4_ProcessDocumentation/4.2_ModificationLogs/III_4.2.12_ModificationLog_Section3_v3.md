@@ -88,6 +88,8 @@ Workflow: Refine | Command: MHC-modlog
 
 ## Connections (auto)
 
+## Connections (auto)
+
 <!-- CONNECTIONS_AUTO_START -->
 ### Source chat (primary)
 - [[_HUBS/CHAT_SID-20260202-184000|chat]]
@@ -95,12 +97,5 @@ Workflow: Refine | Command: MHC-modlog
 ### Sibling artifacts (same chat)
 - [[III_4.4.6_SectionGuidance_Section7_Rewrite]]
 - [[III_5.2.2_pdl_Section7_Rewrite]]
-
-### Inputs
-- [[III_5.4.1_Section3_v3.md]]
-
-### Related
-- [[III_5.2.2_pdl_Section7_Rewrite.md]]
-- [[III_4.1.2_CompletePrompt_Section7_Rewrite.md]]
 
 <!-- CONNECTIONS_AUTO_END -->
