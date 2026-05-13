@@ -94,8 +94,6 @@ inputs:
 
 **Shafer-Landau, R.** (2003). *Moral Realism: A Defence*. Oxford: Oxford University Press.
 
-**Sourati, Z., Ziabari, A. S., & Dehghani, M.** (2025). "The Homogenizing Effect of LLMs on Human Cognition." arXiv:2508.01491. https://arxiv.org/abs/2508.01491
-
 **Strathern, M.** (1997). 'Improving ratings': Audit in the British University system. *European Review*, 5(3), 305–321.
 
 **Van Woudenberg, R., Ranalli, C., & Bracker, D.** (2024). "Authorship and ChatGPT: a Conservative View." *Philosophy & Technology*, 37(1), 1–26. https://doi.org/10.1007/s13347-024-00715-1
