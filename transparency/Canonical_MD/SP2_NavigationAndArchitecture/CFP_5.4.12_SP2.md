@@ -3,7 +3,7 @@ project: JPEP
 document_type: Type 12 - Section Draft
 label: CFP_5.4.12_SP2
 section: "SP-2 — Navigation and Architecture Guide"
-version: v4
+version: v5
 date_created: 2026-04-09
 status: Draft (Phase 5 audit applied)
 source: "Claude Sonnet 4.6 (Claude Code session)"
@@ -89,36 +89,27 @@ Every Claude Code session has a session ID of the form `SID-YYYYMMDD-HHMMSS`. Ev
 
 ## 4. Hub system and graph infrastructure
 
-### 4.1 hub_annotations.yaml and the derived _HUBS/ layer
+### 4.1 Session-topology layer (hubs)
 
-`hub_annotations.yaml` (in `transparency/SCRIPTS/`) is the authoritative source for session topology. It records, for each session hub: the session ID, the chat UUID (for v1/v2 sessions), predecessor sessions (`continues_from`), and the inputs and outputs of that session. The architectural decision establishing YAML as authoritative source is in `CFP_5.3.16_Note_HubMetadataArchitectureDecisions.md`.
+The session-topology layer — `hub_annotations.yaml` (the authoritative source per `CFP_5.3.16_Note_HubMetadataArchitectureDecisions.md`), the derived `CHAT_*.md` hub stubs that the hub-generation script produces, and the hub-generation script itself (`obsidian_connections_with_chat_hubs.py`) — **is not part of the shipped archive.** These assets live locally in `_pipeline/scripts/` and `_pipeline/_HUBS/` at the project top level (gitignored). Their generated outputs are useful for local navigation of the archive in Obsidian-style tools, but they were not brought to publication-quality state for this submission. The deferred plan to bring them to that state — including the one-line script fix needed to make CFP-era artifacts visible to the hub builder (`CFP_4.7.18` Finding 1) — is documented in `_pipeline/HUBS_AND_GRAPHS_PLAN.md`.
 
-**Derived `.md` hub layer.** The hub-generation script (`obsidian_connections_with_chat_hubs.py` in `transparency/SCRIPTS/`) produces a `CHAT_*.md` stub file per hub at `transparency/Canonical_MD/_HUBS/` (NOT inside `SP4_ProcessDocumentation/` as earlier versions of this section incorrectly stated). As of 2026-05-13 (SID-20260513-094035, post-regeneration) the directory contains **63 `CHAT_*.md` files** (60 prior + 3 new picked up at this regen: `9da24385-…`, `c27a7032-…`, and the SID-based hub `CHAT_SID-20260409-173842.md` corresponding to the review-response session whose entry was added to `hub_annotations.yaml` in commit `13679ee`). The regeneration also added or refreshed `## Connections (auto)` sections on 73 artifact notes across SP-4 and SP-5. The 36 hubs that were overwritten are preserved as `*.md.bak` siblings (gitignored per `.gitignore` line 30). **Known gap (unchanged):** the script reads `source_chat_id` but not `session_id` (per CFP_4.7.18 Finding 1) — CFP-era artifacts that use `session_id` instead of `source_chat_id` are still invisible to the hub builder, so the regenerated hub set covers only chats with explicit `source_chat_id` (39 unique, of which 10 are YAML-enriched via `hub_annotations.yaml` and 29 are auto-only). **Historical note (preserved):** `adapt.md` project rule 4 and the original v1 wording of this paragraph claimed that hub `.md` files had been "removed during UUID/SID recovery work." Git history (`git log -- transparency/Canonical_MD/_HUBS/`) contradicts this — there is no mass-deletion commit; the files entered git in a series of regenerating commits Mar 31 – Apr 3, have remained since, and were refreshed in place by the 2026-05-13 regeneration. The YAML file remains the authoritative source for session topology regardless of the derived `.md` state.
+**Provenance of the hub-architecture design decision** (preserved here because the architectural reasoning is a documentation-process fact even if the hubs themselves are not shipped): the YAML-authoritative architecture was designed in session **SID-20260403-154700**, documented in `CFP_4.7.17_EpistemicTrace_HubMetadataArchitectureDesign.md` (reasoning trace) and `CFP_5.3.16_Note_HubMetadataArchitectureDecisions.md` (decision record). The direct turn-by-turn export of that session was never generated; the substantive provenance record is `06_conversations/exported/JPEP_20260403_193831.md` (the successor session). Full rollup detail in `CFP_5.3.30_Note_RawConversationsManifest.md` §3.1.
 
-**Provenance of the hub-architecture design decision.** The YAML-authoritative architecture was designed in session **SID-20260403-154700**, documented in `CFP_4.7.17_EpistemicTrace_HubMetadataArchitectureDesign.md` (reasoning trace) and `CFP_5.3.16_Note_HubMetadataArchitectureDecisions.md` (decision record). The direct turn-by-turn export of that session was never generated (export pipeline gap); the substantive provenance record is `06_conversations/exported/JPEP_20260403_193831.md` (the successor session, started 19:38 same day), which references SID-20260403-154700 by name 5 times and summarises the decision. Full rollup detail in `CFP_5.3.30_Note_RawConversationsManifest.md` §3.1.
+The `continues_from` field records session predecessor relationships in `hub_annotations.yaml`. It uses a YAML list form for complex multi-input flows. It is a session-level fact, recorded in the YAML only, and does not appear in individual artifact frontmatter — that constraint is part of the architectural decision documented in `CFP_5.3.16`.
 
-The `continues_from` field records session predecessor relationships. It uses a YAML list form for complex multi-input flows (e.g. a session that continues both a prior writing session and a prior research session). `continues_from` is a session-level fact, recorded in the YAML only; it does not appear in individual artifact frontmatter.
+### 4.2 Graph figures
 
-### 4.2 Graph files
-
-Static SVG figures and interactive HTML graphs are in `transparency/Canonical_MD/_GRAPHS/`:
+Three static SVG figures are part of the shipped archive — referenced as Figures 1, 2, and 3 in SP-3 narrative:
 
 | File | Description |
 |------|-------------|
-| `fig1_timeline.svg` | The JPEP writing project on one timeline. Three phase bands, four model identities, major structural events. Used in SP-3 Figure 1. |
-| `fig_section6_network.svg` | The Section 6 artifact dependency network. Four-hub layout (SUN1–SUN4). Used in SP-3 Figure 2. |
-| `fig6_swimlanes.svg` | Section-level activity across the project. Used in SP-3 Figure 3. |
-| `jpep_graph.html` | Full interactive artifact graph (all phases). |
-| `jpep_graph_CFP.html` | Interactive graph, CFP phase only. |
-| `jpep_graph_III.html` | Interactive graph, Stage III only. |
-| `jpep_graph_v1v2.html` | Interactive graph, v1/v2 phase only. |
-| `fig2_feedback_loop.png` | Generated by `fig2_feedback_loop.py`. Not used in paper body or SP-3 — graph-infrastructure output (see CFP_4.2.28). Retained as evidence of the figure-generation work. |
-| `fig4_three_draft_session.png` | Generated by `fig4_three_draft_session.py`. Not used in paper body or SP-3; same status as above. |
-| `fig5_visible_decision.png` | Generated by `fig5_visible_decision.py`. Not used in paper body or SP-3; same status as above. |
+| `transparency/Canonical_MD/_GRAPHS/fig1_timeline.svg` | The JPEP writing project on one timeline. Three phase bands, four model identities, major structural events. **SP-3 Figure 1.** |
+| `transparency/Canonical_MD/_GRAPHS/fig_section6_network.svg` | The Section 6 artifact dependency network. Four-hub layout (SUN1–SUN4). **SP-3 Figure 2.** |
+| `transparency/Canonical_MD/_GRAPHS/fig6_swimlanes.svg` | Section-level activity across the project. **SP-3 Figure 3.** |
 
-The interactive HTML graphs support pan, zoom, and node inspection. They are local-only (same evidential status as conversation files): indexed by the SP-5 manifest, available on request. The static SVG figures are the public-facing evidence in SP-3.
+Interactive HTML graphs (`jpep_graph.html`, `jpep_graph_CFP.html`, `jpep_graph_III.html`, `jpep_graph_v1v2.html`) and several orphan PNG outputs from earlier figure-generation work — produced by the same `_pipeline/scripts/` pipeline as the SVGs — are **local-only** and live at `_pipeline/_GRAPHS/`. They are not part of the shipped archive (see `_pipeline/HUBS_AND_GRAPHS_PLAN.md` for the deferred plan and the rationale).
 
-Generation scripts for all figures are in `transparency/SCRIPTS/`.
+Generation scripts for all figures (including the shipped SVGs) live in `_pipeline/scripts/`.
 
 ---
 
@@ -532,4 +523,4 @@ The consolidation of II/III/IV into current Section 2 is documented in `4.2.5_Mo
 
 ---
 
-*SP-2 — v1 SID-20260409-150705; v2 SID-20260513-003000 (commit `e317eac`: SP-1/2/3 moved to top-level folders; §5.0 added; §5.4 trimmed); v3 SID-20260513-003000 (Phase 5 dual-auditor pass applied: §2/§4.1/§4.2/§5.0/§5/§6 corrections — see frontmatter `note:` for the full list); v4 SID-20260513-094035 (§4.1: provenance paragraph added for the SID-20260403-154700 hub-architecture design session, confirming its rollup into JPEP_20260403_193831.md).*
+*SP-2 — v1 SID-20260409-150705; v2 SID-20260513-003000 (SP-1/2/3 move); v3 SID-20260513-003000 (Phase 5 dual-auditor pass); v4 SID-20260513-094035 (hub-design rollup recorded); v5 SID-20260513-094035 (§4.1 + §4.2 rewritten to reflect pipeline relocation: hubs + interactive graphs + scripts moved to top-level `_pipeline/` (gitignored, not shipped); SVG figures remain in `transparency/Canonical_MD/_GRAPHS/`; deferred plan in `_pipeline/HUBS_AND_GRAPHS_PLAN.md`).*

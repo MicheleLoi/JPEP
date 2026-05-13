@@ -72,7 +72,7 @@ SP-3 Part I describes each phase in detail.
 
 Every Claude Code session (Stage III and CFP) has a session ID of the form `SID-YYYYMMDD-HHMMSS`. Artifacts carry their session ID in frontmatter. v1/v2 artifacts carry a chat UUID in place of a session ID; several UUIDs were recovered retrospectively during the CFP-phase philological sessions.
 
-The authoritative record of session topology — which session followed which, what each session took as input and produced as output — is `hub_annotations.yaml` in `transparency/SCRIPTS/`. SP-2 §4 describes the hub system.
+The authoritative record of session topology is `hub_annotations.yaml` (per-session predecessor relationships and inputs/outputs). As of the v1 submission, the hub-system pipeline (`hub_annotations.yaml`, the generation script, the derived hub stubs, and the interactive HTML graphs) lives in local project infrastructure rather than in the shipped archive — see SP-2 §4 for the architectural rationale and the freeze. The three SVG figures in `transparency/Canonical_MD/_GRAPHS/` (referenced as SP-3 Figures 1–3) ship as part of the archive.
 
 ### Documentation conventions
 
