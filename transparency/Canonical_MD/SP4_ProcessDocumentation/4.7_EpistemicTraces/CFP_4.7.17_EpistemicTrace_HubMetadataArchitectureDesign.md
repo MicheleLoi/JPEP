@@ -5,7 +5,7 @@ label: CFP_4.7.17_EpistemicTrace_HubMetadataArchitectureDesign
 title: "Epistemic Trace: Hub Metadata Architecture Design"
 branch: cfp-ai-ethics-inquiry
 date_created: 2026-04-03
-source_conversation: "SID-20260403-154700 (pending export; next session after JPEP_20260403_133025.md)"
+source_conversation: "SID-20260403-154700 — direct turn-by-turn export of this session was never generated (export pipeline gap). The session's content is integrated in JPEP_20260403_193831.md (the successor session, started 19:38 same day), which references SID-20260403-154700 by name 5 times (lines 1244, 1360, 1366, 1374, 1420) and summarises the hub-architecture decision recorded here. Rollup confirmed in SID-20260513-094035 audit; see CFP_5.3.30 §3.1."
 inputs:
   - CFP_5.3.13_Note_SP3_WriterBriefing.md
   - CFP_5.3.15_Note_OriginStoryForSP3.md
