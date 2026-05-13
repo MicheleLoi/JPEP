@@ -3,9 +3,12 @@ project: JPEP
 document_type: Type 12 - Section Draft
 label: CFP_5.4.11_SP3
 section: "SP-3 — Documentation Adequacy Account"
-version: v3
+version: v3.1
 date_created: 2026-04-07
-date_revised: 2026-04-09
+date_revised: 2026-05-13
+session_id_list:
+  - SID-20260407-181422
+  - SID-20260513-094035
 status: Draft
 source: "Claude Opus 4.6 (Claude Code session)"
 session_id: SID-20260407-181422
@@ -112,7 +115,7 @@ The CFP phase adds full MHC-W v5 conventions on top of the Stage III base. Speci
 
 **Automated frontmatter.** Every artifact is created with canonical fields (`session_id`, `inputs`, `output_completed`, `feeds_into`, `derived_from`, `supersedes`) populated by the workflow tooling, not the author. The 2026-04-07 frontmatter normalization pass (modlog `CFP_4.2.26`) brought the entire archive into uniform conformance.
 
-**Hub annotations** (`hub_annotations.yaml`) become the authoritative source of session topology. Hub files in `_HUBS/` are derived; the YAML file is what the chain walks read. Session predecessor relationships use `continues_from` (not the older `prior_chat`) and support the YAML list form for complex multi-input flows.
+**Hub annotations** (`hub_annotations.yaml`) become the authoritative source of session topology. Hub files in `_HUBS/` are derived; the YAML file is what the chain walks read. Session predecessor relationships use `continues_from` (not the older `prior_chat`) and support the YAML list form for complex multi-input flows. As of the v1 submission (2026-05-13), the hub-generation pipeline — including `hub_annotations.yaml`, the derived `_HUBS/` directory, and the hub-generation script — was relocated to a top-level `_pipeline/` folder that is gitignored and not part of the shipped archive; the architectural role described here is documentary, not a current archive feature. The deferred plan for resuming hub work post-submission is in `_pipeline/HUBS_AND_GRAPHS_PLAN.md`. See SP-2 §4.1 for the architectural rationale and freeze.
 
 **Conversation file-exports.** A SessionEnd hook captures every Claude Code session as a conversation file into `06_conversations/`. The directory itself is gitignored: conversations are retained as source material on the author's machine and indexed by a public manifest in SP-5; they are not part of the public repository. (For the v1/v2 phase, conversations remain hosted on the platforms where they were authored — Claude.ai and ChatGPT — and were consulted via shareable links during the early-April 2026 philological reading sessions.) The framing of the conversation layer as source-material-with-manifest, and the reasons for it, are in §10.
 
@@ -210,7 +213,7 @@ This project tracks the *writing process* — the decisions, the transitions, th
 
 **What SP-4/SP-5 offers** is an artifact-layer account organized around meaningful human control. The standing claim is that the artifact set makes the human's role in the writing visible enough for an evaluator to exercise the three Section 7 criteria — *attribution*, *intellectual trajectory*, *understanding and endorsement* — using the modlogs, version chains, and transformation notes already in the public package. §8's mapping table and Part IV's worked example are where the criteria are exercised. This is explicitly *not* an auditability claim: SP-3 does not offer reproduction of the writing process, prompt-by-prompt replay, or full transcript publication. The reasons for the negative claim — the rejection of the reproduction-test model and the reframe onto meaningful human control — are in Sections 3 and 6 of the paper proper, and are not relitigated here. Meaningful human control does not require full conversation publication, and SP-3 does not pretend to offer what it does not need to offer. The manifest is the public anchor; the artifact chain is the spine; the conversations are source material retained for the kind of philological work the chain walk did, available on request when a reader has reason to want them.
 
-Four interactive HTML versions of the Section 6 artifact network (one per phase and one combining all four phases) are retained locally alongside the conversation files — same evidential status (local-only, indexed by the SP-5 manifest, available on request) — and support pan, zoom, and node inspection. They are rendered from the same metadata that populates hub annotations and artifact frontmatter; their value is navigability rather than additional evidence. For anyone exercising the Section 7 criteria at scale, a zoomable dependency graph is a more tractable entry point than flat file listings.
+Four interactive HTML versions of the Section 6 artifact network (one per phase and one combining all four phases) are retained locally in `_pipeline/_GRAPHS/` (gitignored, not part of the shipped archive) — available on request — and support pan, zoom, and node inspection. They are rendered from the same metadata that populates hub annotations and artifact frontmatter; their value is navigability rather than additional evidence. For anyone exercising the Section 7 criteria at scale, a zoomable dependency graph is a more tractable entry point than flat file listings. The three static SVG figures used in this document (Figures 1, 2, 3) remain in `transparency/Canonical_MD/_GRAPHS/` as part of the shipped archive.
 
 ## 11. Synthesis — the human author's role across the project
 
