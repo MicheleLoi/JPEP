@@ -498,3 +498,74 @@ Convention:
 - **Opus reviewer's two unhappy-reader profiles** (rigorous analytic metaethicist + serious Cavellian) now both addressed at v1.10 via Phase 3 moves. The "happy author" profile (Vallor/Floridi/Tasioulas/O'Neill/Santoni de Sio meliorist mode) is preserved.
 
 **Session closes here. Use `/mhc-end` to finalize the MHC-W session record.**
+
+---
+
+## SID-20260514-004045 — Archive audit closure + SP-2 v4 propagation; cfp-ai-ethics-inquiry merged to main; published-paper non-anonymous-URL revert (2026-05-14, ~00:40 → ~12:30)
+
+**Session marker note.** The SessionStart hook again did not register a `current_session` in `.mhc-config.json` (same failure mode as SID-20260513-174139; cause still uninvestigated). The session ID here is derived from the JSONL first-message timestamp converted to Europe/Rome local. Recovered manually via `extract_conversation.py`.
+
+**Driver.** User opened with "can you merge this to main?" The branch `cfp-ai-ethics-inquiry` was 75 commits ahead of `main` with 14 staged files (4 `.DS_Store` macOS metadata + 10 legitimate content). Post-merge, the session expanded into anonymity-safe abstract revision and a full archive consistency audit, closing with a DOI-ready state and a milestone note. The paper has been published in submission form; revisions are expected (it will not be accepted as is), so Zenodo DOI minting is deferred to the final-accepted version.
+
+### Phase 1 — Branch merge to main + .DS_Store hygiene (commit `f828fe9`)
+
+Stale `.git/index.lock` (0 bytes, no live process) removed. The 4 staged `.DS_Store` files unstaged; `.gitignore` extended with a global `.DS_Store` rule (the existing `*`-then-`!`-allow pattern required the rule placed *after* the unignores). The 10 legitimate content files committed: the in-flight v1.10 paper revision, 5 modlog updates (`CFP_4.2.17/.18/.19/.23/.30`), 3 new section-guidance files (`CFP_4.4.23/.24/.25`), session log. Fast-forward merged into `main` (76 commits: 75 from feature branch + new commit). Pushed both branches to origin.
+
+### Phase 2 — Title-page URL revert; abstract expansion in-place
+
+Initially added `**Transparency archive:** https://github.com/MicheleLoi/JPEP/tree/main/transparency` to the paper title page. User immediately caught the anonymization violation (review is anonymous) and asked the URL be removed from the manuscript and provided only in-chat for the cover-letter / supplementary-materials portal. Title page reverted. Abstract expanded ~88w → ~204w in-place, preserving "archived at a persistent identifier" placeholder; expansion stays close to original spine (essential contestation at two levels, agent-integrity grounding, the three defeats, the five-element framework, self-exemplification).
+
+### Phase 3 — Archive consistency audit (autonomous resolution pass)
+
+Two parallel agent passes (earlier this session, not re-documented here) produced a finding inventory: **B1–B10** (mechanical / housekeeping) + **A1–A10** (substantive) + a second-agent batch of 24 cross-checks. Per user direction "do everything you can resolve alone, READMEs are approved," the autonomous pass resolved:
+
+**Resolved (substantive):**
+- A3: SP-3 Part IV section-numbering crosswalk note (pre-renaming "Section 6" / "Section 7 criteria" → published §5 / §6 criteria)
+- A4: 8 epistemic-trace `document_type` fields normalized from outlier `Type 1/9/10` / bare / parenthesized forms to canonical `Type 2 - Epistemic Trace`
+- A6: Private absolute `/Users/micheleloi/.claude/plans/...` paths scrubbed from `CFP_4.4.23/.24/.25`
+- A7: Supersession back-links (`superseded_by:` + `status: Superseded` + `versioning_convention: legacy_multifile`) on `III_4.4.4` → `CFP_4.4.22` and `III_4.4.5` → `CFP_4.4.25`
+- A9: `_INDEX_4.2.md` created — single-table view of 37 modlogs by era
+
+**Resolved (smaller mechanical batch — Agent 2):**
+- #7 (repo-relative paths in `CFP_5.2.5` inputs), #8 (primary/secondary `output_completed:` split in `CFP_4.2.31` bibliography modlog), #10 (full path in `4.2.3` `output_completed:`), #11 (minimal `project/document_type/label` frontmatter on `4.7.7` container stub), #22 (`status: Complete` on `CFP_4.2.36`)
+
+**Deliberately deferred with reason:**
+- A1 / A2 (DOI / publication entry) — wait for final-accepted version
+- A8 (Section6_v4 source draft vs. published §6) — not a finding per adapt.md rule 12 (source drafts are frozen baselines)
+- A10 (`TEMP/`, `tmpclaude-*-cwd/`) — gitignored, doesn't reach the public archive
+- Agent #4 / #15 (modlog frontmatter normalization, `versioning_convention` on legacy per-version files) — adapt.md rule 11 explicit "lazy on next touch"
+- Agent #6 / #18 (body `**feeds_into:**` and "No connections found" renderings in trace files) — adapt.md rule 9: hub script not wired; touching these would create drift when script runs
+- Historical `transparency/SCRIPTS/` paths in pre-relocation modlogs — historically accurate; "do not update historical artifacts" principle (parallel to section renumbering)
+
+### Phase 4 — Yesterday's-review-preservation verification
+
+User asked: "is yesterday's last round of reviews preserved in modlogs and which ones?" Confirmed: all three review passes from 2026-05-13 (Reviewer B literature integration → v1.3 in `CFP_4.2.36`; clarity/compression sequence → v1.7 in `CFP_4.2.17/.18/.19/.30/.31`; restructure → v1.9 in `CFP_4.2.17` MOD-015 + `CFP_4.2.18` MOD-024–028 + `CFP_4.2.19` Entries 7–9c; Reviewer 1 Opus cold-read surgical → v1.10 in `CFP_4.2.23` v5.1→v5.2 + `CFP_4.2.30` MOD-005/-007) are preserved with `SID-20260513-*` timestamps. Trail complete and auditable.
+
+### Phase 5 — Milestone capture + SP-2 v4 propagation (commit `63d26b5`)
+
+`CFP_5.3.31_Note_ArchiveAuditClosure_DOIReady.md` created via `/mhc-note` (validated approved): records the DOI-ready state, deferral rationale (paper in revision cycle), available interim pointers (GitHub URL for non-anonymous contexts, "forthcoming" placeholder in manuscript). User immediately caught the SP-2 propagation gap — "you must update the list of documentation in sp2, don't you have that problem?" — confirming the audit was not complete until SP-2's inventory reflected the new artifacts.
+
+SP-2 bumped **v3 → v4**: `_INDEX_4.2.md` registered in §4.2; `CFP_4.4.23/.24/.25` added to §4.4 CFP phase; `III_4.4.4/.5` marked superseded in §4.4 Stage III phase; `CFP_5.3.31` registered in §5.3; the `.17` gap explained with the deleting commit reference (`d5af1b6`, SP-3 restructure). `CFP_5.3.31` footprint count adjusted accordingly. Single commit `63d26b5` (33 files, +398 / −144). Both branches pushed to origin.
+
+### Artefacts produced this session
+
+**New (committed, public-archive):**
+- `transparency/Canonical_MD/SP4_ProcessDocumentation/4.2_ModificationLogs/_INDEX_4.2.md`
+- `transparency/Canonical_MD/SP5_DevelopmentRecords/5.3_Notes_Type11/CFP_5.3.31_Note_ArchiveAuditClosure_DOIReady.md`
+- `transparency/README.md`
+
+**Modified (committed, public-archive):** 30 files across SP-1 (1), SP-2 (1), SP-3 (1), SP-4 (~22 in 4.2/4.4/4.6/4.7), SP-5 (2 in 5.2/5.3), plus `Paper/MDversion/CFP_FullPaper_v1.md` (title-page revert + abstract expansion) and `transparency/Canonical_MD/README.md`.
+
+**Modified (gitignored, local-only):** `adapt.md` — B8 stale-path fix persists on disk for future sessions.
+
+**Commits:** `f828fe9` (in-flight content + .gitignore), `63d26b5` (audit closure + SP-2 v4 propagation). Both on `main` and `cfp-ai-ethics-inquiry`, pushed to `origin`. Commit-pinned URL for the audit-closure state: `https://github.com/MicheleLoi/JPEP/tree/63d26b5/transparency`.
+
+### Carry-forward
+
+- **Zenodo DOI deferred** — mint on the final-accepted version of the paper; propagate into `CFP_FullPaper_v1.md` line 269 (replaces "[persistent identifier: forthcoming]") + abstract + AI Usage Archive closing note in the same pass. The interim GitHub URL is for cover-letter / supplementary-materials portal use only; the manuscript stays anonymous.
+- **Modlog frontmatter normalization** (Agent #4) and **`versioning_convention` tagging on legacy per-version section drafts** (Agent #15) remain deferred per adapt.md rule 11 lazy convention.
+- **Hub-script wiring** (adapt.md rule 9) — when finally wired to read `hub_annotations.yaml`, the body `**feeds_into:**` sections in `CFP_4.7.5/6/7` and "_No connections found_" auto-renderings will refresh; until then, leave alone.
+- **SP-2 §5 subsection numbering quirk** — cosmetic, parked from previous session.
+- **SessionStart hook failure** — second consecutive session where `current_session` was not registered. Worth investigating before it becomes the norm.
+
+**Session closes here. Use `/mhc-end` to finalize the MHC-W session record.**
