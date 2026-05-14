@@ -1,7 +1,6 @@
 ---
 artifact_type: modlog
 document: CFP_FullPaper v1.1 cleanup (Phase 5 Commit 2)
-output_file: CFP_4.2.34_ModificationLog_FullPaperAssembly.md
 project: JPEP
 created: 2026-05-12
 last_updated: 2026-05-12

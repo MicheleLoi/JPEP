@@ -20,7 +20,7 @@ related:
   - "CFP_4.4.22_SectionGuidance_Section3.md (essential-contestedness from §3.3 is referenced, not re-derived)"
 inputs:
   - "Paper/MDversion/CFP_FullPaper_v1.md (pre-revision §4.2 gaming-defense at lines 207–217; pre-revision §6.4 at lines 313–321)"
-  - "/Users/micheleloi/.claude/plans/don-t-be-lazy-you-refactored-breeze.md (plan governing this revision)"
+  - "Claude Code plan file (local-only, name: don-t-be-lazy-you-refactored-breeze; plan governing this revision — content reflected in the conversation transcript exported by the SessionEnd hook for SID-20260513-current)"
 ---
 
 # Section Guidance: §6.4 — Gaming-Defense Absorption

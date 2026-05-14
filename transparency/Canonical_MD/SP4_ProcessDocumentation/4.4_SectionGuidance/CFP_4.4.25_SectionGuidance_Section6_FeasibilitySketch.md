@@ -21,7 +21,7 @@ related:
   - "CFP_4.2.19_ModificationLog_Section7.md (modlog records the §5→§6 compression)"
 inputs:
   - "Paper/MDversion/CFP_FullPaper_v1.md (pre-swap §5 at v1.8, ~852w specification)"
-  - "/Users/micheleloi/.claude/plans/don-t-be-lazy-you-refactored-breeze.md (second restructure plan)"
+  - "Claude Code plan file (local-only, name: don-t-be-lazy-you-refactored-breeze; second restructure plan — content reflected in the conversation transcript exported by the SessionEnd hook for SID-20260513-current)"
 ---
 
 # Section Guidance: §6 — The Framework as Feasibility Sketch

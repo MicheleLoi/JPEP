@@ -1,6 +1,6 @@
 ---
 project: JPEP
-document_type: Type 1 - Epistemic Trace
+document_type: Type 2 - Epistemic Trace
 label: CFP_4.7.20_EpistemicTrace_Section6History
 title: "Epistemic Trace: Full History of Section 6 from First Writing to Current State"
 date: 2026-04-07

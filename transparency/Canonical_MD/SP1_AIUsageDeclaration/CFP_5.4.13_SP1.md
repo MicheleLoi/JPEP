@@ -16,9 +16,6 @@ inputs:
 cfp_target: "AI Tools in Ethics Research (topical collection)"
 versioning_convention: git_inplace
 word_count: ~700
-pending:
-  - "Part 2 / Documentation conventions: branch merge sentence written in future tense as of 2026-04-09. Update to past tense and remove inline marker when cfp-ai-ethics-inquiry is merged into main."
-section_numbering: pre_renaming
 ---
 
 # SP-1 — AI Usage Declaration and Archive Orientation
@@ -78,7 +75,7 @@ The authoritative record of session topology is `hub_annotations.yaml` (per-sess
 
 v1/v2 artifacts were authored by hand inside chat sessions and extracted manually into the archive. Stage III introduced session IDs and Claude Code tooling. CFP added automated frontmatter, hub annotations, and conversation file exports via SessionEnd hook. A frontmatter normalization pass in early April 2026 (`CFP_4.2.26`) brought the entire archive into uniform field conventions.
 
-The CFP adaptation was developed on branch `cfp-ai-ethics-inquiry` [to be merged into `main` before submission — update tense when done]. The full commit history of the branch is preserved in git.
+The CFP adaptation was developed on branch `cfp-ai-ethics-inquiry` and merged into `main` before submission. The full commit history of the branch is preserved in git.
 
 ### Entry points
 

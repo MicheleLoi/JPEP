@@ -15,8 +15,9 @@ inputs:
   - CFP_5.3.24_Note_ReviewerB_OpusReview_v1.md
   - CFP_5.3.27_Note_ReviewResponse_Draft.md
 output_completed:
-  - transparency/Canonical_MD/SP4_ProcessDocumentation/4.6_ReferenceLogs/paper_bibliography.md
   - transparency/Canonical_MD/SP4_ProcessDocumentation/4.6_ReferenceLogs/paper_bibliography_FINAL.md
+output_completed_secondary:
+  - "transparency/Canonical_MD/SP4_ProcessDocumentation/4.6_ReferenceLogs/paper_bibliography.md (working/process notes only; not the authoritative bibliography — see paper_bibliography_FINAL.md frontmatter `build_source: false`)"
 validation: approved
 ---
 

@@ -6,12 +6,11 @@ section: "SP-3 — Documentation Adequacy Account"
 version: v3.1
 date_created: 2026-04-07
 date_revised: 2026-05-13
-session_id_list:
-  - SID-20260407-181422
-  - SID-20260513-094035
 status: Draft
 source: "Claude Opus 4.6 (Claude Code session)"
-session_id: SID-20260407-181422
+session_id:
+  - SID-20260407-181422
+  - SID-20260513-094035
 produced_by_prompt: ""
 inputs:
   - CFP_4.4.20_SectionGuidance_SP3.md (v7)
@@ -158,6 +157,8 @@ The three phases differ in what their tooling enabled, what their tooling could 
 ---
 
 # Part IV — Section 6 as worked example
+
+> **A note on section numbering.** Part IV was written when the paper still used its pre-renaming numbering. Throughout this Part, "Section 6" refers to what is **§5 ("Mandatory Transparency in Practice") in the published paper**; "Section 6.2/6.3" → published §5.2/5.3; "Section 7 criteria" → published §6 criteria. The mapping was made effective 2026-04-09 (decision record: `CFP_5.3.26`). The pre-renaming numbers are preserved here because Part IV is a *historical* account of how the section was written, and the contemporaneous numbering is part of the trail being documented. The frontmatter field `section_numbering: pre_renaming` flags this throughout SP-3.
 
 ## 6. Why Section 6, and how this part reads
 

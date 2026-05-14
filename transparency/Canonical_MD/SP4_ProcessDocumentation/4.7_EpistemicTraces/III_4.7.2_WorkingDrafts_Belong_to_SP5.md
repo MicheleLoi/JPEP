@@ -1,6 +1,6 @@
 ---
 project: JPEP
-document_type: Type 10 - Epistemic Trace
+document_type: Type 2 - Epistemic Trace
 label: III_4.7.2_WorkingDrafts_Belong_to_SP5
 title: "Epistemic Trace: Working Drafts Belong to SP5"
 date: 2026-01-26

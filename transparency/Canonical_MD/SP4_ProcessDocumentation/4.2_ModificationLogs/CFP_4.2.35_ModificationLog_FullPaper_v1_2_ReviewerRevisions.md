@@ -1,7 +1,6 @@
 ---
 artifact_type: modlog
 document: CFP_FullPaper v1.2 reviewer-driven revision (Phase 5 Commit 3)
-output_file: CFP_4.2.35_ModificationLog_FullPaper_v1_2_ReviewerRevisions.md
 project: JPEP
 created: 2026-05-12
 last_updated: 2026-05-12

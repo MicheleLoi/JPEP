@@ -1,6 +1,6 @@
 ---
 project: JPEP
-document_type: Type 9 - Epistemic Trace
+document_type: Type 2 - Epistemic Trace
 title: "Epistemic Trace: Selected Graphs vs Megagraph — What Visualization Serves the Argument"
 date_created: 2026-04-01
 session_id: SID-20260401

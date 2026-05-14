@@ -1,10 +1,10 @@
 ---
 artifact_type: modlog
 document: CFP_FullPaper v1.3 — Reviewer B literature-integration pass (ongoing)
-output_file: CFP_4.2.36_ModificationLog_FullPaper_v1_3_ReviewerB_Integration.md
 project: JPEP
 created: 2026-05-12
 last_updated: 2026-05-13
+status: Complete
 session_id:
   - SID-20260512-223052
   - SID-20260512-234756
