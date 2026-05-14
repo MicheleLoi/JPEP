@@ -1,7 +1,7 @@
 ---
 artifact_type: modlog
 document: CFP Abstract and Title (Phase 4)
-output_file: CFP_4.2.33_ModificationLog_AbstractTitle.md
+output_completed: Paper/MDversion/CFP_FullPaper_v1.md (abstract + title sections, Phase 4 integration)
 project: JPEP
 created: 2026-05-12
 last_updated: 2026-05-12

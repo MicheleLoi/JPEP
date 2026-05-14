@@ -10,14 +10,14 @@ last_updated: 2026-05-12
 status: Active
 session_id: SID-20260512-111348
 inputs:
-  - "CFP_5.4.3_Introduction_v2.md"
-  - "CFP_5.4.8_Section6_v4.md"
-  - "CFP_5.4.9_Section7_v3.md"
-  - "CFP_5.4.10_Conclusion_v1.md"
-  - "CFP_5.4.11_SP3.md (cross-reference; becomes archive content)"
-  - "CFP_5.4.12_SP2.md (provisional, becomes archive content)"
-  - "CFP_5.4.13_SP1.md (provisional, becomes archive content)"
-  - "CFP_5.3.1_WorkPlan_CFP_Adaptation.md"
+  - "transparency/Canonical_MD/SP5_DevelopmentRecords/5.4_SectionDrafts/CFP_5.4.3_Introduction_v2.md"
+  - "transparency/Canonical_MD/SP5_DevelopmentRecords/5.4_SectionDrafts/CFP_5.4.8_Section6_v4.md"
+  - "transparency/Canonical_MD/SP5_DevelopmentRecords/5.4_SectionDrafts/CFP_5.4.9_Section7_v3.md"
+  - "transparency/Canonical_MD/SP5_DevelopmentRecords/5.4_SectionDrafts/CFP_5.4.10_Conclusion_v1.md"
+  - "transparency/Canonical_MD/SP3_DocumentationAdequacy/CFP_5.4.11_SP3.md (cross-reference; becomes archive content)"
+  - "transparency/Canonical_MD/SP2_NavigationAndArchitecture/CFP_5.4.12_SP2.md (provisional, becomes archive content)"
+  - "transparency/Canonical_MD/SP1_AIUsageDeclaration/CFP_5.4.13_SP1.md (provisional, becomes archive content)"
+  - "transparency/Canonical_MD/SP5_DevelopmentRecords/5.3_Notes_Type11/CFP_5.3.1_WorkPlan_CFP_Adaptation.md"
 feeds_into:
   - "CFP_4.4.21_SectionGuidance_ExternalizationImplementation.md"
   - "CFP_5.4.14_AIUsageArchive.md"

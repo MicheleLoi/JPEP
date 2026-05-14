@@ -7,7 +7,10 @@ date_created: 2026-01-26
 date_last_updated: 2026-01-28
 session_id: SID-20260202-115248
 session_id_precision: exact
-status: Ready for Drafting (Revised)
+status: Superseded
+superseded_by: CFP_4.4.25_SectionGuidance_Section6_FeasibilitySketch.md
+versioning_convention: legacy_multifile
+status_history: "Ready for Drafting (Revised) (Stage III); superseded by CFP_4.4.25 in CFP phase (post §5/§6 swap)"
 source: "Claude Code (no chat ID)"
 source_pdl: "III_5.2.1_pdl_sections_3_and_6_MHC_integration.md"
 constraint: "Self-sufficient prompt with pointers to source documents for drafting AI"

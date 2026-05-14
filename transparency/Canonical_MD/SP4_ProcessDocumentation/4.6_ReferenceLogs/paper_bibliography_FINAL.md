@@ -12,7 +12,7 @@ session_id:
   - SID-20260512-154043
   - SID-20260512-223052
   - SID-20260513-003000
-note: "2026-05-13 (v1.6 compression pass): Mercier (2020) removed — citation lived only in §4.3 Cost Structure / Costly Signaling, which was cut entirely. Plato/Classical Sources unification already done earlier same day (MOD-011/012). Logged as MOD-013 in CFP_4.2.31."
+note_2026_05_13: "v1.6 compression pass: Mercier (2020) removed — citation lived only in §4.3 Cost Structure / Costly Signaling, which was cut entirely. Plato/Classical Sources unification already done earlier same day (MOD-011/012). Logged as MOD-013 in CFP_4.2.31."
 inputs:
   - paper_bibliography.md
   - CFP_5.4.4_Section3_v3.md (Williams entry — missing from working bib)

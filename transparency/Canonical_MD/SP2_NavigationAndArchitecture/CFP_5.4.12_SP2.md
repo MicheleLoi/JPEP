@@ -12,7 +12,8 @@ session_id:
   - SID-20260512-111348
   - SID-20260513-003000
   - SID-20260513-094035
-date_last_updated: 2026-05-13
+  - SID-20260514-current
+date_last_updated: 2026-05-14
 produced_by_prompt: ""
 inputs:
   - CFP_5.4.11_SP3.md
@@ -21,8 +22,7 @@ inputs:
 cfp_target: "AI Tools in Ethics Research (topical collection)"
 versioning_convention: git_inplace
 word_count: ~2500
-note: "v1 (2026-04-09, SID-20260409-150705): initial inventory. v2 (2026-05-13, SID-20260513-003000): SP-1/SP-2/SP-3 moved from 5.4_SectionDrafts/ to top-level sibling folders of SP4_*/SP5_* (commit e317eac); new §5.0 added; §6's §5.4 table trimmed of the three moved rows; §1 updated. v3 (2026-05-13, SID-20260513-003000): Phase 5 dual-auditor pass applied — (A1) reference logs moved from §5/4.1 to new §5/4.6 subsection, §2 ontology Type 6 row corrected (real path: SP-4/4.6, not SP-4/4.1); (A2) §4.1 hubs paragraph rewritten — git history shows the hub .md files were never deleted as adapt.md rule 4 / CFP_5.3.16 claimed; 60 files still present at Canonical_MD/_HUBS/ (not at SP4_ProcessDocumentation/_HUBS/ as previously stated), last regenerated 2026-04-03 (commit de15a23); (A3) new §6/5.1 subsection added inventorying 5.1_paper_prompt_development_log.md; (A4) four new modlogs registered: CFP_4.2.33–36 (AbstractTitle, FullPaperAssembly, v1.2 ReviewerRevisions, v1.3 ReviewerB Integration); (A5) four other late artifacts registered: CFP_4.4.22 (4.4), CFP_4.7.21 (4.7), CFP_5.3.29 (5.3), CFP_5.4.15 (5.4); (A6) three PNG figures added to §4.2 with 'not used in paper body or SP-3' note; §7 updated to point at the new CFP_5.3.30 manifest (separate commit). Held for separate user decision (not registered in this v3): backup zip, orphaned scripts at Canonical_MD/ root, .bak in 4.4_SectionGuidance, .patch.txt in 5.3_Notes, _chainwalk_*.md files, v3_Conversations_Claude_Code/ placeholder, Sources*/ disposition."
-section_numbering: pre_renaming
+note: "v4 (2026-05-14, SID-20260514-current): archive-audit closure propagation. §4.2 gained `_INDEX_4.2.md` folder-index pointer. §4.4 Stage III phase marked III_4.4.4 and III_4.4.5 as superseded with explicit pointers to CFP_4.4.22 and CFP_4.4.25 (back-link added in same audit). §4.4 CFP phase gained CFP_4.4.23, CFP_4.4.24, CFP_4.4.25 entries (Section 4 collapse + §6.4 gaming-defense absorption + §6 feasibility sketch) plus a footnote explaining the intentional `.17` gap (commit `de15a23` add, `d5af1b6` remove during SP-3 restructure). §5.3 CFP phase gained CFP_5.3.31 (audit-closure milestone). Frontmatter `date_last_updated` bumped; SID-20260514-current added to session_id list. No content beyond inventory propagation — all substantive audit fixes were applied to the artifacts themselves, not to SP-2. v1 (2026-04-09, SID-20260409-150705): initial inventory. v2 (2026-05-13, SID-20260513-003000): SP-1/SP-2/SP-3 moved from 5.4_SectionDrafts/ to top-level sibling folders of SP4_*/SP5_* (commit e317eac); new §5.0 added; §6's §5.4 table trimmed of the three moved rows; §1 updated. v3 (2026-05-13, SID-20260513-003000): Phase 5 dual-auditor pass applied — (A1) reference logs moved from §5/4.1 to new §5/4.6 subsection, §2 ontology Type 6 row corrected (real path: SP-4/4.6, not SP-4/4.1); (A2) §4.1 hubs paragraph rewritten — git history shows the hub .md files were never deleted as adapt.md rule 4 / CFP_5.3.16 claimed; 60 files still present at Canonical_MD/_HUBS/ (not at SP4_ProcessDocumentation/_HUBS/ as previously stated), last regenerated 2026-04-03 (commit de15a23); (A3) new §6/5.1 subsection added inventorying 5.1_paper_prompt_development_log.md; (A4) four new modlogs registered: CFP_4.2.33–36 (AbstractTitle, FullPaperAssembly, v1.2 ReviewerRevisions, v1.3 ReviewerB Integration); (A5) four other late artifacts registered: CFP_4.4.22 (4.4), CFP_4.7.21 (4.7), CFP_5.3.29 (5.3), CFP_5.4.15 (5.4); (A6) three PNG figures added to §4.2 with 'not used in paper body or SP-3' note; §7 updated to point at the new CFP_5.3.30 manifest (separate commit). Held for separate user decision (not registered in this v3): backup zip, orphaned scripts at Canonical_MD/ root, .bak in 4.4_SectionGuidance, .patch.txt in 5.3_Notes, _chainwalk_*.md files, v3_Conversations_Claude_Code/ placeholder, Sources*/ disposition."
 ---
 
 # SP-2 — Navigation and Architecture Guide
@@ -143,6 +143,8 @@ Reference logs (Type 6) live in `4.6_ReferenceLogs/` — see §4.6 below.
 
 ### 4.2 — Modification Logs (Type 7)
 
+**Folder index:** `_INDEX_4.2.md` (added 2026-05-14) — single-table view of all modlogs by era, with one-line targets per file. The index summarizes the tables below.
+
 **v1/v2 phase** (Roman numeral prefix or plain number):
 
 | File | Section covered |
@@ -230,8 +232,8 @@ Reference logs (Type 6) live in `4.6_ReferenceLogs/` — see §4.6 below.
 
 | File | Section / scope |
 |------|----------------|
-| `III_4.4.4_SectionGuidance_Section3_EssentiallyContested.md` | Section 3 (essentially contested concepts) |
-| `III_4.4.5_SectionGuidance_Section6_MHC.md` | Section 6 (meaningful human control integration) |
+| `III_4.4.4_SectionGuidance_Section3_EssentiallyContested.md` | Section 3 (essentially contested concepts) — **superseded by** `CFP_4.4.22` (2026-05-14 back-link) |
+| `III_4.4.5_SectionGuidance_Section6_MHC.md` | Section 6 (MHC integration) — **superseded by** `CFP_4.4.25` (post §5/§6 swap; 2026-05-14 back-link) |
 | `III_4.4.6_SectionGuidance_Section7_Rewrite.md` | Section 7 rewrite (created Feb 2 but never used — no output_completed) |
 
 **CFP phase:**
@@ -246,6 +248,11 @@ Reference logs (Type 6) live in `4.6_ReferenceLogs/` — see §4.6 below.
 | `CFP_4.4.20_SectionGuidance_SP3.md` | SP-3 (current version: v7) |
 | `CFP_4.4.21_SectionGuidance_ExternalizationImplementation.md` | Externalization of SP-1/2/3 from paper body — per-section to-dos (2026-05-12) |
 | `CFP_4.4.22_SectionGuidance_Section3.md` | Section 3 hard constraints — agent-integrity grounding; reproducibility-rejection (2026-05-12) |
+| `CFP_4.4.23_SectionGuidance_Section4.md` | Section 4 — why existing AI-disclosure formats don't fit philosophy (v1.7 → v1.8 §4 collapse, 2026-05-13) |
+| `CFP_4.4.24_SectionGuidance_Section6_GamingDefense.md` | Section 6.4 — gaming-defense absorption (companion to `.23`, 2026-05-13) |
+| `CFP_4.4.25_SectionGuidance_Section6_FeasibilitySketch.md` | Section 6 — feasibility sketch (v1.8 → v1.9 §5↔§6 swap, 2026-05-13) |
+
+The `.17` slot is an intentional gap — `CFP_4.4.17_Guidance_SelectedGraphSpecifications.md` existed in commit `de15a23` and was removed in commit `d5af1b6` (SP-3 restructure: figure-data note absorbed elsewhere). Recoverable via `git show de15a23:...`.
 
 ### 4.5 — Section Summaries (Type 5)
 
@@ -448,6 +455,7 @@ Folder: `5.1_PaperPromptDevelopmentLog_Type8a/`. One file.
 | `CFP_5.3.28_Note_ShouldersReview_Evaluation.md` | Shoulders review evaluation, per-item (2026-04-10) |
 | `CFP_5.3.29_Note_CordascoCorpusBriefing.md` | Cordasco corpus briefing (provenance for the §3 welfare-economic objection material) |
 | `CFP_5.3.30_Note_RawConversationsManifest.md` | Manifest of files in `06_conversations/` (74 exported sessions + 12 imported externals + 3 root files); retention policy; SID reconstruction note; per SP-2 §7 |
+| `CFP_5.3.31_Note_ArchiveAuditClosure_DOIReady.md` | Archive audit closure milestone (2026-05-14) — transparency archive in DOI-ready state; Zenodo deferred until post-acceptance |
 | `CFP_session_log.md` | Per-session log (`document_subtype: session_log`; appended as-we-go, one section per SID) |
 
 ### 5.4 — Section Drafts (Type 12)

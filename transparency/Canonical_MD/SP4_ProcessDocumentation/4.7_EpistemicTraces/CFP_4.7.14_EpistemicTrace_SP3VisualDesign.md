@@ -1,6 +1,6 @@
 ---
 title: SP-3 Visual Design — Figures for the Stories
-document_type: Epistemic Trace
+document_type: Type 2 - Epistemic Trace
 source_session: SID-20260402-145404
 model: Claude Opus 4.6
 date: 2026-04-02
