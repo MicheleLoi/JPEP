@@ -13,6 +13,10 @@
 !Paper/MDversion/
 !Paper/MDversion/**
 
+# consenti Paper/arXiv (canonical PDFs of arXiv submissions)
+!Paper/arXiv/
+!Paper/arXiv/**
+
 # escludi file temporanei di sessione Claude Code
 claude code conversations/
 transparency/tmpclaude-*
