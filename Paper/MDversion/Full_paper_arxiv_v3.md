@@ -3,7 +3,7 @@ title: "The Journal of Prompt Engineered (Moral) Philosophy: Or, Why AI-Assisted
 author: "Michele Loi"
 affiliation: "University of Milan"
 email: "michele.loi@unimi.it"
-version: "v2"
+version: "v3"
 date: 2026-05-18
 based_on: "Paper/MDversion/CFP_FullPaper_v1.md (v1.10, 2026-05-13)"
 archive: "https://github.com/MicheleLoi/JPEP (transparency/)"
@@ -13,7 +13,7 @@ archive: "https://github.com/MicheleLoi/JPEP (transparency/)"
 University of Milan  
 michele.loi@unimi.it
 
-**Version 2**  
+**Version 3**  
 18 May 2026
 
 ---
