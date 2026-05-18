@@ -49,7 +49,7 @@ The writing has gone through three temporal phases. They differ in platform, mod
 
 ### 3.1 Phase v1/v2 — first writing (mid-October 2025 to mid-November 2025)
 
-The first draft of the whole paper was written on Claude.ai web with Claude Sonnet 4.5, with one cross-tool thread that used ChatGPT for SVG generation and was retained in the conversation record. There was no session-ID infrastructure in this phase; chat UUIDs played the role session IDs would later play. There were no automated frontmatter tools, no `derived_from` chains, no hub annotations, no MHC-W workflow conventions. Modlogs, traces, pattern summaries, and section guidance documents were authored by hand.
+The first draft of the whole paper was written on Claude.ai web with Claude Sonnet 4.5, with one cross-tool thread that used ChatGPT for SVG generation and was retained in the conversation record. There was no session-ID infrastructure in this phase; chat UUIDs played the role session IDs would later play. There were no automated frontmatter tools, no `derived_from` chains, no hub annotations, no MHC-W workflow conventions. Modlogs, traces, pattern summaries, and section guidance documents were AI-generated inside the writing chats — Claude (or, on the cross-tool thread, ChatGPT) distilled; the user prompted, reviewed, and accepted; extraction into the archive was manual.
 
 What this phase produced, beyond the draft itself, was the *artifact ontology* that all subsequent phases would inherit — anticipated in `4.1`, stabilized inside the writing, and effectively complete by the end of v1 (full draft with appendix included). §5.1 takes up what this means as a capability claim.
 
@@ -81,7 +81,7 @@ The artifact ontology is the same set of types across all three phases, but what
 
 ### 4.1 v1/v2 artifacts
 
-The v1/v2 phase produced eight kinds of artifact, all hand-authored:
+The v1/v2 phase produced eight kinds of artifact, all AI-generated inside writing chats (Claude.ai with Sonnet 4.5, plus one ChatGPT thread) and extracted into the archive by hand:
 
 - **Modification logs** (Type 7) recorded what changed during writing and why. Numbering restarted at MOD-001 per section. Entries were authored in the same chat as the writing, then cleaned up and placed into the canonical archive. Canonical example: `4.2.9_ModificationLog_Section_VIII_6` (the Section 6 modlog, including MOD-009 — the manual-copy-paste insertion that closes the §6.2 ↔ Appendix A.2 feedback loop).
 - **Epistemic traces** (Type 2) preserved exploratory dialogues with one-to-many influence on later writing. They are the asynchronous conversational backbone of the paper: the journal-strategy origin chat, the LinkedIn stakeholder chat, the methodology branching point at `4.7.3`, the philosophical-grounding sideways chat for Section VIII (`4.7.5`).

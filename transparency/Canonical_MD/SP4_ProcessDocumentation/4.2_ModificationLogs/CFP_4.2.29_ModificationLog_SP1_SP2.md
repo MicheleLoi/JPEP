@@ -4,10 +4,11 @@ document_type: Type 3 - Modification Log
 label: CFP_4.2.29_ModificationLog_SP1_SP2
 title: "Modification Log: SP-1 and SP-2 v1 production"
 date_created: 2026-04-09
-date_last_updated: 2026-05-12
+date_last_updated: 2026-05-16
 session_id:
   - SID-20260409-150705
   - SID-20260512-111348
+  - SID-20260516-152731
 status: Active
 inputs:
   - CFP_5.4.11_SP3.md
@@ -109,10 +110,26 @@ Pre-existing housekeeping items unrelated to the externalization; left for a sep
 
 ---
 
-## Validation
+## Post-Update: SP-1 "Documentation conventions" — residual "hand-authored" cleanup (2026-05-16)
 
-approved (v1 production, 2026-04-09); approved (Post-Update MOD-004, 2026-05-12).
+**Session:** SID-20260516-152731
+
+**Source:** User read-through of SP-3 surfaced a residual "hand-authored" misstatement that the CFP_4.2.27 MOD-003 item 2 pass had not fully swept; grep confirmed a parallel surviving statement in SP-1's "Documentation conventions" paragraph.
+
+### MOD-005 — SP-1 §"Documentation conventions" sentence corrected
+
+**What:** First sentence of the "Documentation conventions" sub-section in `CFP_5.4.13_SP1.md` rewritten from "v1/v2 artifacts were authored by hand inside chat sessions and extracted manually into the archive" to "v1/v2 artifacts were AI-generated inside chat sessions (Claude.ai, plus one cross-tool ChatGPT thread) and extracted manually into the archive." Preserves the (correct) manual-extraction point; removes the (wrong) hand-authorship claim. Aligns the sentence with the controlling framing in SP-3 §5.1 line 139 (*"the user prompted, reviewed, and accepted, and Claude distilled"*).
+
+**Why:** Same misconception that `CFP_4.2.27` MOD-003 item 2 and MOD-008 corrected in SP-3. SP-1 carried a parallel statement that the earlier SP-3-scoped passes had no occasion to touch; brought into alignment in the same pass as the SP-3 residual cleanup. See `CFP_4.2.27` MOD-008 for the SP-3 side and for the controlling vocabulary.
+
+**Affected text:** SP-1 §"Documentation conventions", first sentence.
 
 ---
 
-*Modlog records SP-1 and SP-2 v1 production in session SID-20260409-150705. Both files committed at 7f8d8a0. Single-file versioning convention: revisions tracked as MOD-NNN entries here; prior versions recoverable via git. SP-2 refreshed in SID-20260512-111348 (MOD-004 above).*
+## Validation
+
+approved (v1 production, 2026-04-09); approved (Post-Update MOD-004, 2026-05-12); approved (Post-Update MOD-005, 2026-05-16).
+
+---
+
+*Modlog records SP-1 and SP-2 v1 production in session SID-20260409-150705. Both files committed at 7f8d8a0. Single-file versioning convention: revisions tracked as MOD-NNN entries here; prior versions recoverable via git. SP-2 refreshed in SID-20260512-111348 (MOD-004 above). SP-1 "Documentation conventions" sentence corrected in SID-20260516-152731 (MOD-005 above) — paired with `CFP_4.2.27` MOD-008 in SP-3.*

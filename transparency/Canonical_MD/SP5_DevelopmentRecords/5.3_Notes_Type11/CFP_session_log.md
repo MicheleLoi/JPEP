@@ -569,3 +569,56 @@ SP-2 bumped **v3 → v4**: `_INDEX_4.2.md` registered in §4.2; `CFP_4.4.23/.24/
 - **SessionStart hook failure** — second consecutive session where `current_session` was not registered. Worth investigating before it becomes the norm.
 
 **Session closes here. Use `/mhc-end` to finalize the MHC-W session record.**
+
+---
+
+## SID-20260516-164058 — macOS SessionStart-hook failure mode documented; patch-mode workflow consolidated into CFP_5.3.32 (2026-05-16, ~16:40 → ~17:03)
+
+**Session marker note.** Third consecutive session in which the SessionStart hook did not register a `current_session` block (same failure mode as SID-20260513-174139 and SID-20260514-004045). This session investigated and documented the cause, replacing the parked carry-forward item from the previous session with a referenceable decision record.
+
+**Driver.** User opened with `/mhc-status`, which surfaced the missing `current_session` block and three-strike pattern. Follow-up question — *"where are you trying to connect? to a local server or an online one?"* — clarified that MHC-W is fully local (no server) and that the hook contract is a one-shot subprocess invocation. Inspection of `.claude/settings.local.json` revealed the cause: all four MHC-W hook commands (`SessionStart`, `PreCompact`, `SessionEnd`, `PreToolUse/Agent`) hard-code Windows paths (`python "C:\Users\loimi\switchdrive\..."`) that the macOS Python interpreter cannot resolve. User chose to operate in patch mode rather than edit the settings file (Windows is still the primary host) and asked the failure mode + patch-mode workflow be documented.
+
+### Phase 1 — Diagnosis (no commit)
+
+Read `.mhc-config.json`, `adapt.md`, `session_topology.yaml`, `.claude/settings.local.json`, and `MHC-W/scripts/mhc_start.py` head. Confirmed: (a) hook paths hard-coded to `C:\…`; (b) the corresponding scripts exist at the macOS-resolved sibling path (`MHC-W/scripts/mhc_*.py`); (c) JPEP `CLAUDE.md` already provides a manual-read fallback for the rules-injection responsibility, so context legibility is preserved even when the stdout-injection step is missed. Audit assessment: post-hoc reconstruction via `/mhc-end` + `extract_conversation.py` preserves `session_history`, `session_topology`, and conversation export indistinguishably from a hook-managed session; the only fully degraded responsibility is the start-of-session consistency check.
+
+### Phase 2 — Plan (plan file `async-twirling-clock.md`)
+
+Plan written and approved: one new decision-record note (`CFP_5.3.32`) and one Adaptation Log entry in `adapt.md`. Out of scope: editing `.claude/settings.local.json`, writing a cross-platform hook wrapper, back-editing the inline `note` fields on the two prior affected sessions (those notes are kept as historical evidence of when the gap was first observed).
+
+### Phase 3 — Documentation written (no commit yet)
+
+`CFP_5.3.32_Note_DecisionRecord_MacOSHookFailure_PatchMode.md` created — eight sections covering the decision, failure mode (per-hook breakdown table), patch-mode workflow with the new canonical short-form `note` text for future sessions, preserved vs. degraded audit guarantees, the rules-in-context mitigation, rationale for not patching `settings.local.json` yet, and three explicit exit criteria. `adapt.md` Adaptation Log gained a 2026-05-16 entry (between the 2026-05-13 Paper-artifact-organization block and the older 2026-04-05 "Types demoted" entry) summarising the operational policy and pointing at CFP_5.3.32 for the analysis. Verification: frontmatter validity ✓, cross-reference closure ✓, structural diff against the pattern note CFP_5.3.26 shows only legitimate subject-specific differences ✓.
+
+### Phase 4 — Patch-mode finalisation (this session is the first instance using the new short-form `note`)
+
+Manual finalization executed: `extract_conversation.py` invoked against `~/.claude/projects/.../01c9ee53-…jsonl`; SID `SID-20260516-164058` derived from the JSONL first-message timestamp (UTC `2026-05-16T14:40:58Z` → local 16:40:58); both SHA256 fingerprints computed; `session_history` entry appended with the canonical short-form `note` (*"… see CFP_5.3.32"*); `session_topology.yaml` entry written; the `session_id` field in CFP_5.3.32's own frontmatter back-filled from `PENDING_BACKFILL` to the real SID. This very pass is the first live application of the workflow CFP_5.3.32 documents.
+
+### Artefacts produced this session
+
+**New (uncommitted, public-archive):**
+- `transparency/Canonical_MD/SP5_DevelopmentRecords/5.3_Notes_Type11/CFP_5.3.32_Note_DecisionRecord_MacOSHookFailure_PatchMode.md`
+
+**Modified (uncommitted, public-archive):**
+- `adapt.md` — new Adaptation Log entry 2026-05-16 (macOS patch-mode operation)
+- `transparency/Canonical_MD/SP5_DevelopmentRecords/5.3_Notes_Type11/CFP_session_log.md` — this entry
+- `.mhc-config.json` — `session_history` append (SID-20260516-164058)
+- `session_topology.yaml` — entry append (SID-20260516-164058)
+
+**Exports (on disk):**
+- `MHC-W/00_full_conversations/exported/raw/JPEP_20260516_164058.jsonl` (SHA256 `97f806e3…b865a`)
+- `MHC-W/00_full_conversations/exported/md/JPEP_20260516_164058.md` (SHA256 `02c42fb1…d9735`)
+- `JPEP/conversations/exported/JPEP_20260516_164058.md` (project copy)
+
+**Commits:** none yet. The four pre-existing modifications present in `git status` at session start (SP-1 `CFP_5.4.13`, SP-3 `CFP_5.4.11`, modlogs `CFP_4.2.27` and `CFP_4.2.29`) were not authored in this session and are not part of this session's deliverable; their disposition is the user's call independent of the documentation work.
+
+### Carry-forward
+
+- **Zenodo DOI deferred** — unchanged from previous session.
+- **Modlog frontmatter normalization** (Agent #4) and **`versioning_convention` tagging on legacy per-version section drafts** (Agent #15) — unchanged.
+- **Hub-script wiring** (adapt.md rule 9) — unchanged.
+- **SP-2 §5 subsection numbering quirk** — unchanged.
+- **SessionStart hook failure** — **closed.** The failure mode is now consolidated in `CFP_5.3.32`; future sessions on macOS apply the patch-mode workflow there and use the canonical short-form `note`. Exit criteria for the patch are documented in §8 of that note.
+- **Pre-existing uncommitted manuscript edits** — four files modified before this session (SP-1, SP-3, two modlogs) remain uncommitted. Authorship and intent of those edits is from a prior session, not this one; user to decide commit disposition.
+
+**Session closes here.**

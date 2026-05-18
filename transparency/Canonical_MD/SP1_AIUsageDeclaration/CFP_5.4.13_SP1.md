@@ -73,7 +73,7 @@ The authoritative record of session topology is `hub_annotations.yaml` (per-sess
 
 ### Documentation conventions
 
-v1/v2 artifacts were authored by hand inside chat sessions and extracted manually into the archive. Stage III introduced session IDs and Claude Code tooling. CFP added automated frontmatter, hub annotations, and conversation file exports via SessionEnd hook. A frontmatter normalization pass in early April 2026 (`CFP_4.2.26`) brought the entire archive into uniform field conventions.
+v1/v2 artifacts were AI-generated inside chat sessions (Claude.ai, plus one cross-tool ChatGPT thread) and extracted manually into the archive. Stage III introduced session IDs and Claude Code tooling. CFP added automated frontmatter, hub annotations, and conversation file exports via SessionEnd hook. A frontmatter normalization pass in early April 2026 (`CFP_4.2.26`) brought the entire archive into uniform field conventions.
 
 The CFP adaptation was developed on branch `cfp-ai-ethics-inquiry` and merged into `main` before submission. The full commit history of the branch is preserved in git.
 

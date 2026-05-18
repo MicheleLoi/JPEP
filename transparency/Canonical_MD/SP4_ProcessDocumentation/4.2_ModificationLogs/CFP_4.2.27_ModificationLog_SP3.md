@@ -4,14 +4,16 @@ document_type: Type 3 - Modification Log
 label: CFP_4.2.27_ModificationLog_SP3
 title: "Modification Log: SP-3 v1 → v2 (criterion-spine → phase-spine restructure)"
 date_created: 2026-04-07
+date_last_updated: 2026-05-16
 session_id:
   - SID-20260407-181422
   - SID-20260407-190627
   - SID-20260408-122758
   - SID-20260409-132703
   - SID-20260409-145640
+  - SID-20260516-152731
 source_conversation: SID-20260407-181422
-status: Complete
+status: Active
 inputs:
   - CFP_5.4.11_SP3.md (v1, frozen at commit 6a2b844)
   - CFP_4.4.20_SectionGuidance_SP3.md (v7)
@@ -161,6 +163,19 @@ Session `SID-20260409-132703`. Commits: `9c25cb7` (figure callout revisions), `c
 
 **Affected text:** SP-3 §11, CFP paragraph.
 
+### MOD-008: Residual "hand-authored" cleanup in §3 and §4.1 lead-in (completes MOD-003 item 2)
+
+**What:** Two residual instances of the wrong "hand-authored" / "authored by hand" claim about v1/v2 artifacts were corrected in CFP_5.4.11_SP3.md, bringing the document into full alignment with the framing established by MOD-003 item 2 and already stated correctly in §5.1 Solutions (line 139, *"The user authored none of these by hand; the user prompted, reviewed, and accepted, and Claude distilled"*).
+
+- **§3 closing sentence (formerly line 52).** Rewritten from "Modlogs, traces, pattern summaries, and section guidance documents were authored by hand" to "Modlogs, traces, pattern summaries, and section guidance documents were AI-generated inside the writing chats — Claude (or, on the cross-tool thread, ChatGPT) distilled; the user prompted, reviewed, and accepted; extraction into the archive was manual." Preserves the kernel of truth (manual archive extraction) while removing the wrong authorship claim.
+- **§4.1 lead-in (formerly line 84).** Rewritten from "The v1/v2 phase produced eight kinds of artifact, all hand-authored:" to "The v1/v2 phase produced eight kinds of artifact, all AI-generated inside writing chats (Claude.ai with Sonnet 4.5, plus one ChatGPT thread) and extracted into the archive by hand:" — same correction at the list lead-in that introduces the eight-type enumeration.
+
+**Why:** MOD-003 item 2 corrected the Type 4 (pattern summaries) bullet and the §5.1 Solutions paragraph but did not sweep §3 or the §4 lead-in. The user re-flagged the surviving lines on read-through and asked that the cleanup be completed. This entry removes the last residue of the "hand-authored" framing from SP-3 and brings §3 and §4.1 into agreement with §5.1.
+
+**Cross-document.** The same misstatement appeared once in SP-1 at the "Documentation conventions" sentence of `CFP_5.4.13_SP1.md` and was corrected in the same pass — recorded in `CFP_4.2.29` MOD-005.
+
+**Affected text:** SP-3 §3 closing sentence; SP-3 §4.1 lead-in.
+
 ---
 
 ## Validation
@@ -169,4 +184,4 @@ approved
 
 ---
 
-*Modlog records the v1 → v2 restructure executed in session SID-20260407-181422, logged in post-compaction session SID-20260407-190627; the conversations-as-source-material policy revision pass executed in session SID-20260408-122758; and the figure integration pass executed in session SID-20260409-132703. v1 frozen at commit 6a2b844 and recoverable via `git show 6a2b844:transparency/Canonical_MD/SP5_DevelopmentRecords/5.4_SectionDrafts/CFP_5.4.11_SP3.md` (historical path — file moved to `transparency/Canonical_MD/SP3_DocumentationAdequacy/CFP_5.4.11_SP3.md` at commit e317eac, 2026-05-13, SID-20260513-003000). v2 at commit 57fb483, also at the historical path. v3 now lives at the new path under the single-file versioning convention; use `git log --follow` to traverse the rename. Substantive intra-version revisions tracked as MOD-NNN entries here.*
+*Modlog records the v1 → v2 restructure executed in session SID-20260407-181422, logged in post-compaction session SID-20260407-190627; the conversations-as-source-material policy revision pass executed in session SID-20260408-122758; the figure integration pass executed in session SID-20260409-132703; and the residual "hand-authored" cleanup executed in session SID-20260516-152731 (MOD-008). v1 frozen at commit 6a2b844 and recoverable via `git show 6a2b844:transparency/Canonical_MD/SP5_DevelopmentRecords/5.4_SectionDrafts/CFP_5.4.11_SP3.md` (historical path — file moved to `transparency/Canonical_MD/SP3_DocumentationAdequacy/CFP_5.4.11_SP3.md` at commit e317eac, 2026-05-13, SID-20260513-003000). v2 at commit 57fb483, also at the historical path. v3 now lives at the new path under the single-file versioning convention; use `git log --follow` to traverse the rename. Substantive intra-version revisions tracked as MOD-NNN entries here.*

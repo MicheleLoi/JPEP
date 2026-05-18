@@ -43,7 +43,7 @@ related:
 | Exported Claude Code sessions | `06_conversations/exported/` | 74 | ~3.0 MB | One file per session, Feb 2026 → Apr 2026. Naming convention switches mid-period (see §3 below). |
 | Imported external conversations | `06_conversations/imported/` | 12 | ~1.5 MB | Claude.ai web-app exports, ChatGPT exports, and one stub. Two files are special — see §4 below. |
 | Root-level loose files | `06_conversations/` | 3 | ~6.6 MB | One `.jsonl` raw transcript, one `CLAUDE.md.v3.bak` (pre-v5 CLAUDE.md backup), one `note.md`. See §5. |
-| **Total** | | **89** | **~11 MB** | All gitignored except `imported/Claude_JPEP_idea_origination_(real_world_journal).md` (the anonymized origin extract). |
+| **Total** | | **89** | **~11 MB** | All gitignored. The previously-tracked `imported/Claude_JPEP_idea_origination_(real_world_journal).md` was removed from the repo 2026-05-18 (see §4). |
 
 ---
 
@@ -152,7 +152,7 @@ For sessions logged in `.mhc-config.json` `session_history` (mostly post-2026-04
 
 | Filename | Source platform | Size | Status |
 |---|---|---|---|
-| `Claude_JPEP_idea_origination_(real_world_journal).md` | Claude.ai (`da6a830c`) | 176,462 | **PUBLIC** — the only file in `06_conversations/` that is git-tracked. Anonymized extract of the project's origin conversation; surfaces the publishing-barriers argument; provenance documented in `CFP_5.3.15_Note_OriginStoryForSP3.md`. |
+| `Claude_JPEP_idea_origination_(real_world_journal).md` | Claude.ai (`da6a830c`) | 176,462 | **REMOVED FROM REPO** (2026-05-18, SID-20260518-104741). File contained personal names; removed via `git filter-branch` history rewrite + force-push. The anonymized equivalent is `5.3.21_EpistemicOrigin_InputToSynthesis.md` (in `transparency/`, git-tracked). File exists locally; available on request. |
 | `Claude_How_LLMs_process_conversational_goals_6c8d9101-cd3f-4f61-aaf9-f293de92d11c.md` | Claude.ai (`6c8d9101`) | 136,752 | **EXCLUDED FROM PUBLIC ARCHIVE.** The ur-conversation (LLM conversational-goals; 2025-10-10) that seeded the JPEP project. Not anonymized; gitignored explicitly in `.gitignore` line 49. Its intellectual content is what `da6a830c` (above) extracts in anonymized form. |
 | `JPEP_extracted_conversations.md` | Claude.ai (consolidated) | 64,562 | Multi-source extract from the v1/v2 phase. |
 | `_stub_PatternSummary_4.3.1_Origin.md` | (internal stub) | 34,562 | Internal scaffold file, retained for chain-walk reconstruction. |
