@@ -8,6 +8,11 @@
 !transparency/
 !transparency/**
 
+# consenti Paper/MDversion (drafts + arXiv distribution copies)
+!Paper/
+!Paper/MDversion/
+!Paper/MDversion/**
+
 # escludi file temporanei di sessione Claude Code
 claude code conversations/
 transparency/tmpclaude-*
