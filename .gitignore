@@ -72,13 +72,7 @@ transparency/Sources_RTF/
 # but not part of the active archive)
 transparency/Deprecated/
 
-# consenti founding conversation (anonymized da6a830c)
-!06_conversations/
-!06_conversations/imported/
-!06_conversations/imported/Claude_JPEP_idea_origination_(real_world_journal).md
-
-# escludi esplicitamente ur-conversation (non anonimizzata, ID: 6c8d9101-cd3f-4f61-aaf9-f293de92d11c)
-06_conversations/imported/*6c8d9101*
+# 06_conversations/ is intentionally NOT tracked — all conversation files are private.
 
 # macOS metadata files (anywhere in the tree)
 .DS_Store
