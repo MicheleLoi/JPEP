@@ -622,3 +622,56 @@ Manual finalization executed: `extract_conversation.py` invoked against `~/.clau
 - **Pre-existing uncommitted manuscript edits** — four files modified before this session (SP-1, SP-3, two modlogs) remain uncommitted. Authorship and intent of those edits is from a prior session, not this one; user to decide commit disposition.
 
 **Session closes here.**
+
+---
+
+## SID-20260518-104741 — Repo hygiene + arXiv v3 distribution (2026-05-18)
+
+**Session marker note.** The SessionStart hook flapped at ~13:15: the original SID `SID-20260518-104741` was demoted to `session_history` with `exported: false`, and two new SIDs (`131500`, `131505`) were created on the same JSONL fingerprint (`3181f703`). All work below was done in this one continuous conversation. This entry uses the original `104741` SID as the canonical marker. Plumbing only, no intellectual content.
+
+**Goal:** Emergency removal of a sensitive conversation from the public GitHub repo, repo restructuring, and creation of an arXiv distribution copy of the CFP-form paper.
+
+**Done:**
+
+*Emergency conversation purge.*
+- `06_conversations/imported/Claude_JPEP_idea_origination_(real_world_journal).md` was inadvertently tracked in git (committed in `de15a23`, fully pushed to `origin/main`). Root cause: `.gitignore` lines 76–81 explicitly un-ignored it under the (incorrect) belief that it was the anonymized `da6a830c` extract.
+- Purged from all 149 historical commits via `git filter-branch --index-filter`. Force-pushed; backup refs deleted; `git gc --aggressive --prune=now` run.
+- `.gitignore` block removed so `06_conversations/` is now ignored by the top-level `*` catch-all.
+- Commit `078d994`.
+
+*Repo restriction to transparency/ + later partial re-opening.*
+- Removed from git tracking (kept on disk): `.github/workflows/filelist.yml`, `Canonical_Figures/`, `Paper/MDversion/`, `target-venue/`. Commit `37b37d6`.
+- Manifest `CFP_5.3.30_Note_RawConversationsManifest.md` updated: §2 overview-table footer rewritten; §4 row for the purged file changed from **PUBLIC** to **REMOVED FROM REPO (2026-05-18)** with pointer to `5.3.21_EpistemicOrigin_InputToSynthesis.md` as the public anonymized equivalent.
+- Later: `Paper/MDversion/` re-allowed in `.gitignore` and 13 files (section drafts, references, appendix, CFP integrated, arXiv v1 integrated, arXiv v3) re-tracked. Commit `cd95525`.
+
+*arXiv v3 distribution copy.*
+- `Paper/MDversion/Full_paper_arxiv_v3.md` derived from `CFP_FullPaper_v1.md` (v1.10, 2026-05-13). Body verbatim; slim arXiv frontmatter; author block (Michele Loi, PhD / University of Milan / michele.loi@unimi.it / Version 3 / 18 May 2026) restored; archive sentence in the closing note rewired from `[persistent identifier: forthcoming]` to `https://github.com/MicheleLoi/JPEP` with a note that a Zenodo DOI is forthcoming.
+- Initially named `_v2` then renamed to `_v3` after user pointed out arXiv 2511.08639 already has a v2 on the server. Commits `a159547`, `6917992`.
+
+*Paper/MDversion/README.md.*
+- New file documenting the full version map (v1 multi-file + retroactive integrated; v2 Word-authored with no .md source; v3 derived from CFP). Clarifies that `build_paper.py` is for the CFP/journal version, not the arXiv versions, and that no concatenation script produced v2. References trace `CFP_4.7.10` for the v1-baseline status of the section files in this folder. Commit `cff724e`.
+
+*PDF + DOCX of v3 (local artifacts, gitignored).*
+- `Paper/arXiv/Full_paper_v3.pdf` (19 pages, 120 KB) — pandoc → xelatex. Frontmatter stripped before processing to avoid title duplication.
+- `Paper/arXiv/Full_paper_v3.docx` (38 KB) — pandoc, for manual export to PDF via Word (arXiv was mis-identifying the pandoc-generated PDF as LaTeX source).
+
+**Reverted / corrected:**
+- `Paper/arXiv/Full_paper_v2.pdf` was briefly tracked (commit `cf0273d`) without authorization; reverted in commit `0f3c85e` with the `.gitignore` exception removed.
+
+**Produced (artifacts committed to the public archive):**
+- `transparency/Canonical_MD/SP5_DevelopmentRecords/5.3_Notes_Type11/CFP_5.3.30_Note_RawConversationsManifest.md` (modified: §2 + §4)
+- `Paper/MDversion/Full_paper_arxiv_v3.md` (new)
+- `Paper/MDversion/README.md` (new)
+- `.gitignore` (multiple revisions; final state: `transparency/**` and `Paper/MDversion/**` allowed)
+
+**Produced (local, gitignored):**
+- `Paper/arXiv/Full_paper_v3.pdf`
+- `Paper/arXiv/Full_paper_v3.docx`
+
+**Carry-forward:**
+- The four pre-existing manuscript modifications present at session start (SP-1 `CFP_5.4.13`, SP-3 `CFP_5.4.11`, modlogs `CFP_4.2.27` and `CFP_4.2.29`, session log) remain modified and are part of broader Phase 5 work — disposition is for a subsequent session.
+- Zenodo DOI minting — still deferred.
+- v3 PDF upload to arXiv — for user to do manually from the DOCX.
+- Hook flap on Windows producing duplicate SIDs (same JSONL) — first occurrence noted; worth watching whether it recurs.
+
+**Session closes here.**
