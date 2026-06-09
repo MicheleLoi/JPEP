@@ -50,7 +50,7 @@ inputs:
 
 **Cordasco, C. L.** (2026b). "Acemoglu et al (2026) are wrong about AI & Human Cognition." *Paperclips and Other Alignment Problems* (Substack), 2 March 2026. https://carlolc.substack.com/p/acemoglu-et-al-2026-are-wrong-about
 
-**Earp, B. D., Porsdam Mann, S., Sawai, T., & Wangmo, T.** (2026). "Death, authorship, and generative AI — a call for commentaries." *JME Practical Bioethics*, 2, e000046. [DOI 10.1136/jmepb-2025-000046 — flagged for BMJ re-verification: Unpaywall reportedly resolves this DOI to a different paper.]
+**Earp, B. D., Porsdam Mann, S., Sawai, T., & Wangmo, T.** (2026). "Death, authorship, and generative AI — a call for commentaries." *JME Practical Bioethics*, 2026. [DOI 10.1136/jmepb-2025-000046 CONFIRMED wrong 2026-06-09 — resolves to Wang & Parent NRP, unrelated. Correct DOI search ongoing. Canonical source: Academia.edu mirror at academia.edu/167307834.]
 
 **Earp, B. D., Shahvisi, A., & Frith, L.** (2025). "Clarifying our editorial approach, with some important updates for authors and reviewers." *Journal of Medical Ethics*, 51(11), 731–734. https://doi.org/10.1136/jme-2025-111363
 
@@ -69,6 +69,8 @@ inputs:
 **Jollimore, T.** (2025). "I Used to Teach Students. Now I Catch ChatGPT Cheats." *The Walrus*, March 5, 2025. https://thewalrus.ca/i-used-to-teach-students-now-i-catch-chatgpt-cheats/
 
 **Kierkegaard, S.** (1992). *Concluding Unscientific Postscript to Philosophical Fragments* (H. V. Hong & E. H. Hong, Trans.). Princeton: Princeton University Press. (Original work published 1846)
+
+**Liang, W., et al.** (2025). "Penalizing Transparency? How AI Disclosure and Author Demographics Shape Human and AI Judgments About Writing." arXiv:2507.01418. https://arxiv.org/abs/2507.01418
 
 **Lloyd, D.** (2025). "Epistemic responsibility: toward a community standard for human-AI collaborations." *Frontiers in Artificial Intelligence*, 8, 1635691. https://doi.org/10.3389/frai.2025.1635691
 
@@ -93,6 +95,8 @@ inputs:
 **Sartre, J.-P.** (1956). *Being and Nothingness: An Essay on Phenomenological Ontology* (H. E. Barnes, Trans.). New York: Philosophical Library. (Original work published 1943)
 
 **Schilke, O., & Reimann, M.** (2025). "The transparency dilemma: How AI disclosure erodes trust." *Organizational Behavior and Human Decision Processes*, 188, 104405. https://doi.org/10.1016/j.obhdp.2025.104405
+
+**Siddiqui, M., et al.** (2025). "DraftMarks: Enhancing Transparency in Human-AI Co-Writing Through Interactive Skeuomorphic Process Traces." arXiv:2509.23505. https://arxiv.org/abs/2509.23505
 
 **Schwitzgebel, E., Schwitzgebel, D., & Strasser, A.** (2024). "Creating a Large Language Model of a Philosopher." *Mind & Language*. https://doi.org/10.1111/mila.12466
 
