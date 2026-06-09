@@ -675,3 +675,120 @@ Manual finalization executed: `extract_conversation.py` invoked against `~/.clau
 - Hook flap on Windows producing duplicate SIDs (same JSONL) — first occurrence noted; worth watching whether it recurs.
 
 **Session closes here.**
+
+---
+
+## SID-20260603-105749 — Desk rejection at Philosophy & Technology + EthIT routing decision (2026-06-03)
+
+**Goal:** Process the P&T desk rejection received the day prior; diagnose what likely happened; decide the next venue; prepare a cover letter for resubmission.
+
+**Done / Decisions:**
+
+*Rejection received and analyzed.*
+- Manuscript PHTE-D-26-00813 ("The Journal of Prompt Engineered (Moral) Philosophy…") submitted to P&T 14 May 2026; decision returned 2 June 2026 by Luciano Floridi (EiC). Decision class: **"Reject (transfer options available)"** — tier 2 in Springer's four-tier rejection ladder (professional, wrong-venue judgment with active transfer offer; meaningfully distinct from flat reject).
+- User had sent a personal reply to Floridi (CC: `lfloridi@gmail.com`) before this session, asking off-record whether the rejection reflects quality or a broader editorial stance on distant-writing transparency, with a phone-call/two-line off-ramp.
+- The topical collection was selected at submission (`target-venue/cfp_ai-ethics-inquiry.md`, *AI Tools in Ethics Research*). Rejection footer reads "Research Article", signature is Floridi's, not a guest editor's — this was **EiC-level pre-triage** (scenario b); the manuscript never reached the guest editors.
+
+*Calibrated hypothesis for the rejection.*
+- Most probable: wrong-venue judgment at the EiC gate, plausibly combined with (i) absence of a cover letter to frame the self-exemplification structure for triage and (ii) the title's wink + duality producing a surface-level miscategorisation. Quality-rejection and policy-stand-against-AI are NOT consistent with the "transfer options" workflow Springer activates precisely when a paper is judged professional but wrong-venue.
+
+*Next venue chosen: Ethics and Information Technology (Springer).*
+- Re-read the full paper (`Paper/MDversion/CFP_FullPaper_v1.md` v1.10) to determine framing dominance. §3 (Gallie / Williams / Sartre / Kierkegaard / Nietzsche, ~40% of body) is heavy moral philosophy in service of an AI-ethics destination (§6 MHC apparatus). Bibliographic neighbourhood is AI ethics / tech ethics; constructive conclusion is a documentation framework, not a pure moral-phil thesis. EthIT is the natural disciplinary home; *Journal of Ethics* (where Santoni de Sio is Associate Editor) considered and rejected as backup — it rarely publishes AI ethics and §6 would feel out of place.
+- Web-verified: Santoni de Sio is NOT on EthIT editorial board; van den Hoven (EiC of EthIT) is co-author of Santoni de Sio & van den Hoven (2018), which §6 builds on directly. Van den Hoven would recuse from handling; one of the Co-Editors (Introna, Johnson, Nissenbaum) would handle. Santoni de Sio is now Full Professor at TU Eindhoven (TU/e), having moved from TU Delft.
+
+*Title and abstract: unchanged.*
+- AI proposed dropping the title's wink and rewriting the abstract to lead with the moral-phil core; user declined: *"non rinuncio a miei wink per ottimizzare una probabilità basata su opinioni soggettive di una ai."* Decision is consistent with the paper's own §3 agent-integrity argument — mode of practice is identity-constituting; gaming triage by sacrificing the title would be the inauthenticity the paper critiques.
+
+*Strategic plan for resubmission.*
+- Wait 1–7 days for the Springer Transfer Desk email (arrives automatically, no action needed).
+- If EthIT is in the recommendation list → accept the transfer (Springer moves files + metadata automatically).
+- If not but other Springer journals are → reply to the Editorial Submission Advisor proposing EthIT explicitly.
+- If neither works → fresh submission to EthIT with a cover letter disclosing the P&T prior submission honestly (consistent with the paper's own disclosure thesis).
+- Floridi personal reply: low probability of substance (~20–25%); the Transfer Desk has already supplied the journal's procedural answer.
+
+**Produced:**
+
+- `target-venue/cover_letter_ethit.md` — dry cover letter draft for EthIT, ~110 words. INSTITUTION + DATE placeholders for the Santoni de Sio seminar pending. Discloses the P&T prior submission and flags the COI-relevant intellectual debt to the EiC's foundational work.
+
+**Carry-forward:**
+
+- Await Transfer Desk email (1–7 days) and possible Floridi personal reply (low probability).
+- User to provide INSTITUTION and DATE for the Santoni de Sio seminar (TU/e or TU Delft; month/year) — fills the cover letter placeholders.
+- Resubmission execution path depends on Transfer Desk outcome; cover letter is ready for the fresh-submission scenario.
+
+**Session closes here.**
+
+---
+
+## SID-20260609-095833 — Earp integration + Archive testimonial layer (v1.10 → v1.11 → v1.12) (2026-06-09)
+
+**Goal:** Open-ended status query; led to: (i) reviewing Brian Earp's published corpus on AI-assisted scholarly writing; (ii) integrating verified Earp themes into the JPEP body; (iii) designing and attempting an "AI-voice edition" of the paper. The session arc closed with a narrowed deliverable (v1.12 with revised Archive testimonial layer) after adversarial verification rejected the over-described "v2.0" framing.
+
+**Done / Decisions:**
+
+*Earp corpus briefing produced (CFP_5.3.33).*
+- Two parallel sonnet agents dispatched: one verifying which Earp pieces are body-text-accessible; one searching for a recalled Cordasco substack piece on attribution.
+- Verification result: only the AUTOGEN paper (Porsdam Mann/Earp 2023, AJOB) and the "Death, authorship, and generative AI" editorial (Earp/Porsdam Mann/Sawai/Wangmo 2026, JMEPB) have full body access via Academia.edu mirrors. The JME editorial under Earp's co-editorship (Earp/Shahvisi/Frith 2025) is paywalled but its title is confirmed by CrossRef. The NMI "provenance problem" paper (Earp/Yuan/Koplin/Porsdam Mann 2025) and the Hurshman et al. "Authorship Without Writing" preprint remain in verification backlog.
+- Cordasco attribution piece: NOT FOUND after exhaustive search of his entire Substack corpus. Closest piece is "We Need to Talk About Peer-Review and AI" (2026-03-19) — the "orthogonal to whether the review does its job" formulation can be cited as a narrow functional counter, with the extension to authored scholarship explicitly flagged as JPEP-constructed.
+- Subsumption framing locked in (user-directed correction to the briefing): JPEP does not adjudicate authorship; it claims the reader does, and authorship is one of the contested questions a thick process disclosure enables the reader to settle. The senior-author-analogy paper (Hurshman/Earp 2025) is therefore reserved for editorial-engagement layer (cover letters / reviewer responses) — not body. CFP_5.3.33 §4.3 anchors this.
+
+*Earp v1.10 → v1.11 integration executed.*
+- Three insertions in `CFP_FullPaper_v1.md`: A1 AUTOGEN paragraph at §3.3 close; A2 disaggregation-editorial paragraph at §5.4 close with verbatim Earp et al. (2026) quote; A3 JME mandatory-declaration-policy paragraph at §4 close. Three bibliography entries added (alphabetically, with DOI re-verification flag on Earp et al. 2026 — Unpaywall reportedly mis-resolves the DOI — and title-disambiguation flag on Earp/Shahvisi/Frith 2025).
+- Two micro-cuts (§3.7 "several generations behind" + §5.4 "execution-level engagement") applied to absorb the word budget.
+- A1 underwent expansion mid-session: initially compressed to 66 words (necessary-but-insufficient-structure + reader-side-evidentiary-record + triangulation closer), the user rejected the version as fence-sitting ("this amounts to not taking a position"). Strong-position expansion drafted at 154 words: Earp's author-side quality-of-contribution criterion is **not a competing answer** to JPEP's question, but **one of the verdicts a community equipped with process documentation can reach about a given work**. JPEP does not adjudicate it; it makes its application possible. Closer: *"Process transparency is the condition under which such verdicts can be reached at all."* This expansion overshot the ≤250 net-add soft target (final net +333 w against ~700 w parked compression headroom), recorded honestly in CFP_4.2.37 MOD-004.
+- Modlog `CFP_4.2.37_ModificationLog_EarpIntegration_v1_11.md` created with six MOD entries (MOD-001 A1, MOD-002 A2, MOD-003 A3, MOD-004 micro-cuts, MOD-005 bibliography, MOD-006 frontmatter). v1.11 docx built (`Paper/journal/CFP_FullPaper_v1_11.docx`). PDF skipped — `docx2pdf` not installed on Windows.
+
+*"AI-voice edition" attempt — designed in plan mode, then narrowed post-execution.*
+- Plan-mode workflow: 3 parallel Explore agents (§3/§5 mapping; psychology of bias-against-AI-assisted-text literature; CFP_FullPaper_v1.md structural map) + 1 Plan agent designing implementation. AskUserQuestion resolved four design decisions: companion-vs-replace = **replace**; new philosophical material for author-defence = **no, reuse §3/§5**; narrator = **plural composite**; order = A then B.
+- Voice spec `CFP_5.3.34_Note_AIVoice_Specification.md` written: composite plural narrator, scholarly register, execution/commitment separation, author-defence by reference to §3 and §5, bias-framing paragraph in Archive, JSON self-check schema for per-section agents. User approved.
+- Archive pilot rewrite executed first: 620 words within target, 7 substantive interventions + new "On the voice of this edition" subsection. User approved the voice on pilot.
+- Per user direction mid-session, subsequent rewrites externalised to `Paper/MDversion/aivoice_v2_staging/` to preserve main context. 8 parallel agents dispatched (Abstract, §1, §2, §3, §4, §5, §6, §7), each writing to its staging file. All within word-count targets; self-checks clean.
+
+*User audit — body essentially unchanged.*
+- User observation: "so, apart from the archive, it seems nothing was really changed because all chapters were written in an impersonal voice; correct?" Confirmed: 12 inflections across ~8,700 body words (1/720); §3 (38% of paper) at zero; §3 rewrite agent additionally stripped 5–6 canonical corporate "we" by impersonalisation (regression). Audit produced at `Paper/MDversion/aivoice_v2_staging/_voice_additions_audit.md`.
+- Diagnosis: the voice spec's three combined constraints (default sentence form unchanged + AI-voice only at process boundaries + do not invent new process boundaries) had produced an attractor concentrating voice in the Archive — the only section that IS process. Under-delivered against original concept ("la AI racconta come abbiamo scritto questo paper").
+
+*Adversarial verification workflow.*
+- Under Ultracode, candidate recommendation (P1: use the ambiguity with two surgical fixes) tested against alternatives P2 (pepper §3 with AI-voice meta-narration) and P3 (drop the AI-voice edition entirely). Workflow `wf_1f8e061c-537`: 3 advocates + 5 adversarial refutations + 1 judge synthesis.
+- Verdict (high confidence): **P1 survives in modified form**. P2 refuted on (i) commitment-collapse grounds (peppering §3 makes the paper enact in its own voice the dissolution of author-commitment §3 argues against) + (ii) EthIT submission-risk asymmetry post-P&T desk-reject + (iii) the agent's demonstrated empirical inability to write §3 in this register. P3 refuted on the Archive's substantive gains (testimonial layer + bias-framing) being non-redundant with v1.11 + on-thesis with §5 reader-devolution + reviewer-skippable rather than reviewer-poisonous.
+
+*Seven verdict-mandated modifications applied.*
+1. Rename: "v2.0 AI-voice edition" → **v1.12 with revised Archive (testimonial layer)**. Edition framing accurately scoped.
+2. Archive's "On the voice of this edition" rewritten → "On the testimonial layer of this Archive": voice claim localised to Archive; "exploits the mitigator" verb dropped; open empirical status named; bias-mitigation work reattached to documentation existence and §5 (not body voice).
+3. §3 canonical "we" restored (5 reversions) in `section3.md` staging.
+4. Archive substantive gains preserved.
+5. Body inflections at §1, §5.4, §7 kept as scoped markers, NOT as register. §7 closing sentence rewritten to scope its claim to the Archive.
+6. §3 NOT peppered.
+7. Edition NOT discarded.
+- Voice spec CFP_5.3.34 gained §11 "Scope clarification — post adversarial verification". Plan file gained "Post-verdict scope correction" section. Task list renamed downstream tasks from v2.0 → v1.12.
+
+*Documentation audit-trail completion.*
+- User asked: "alla fine il pdl cosa dice? e il modlog di sessione cosa riportano?" Three artefacts produced to close the audit trail:
+- CFP_5.2.6_pdl_AIVoiceArchiveTestimonialLayer.md (PDL retrospettivo): seven entries recording the design decisions from concept origin through voice-spec, per-section prompt template, pilot, parallel rewrite, audit, adversarial verification verdict, and final scoped generation specification.
+- CFP_4.2.38_ModificationLog_ArchiveTestimonialLayer_v1_12.md: 13 MOD entries populated; MOD-014 to MOD-017 (bibliography additions, assembly, frontmatter bump, build) pending at assembly time.
+- This session log entry.
+
+**Produced:**
+
+- `transparency/Canonical_MD/SP5_DevelopmentRecords/5.3_Notes_Type11/CFP_5.3.33_Note_Briefing_EarpCorpus.md` — verified-evidence briefing on Brian Earp's corpus with JPEP alignment + non-overlapping-concerns map. Functional/quality counter from Cordasco's peer-review piece included as JPEP-constructed extrapolation (explicit flag).
+- `transparency/Canonical_MD/SP4_ProcessDocumentation/4.2_ModificationLogs/CFP_4.2.37_ModificationLog_EarpIntegration_v1_11.md` — v1.10 → v1.11 modlog (six MOD entries).
+- `transparency/Canonical_MD/SP5_DevelopmentRecords/5.3_Notes_Type11/CFP_5.3.34_Note_AIVoice_Specification.md` — voice spec for the rewrite + post-verdict §11 scope clarification.
+- `transparency/Canonical_MD/SP5_DevelopmentRecords/5.2_SectionPromptDevelopmentLogs_Type8b/CFP_5.2.6_pdl_AIVoiceArchiveTestimonialLayer.md` — retrospective PDL (seven entries).
+- `transparency/Canonical_MD/SP4_ProcessDocumentation/4.2_ModificationLogs/CFP_4.2.38_ModificationLog_ArchiveTestimonialLayer_v1_12.md` — v1.11 → v1.12 modlog (13 MOD entries; 4 pending at build).
+- `Paper/MDversion/aivoice_v2_staging/` — 9 staging files (archive.md, abstract.md, section1.md … section7.md) plus `_voice_additions_audit.md` and `_voice_additions_audit.md`-pointed-to scope diagnosis.
+- `Paper/MDversion/CFP_FullPaper_v1.md` at v1.11 with three Earp insertions + two micro-cuts + frontmatter bump.
+- `Paper/journal/CFP_FullPaper_v1_11.docx` — v1.11 build.
+- `transparency/Canonical_MD/SP4_ProcessDocumentation/4.6_ReferenceLogs/paper_bibliography_FINAL.md` extended with three Earp-corpus entries (alphabetical insertions with honest hedges).
+- Locally filed external source: `transparency/TEMP/Hurshman_PorsdamMann_Savulescu_Earp_AuthorshipWithoutWriting_arXiv2509.05390.pdf` (per user request — for verification backlog).
+
+**Carry-forward:**
+
+- v1.12 assembly: 9 staging files → `Paper/MDversion/CFP_FullPaper_v1.md` in-place replacement (no canonical file rename — `git_inplace` convention; frontmatter version bumped v1.11 → v1.12).
+- Bibliography additions for the bias-literature anchors cited in the rewritten Archive paragraph (Liang et al. 2025 arXiv 2507.01418; arXiv 2510.24011; arXiv 2510.08831; DraftMarks arXiv 2509.23505). BaHammam 2025 already in bibliography.
+- Frontmatter bump v1.11 → v1.12 (version, date_last_updated, session_id extension, assembly note, word_count, known_issues).
+- CFP_4.2.38 modlog MOD-014 to MOD-017 to be added with their actions.
+- Build: `python build_paper.py` → `Paper/journal/CFP_FullPaper_v1_12.docx`. PDF skipped on Windows (no `docx2pdf`).
+- Verification backlog (carried from CFP_5.3.33 §6): JMEPB DOI re-verification for Earp/Porsdam Mann/Sawai/Wangmo 2026; title disambiguation for Earp/Shahvisi/Frith 2025; full-text access for Earp et al. 2025 NMI provenance paper; rendered PDF read of arXiv 2509.05390 (Authorship Without Writing) — held at editorial-engagement layer per briefing §4.4.
+- Pre-EthIT-submission: resolve verification backlog; the Earp et al. (2026) DOI flag must be resolved before any submission tag.
+
+**Session closes here.**

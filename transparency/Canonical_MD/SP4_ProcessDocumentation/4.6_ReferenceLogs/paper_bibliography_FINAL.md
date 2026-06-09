@@ -50,6 +50,10 @@ inputs:
 
 **Cordasco, C. L.** (2026b). "Acemoglu et al (2026) are wrong about AI & Human Cognition." *Paperclips and Other Alignment Problems* (Substack), 2 March 2026. https://carlolc.substack.com/p/acemoglu-et-al-2026-are-wrong-about
 
+**Earp, B. D., Porsdam Mann, S., Sawai, T., & Wangmo, T.** (2026). "Death, authorship, and generative AI — a call for commentaries." *JME Practical Bioethics*, 2, e000046. [DOI 10.1136/jmepb-2025-000046 — flagged for BMJ re-verification: Unpaywall reportedly resolves this DOI to a different paper.]
+
+**Earp, B. D., Shahvisi, A., & Frith, L.** (2025). "Clarifying our editorial approach, with some important updates for authors and reviewers." *Journal of Medical Ethics*, 51(11), 731–734. https://doi.org/10.1136/jme-2025-111363
+
 **Elsevier.** (2023). "The use of generative AI and AI-assisted technologies in writing for Elsevier." https://www.elsevier.com/about/policies-and-standards/the-use-of-generative-ai-and-ai-assisted-technologies-in-writing-for-elsevier
 
 **Enoch, D.** (2011). *Taking Morality Seriously: A Defense of Robust Realism*. Oxford: Oxford University Press.
@@ -77,6 +81,8 @@ inputs:
 **Nietzsche, F.** (1966). *Beyond Good and Evil* (W. Kaufmann, Trans.). New York: Vintage Books. (Original work published 1886)
 
 **Plato.** *Apology* 38a.
+
+**Porsdam Mann, S., Earp, B. D., Møller, N., Vynn, S., & Savulescu, J.** (2023). "AUTOGEN: A personalized large language model for academic enhancement — ethics and proof of principle." *The American Journal of Bioethics*, 23(10), 28–41. https://doi.org/10.1080/15265161.2023.2233356
 
 **Resnik, D. B., & Hosseini, M.** (2025). "Disclosing artificial intelligence use in scientific research and publication: When should disclosure be mandatory, optional, or unnecessary?" *Accountability in Research*, 33(2). https://doi.org/10.1080/08989621.2025.2481949
 
