@@ -34,7 +34,8 @@ word_count: "pending Word recount post-v1.12 (estimated ~8,500 words / ~20 pages
 section_numbering: post_renaming
 known_issues:
   - "Cavell mentioned as exemplar in §3 without formal citation (intentional, consistent with Nozick/Parfit/Williams treatment)."
-  - "Earp, Porsdam Mann, Sawai & Wangmo (2026) — DOI 10.1136/jmepb-2025-000046 CONFIRMED wrong (resolves to Wang & Parent NRP, unrelated). Correct DOI search ongoing 2026-06-09. Until resolved, the Academia.edu mirror (academia.edu/167307834) is the canonical source. See CFP_4.2.37 MOD-002 and MOD-005."
+  - "Earp, Porsdam Mann, Sawai & Wangmo (2026) — RESOLVED 2026-06-09: paper confirmed FORTHCOMING in JME Practical Bioethics 2026 (no final DOI yet assigned). The previously-flagged 10.1136/jmepb-2025-000046 was a placeholder DOI that BMJ reassigned to a different paper (Wang & Parent NRP). Pre-publication sources: Academia.edu mirror at academia.edu/167307834; ResearchGate ID 404948426. Re-check DOI at submission tag — by then the paper may have been published with its final DOI."
+  - "Related forthcoming piece in same Earp cluster, JME Practical Bioethics 2026: 'A Substantial Human Contribution: Do We Deserve to be Authors of This Essay?' (Earp, Guernon & Porsdam Mann, March 2026 preprint, ResearchGate ID 403018576). On-thesis with JPEP §3.3 author-side-criterion subsumption move; not currently cited in JPEP body — engagement deferred pending body-text read. Verify before submission whether engagement is warranted."
   - "Earp, Shahvisi & Frith (2025) — title disambiguation RESOLVED 2026-06-09: 'Clarifying our editorial approach…' (DOI 10.1136/jme-2025-111363) is the current citation. The separately reported title 'Normalising transparency: an argument for requiring generative AI use declarations in all manuscripts' is confirmed as a forthcoming distinct editorial by the same team — not yet citable, can be added once published. See CFP_4.2.37 MOD-003 and MOD-005."
 ---
 
@@ -314,7 +315,7 @@ This paper was produced with substantial AI assistance over multiple writing pha
 
 **Cordasco, C. L.** (2026b). "Acemoglu et al (2026) are wrong about AI & Human Cognition." *Paperclips and Other Alignment Problems* (Substack), 2 March 2026. https://carlolc.substack.com/p/acemoglu-et-al-2026-are-wrong-about
 
-**Earp, B. D., Porsdam Mann, S., Sawai, T., & Wangmo, T.** (2026). "Death, authorship, and generative AI — a call for commentaries." *JME Practical Bioethics*, 2026. [DOI 10.1136/jmepb-2025-000046 CONFIRMED wrong 2026-06-09 — resolves to Wang & Parent NRP, unrelated. Correct DOI search ongoing. Canonical source: Academia.edu mirror at academia.edu/167307834.]
+**Earp, B. D., Porsdam Mann, S., Sawai, T., & Wangmo, T.** (2026). "Death, authorship, and generative AI — a call for commentaries." *JME Practical Bioethics*, forthcoming, 2026. [DOI not yet assigned. Pre-publication source: Academia.edu mirror at academia.edu/167307834; ResearchGate ID 404948426. Re-check at submission tag.]
 
 **Earp, B. D., Shahvisi, A., & Frith, L.** (2025). "Clarifying our editorial approach, with some important updates for authors and reviewers." *Journal of Medical Ethics*, 51(11), 731–734. https://doi.org/10.1136/jme-2025-111363
 
