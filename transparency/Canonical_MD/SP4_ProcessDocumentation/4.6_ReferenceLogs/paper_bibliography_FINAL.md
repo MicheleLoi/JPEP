@@ -50,6 +50,8 @@ inputs:
 
 **Cordasco, C. L.** (2026b). "Acemoglu et al (2026) are wrong about AI & Human Cognition." *Paperclips and Other Alignment Problems* (Substack), 2 March 2026. https://carlolc.substack.com/p/acemoglu-et-al-2026-are-wrong-about
 
+**Earp, B. D., Guernon, A.-S., & Porsdam Mann, S.** (2026). "A substantial human contribution: Do we deserve to be authors of this essay?" Preprint. https://www.researchgate.net/publication/403018576
+
 **Earp, B. D., Porsdam Mann, S., Sawai, T., & Wangmo, T.** (2026). "Death, authorship, and generative AI — a call for commentaries." *JME Practical Bioethics*, forthcoming, 2026. [DOI not yet assigned. Pre-publication source: Academia.edu mirror at academia.edu/167307834; ResearchGate ID 404948426. Re-check at submission tag.]
 
 **Earp, B. D., Shahvisi, A., & Frith, L.** (2025). "Clarifying our editorial approach, with some important updates for authors and reviewers." *Journal of Medical Ethics*, 51(11), 731–734. https://doi.org/10.1136/jme-2025-111363
@@ -69,6 +71,8 @@ inputs:
 **Jollimore, T.** (2025). "I Used to Teach Students. Now I Catch ChatGPT Cheats." *The Walrus*, March 5, 2025. https://thewalrus.ca/i-used-to-teach-students-now-i-catch-chatgpt-cheats/
 
 **Kierkegaard, S.** (1992). *Concluding Unscientific Postscript to Philosophical Fragments* (H. V. Hong & E. H. Hong, Trans.). Princeton: Princeton University Press. (Original work published 1846)
+
+**Levy, N.** (2025). "Responsibility is not required for authorship." *Journal of Medical Ethics*, 51(4), 230–232. https://doi.org/10.1136/jme-2024-109912
 
 **Liang, W., et al.** (2025). "Penalizing Transparency? How AI Disclosure and Author Demographics Shape Human and AI Judgments About Writing." arXiv:2507.01418. https://arxiv.org/abs/2507.01418
 
@@ -96,11 +100,11 @@ inputs:
 
 **Schilke, O., & Reimann, M.** (2025). "The transparency dilemma: How AI disclosure erodes trust." *Organizational Behavior and Human Decision Processes*, 188, 104405. https://doi.org/10.1016/j.obhdp.2025.104405
 
-**Siddiqui, M., et al.** (2025). "DraftMarks: Enhancing Transparency in Human-AI Co-Writing Through Interactive Skeuomorphic Process Traces." arXiv:2509.23505. https://arxiv.org/abs/2509.23505
-
 **Schwitzgebel, E., Schwitzgebel, D., & Strasser, A.** (2024). "Creating a Large Language Model of a Philosopher." *Mind & Language*. https://doi.org/10.1111/mila.12466
 
 **Science.** (2023). "Science Journals: Editorial Policies." https://www.science.org/content/page/science-journals-editorial-policies
+
+**Siddiqui, M., et al.** (2025). "DraftMarks: Enhancing Transparency in Human-AI Co-Writing Through Interactive Skeuomorphic Process Traces." arXiv:2509.23505. https://arxiv.org/abs/2509.23505
 
 **Shafer-Landau, R.** (2003). *Moral Realism: A Defence*. Oxford: Oxford University Press.
 

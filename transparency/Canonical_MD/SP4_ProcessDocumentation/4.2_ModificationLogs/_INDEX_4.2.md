@@ -96,8 +96,13 @@ Filename prefix encodes the era:
 | CFP_4.2.34_ModificationLog_FullPaperAssembly.md | `CFP_FullPaper_v1.md` v1.1 cleanup | Phase 5 Commit 2 |
 | CFP_4.2.35_ModificationLog_FullPaper_v1_2_ReviewerRevisions.md | `CFP_FullPaper_v1.md` v1.2 | Reviewer A pass |
 | CFP_4.2.36_ModificationLog_FullPaper_v1_3_ReviewerB_Integration.md | `CFP_FullPaper_v1.md` v1.3 | Reviewer B literature-integration pass |
+| CFP_4.2.37_ModificationLog_EarpIntegration_v1_11.md | `CFP_FullPaper_v1.md` v1.10 → v1.11 | Earp corpus integration (AUTOGEN §3.3, DA §5.4, JME policy §4) |
+| CFP_4.2.38_ModificationLog_ArchiveTestimonialLayer_v1_12.md | `CFP_FullPaper_v1.md` v1.11 → v1.12 → v1.13 | Archive testimonial layer + 14-cut compression (v1.12); Earp cluster in-text + author-position registration + pandoc engine (v1.13, MOD-018) |
+| **CFP_4.2.39_ModificationLog_FullPaper_MasterHistory.md** | `CFP_FullPaper_v1.md` v1 → v1.13 (whole paper) | **Umbrella master version-history modlog — the readable spine over all per-pass modlogs; reconciles v1.4–v1.10 (session-log-recorded) against the dedicated modlogs** |
 
 ## Notes
+
+- **Versions v1.4–v1.10 are recorded in `CFP_session_log.md`** (SID-20260513-003000, -094035, -174139), not in dedicated version-pass modlogs; per-version diffs are in `git log`. See `CFP_4.2.39` master history for the full reconciliation. This is legitimate split-by-locus coverage, not a gap.
 
 - File numbering is monotonic *within* each era prefix but jumps at era transitions (e.g., v1/v2 ends at .12; Stage III reuses .12 with the `III_` prefix; CFP begins at .14).
 - The `output_completed:` field in each modlog's frontmatter names the artifact actually modified — that is the authoritative pointer, not the filename.
