@@ -1,42 +1,21 @@
 ---
-project: JPEP
-document_type: Type 12 - Section Draft (integrated)
-section: "Full paper — CFP integrated draft"
-label: CFP_FullPaper_v1
 title: "The Journal of Prompt Engineered (Moral) Philosophy: Or, Why AI-Assisted Ethics Research Requires Process Transparency"
-version: v1.14
-date_created: 2026-05-12
-date_last_updated: 2026-06-11
-status: Draft (Phase 5 integration)
-source: "Claude Code with Claude Opus 4.7 + Claude Opus 4.8 + Claude Sonnet 4.6 (per-session model identities recorded in SP-1). Per-version change history maintained in the section-level modification logs (CFP_4.2.17, CFP_4.2.18, CFP_4.2.19, CFP_4.2.30, CFP_4.2.31, CFP_4.2.34, CFP_4.2.35, CFP_4.2.36, CFP_4.2.37, CFP_4.2.38) and the project session log (CFP_session_log.md), not in this frontmatter field."
-assembly: "v1 = section-draft concatenation. Subsequent versions (v1.1–v1.7) recorded per-MOD in the section-level modification logs (CFP_4.2.17, .18, .19, .30, .31, .34, .35, .36) and per-session in CFP_session_log.md. v1.11 = Earp corpus integration pass (3 paragraph insertions in §3.3, §5.4 close, §4 close + 2 micro-cuts in §3.7 and §5.4; net +333 w body — A1 expanded from compressed draft on author review); per CFP_4.2.37, constrained by CFP_5.3.33 briefing. v1.12 = Archive testimonial-layer assembly (Archive section rewritten with composite-plural narrator + new 'On the testimonial layer of this Archive' subsection citing bias-mitigation literature; 12 scoped AI-voice markers at process boundaries in Abstract / §1 ¶6 / §4 close / §5.4 self-exemplification / §6 closer / §7 process beats / §7 new closing sentence) + 14-cut compression pass (~735 w removed, recovering Opus-identified parked compressions across §1, §2.1, §3.5, §3.7, §5.4, §6, §7); per CFP_4.2.38, constrained by CFP_5.3.34 voice spec + workflow wf_1f8e061c-537 verdict (P1-modified). v1.13 = Earp cluster in-text engagement (§5.4 Gallian behavioural-evidence paragraph: five-candidate catalogue + two-level contestation + companion self-test essay [Earp, Guernon & Porsdam Mann 2026, SHC] + 'not a sixth candidate answer' + enforceability point inline; 'inaugural issue' corrected to 'forthcoming editorial') + Archive author-position registration ('The author's operative conception of authorship' — accountability, disclosed not defended, 5-element registration per workflow wf_899bd25b-c09 verdict P-OMIT-modified) + SHC bibliography entry; build engine switched to pandoc (native footnotes). Per CFP_4.2.38 MOD-018. v1.14 = Archive testimonial-layer post-script shortened to one sentence + bias-mitigation literature apparatus removed (Liang, Siddiqui/DraftMarks, and the two bare arXiv IDs cut; BaHammam retained — body-load-bearing in §2.1/§4); the AI-voice register is marginal and the cut lets the philosophical sections carry the weight, while easing the EthIT length budget. Per CFP_4.2.38 MOD-019. See git log for commit-level history."
-versioning_convention: git_inplace
-inputs:
-  - CFP_5.4.15_Abstract_v1.md
-  - CFP_5.4.3_Introduction_v2.md
-  - CFP_5.4.5_Section2_v4.md
-  - CFP_5.4.4_Section3_v3.md (frontmatter v5.1)
-  - CFP_5.4.7_Section5_v2.md (renumbered §4)
-  - CFP_5.4.8_Section6_v4.md (renumbered §6 after v1.9 swap, frontmatter v4.2; compressed to feasibility sketch)
-  - CFP_5.4.9_Section7_v3.md (renumbered §5 after v1.9 swap, frontmatter v3.2; absorbed gaming-defense in §5.4)
-  - CFP_5.4.10_Conclusion_v1.md (renumbered §7, frontmatter v2)
-  - CFP_5.4.14_AIUsageArchive.md (unnumbered closing note)
-  - transparency/Canonical_MD/SP4_ProcessDocumentation/4.6_ReferenceLogs/paper_bibliography_FINAL.md (v1.1: Sartre 1956 + Boden & Edmonds 2009 added; v1.11: Earp/Porsdam Mann/Sawai/Wangmo 2026, Earp/Shahvisi/Frith 2025, Porsdam Mann/Earp/Møller/Vynn/Savulescu 2023 added)
-  - transparency/Canonical_MD/SP5_DevelopmentRecords/5.3_Notes_Type11/CFP_5.3.33_Note_Briefing_EarpCorpus.md (constraint document for v1.11 Earp integration)
-session_id:
-  - SID-20260512-171552
-  - SID-20260512-223052
-  - SID-20260513-003000
-  - SID-20260513-094035
-  - SID-20260609-095833
-cfp_target: "AI Tools in Ethics Research (topical collection)"
-word_count: "pending Word recount post-v1.14 (estimated ~8,690 words / ~20 pages; v1.14 cut the ~110-word bias-mitigation Archive post-script; prior v1.13: ~8,800 words; prior v1.12: ~8,500 words; prior v1.11: ~9,020 words; prior v1.10: ~8,685 words; prior v1.7: 10,647 words / 25 pages — cumulative cuts: §4 collapse + §6.4 absorption removed ~1,100 net body words at v1.8; §5/§6 swap + §6 compression to feasibility sketch removed ~400 further at v1.9; §3.3 Reviewer-1 revision + §6 SP-N derivation + §7 loss-inhabiting addition net ~−460w at v1.10; v1.11 Earp integration net +333 w; v1.12 Archive testimonial-layer assembly + 14-cut compression pass net ~−535 w body; v1.13 Earp cluster in-text engagement §5.4 + Archive author-position registration net ~+355 w)"
-section_numbering: post_renaming
-known_issues:
-  - "Cavell mentioned as exemplar in §3 without formal citation (intentional, consistent with Nozick/Parfit/Williams treatment)."
-  - "Earp, Porsdam Mann, Sawai & Wangmo (2026) — RESOLVED 2026-06-09: paper confirmed FORTHCOMING in JME Practical Bioethics 2026 (no final DOI yet assigned). The previously-flagged 10.1136/jmepb-2025-000046 was a placeholder DOI that BMJ reassigned to a different paper (Wang & Parent NRP). Pre-publication sources: Academia.edu mirror at academia.edu/167307834; ResearchGate ID 404948426. Re-check DOI at submission tag — by then the paper may have been published with its final DOI."
-  - "Earp, Guernon & Porsdam Mann (2026) 'A substantial human contribution…' — now cited in §5.4 (engagement applied in v1.13 after full body-text read of the local preprint PDF). Cited per the paper's own cite-as box: preprint, not formally peer reviewed. Re-check publication status before submission tag (the preprint's own footnote records a submission history AJOB → Neuroethics; recorded in CFP_4.2.38 MOD-018, not in the citation)."
-  - "Earp, Shahvisi & Frith (2025) — title disambiguation RESOLVED 2026-06-09: 'Clarifying our editorial approach…' (DOI 10.1136/jme-2025-111363) is the current citation. The separately reported title 'Normalising transparency: an argument for requiring generative AI use declarations in all manuscripts' is confirmed as a forthcoming distinct editorial by the same team — not yet citable, can be added once published. See CFP_4.2.37 MOD-003 and MOD-005."
+author: "Michele Loi"
+affiliation: "University of Milan"
+email: "michele.loi@unimi.it"
+version: "v4"
+date: 2026-06-10
+based_on: "Paper/MDversion/CFP_FullPaper_v1.md (v1.14, 2026-06-10)"
+archive: "https://github.com/MicheleLoi/JPEP (transparency/)"
+---
+
+**Michele Loi, PhD**  
+University of Milan  
+michele.loi@unimi.it
+
+**Version 4**  
+10 June 2026
+
 ---
 
 # The Journal of Prompt Engineered (Moral) Philosophy
@@ -277,7 +256,7 @@ The deepest reason for these requirements, however, is not that AI introduces so
 
 This paper was produced with substantial AI assistance over multiple writing phases, on multiple platforms, with multiple models — Claude Sonnet 4.5, Claude Sonnet 4.6, Claude Opus 4.5, Claude Opus 4.6, Claude Opus 4.7, and GPT-5 Thinking. The transparency framework specified in §6 was applied to its production. The framework requires more than disclosure: it requires that the disclosed record enable readers to (i) trace which contributions to the argument originated with the author and which with AI, (ii) identify where authorial judgment overrode AI suggestion, and (iii) form a defensible estimate of whether the author understands and endorses what they present. The criteria for assessing whether such a record is *adequate* are given in §5; the grounds on which authorial responsibility consists in the conduct of the inquiry, and so remains the author's even where text was generated, are given in §3. At process boundaries below, the narrator is the composite "we, the models that worked on this paper": the models report what was executed; adjudication is devolved to the reader.
 
-**Archive.** The full documentation record is archived at [persistent identifier: forthcoming]. It comprises:
+**Archive.** The full documentation record is archived at https://github.com/MicheleLoi/JPEP (transparency/), with a Zenodo DOI forthcoming. It comprises:
 
 - *AI-usage summary* (SP-1): models, platforms, phases, scope of involvement; the entry point for a reader wanting a quick orientation before deciding how deep to go.
 - *Navigation index* (SP-2): an index organised by paper section and writing phase, for targeted retrieval rather than exhaustive reading.

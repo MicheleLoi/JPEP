@@ -345,7 +345,30 @@ Validation: approved through MOD-017.
 
 Non-defect observations recorded but not actioned: (a) Earp-cluster citation density in the body (three loci) is a reception risk, not an error — each does distinct work; (b) Van Woudenberg et al. (2024, "Authorship and ChatGPT: a Conservative View") is cited as §1 background but not engaged — engaging it would re-import the authorship debate into the position-free body, so it is left as background by design.
 
-Validation: pending author confirmation (edits applied to the markdown; confirmation requested before commit).
+Validation: approved; committed at v1.13 (commit f0f1ec3).
+
+---
+
+### MOD-019 — v1.13 → v1.14: bias-mitigation Archive apparatus removed; testimonial post-script shortened
+
+| Field | Value |
+|-------|-------|
+| Date | 2026-06-11 |
+| Type | Cut — removes a non-load-bearing Archive apparatus + four citations; eases length budget |
+| Trigger | Author judgment, on the "how important are these citations" question: the bias-mitigation citations and the testimonial post-script they served are Archive-only, the AI-voice register is marginal, and the paper has an EthIT length constraint (~8,000-word limit). "Lasciamo che siano le parti filosofiche a lavorare di più." |
+
+**Issue.** The v1.12 Archive "On the testimonial layer of this Archive" paragraph (~150 w) framed the AI-voice register against the empirical bias-against-AI-text literature, citing five sources. Four of those (Liang et al. 2025; arXiv 2510.24011; arXiv 2510.08831; Siddiqui/DraftMarks 2509.23505) were (a) confined to that single Archive paragraph, (b) not load-bearing for the §1–§7 philosophical argument, (c) not independently verified beyond the v1.12 sub-agent search, and (d) carried incomplete author lists ("et al.") or no bibliography entry (the two bare arXiv IDs). Citing unverified preprints in a submission is a gratuitous reputational risk on a decorative paragraph.
+
+**Change.**
+- **Testimonial post-script shortened** from ~150 w to ~40 w: *"**On the testimonial layer.** Parts of this Archive are written in the composite voice of the models that produced the paper, reporting what they executed; that register is confined to the Archive, leaving the body's philosophical claims to be assessed on their merits."* All bias-mitigation framing and citations removed. The narrator-reification at the head of the Archive note (the composite-plural disclosure) is untouched, so the testimonial bullets and §7 inflections still have their referent.
+- **Bibliography:** removed Liang et al. 2025 and Siddiqui/DraftMarks 2025 from `paper_bibliography_FINAL.md` and the paper's References. The two bare arXiv IDs (2510.24011, 2510.08831) had no entries and disappear with the paragraph. **BaHammam 2025 retained** — it is body-load-bearing (§2.1 transparency-paradox priority cite per CFP_4.2.36 MOD-001; §4).
+- **Net:** ~−110 w body. Eases the EthIT ~8,000-word budget. No philosophical content lost — the cut material was an Archive aside about the AI-voice register's empirical status, which the paper does not need.
+
+**Scope note.** The other ~12 scoped AI-voice markers (Abstract, §1 ¶6, §4 close, §5.4, §6, §7) are NOT removed — the author's instruction targeted the bias apparatus and the post-script specifically, not the whole voice register. The voice spec `CFP_5.3.34` is left as the historical record of the v1.12 reasoning; this MOD records that its bias-framing recommendation was retired at v1.14.
+
+**Frontmatter:** v1.13 → v1.14; assembly note + word_count updated. Editions re-derived (arXiv v4, anon submission) and rebuilt (canonical docx, anon PDF, arXiv docx).
+
+Validation: pending author confirmation (edits applied; rebuilds done).
 
 ---
 

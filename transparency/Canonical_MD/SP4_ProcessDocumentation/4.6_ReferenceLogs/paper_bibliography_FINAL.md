@@ -73,9 +73,6 @@ inputs:
 **Kierkegaard, S.** (1992). *Concluding Unscientific Postscript to Philosophical Fragments* (H. V. Hong & E. H. Hong, Trans.). Princeton: Princeton University Press. (Original work published 1846)
 
 **Levy, N.** (2025). "Responsibility is not required for authorship." *Journal of Medical Ethics*, 51(4), 230–232. https://doi.org/10.1136/jme-2024-109912
-
-**Liang, W., et al.** (2025). "Penalizing Transparency? How AI Disclosure and Author Demographics Shape Human and AI Judgments About Writing." arXiv:2507.01418. https://arxiv.org/abs/2507.01418
-
 **Lloyd, D.** (2025). "Epistemic responsibility: toward a community standard for human-AI collaborations." *Frontiers in Artificial Intelligence*, 8, 1635691. https://doi.org/10.3389/frai.2025.1635691
 
 **Lund, B. D., & Naheem, K. T.** (2023). "Can ChatGPT be an author? A study of artificial intelligence authorship policies in top academic journals." *Learned Publishing*. https://doi.org/10.1002/leap.1582
@@ -103,9 +100,6 @@ inputs:
 **Schwitzgebel, E., Schwitzgebel, D., & Strasser, A.** (2024). "Creating a Large Language Model of a Philosopher." *Mind & Language*. https://doi.org/10.1111/mila.12466
 
 **Science.** (2023). "Science Journals: Editorial Policies." https://www.science.org/content/page/science-journals-editorial-policies
-
-**Siddiqui, M., et al.** (2025). "DraftMarks: Enhancing Transparency in Human-AI Co-Writing Through Interactive Skeuomorphic Process Traces." arXiv:2509.23505. https://arxiv.org/abs/2509.23505
-
 **Shafer-Landau, R.** (2003). *Moral Realism: A Defence*. Oxford: Oxford University Press.
 
 **Strathern, M.** (1997). 'Improving ratings': Audit in the British University system. *European Review*, 5(3), 305–321.
