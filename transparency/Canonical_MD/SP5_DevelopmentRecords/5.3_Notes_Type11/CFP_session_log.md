@@ -833,3 +833,43 @@ The anticipated close above was premature. All v1.12 carry-forward items were re
 **Commits this session (`main`):** `5f93850`, `0c385bf`, `dbf08d9`, `f0f1ec3`, `6950e90`, `0c26ccb`, `a6b0236`.
 
 **Session closes at `/mhc-end`.**
+
+---
+
+## SID-20260612-180111 (→ -185600 → -203102) — Recovery of unexported sessions after a 100%-context `/mhc-end` failure + root-cause timeout fix (2026-06-12)
+
+**Session marker note.** One continuous conversation split across three SIDs by resume-hook flapping (`-180111` `/mhc-status` → `-185600` recovery → `-203102` continuation after a `/model` switch to Opus). Infrastructure/plumbing session — no paper content changed. Canonical marker: `-180111`.
+
+**Driver.** User opened with `/mhc-status`, then: *"non ho fatto mhc-end perché ero a 100% di contesto, puoi recuperare json e aggiustare archi."* The 2026-06-12 afternoon session had ended at full context with the SessionEnd export incomplete.
+
+**What broke.** The 2026-06-09 → 06-12 work arc lived in a single JSONL (`62bba59a`, **20 MB**, one conversation resumed across 3.5 days). When session `SID-20260612-155547` (15:55–17:12, the v1.14 → v1.16 close-out) ended at 100% context, the SessionEnd hook's export subprocess hit its **60 s timeout** on that oversized JSONL and the session was finalized `exported:false`. The 2-minute retry session `-171327` failed the same way. Startup audit additionally surfaced older `exported:false` records carrying **stale fingerprints** — a known `mhc_start` limitation: the fingerprint recorded at session start names the *previous* conversation's file. Affected: `SID-20260518-104741` (recorded `dc65b818`; real transcript `3181f703`), `SID-20260609-183214` (recorded `7f0dfe80`; real transcript `62bba59a`), plus three sub-3-second double-`SessionStart` stubs with no content of their own.
+
+**What was recovered.** Three final-state exports via `extract_conversation.py` recovery mode (`MHC_NO_CURRENT_SESSION=1`, timestamp-named):
+- `JPEP_20260609_183214.md` — the full `62bba59a` arc (328 msgs, 06-09 09:58 → 06-12 18:00 local). Covers the failed `-155547` / `-171327` tail **and** the never-finalized `-183214` evening segment. (Content through 17:16 was already in `JPEP_SID-20260612-171510.md`; this is the complete arc.)
+- `JPEP_20260518_104744.md` — `3181f703` (110 msgs, 05-18 → 05-21), recovering `SID-20260518-104741` whose original export had failed. (A 05-21 snapshot already existed under `-131505`.)
+- `JPEP_20260513_003000.md` — `dc65b818` (217 msgs, 05-13 early morning): a belt-and-suspenders final-state copy of content already exported under the 05-12/05-13 SIDs.
+
+`session_history` entries for `-155547`, `-171327`, `-183214`, and `-104741` were corrected to `exported:true` with real fingerprints and both SHA-256 hashes; the four content-free stubs were annotated with explanatory `note` fields. `session_topology.yaml` gained `goal` + `continues_from_note` fields for the 06-12 sessions, the 06-09 evening segment, and the two recovery SIDs. Post-fix audit: **`unprocessed: none`.**
+
+**Where the hashes are.** All anchored in `.mhc-config.json` → `session_history` (per-entry `jsonl_sha256` + `export_sha256`). Headline: the `62bba59a` final state is `jsonl_sha256 d2975231…fd2b046`, exported as `JPEP_20260609_183214.md` (`export_sha256 7039145d…81b6db9`); `3181f703` is `jsonl_sha256 99b78ce3…d975e5b`, exported as `JPEP_20260518_104744.md` (`export_sha256 717be04e…3d11c363`).
+
+**Root-cause fix (MHC-W infrastructure, cross-project).** Two layers, both now committed and pushed to the shared framework repo (`MicheleLoi/MHC-W`):
+- **Export timeout** (the immediate defect): `mhc_end.py` default export-subprocess timeout **60 s → 300 s**, overridable per project via `export.timeout_seconds` in `.mhc-config.json`, applied to both call sites (`run_export`, `recover_from_jsonl`), with timeout warnings now printing the configured limit + JSONL size; new `TestExportTimeout` class. The SessionEnd **hook** itself (capped at Claude Code's 60 s default — the reason the inner timeout could never have helped on its own) raised to **`"timeout": 360`** in both installers, the hook-settings template, and JPEP's local `.claude/settings.local.json`.
+- **Stale SessionStart fingerprint** (the deeper cause of the stale-fingerprint records hand-patched above): `mhc_start.py` now resolves the JSONL fingerprint from the hook payload (`transcript_path` / `session_id`) instead of the mtime-latest heuristic that named the *previous* conversation's file; `finalize_session` corrects a stale start-fingerprint from the actually-exported transcript. This is the durable fix for the exact failure mode this session worked around by hand — future sessions should record correct fingerprints at start, and the `_104741` / `_183214`-style corrections should not recur.
+- **Attribution / cross-project record.** The fingerprint fix — and the co-commit of the export-timeout work — was authored by the **"Epistemic constitutional AI"** project, which hit the identical fingerprint bug on 2026-06-12 and fixed it in the shared framework: commit **`ac6591c`** ("Fix stale SessionStart jsonl_fingerprint", Claude Fable 5). The hook-timeout follow-up is **`939be0a`** (this session). Full MHC-W suite **120 green** (one transient midnight-rollover flake in `test_sid_uses_local_time`, non-reproducible, no production impact). MHC-W is the authoritative home for this fix; this JPEP entry is the cross-reference stub.
+
+**Produced / modified.**
+- `.mhc-config.json` (JPEP) — 4 corrected `session_history` entries + 4 annotated stubs.
+- `session_topology.yaml` (JPEP, gitignored/local) — goals + continuation notes.
+- Recovery exports (MHC-W store): `JPEP_20260609_183214.md`, `JPEP_20260518_104744.md`, `JPEP_20260513_003000.md` (+ raw `.jsonl` ground truth).
+- MHC-W framework (committed + pushed): export-timeout in `scripts/mhc_end.py` + `tests/test_mhc_end.py` and the stale-fingerprint fix in `scripts/mhc_start.py` + `tests/test_mhc_start.py` landed in **`ac6591c`** (cross-project, Epistemic constitutional AI); hook timeout in `installers/setup-project-{mac,windows}.*` + `templates/hook-settings-template.json` in **`939be0a`** (this session). Both on `origin/main`.
+- JPEP work plan `CFP_5.3.1` — RESUME HERE refreshed v1.7 → v1.16 (this session).
+- JPEP `.claude/skills/mhc-end/SKILL.md` — synced from the post-`ac6591c` template (local/gitignored).
+- This session-log entry.
+
+**Carry-forward.**
+- **MHC-W root-cause fix — DONE** (`ac6591c` + `939be0a`, pushed). The stale-fingerprint failure mode that drove this session's hand-patching is now fixed at the source.
+- **Actual EthIT submission** remains the real next action (complete the form + AI-use declaration, upload anon PDF + cover letter, push arXiv v4 to update 2511.08639). Confirm the cover-letter seminar tense first.
+- Empty `goal` fields for most 2026-06-12 sessions remain backfillable from the exports.
+
+**Session continues; close at `/mhc-end`.**

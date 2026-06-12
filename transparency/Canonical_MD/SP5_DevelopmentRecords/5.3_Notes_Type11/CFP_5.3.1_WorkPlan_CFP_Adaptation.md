@@ -18,20 +18,21 @@ related:
 
 ---
 
-## RESUME HERE (last updated 2026-05-13, session SID-20260513-094035, after commit `2fd9531` — paper at v1.7, pipeline relocated)
+## RESUME HERE (last updated 2026-06-13, after the v1.11→v1.16 cycle + EthIT submission prep — paper at v1.16 on `main`)
 
-**Quick state.** Paper: `Paper/MDversion/CFP_FullPaper_v1.md` at v1.7 (10,647 words / 25 pages per Word). Cumulative compression v1.3 → v1.7 ≈ −1,200 words. Hub/graph pipeline relocated to top-level `_pipeline/` (gitignored). SP-2 at v5+. Raw-conversations manifest at `CFP_5.3.30`. **Pre-submission chip-list resolved via `.gitignore`** (2026-05-13, SID-20260513-094035): backup zip, orphan utility script, legacy patch file, chain-walk scratch notes, empty placeholder folder, pre-CFP source folders, and Deprecated/ all retained locally but excluded from the shipped archive. Frontmatter `source:`/`assembly:`/`known_issues:` slimmed to prevent change-log content leaking into docx custom properties. `.docx` and `.pdf` regenerated. See `CFP_session_log.md` SID-20260513-094035 for the full arc and `_pipeline/HUBS_AND_GRAPHS_PLAN.md` for the deferred Tier-1.5/1/2 hub-and-graph plan. **Archive is submission-ready.**
+**Quick state.** Paper: `Paper/MDversion/CFP_FullPaper_v1.md` at **v1.16**. Submitted to *Philosophy & Technology* at v1.10 (14 May 2026); **desk-rejected 2 June 2026** by Floridi (EiC-level "Reject — transfer options available", not a quality verdict). **Next venue: Ethics and Information Technology** (Springer, **double-blind**) — van den Hoven (EiC) co-authored the Santoni de Sio & van den Hoven 2018 paper §6 builds on, so recusal is expected and a Co-Editor handles. Title + abstract held unchanged (author declined the AI-proposed wink-removal, on §3 agent-integrity grounds). Branch `cfp-ai-ethics-inquiry` **merged to `main`** (2026-06-09, `f828fe9`); all work since is on `main`.
 
-**Submission-ready items NOT done (deferred deliberately):**
+Since v1.10: **Earp-cluster integration** (v1.11 AUTOGEN/DA/JME; v1.13 in-text §5.4 + author-position registration in the Archive, full defence reserved for a JMEPB commentary), **Archive testimonial layer** + 12 scoped AI-voice markers (v1.12, after an adversarial-verification pass rejected a fuller "AI-voice edition"), a **14-cut compression pass**, and a **reference audit (v1.14→v1.16)** that cut the unverified bias-mitigation apparatus, verified every empirical claim against source PDFs, and caught + fixed a fabricated Abdulhai co-author list. **Reference reliability: closed for submission.** Build engine switched to **pandoc** (native footnotes). Distribution editions derive from the canonical via `derive_distributions.py`: `Full_paper_arxiv_v4.md` (public; arXiv 2511.08639) and `Full_paper_submission_anon.md` (verified zero identity leak). See `CFP_session_log.md` SID-20260609-095833 (+ its 2026-06-10/11 continuation) for the full arc; `CFP_4.2.38` / `CFP_4.2.39` for per-change detail.
 
-- Opus's full §6+§7 compression recommendations beyond the §6.2 Abdulhai/Sourati cut (parked; ~700 words of further trims identified).
-- Opus's §§5–6 flow fix — expand §5.2 SP-N table from one-line to two-line cells, importing concrete artifact-type names from §6.3's prose re-description (parked; ~+80 / −60 words, ~zero net change).
-- §3 eval — at 3,598 words / 38% of body, untouched by Opus's reviews so far (parked).
-- Zenodo DOI mint at submission tag; insert DOI into `CFP_5.4.14` and SP-1.
+**Next action — actual EthIT submission (not yet done):**
 
-**This section is the canonical entry point for resuming JPEP work.** Per-session granular history is in `CFP_session_log.md` (same folder); this section summarises state and points forward.
+- Complete the EthIT submission form incl. the AI-use declaration field; upload the **anon PDF** (`Full_paper_submission_anon.pdf`) + **cover letter** (`target-venue/cover_letter_ethit.md`); upload **arXiv v4** to update 2511.08639.
+- **Confirm cover-letter seminar tense** before sending — "was presented" assumes the Jan-2026 TU/e Santoni de Sio seminar has occurred; flip to "is scheduled to be presented" if still upcoming.
+- Earp DA + SHC are forthcoming preprints — re-check their final DOIs at/after publication.
+- **Zenodo DOI** deferred to the final-accepted version (mint at the submission/acceptance tag; insert into `CFP_5.4.14` and SP-1).
+- Decide whether to git-track `build_paper.py` + `derive_distributions.py` for reproducibility (currently gitignored; the pandoc/footnote fix lives only locally).
 
-**Branch:** `cfp-ai-ethics-inquiry` (pending merge to `main` before submission).
+**This section is the canonical entry point for resuming JPEP work.** Per-session granular history is in `CFP_session_log.md` (same folder); this section summarises state and points forward. Older parked polish items (Opus §6/§7 compression, §3 eval) were absorbed by the v1.12 compression pass and the v1.14→v1.16 audit; the detailed history below is preserved as the original plan.
 
 **Paper body status (post-2026-04-09 numbering, post-2026-05-12 externalization):**
 
