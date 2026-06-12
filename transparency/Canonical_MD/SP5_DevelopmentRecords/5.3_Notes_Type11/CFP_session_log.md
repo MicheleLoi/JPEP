@@ -791,4 +791,45 @@ Manual finalization executed: `extract_conversation.py` invoked against `~/.clau
 - Verification backlog (carried from CFP_5.3.33 §6): JMEPB DOI re-verification for Earp/Porsdam Mann/Sawai/Wangmo 2026; title disambiguation for Earp/Shahvisi/Frith 2025; full-text access for Earp et al. 2025 NMI provenance paper; rendered PDF read of arXiv 2509.05390 (Authorship Without Writing) — held at editorial-engagement layer per briefing §4.4.
 - Pre-EthIT-submission: resolve verification backlog; the Earp et al. (2026) DOI flag must be resolved before any submission tag.
 
-**Session closes here.**
+*[The v1.12 carry-forward above is preserved as it stood mid-session. The session did NOT close here — it continued, across 2026-06-10/11, through full submission preparation and a reference audit. Continuation below.]*
+
+---
+
+### Continuation (2026-06-10 → 2026-06-11) — v1.12 assembly → v1.16 + double-blind submission prep + reference audit
+
+The anticipated close above was premature. All v1.12 carry-forward items were resolved and the session ran on. Summary by phase; per-change detail is in `CFP_4.2.38` (MOD-013-A → MOD-021), `CFP_4.2.39` (master version history), and git.
+
+*v1.12 assembled + committed.* 14-cut compression pass (~−735 w, parked Opus trims) + Archive testimonial layer integrated into the body; 12 scoped AI-voice markers at genuine process boundaries. **Build engine switched to pandoc** (native footnotes — the MHC-L exporter had been emitting `^[...]` as literal body text; verified fixed). Commits `0c385bf`, `dbf08d9`.
+
+*v1.12 → v1.13 — Earp cluster in-text engagement + author-position registration.* Both Earp-cluster preprints read in full from local PDFs (DA editorial; SHC self-test essay). §5.4 extended in-text (author's instruction: an official editorial call merits body treatment, not a footnote): five-candidate catalogue + the two-level contestation point (the author's Gallie insight — even agreeing "substantial human contribution," what counts as *substantial* stays divided) + SHC performs the response in miniature + "not a sixth candidate answer" + enforceability inline. **Author-position decision** via adversarial workflow `wf_899bd25b-c09` (verdict **P-OMIT-modified**): the author's accountability conception is disclosed as a registration-only block in the Archive ("The author's operative conception of authorship"), NOT defended in the body (§4.4 placement discipline); the full defence — the de dicto/de re bifurcation answering the editorial's function-not-definition objection — is reserved for a JMEPB commentary. Levy (2025) verified (CrossRef) and cited as a live-opposition aside. Post-full-read corrections (MOD-018h): duplicate "first iteration" sentence, dangling "§4.3" → §5, "Earp et al." → "Porsdam Mann et al." back-ref, "two levels" collision reworded, reference ordering. Master version-history modlog `CFP_4.2.39` produced + `_INDEX_4.2.md` refreshed. Commit `f0f1ec3`.
+
+*JMEPB commentary produced* (`target-venue/jmepb_commentary_proposal.md`, gitignored/local): proposal + ~1,000-word draft defending the accountability conception (authorial assertoric commitment vs editorial process-commitment bifurcation; recursive AI-aided-justification wrinkle). Later focused strictly on the target — Levy dropped from the commentary, kept only as the paper's Archive aside.
+
+*Submission preparation — double-blind.* EthIT confirmed **double-blind** (web). Two distribution editions derived from the canonical by a reusable script `derive_distributions.py`: `Full_paper_arxiv_v4.md` (public; author block; archive line → GitHub repo) and `Full_paper_submission_anon.md` (verified **zero identity leak**; archive line → blinded note). Cover letter (`cover_letter_ethit.md`) integrated: anonymized-review note (the documentation archive is an *authored* process record, non-anonymisable without destroying what it demonstrates → editor-mediated access; the tension is itself on-thesis), public-arXiv-preprint disclosure (**arXiv:2511.08639**), and the TU/e / Santoni de Sio seminar + EiC-co-authorship routing/COI flag. Builds: anon submission **PDF** (pandoc + xelatex), arXiv **docx** (pandoc). EthIT length confirmed soft ("approximately 8,000 words").
+
+*Reference audit (v1.14 → v1.16)* — triggered by the author's question "sulle reference siamo sicuri? quali elementi di prova abbiamo?"
+- **v1.14** (MOD-019, commit `6950e90`): cut the bias-mitigation Archive apparatus — Liang 2025, Siddiqui/DraftMarks, and two bare arXiv IDs (Archive-only, non-load-bearing, unverified, some with "et al." stubs); testimonial post-script shortened to one sentence. ~−110 w. BaHammam retained (body-load-bearing).
+- **v1.15** (MOD-020, commit `0c26ccb`): orphan reconciliation — re-cited **Mecacci & Santoni de Sio (2020)** at the §6 tracking condition (its reason-responsiveness source; also published in the target journal EthIT) and **Lloyd (2025)** at §5.1; removed Boden & Edmonds orphan. **Both empirical-claim citations verified against source PDFs the author placed in `transparency/TEMP/`:** Abdulhai "68.9%" confirmed p.10; Schwitzgebel "51% / 20% / 80%" confirmed pp.12–15. **A fabricated Abdulhai co-author list was caught** (only the first author was right) and corrected against the PDF title page to the real authors (Abdulhai, White, Wan, Qureshi, Leibo, Kleiman-Weiner, Jaques) — exactly the failure the audit existed to find.
+- **v1.16** (MOD-021, commit `a6b0236`): background verification agent (`ad99ac1b`) checked every remaining entry against CrossRef/publisher/arXiv — **33 correct, no new fabrications, every multi-author entry's co-authors confirmed.** Two fixes: Berg & Robbins year 2024 → 2025; Hosseini/Resnik/Holmes locator added.
+- **Reference-reliability status: closed for submission.**
+
+**Produced (continuation):**
+- `CFP_4.2.39_ModificationLog_FullPaper_MasterHistory.md` — umbrella version-history modlog v1 → v1.13 (reconciles v1.4–v1.10 session-log-recorded coverage); `_INDEX_4.2.md` updated (.37/.38/.39).
+- `CFP_4.2.38` extended through MOD-021 (v1.12 → v1.16).
+- `Paper/MDversion/Full_paper_arxiv_v4.md` + `Full_paper_submission_anon.md` (distribution editions; tracked).
+- `target-venue/jmepb_commentary_proposal.md`, `target-venue/cover_letter_ethit.md` (updated) — gitignored/local.
+- `derive_distributions.py` (new) + `build_paper.py` (pandoc switch) — gitignored/local utilities.
+- Builds (gitignored): `CFP_FullPaper_v1_16.docx`, `Full_paper_submission_anon.pdf`, `Full_paper_arxiv_v4.docx`.
+- TEMP source PDFs added by the user for verification: Abdulhai, Schwitzgebel, DA editorial, SHC (gitignored).
+- `Paper/MDversion/CFP_FullPaper_v1.md` at **v1.16**.
+
+**Carry-forward (real, post-v1.16):**
+- Cover letter: confirm seminar tense — "was presented" assumes the Jan-2026-scheduled TU/e seminar has occurred; flip to "is scheduled to be presented" if still upcoming. arXiv ID + institution already filled.
+- Submit: complete the EthIT submission form (AI-use declaration field), upload the anon PDF + cover letter; upload the arXiv v4 edition to update 2511.08639.
+- Earp DA + SHC are forthcoming preprints — re-check their final DOIs at/after publication.
+- Decide whether to git-track `build_paper.py` + `derive_distributions.py` for reproducibility (currently gitignored; the pandoc/footnote fix lives only locally).
+- Housekeeping: past unexported sessions; `mhc-end` skill out-of-sync.
+
+**Commits this session (`main`):** `5f93850`, `0c385bf`, `dbf08d9`, `f0f1ec3`, `6950e90`, `0c26ccb`, `a6b0236`.
+
+**Session closes at `/mhc-end`.**

@@ -1,6 +1,6 @@
 ---
 artifact_type: modlog
-document: CFP_FullPaper v1.11 → v1.12 → v1.13 — Archive testimonial layer, compression, Earp-cluster in-text engagement
+document: CFP_FullPaper v1.11 → v1.16 — Archive testimonial layer, compression, Earp-cluster in-text engagement, author-position registration, reference audit
 project: JPEP
 created: 2026-06-09
 session_id:
