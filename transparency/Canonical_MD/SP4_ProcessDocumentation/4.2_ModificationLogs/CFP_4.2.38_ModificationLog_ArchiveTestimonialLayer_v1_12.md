@@ -368,6 +368,39 @@ Validation: approved; committed at v1.13 (commit f0f1ec3).
 
 **Frontmatter:** v1.13 → v1.14; assembly note + word_count updated. Editions re-derived (arXiv v4, anon submission) and rebuilt (canonical docx, anon PDF, arXiv docx).
 
+Validation: approved; committed at v1.14 (commit 6950e90).
+
+---
+
+### MOD-020 — v1.14 → v1.15: orphan-reference reconciliation
+
+| Field | Value |
+|-------|-------|
+| Date | 2026-06-11 |
+| Type | Reference-consistency fix — re-cite two orphans, remove one |
+| Trigger | Pre-submission reference audit (author question "sulle reference siamo sicuri? quali elementi di prova abbiamo?"). An orphan check (first-author surname vs body) found 4 bibliography entries with no in-body citation: Boden & Edmonds 2009, Lloyd 2025, Mecacci & Santoni de Sio 2020, and a false positive (Plato — cited as "*Apology* 38a"). |
+
+**Issue.** Three genuine orphans (bibliography entries cited nowhere in the v1.14 body), all leftovers from the v1.9 §6 compression and the v1.1 additions. Two of them are substantive works that lost their in-body citation, not junk:
+- **Mecacci & Santoni de Sio (2020)**, "Meaningful human control as reason-responsiveness," *Ethics and Information Technology* — the canonical source for the §6 *tracking condition* ("system outputs covary with the operator's relevant reasons" = reason-responsiveness), and published in the target journal (EthIT).
+- **Lloyd (2025)**, "Epistemic responsibility: toward a community standard for human-AI collaborations," *Frontiers in AI* — directly relevant to §5's community-assessment project.
+
+**Change.**
+- **§6 tracking condition:** re-cited Mecacci & Santoni de Sio (2020) — "...system outputs covary with the operator's relevant reasons, developed as *reason-responsiveness* by Mecacci & Santoni de Sio (2020)...". Gives the tracking condition its own source (previously the whole MHC paragraph rested only on Santoni de Sio & van den Hoven 2018) and cites a target-journal paper. Author confirmed the reference verified.
+- **§5.1:** re-cited Lloyd (2025) — "A shared approach is required, and articulating a community standard for human–AI collaborations is itself an emerging project (Lloyd 2025)." Reference verified this session via CrossRef (DOI 10.3389/frai.2025.1635691 — title/author/venue/volume/article-number all confirmed).
+- **Removed Boden & Edmonds (2009)** "What is Generative Art?" from both bibliographies — a genuine orphan (added v1.1 with Sartre; never cited in the current argument).
+
+**Net:** ~+20 w body. Bibliography now has no orphans except Plato (false positive — cited via the work title *Apology* 38a, standard for classical sources).
+
+**Verification — the two empirical-claim citations, checked against source PDFs (2026-06-11).** The author placed the source PDFs in `transparency/TEMP/` and requested a page-level check. Both claims VERIFIED:
+- **Abdulhai et al. (2026), §5.2 "68.9% increase in stance neutralization":** confirmed on **p. 10** of `Abdulhai et al. (2026) 68%.pdf` (= arXiv:2603.18161) — Figure 6 caption ("extensive AI use results in a 68.9% increase in the proportion of essays that remain neutral… t(69) = −2.439, p = 0.017") and §4.3 body ("increases the proportion of users taking a neutral position by 68.9%, p < 0.036"). JPEP's claim is accurate.
+- **Schwitzgebel, Schwitzgebel & Strasser (2024), §3.7 "51% … above chance (20%) … hypothesized 80%":** all three figures confirmed in `Schwitzgebel, Schwitzgebel & Strasser (2024).pdf` — 51% (§3.3, p. 14–15: experts "5.08 times out of 10 (51%)… t(24) = 7.13, p < .001"); 20% chance (five-alternative forced choice, p. 12/14); 80% hypothesized (§2.9 hypothesis 2, p. 13; "significantly below the hypothesized accuracy of 80%… contradicting our initial hypothesis," p. 15). Title and authors also confirmed. JPEP's claim is accurate.
+
+**Error caught and fixed — Abdulhai author list.** The verification revealed the bibliography's Abdulhai entry carried a **fabricated co-author list**: "Abdulhai, M., Prabhu, A., Wongkamjan, W., Nasseri, S. A., Nenkova, A., Dreyer, M., Ren, X., & Mathur, N." — only the first author was correct. Corrected against the PDF title page to the actual authors: **Abdulhai, M., White, I., Wan, Y., Qureshi, I., Leibo, J., Kleiman-Weiner, M., & Jaques, N.** (UC Berkeley / UC San Diego / UW / Zaytuna / Google DeepMind). Fixed in both `paper_bibliography_FINAL.md` and the paper's References; the arXiv ID (2603.18161) and the in-text claim were already correct. This is exactly the failure the verification pass existed to catch — a hallucinated author list surviving from an earlier AI-assisted bibliography step.
+
+**Still un-verified (recorded honestly):** the recent/obscure tier (Berg & Robbins 2024, Cheng et al. 2025, Hosseini/Resnik/Holmes 2023, Resnik & Hosseini 2025, Lund & Naheem 2023, Van Woudenberg et al. 2024, Jollimore 2025, Schilke & Reimann 2025) is not yet source-checked. Cordasco 2026a/b were verified in a prior session. Canonical works (Williams, Gallie, Sartre, Kierkegaard, Nietzsche, Plato, Gibbard, Blackburn, Enoch, Shafer-Landau, Santoni de Sio ×2, Strathern, Zimmerman, Moseley) are low fabrication-risk but page-level details unchecked. A further pass is advisable before final submission; the two highest-stakes (empirical) citations are now closed.
+
+**Frontmatter:** v1.14 → v1.15; assembly + word_count updated. Editions re-derived and rebuilt.
+
 Validation: pending author confirmation (edits applied; rebuilds done).
 
 ---

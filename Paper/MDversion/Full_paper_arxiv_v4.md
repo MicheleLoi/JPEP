@@ -5,7 +5,7 @@ affiliation: "University of Milan"
 email: "michele.loi@unimi.it"
 version: "v4"
 date: 2026-06-10
-based_on: "Paper/MDversion/CFP_FullPaper_v1.md (v1.14, 2026-06-10)"
+based_on: "Paper/MDversion/CFP_FullPaper_v1.md (v1.15, 2026-06-10)"
 archive: "https://github.com/MicheleLoi/JPEP (transparency/)"
 ---
 
@@ -186,7 +186,7 @@ This is not an argument against transparency, and not an argument that comprehen
 
 Adequate transparency documentation must enable evaluators across the community of legitimate positions to assess how a work came to be. How should the scholarly community do this — and what standard should govern the assessment?
 
-Documentation adequacy is not self-certifying. An author can produce well-labelled supplementary files that do not enable any such assessment. A shared approach is required. The standard is documentation adequacy — does the disclosed record enable the assessor to infer how the work came to be? — not reproduction success.
+Documentation adequacy is not self-certifying. An author can produce well-labelled supplementary files that do not enable any such assessment. A shared approach is required, and articulating a community standard for human–AI collaborations is itself an emerging project (Lloyd 2025). The standard is documentation adequacy — does the disclosed record enable the assessor to infer how the work came to be? — not reproduction success.
 
 ## 5.2 The Organizing Question
 
@@ -228,7 +228,7 @@ The form of that intervention is itself evidence of the unsettlement. The editor
 
 # 6. A Feasible Apparatus
 
-The framework draws on Meaningful Human Control. Santoni de Sio and van den Hoven (2018) identify two conditions a system must satisfy to be under meaningful human control: the **tracking condition** — system outputs covary with the operator's relevant reasons — and the **tracing condition** — outputs traceable to a human person's understanding and endorsement. As Santoni de Sio and van den Hoven put it, "systems whose actions and states are not traceable to relevant understanding and endorsing by some human person […] no matter how intelligent and reason-responsive they may be, are not under meaningful human control" (p. 9). For the framework here, tracing is the operative condition: it asks whether the directing person understood what was produced and endorses it as their own intellectual contribution — the question §3's agent-integrity argument makes constitutive.
+The framework draws on Meaningful Human Control. Santoni de Sio and van den Hoven (2018) identify two conditions a system must satisfy to be under meaningful human control: the **tracking condition** — system outputs covary with the operator's relevant reasons, developed as *reason-responsiveness* by Mecacci & Santoni de Sio (2020) — and the **tracing condition** — outputs traceable to a human person's understanding and endorsement. As Santoni de Sio and van den Hoven put it, "systems whose actions and states are not traceable to relevant understanding and endorsing by some human person […] no matter how intelligent and reason-responsive they may be, are not under meaningful human control" (p. 9). For the framework here, tracing is the operative condition: it asks whether the directing person understood what was produced and endorses it as their own intellectual contribution — the question §3's agent-integrity argument makes constitutive.
 
 Five elements compose the apparatus, each answering to one or more of the three criteria specified in §5.2. SP-1 (Declaration) is the entry point — a concise statement of how AI was used and what record the reader is entering; it discharges *attribution* at the orientation level. SP-2 (Navigation) is a structured index — the document-type ontology and metadata infrastructure linking each section to the process materials that produced it — and is structurally enabling for all three criteria. SP-3 (Documentation Account) is the primary site of the tracing claim: the author's argument that the record satisfies the criteria of §5, speaking to each criterion explicitly. SP-4 (Process Documentation) is the substance against which SP-3's claim is assessed: *modification logs* documenting each substantive revision (prior text, revised text, source model and session, reasoning); *epistemic traces* crystallising exploratory turns into stable claims; *prompt-development logs* documenting what was specified before generation. SP-4 is where *attribution* becomes locatable and the modlog's reasoning fields make *understanding-and-endorsement* inspectable at the level of individual decisions. SP-5 (Development Records) holds the section guidance that constrained drafting and pattern summaries distilling what successive revisions taught; the *intellectual trajectory* becomes visible across SP-5's versioned instructions, and the constraints the author placed on themselves before generation are evidence for *understanding-and-endorsement* of a different kind than SP-4 supplies. The canonical trace of what changed and why is the modlog in SP-4 — more compressed and more narrative than any complete snapshot could be.
 
@@ -278,7 +278,7 @@ This paper was produced with substantial AI assistance over multiple writing pha
 
 # References
 
-**Abdulhai, M., Prabhu, A., Wongkamjan, W., Nasseri, S. A., Nenkova, A., Dreyer, M., Ren, X., & Mathur, N.** (2026). "How LLMs distort our written language." arXiv:2603.18161v1. https://arxiv.org/abs/2603.18161
+**Abdulhai, M., White, I., Wan, Y., Qureshi, I., Leibo, J., Kleiman-Weiner, M., & Jaques, N.** (2026). "How LLMs distort our written language." arXiv:2603.18161. https://arxiv.org/abs/2603.18161
 
 **ACM.** (2025). "ACM Policy on Authorship." Updated September 16, 2025. https://www.acm.org/publications/policies/new-acm-policy-on-authorship
 
@@ -287,9 +287,6 @@ This paper was produced with substantial AI assistance over multiple writing pha
 **Berg, A., & Robbins, H.** (2024). "The Cognitive Divide." *The Point*. https://thepointmag.substack.com/p/the-cognitive-divide
 
 **Blackburn, S.** (1993). *Essays in Quasi-Realism*. New York: Oxford University Press.
-
-**Boden, M. A., & Edmonds, E. A.** (2009). "What is Generative Art?" *Digital Creativity*, 20(1–2), 21–46. https://doi.org/10.1080/14626260902867915
-
 **Cheng, Z., Zhang, Z., Xu, Q., Maeda, Y., & Gu, P.** (2025). "A meta-analysis addressing the relationship between self-regulated learning strategies and academic performance in online higher education." *Journal of Computing in Higher Education*, 37(1), 195–224. https://doi.org/10.1007/s12528-023-09390-1
 
 **COPE Council.** (2024). "COPE position — Authorship and AI." Committee on Publication Ethics. https://doi.org/10.24318/cCVRZBms

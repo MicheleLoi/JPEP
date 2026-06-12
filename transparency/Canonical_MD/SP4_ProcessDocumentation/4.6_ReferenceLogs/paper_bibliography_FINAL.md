@@ -30,7 +30,7 @@ inputs:
 
 ## References
 
-**Abdulhai, M., Prabhu, A., Wongkamjan, W., Nasseri, S. A., Nenkova, A., Dreyer, M., Ren, X., & Mathur, N.** (2026). "How LLMs distort our written language." arXiv:2603.18161v1. https://arxiv.org/abs/2603.18161
+**Abdulhai, M., White, I., Wan, Y., Qureshi, I., Leibo, J., Kleiman-Weiner, M., & Jaques, N.** (2026). "How LLMs distort our written language." arXiv:2603.18161. https://arxiv.org/abs/2603.18161
 
 **ACM.** (2025). "ACM Policy on Authorship." Updated September 16, 2025. https://www.acm.org/publications/policies/new-acm-policy-on-authorship
 
@@ -39,9 +39,6 @@ inputs:
 **Berg, A., & Robbins, H.** (2024). "The Cognitive Divide." *The Point*. https://thepointmag.substack.com/p/the-cognitive-divide
 
 **Blackburn, S.** (1993). *Essays in Quasi-Realism*. New York: Oxford University Press.
-
-**Boden, M. A., & Edmonds, E. A.** (2009). "What is Generative Art?" *Digital Creativity*, 20(1–2), 21–46. https://doi.org/10.1080/14626260902867915
-
 **Cheng, Z., Zhang, Z., Xu, Q., Maeda, Y., & Gu, P.** (2025). "A meta-analysis addressing the relationship between self-regulated learning strategies and academic performance in online higher education." *Journal of Computing in Higher Education*, 37(1), 195–224. https://doi.org/10.1007/s12528-023-09390-1
 
 **COPE Council.** (2024). "COPE position — Authorship and AI." Committee on Publication Ethics. https://doi.org/10.24318/cCVRZBms
