@@ -401,6 +401,30 @@ Validation: approved; committed at v1.14 (commit 6950e90).
 
 **Frontmatter:** v1.14 → v1.15; assembly + word_count updated. Editions re-derived and rebuilt.
 
+Validation: approved; committed at v1.15 (commit 0c26ccb).
+
+---
+
+### MOD-021 — v1.15 → v1.16: full bibliography verification pass
+
+| Field | Value |
+|-------|-------|
+| Date | 2026-06-11 |
+| Type | Reference verification — agent pass over the whole bibliography + two fixes |
+| Source | Background agent `ad99ac1bacac22d83` — CrossRef / publisher / arXiv checks of every entry not already verified this session; special attention to author lists (the dimension where the Abdulhai fabrication occurred) |
+
+**Result.** 33 entries CORRECT, 1 correctness MISMATCH, 0 unverifiable. **No new fabrications.** Critically, on the author-list dimension, every co-author on every multi-author entry checked out against CrossRef — no invented or missing co-authors, no DOI-resolves-to-wrong-paper cases. The Abdulhai fabrication (fixed in MOD-020) was isolated.
+
+**Fixes applied.**
+- **Berg & Robbins — year 2024 → 2025** (the one substantive error). The Point article "The Cognitive Divide" was published 8 July 2025, not 2024. Authors and URL were correct. Fixed in the §1 in-text citation and in both bibliographies.
+- **Hosseini, Resnik & Holmes (2023) — completeness:** added the missing locator *Research Ethics*, **19(4), 449–465** in both bibliographies.
+
+**Noted, not changed.** COPE Council (2024): CrossRef's registered title is "Authorship and AI tools"; the entry's "COPE position — Authorship and AI" is a descriptive rendering of the same DOI'd document — left as-is (not an error). Cheng et al. (2025): CrossRef "issued" reads 2023 (online-first) but the print volume 37(1) is 2025 — the entry's 2025 is correct, kept.
+
+**Reference-reliability status: closed for submission.** The two empirical-claim citations (MOD-020) and the full bibliography (this MOD) are now verified. Canonical works confirmed to exist with correct author/year/venue; page-level minutiae on a few are unchecked but low-risk.
+
+**Frontmatter:** v1.15 → v1.16. Editions re-derived and rebuilt.
+
 Validation: pending author confirmation (edits applied; rebuilds done).
 
 ---

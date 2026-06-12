@@ -36,7 +36,7 @@ inputs:
 
 **BaHammam, A. S.** (2025). "The Transparency Paradox: Why Researchers Avoid Disclosing AI Assistance in Scientific Writing." *Nature and Science of Sleep*, 17, 2569–2574. https://doi.org/10.2147/NSS.S568375
 
-**Berg, A., & Robbins, H.** (2024). "The Cognitive Divide." *The Point*. https://thepointmag.substack.com/p/the-cognitive-divide
+**Berg, A., & Robbins, H.** (2025). "The Cognitive Divide." *The Point*. https://thepointmag.substack.com/p/the-cognitive-divide
 
 **Blackburn, S.** (1993). *Essays in Quasi-Realism*. New York: Oxford University Press.
 **Cheng, Z., Zhang, Z., Xu, Q., Maeda, Y., & Gu, P.** (2025). "A meta-analysis addressing the relationship between self-regulated learning strategies and academic performance in online higher education." *Journal of Computing in Higher Education*, 37(1), 195–224. https://doi.org/10.1007/s12528-023-09390-1
@@ -63,7 +63,7 @@ inputs:
 
 **Hosseini, M., Rasmussen, L. M., & Resnik, D. B.** (2023). "Using AI to write scholarly publications." *Accountability in Research*, 31(7), 715–723. https://doi.org/10.1080/08989621.2023.2168535
 
-**Hosseini, M., Resnik, D. B., & Holmes, K.** (2023). "The ethics of disclosing the use of artificial intelligence tools in writing scholarly manuscripts." *Research Ethics*. https://doi.org/10.1177/17470161231180449
+**Hosseini, M., Resnik, D. B., & Holmes, K.** (2023). "The ethics of disclosing the use of artificial intelligence tools in writing scholarly manuscripts." *Research Ethics*, 19(4), 449–465. https://doi.org/10.1177/17470161231180449
 
 **Jollimore, T.** (2025). "I Used to Teach Students. Now I Catch ChatGPT Cheats." *The Walrus*, March 5, 2025. https://thewalrus.ca/i-used-to-teach-students-now-i-catch-chatgpt-cheats/
 

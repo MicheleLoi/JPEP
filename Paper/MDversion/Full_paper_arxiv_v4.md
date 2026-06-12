@@ -5,7 +5,7 @@ affiliation: "University of Milan"
 email: "michele.loi@unimi.it"
 version: "v4"
 date: 2026-06-10
-based_on: "Paper/MDversion/CFP_FullPaper_v1.md (v1.15, 2026-06-10)"
+based_on: "Paper/MDversion/CFP_FullPaper_v1.md (v1.16, 2026-06-10)"
 archive: "https://github.com/MicheleLoi/JPEP (transparency/)"
 ---
 
@@ -32,7 +32,7 @@ Existing AI disclosure mandates in scholarship require that AI assistance be rep
 
 # 1. Introduction
 
-The use of artificial intelligence in academic work has generated substantial discussion across two domains. In education, AI tools are held to threaten cognitive development, undermine assessment validity, and erode the trust that sustains pedagogical relationships (Jollimore 2025; Berg & Robbins 2024). In scientific research more broadly, a growing literature addresses disclosure norms, authorship attribution, and the reliability of AI-assisted outputs (Hosseini et al. 2023; Van Woudenberg et al. 2024). Yet one domain remains almost entirely unexamined: the use of AI tools in ethics research specifically. This gap is not incidental. Ethics is where the question is hardest — not because ethical inquiry is generically more demanding, but because what constitutes ethical inquiry, its methods, its epistemic structure, its purpose, is itself fundamentally disputed.
+The use of artificial intelligence in academic work has generated substantial discussion across two domains. In education, AI tools are held to threaten cognitive development, undermine assessment validity, and erode the trust that sustains pedagogical relationships (Jollimore 2025; Berg & Robbins 2025). In scientific research more broadly, a growing literature addresses disclosure norms, authorship attribution, and the reliability of AI-assisted outputs (Hosseini et al. 2023; Van Woudenberg et al. 2024). Yet one domain remains almost entirely unexamined: the use of AI tools in ethics research specifically. This gap is not incidental. Ethics is where the question is hardest — not because ethical inquiry is generically more demanding, but because what constitutes ethical inquiry, its methods, its epistemic structure, its purpose, is itself fundamentally disputed.
 
 Contemporary journal policies require disclosure of AI assistance (COPE Council 2024; Elsevier 2023; ACM 2025; Science 2023), a norm now adopted by the majority of major journals (Lund & Naheem 2023). Yet these policies specify *that* AI assistance must be reported without philosophical clarity about what transparency is meant to serve. Is there a principled case for process transparency in ethics research at all?
 
@@ -284,7 +284,7 @@ This paper was produced with substantial AI assistance over multiple writing pha
 
 **BaHammam, A. S.** (2025). "The Transparency Paradox: Why Researchers Avoid Disclosing AI Assistance in Scientific Writing." *Nature and Science of Sleep*, 17, 2569–2574. https://doi.org/10.2147/NSS.S568375
 
-**Berg, A., & Robbins, H.** (2024). "The Cognitive Divide." *The Point*. https://thepointmag.substack.com/p/the-cognitive-divide
+**Berg, A., & Robbins, H.** (2025). "The Cognitive Divide." *The Point*. https://thepointmag.substack.com/p/the-cognitive-divide
 
 **Blackburn, S.** (1993). *Essays in Quasi-Realism*. New York: Oxford University Press.
 **Cheng, Z., Zhang, Z., Xu, Q., Maeda, Y., & Gu, P.** (2025). "A meta-analysis addressing the relationship between self-regulated learning strategies and academic performance in online higher education." *Journal of Computing in Higher Education*, 37(1), 195–224. https://doi.org/10.1007/s12528-023-09390-1
@@ -311,7 +311,7 @@ This paper was produced with substantial AI assistance over multiple writing pha
 
 **Hosseini, M., Rasmussen, L. M., & Resnik, D. B.** (2023). "Using AI to write scholarly publications." *Accountability in Research*, 31(7), 715–723. https://doi.org/10.1080/08989621.2023.2168535
 
-**Hosseini, M., Resnik, D. B., & Holmes, K.** (2023). "The ethics of disclosing the use of artificial intelligence tools in writing scholarly manuscripts." *Research Ethics*. https://doi.org/10.1177/17470161231180449
+**Hosseini, M., Resnik, D. B., & Holmes, K.** (2023). "The ethics of disclosing the use of artificial intelligence tools in writing scholarly manuscripts." *Research Ethics*, 19(4), 449–465. https://doi.org/10.1177/17470161231180449
 
 **Jollimore, T.** (2025). "I Used to Teach Students. Now I Catch ChatGPT Cheats." *The Walrus*, March 5, 2025. https://thewalrus.ca/i-used-to-teach-students-now-i-catch-chatgpt-cheats/
 
