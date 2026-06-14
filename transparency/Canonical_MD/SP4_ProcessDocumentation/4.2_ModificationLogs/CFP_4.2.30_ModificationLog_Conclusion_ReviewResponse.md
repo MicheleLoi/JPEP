@@ -185,3 +185,13 @@ Cross-references: companion entries are in `CFP_4.2.23` (v5.1 → v5.2, §3.3 su
 
 *Modification Log opened: 2026-04-09*
 *MHC-W v5 | Rules 2, 3, 4*
+
+---
+
+## 2026-06-14 -- Sec.7 tone-down: expert-delegated-approval acknowledgment (CFP_FullPaper v1.23 -> v1.24; SID-20260614-145954)
+
+**Driver.** Author flagged the Sec.7 self-acknowledgment as over-self-deprecating: "...the author's role approximated expert-delegated approval: recognizing an argument as philosophically sound without the capacity to reconstruct it independently." The clause "without the capacity to reconstruct it independently" reads as an inability to follow the reasoning at all.
+
+**Change.** Reframed to a concrete, more defensible limitation: "...approximated expert-delegated approval -- endorsing, for instance, a reading of Sartre as philosophically sound without the specialist's command of the exegetical literature that would be needed to adjudicate scholarly challenges to the interpretation." The admitted limit is now the ordinary one of not being a specialist in a particular thinker's secondary literature, not an inability to reason. Uses Sartre (already engaged in Sec.3.3). Remainder of the paragraph (tracing-condition-inherits-essential-contestedness) unchanged. No citation change.
+
+**Validation:** author-directed ("approvo satre").

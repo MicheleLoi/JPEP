@@ -3,17 +3,20 @@ project: JPEP
 document_type: Type 12 - Section Draft
 label: CFP_5.4.13_SP1
 section: "SP-1 — AI Usage Declaration and Archive Orientation"
-version: v1
+version: v2
 date_created: 2026-04-09
+date_last_updated: 2026-06-14
 status: Draft
 source: "Claude Sonnet 4.6 (Claude Code session)"
-session_id: SID-20260409-150705
+session_id:
+  - SID-20260409-150705
+  - SID-20260614-145954
 produced_by_prompt: ""
 inputs:
   - CFP_5.4.11_SP3.md
   - CFP_5.4.9_Section7_v3.md
   - CFP_5.2.4_pdl_SP1_SP2_SP3.md (PDL-005)
-cfp_target: "AI Tools in Ethics Research (topical collection)"
+cfp_target: "Ethics and Information Technology (Springer)"
 versioning_convention: git_inplace
 word_count: ~700
 ---
@@ -31,7 +34,7 @@ This paper was written with AI assistance throughout. The following records the 
 | v1/v2 | Oct–Nov 2025 | Claude.ai web | Claude Sonnet 4.5 |
 | v1/v2 | Oct–Nov 2025 | ChatGPT | GPT-5 Thinking (paper evaluation; SVG/figure generation) |
 | Stage III | Jan–Mar 2026 | Claude Code | Claude Opus 4.5; Claude Sonnet 4.6 |
-| CFP | Mar–Apr 2026 | Claude Code | Claude Sonnet 4.6; Claude Opus 4.6 |
+| CFP | Mar–Jun 2026 | Claude Code | Claude Sonnet 4.6; Claude Opus 4.6; Claude Opus 4.8 |
 
 Model identity was constant within a session and is recorded in session-level metadata. In Stage III, the author switched from Opus 4.5 to Sonnet 4.6 between two attempts at the same task; the decision and its timing are recorded in the relevant modification log (`III_4.2.13`). In the CFP phase, model selection was explicit and per-task: Sonnet 4.6 for drafting and light revision, Opus 4.6 for deep review, corpus analysis, and sessions requiring extended reasoning.
 
@@ -75,7 +78,7 @@ The authoritative record of session topology is `hub_annotations.yaml` (per-sess
 
 v1/v2 artifacts were AI-generated inside chat sessions (Claude.ai, plus one cross-tool ChatGPT thread) and extracted manually into the archive. Stage III introduced session IDs and Claude Code tooling. CFP added automated frontmatter, hub annotations, and conversation file exports via SessionEnd hook. A frontmatter normalization pass in early April 2026 (`CFP_4.2.26`) brought the entire archive into uniform field conventions.
 
-The CFP adaptation was developed on branch `cfp-ai-ethics-inquiry` and merged into `main` before submission. The full commit history of the branch is preserved in git.
+The CFP adaptation was developed on branch `cfp-ai-ethics-inquiry` and merged into `main` before submission (2026-06-09, commit `f828fe9`). The full commit history of the branch is preserved in git. The integrated master file was subsequently renamed `Full_paper_canonical.md` (2026-06-14, `git mv`); the label `CFP_FullPaper_v1` is retained as a stable cross-reference ID and the CFP lineage is recorded in the `cfp_branch` frontmatter field. The current canonical paper version is v1.24.
 
 ### Entry points
 
@@ -90,4 +93,4 @@ The conversation layer (`06_conversations/`) is described in SP-2 §7.
 
 ---
 
-*SP-1 — SID-20260409-150705.*
+*SP-1 — v1 SID-20260409-150705; v2 SID-20260614-145954 (CFP phase row updated; master-file rename + v1.24 state recorded; target venue updated to Ethics and Information Technology).*

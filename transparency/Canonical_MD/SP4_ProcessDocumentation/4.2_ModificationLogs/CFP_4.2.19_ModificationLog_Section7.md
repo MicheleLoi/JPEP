@@ -343,3 +343,27 @@ The example uses the same artifacts §5.3 has just established (modification log
 **output_completed:**
 - UNRESOLVED: CFP_5.4.9_Section7_v1.md (finalized)
 
+
+---
+
+## 2026-06-14 -- Sec.5.2 Abdulhai empirical citation cut (CFP_FullPaper v1.20 -> v1.21; SID-20260614-145954)
+
+**Driver.** Author flagged the Sec.5.2 sentence -- "Abdulhai et al. (2026) report a 68.9% increase in stance neutralization in LLM-assisted writing -- if the finding generalises, output assessment alone cannot detect what process documentation would reveal" -- as dropped in out of context, the same defect as the Sec.3.7 Schwitzgebel citation (an empirical datum welded to a conceptual point without explanation). Author's verdict: at most a footnote, and only if explained; not retained.
+
+**Change.** Removed the standalone Abdulhai sentence (it sat after the three organizing questions of Sec.5.2, before Sec.5.3). Abdulhai et al. (2026) "How LLMs distort our written language" (arXiv:2603.18161) removed from References in Full_paper_canonical.md and paper_bibliography_FINAL.md (cited only there) -> refs 40 -> 39.
+
+**Verification.** check_references.py -> 39 refs, all cited, all in-text citations resolve; only the standing Earp-2026 / Hosseini-2023 ambiguities remain.
+
+**Note.** Same class as the Schwitzgebel cut (CFP_4.2.23, v1.20): an accurate empirical figure (verified v1.15 against the source PDF) attached to a claim it does not directly support. Sec.5.2's three organizing questions (attribution / intellectual trajectory / understanding-and-endorsement) stand on their own.
+
+---
+
+## 2026-06-14 -- Sec.5.4 third evaluator-community added (CFP_FullPaper v1.21 -> v1.22; SID-20260614-145954)
+
+**Driver.** Author direction: the defense-in-depth passage in Sec.5.4 listed only two communities of evaluators (modlog-focused; section-guidance/traces-focused). Add a third that looks for ingenious / innovative *architectures* of inquiry, with a plausible account of why that is philosophically interesting.
+
+**Change.** Inserted a third evaluator-community after the "Another community..." sentence (replacing the old "Documentation that satisfies the first standard..." closing, generalised to "The criteria are not reducible to a common metric"). The third lens judges the work by the ingenuity of the method it discloses -- whether the author has devised a genuinely new form of inquiry rather than a mechanised rehearsal of the old. Philosophical account: grounded in Sec.3.6's claim that the salient human contribution may migrate "from prompting to steering to perhaps architecture building"; on this lens a work earns its standing by what it builds, not by fidelity to unaided reflection. Reinforces defense-in-depth: a record rich in inventive method may look thin to the first two communities exactly where it impresses the third (criteria irreducible to a common metric).
+
+**No citation change** (refs 39; the addition cross-references Sec.3.6 only). check_references.py clean.
+
+**Author validation:** approved.

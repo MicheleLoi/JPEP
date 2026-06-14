@@ -302,3 +302,15 @@ See `adapt.md` (`section_renumbering`) and `CFP_5.3.26_Note_DecisionRecord_Secti
 **output_completed:**
 - UNRESOLVED: CFP_5.4.3_Introduction_v1.md (finalized)
 
+
+---
+
+## Entry 13 — Sec.1 Hosseini 2023 disambiguation (CFP_FullPaper v1.22 -> v1.23, 2026-06-14)
+
+**Driver.** check_references.py flagged a (Hosseini, 2023) collision: two distinct works share first author + year -- Hosseini, Rasmussen & Resnik (2023) "Using AI to write scholarly publications" and Hosseini, Resnik & Holmes (2023) "The ethics of disclosing...". Sec.1 cited the ambiguous "Hosseini et al. 2023"; Sec.4 already spelled out "Hosseini, Resnik & Holmes (2023)".
+
+**Change.** Sec.1's general literature gesture now cites BOTH works spelled out: "(Hosseini, Rasmussen & Resnik 2023; Hosseini, Resnik & Holmes 2023; Van Woudenberg et al. 2024)". Per APA 8.18 (different author lists -> distinguish in-text by spelling out, not a/b suffixes). Neither reference orphaned. Earp 2026 (two works) already spelled out in Sec.5.4 -> no change.
+
+**Checker refinement.** The ambiguity check now flags a same-first-author/year collision only when the body actually cites it via a short "Surname et al. YEAR" form; spelled-out in-text citations count as resolved (APA 8.18). Post-change: clean.
+
+**Validation:** author-directed ("disambigua").

@@ -3,14 +3,15 @@ project: JPEP
 document_type: Type 12 - Section Draft
 label: CFP_5.4.11_SP3
 section: "SP-3 — Documentation Adequacy Account"
-version: v3.1
+version: v4
 date_created: 2026-04-07
-date_revised: 2026-05-13
+date_revised: 2026-06-14
 status: Draft
 source: "Claude Opus 4.6 (Claude Code session)"
 session_id:
   - SID-20260407-181422
   - SID-20260513-094035
+  - SID-20260614-145954
 produced_by_prompt: ""
 inputs:
   - CFP_4.4.20_SectionGuidance_SP3.md (v7)
@@ -20,8 +21,13 @@ inputs:
   - CFP_5.3.19_Note_SP3_FigureDataSpecs.md
   - CFP_5.4.9_Section7_v3.md
   - "Paper/MDversion/appendix.md (v2 appendix — used as structural model)"
-cfp_target: "AI Tools in Ethics Research (topical collection)"
-word_count: ~4500
+  - "CFP_5.2.7_pdl_LengthOptimization_EthIT.md (2026-06-14 EthIT audit context)"
+  - "CFP_4.2.14 Entry 12 + Entry 13 (Reichenbach + Hosseini disambiguation)"
+  - "CFP_4.2.23 (Option C + Schwitzgebel-cut entries)"
+  - "CFP_4.2.19 (Abdulhai cut + §5.4 third community)"
+  - "CFP_4.2.30 (§7 tone-down)"
+cfp_target: "Ethics and Information Technology (Springer)"
+word_count: ~5200
 section_numbering: pre_renaming
 ---
 
@@ -234,4 +240,56 @@ This is the connection back to Section 3 of the paper, where the essentially-con
 
 ---
 
-*SP-3 — SID-20260407-181422. Figure revisions per CFP_4.2.28 MOD-011 (SID-20260409-132703).*
+## 12. The 2026-06-14 pre-submission pass: what documentation requires and what it surfaces
+
+### 12.1 Context
+
+Between sessions SID-20260609-095833 and the submission, a pre-EthIT pass was conducted on 2026-06-14 (SID-20260614-145954). Its occasion was the desk-rejection by *Philosophy & Technology* (2026-06-02, Floridi as EiC; not a quality verdict) and the decision to target *Ethics and Information Technology* (Springer, double-anonymous, van den Hoven as EiC). The session read the EthIT and SNAPP double-anonymous submission guidelines in the live browser, ran a citation-integrity audit using a new deterministic tool (`check_references.py`, built this session), and then made a sequence of content edits to the integrated paper (`Full_paper_canonical.md`, renamed 2026-06-14 from `CFP_FullPaper_v1.md`). The paper moved from v1.16 to v1.24 across this session, with eight distinct version bumps.
+
+This section records what the audit and edit pass required and what they surfaced — as evidence, in the same register as Parts II–IV, that the documentation system is doing its job.
+
+### 12.2 What the audit required: a new verification layer
+
+The existing documentation system — modlogs, section guidance, chain walks — was designed to track intellectual decisions. Citation accuracy had been verified as part of that system (notably the v1.15 reference audit at SID-20260609-095833, which checked co-author lists and verified empirical claims against source PDFs). But cross-reference integrity — does every in-text citation resolve to a reference-list entry, and does every reference-list entry have at least one in-text citation? — had been checked manually and was error-prone at scale.
+
+`check_references.py` provides a deterministic check: it extracts all in-text citations and all reference-list entries from the canonical Markdown file and reports mismatches. Its creation is documented in `CFP_5.2.7` PDL-001. The tool is local-only (gitignored); its design decision is recorded here as a tooling-layer fact.
+
+**Current state on first run.** The tool confirmed 40 references, all cited, all resolving — with two standing ambiguities flagged: `Hosseini et al. 2023` appeared in §1 as a single shortened citation but resolved to two distinct 2023 works sharing the same first author (Hosseini, Rasmussen & Resnik "Using AI to write scholarly publications" and Hosseini, Resnik & Holmes "The ethics of disclosing…"). The ambiguity was visible to the tool because both full spellings were already present in the reference list. The tool also flagged `Earp 2026` as multiply instantiated; both Earp 2026 entries were already spelled out in-text in §5.4, so no change was needed.
+
+### 12.3 What the audit surfaced: two "accurate-but-irrelevant" citations
+
+The most significant finding of the 2026-06-14 pass was not a fabrication. It was the reverse: two citations whose *accuracy* had been verified at v1.15 (numbers checked against source PDFs) were found, under closer argumentative scrutiny, to be *non sequiturs* — thematically plausible but logically unconnected to the claims they were cited to support.
+
+**The Schwitzgebel citation (§3.7, v1.19 → v1.20; modlog CFP_4.2.23).** §3.7's claim concerns *fake engagement* — text exhibiting every surface marker of genuine philosophical engagement without any corresponding human intellectual process. The citation (Schwitzgebel, Schwitzgebel & Strasser 2024) reported that experts on Daniel Dennett's work could distinguish the real Dennett from a GPT-3 model fine-tuned on his corpus only 51% of the time. The numbers had been verified against the source PDF at v1.15. But the citation did not support the claim: the study measures *author-mimicry* (real Dennett vs. a model trained on Dennett), not process-less fake depth. Decisively, the model's surface markers trace to Dennett's real corpus-process, making it the opposite of "surface markers without any corresponding human process." A two-stage adversarial process was used to reach this verdict: a Sonnet instance constructed the strongest steelman; the main model served as prosecutor. The citation was cut (refs 41 → 40); the §3.7 conceptual claim stands on its own without it.
+
+**The Abdulhai citation (§5.2, v1.21; modlog CFP_4.2.19).** A sentence in §5.2 cited Abdulhai et al. (2026) — the same citation that had been hedged and then compressed in earlier passes — without an explanatory connection to the surrounding argument. In the broader passage context it was "an empirical datum welded in without explanation." The citation was cut (refs 40 → 39).
+
+Both cases represent a failure mode the documentation system is designed to surface but that fabrication-oriented verification pipelines miss: a citation can be *accurate* (the numbers are right, the author list is correct) and *irrelevant* (the inference from the finding to the claim it is cited to support does not hold). The Schwitzgebel modlog entry names this explicitly as a "true-but-inapposite" citation — accurate and irrelevant at once, invisible to accuracy-checking tools. The general mechanism: AI-assisted citation retrieval is thematically oriented (a study about AI and philosophy is a natural candidate for a section about AI and philosophy), but thematic fit is not logical entailment. Verification pipelines that check accuracy do not check relevance.
+
+This is the documentation system doing what it is supposed to do: a close pre-submission reading, scaffolded by the modlog record of prior decisions, surfaced what the prior decision record had not recorded — that the inference had never been explicitly checked. The adversarial process applied to Schwitzgebel is itself a documented audit event (recorded in CFP_4.2.23). The Schwitzgebel case is a worked example of the paper's own thesis: a surface-correct artifact whose underlying support required separate verification — and was found wanting.
+
+### 12.4 Other surface corrections caught in the same pass
+
+The audit also caught three further defects not visible from the content layer alone:
+
+1. **Setext-heading typographic bug (v1.21, CFP_4.2.19).** A missing blank line before a section separator `---` in §4 was rendering the preceding closing paragraph as a Setext H2 heading in the pandoc build. The bug was a collateral effect of the v1.17 compression pass, which had removed a sentence just above the separator without inserting a replacement blank line. The paragraph in question was substantive content, not a heading. Fix: blank line restored.
+
+2. **Three merged reference-list entries in the pandoc build (PDL-001 Tier 1).** Cheng 2025, Lloyd 2025, and Shafer-Landau 2003 were swallowed into their preceding reference entries because the Markdown source lacked blank lines between them. Fixed in `Full_paper_canonical.md`, `Full_paper_submission_anon.md`, and `paper_bibliography_FINAL.md`. The arXiv edition had already been corrected.
+
+3. **Hosseini 2023 in-text disambiguation (v1.23, CFP_4.2.14 Entry 13).** The ambiguous `Hosseini et al. 2023` shortened citation in §1 was expanded to spell out both works (Hosseini, Rasmussen & Resnik 2023 and Hosseini, Resnik & Holmes 2023), consistent with APA 8.18 (different author lists resolved by spelling out, not a/b suffixes). §4 already carried the spelled-out form. `check_references.py` refined to flag same-first-author/year collisions only when the body uses a shortened form; spelled-out citations count as resolved.
+
+### 12.5 What this pass is evidence of
+
+Parts I–IV of SP-3 document the writing process across three phases (v1/v2, Stage III, CFP). The 2026-06-14 pass is a fourth-phase event — a pre-submission audit pass against a new venue, after the paper had already reached a finalized state at v1.16. Its evidential significance for the adequacy criteria is this:
+
+**Attribution.** Every edit in the v1.17–v1.24 sequence has a documented human decision: the author directed the length-optimization pass (and accepted the soft-limit call that halted it at ~8,300 words); the author ran the adversarial citation-audit process and accepted the prosecutor's verdict on Schwitzgebel; the author directed the Abdulhai cut; the author approved the Hosseini disambiguation. None of these were AI-initiated; the modlogs record the author's calls.
+
+**Intellectual trajectory.** The sequence v1.17 → v1.24 is a non-trivial intellectual movement, not housekeeping. Cutting a verified-accurate citation because its inference failed is an intellectual judgment, not a formatting fix. The trajectory from "citation present, numbers verified" to "citation cut, conceptual claim stands on its own" is the kind of movement the trajectory criterion asks documentation to make visible. CFP_4.2.23 makes it visible.
+
+**Understanding and endorsement.** The Schwitzgebel adversarial process is the clearest instance of understanding-grounded judgment in this pass. The author did not defer to the model's initial verdict; the adversarial structure was specifically designed to test whether the citation could survive a determined defence. It did not. The Abdulhai decision was simpler but equally direct: the author read the passage and found it contextually unmoored. Both decisions are endorsed, not delegated. The §7 tone-down (v1.24, CFP_4.2.30) is a further instance: the author found the prior text over-self-deprecating and directed a specific reformulation that named a concrete, defensible limitation (not being a Sartre secondary-literature specialist) rather than a general incapacity.
+
+The 2026-06-14 pass is thus not merely logistical cleanup before submission. It is an evidential event in the documentation record: a pass that re-verified what prior passes had left unverified (citation relevance), caught collateral defects (typographic bugs, merged bibliography entries), and produced a cleaner, more defensible version of the paper through documented human judgment at each step.
+
+---
+
+*SP-3 — SID-20260407-181422. Figure revisions per CFP_4.2.28 MOD-011 (SID-20260409-132703). v4 SID-20260614-145954: §12 added (2026-06-14 pre-submission pass; Schwitzgebel + Abdulhai accurate-but-irrelevant citations; typographic/build defects; check_references.py; adequacy-criteria mapping).*

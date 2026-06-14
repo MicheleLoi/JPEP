@@ -30,8 +30,6 @@ inputs:
 
 ## References
 
-**Abdulhai, M., White, I., Wan, Y., Qureshi, I., Leibo, J., Kleiman-Weiner, M., & Jaques, N.** (2026). "How LLMs distort our written language." arXiv:2603.18161. https://arxiv.org/abs/2603.18161
-
 **ACM.** (2025). "ACM Policy on Authorship." Updated September 16, 2025. https://www.acm.org/publications/policies/new-acm-policy-on-authorship
 
 **BaHammam, A. S.** (2025). "The Transparency Paradox: Why Researchers Avoid Disclosing AI Assistance in Scientific Writing." *Nature and Science of Sleep*, 17, 2569–2574. https://doi.org/10.2147/NSS.S568375

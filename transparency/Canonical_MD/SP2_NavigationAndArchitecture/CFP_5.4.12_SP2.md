@@ -3,7 +3,7 @@ project: JPEP
 document_type: Type 12 - Section Draft
 label: CFP_5.4.12_SP2
 section: "SP-2 — Navigation and Architecture Guide"
-version: v5
+version: v6
 date_created: 2026-04-09
 status: Draft (Phase 5 audit applied)
 source: "Claude Sonnet 4.6 (Claude Code session)"
@@ -13,7 +13,8 @@ session_id:
   - SID-20260513-003000
   - SID-20260513-094035
   - SID-20260514-current
-date_last_updated: 2026-05-14
+  - SID-20260614-145954
+date_last_updated: 2026-06-14
 produced_by_prompt: ""
 inputs:
   - CFP_5.4.11_SP3.md
@@ -22,7 +23,7 @@ inputs:
 cfp_target: "AI Tools in Ethics Research (topical collection)"
 versioning_convention: git_inplace
 word_count: ~2500
-note: "v4 (2026-05-14, SID-20260514-current): archive-audit closure propagation. §4.2 gained `_INDEX_4.2.md` folder-index pointer. §4.4 Stage III phase marked III_4.4.4 and III_4.4.5 as superseded with explicit pointers to CFP_4.4.22 and CFP_4.4.25 (back-link added in same audit). §4.4 CFP phase gained CFP_4.4.23, CFP_4.4.24, CFP_4.4.25 entries (Section 4 collapse + §6.4 gaming-defense absorption + §6 feasibility sketch) plus a footnote explaining the intentional `.17` gap (commit `de15a23` add, `d5af1b6` remove during SP-3 restructure). §5.3 CFP phase gained CFP_5.3.31 (audit-closure milestone). Frontmatter `date_last_updated` bumped; SID-20260514-current added to session_id list. No content beyond inventory propagation — all substantive audit fixes were applied to the artifacts themselves, not to SP-2. v1 (2026-04-09, SID-20260409-150705): initial inventory. v2 (2026-05-13, SID-20260513-003000): SP-1/SP-2/SP-3 moved from 5.4_SectionDrafts/ to top-level sibling folders of SP4_*/SP5_* (commit e317eac); new §5.0 added; §6's §5.4 table trimmed of the three moved rows; §1 updated. v3 (2026-05-13, SID-20260513-003000): Phase 5 dual-auditor pass applied — (A1) reference logs moved from §5/4.1 to new §5/4.6 subsection, §2 ontology Type 6 row corrected (real path: SP-4/4.6, not SP-4/4.1); (A2) §4.1 hubs paragraph rewritten — git history shows the hub .md files were never deleted as adapt.md rule 4 / CFP_5.3.16 claimed; 60 files still present at Canonical_MD/_HUBS/ (not at SP4_ProcessDocumentation/_HUBS/ as previously stated), last regenerated 2026-04-03 (commit de15a23); (A3) new §6/5.1 subsection added inventorying 5.1_paper_prompt_development_log.md; (A4) four new modlogs registered: CFP_4.2.33–36 (AbstractTitle, FullPaperAssembly, v1.2 ReviewerRevisions, v1.3 ReviewerB Integration); (A5) four other late artifacts registered: CFP_4.4.22 (4.4), CFP_4.7.21 (4.7), CFP_5.3.29 (5.3), CFP_5.4.15 (5.4); (A6) three PNG figures added to §4.2 with 'not used in paper body or SP-3' note; §7 updated to point at the new CFP_5.3.30 manifest (separate commit). Held for separate user decision (not registered in this v3): backup zip, orphaned scripts at Canonical_MD/ root, .bak in 4.4_SectionGuidance, .patch.txt in 5.3_Notes, _chainwalk_*.md files, v3_Conversations_Claude_Code/ placeholder, Sources*/ disposition."
+note: "v6 (2026-06-14, SID-20260614-145954): 2026-06-14 session propagation — CFP_4.2.37/38/39 added to §4.2 CFP table; CFP_5.2.7 (length-optimization PDL) added to §5.2; check_references.py tooling artifact noted; target venue updated to Ethics and Information Technology; version/date_last_updated bumped. v4 (2026-05-14, SID-20260514-current): archive-audit closure propagation. §4.2 gained `_INDEX_4.2.md` folder-index pointer. §4.4 Stage III phase marked III_4.4.4 and III_4.4.5 as superseded with explicit pointers to CFP_4.4.22 and CFP_4.4.25 (back-link added in same audit). §4.4 CFP phase gained CFP_4.4.23, CFP_4.4.24, CFP_4.4.25 entries (Section 4 collapse + §6.4 gaming-defense absorption + §6 feasibility sketch) plus a footnote explaining the intentional `.17` gap (commit `de15a23` add, `d5af1b6` remove during SP-3 restructure). §5.3 CFP phase gained CFP_5.3.31 (audit-closure milestone). Frontmatter `date_last_updated` bumped; SID-20260514-current added to session_id list. No content beyond inventory propagation — all substantive audit fixes were applied to the artifacts themselves, not to SP-2. v1 (2026-04-09, SID-20260409-150705): initial inventory. v2 (2026-05-13, SID-20260513-003000): SP-1/SP-2/SP-3 moved from 5.4_SectionDrafts/ to top-level sibling folders of SP4_*/SP5_* (commit e317eac); new §5.0 added; §6's §5.4 table trimmed of the three moved rows; §1 updated. v3 (2026-05-13, SID-20260513-003000): Phase 5 dual-auditor pass applied — (A1) reference logs moved from §5/4.1 to new §5/4.6 subsection, §2 ontology Type 6 row corrected (real path: SP-4/4.6, not SP-4/4.1); (A2) §4.1 hubs paragraph rewritten — git history shows the hub .md files were never deleted as adapt.md rule 4 / CFP_5.3.16 claimed; 60 files still present at Canonical_MD/_HUBS/ (not at SP4_ProcessDocumentation/_HUBS/ as previously stated), last regenerated 2026-04-03 (commit de15a23); (A3) new §6/5.1 subsection added inventorying 5.1_paper_prompt_development_log.md; (A4) four new modlogs registered: CFP_4.2.33–36 (AbstractTitle, FullPaperAssembly, v1.2 ReviewerRevisions, v1.3 ReviewerB Integration); (A5) four other late artifacts registered: CFP_4.4.22 (4.4), CFP_4.7.21 (4.7), CFP_5.3.29 (5.3), CFP_5.4.15 (5.4); (A6) three PNG figures added to §4.2 with 'not used in paper body or SP-3' note; §7 updated to point at the new CFP_5.3.30 manifest (separate commit). Held for separate user decision (not registered in this v3): backup zip, orphaned scripts at Canonical_MD/ root, .bak in 4.4_SectionGuidance, .patch.txt in 5.3_Notes, _chainwalk_*.md files, v3_Conversations_Claude_Code/ placeholder, Sources*/ disposition."
 ---
 
 # SP-2 — Navigation and Architecture Guide
@@ -35,7 +36,7 @@ SP-2 is a map. It describes the architecture of the JPEP documentation archive: 
 
 Read SP-1 before this document for the AI usage declaration and a one-page orientation to the archive. Read SP-3 for the documentation adequacy account — the argument that the record satisfies the attribution, trajectory, and understanding-and-endorsement criteria that Section 7 specifies.
 
-**Provisional note.** File inventories in §§5.0–6 were refreshed 2026-05-12, expanded 2026-05-13 to add §5.0 for the moved SP-1/SP-2/SP-3, audited 2026-05-13 in a dual-auditor Phase 5 enumeration pass (v3), and finalized 2026-05-13 (v5+) with the pipeline relocation. A set of pre-submission exclusions was applied via `.gitignore` in the same session: a pre-CFP backup zip, an orphan utility script, a legacy patch file, three chain-walk scratch notes, an empty placeholder folder, three pre-CFP source-material folders (Sources MD/, Sources word/, Sources_RTF/), and a Deprecated/ folder — all retained locally for the author's reference but excluded from the shipped archive. Rationale recorded in `CFP_session_log.md` SID-20260513-094035 entry; `.gitignore` patterns documented inline.
+**Provisional note.** File inventories in §§5.0–6 were refreshed 2026-05-12, expanded 2026-05-13 to add §5.0 for the moved SP-1/SP-2/SP-3, audited 2026-05-13 in a dual-auditor Phase 5 enumeration pass (v3), finalized 2026-05-13 (v5+) with the pipeline relocation, and updated 2026-06-14 (v6) to propagate the 2026-06-14 session additions (CFP_4.2.37/38/39, CFP_5.2.7, check_references.py). A set of pre-submission exclusions was applied via `.gitignore` in the same session: a pre-CFP backup zip, an orphan utility script, a legacy patch file, three chain-walk scratch notes, an empty placeholder folder, three pre-CFP source-material folders (Sources MD/, Sources word/, Sources_RTF/), and a Deprecated/ folder — all retained locally for the author's reference but excluded from the shipped archive. Rationale recorded in `CFP_session_log.md` SID-20260513-094035 entry; `.gitignore` patterns documented inline.
 
 ---
 
@@ -141,6 +142,8 @@ SP-4 (`transparency/Canonical_MD/SP4_ProcessDocumentation/`) contains process do
 
 Reference logs (Type 6) live in `4.6_ReferenceLogs/` — see §4.6 below.
 
+**Tooling artifact (project root, local-only).** `check_references.py` — a deterministic Python script that verifies every in-text citation against the reference list and reports orphaned or dangling entries. Created 2026-06-14 (SID-20260614-145954); gitignored (local verification tool). Current state: PASS (39 refs as of v1.24; standing flags for Hosseini 2023 ×2 resolved at v1.23 by spelling-out per APA 8.18). Covered in `CFP_5.2.7` PDL-001.
+
 ### 4.2 — Modification Logs (Type 7)
 
 **Folder index:** `_INDEX_4.2.md` (added 2026-05-14) — single-table view of all modlogs by era, with one-line targets per file. The index summarizes the tables below.
@@ -196,6 +199,9 @@ Reference logs (Type 6) live in `4.6_ReferenceLogs/` — see §4.6 below.
 | `CFP_4.2.34_ModificationLog_FullPaperAssembly.md` | CFP_FullPaper assembly + v1.1 cleanup pass (2026-05-12) |
 | `CFP_4.2.35_ModificationLog_FullPaper_v1_2_ReviewerRevisions.md` | v1.2 Reviewer A integration pass (2026-05-12) |
 | `CFP_4.2.36_ModificationLog_FullPaper_v1_3_ReviewerB_Integration.md` | v1.3 Reviewer B integration pass (2026-05-12 → 2026-05-13); MOD-001 through MOD-011 |
+| `CFP_4.2.37_ModificationLog_EarpIntegration_v1_11.md` | CFP_FullPaper v1.10 → v1.11 — Earp corpus integration pass (2026-06-09) |
+| `CFP_4.2.38_ModificationLog_ArchiveTestimonialLayer_v1_12.md` | CFP_FullPaper v1.11 → v1.16 — Archive testimonial layer, compression, Earp-cluster in-text engagement, author-position registration, reference audit (2026-06-09) |
+| `CFP_4.2.39_ModificationLog_FullPaper_MasterHistory.md` | CFP_FullPaper_v1.md master version history v1 → v1.16 (umbrella modlog; 2026-06-10) |
 
 ### 4.3 — Pattern Summaries (Type 4)
 
@@ -379,6 +385,7 @@ Folder: `5.1_PaperPromptDevelopmentLog_Type8a/`. One file.
 | `CFP_5.2.3_pdl_selfexpression_integration.md` | Self-expression / double contestation (PDL-000 through PDL-009) |
 | `CFP_5.2.4_pdl_SP1_SP2_SP3.md` | SP-1/2/3 design (PDL-004 onward; authoritative SP architecture decisions) |
 | `CFP_5.2.5_pdl_AIUsageArchive.md` | AI Usage and Documentation Archive closing note + externalization decision (PDL-001–006, 2026-05-12) |
+| `CFP_5.2.7_pdl_LengthOptimization_EthIT.md` | Length optimization + EthIT conformance audit (PDL-001–004, 2026-06-14); covers the pre-submission audit against EthIT/SNAPP guidelines, the v1.16 → v1.17 low-risk compression pass (19 cuts; body ~8,905 → ~8,300 w), and the deterministic `check_references.py` tooling |
 
 (SP-2 §6 §5.2 inventories Type 8b only; Type 8a lives in `5.1_PaperPromptDevelopmentLog_Type8a/` and is inventoried in §5.1 above.)
 
@@ -531,4 +538,4 @@ The consolidation of II/III/IV into current Section 2 is documented in `4.2.5_Mo
 
 ---
 
-*SP-2 — v1 SID-20260409-150705; v2 SID-20260513-003000 (SP-1/2/3 move); v3 SID-20260513-003000 (Phase 5 dual-auditor pass); v4 SID-20260513-094035 (hub-design rollup recorded); v5 SID-20260513-094035 (§4.1 + §4.2 rewritten to reflect pipeline relocation: hubs + interactive graphs + scripts moved to top-level `_pipeline/` (gitignored, not shipped); SVG figures remain in `transparency/Canonical_MD/_GRAPHS/`; deferred plan in `_pipeline/HUBS_AND_GRAPHS_PLAN.md`).*
+*SP-2 — v1 SID-20260409-150705; v2 SID-20260513-003000 (SP-1/2/3 move); v3 SID-20260513-003000 (Phase 5 dual-auditor pass); v4 SID-20260513-094035 (hub-design rollup recorded); v5 SID-20260513-094035 (§4.1 + §4.2 rewritten to reflect pipeline relocation: hubs + interactive graphs + scripts moved to top-level `_pipeline/` (gitignored, not shipped); SVG figures remain in `transparency/Canonical_MD/_GRAPHS/`; deferred plan in `_pipeline/HUBS_AND_GRAPHS_PLAN.md`); v6 SID-20260614-145954 (2026-06-14 session propagation: CFP_4.2.37/38/39 added to §4.2 CFP table; CFP_5.2.7 added to §5.2; check_references.py tooling artifact noted under §4.1; target venue updated to Ethics and Information Technology).*
