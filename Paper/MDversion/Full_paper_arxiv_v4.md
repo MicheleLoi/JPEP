@@ -7,6 +7,9 @@ version: "v4"
 date: 2026-06-10
 based_on: "Paper/MDversion/CFP_FullPaper_v1.md (v1.16, 2026-06-10)"
 archive: "https://github.com/MicheleLoi/JPEP (transparency/)"
+status: "FROZEN — genetic/historical reference only (NOT the live paper)"
+superseded_by: "Paper/MDversion/Full_paper_canonical.md (live canonical; this edition was derived from it under its former name CFP_FullPaper_v1.md at v1.16)"
+note_2026_06_14: "Retained as the genetic record of the public arXiv v4 derivation. Known defect: 3 reference entries render merged (Blackburn+Cheng, Levy+Lloyd, Science+Shafer-Landau — missing blank lines), so the list shows 37 visually-distinct entries instead of 40; the public arXiv PDF was hand-corrected, this .md was not. Do NOT re-derive over this file (it would lose the genetic snapshot); generate any new arXiv edition from the canonical via derive_distributions.py to a new filename."
 ---
 
 **Michele Loi, PhD**  

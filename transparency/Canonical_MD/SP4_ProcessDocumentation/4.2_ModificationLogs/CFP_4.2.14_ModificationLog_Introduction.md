@@ -9,9 +9,11 @@ models:
   - "Claude Sonnet 4.6 (2026-03-03, initial draft + revisions)"
   - "Claude Opus 4.6 (2026-03-03, Reviewer B — two review rounds)"
 date_started: 2026-03-03
-date_last_updated: 2026-05-12
-status: "Finalized (2026-03-03); post-finalization amendments 2026-03-12"
-session_id: SID-20260303-102634
+date_last_updated: 2026-06-14
+status: "Finalized (2026-03-03); post-finalization amendments through 2026-06-14 (reactivated for integrated-paper edits)"
+session_id:
+  - SID-20260303-102634
+  - SID-20260614-145954
 source_conversation: "JPEP_20260303_102634.md"
 inputs:
   - "CFP_5.4.3_Introduction_v1.md"
@@ -259,6 +261,27 @@ See `adapt.md` (`section_renumbering`) and `CFP_5.3.26_Note_DecisionRecord_Secti
 > Section 2 examines structural barriers to disclosure. Section 3 develops the essentially-contested argument. Section 4 addresses conditions for adequate transparency. Section 5 specifies the framework. Section 6 addresses community assessment of documentation adequacy. Section 7 concludes. A closing note describes the documentation archive associated with this paper.
 
 **Why:** Per CFP_5.2.5 (PDL-002): the closing note is unnumbered, placed between §7 Conclusion and References, matching journal practice for Data Availability Statements. The roadmap must therefore name the closing note explicitly without ascribing a section number to it.
+
+---
+
+## Post-Finalization: Reichenbach reference for the discovery/justification distinction (2026-06-14)
+
+**Session:** SID-20260614-145954
+
+### Entry 12 — Canonical reference added: Reichenbach (1938) at the context-of-discovery/justification sentence (§1)
+
+**Change:** In §1, the cognitivist objection's sentence — "Process transparency confuses the context of discovery with the context of justification" — now carries its canonical attribution: `(Reichenbach 1938)`. The discovery/justification distinction originates with Hans Reichenbach, *Experience and Prediction* (1938); citing it grounds the objector's framing in its source rather than presenting the distinction as authorless.
+
+**Type:** Evidence Update (citation addition; no change to the argument).
+
+**Applied to:** the integrated paper `Full_paper_canonical.md` §1 (v1.17 → v1.18), per the modlog-routing convention — integrated-paper edits are recorded in section-level modlogs, not the frozen source draft `CFP_5.4.3`.
+
+**Reference added:** `Reichenbach, H. (1938). Experience and Prediction: An Analysis of the Foundations and the Structure of Knowledge. Chicago: University of Chicago Press.` — inserted alphabetically (between Porsdam Mann 2023 and Resnik & Hosseini 2025) in both `Full_paper_canonical.md` References and `paper_bibliography_FINAL.md`. Reference count 40 → 41.
+
+**User decision:**
+> "small change (activate modlog for the intro) 'Process transparency confuses the context of discovery with the context of justification.' add the reichenbach canonical reference"
+
+**Why:** The distinction is the objector's strongest framing and is doing real argumentative work; attributing it to its source is scholarly accuracy and pre-empts a referee flagging the missing canonical citation. The objection's force is unchanged.
 
 ---
 

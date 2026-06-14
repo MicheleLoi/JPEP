@@ -235,7 +235,7 @@ No page numbers needed; cited by standard textual divisions.
 The following were present in the v1 baseline but not carried forward to the CFP adaptation:
 - **Chiriatti et al. (2024)** — present in v1 baseline; not carried forward to CFP adaptation (original context not documented)
 - **Rawls, J. (1971)** — present in v1 baseline; not carried forward to CFP adaptation
-- **Reichenbach, H. (1938)** — present in v1 baseline; not carried forward to CFP adaptation
+- **Reichenbach, H. (1938)** — present in v1 baseline; dropped in CFP adaptation (had cited a since-removed paragraph rejecting the discovery/justification framework, per CFP_4.2.18); **re-introduced 2026-06-14 at v1.18** to attribute the distinction in the §1 cognitivist objection (CFP_4.2.14 Entry 12) — no longer removed
 
 ---
 

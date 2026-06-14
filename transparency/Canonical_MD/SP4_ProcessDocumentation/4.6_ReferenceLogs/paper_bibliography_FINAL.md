@@ -39,6 +39,7 @@ inputs:
 **Berg, A., & Robbins, H.** (2025). "The Cognitive Divide." *The Point*. https://thepointmag.substack.com/p/the-cognitive-divide
 
 **Blackburn, S.** (1993). *Essays in Quasi-Realism*. New York: Oxford University Press.
+
 **Cheng, Z., Zhang, Z., Xu, Q., Maeda, Y., & Gu, P.** (2025). "A meta-analysis addressing the relationship between self-regulated learning strategies and academic performance in online higher education." *Journal of Computing in Higher Education*, 37(1), 195–224. https://doi.org/10.1007/s12528-023-09390-1
 
 **COPE Council.** (2024). "COPE position — Authorship and AI." Committee on Publication Ethics. https://doi.org/10.24318/cCVRZBms
@@ -70,6 +71,7 @@ inputs:
 **Kierkegaard, S.** (1992). *Concluding Unscientific Postscript to Philosophical Fragments* (H. V. Hong & E. H. Hong, Trans.). Princeton: Princeton University Press. (Original work published 1846)
 
 **Levy, N.** (2025). "Responsibility is not required for authorship." *Journal of Medical Ethics*, 51(4), 230–232. https://doi.org/10.1136/jme-2024-109912
+
 **Lloyd, D.** (2025). "Epistemic responsibility: toward a community standard for human-AI collaborations." *Frontiers in Artificial Intelligence*, 8, 1635691. https://doi.org/10.3389/frai.2025.1635691
 
 **Lund, B. D., & Naheem, K. T.** (2023). "Can ChatGPT be an author? A study of artificial intelligence authorship policies in top academic journals." *Learned Publishing*. https://doi.org/10.1002/leap.1582
@@ -84,6 +86,8 @@ inputs:
 
 **Porsdam Mann, S., Earp, B. D., Møller, N., Vynn, S., & Savulescu, J.** (2023). "AUTOGEN: A personalized large language model for academic enhancement — ethics and proof of principle." *The American Journal of Bioethics*, 23(10), 28–41. https://doi.org/10.1080/15265161.2023.2233356
 
+**Reichenbach, H.** (1938). *Experience and Prediction: An Analysis of the Foundations and the Structure of Knowledge*. Chicago: University of Chicago Press.
+
 **Resnik, D. B., & Hosseini, M.** (2025). "Disclosing artificial intelligence use in scientific research and publication: When should disclosure be mandatory, optional, or unnecessary?" *Accountability in Research*, 33(2). https://doi.org/10.1080/08989621.2025.2481949
 
 **Santoni de Sio, F., Faber, N. S., Savulescu, J., & Vincent, N. A.** (2016). "Why Less Praise for Enhanced Performance? Moving Beyond Responsibility-Shifting, Authenticity, and Cheating Toward a Nature-of-Activities Approach." In F. Jotterand & V. Dubljević (Eds.), *Cognitive Enhancement: Ethical and Policy Implications in International Perspectives* (pp. 27–41). Oxford: Oxford University Press. https://doi.org/10.1093/acprof:oso/9780199396818.003.0003
@@ -94,9 +98,8 @@ inputs:
 
 **Schilke, O., & Reimann, M.** (2025). "The transparency dilemma: How AI disclosure erodes trust." *Organizational Behavior and Human Decision Processes*, 188, 104405. https://doi.org/10.1016/j.obhdp.2025.104405
 
-**Schwitzgebel, E., Schwitzgebel, D., & Strasser, A.** (2024). "Creating a Large Language Model of a Philosopher." *Mind & Language*. https://doi.org/10.1111/mila.12466
-
 **Science.** (2023). "Science Journals: Editorial Policies." https://www.science.org/content/page/science-journals-editorial-policies
+
 **Shafer-Landau, R.** (2003). *Moral Realism: A Defence*. Oxford: Oxford University Press.
 
 **Strathern, M.** (1997). 'Improving ratings': Audit in the British University system. *European Review*, 5(3), 305–321.

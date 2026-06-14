@@ -873,3 +873,25 @@ The anticipated close above was premature. All v1.12 carry-forward items were re
 - Empty `goal` fields for most 2026-06-12 sessions remain backfillable from the exports.
 
 **Session continues; close at `/mhc-end`.**
+
+## 2026-06-14 -- SID-20260614-145954 (one conversation; hook-refingerprinted through SID-20260614-195600, all exported)
+
+**Goal:** Pre-submission re-check of citations (reference list + final built PDF) against the Ethics and Information Technology (EthIT) guidelines; then a cascade of targeted edits.
+
+**Mode:** as-we-go (recorded in modlogs/PDL as work proceeded).
+
+**Done (paper now at v1.20 on `main`; all uncommitted):**
+- Read EthIT + SNAPP double-anon guidelines in-browser (Chrome MCP). Required style = APA-7 (deferred to end); manuscript must be an editable .docx (NOT a PDF); keywords 4-6 + Declarations + Data-Availability via the Snapp interface; "approx. 8000" word max treated as a soft limit (accepted ~8,300 body).
+- Built `check_references.py` (project root, gitignored): deterministic forward/reverse/ambiguity check on the md. Standing collisions flagged: Hosseini-2023 x2, Earp-2026 x2. Also caught that `Full_paper_arxiv_v4.md` still has 3 merged reference pairs (its docx is 2/3-corrected) -- arXiv left as a frozen genetic reference.
+- Fixed the Tier-1 reference-merge defect (3 blank lines) in the EthIT sources.
+- v1.17: 19-cut low-risk compression (redundancy only; body 8,905 -> 8,299 w). PDL CFP_5.2.7.
+- Rename: CFP_FullPaper_v1.md -> Full_paper_canonical.md (git mv; label CFP_FullPaper_v1 kept as cross-ref ID; cfp_branch added; build scripts + adapt.md + CFP_5.2.7 path-refs updated; Adaptation Log entry).
+- v1.18: Reichenbach (1938) added to Sec.1 (context-of-discovery/justification attribution; a v1-baseline ref dropped in CFP adaptation, re-introduced). Modlog CFP_4.2.14 Entry 12.
+- v1.19: Sec.3.3/3.4 de-duplication (Option C -- output-evaluation conclusion drawn once, in 3.4). Modlog CFP_4.2.23.
+- v1.20: Sec.3.7 Schwitzgebel citation CUT. An adversarial Sonnet-defender / main-model-prosecutor process found it a non sequitur (the study measures author-mimicry of a genuinely deep philosopher, not process-less "fake depth"); refs 41 -> 40. Modlog CFP_4.2.23. Survival note: the citation was accurate (numbers verified v1.15) yet irrelevant -- a "true-but-inapposite" citation invisible to fabrication checks; flagged as candidate SP-3 worked example.
+
+**Detail:** RESUME HERE in CFP_5.3.1 (refreshed this session) is the canonical state; per-change detail in CFP_5.2.7, CFP_4.2.14, CFP_4.2.23.
+
+**Next:** commit v1.17->v1.20 + rename; generate anon .docx; keywords / Declarations / non-anon title page / APA-7 restyle at end; disambiguate Hosseini / Earp (a/b).
+
+---

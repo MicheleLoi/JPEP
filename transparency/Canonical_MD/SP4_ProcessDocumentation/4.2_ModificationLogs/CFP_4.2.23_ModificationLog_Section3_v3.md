@@ -4,12 +4,13 @@ document_type: Type 3 - Modification Log
 label: CFP_4.2.23_ModificationLog_Section3_v3
 title: "Modification Log: Section 3 v2 → v3 → v4 → v5 → v5.1 (Two-Order Restructuring; Cordasco Objection-Response; Reproducibility Disanalogy; O2 Scope Clarification)"
 date_created: 2026-04-03
-date_last_modified: 2026-05-12
+date_last_modified: 2026-06-14
 status: Draft
 source: "Claude Opus 4.6 (Claude Code session) / Claude Sonnet 4.6 for v4 entry"
 session_id:
   - SID-20260403-093628
   - SID-20260512-154043
+  - SID-20260614-145954
 related:
   - "CFP_5.4.4_Section3_v2.md (input: v2 draft)"
   - "CFP_5.4.4_Section3_v3.md (output: v3 draft, in-place-updated to v4 then v5)"
@@ -319,3 +320,57 @@ Dropped: the bold-labelled three-paragraph format; the cross-reference "— a po
 ## Status (v5.2)
 
 Draft — applied to file at CFP_FullPaper v1.10; pending user review of the new §3.3 in context after commit.
+
+---
+
+## §3.3 / §3.4 de-duplication (Option C) — CFP_FullPaper v1.18 → v1.19 (SID-20260614-145954)
+
+**Driver.** On a close read the author found §3.4 ("Why Output-Evaluation Fails in Ethics") repetitive. Diagnosis (confirmed against the text, and matching item 4 of the Opus length review in `CFP_5.2.7`): the output-evaluation conclusion was being drawn **twice** — once in §3.3 (a standalone "This essential contestedness has a direct consequence… no one can silently assume that output-evaluation suffices… impose one contested conception as settled… Transparency is the condition…") and again in §3.4 as the reply to the explicitly-posed cognitivist objection. The "cognitivist conditional" sentence recurred three times across §1, §3.3, §3.4. §3.4's only non-redundant content was the scope qualification (simple applied ethics may not need process information). The v1.17 compression pass had tightened §3.4 internally but left the cross-section overlap.
+
+**Decision — Option C (re-divide labour).** §3.3 now establishes essential contestedness + the agent-integrity grounding (bad-faith *stance* + Williams); §3.4 becomes the single site where the cognitivist objection is posed and the output-evaluation conclusion is drawn. Chosen over Option A (compress §3.4 to a back-pointer) and Option B (fold the qualification into §3.3 and delete §3.4) because C gives each subsection one distinct job rather than papering over the overlap.
+
+**Changes applied to `Full_paper_canonical.md`:**
+
+1. **§3.3 — cut the standalone epistemic-conclusion paragraph** (~75w). Its payoff sentence ("Transparency is the condition under which each position can assess work on its own terms") is relocated to §3.4 (change 4).
+2. **§3.3 — bad-faith paragraph rewired** so it neither presupposes the cut paragraph nor pre-empts §3.4's epistemic point. Opening "The point extends beyond epistemology. The cognitivism/non-cognitivism dispute is visible…" → "This contestedness is visible…"; closing "Where essential contestedness shows the output-only assumption to be epistemically unjustified, the access-and-refusal structure shows that maintaining it is a stance…" → "Maintaining the output-only default, in full view of the unsettled dispute, is a stance one takes, not a neutral starting point." The paragraph now characterises the *stance* (bad faith); the epistemic justification is deferred to §3.4. Sartre 1956 retained.
+3. **§3.4 — explicit §3.3→§3.4 connector** at the reply opening: "This objection deserves a serious reply" → "This objection deserves a serious reply, and the essential contestedness just established supplies it."
+4. **§3.4 — relocated payoff** at the reply close: "…imposes one party's standards on a community that has yet to converge. **Process transparency is the condition under which each position can assess the work on its own terms.**"
+
+**Effect.** The output-evaluation conclusion now appears in §1 (preview) + §3.4 (the reply), not three times; §3.3 keeps only the bad-faith *stance* flavour. Net ~−80w body. **No citation change** (Sartre / Williams / Moseley retained; re-verified via `check_references.py` — 41 refs, all cited, all in-text citations resolve). One follow-on defect caught and fixed in the same pass: deleting the §3.3 paragraph had collapsed the blank line between the Gallie paragraph and the bad-faith paragraph (they would have rendered as one merged paragraph); blank line restored.
+
+**Affected files:**
+- `Paper/MDversion/Full_paper_canonical.md` (v1.18 → v1.19; primary edit target). The frozen section draft `CFP_5.4.4_Section3` is **not** re-versioned — integrated-paper edits route here per the SID-20260513-003000 convention.
+
+**Routing note.** Integrated-paper edit recorded against the section-level modlog. The section-draft version line of this log (… → v5.2) is unchanged; the integrated-paper version is v1.19.
+
+## Status (v1.19 / Option C)
+
+Draft — applied to `Full_paper_canonical.md` at v1.19; references re-verified clean. Pending user review of the new §3.3 / §3.4 in context.
+
+---
+
+## §3.7 — Schwitzgebel empirical citation cut (non sequitur) — CFP_FullPaper v1.19 → v1.20 (SID-20260614-145954)
+
+**Driver.** The author flagged the empirical anchor in §3.7 ¶3 as an unclear connection. A two-stage adversarial process was run: a Sonnet "defence advocate" built the strongest steelman + reconstructed the plausible genesis; the prosecution was completed by the main model (the second Sonnet did not spawn — session usage limit). The connection did not survive.
+
+**Cut passage.** "Early empirical work supports the trajectory: Schwitzgebel, Schwitzgebel & Strasser (2024) found that experts on Daniel Dennett's work could distinguish Dennett's own answers from those of a GPT-3 model fine-tuned on his corpus only 51% of the time — above chance (20%) but well below the hypothesized 80%."
+
+**Why it is a non sequitur.** §3.7's claim concerns *fake engagement* — text with "every surface marker of genuine philosophical engagement … without any corresponding human intellectual process." Schwitzgebel measures *author-mimicry*: whether experts can distinguish the real Dennett from a model fine-tuned on his corpus. Decisive: (1) the study has **no shallow / process-less condition** — both stimuli carry Dennett-depth (live vs corpus-borrowed), so a study with no fake-depth stimulus cannot bear on whether fake depth passes; (2) the model's surface markers **do** trace to a real human process (Dennett's, crystallised in the corpus), making it the *worst* illustration of "surface markers without any corresponding human process" — it is ventriloquism of a genuinely deep philosopher, the opposite of manufacturing absent depth. Every strong defence (incl. the *a fortiori*) smuggled one premise: "distinguishing the philosopher from his imitator = detecting whether genuine engagement occurred" — false, because both stimuli are engaged-seeming.
+
+**Decision — CUT** (over revise). The conceptual claim is close to common ground for a 2026 philosophy readership and needs no empirical anchor; the only honest empirical use would be a study of *simulated-absent* depth, not author-mimicry. Cutting loses nothing argumentatively (Opus length-review concurred).
+
+**Changes to `Full_paper_canonical.md`:**
+1. §3.7 ¶3 — empirical sentence + "Early empirical work supports the trajectory:" lead-in removed; "…without any corresponding human intellectual process." now joins directly to "This is not the familiar risk…". The "qualitative break in the signal-to-process inference" stands as a conceptual claim.
+2. References — **Schwitzgebel, Schwitzgebel & Strasser (2024)** removed (cited only in §3.7) from both `Full_paper_canonical.md` and `paper_bibliography_FINAL.md` → refs **41 → 40**.
+
+**Verification.** `check_references.py` → 40 refs, all cited, every citation resolves, no new orphan/dangling (only the standing Earp-2026 / Hosseini-2023 ambiguities remain). §7 Conclusion callback (l.270) references §3.7's general point, not the study — no change needed.
+
+**Survival note.** The v1.15 reference audit verified the Schwitzgebel *numbers* (51% / 20% / 80%) against the source PDF — *accuracy* was checked, the inference's *relevance* was not. Result: a "true-but-inapposite" citation — accurate and irrelevant at once, invisible to fabrication-oriented checks. General failure mode for AI-assisted scholarship: models retrieve thematically-perfect citations (thematic fit ≠ logical entailment), and verification pipelines check accuracy, not relevance. **Candidate for SP-3 (Documentation Account):** the error instantiates the paper's own thesis — a surface-correct artifact whose underlying support had to be separately verified — a clean worked example of why the process/audit trail matters. Flagged for the archive, not added to the body.
+
+**Affected files:**
+- `Paper/MDversion/Full_paper_canonical.md` (v1.19 → v1.20; §3.7 + References).
+- `transparency/Canonical_MD/SP4_ProcessDocumentation/4.6_ReferenceLogs/paper_bibliography_FINAL.md` (Schwitzgebel entry removed).
+
+## Status (v1.20)
+
+Draft — applied to `Full_paper_canonical.md` at v1.20; references re-verified clean (40). Pending user review of the trimmed §3.7 in context.
