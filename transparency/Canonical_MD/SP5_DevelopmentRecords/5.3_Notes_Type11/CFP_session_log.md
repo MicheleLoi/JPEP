@@ -895,3 +895,23 @@ The anticipated close above was premature. All v1.12 carry-forward items were re
 **Next:** commit v1.17->v1.20 + rename; generate anon .docx; keywords / Declarations / non-anon title page / APA-7 restyle at end; disambiguate Hosseini / Earp (a/b).
 
 ---
+
+## 2026-06-22 -- SID-20260622-113730 (recovery of June-19 parallel-laptop edits + two-repo sync split)
+
+**Goal:** A "final" draft still showed the Dennett/Schwitzgebel paragraph the latest reflections had cut -- diagnose via git, recover the genuine June-19 edits, produce a non-stale anonymized submission docx, and fix the cross-machine sync that caused the mess.
+
+**Mode:** as-we-go (modlog CFP_4.2.40 + decision note CFP_5.3.35).
+
+**Diagnosis (what git showed):** Two timelines diverged after 12 June and were never merged -- Resilio Sync overlaid the parallel laptop's filesystem (incl. a stale `.git/index` dated 19 June) onto this machine, corrupting the index (phantom rename + ~13 phantom-modified files identical to HEAD). This machine's line had advanced to v1.24 (Dennett/Schwitzgebel cut at v1.20); the parallel laptop forked at v1.14 and the author hand-edited the anonymized **.docx** in Word on 19 June. Because .docx is gitignored, **git never tracked those edits** -- recovered by converting the docx to text and word-diffing it against its v1.14 source. On-disk `CFP_FullPaper_v1.md` (v1.14) was byte-identical to git, confirming the edits lived only in the docx.
+
+**Done (paper now at v1.25 on `main`, committed `863969e` + pushed):**
+- Backed up the irreplaceable June-19 artifacts to `_recovery_20260622/` before touching anything.
+- Harvested 5 of 6 June-19 edits onto v1.24 (E6 already subsumed). The one genuine fork -- the §3.3 Williams close, where v1.24 and the 19-June draft had cut opposite halves -- was surfaced to the author, who chose **Option B**: cut the "Legibility before that community" restatement, restore the "both deployments work against erasure" capstone ("keep mine, the AI option keeps the typical AI slogan that is not really good at explaining"). Also "external goods" -> "external moral goals/goods" (x2) and the reproducibility "third defeat" meta-sentence cut. Modlog **CFP_4.2.40**.
+- Re-derived anon + arXiv from v1.25 (`derive_distributions.py` repointed off the stale `CFP_FullPaper_v1.md` -> `Full_paper_canonical.md`; blocklist guard passed). Built + verified **`Paper/journal/Full_paper_submission_anon.docx`** -- Dennett/Schwitzgebel gone, the 5 edits in, zero author tokens. **Authoritative anonymized submission file.**
+- **Two-repo sync split implemented** (decision **CFP_5.3.35**): public **JPEP** (transparency/ + Paper/MDversion/, pushed) + new private **JPEP-private** (all gitignored working materials; 287 files; pushed to github.com/MicheleLoi/JPEP-private). Root cause: a file-syncer must never touch a live `.git/`. Author de-synced the Resilio parent folder.
+
+**Next (deliberate follow-up, next session):** clean cut -- delete the gitignored duplicates from JPEP + repoint script paths to `../JPEP/...`; optional relocate of JPEP out of the `switchdrive\` path. EthIT submission items carry forward (keywords, Declarations, non-anon title page, APA-7 restyle, Hosseini/Earp a/b, cover letter).
+
+**Detail:** RESUME HERE in CFP_5.3.1 (refreshed this session) is canonical; per-change detail in CFP_4.2.40 + CFP_5.3.35.
+
+---

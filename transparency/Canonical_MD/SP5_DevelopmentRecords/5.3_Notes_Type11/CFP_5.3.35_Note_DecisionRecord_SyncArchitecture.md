@@ -23,9 +23,16 @@ validation: approved
 
 # NOTE_CFP_5.3.35: Two-Repo (public/private) Sync Architecture — Decision + Migration Plan
 
-> **Status: Active — execution deferred to the next session.** This note is the
-> briefing to act on. Do the migration, then mark `status: Done` and record the
-> outcome in `CFP_session_log.md`.
+> **Status: largely EXECUTED 2026-06-22 (SID-20260622-113730).** Both repos now exist
+> and are pushed: public **JPEP** + private **JPEP-private** (287 files). What remains is
+> the *clean cut* — delete the gitignored duplicates from JPEP and repoint script paths
+> to `../JPEP/...` — plus an optional relocation of JPEP out of the `switchdrive\` path.
+>
+> **Correction (2026-06-22):** the active file-syncer was **Resilio Sync**, not Switchdrive.
+> The folder is named `switchdrive\` for legacy reasons but the Switchdrive client is no
+> longer in use; every "Switchdrive" below should read "Resilio Sync" (the principle —
+> never sync a live `.git/` — is syncer-agnostic). The author de-synced the Resilio parent
+> folder in place rather than moving the repo out.
 
 ---
 
