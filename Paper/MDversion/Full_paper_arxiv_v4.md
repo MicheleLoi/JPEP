@@ -5,7 +5,7 @@ affiliation: "University of Milan"
 email: "michele.loi@unimi.it"
 version: "v4"
 date: 2026-06-10
-based_on: "Paper/MDversion/Full_paper_canonical.md (v1.27, 2026-06-10)"
+based_on: "Paper/MDversion/Full_paper_canonical.md (v1.28, 2026-06-10)"
 archive: "https://github.com/MicheleLoi/JPEP (transparency/)"
 ---
 
@@ -256,7 +256,7 @@ Blackburn, S. (1993). *Essays in Quasi-Realism*. New York: Oxford University Pre
 
 Cheng, Z., Zhang, Z., Xu, Q., Maeda, Y., & Gu, P. (2025). "A meta-analysis addressing the relationship between self-regulated learning strategies and academic performance in online higher education." *Journal of Computing in Higher Education*, 37(1), 195–224. https://doi.org/10.1007/s12528-023-09390-1
 
-COPE Council. (2024). "COPE position — Authorship and AI." Committee on Publication Ethics. https://doi.org/10.24318/cCVRZBms
+COPE Council. (2024). "Authorship and AI tools." Committee on Publication Ethics. https://doi.org/10.24318/cCVRZBms
 
 Cordasco, C. L. (2026a). "The Invisible Upside of Cognitive Offloading." *Paperclips and Other Alignment Problems* (Substack), 1 February 2026. https://carlolc.substack.com/p/the-invisible-upside-of-cognitive
 
