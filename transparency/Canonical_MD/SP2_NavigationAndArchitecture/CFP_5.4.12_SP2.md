@@ -126,7 +126,7 @@ The three orientation documents lifted from the paper body by the 2026-05-12 ext
 
 The `document_type: Type 12 - Section Draft` frontmatter on these files is a vestige of their pre-externalization filing as section drafts inside SP-5/5.4. It is retained as a known imprecision until a project decision is made about what to relabel them; this does not affect their function as top-level archive parts.
 
-The closing-note `CFP_5.4.14_AIUsageArchive.md` is **not** an archive part — it is the unnumbered closing section that remains in the paper body and introduces this archive. It is inventoried in §6's §5.4 table.
+The note `CFP_5.4.14_AIUsageArchive.md` is **not** an archive part — it introduces this archive. Through v1.26 it was the unnumbered closing section of the paper body; as of v1.27 (CFP_4.2.42) it has been moved out of the body to an anonymized **Supplementary Material** file for the EthIT submission. It is inventoried in §6's §5.4 table.
 
 ---
 
@@ -478,7 +478,7 @@ Folder: `5.1_PaperPromptDevelopmentLog_Type8a/`. One file.
 | `CFP_5.4.8_Section6_v4.md` | Section 6 | legacy_multifile |
 | `CFP_5.4.9_Section7_v3.md` | Section 7 | legacy_multifile |
 | `CFP_5.4.10_Conclusion_v1.md` | Conclusion | legacy_multifile |
-| `CFP_5.4.14_AIUsageArchive.md` | AI Usage and Documentation Archive (unnumbered closing note in the paper body; introduces the externalized archive) | git_inplace |
+| `CFP_5.4.14_AIUsageArchive.md` | AI Usage and Documentation Archive (was the unnumbered closing note in the body through v1.26; moved to anonymized Supplementary Material at v1.27, CFP_4.2.42; introduces the externalized archive) | git_inplace |
 | `CFP_5.4.15_Abstract_v1.md` | Abstract draft (2026-05-12); modlog: CFP_4.2.33 | git_inplace |
 
 > **Note (2026-05-13).** SP-1 / SP-2 / SP-3 were previously listed here (`CFP_5.4.13_SP1.md`, `CFP_5.4.12_SP2.md`, `CFP_5.4.11_SP3.md`). At commit `e317eac` they moved to top-level sibling folders of SP-4 / SP-5 and are now inventoried in §5.0 above. `git log --follow` traverses the rename.
@@ -531,7 +531,7 @@ The paper's section numbering changed across phases as the argument was reorgani
 | VIII — [original §8] | §5 | Mandatory Transparency in Practice |
 | IX — [original §9] | §6 | Community Assessment of Documentation Adequacy |
 | Conclusion | §7 | Conclusion |
-| — | (unnumbered closing note) | AI Usage and Documentation Archive (added 2026-05-12; introduces the externalized SP-1–SP-5 archive) |
+| — | (closing note → Supplementary Material at v1.27) | AI Usage and Documentation Archive (added 2026-05-12 as the body's closing note; moved to anonymized Supplementary Material at v1.27, CFP_4.2.42; introduces the externalized SP-1–SP-5 archive) |
 | Appendix A | (eliminated) | Replaced by SP-1/SP-2/SP-3 in 2026-03-02 SP reconception; SP-1/SP-2/SP-3 externalized to documentation archive 2026-05-12 |
 
 The consolidation of II/III/IV into current Section 2 is documented in `4.2.5_ModificationLog_Section_II-III-IV_Consolidation__S02.md`. The elimination of former Section 4 (old VI) and the appendix are documented in `CFP_5.2.4_pdl_SP1_SP2_SP3.md` (PDL-004). The SP reconception that replaced the appendix with SP-1/2/3 is documented in `III_4.7.3_MHC_Tracing_SP_Reconception.md`. The 2026-04-09 renumbering (which shifted old §5/§6/§7/§8 to current §4/§5/§6/§7) is documented in `CFP_5.3.26_Note_DecisionRecord_SectionRenumbering.md`. The 2026-05-12 externalization of SP-1/SP-2/SP-3 from paper body to documentation archive is recorded in `CFP_5.2.5_pdl_AIUsageArchive.md` (PDL-001).

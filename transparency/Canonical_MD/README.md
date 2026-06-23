@@ -1,7 +1,7 @@
 # Documentation Structure, Provenance, and Metadata
 
 This directory contains the **process documentation materials** associated with the JPEP paper.
-The conceptual role and justification of these artifacts are explained in the paper itself, in §6 ("Community Assessment of Documentation Adequacy") and in the closing **AI Usage and Documentation Archive** note that follows the conclusion.
+The conceptual role and justification of these artifacts are explained in the paper itself, in §6 ("Community Assessment of Documentation Adequacy") and in the **AI Usage and Documentation Archive** note — through v1.26 the paper's closing section, and as of v1.27 provided as anonymized Supplementary Material with the submission.
 
 The archive is also accompanied by three documents that exist *inside* this directory and that an external reader should consult before, or alongside, the underlying materials:
 
@@ -100,6 +100,6 @@ The paper explains:
 - what epistemic role they play (§5: documentation as tracking, not reproducibility),
 - what assessment of the apparatus must enable (§6: the three criteria),
 - how the five-element framework instantiates those criteria (§6.4 onward),
-- and how the present archive instantiates the framework (closing AI Usage and Documentation Archive note).
+- and how the present archive instantiates the framework (the AI Usage and Documentation Archive note, now provided as Supplementary Material).
 
 This directory provides the **structured material** that makes those explanations inspectable.
