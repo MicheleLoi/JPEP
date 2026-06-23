@@ -5,7 +5,7 @@ affiliation: "University of Milan"
 email: "michele.loi@unimi.it"
 version: "v4"
 date: 2026-06-10
-based_on: "Paper/MDversion/Full_paper_canonical.md (v1.28, 2026-06-10)"
+based_on: "Paper/MDversion/Full_paper_canonical.md (v1.29, 2026-06-10)"
 archive: "https://github.com/MicheleLoi/JPEP (transparency/)"
 ---
 
@@ -241,6 +241,42 @@ A further ambiguity emerged from implementation. The tracing condition requires 
 These limitations point toward what is needed if the framework is taken seriously. Journal disclosure requirements need philosophical specification, not just formal mandates; a checkbox confirming AI use tells evaluators nothing they can act on. Norms governing documentation adequacy can only develop through practice and community assessment — the dual assessment structure of Section 5 is a starting architecture, not a settled standard. The risk that documentation requirements become audit machinery is real: bureaucratic compliance can displace the genuine intellectual engagement that documentation is meant to make visible. Documentation that emerges from genuine practice resists this displacement, but the tension must be monitored as practices develop.
 
 The deepest reason for these requirements, however, is not that AI introduces something unprecedented into philosophical practice but that it removes something that was always there: the implicit signals — citation patterns, reasoning structure, engagement with sources — by which the community could once infer process from text (§3.7). The philosopher can no longer count on prose to carry the mark of having done the work; the reader can no longer read the text as a window onto the inquiry behind it. The explicit transparency requirement proposed here is therefore not a new imposition on philosophy. It is the conscious replacement of something that was always needed and is now, for the first time, no longer reliably supplied by the text itself. The documentation archive accompanying this paper includes a testimonial layer in which the models that worked on it report, in their composite voice, what they executed — one such attempt to make the inquiry inspectable rather than to obscure it.
+
+---
+
+# Declarations
+
+## Funding
+
+No funding was received for conducting this study.
+
+## Competing interests
+
+The author has no competing interests to declare that are relevant to the content of this article.
+
+## Ethics approval
+
+Not applicable. This is a work of philosophical scholarship and involved no research on human participants or animals.
+
+## Consent to participate
+
+Not applicable.
+
+## Consent to publish
+
+Not applicable.
+
+## Data and code availability
+
+This article reports no empirical datasets and uses no custom code. The process-documentation record against which the paper's claims are meant to be assessed — the SP-1 through SP-5 archive — is provided as Supplementary Material and is additionally available to the editorial office; a persistent identifier (Zenodo DOI) will be assigned to the public archive upon acceptance.
+
+## Author contributions
+
+The sole author conceived the work, developed the argument, drafted and revised the manuscript, and approved the final version.
+
+## Use of generative AI
+
+This manuscript is substantially AI-assisted, as stated in §1 and documented in the Supplementary Material; the author is accountable for the final text, and the AI tools are not authors.
 
 ---
 
