@@ -33,6 +33,17 @@ validation: approved
 > longer in use; every "Switchdrive" below should read "Resilio Sync" (the principle —
 > never sync a live `.git/` — is syncer-agnostic). The author de-synced the Resilio parent
 > folder in place rather than moving the repo out.
+>
+> **Residue cleanup (2026-06-23, SID-20260622-191852).** The phantom-rename residue this
+> incident predicted finally surfaced in the working tree during the v1.26 pre-submission
+> session and was cleaned: the stray untracked `Paper/MDversion/CFP_FullPaper_v1.md` — the
+> **v1.14 snapshot** produced by the phantom `Full_paper_canonical.md → CFP_FullPaper_v1.md`
+> rename — was **deleted** (its content is preserved both in git history via
+> `git log --follow Full_paper_canonical.md` and in the `_recovery_20260622/CFP_FullPaper_v1.v1.14.md`
+> backup), and `Full paper2511.08639v1.md` (a line-ending-only spurious "modification" of the
+> frozen reference) was `git restore`d to HEAD. Both were kept out of the v1.26 paper commit
+> and handled in a separate cleanup commit. The clean-cut migration (steps 1–8 below) is
+> still pending.
 
 ---
 
