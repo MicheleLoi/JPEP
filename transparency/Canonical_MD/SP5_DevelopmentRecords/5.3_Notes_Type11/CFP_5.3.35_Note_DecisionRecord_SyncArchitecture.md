@@ -42,8 +42,19 @@ validation: approved
 > `git log --follow Full_paper_canonical.md` and in the `_recovery_20260622/CFP_FullPaper_v1.v1.14.md`
 > backup), and `Full paper2511.08639v1.md` (a line-ending-only spurious "modification" of the
 > frozen reference) was `git restore`d to HEAD. Both were kept out of the v1.26 paper commit
-> and handled in a separate cleanup commit. The clean-cut migration (steps 1–8 below) is
-> still pending.
+> and handled in a separate cleanup commit. (The clean-cut migration in steps 1–8 below was subsequently **declined** — see the decision update directly below.)
+>
+> **Decision — clean-cut declined, migration closed (2026-06-23, SID-20260622-191852).** The
+> author confirms **Resilio Sync is now disabled on both machines**, so the root cause (a
+> file-syncer mutating a live `.git/`) is eliminated regardless of where the repos sit. Given
+> that, the author elected **not** to perform the clean-cut: the gitignored duplicates stay
+> inside `JPEP/` (negligible disk footprint), the build/derive scripts stay in the JPEP root
+> (the working copy is intact → no `../JPEP/...` repoint needed), and JPEP need not be moved
+> out of `switchdrive\`. The two-repo split therefore stands as **backup/redundancy**:
+> `JPEP-private` (commit `28e35d4`) is a point-in-time snapshot of the gitignored materials
+> and should be **refreshed manually** if that content changes materially (it does not
+> auto-update, since day-to-day work happens in `JPEP/`). Steps 1–8 below are retained as
+> historical plan, **not to be executed.**
 
 ---
 
